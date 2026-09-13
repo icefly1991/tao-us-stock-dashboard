@@ -1,0 +1,43 @@
+code,name,symbol,asset_type
+SMR,NuScale Power,SMR,stock
+VIX,CBOE Volatility Index,^VIX,index
+IMSR,Terrestrial Energy,IMSR,stock
+NABL,N-able,NABL,stock
+HOOD,Robinhood Markets,HOOD,stock
+MP,MP Materials,MP,stock
+ORCL,Oracle,ORCL,stock
+HIMS,Hims & Hers Health,HIMS,stock
+BITX,2x Bitcoin Strategy ETF,BITX,etf
+CRWV,CoreWeave,CRWV,stock
+IBIT,iShares Bitcoin Trust ETF,IBIT,etf
+RZLV,Rezolve AI,RZLV,stock
+MCD,McDonald's,MCD,stock
+IREN,IREN,IREN,stock
+ATCH,AtlasClear Holdings,ATCH,stock
+CRCL,Circle Internet Group,CRCL,stock
+NVDA,NVIDIA,NVDA,stock
+NKE,NIKE,NKE,stock
+KLAR,Klarna Group,KLAR,stock
+MNTN,MNTN,MNTN,stock
+MSFT,Microsoft,MSFT,stock
+META,Meta Platforms,META,stock
+RGTI,Rigetti Computing,RGTI,stock
+NXH,Neighborhood Intelligence,NXH,stock
+AVGO,Broadcom,AVGO,stock
+QQQ,Invesco QQQ Trust,QQQ,etf
+ETOR,eToro Group,ETOR,stock
+ARKO,ARKO,ARKO,stock
+UAA,Under Armour,UAA,stock
+PG,Procter & Gamble,PG,stock
+DOGEUSD,Dogecoin / US Dollar,DOGE-USD,crypto
+STUB,StubHub Holdings,STUB,stock
+VOR,Vor Biopharma,VOR,stock
+MSTR,Strategy,MSTR,stock
+GEMI,Gemini Space Station,GEMI,stock
+OSCR,Oscar Health,OSCR,stock
+DKNG,DraftKings,DKNG,stock
+AMD,Advanced Micro Devices,AMD,stock
+TQQQ,ProShares UltraPro QQQ,TQQQ,etf
+APP,AppLovin,APP,stock
+WBTN,WEBTOON Entertainment,WBTN,stock
+FIG,Figma,FIG,stock
