@@ -10,7 +10,7 @@
 scripts/stock_list.csv
         |
         v
-yfinance_client.py -- yfinance 批量下载 adjusted/raw OHLC
+yfinance_client.py -- 批量下载原始价格与 Adj Close，派生 adjusted/raw
         |
         v
 indicators.py ------ 唯一的指标计算层
@@ -38,6 +38,8 @@ Vite dist ---------- GitHub Pages
 - `adjustments.adjusted/raw`：每种口径的 `summary` 和 `rows`。
 - `errors`：可选；仅在发生错误时存在。
 
+仓库中的 `public/data/dashboard.json` 是无真实行情的安全占位文件。GitHub Actions 在构建期间生成真实文件并打入 Pages artifact，不把每日行情回写 `main`。
+
 行字段：
 
 - 身份：`code`、`name`、`symbol`、`asset_type`
@@ -48,8 +50,8 @@ Vite dist ---------- GitHub Pages
 
 ## 失败边界
 
-- 单个 symbol 缺失：记录两个口径各自的错误，其他行继续。
-- 单个口径批量下载失败：该口径为空并记录批量错误；另一口径仍尝试处理。
+- 单个 symbol 缺失：按受影响口径记录错误，其他 symbol 继续。
+- 整次批量下载失败：两个口径均无可生成行，记录批量错误和逐标的错误。
 - 没有任何有效行：生成脚本不覆盖已有 JSON，并返回失败状态阻止空看板部署。
 - 前端 JSON 加载失败：显示明确错误状态，不显示伪造数据。
 

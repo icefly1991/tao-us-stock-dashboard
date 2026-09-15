@@ -1,6 +1,15 @@
 # Operations Guide
 
-## 首次部署
+## 当前生产基线
+
+- 仓库：`https://github.com/icefly1991/tao-us-stock-dashboard`
+- 页面：`https://icefly1991.github.io/tao-us-stock-dashboard/`
+- Pages Source：GitHub Actions，已启用
+- 2026-09-15 [首次端到端验证](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/34970500432)：10 个 Python 测试通过，42/42 个标的成功，复权与未复权各 42 行，失败 0，`data_date=20260915`，构建与部署成功
+
+该基线只证明当次发布成功。排障时必须查看最新工作流和页面 `data_date`，不能据此假设 yfinance 永久可用。
+
+## 首次部署或仓库迁移
 
 1. 将代码推送到名为 `tao-us-stock-dashboard` 的 GitHub 仓库。
 2. 进入 `Settings -> Pages`，把 Source 设为 `GitHub Actions`。
@@ -8,6 +17,14 @@
 4. 确认 Generate、Python tests、Build frontend、Deploy 四个阶段均成功。
 
 项目不使用行情密钥，不需要配置 GitHub Secrets。
+
+当前仓库已经完成上述步骤；日常不需要用户手工运行。
+
+## 谁负责什么
+
+- 用户：确认标的和含糊代码；批准指标、数据源、频率和页面方向变化；处理仓库账号权限、付费服务或敏感凭据。
+- AI/开发者：维护代码、测试、文档、工作流；验证 symbol 和真实数据；排查失败并提交修复。
+- 自动化：工作日收盘后获取数据、测试、构建并部署。
 
 ## 添加或修改标的
 
@@ -55,3 +72,4 @@
 - [ ] 页面能切换复权模式和五个长期指标
 - [ ] 缺失指标显示“—”并排在末尾
 - [ ] CHANGELOG 已更新
+- [ ] `AGENTS.md` 的一次读懂摘要已与正式需求同步

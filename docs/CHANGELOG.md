@@ -2,9 +2,29 @@
 
 记录用户可见功能、数据口径、部署和重要文档变化。日期使用 `YYYY-MM-DD`。
 
+## 2026-09-15 — Production launch and documentation review
+
+关联需求：REQ-001、REQ-002、REQ-003、DATA-001 至 DATA-006、UI-001、OPS-001、OPS-002、NFR-001、NFR-002。
+
+### Added
+
+- 增加 `AGENTS.md` 一次读懂入口，集中记录用户明确需求、V1 实现选择、42 个标的、职责边界和验证基线。
+- 记录 GitHub 仓库、线上 Pages 地址和首次生产验证结果。
+- 在正式需求中补全三张截图对应的 42 个展示代码及 `PG` 去重说明。
+
+### Changed
+
+- 明确参考项目只提供方向，不继承 Tushare、A 股分类或历史需求。
+- 修正文档中的数据流：复权/未复权来自同一次批量下载，V1 指标契约使用 `Close/High/Low` 与 `Adj Close`。
+- 将 GitHub Pages 首次启用验收项更新为完成。
+
+### Verified
+
+- [GitHub Actions 端到端运行](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/34970500432)成功：10 个 Python 测试、42/42 标的、复权/未复权各 42 行、失败 0、`data_date=20260915`、Pages 部署成功。
+
 ## 2026-09-14 — Initial US dashboard
 
-关联需求：REQ-001、DATA-001 至 DATA-006、UI-001、OPS-001、OPS-002、NFR-001、NFR-002。
+关联需求：REQ-001、REQ-002、REQ-003、DATA-001 至 DATA-006、UI-001、OPS-001、OPS-002、NFR-001、NFR-002。
 
 ### Added
 

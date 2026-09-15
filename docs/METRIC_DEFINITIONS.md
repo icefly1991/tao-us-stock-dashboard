@@ -6,7 +6,7 @@
 
 - 数据按 `trade_date` 升序排序并按日期去重。
 - `close`、`high`、`low` 必须是有效数值。
-- `adjusted` 与 `raw` 分别下载、分别计算，不共享历史基准。
+- `adjusted` 与 `raw` 从同一次批量下载中分别派生、分别计算，不共享历史基准。
 - 至少两条日线才能生成一行。
 
 ## 当日涨跌 `today_return_pct`

@@ -1,6 +1,12 @@
 # Requirements
 
-本文件是项目功能范围和验收标准的权威来源。编号前缀：`REQ` 通用、`DATA` 数据、`UI` 界面、`OPS` 部署运维、`NFR` 非功能要求。
+本文件是项目功能范围和验收标准的权威来源。编号前缀：`REQ` 通用、`DATA` 数据、`UI` 界面、`OPS` 部署运维、`NFR` 非功能要求。新 AI 应先读根目录 `AGENTS.md` 获取一次读懂摘要，再以本文件逐项验收。
+
+## 需求来源与解释规则
+
+用户明确提出：参考 `icefly1991/feng-team-stock-dashboard` 做一个股票列表为美股的相似项目；首版尝试 yfinance；项目名为 `tao-us-stock-dashboard`；首版列表来自三张截图；文档和需求必须足够清晰，方便未来 AI 和人工迭代；需要明确区分用户操作与 AI/开发者工作。
+
+参考项目只作为产品与交互方向，不继承其 A 股、Tushare、创业板/科创板或其他历史需求。指标、窗口、静态 JSON、React/Vite、更新时间和 Pages 部署是 V1 的已接受实现基线，但不应写成用户逐项原话。
 
 ## REQ-001：仓库内文档治理
 
@@ -18,6 +24,41 @@
 - [x] 所有文档存在且职责明确
 - [x] 需求、决策、变更和实现可以通过编号追溯
 - [x] README 能指导首次运行、修改列表和部署
+- [x] `AGENTS.md` 能让新 AI 一次读懂用户意图、V1 范围、职责边界和验证方法
+
+## REQ-002：独立美股项目及参考边界
+
+- 状态：Implemented
+- 优先级：P0
+- 日期：2026-09-14
+- 关联决策：ADR-001, ADR-002
+
+### 需求
+
+建立名为 `tao-us-stock-dashboard` 的独立项目，借鉴参考看板的紧凑浏览体验，但数据、自选列表、术语、部署和文档均以本项目的美股需求为准。
+
+### 验收标准
+
+- [x] 仓库及 Pages 子路径使用 `tao-us-stock-dashboard`
+- [x] 数据源、自选列表和页面文案不依赖参考项目运行
+- [x] 不包含 Tushare Token、A 股市场分类或创业板/科创板股票池
+- [x] README 和文档明确参考关系不等于继承历史需求
+
+## REQ-003：用户与 AI/开发者职责边界
+
+- 状态：Implemented
+- 优先级：P0
+- 日期：2026-09-14
+
+### 需求
+
+文档必须说明：用户负责确认产品选择、含糊代码和账号级操作；AI/开发者负责代码、测试、文档、symbol 验证、数据验证和部署排错。不得要求用户手工完成可由项目自动化可靠完成的日常数据更新。
+
+### 验收标准
+
+- [x] `AGENTS.md` 和 README 列出双方职责
+- [x] 只有账号授权、敏感凭据、付费选择或产品决策需要用户介入
+- [x] 日常收盘后更新和部署由 GitHub Actions 自动完成
 
 ## DATA-001：使用 yfinance 获取日线
 
@@ -27,12 +68,12 @@
 
 ### 需求
 
-从 yfinance 批量获取自选标的日线 OHLC。数据层不需要 API Key，前端不得直接请求行情源。
+从 yfinance 批量获取自选标的日线价格序列。当前指标使用日期、`Close`、`High`、`Low` 和复权所需的 `Adj Close`；`Open` 与 `Volume` 不属于 V1 JSON 契约。数据层不需要 API Key，前端不得直接请求行情源。
 
 ### 验收标准
 
 - [x] Python 可批量下载列表中的 symbol
-- [x] 数据至少包含日期、收盘价、最高价和最低价
+- [x] 数据至少包含日期、收盘价、最高价、最低价及复权收盘价
 - [x] 单只标的缺失不会阻断其他成功标的
 - [x] 输出声明 `source: yfinance`
 
@@ -44,7 +85,16 @@
 
 ### 需求
 
-CSV 同时保存展示代码、名称、yfinance symbol 和资产类型。首版包含用户三张截图中去重后的 42 个标的，其中 `VIX -> ^VIX`，`DOGEUSD -> DOGE-USD`。
+CSV 同时保存展示代码、名称、yfinance symbol 和资产类型。首版包含用户三张截图中去重后的 42 个标的。V1 将截图中被截断的 DOGE 代码解释为展示代码 `DOGEUSD`，查询映射为 `DOGEUSD -> DOGE-USD`；VIX 查询映射为 `VIX -> ^VIX`。这些是 V1 对截图和 yfinance symbol 的明确解释，用户若更正则按变更流程更新。
+
+首版展示代码基线如下；`PG` 在截图中重复出现，因此只保留一次：
+
+```text
+SMR, VIX, IMSR, NABL, HOOD, MP, ORCL, HIMS, BITX, CRWV, IBIT, RZLV,
+MCD, IREN, ATCH, CRCL, NVDA, NKE, KLAR, MNTN, MSFT, META, RGTI, NXH,
+AVGO, QQQ, ETOR, ARKO, UAA, PG, DOGEUSD, STUB, VOR, MSTR, GEMI, OSCR,
+DKNG, AMD, TQQQ, APP, WBTN, FIG
+```
 
 ### 验收标准
 
@@ -61,7 +111,7 @@ CSV 同时保存展示代码、名称、yfinance symbol 和资产类型。首版
 
 ### 需求
 
-通过一次 yfinance `auto_adjust=False` 下载获得原始 OHLC 与 `Adj Close`。`raw` 使用原始 OHLC；`adjusted` 使用 `Adj Close / Close` 因子同比例调整 OHLC。两套指标分别计算，不混用历史基准。
+通过一次 yfinance `auto_adjust=False` 下载获得原始 `Close/High/Low` 与 `Adj Close`。`raw` 使用原始 `Close/High/Low`；`adjusted` 使用 `Adj Close / Close` 因子同比例调整这三个价格序列。两套指标分别计算，不混用历史基准。
 
 ### 验收标准
 
@@ -128,7 +178,7 @@ JSON 分开记录纽约时间生成时间 `updated_at` 和最新常规市场数�
 
 ### 需求
 
-提供移动端优先的浅色看板，显示汇总卡片、复权切换、指标切换、排名、名称、代码、收盘价和指标值。
+提供移动端优先的浅色看板，显示汇总卡片、复权切换、指标切换、排名、名称、代码、收盘价和指标值。首次进入默认使用“复权价”和“距年线”；切换口径后汇总、表格和排序必须同步。
 
 ### 验收标准
 
@@ -136,6 +186,7 @@ JSON 分开记录纽约时间生成时间 `updated_at` 和最新常规市场数�
 - [x] 表格可以横向滚动且表头与数据对齐
 - [x] 股票/ETF 显示美元符号，指数和加密交叉盘不强制显示
 - [x] 页面明确说明数据用于个人研究且不是实时行情
+- [x] 默认口径与指标分别为复权价、距年线
 
 ## OPS-001：收盘后自动更新
 
@@ -150,7 +201,7 @@ GitHub Actions 在纽约时间工作日 18:30 尝试生成数据，也支持手�
 ### 验收标准
 
 - [x] 工作流配置纽约时区
-- [x] 数据生成后运行测试和前端构建
+- [x] 工作流依次完成测试、真实数据生成、前端检查与构建
 - [x] 不要求行情 Secret
 
 ## OPS-002：GitHub Pages 部署
@@ -167,7 +218,8 @@ GitHub Actions 在纽约时间工作日 18:30 尝试生成数据，也支持手�
 
 - [x] Vite base 为 `/tao-us-stock-dashboard/`
 - [x] 工作流上传 `dist` 并通过官方 Pages Action 发布
-- [ ] 仓库创建后由所有者在 Settings 中首次启用 GitHub Actions Pages
+- [x] 仓库已启用 GitHub Actions Pages
+- [x] `https://icefly1991.github.io/tao-us-stock-dashboard/` 可公开访问
 
 ## NFR-001：失败透明与数据完整性
 

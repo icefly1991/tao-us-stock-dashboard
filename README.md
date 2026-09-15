@@ -2,6 +2,10 @@
 
 一个面向个人研究的美股趋势看板。项目每天从 yfinance 获取日线数据，在 Python 中统一计算指标，生成静态 JSON，再由 React 页面展示，并通过 GitHub Actions 部署到 GitHub Pages。
 
+- 在线看板：<https://icefly1991.github.io/tao-us-stock-dashboard/>
+- GitHub 仓库：<https://github.com/icefly1991/tao-us-stock-dashboard>
+- AI/维护者一次读懂入口：[AGENTS.md](./AGENTS.md)
+
 > 本项目包含股票、ETF、指数和加密资产，仅用于个人研究，不构成投资建议，也不是实时行情或自动交易系统。
 
 ## 当前功能
@@ -14,11 +18,21 @@
 - 单只标的失败时保留其他成功数据，并把原因写入 `errors`
 - 新上市、历史不足 250/252 个数据点的标的仍显示；无法可靠计算的长期指标显示为空
 
+## 原始需求与范围边界
+
+用户要求参考 `icefly1991/feng-team-stock-dashboard` 建立一个独立的美股版本，首版使用 yfinance，项目名为 `tao-us-stock-dashboard`，自选列表来自三张截图，并重点保证文档适合未来迭代。
+
+参考项目只提供产品和交互方向。本项目不继承 Tushare、A 股市场分类、创业板/科创板股票池或其他参考仓库历史需求。完整的“用户明确要求”与“V1 实现选择”区分见 [正式需求](./docs/REQUIREMENTS.md)。
+
+## 职责边界
+
+用户负责确认新增/删除标的、含糊代码、指标或数据源等产品变化，以及账号授权、付费选择和敏感凭据配置。AI/开发者负责实现代码、测试、文档、symbol 与真实数据验证、自动化和部署排错。日常更新由 GitHub Actions 自动完成。
+
 ## 数据流程
 
 ```text
 yfinance
-  -> scripts/data_pipeline/yfinance_client.py 获取原始日线并生成两套口径
+  -> scripts/data_pipeline/yfinance_client.py 一次获取原始价格与 Adj Close，派生两套口径
   -> scripts/data_pipeline/indicators.py 计算指标
   -> public/data/dashboard.json
   -> React + Vite 构建
@@ -69,7 +83,7 @@ QQQ,Invesco QQQ Trust,QQQ,etf
 
 工作流位于 `.github/workflows/deploy.yml`，默认在纽约时间工作日 18:30 触发，也支持手动运行。GitHub 定时任务可能延迟，不应把该时间理解为精确承诺。
 
-第一次部署：
+当前仓库已经启用 GitHub Actions Pages。复制或新建同类仓库时，第一次部署需要：
 
 1. 在仓库 `Settings -> Pages` 中选择 `GitHub Actions`。
 2. 打开 `Actions -> Deploy Dashboard -> Run workflow`。
@@ -77,14 +91,17 @@ QQQ,Invesco QQQ Trust,QQQ,etf
 
 yfinance 不需要 API Key，因此仓库不需要行情密钥。
 
+仓库中的 `public/data/dashboard.json` 是占位文件；线上真实行情在每次 GitHub Actions 构建时生成并进入部署产物，不会每天提交回 `main`。
+
 ## 文档治理
 
 修改项目前先阅读：
 
-1. [项目长期规则](./PROJECT_RULES.md)
+1. [AI/维护者一次读懂入口](./AGENTS.md)
 2. [正式需求](./docs/REQUIREMENTS.md)
-3. [技术决策](./docs/DECISIONS.md)
-4. [变更请求](./docs/CHANGE_REQUESTS.md)
-5. [版本记录](./docs/CHANGELOG.md)
+3. [项目长期规则](./PROJECT_RULES.md)
+4. [技术决策](./docs/DECISIONS.md)
+5. [变更请求](./docs/CHANGE_REQUESTS.md)
+6. [版本记录](./docs/CHANGELOG.md)
 
 功能修改必须关联需求编号；改变已确认口径时必须先记录 Change Request。
