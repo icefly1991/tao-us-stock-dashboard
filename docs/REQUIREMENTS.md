@@ -2,7 +2,7 @@
 
 ## DATA-007 / UI-002：第二列表与 A/B/C 分档
 
-- 状态：In Progress
+- 状态：Implemented
 - 日期：2026-09-18
 - 关联：CR-001、ADR-007、DATA-002、UI-001
 - 来源：用户提供的 100 个明确 ticker 和分档。
