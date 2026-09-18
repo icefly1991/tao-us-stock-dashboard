@@ -22,6 +22,8 @@
 | 从原 A 档“核心”降至融资/执行观察 | CRWV | 2026 Q2 净利息费用 6.40 亿美元、净亏损 6.26 亿美元；有强需求不代表普通股可无条件承受债务和资本开支风险。 |
 | 从原 A 档“核心”降至融资/转型观察 | IREN | FY2026 披露 AI Cloud 收入 1.288 亿美元，资本承诺 138.10 亿美元；同期大量股权/债务融资。业务扩张潜力与融资、建设兑现风险必须同时评估。资本承诺不是当期费用，不能把这两个数字当利润率计算。 |
 | 降为利率/商业模式敏感观察 | CRCL | 2026 Q2 储备收入 6.68 亿美元，分销等成本 4.12 亿美元；USDC 增长并不一比一转为股东利润，需压力测试利率和分销分成。USDC 稳定不代表 CRCL 股价稳定。 |
+| 降为项目/融资观察 | APLD | FY2026 Q4 归属普通股股东的持续经营净亏损 1.106 亿美元，期末债务 50 亿美元；营收包含项目装修服务，不能把全部增长当稳定租金增长。 |
+| 保留在信贷周期观察，不列无条件持有 | UPST | 最新财报仍明确贷款资金可得性、信贷模型、资产负债表贷款和宏观信用风险；评估须使用贷款表现与资金来源，而非仅看收入增速。 |
 | 新增研究候选，暂不写入名单 | NVDA、AVGO、ANET | 最新报告均有规模化盈利证据；AVGO FY2026 Q3 自由现金流约 137 亿美元，ANET 2026 Q2 GAAP 净利润约 12.13 亿美元。优先比较其质量、估值和波动与现有融资型 AI 公司；仍存在 AI 资本开支周期、集中度及估值风险。NVDA/AVGO 已在持仓列表，新增指观察列表。 |
 
 来源（公司原始披露）：
@@ -35,6 +37,9 @@
 - [NVIDIA FY2027 Q2](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027)
 - [Broadcom FY2026 Q3](https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial)
 - [Arista 2026 Q2](https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2026/Arista-Networks-Inc--Reports-Second-Quarter-2026-Financial-Results/default.aspx)
+
+- [Applied Digital FY2026 Q4](https://www.sec.gov/Archives/edgar/data/1144879/000114487926000044/apldq426earningsreleaseasf.htm)
+- [Upstart 2026 Q2](https://ir.upstart.com/news-releases/news-release-details/upstart-announces-second-quarter-2026-results)
 
 其他公司仍需逐只核查，不能因在原 A 档就默认通过。尤其是新股、资本密集项目、信贷/保险、商品和单一产品型公司，应使用行业适用的检验方法。银行/保险不能机械套用工业公司的自由现金流、净债务指标。
 

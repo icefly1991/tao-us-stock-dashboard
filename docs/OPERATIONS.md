@@ -114,3 +114,16 @@ EIKN 代码依据：[Nasdaq 上市记录](https://www.nasdaqprivatemarket.com/co
 关联需求 DATA-009/UI-005/UI-006、CR-004、ADR-010。JSON 契约：榜单行新增可选 history_available，独立 data/history/{adjusted|raw}/{code}.json 新增 OHLCV 日/周线、实际区间、区间指标及 skipped_dates；原指标公式不变。实际行情及历史文件不提交仓库。
 
 变更文件：scripts/stock_list.csv、scripts/data_pipeline/{config,indicators,history,yfinance_client}.py、scripts/generate_dashboard.py、src/{App,StockCopy,StockHistoryPreview,StockHistoryChart,icons}.tsx、src/clipboard.ts、package.json/package-lock.json、.gitignore、public/data/dashboard.json（安全占位）、tests/{test_collections,test_history}.py、tests/history-ui-regression.cjs，以及 AGENTS.md、README.md 和 docs 下需求、CR、ADR、架构、指标、变更日志、运行文档。
+
+
+## 2026-09-19 CR-005 验收
+
+需求 UI-007/DATA-010：名称纯文本，仅代码复制；观察列表移除 CFLT。持仓 43、观察 99（30/34/35），唯一代码 133，无停牌成员。JSON 结构和指标公式不变，通用停牌支持继续保留。
+
+[生产运行 35373688987](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/35373688987)，提交 ee880f8：21 项 Python 测试、lint、build、Pages 部署成功。真实 yfinance 榜单成功 133、失败 0、停牌 0，data_date=20260918。K 线 262 文件，ONON/IOT 最新 OHLC 源数据不一致导致 4 个口径级错误，窗口明确暂不可用；MNTN 本次已恢复。
+
+本地浏览器通过原 50 组排序/吸顶/导航与复制/K 线回归；真实本地页面确认 99 只观察、43 只持仓、名称无按钮、代码按钮保留、TTAN K 线正常。季度复核文档仅是研究规范和待配置模板，未注册自动任务，未应用建议的主观增删/分档。
+
+变更文件：src/App.tsx、scripts/stock_list.csv、public/data/dashboard.json（安全占位）、tests/test_collections.py、tests/history-ui-regression.cjs、AGENTS.md、docs/{REQUIREMENTS,CHANGE_REQUESTS,CHANGELOG,DECISIONS,OPERATIONS,LIST_REVIEW}.md。研究代表性公司资料截至 2026-09-19，非全名单逐只尽调或当前估值审核。
+
+线上另验名称按钮移除、观察 99/无停牌、TTAN 真实 K 线；首次图表网络加载超时，重试通过。最新 262 份历史文件已逐份校验同批版本并同步本地。
