@@ -93,3 +93,11 @@ DATA-007 / UI-002：生成时下载 133 个唯一代码，原列表 42、新列�
 UI-004 已发布：[运行 35327105376](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/35327105376)，功能提交 844a8b6。14 项 Python 测试、lint/build、Pages 部署通过。浏览器合成数据回归覆盖 50 组排序、链接刷新/前后退、390/768/1440 吸顶与横向对齐。线上真实数据复核原列表 42、新列表 99 行 + 1 停牌，5 个指标升序；390/1440 首行完整可见且标题表头持续吸顶。云端成功 132、失败 0、停牌 1，data_date=20260918。
 
 本次 UI-004 文件：src/App.tsx、src/index.css、tests/ui-regression.cjs、AGENTS.md、README.md、docs/REQUIREMENTS.md、docs/CHANGE_REQUESTS.md、docs/DECISIONS.md、docs/ARCHITECTURE.md、docs/CHANGELOG.md、docs/OPERATIONS.md。JSON 契约和金融公式不变；hash 链接无需额外服务器路由。无已知阻塞，手机宽度仍使用横向滚动浏览完整指标。
+
+## 复制与 K 线检查（CR-004）
+
+测试：`python -m unittest discover -s tests -v`（当前 19 项）、`npm run lint`、`npm run build`。本地 Vite 5174 启动后运行 `node tests/ui-regression.cjs` 和 `node tests/history-ui-regression.cjs`，使用合成数据拦截检查，不写入生产行情。后者覆盖持仓 43/OSCR 观察归属、复制及失败手动降级、悬停/固定/Esc/焦点返回、缓存、周日切换、口径、版本校验、重试、停牌无图表和手机窗口边界。
+
+生成脚本新增 Chart files / Chart errors 日志；预期 133 个非停牌标的、两口径合计最多 266 个图表文件。图表失败独立记录，不影响有效榜单行；K 线文件 version（updated_at）必须与 dashboard 一致，避免不同发布批次混用。历史文件仅在工作流生成，不提交仓库；本地预览同步同一发布批次的 dashboard 和 history 文件。
+
+EIKN 代码依据：[Nasdaq 上市记录](https://www.nasdaqprivatemarket.com/company/eikon-therapeutics/)，[Yahoo](https://finance.yahoo.com/quote/EIKN/)。实际取数验收以本次生成记录为准。

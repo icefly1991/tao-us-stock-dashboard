@@ -107,3 +107,10 @@ CSV 保持 code 唯一；watchlist=original 标记原列表，tier=A/B/C 标记�
 - 关联：UI-004、CR-003
 
 使用 hash 路由 #/watchlist、#/research、#/research/A|B|C 实现独立列表视图和真实链接导航，无需新增路由依赖或 Pages rewrite。仅新增列表显示分档入口。指标选项、榜单标题和表头组合为正常占位的 sticky top:0 区域，放在横向表体容器外；双向同步 scrollLeft，并使用相同 grid 列宽。去掉原 top:72px 偏移以及混合升降序和区间分组，所有指标数值升序、缺失末尾、停牌最后。
+
+## ADR-010：美股静态 K 线与参考交互
+
+- 状态：Accepted
+- 关联：CR-004、DATA-009、UI-005、UI-006
+
+参考用户 A 股项目的复制与浮窗交互，保留 yfinance、美股原始成交量单位与绿涨红跌。新增 lightweight-charts 5.2.1 懒加载绘制蜡烛及成交量，保留库署名；小型 SVG 图标无需图标库。原一次批量请求扩展五年，两口径各生成单股文件，避免浏览器直连行情源。下载字节数和产物增大，但图表仅按需加载。不继承 Tushare、前复权术语、成交量手数或 A 股代码规则。

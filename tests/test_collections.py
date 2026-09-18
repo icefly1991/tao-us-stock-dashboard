@@ -42,10 +42,10 @@ class CollectionTests(unittest.TestCase):
     def test_membership_counts_and_original_list_preserved(self):
         items = load_watchlist(STOCK_LIST_FILE)
         original = {item.code for item in items if item.watchlist == "original"}
-        expected = set("SMR VIX IMSR NABL HOOD MP ORCL HIMS BITX CRWV IBIT RZLV MCD IREN ATCH CRCL NVDA NKE KLAR MNTN MSFT META RGTI NXH AVGO QQQ ETOR ARKO UAA PG DOGEUSD STUB VOR MSTR GEMI OSCR DKNG AMD TQQQ APP WBTN FIG".split())
+        expected = set("SMR VIX IMSR NABL HOOD MP ORCL HIMS BITX CRWV IBIT RZLV MCD IREN ATCH CRCL NVDA NKE KLAR MNTN MSFT META RGTI NXH AVGO QQQ ETOR ARKO UAA PG DOGEUSD STUB VOR MSTR GEMI EIKN TTAN DKNG AMD TQQQ APP WBTN FIG".split())
         self.assertEqual(original, expected)
-        self.assertEqual(len(items), 133)
-        self.assertEqual(len({item.symbol for item in items}), 133)
+        self.assertEqual(len(items), 134)
+        self.assertEqual(len({item.symbol for item in items}), 134)
         self.assertEqual([sum(item.tier == tier for item in items) for tier in "ABC"], [30, 35, 35])
         self.assertEqual(len(original & {item.code for item in items if item.tier}), 9)
 

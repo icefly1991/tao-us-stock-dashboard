@@ -69,3 +69,12 @@ def rounded_range_position(current: float, low: float | None, high: float | None
 
 def merge_name_and_metrics(code: str, name: str, metrics: dict[str, Any]) -> dict[str, Any]:
     return {"code": code, "name": name, **metrics}
+
+
+def build_history_metrics(frame: pd.DataFrame) -> dict[str, float | None]:
+    """Actual available chart range; never presented as the strict 52-week metric."""
+    high, low = float(frame["high"].max()), float(frame["low"].min())
+    close = float(frame.iloc[-1]["close"])
+    return {"high": round(high, 8), "low": round(low, 8), "close": round(close, 8),
+            "distance_high_pct": rounded_percent_change(close, high),
+            "position_pct": rounded_range_position(close, low, high)}

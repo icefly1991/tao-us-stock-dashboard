@@ -33,3 +33,6 @@ __pycache__/
 .env.*
 .venv/
 .python311/
+
+# Generated real chart data
+public/data/history/

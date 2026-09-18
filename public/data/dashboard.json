@@ -5,7 +5,7 @@
   "adjustments": {
     "adjusted": {
       "summary": {
-        "watchlist_total": 133,
+        "watchlist_total": 134,
         "today_up": 0,
         "today_down": 0
       },
@@ -13,7 +13,7 @@
     },
     "raw": {
       "summary": {
-        "watchlist_total": 133,
+        "watchlist_total": 134,
         "today_up": 0,
         "today_down": 0
       },
@@ -68,22 +68,23 @@
         "VOR",
         "MSTR",
         "GEMI",
-        "OSCR",
         "DKNG",
         "AMD",
         "TQQQ",
         "APP",
         "WBTN",
-        "FIG"
+        "FIG",
+        "TTAN",
+        "EIKN"
       ],
       "summaries": {
         "adjusted": {
-          "watchlist_total": 42,
+          "watchlist_total": 43,
           "today_up": 0,
           "today_down": 0
         },
         "raw": {
-          "watchlist_total": 42,
+          "watchlist_total": 43,
           "today_up": 0,
           "today_down": 0
         }

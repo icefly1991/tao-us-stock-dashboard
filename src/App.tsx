@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
+import { CopyStockButton, StockCopyProvider } from './StockCopy'
+import { StockHistoryCode, StockHistoryProvider } from './StockHistoryPreview'
 
 type AdjustmentKey = 'adjusted' | 'raw'
 type MetricKey =
@@ -23,6 +25,7 @@ type Row = {
   distance_52w_low_pct: number | null
   position_52w_pct: number | null
   history_days: number
+  history_available?: boolean
 }
 
 type DashboardData = {
@@ -187,6 +190,8 @@ function App() {
   if (!data || !current) return <StateView text="加载中..." />
 
   return (
+    <StockCopyProvider>
+    <StockHistoryProvider key={`${collectionId}:${adjustment}`}>
     <main className="min-h-screen bg-[radial-gradient(circle_at_top,rgba(186,230,253,0.2),transparent_30%),linear-gradient(180deg,#fcfbf8_0%,#f5f1ea_58%,#f1ece5_100%)] px-4 py-6 text-slate-900 sm:px-6 sm:py-8">
       <div className="mx-auto max-w-6xl space-y-6">
         <motion.section initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35 }} className="relative overflow-hidden rounded-[2rem] border border-white/80 bg-[linear-gradient(135deg,rgba(255,255,255,0.97),rgba(247,242,234,0.94))] p-5 shadow-[0_24px_60px_rgba(15,23,42,0.06)] sm:p-7">
@@ -266,6 +271,7 @@ function App() {
               ))}
             </nav>
           )}
+          <p className="mb-3 px-2 text-xs text-slate-500">点击名称或代码复制后可快速粘贴；悬停代码或点击 K 线图标查看走势。</p>
           <div className="ranking-sticky" data-testid="ranking-sticky">
             <div className="overflow-x-auto py-2" aria-label="指标选项">
               <div className="flex w-max gap-2">
@@ -299,8 +305,10 @@ function App() {
                 <div key={row.code} data-code={row.code} data-metric={row[tab] ?? 'missing'} className="market-grid market-row">
                   <div className="text-xs text-slate-400">{index + 1}</div>
                   <div className="min-w-0 text-left">
-                    <p title={row.name} className="truncate font-medium text-slate-900">{row.name}</p>
-                    <p className="mt-1 text-xs text-slate-500">{row.code}</p>
+                    <CopyStockButton value={row.name} label="名称" target={`${row.code}-name`} />
+                    <StockHistoryCode code={row.code} name={row.name} updatedAt={data.updated_at} adjustment={adjustment} available={row.history_available}>
+                      <CopyStockButton value={row.code} label="代码" target={`${row.code}-code`} secondary />
+                    </StockHistoryCode>
                   </div>
                   <div className="font-medium text-slate-900">{formatClose(row)}</div>
                   <div className={getMetricTextClass(row.today_return_pct)}>{formatPct(row.today_return_pct)}</div>
@@ -321,8 +329,8 @@ function App() {
                 <div key={item.code} data-trading-status="suspended" className="market-grid market-row text-slate-400">
                   <div>—</div>
                   <div className="text-left">
-                    <p className="font-medium text-slate-700">{item.name}</p>
-                    <p className="mt-1 text-xs">{item.code}</p>
+                    <CopyStockButton value={item.name} label="名称" target={`${item.code}-name`} />
+                    <CopyStockButton value={item.code} label="代码" target={`${item.code}-code`} secondary />
                     <span className="mt-2 inline-block rounded bg-slate-200 px-2 py-1 text-xs text-slate-600">停牌</span>
                     {item.note && <p className="mt-1 text-xs">{item.note}</p>}
                   </div>
@@ -334,6 +342,8 @@ function App() {
         </section>
       </div>
     </main>
+    </StockHistoryProvider>
+    </StockCopyProvider>
   )
 }
 

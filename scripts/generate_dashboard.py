@@ -16,6 +16,10 @@ def main() -> None:
     print(f"Successful stocks: {result.successful_stocks}")
     print(f"Failed stocks: {result.failed_stocks}")
     print(f"Suspended stocks: {sum(item.trading_status == 'suspended' for item in config.watchlist)}")
+    print(f"Chart files: {sum(len(items) for items in result.histories.values())}")
+    print(f"Chart errors: {len(result.history_errors)}")
+    for error in result.history_errors:
+        print(f"Chart unavailable: {error['code']} {error['error']}")
 
     if valid_row_count == 0:
         status = "Kept existing dashboard.json." if dashboard_exists(config.output_json_file) else "No dashboard.json written."
@@ -31,6 +35,9 @@ def main() -> None:
         data_date=result.latest_trade_date,
         watchlist=config.watchlist,
     )
+    for adjustment, histories in result.histories.items():
+        for code, history in histories.items():
+            export_dashboard(config.output_json_file.parent / "history" / adjustment / f"{code}.json", history)
     export_dashboard(config.output_json_file, payload)
     print(f"Output file path: {config.output_json_file}")
 

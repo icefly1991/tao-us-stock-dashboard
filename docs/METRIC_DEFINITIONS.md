@@ -63,3 +63,9 @@ low_52w = 最近 252 条有效记录中的最小 low
 ## 价格精度
 
 `close` 在 JSON 中最多保留四位小数，以兼容低价股票和加密资产；页面中大于等于 1 的数值通常显示两位，小于 1 的数值最多显示六位。
+
+## K 线历史区间（CR-004 / DATA-009）
+
+同次请求近五个自然年的日线，历史不足时按实际区间展示，不替代严格的 252 条 52 周指标。high=max(high)、low=min(low)、close=最后有效 close；distance_high_pct=(close/high-1)*100；position_pct=(close-low)/(high-low)*100，高低相同则 null；仅在 indicators.py 计算。价格最多 8 位小数、百分比 2 位。
+
+复权 K 线逐日按 Adj Close/Close 调整 OHLC；volume 保留原始数量（股票为股），缺失 null、零值保留。周 K 按周一至周日聚合：open 首条、high 最大、low 最小、close 末条，volume 仅在周内全部有效时求和，否则 null；日期为该周首条有效数据日期。末周可能未结束。

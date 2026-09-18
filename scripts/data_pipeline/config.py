@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import calendar
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -47,7 +48,8 @@ def get_new_york_now() -> datetime:
 def build_runtime_config(today: date | None = None) -> RuntimeConfig:
     market_today = today or get_new_york_now().date()
     year_start = date(market_today.year, 1, 1)
-    history_start = market_today - timedelta(days=550)
+    history_start = date(market_today.year - 5, market_today.month,
+                         min(market_today.day, calendar.monthrange(market_today.year - 5, market_today.month)[1]))
 
     return RuntimeConfig(
         root_dir=ROOT_DIR,
