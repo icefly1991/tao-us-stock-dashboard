@@ -38,6 +38,10 @@ def build_dashboard_payload(
     if errors:
         payload["errors"] = errors
     if watchlist is not None:
+        payload["suspended"] = [
+            {"code": item.code, "name": item.name, "symbol": item.symbol, "note": item.status_note}
+            for item in watchlist if item.trading_status == "suspended"
+        ]
         collections = []
         for key, label in (("original", "原 Watchlist"), ("research", "新增列表"),
                            ("A", "A 档"), ("B", "B 档"), ("C", "C 档")):

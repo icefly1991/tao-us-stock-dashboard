@@ -11,7 +11,7 @@
 ```markdown
 ## CR-001：标题
 
-- 状态：Proposed
+- 状态：Accepted
 - 提出日期：YYYY-MM-DD
 - 决定日期：
 - 关联原需求：DATA-xxx / UI-xxx / OPS-xxx
@@ -60,16 +60,16 @@
 - 风险：请求规模增大，上游可能缺失/限流；不得替换无法获取的代码。回退可恢复本次修改前的 CSV 和代码。
 - 验收：原列表 42、新列表 100、分档 30/35/35；交集不重复下载；汇总和排序随筛选同步；真实数据与规定测试验证。
 
-## CR-002：PSTG 查询映射到 P（待确认）
+## CR-002：PSTG 查询映射到 P 与停牌展示
 
-- 状态：Proposed
+- 状态：Accepted
 - 日期：2026-09-18
 - 关联：DATA-002、DATA-007
-- 确认原因：自动审批要求此项 symbol 修改取得用户明确确认。
+- 确认依据：用户明确回复“pstg cflt你帮我处理吧，停牌的就显示停牌即可”，授权修复查询映射与停牌展示。
 - 影响：仅将 PSTG 查询 symbol 改为 P，展示 code 保留 PSTG、名称 Everpure (P)，列表数量与指标不变。
 - 回退：symbol=PSTG，继续显示该标的缺失。
-- 当前：本地改动已准备，尚未提交或发布。
+- 实施：PSTG 查询 P；CSV 增加 trading_status/status_note，CFLT 显式标记 suspended。JSON 新增可选 suspended 数组，存储 code/name/symbol/note；停牌标的不下载、不生成数值、不计下载失败或涨跌数，仍计入列表总数；页面在榜单末尾显示停牌与“—”。普通下载失败不得推断为停牌；整批无有效行情仍禁止覆盖。
 
 ### 核实依据
 
-2026-09-18，首次云端验证 131/133 成功，PSTG、CFLT 无行情。用户指定公司和列表成员不变：根据 [Everpure 官方公告](https://www.everpuredata.com/company/newsroom/press-releases/everpure-to-change-ticker-symbol.html)，PSTG 的同一家公司已改用 P 交易，拟保留展示 code PSTG，查询 symbol=P，名称 Everpure (P)，等待用户确认。这是本次新增标的的已核实查询映射，非替换投资标的或猜测截图。根据 [Nasdaq 公告](https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-164)，CFLT 收购完成后自 2026-03-18 停止交易；保留该用户输入的成员及缺失提示，不替换为 IBM。
+2026-09-18，首次云端验证 131/133 成功，PSTG、CFLT 无行情。用户指定公司和列表成员不变：根据 [Everpure 官方公告](https://www.everpuredata.com/company/newsroom/press-releases/everpure-to-change-ticker-symbol.html)，PSTG 的同一家公司已改用 P 交易，保留展示 code PSTG，查询 symbol=P，名称 Everpure (P)，用户已确认。这是本次新增标的的已核实查询映射，非替换投资标的或猜测截图。根据 [Nasdaq 公告](https://www.nasdaqtrader.com/TraderNews.aspx?id=ECA2026-164)，CFLT 收购完成后自 2026-03-18 停止交易；保留该用户输入的成员及缺失提示，不替换为 IBM。

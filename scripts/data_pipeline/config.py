@@ -23,6 +23,8 @@ class WatchlistItem:
     asset_type: str
     watchlist: str = "original"
     tier: str = ""
+    trading_status: str = "active"
+    status_note: str = ""
 
 
 @dataclass(frozen=True)
@@ -72,6 +74,10 @@ def load_watchlist(path: Path) -> list[WatchlistItem]:
             asset_type = (row.get("asset_type") or "stock").strip().lower()
             watchlist = row.get("watchlist", "original").strip()
             tier = (row.get("tier") or "").strip().upper()
+            trading_status = (row.get("trading_status") or "active").strip()
+            status_note = (row.get("status_note") or "").strip()
+            if trading_status not in {"active", "suspended"}:
+                raise RuntimeError(f"Unsupported trading_status on row {row_number} in {path}")
             if watchlist not in {"", "original"} or tier not in {"", "A", "B", "C"}:
                 raise RuntimeError(f"Unsupported list membership on row {row_number} in {path}")
             if not watchlist and not tier:
@@ -88,6 +94,8 @@ def load_watchlist(path: Path) -> list[WatchlistItem]:
                     asset_type=asset_type,
                     watchlist=watchlist,
                     tier=tier,
+                    trading_status=trading_status,
+                    status_note=status_note,
                 )
             )
 

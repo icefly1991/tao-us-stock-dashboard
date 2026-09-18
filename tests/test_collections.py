@@ -2,15 +2,43 @@ from __future__ import annotations
 
 import sys
 import unittest
+from dataclasses import replace
+from unittest.mock import Mock
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
-from data_pipeline.config import STOCK_LIST_FILE, WatchlistItem, load_watchlist
+from data_pipeline.config import STOCK_LIST_FILE, WatchlistItem, load_watchlist, build_runtime_config
 from data_pipeline.summary import build_dashboard_payload
+from data_pipeline.yfinance_client import YFinancePipelineClient
 
 
 class CollectionTests(unittest.TestCase):
+    def test_suspended_skipped_but_retained_in_total_and_metadata(self):
+        items = load_watchlist(STOCK_LIST_FILE)
+        pstg = next(item for item in items if item.code == "PSTG")
+        cflt = next(item for item in items if item.code == "CFLT")
+        self.assertEqual(pstg.symbol, "P")
+        self.assertEqual(cflt.trading_status, "suspended")
+        config = replace(build_runtime_config(), watchlist=[pstg, cflt])
+        client = YFinancePipelineClient(config)
+        client.download_history = Mock(return_value=None)
+        client.build_row = Mock(return_value=({"code": "PSTG", "today_return_pct": 2}, "20260917"))
+        result = client.build_adjustment_rows()
+        client.download_history.assert_called_once_with(["P"])
+        self.assertEqual((result.successful_stocks, result.failed_stocks), (1, 0))
+        self.assertEqual(result.errors, [])
+        payload = build_dashboard_payload(result.rows_by_adjustment, [], 2, watchlist=[pstg, cflt])
+        self.assertEqual(payload["suspended"][0]["code"], "CFLT")
+        for mode in ("adjusted", "raw"):
+            self.assertEqual(payload["adjustments"][mode]["summary"],
+                             {"watchlist_total": 2, "today_up": 1, "today_down": 0})
+        client.build_row = Mock(side_effect=ValueError("download unavailable"))
+        result = client.build_adjustment_rows()
+        self.assertEqual((result.successful_stocks, result.failed_stocks), (0, 1))
+        self.assertTrue(all(not rows for rows in result.rows_by_adjustment.values()))
+        self.assertEqual({error["code"] for error in result.errors}, {"PSTG"})
+
     def test_membership_counts_and_original_list_preserved(self):
         items = load_watchlist(STOCK_LIST_FILE)
         original = {item.code for item in items if item.watchlist == "original"}

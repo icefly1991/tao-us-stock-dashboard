@@ -15,6 +15,7 @@ def main() -> None:
     print(f"Latest data date: {result.latest_trade_date or 'unavailable'}")
     print(f"Successful stocks: {result.successful_stocks}")
     print(f"Failed stocks: {result.failed_stocks}")
+    print(f"Suspended stocks: {sum(item.trading_status == 'suspended' for item in config.watchlist)}")
 
     if valid_row_count == 0:
         status = "Kept existing dashboard.json." if dashboard_exists(config.output_json_file) else "No dashboard.json written."

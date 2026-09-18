@@ -35,14 +35,15 @@ class YFinancePipelineClient:
         successful_codes: set[str] = set()
         failed_codes: set[str] = set()
 
-        symbols = [item.symbol for item in self.config.watchlist]
+        active_items = [item for item in self.config.watchlist if item.trading_status == "active"]
+        symbols = [item.symbol for item in active_items]
         try:
-            history = self.download_history(symbols)
+            history = self.download_history(symbols) if symbols else pd.DataFrame()
         except Exception as exc:  # noqa: BLE001
             history = pd.DataFrame()
             errors.append({"code": "*", "name": "批量下载", "error": str(exc)})
 
-        for item in self.config.watchlist:
+        for item in active_items:
             item_failed = False
             for adjustment in self.config.adjustments:
                 try:

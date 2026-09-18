@@ -55,3 +55,8 @@
 - JSON 向后兼容地新增 collections；CSV 仍为唯一成员来源。表格在手机上使用容器内横向滚动。
 
 - 验证：[GitHub Actions](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/35295285660) 测试、lint、构建、部署通过；131 成功 / 2 失败，data_date=20260917。原列表 42/42，新列表 98/100（A 30/30、B 33/35、C 35/35）。本地 13 项 Python 测试及 lint/build 通过，浏览器用明确标记的测试数据验证 390/1440 宽度和全部筛选；本地 Yahoo 限流未覆盖占位文件。
+
+## 2026-09-18 · PSTG 与停牌处理
+
+- CR-002 经用户明确确认：PSTG 查询 P，展示名称 Everpure (P)。
+- DATA-008 / UI-003、ADR-008：CFLT 在榜单末尾显示“停牌”和收购停止交易说明，各项数据为“—”；不再作为下载失败报警，列表总数保留。JSON 可选新增 suspended 元数据，既有指标行和公式不变。

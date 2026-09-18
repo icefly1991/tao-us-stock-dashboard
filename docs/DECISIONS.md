@@ -92,4 +92,11 @@ MA250 只在至少 250 条有效记录时计算；52 周指标只在至少 252 �
 - 日期：2026-09-18
 - 关联：DATA-007、UI-002、CR-001
 
-CSV 保持 code 唯一；watchlist=original 标记原列表，tier=A/B/C 标记新列表成员，可同时存在。新 ticker 按用户输入查询，不猜测替代代码；PSTG 已核实更名为 P，映射修正拟保留展示代码和同一公司，但属于待确认的 CR-002；未提供公司名称的新条目以 ticker 显示。一次批量下载覆盖 133 个唯一代码。JSON 可选 collections 提供原列表、新列表和 A/B/C 的代码集合与分口径汇总；Python 计算汇总，React 只筛选和排序。旧 JSON 没有 collections 时仍展示原数据。没有新增依赖。
+CSV 保持 code 唯一；watchlist=original 标记原列表，tier=A/B/C 标记新列表成员，可同时存在。新 ticker 按用户输入查询，不猜测替代代码；PSTG 已核实更名为 P，CR-002 已获用户确认，查询映射保留展示代码和同一公司；未提供公司名称的新条目以 ticker 显示。一次批量下载覆盖 133 个唯一代码。JSON 可选 collections 提供原列表、新列表和 A/B/C 的代码集合与分口径汇总；Python 计算汇总，React 只筛选和排序。旧 JSON 没有 collections 时仍展示原数据。没有新增依赖。
+
+## ADR-008：显式配置停牌状态
+
+- 状态：Accepted
+- 关联：DATA-008、UI-003、CR-002
+
+停牌由 CSV 显式维护，不从下载错误推断。独立 suspended 元数据使既有有效行情行字段保持不变；页面仅展示停牌身份，不计算或伪造指标。当前仅 CFLT，说明为已被收购并停止交易。若未来临时停牌恢复交易，应依据核实结果将 CSV trading_status 改回 active。无有效行情的发布保护不变。

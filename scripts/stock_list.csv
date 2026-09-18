@@ -1,134 +1,134 @@
-code,name,symbol,asset_type,watchlist,tier
-SMR,NuScale Power,SMR,stock,original,
-VIX,CBOE Volatility Index,^VIX,index,original,
-IMSR,Terrestrial Energy,IMSR,stock,original,
-NABL,N-able,NABL,stock,original,
-HOOD,Robinhood Markets,HOOD,stock,original,A
-MP,MP Materials,MP,stock,original,C
-ORCL,Oracle,ORCL,stock,original,
-HIMS,Hims & Hers Health,HIMS,stock,original,A
-BITX,2x Bitcoin Strategy ETF,BITX,etf,original,
-CRWV,CoreWeave,CRWV,stock,original,A
-IBIT,iShares Bitcoin Trust ETF,IBIT,etf,original,
-RZLV,Rezolve AI,RZLV,stock,original,
-MCD,McDonald's,MCD,stock,original,
-IREN,IREN,IREN,stock,original,A
-ATCH,AtlasClear Holdings,ATCH,stock,original,
-CRCL,Circle Internet Group,CRCL,stock,original,A
-NVDA,NVIDIA,NVDA,stock,original,
-NKE,NIKE,NKE,stock,original,
-KLAR,Klarna Group,KLAR,stock,original,
-MNTN,MNTN,MNTN,stock,original,
-MSFT,Microsoft,MSFT,stock,original,
-META,Meta Platforms,META,stock,original,
-RGTI,Rigetti Computing,RGTI,stock,original,
-NXH,Neighborhood Intelligence,NXH,stock,original,
-AVGO,Broadcom,AVGO,stock,original,
-QQQ,Invesco QQQ Trust,QQQ,etf,original,
-ETOR,eToro Group,ETOR,stock,original,
-ARKO,ARKO,ARKO,stock,original,
-UAA,Under Armour,UAA,stock,original,
-PG,Procter & Gamble,PG,stock,original,
-DOGEUSD,Dogecoin / US Dollar,DOGE-USD,crypto,original,
-STUB,StubHub Holdings,STUB,stock,original,
-VOR,Vor Biopharma,VOR,stock,original,
-MSTR,Strategy,MSTR,stock,original,
-GEMI,Gemini Space Station,GEMI,stock,original,
-OSCR,Oscar Health,OSCR,stock,original,B
-DKNG,DraftKings,DKNG,stock,original,B
-AMD,Advanced Micro Devices,AMD,stock,original,
-TQQQ,ProShares UltraPro QQQ,TQQQ,etf,original,
-APP,AppLovin,APP,stock,original,A
-WBTN,WEBTOON Entertainment,WBTN,stock,original,
-FIG,Figma,FIG,stock,original,
-CRDO,CRDO,CRDO,stock,,A
-ALAB,ALAB,ALAB,stock,,A
-NBIS,NBIS,NBIS,stock,,A
-COIN,COIN,COIN,stock,,A
-RDDT,RDDT,RDDT,stock,,A
-RKLB,RKLB,RKLB,stock,,A
-CELH,CELH,CELH,stock,,A
-AFRM,AFRM,AFRM,stock,,A
-UPST,UPST,UPST,stock,,A
-CVNA,CVNA,CVNA,stock,,A
-APLD,APLD,APLD,stock,,A
-RBLX,RBLX,RBLX,stock,,A
-CAVA,CAVA,CAVA,stock,,A
-ONON,ONON,ONON,stock,,A
-DUOL,DUOL,DUOL,stock,,A
-ELF,ELF,ELF,stock,,A
-SOFI,SOFI,SOFI,stock,,A
-SHOP,SHOP,SHOP,stock,,A
-SE,SE,SE,stock,,A
-NET,NET,NET,stock,,A
-PLTR,PLTR,PLTR,stock,,A
-ARM,ARM,ARM,stock,,A
-LITE,LITE,LITE,stock,,A
-COHR,COHR,COHR,stock,,A
-MRVL,MRVL,MRVL,stock,,B
-CLS,CLS,CLS,stock,,B
-VRT,VRT,VRT,stock,,B
-MU,MU,MU,stock,,B
-SNDK,SNDK,SNDK,stock,,B
-WDC,WDC,WDC,stock,,B
-CIEN,CIEN,CIEN,stock,,B
-SMCI,SMCI,SMCI,stock,,B
-BE,BE,BE,stock,,B
-PSTG,PSTG,PSTG,stock,,B
-MTSI,MTSI,MTSI,stock,,B
-TOST,TOST,TOST,stock,,B
-NU,NU,NU,stock,,B
-FUTU,FUTU,FUTU,stock,,B
-TIGR,TIGR,TIGR,stock,,B
-DAVE,DAVE,DAVE,stock,,B
-ROOT,ROOT,ROOT,stock,,B
-LMND,LMND,LMND,stock,,B
-TTAN,TTAN,TTAN,stock,,B
-IOT,IOT,IOT,stock,,B
-MNDY,MNDY,MNDY,stock,,B
-MDB,MDB,MDB,stock,,B
-GTLB,GTLB,GTLB,stock,,B
-FROG,FROG,FROG,stock,,B
-ESTC,ESTC,ESTC,stock,,B
-S,S,S,stock,,B
-CFLT,CFLT,CFLT,stock,,B
-TTD,TTD,TTD,stock,,B
-ZETA,ZETA,ZETA,stock,,B
-TMDX,TMDX,TMDX,stock,,B
-NTRA,NTRA,NTRA,stock,,B
-TEM,TEM,TEM,stock,,B
-RXST,RXST,RXST,stock,,B
-KTOS,KTOS,KTOS,stock,,C
-AVAV,AVAV,AVAV,stock,,C
-RDW,RDW,RDW,stock,,C
-LUNR,LUNR,LUNR,stock,,C
-LEU,LEU,LEU,stock,,C
-UUUU,UUUU,UUUU,stock,,C
-UEC,UEC,UEC,stock,,C
-ALB,ALB,ALB,stock,,C
-ENPH,ENPH,ENPH,stock,,C
-NXT,NXT,NXT,stock,,C
-FLNC,FLNC,FLNC,stock,,C
-RIVN,RIVN,RIVN,stock,,C
-LI,LI,LI,stock,,C
-XPEV,XPEV,XPEV,stock,,C
-BILI,BILI,BILI,stock,,C
-CHWY,CHWY,CHWY,stock,,C
-BROS,BROS,BROS,stock,,C
-RH,RH,RH,stock,,C
-SG,SG,SG,stock,,C
-FOUR,FOUR,FOUR,stock,,C
-BILL,BILL,BILL,stock,,C
-RELY,RELY,RELY,stock,,C
-SYM,SYM,SYM,stock,,C
-AAOI,AAOI,AAOI,stock,,C
-ACMR,ACMR,ACMR,stock,,C
-ACLS,ACLS,ACLS,stock,,C
-SITM,SITM,SITM,stock,,C
-AMBA,AMBA,AMBA,stock,,C
-AEHR,AEHR,AEHR,stock,,C
-AOSL,AOSL,AOSL,stock,,C
-INOD,INOD,INOD,stock,,C
-PATH,PATH,PATH,stock,,C
-DOCN,DOCN,DOCN,stock,,C
-ROKU,ROKU,ROKU,stock,,C
+code,name,symbol,asset_type,watchlist,tier,trading_status,status_note
+SMR,NuScale Power,SMR,stock,original,,active,
+VIX,CBOE Volatility Index,^VIX,index,original,,active,
+IMSR,Terrestrial Energy,IMSR,stock,original,,active,
+NABL,N-able,NABL,stock,original,,active,
+HOOD,Robinhood Markets,HOOD,stock,original,A,active,
+MP,MP Materials,MP,stock,original,C,active,
+ORCL,Oracle,ORCL,stock,original,,active,
+HIMS,Hims & Hers Health,HIMS,stock,original,A,active,
+BITX,2x Bitcoin Strategy ETF,BITX,etf,original,,active,
+CRWV,CoreWeave,CRWV,stock,original,A,active,
+IBIT,iShares Bitcoin Trust ETF,IBIT,etf,original,,active,
+RZLV,Rezolve AI,RZLV,stock,original,,active,
+MCD,McDonald's,MCD,stock,original,,active,
+IREN,IREN,IREN,stock,original,A,active,
+ATCH,AtlasClear Holdings,ATCH,stock,original,,active,
+CRCL,Circle Internet Group,CRCL,stock,original,A,active,
+NVDA,NVIDIA,NVDA,stock,original,,active,
+NKE,NIKE,NKE,stock,original,,active,
+KLAR,Klarna Group,KLAR,stock,original,,active,
+MNTN,MNTN,MNTN,stock,original,,active,
+MSFT,Microsoft,MSFT,stock,original,,active,
+META,Meta Platforms,META,stock,original,,active,
+RGTI,Rigetti Computing,RGTI,stock,original,,active,
+NXH,Neighborhood Intelligence,NXH,stock,original,,active,
+AVGO,Broadcom,AVGO,stock,original,,active,
+QQQ,Invesco QQQ Trust,QQQ,etf,original,,active,
+ETOR,eToro Group,ETOR,stock,original,,active,
+ARKO,ARKO,ARKO,stock,original,,active,
+UAA,Under Armour,UAA,stock,original,,active,
+PG,Procter & Gamble,PG,stock,original,,active,
+DOGEUSD,Dogecoin / US Dollar,DOGE-USD,crypto,original,,active,
+STUB,StubHub Holdings,STUB,stock,original,,active,
+VOR,Vor Biopharma,VOR,stock,original,,active,
+MSTR,Strategy,MSTR,stock,original,,active,
+GEMI,Gemini Space Station,GEMI,stock,original,,active,
+OSCR,Oscar Health,OSCR,stock,original,B,active,
+DKNG,DraftKings,DKNG,stock,original,B,active,
+AMD,Advanced Micro Devices,AMD,stock,original,,active,
+TQQQ,ProShares UltraPro QQQ,TQQQ,etf,original,,active,
+APP,AppLovin,APP,stock,original,A,active,
+WBTN,WEBTOON Entertainment,WBTN,stock,original,,active,
+FIG,Figma,FIG,stock,original,,active,
+CRDO,CRDO,CRDO,stock,,A,active,
+ALAB,ALAB,ALAB,stock,,A,active,
+NBIS,NBIS,NBIS,stock,,A,active,
+COIN,COIN,COIN,stock,,A,active,
+RDDT,RDDT,RDDT,stock,,A,active,
+RKLB,RKLB,RKLB,stock,,A,active,
+CELH,CELH,CELH,stock,,A,active,
+AFRM,AFRM,AFRM,stock,,A,active,
+UPST,UPST,UPST,stock,,A,active,
+CVNA,CVNA,CVNA,stock,,A,active,
+APLD,APLD,APLD,stock,,A,active,
+RBLX,RBLX,RBLX,stock,,A,active,
+CAVA,CAVA,CAVA,stock,,A,active,
+ONON,ONON,ONON,stock,,A,active,
+DUOL,DUOL,DUOL,stock,,A,active,
+ELF,ELF,ELF,stock,,A,active,
+SOFI,SOFI,SOFI,stock,,A,active,
+SHOP,SHOP,SHOP,stock,,A,active,
+SE,SE,SE,stock,,A,active,
+NET,NET,NET,stock,,A,active,
+PLTR,PLTR,PLTR,stock,,A,active,
+ARM,ARM,ARM,stock,,A,active,
+LITE,LITE,LITE,stock,,A,active,
+COHR,COHR,COHR,stock,,A,active,
+MRVL,MRVL,MRVL,stock,,B,active,
+CLS,CLS,CLS,stock,,B,active,
+VRT,VRT,VRT,stock,,B,active,
+MU,MU,MU,stock,,B,active,
+SNDK,SNDK,SNDK,stock,,B,active,
+WDC,WDC,WDC,stock,,B,active,
+CIEN,CIEN,CIEN,stock,,B,active,
+SMCI,SMCI,SMCI,stock,,B,active,
+BE,BE,BE,stock,,B,active,
+PSTG,Everpure (P),P,stock,,B,active,
+MTSI,MTSI,MTSI,stock,,B,active,
+TOST,TOST,TOST,stock,,B,active,
+NU,NU,NU,stock,,B,active,
+FUTU,FUTU,FUTU,stock,,B,active,
+TIGR,TIGR,TIGR,stock,,B,active,
+DAVE,DAVE,DAVE,stock,,B,active,
+ROOT,ROOT,ROOT,stock,,B,active,
+LMND,LMND,LMND,stock,,B,active,
+TTAN,TTAN,TTAN,stock,,B,active,
+IOT,IOT,IOT,stock,,B,active,
+MNDY,MNDY,MNDY,stock,,B,active,
+MDB,MDB,MDB,stock,,B,active,
+GTLB,GTLB,GTLB,stock,,B,active,
+FROG,FROG,FROG,stock,,B,active,
+ESTC,ESTC,ESTC,stock,,B,active,
+S,S,S,stock,,B,active,
+CFLT,Confluent,CFLT,stock,,B,suspended,已被收购并停止交易
+TTD,TTD,TTD,stock,,B,active,
+ZETA,ZETA,ZETA,stock,,B,active,
+TMDX,TMDX,TMDX,stock,,B,active,
+NTRA,NTRA,NTRA,stock,,B,active,
+TEM,TEM,TEM,stock,,B,active,
+RXST,RXST,RXST,stock,,B,active,
+KTOS,KTOS,KTOS,stock,,C,active,
+AVAV,AVAV,AVAV,stock,,C,active,
+RDW,RDW,RDW,stock,,C,active,
+LUNR,LUNR,LUNR,stock,,C,active,
+LEU,LEU,LEU,stock,,C,active,
+UUUU,UUUU,UUUU,stock,,C,active,
+UEC,UEC,UEC,stock,,C,active,
+ALB,ALB,ALB,stock,,C,active,
+ENPH,ENPH,ENPH,stock,,C,active,
+NXT,NXT,NXT,stock,,C,active,
+FLNC,FLNC,FLNC,stock,,C,active,
+RIVN,RIVN,RIVN,stock,,C,active,
+LI,LI,LI,stock,,C,active,
+XPEV,XPEV,XPEV,stock,,C,active,
+BILI,BILI,BILI,stock,,C,active,
+CHWY,CHWY,CHWY,stock,,C,active,
+BROS,BROS,BROS,stock,,C,active,
+RH,RH,RH,stock,,C,active,
+SG,SG,SG,stock,,C,active,
+FOUR,FOUR,FOUR,stock,,C,active,
+BILL,BILL,BILL,stock,,C,active,
+RELY,RELY,RELY,stock,,C,active,
+SYM,SYM,SYM,stock,,C,active,
+AAOI,AAOI,AAOI,stock,,C,active,
+ACMR,ACMR,ACMR,stock,,C,active,
+ACLS,ACLS,ACLS,stock,,C,active,
+SITM,SITM,SITM,stock,,C,active,
+AMBA,AMBA,AMBA,stock,,C,active,
+AEHR,AEHR,AEHR,stock,,C,active,
+AOSL,AOSL,AOSL,stock,,C,active,
+INOD,INOD,INOD,stock,,C,active,
+PATH,PATH,PATH,stock,,C,active,
+DOCN,DOCN,DOCN,stock,,C,active,
+ROKU,ROKU,ROKU,stock,,C,active,

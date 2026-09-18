@@ -29,6 +29,7 @@ type DashboardData = {
   source: string
   updated_at: string
   data_date: string | null
+  suspended?: { code: string; name: string; symbol: string; note: string }[]
   collections?: {
     id: string
     label: string
@@ -161,7 +162,8 @@ function App() {
   const current = data?.adjustments[adjustment]
   const collection = useMemo(() => data?.collections?.find((item) => item.id === collectionId), [data, collectionId])
   const summary = collection?.summaries[adjustment] ?? current?.summary
-  const missingCodes = collection?.codes.filter((code) => !current?.rows.some((row) => row.code === code)) ?? []
+  const suspended = data?.suspended?.filter((item) => !collection || collection.codes.includes(item.code)) ?? []
+  const missingCodes = collection?.codes.filter((code) => !current?.rows.some((row) => row.code === code) && !suspended.some((item) => item.code === code)) ?? []
   const rows = useMemo(
     () =>
       current
@@ -402,6 +404,18 @@ function App() {
                       ) : (
                         <div className="px-1 py-2 text-sm text-slate-400">这个区间暂无股票</div>
                       )}
+                    </div>
+                  ))}
+                  {suspended.map((item) => (
+                    <div key={item.code} data-trading-status="suspended" className={`${tableGridClass} items-center rounded-[1.2rem] border border-slate-200 bg-slate-50 px-4 py-3.5 text-slate-400`}>
+                      <div className="text-center">—</div>
+                      <div className="px-3 py-2">
+                        <p className="text-sm font-medium text-slate-700">{item.name}</p>
+                        <p className="mt-1 text-xs">{item.code}</p>
+                        <span title={item.note} className="mt-2 inline-block rounded bg-slate-200 px-2 py-1 text-xs font-medium text-slate-600">停牌</span>
+                        {item.note && <p className="mt-1 text-xs">{item.note}</p>}
+                      </div>
+                      {[0, 1, 2, 3, 4].map((column) => <div key={column} className="px-2 text-right">—</div>)}
                     </div>
                   ))}
                   </div>

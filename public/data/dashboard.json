@@ -20,6 +20,14 @@
       "rows": []
     }
   },
+  "suspended": [
+    {
+      "code": "CFLT",
+      "name": "Confluent",
+      "symbol": "CFLT",
+      "note": "已被收购并停止交易"
+    }
+  ],
   "collections": [
     {
       "id": "original",
