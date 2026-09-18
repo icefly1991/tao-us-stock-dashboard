@@ -31,8 +31,7 @@ const base = process.env.DASHBOARD_TEST_URL || 'http://127.0.0.1:5174/tao-us-sto
  await page.getByRole('button',{name:'复制代码：EIKN',exact:true}).click();
  assert.equal(await page.evaluate(()=>window.copiedText),'EIKN');
  await page.getByText('，可以粘贴了',{exact:false}).waitFor();
- await page.getByRole('button',{name:'复制名称：Eikon Therapeutics',exact:true}).click();
- assert.equal(await page.evaluate(()=>window.copiedText),'Eikon Therapeutics');
+ assert.equal(await page.getByRole('button',{name:/复制名称/}).count(),0);
  await page.getByRole('button',{name:'复制代码：EIKN',exact:true}).hover();
  await page.getByRole('dialog').waitFor();
  await page.getByRole('dialog').hover();
@@ -80,6 +79,6 @@ const base = process.env.DASHBOARD_TEST_URL || 'http://127.0.0.1:5174/tao-us-sto
  await page.screenshot({path:'.cache/browser/history-mobile.png'});
  await page.getByRole('button',{name:'关闭K线预览',exact:true}).click();
  assert.deepEqual(errors,[]);
- console.log('PASS: membership 43 and OSCR observation retained; copy name/code/failure fallback; hover/pin/Escape/focus; daily/weekly; cache; adjusted/raw; retry/version rejection/unavailable; suspension; mobile bounds. Synthetic data.');
+ console.log('PASS: membership 43 and OSCR observation retained; copy code/failure fallback; names plain text; hover/pin/Escape/focus; daily/weekly; cache; adjusted/raw; retry/version rejection/unavailable; suspension; mobile bounds. Synthetic data.');
  } finally {await browser.close()}
 })().catch(error=>{console.error(error);process.exit(1)});

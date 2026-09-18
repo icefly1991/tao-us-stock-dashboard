@@ -5,7 +5,7 @@
   "adjustments": {
     "adjusted": {
       "summary": {
-        "watchlist_total": 134,
+        "watchlist_total": 133,
         "today_up": 0,
         "today_down": 0
       },
@@ -13,21 +13,14 @@
     },
     "raw": {
       "summary": {
-        "watchlist_total": 134,
+        "watchlist_total": 133,
         "today_up": 0,
         "today_down": 0
       },
       "rows": []
     }
   },
-  "suspended": [
-    {
-      "code": "CFLT",
-      "name": "Confluent",
-      "symbol": "CFLT",
-      "note": "已被收购并停止交易"
-    }
-  ],
+  "suspended": [],
   "collections": [
     {
       "id": "original",
@@ -153,7 +146,6 @@
         "FROG",
         "ESTC",
         "S",
-        "CFLT",
         "TTD",
         "ZETA",
         "TMDX",
@@ -197,12 +189,12 @@
       ],
       "summaries": {
         "adjusted": {
-          "watchlist_total": 100,
+          "watchlist_total": 99,
           "today_up": 0,
           "today_down": 0
         },
         "raw": {
-          "watchlist_total": 100,
+          "watchlist_total": 99,
           "today_up": 0,
           "today_down": 0
         }
@@ -288,7 +280,6 @@
         "FROG",
         "ESTC",
         "S",
-        "CFLT",
         "TTD",
         "ZETA",
         "TMDX",
@@ -298,12 +289,12 @@
       ],
       "summaries": {
         "adjusted": {
-          "watchlist_total": 35,
+          "watchlist_total": 34,
           "today_up": 0,
           "today_down": 0
         },
         "raw": {
-          "watchlist_total": 35,
+          "watchlist_total": 34,
           "today_up": 0,
           "today_down": 0
         }

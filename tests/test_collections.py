@@ -17,7 +17,7 @@ class CollectionTests(unittest.TestCase):
     def test_suspended_skipped_but_retained_in_total_and_metadata(self):
         items = load_watchlist(STOCK_LIST_FILE)
         pstg = next(item for item in items if item.code == "PSTG")
-        cflt = next(item for item in items if item.code == "CFLT")
+        cflt = WatchlistItem("CFLT", "Confluent", "CFLT", "stock", "", "B", "suspended", "已停止交易")
         self.assertEqual(pstg.symbol, "P")
         self.assertEqual(cflt.trading_status, "suspended")
         config = replace(build_runtime_config(), watchlist=[pstg, cflt])
@@ -44,9 +44,10 @@ class CollectionTests(unittest.TestCase):
         original = {item.code for item in items if item.watchlist == "original"}
         expected = set("SMR VIX IMSR NABL HOOD MP ORCL HIMS BITX CRWV IBIT RZLV MCD IREN ATCH CRCL NVDA NKE KLAR MNTN MSFT META RGTI NXH AVGO QQQ ETOR ARKO UAA PG DOGEUSD STUB VOR MSTR GEMI EIKN TTAN DKNG AMD TQQQ APP WBTN FIG".split())
         self.assertEqual(original, expected)
-        self.assertEqual(len(items), 134)
-        self.assertEqual(len({item.symbol for item in items}), 134)
-        self.assertEqual([sum(item.tier == tier for item in items) for tier in "ABC"], [30, 35, 35])
+        self.assertNotIn("CFLT", {item.code for item in items})
+        self.assertEqual(len(items), 133)
+        self.assertEqual(len({item.symbol for item in items}), 133)
+        self.assertEqual([sum(item.tier == tier for item in items) for tier in "ABC"], [30, 34, 35])
         self.assertEqual(len(original & {item.code for item in items if item.tier}), 9)
 
     def test_shared_stock_and_failed_member_counts_in_both_modes(self):

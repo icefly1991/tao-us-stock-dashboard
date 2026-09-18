@@ -271,7 +271,7 @@ function App() {
               ))}
             </nav>
           )}
-          <p className="mb-3 px-2 text-xs text-slate-500">点击名称或代码复制后可快速粘贴；悬停代码或点击 K 线图标查看走势。</p>
+          <p className="mb-3 px-2 text-xs text-slate-500">点击代码复制后可快速粘贴；悬停代码或点击 K 线图标查看走势。</p>
           <div className="ranking-sticky" data-testid="ranking-sticky">
             <div className="overflow-x-auto py-2" aria-label="指标选项">
               <div className="flex w-max gap-2">
@@ -305,7 +305,7 @@ function App() {
                 <div key={row.code} data-code={row.code} data-metric={row[tab] ?? 'missing'} className="market-grid market-row">
                   <div className="text-xs text-slate-400">{index + 1}</div>
                   <div className="min-w-0 text-left">
-                    <CopyStockButton value={row.name} label="名称" target={`${row.code}-name`} />
+                    <span title={row.name} className="block truncate font-medium text-slate-900">{row.name}</span>
                     <StockHistoryCode code={row.code} name={row.name} updatedAt={data.updated_at} adjustment={adjustment} available={row.history_available}>
                       <CopyStockButton value={row.code} label="代码" target={`${row.code}-code`} secondary />
                     </StockHistoryCode>
@@ -329,7 +329,7 @@ function App() {
                 <div key={item.code} data-trading-status="suspended" className="market-grid market-row text-slate-400">
                   <div>—</div>
                   <div className="text-left">
-                    <CopyStockButton value={item.name} label="名称" target={`${item.code}-name`} />
+                    <span title={item.name} className="block truncate font-medium text-slate-900">{item.name}</span>
                     <CopyStockButton value={item.code} label="代码" target={`${item.code}-code`} secondary />
                     <span className="mt-2 inline-block rounded bg-slate-200 px-2 py-1 text-xs text-slate-600">停牌</span>
                     {item.note && <p className="mt-1 text-xs">{item.note}</p>}
