@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 
 type AdjustmentKey = 'adjusted' | 'raw'
@@ -48,18 +48,6 @@ const tabs: { id: MetricKey; label: string }[] = [
   { id: 'position_52w_pct', label: '52周内位置' },
 ]
 
-const descendingMetrics: MetricKey[] = [
-  'distance_ma250_pct',
-  'distance_52w_low_pct',
-  'position_52w_pct',
-]
-
-const continuousMetrics: MetricKey[] = [
-  'distance_52w_high_pct',
-  'distance_52w_low_pct',
-  'position_52w_pct',
-]
-
 const cards: { key: SummaryKey; label: string; note: string }[] = [
   { key: 'watchlist_total', label: '自选总数', note: '今日跟踪池' },
   { key: 'today_up', label: '今日上涨', note: '收红个股' },
@@ -77,21 +65,20 @@ const metricText: Record<MetricKey, string> = {
 const adjustmentText = { adjusted: '复权价', raw: '未复权价' }
 const dashboardUrl = `${import.meta.env.BASE_URL}data/dashboard.json`
 
-const descendingBands = [
-  { separator: '20%', test: (v: number) => v >= 20 },
-  { separator: '0%', test: (v: number) => v >= 0 && v < 20 },
-  { separator: '-10%', test: (v: number) => v > -10 && v < 0 },
-  { separator: '-20%', test: (v: number) => v <= -10 && v > -20 },
-  { separator: null, test: (v: number) => v <= -20 },
-] as const
+const getCollectionFromHash = () => {
+  const path = window.location.hash.replace(/^#/, '')
+  if (path === '/research') return 'research'
+  const tier = path.match(/^\/research\/([ABC])$/)?.[1]
+  return tier ?? 'original'
+}
 
-const ascendingBands = [
-  { separator: '-20%', test: (v: number) => v <= -20 },
-  { separator: '-10%', test: (v: number) => v <= -10 && v > -20 },
-  { separator: '0%', test: (v: number) => v > -10 && v < 0 },
-  { separator: '20%', test: (v: number) => v >= 0 && v < 20 },
-  { separator: null, test: (v: number) => v >= 20 },
-] as const
+const sortingNotes: Record<MetricKey, string> = {
+  distance_ma250_pct: '距年线越低越靠前',
+  ytd_return_pct: '年内涨跌幅越低越靠前',
+  distance_52w_high_pct: '距高点回撤越深越靠前',
+  distance_52w_low_pct: '距低点涨幅越小越靠前',
+  position_52w_pct: '52周位置越低越靠前',
+}
 
 type MetricValue = number | null | undefined
 
@@ -126,7 +113,7 @@ const compareMetric = (a: Row, b: Row, metric: MetricKey) => {
   const bValue = b[metric]
   if (typeof aValue !== 'number') return typeof bValue !== 'number' ? 0 : 1
   if (typeof bValue !== 'number') return -1
-  return descendingMetrics.includes(metric) ? bValue - aValue : aValue - bValue
+  return aValue - bValue || a.code.localeCompare(b.code)
 }
 
 const formatClose = (row: Row) => {
@@ -145,10 +132,25 @@ function App() {
   const [adjustment, setAdjustment] = useState<AdjustmentKey>('adjusted')
   const [tab, setTab] = useState<MetricKey>('distance_ma250_pct')
   const [error, setError] = useState(false)
-  const [collectionId, setCollectionId] = useState('original')
+  const [collectionId, setCollectionId] = useState(getCollectionFromHash)
+  const researchPage = collectionId !== 'original'
+  const headerScroll = useRef<HTMLDivElement>(null)
+  const bodyScroll = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    document.title = 'Tao 美股趋势看板'
+    const navigate = () => {
+      setCollectionId(getCollectionFromHash())
+      window.scrollTo(0, 0)
+    }
+    window.addEventListener('hashchange', navigate)
+    return () => window.removeEventListener('hashchange', navigate)
+  }, [])
+
+  useEffect(() => {
+    document.title = `${researchPage ? '新增列表' : '原 Watchlist'} · Tao 美股趋势看板`
+  }, [researchPage])
+
+  useEffect(() => {
     let mounted = true
     fetch(dashboardUrl)
       .then((res) => (res.ok ? res.json() : Promise.reject()))
@@ -175,24 +177,11 @@ function App() {
     () => Math.max(...rows.map((row) => Math.abs(row[tab] ?? 0)), 1),
     [rows, tab],
   )
-  const groupedRows = useMemo(() => {
-    const activeBands = descendingMetrics.includes(tab) ? descendingBands : ascendingBands
-    return activeBands.map((band) => ({
-      ...band,
-      rows: rows.filter((row) => typeof row[tab] === 'number' && band.test(row[tab])),
-    }))
-  }, [rows, tab])
-  const tableGridClass = 'grid grid-cols-[4%_16%_11%_11%_12%_12%_28%] gap-[1%]'
-  const displayGroups = useMemo(
-    () => {
-      if (continuousMetrics.includes(tab)) return [{ separator: null, rows }]
-      const unavailableRows = rows.filter((row) => typeof row[tab] !== 'number')
-      return unavailableRows.length
-        ? [...groupedRows, { separator: '历史数据不足', rows: unavailableRows }]
-        : groupedRows
-    },
-    [groupedRows, rows, tab],
-  )
+  const contextMetrics: MetricKey[] = tab === 'distance_ma250_pct'
+    ? ['ytd_return_pct', 'distance_52w_high_pct']
+    : tab === 'ytd_return_pct'
+      ? ['distance_ma250_pct', 'distance_52w_high_pct']
+      : ['distance_ma250_pct', 'ytd_return_pct']
 
   if (error || (data && !current)) return <StateView text="无法加载 /data/dashboard.json" error />
   if (!data || !current) return <StateView text="加载中..." />
@@ -207,7 +196,7 @@ function App() {
             <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-3xl">
                 <div className="inline-flex rounded-full border border-slate-200/80 bg-white/80 px-3 py-1 text-[11px] font-medium tracking-[0.22em] text-slate-500">DAILY MARKET SNAPSHOT</div>
-                <h1 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl lg:text-5xl">Tao 美股趋势看板</h1>
+                <h1 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl lg:text-5xl">{researchPage ? '新增股票列表' : '原 Watchlist'}</h1>
                 <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600 sm:text-base">美股常规交易时段收盘后更新，数据用于个人研究与趋势观察。</p>
                 <div className="mt-4 flex flex-wrap gap-2 text-xs text-slate-500">
                   <span className="rounded-full border border-slate-200 bg-white/85 px-3 py-1">yfinance 日线数据</span>
@@ -222,17 +211,10 @@ function App() {
               </div>
             </div>
 
-            {data.collections && (
-              <div aria-label="股票列表" className="flex flex-wrap gap-2">
-                {data.collections.map((item) => (
-                  <button key={item.id} type="button" aria-pressed={collectionId === item.id}
-                    onClick={() => setCollectionId(item.id)}
-                    className={`rounded-full border px-4 py-2.5 text-sm font-medium transition ${collectionId === item.id ? 'border-slate-900 bg-slate-900 text-white' : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'}`}>
-                    {item.label} · {item.codes.length}
-                  </button>
-                ))}
-              </div>
-            )}
+            <nav aria-label="列表页面" className="flex flex-wrap gap-2">
+              <a href="#/watchlist" aria-current={!researchPage ? 'page' : undefined} className={`page-link ${!researchPage ? 'selected' : ''}`}>原 Watchlist</a>
+              <a href="#/research" aria-current={researchPage ? 'page' : undefined} className={`page-link ${researchPage ? 'selected' : ''}`}>新增列表</a>
+            </nav>
 
             <div className="rounded-[1.6rem] border border-slate-200/80 bg-white/70 p-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.85)]">
               <div className="grid grid-cols-2 gap-1">
@@ -266,163 +248,90 @@ function App() {
           </div>
         </motion.section>
 
-        <motion.section initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.08, duration: 0.35 }} className="rounded-[2rem] border border-white/80 bg-[linear-gradient(180deg,rgba(255,255,255,0.82),rgba(250,250,248,0.78))] p-5 shadow-[0_24px_60px_rgba(15,23,42,0.05)] backdrop-blur-sm sm:p-6">
+        <section className="ranking-section rounded-[2rem] border border-white/80 bg-white/80 p-3 shadow-[0_24px_60px_rgba(15,23,42,0.05)] sm:p-6">
           {missingCodes.length > 0 && (
             <div role="status" className="mb-4 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
-              当前列表可用 {rows.length} / {collection?.codes.length} 只；暂无可用行情：{missingCodes.join('、')}。列表总数包含这些标的，涨跌统计仅含可用行情。
+              暂无可用行情：{missingCodes.join('、')}。列表总数包含这些标的，涨跌统计仅含可用行情。
             </div>
           )}
-          {data.errors?.length ? (
-            <div className="mb-4 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
-              本次有 {data.errors.length} 条数据提示；可用标的继续展示，详情请查看生成日志。
-            </div>
-          ) : null}
-          <div className="sticky top-0 z-40 -mx-1 pb-1 backdrop-blur-xl">
-            <div className="overflow-x-auto">
-              <div className="flex min-w-max gap-2 px-1">
-              {tabs.map((item) => (
-                <button
-                  key={item.id}
-                  type="button"
-                  onClick={() => setTab(item.id)}
-                  className={`rounded-full border px-4 py-2.5 text-sm font-medium transition ${tab === item.id ? 'border-slate-300/90 bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(246,247,249,0.92))] text-slate-950 shadow-[inset_0_1px_0_rgba(255,255,255,0.95),0_8px_22px_rgba(15,23,42,0.08)]' : 'border-slate-200/80 bg-white/72 text-slate-600 hover:border-slate-300/80 hover:bg-white/90'}`}
-                >
-                  {item.label}
-                </button>
+          {data.errors?.length ? <p className="mb-4 text-sm text-amber-800">本次有 {data.errors.length} 条数据提示；可用标的继续展示。</p> : null}
+          {researchPage && data.collections && (
+            <nav aria-label="新增列表分档" className="mb-4 flex flex-wrap gap-2">
+              {data.collections.filter((item) => item.id !== 'original').map((item) => (
+                <a key={item.id} href={item.id === 'research' ? '#/research' : `#/research/${item.id}`}
+                  aria-current={collectionId === item.id ? 'page' : undefined}
+                  className={`page-link ${collectionId === item.id ? 'selected' : ''}`}>
+                  {item.id === 'research' ? '全部' : item.label} · {item.codes.length}
+                </a>
               ))}
+            </nav>
+          )}
+          <div className="ranking-sticky" data-testid="ranking-sticky">
+            <div className="overflow-x-auto py-2" aria-label="指标选项">
+              <div className="flex w-max gap-2">
+                {tabs.map((item) => (
+                  <button key={item.id} type="button" onClick={() => setTab(item.id)} aria-pressed={tab === item.id}
+                    className={`rounded-full border px-4 py-2 text-sm font-medium ${tab === item.id ? 'border-slate-400 bg-slate-100 text-slate-950' : 'border-slate-200 bg-white text-slate-600'}`}>
+                    {item.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <div className="border-b border-slate-200 px-2 py-3">
+              <h2 className="text-lg font-semibold text-slate-950">{collection?.label ?? '自选'} · {metricText[tab]}榜单</h2>
+              <p className="mt-1 text-xs text-slate-600">{adjustmentText[adjustment]} · {sortingNotes[tab]} · 缺失与停牌置后</p>
+            </div>
+            <div ref={headerScroll} className="ranking-header-scroll" onScroll={(event) => {
+              if (bodyScroll.current) bodyScroll.current.scrollLeft = event.currentTarget.scrollLeft
+            }}>
+              <div className="market-grid market-header" data-testid="column-header">
+                <div>#</div><div className="text-left">标的</div><div>收盘价</div><div>今日</div>
+                {contextMetrics.map((metric) => <div key={metric}>{metricText[metric]}</div>)}
+                <div className="text-sky-800">{metricText[tab]} ↑</div>
               </div>
             </div>
           </div>
-
-          <div className="mt-5 rounded-[1.85rem] border border-slate-200/75 bg-[linear-gradient(180deg,rgba(255,255,255,0.95),rgba(248,247,244,0.92))] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_18px_44px_rgba(15,23,42,0.04)] sm:p-5">
-            <div className="-mx-4 -mt-4 mb-5 border-b border-slate-200/60 bg-[rgba(255,255,255,0.72)] px-4 py-4 backdrop-blur-xl sm:-mx-5 sm:-mt-5 sm:px-5 sm:py-5">
-              <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-              <div>
-                <h2 className="text-xl font-semibold tracking-tight text-slate-950">{collection?.label ?? '自选'} · {metricText[tab]}榜单</h2>
-                <p className="mt-1 text-sm text-slate-600">当前展示基于 {adjustmentText[adjustment]} 口径排序</p>
-              </div>
-              <div className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-500">{continuousMetrics.includes(tab) ? '连续排序视图' : '可视化榜单'}</div>
-              </div>
-            </div>
-
-            <div className="mt-5 overflow-x-auto rounded-[1.5rem] border border-slate-200/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(250,250,249,0.9))] shadow-[inset_0_1px_0_rgba(255,255,255,0.92)]">
-              <div className="min-w-[960px]">
-                <div className={`sticky top-[72px] z-40 ${tableGridClass} min-h-[108px] border-b border-slate-200/85 bg-[#fcfcfb] px-4 py-3.5 text-[11px] font-medium tracking-[0.18em] text-slate-400 shadow-[0_10px_24px_rgba(15,23,42,0.06)]`}>
-                  <div className="flex items-center justify-center">
-                    <span className="text-[10px] text-slate-300">#</span>
+          <div ref={bodyScroll} className="ranking-body-scroll" data-testid="table-scroll" onScroll={(event) => {
+            if (headerScroll.current) headerScroll.current.scrollLeft = event.currentTarget.scrollLeft
+          }}>
+            <div className="market-body">
+              {rows.map((row, index) => (
+                <div key={row.code} data-code={row.code} data-metric={row[tab] ?? 'missing'} className="market-grid market-row">
+                  <div className="text-xs text-slate-400">{index + 1}</div>
+                  <div className="min-w-0 text-left">
+                    <p title={row.name} className="truncate font-medium text-slate-900">{row.name}</p>
+                    <p className="mt-1 text-xs text-slate-500">{row.code}</p>
                   </div>
-                  <div className="flex -translate-x-1 items-center justify-center px-2 text-center">
-                    <span>标的</span>
-                  </div>
-                  <div className="flex items-center justify-end px-2">
-                    <span>收盘价</span>
-                  </div>
-                  <div className="flex items-center justify-end px-2">
-                    <span>今日</span>
-                  </div>
-                  <div className={`${tab === 'distance_ma250_pct' ? 'hidden' : 'flex'} items-center justify-end px-2`}>
-                    <span>距年线</span>
-                  </div>
-                  <div className={`${tab === 'ytd_return_pct' ? 'hidden' : 'flex'} translate-x-1 items-center justify-self-center px-2 text-center`}>
-                    <span>YTD</span>
-                  </div>
-                  <div className={`${continuousMetrics.includes(tab) ? 'hidden' : 'flex'} items-center justify-end px-2`}>
-                    <span>52周高点</span>
-                  </div>
-                  <div className="flex items-center justify-center px-2 text-slate-700">
-                    <span>{metricText[tab]}</span>
-                  </div>
-                </div>
-
-                <div className="space-y-3 px-3 py-3">
-                  {displayGroups.map((group, groupIndex) => (
-                    <div key={group.separator ?? `all-${groupIndex}`} className="space-y-2">
-                      {group.rows.length ? (
-                        <>
-                          {group.rows.map((row) => {
-                          const index = rows.findIndex((item) => item.code === row.code) + 1
-                          return (
-                            <div key={`${adjustment}-${group.separator ?? 'all'}-${row.code}`} className={`${tableGridClass} items-center rounded-[1.2rem] border border-slate-200/60 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(250,250,248,0.88))] px-4 py-3.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.9)] transition hover:border-slate-300/75 hover:bg-white hover:shadow-[0_12px_30px_rgba(15,23,42,0.05)]`}>
-                              <div className="sticky left-0 z-10 flex justify-center bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(250,250,248,0.88))]">
-                                <p className="text-[11px] font-medium tabular-nums text-slate-300">{index}</p>
-                              </div>
-
-                              <div className="sticky left-[5%] z-10 min-w-0 rounded-[0.95rem] pr-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(250,250,248,0.88))] shadow-[14px_0_22px_rgba(250,250,249,0.98)]">
-                                <div className="min-w-0 rounded-[0.95rem] px-3 py-2">
-                                  <p className="truncate text-[15px] font-medium tracking-[-0.01em] text-slate-900">{row.name}</p>
-                                  <p className="mt-0.5 text-[12px] font-medium tracking-[0.08em] text-slate-400">{row.code}</p>
-                                </div>
-                              </div>
-
-                              <div className="px-2 text-right text-[15px] font-medium tabular-nums text-slate-900">{formatClose(row)}</div>
-                              <div className={`px-2 text-right text-[13px] font-medium tabular-nums ${getMetricTextClass(row.today_return_pct)}`}>{formatPct(row.today_return_pct)}</div>
-
-                              <div className={`${tab === 'distance_ma250_pct' ? 'hidden' : 'block'} px-2 text-right text-[13px] tabular-nums py-2`}>
-                                <div className="flex items-center justify-end gap-3">
-                                  <span className={`font-medium ${getMetricTextClass(row.distance_ma250_pct)}`}>{formatPct(row.distance_ma250_pct)}</span>
-                                </div>
-                              </div>
-
-                              <div className={`${tab === 'ytd_return_pct' ? 'hidden' : 'block'} px-2 text-right text-[13px] tabular-nums py-2`}>
-                                <div className="flex items-center justify-end gap-3">
-                                  <span className={`font-medium ${getMetricTextClass(row.ytd_return_pct)}`}>{formatPct(row.ytd_return_pct)}</span>
-                                </div>
-                              </div>
-
-                              <div className={`${continuousMetrics.includes(tab) ? 'hidden' : 'block'} px-2 text-right text-[13px] tabular-nums py-2`}>
-                                <div className="flex items-center justify-end gap-3">
-                                  <span className={`font-medium ${getMetricTextClass(row.distance_52w_high_pct)}`}>{formatPct(row.distance_52w_high_pct)}</span>
-                                </div>
-                              </div>
-
-                              <div className="px-2">
-                                <div className={`text-center text-[13px] tabular-nums ${getActiveMetricCellClass(tab, tab)}`}>
-                                  <div className="flex items-center justify-center gap-3">
-                                    <span className={`font-medium ${getActiveMetricTextClass(tab, row[tab])}`}>{formatMetric(tab, row[tab])}</span>
-                                  </div>
-                                  <div className="mt-2 h-[6px] w-full overflow-hidden rounded-full bg-slate-200/70">
-                                    <div
-                                      className={`h-full rounded-full ${tab === 'position_52w_pct' ? 'bg-[linear-gradient(90deg,rgba(14,165,233,0.72),rgba(56,189,248,0.92))]' : (row[tab] ?? 0) >= 0 ? 'bg-[linear-gradient(90deg,rgba(16,185,129,0.72),rgba(52,211,153,0.92))]' : 'bg-[linear-gradient(90deg,rgba(245,158,11,0.72),rgba(251,191,36,0.92))]'}`}
-                                      style={{ width: `${getMetricBarWidth(tab, row[tab], maxMetric)}%` }}
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          )
-                        })}
-                          {group.separator ? (
-                            <div className="flex items-center gap-2 px-1 pt-1.5">
-                              <div className="flex items-center gap-2 text-[11px] font-medium tabular-nums tracking-[0.14em] text-slate-300">
-                                <span className="h-px w-3 bg-slate-300" />
-                                <span>{group.separator}</span>
-                              </div>
-                              <div className="h-px flex-1 bg-slate-200/90" />
-                            </div>
-                          ) : null}
-                        </>
-                      ) : (
-                        <div className="px-1 py-2 text-sm text-slate-400">这个区间暂无股票</div>
-                      )}
-                    </div>
-                  ))}
-                  {suspended.map((item) => (
-                    <div key={item.code} data-trading-status="suspended" className={`${tableGridClass} items-center rounded-[1.2rem] border border-slate-200 bg-slate-50 px-4 py-3.5 text-slate-400`}>
-                      <div className="text-center">—</div>
-                      <div className="px-3 py-2">
-                        <p className="text-sm font-medium text-slate-700">{item.name}</p>
-                        <p className="mt-1 text-xs">{item.code}</p>
-                        <span title={item.note} className="mt-2 inline-block rounded bg-slate-200 px-2 py-1 text-xs font-medium text-slate-600">停牌</span>
-                        {item.note && <p className="mt-1 text-xs">{item.note}</p>}
+                  <div className="font-medium text-slate-900">{formatClose(row)}</div>
+                  <div className={getMetricTextClass(row.today_return_pct)}>{formatPct(row.today_return_pct)}</div>
+                  {contextMetrics.map((metric) => <div key={metric} className={getMetricTextClass(row[metric])}>{formatMetric(metric, row[metric])}</div>)}
+                  <div>
+                    <div className={getActiveMetricCellClass(tab, tab)}>
+                      <span className={getActiveMetricTextClass(tab, row[tab])}>{formatMetric(tab, row[tab])}</span>
+                      <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-slate-200">
+                        <div className={`h-full rounded-full ${tab === 'position_52w_pct' ? 'bg-sky-400' : (row[tab] ?? 0) >= 0 ? 'bg-emerald-400' : 'bg-rose-400'}`}
+                          style={{ width: `${getMetricBarWidth(tab, row[tab], maxMetric)}%` }} />
                       </div>
-                      {[0, 1, 2, 3, 4].map((column) => <div key={column} className="px-2 text-right">—</div>)}
                     </div>
-                  ))}
                   </div>
                 </div>
-              </div>
+              ))}
+              {rows.length === 0 && <p className="p-4 text-sm text-slate-500">当前列表暂无可用行情。</p>}
+              {suspended.map((item) => (
+                <div key={item.code} data-trading-status="suspended" className="market-grid market-row text-slate-400">
+                  <div>—</div>
+                  <div className="text-left">
+                    <p className="font-medium text-slate-700">{item.name}</p>
+                    <p className="mt-1 text-xs">{item.code}</p>
+                    <span className="mt-2 inline-block rounded bg-slate-200 px-2 py-1 text-xs text-slate-600">停牌</span>
+                    {item.note && <p className="mt-1 text-xs">{item.note}</p>}
+                  </div>
+                  {[0, 1, 2, 3, 4].map((column) => <div key={column}>—</div>)}
+                </div>
+              ))}
             </div>
-        </motion.section>
+          </div>
+        </section>
       </div>
     </main>
   )

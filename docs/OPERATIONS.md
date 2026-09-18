@@ -85,3 +85,7 @@ DATA-007 / UI-002：生成时下载 133 个唯一代码，原列表 42、新列�
 2026-09-18 验证：[运行 35319942727](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/35319942727)，功能提交 dfa84c7；14 项 Python 测试、lint、build、Pages 部署通过。真实数据成功 132、失败 0、停牌 1；两口径各 132 行，data_date=20260918。PSTG 使用 symbol=P，CFLT 独立 suspended 元数据。新列表 99 只有行情 + 1 只停牌，原列表 42 只有行情。
 
 本次变更文件：AGENTS.md、README.md、docs/ARCHITECTURE.md、docs/CHANGELOG.md、docs/CHANGE_REQUESTS.md、docs/DECISIONS.md、docs/REQUIREMENTS.md、docs/OPERATIONS.md、public/data/dashboard.json（仅安全占位与停牌身份）、scripts/stock_list.csv、scripts/data_pipeline/config.py、scripts/data_pipeline/summary.py、scripts/data_pipeline/yfinance_client.py、scripts/generate_dashboard.py、src/App.tsx、tests/test_collections.py。需求 DATA-008/UI-003；JSON 仅新增可选 suspended，原行情行和金融公式不变。风险：停牌配置需按核实结果维护，上游可用性仍取决于 Yahoo；普通取数失败不会被标记为停牌。
+
+## UI-004 浏览器回归
+
+安装临时浏览器检查依赖（不影响生产依赖）：`npm.cmd install --prefix .cache/browser --cache .cache/npm playwright --no-audit --no-fund`。本机须有 Edge。启动 `npm.cmd run dev -- --host 127.0.0.1 --port 5174` 后运行 `node tests/ui-regression.cjs`。可以用 DASHBOARD_TEST_URL 指定其他地址。测试从占位 JSON 生成明确标记的合成数据，仅拦截浏览器请求，不写入产品数据；验证 5 个列表 × 2 口径 × 5 指标的完整排序、缺失和停牌、链接/刷新/前后退、390/768/1440 布局、首行无重叠、滚动吸顶和横向列对齐。

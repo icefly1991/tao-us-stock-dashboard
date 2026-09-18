@@ -113,3 +113,10 @@ yfinance 不需要 API Key，因此仓库不需要行情密钥。
 维护只编辑 scripts/stock_list.csv：watchlist=original 表示原列表成员；tier=A/B/C 表示新列表成员；两列可同时有值。新增代码没有用户提供的公司名称时，名称使用 ticker。无法获取行情的代码保留成员资格并在页面提示。相关需求 DATA-007 / UI-002，变更 CR-001。
 
 停牌处理：CSV trading_status 默认 active；已核实且确认的停牌标的设 suspended，并填写 status_note。页面显示“停牌”、指标“—”；不得把限流或下载错误标记为停牌。PSTG 保留展示代码、以新代码 P 查询，CFLT 因收购停止交易按用户要求显示停牌。
+
+## 页面链接与默认排序
+
+- [原 Watchlist](https://icefly1991.github.io/tao-us-stock-dashboard/#/watchlist)
+- [新增列表](https://icefly1991.github.io/tao-us-stock-dashboard/#/research)，分档可用 #/research/A、#/research/B、#/research/C。
+
+五个指标均数值从低到高，优先展示相对弱势标的；缺失值和停牌置后。榜单标题、指标按钮与列标题下滑吸顶，横向滚动时列名同步。

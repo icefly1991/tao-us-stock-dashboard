@@ -100,3 +100,10 @@ CSV 保持 code 唯一；watchlist=original 标记原列表，tier=A/B/C 标记�
 - 关联：DATA-008、UI-003、CR-002
 
 停牌由 CSV 显式维护，不从下载错误推断。独立 suspended 元数据使既有有效行情行字段保持不变；页面仅展示停牌身份，不计算或伪造指标。当前仅 CFLT，说明为已被收购并停止交易。若未来临时停牌恢复交易，应依据核实结果将 CSV trading_status 改回 active。无有效行情的发布保护不变。
+
+## ADR-009：统一吸顶区域与静态页面路由
+
+- 状态：Accepted
+- 关联：UI-004、CR-003
+
+使用 hash 路由 #/watchlist、#/research、#/research/A|B|C 实现独立列表视图和真实链接导航，无需新增路由依赖或 Pages rewrite。仅新增列表显示分档入口。指标选项、榜单标题和表头组合为正常占位的 sticky top:0 区域，放在横向表体容器外；双向同步 scrollLeft，并使用相同 grid 列宽。去掉原 top:72px 偏移以及混合升降序和区间分组，所有指标数值升序、缺失末尾、停牌最后。
