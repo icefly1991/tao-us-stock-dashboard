@@ -89,3 +89,7 @@ DATA-007 / UI-002：生成时下载 133 个唯一代码，原列表 42、新列�
 ## UI-004 浏览器回归
 
 安装临时浏览器检查依赖（不影响生产依赖）：`npm.cmd install --prefix .cache/browser --cache .cache/npm playwright --no-audit --no-fund`。本机须有 Edge。启动 `npm.cmd run dev -- --host 127.0.0.1 --port 5174` 后运行 `node tests/ui-regression.cjs`。可以用 DASHBOARD_TEST_URL 指定其他地址。测试从占位 JSON 生成明确标记的合成数据，仅拦截浏览器请求，不写入产品数据；验证 5 个列表 × 2 口径 × 5 指标的完整排序、缺失和停牌、链接/刷新/前后退、390/768/1440 布局、首行无重叠、滚动吸顶和横向列对齐。
+
+UI-004 已发布：[运行 35327105376](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/35327105376)，功能提交 844a8b6。14 项 Python 测试、lint/build、Pages 部署通过。浏览器合成数据回归覆盖 50 组排序、链接刷新/前后退、390/768/1440 吸顶与横向对齐。线上真实数据复核原列表 42、新列表 99 行 + 1 停牌，5 个指标升序；390/1440 首行完整可见且标题表头持续吸顶。云端成功 132、失败 0、停牌 1，data_date=20260918。
+
+本次 UI-004 文件：src/App.tsx、src/index.css、tests/ui-regression.cjs、AGENTS.md、README.md、docs/REQUIREMENTS.md、docs/CHANGE_REQUESTS.md、docs/DECISIONS.md、docs/ARCHITECTURE.md、docs/CHANGELOG.md、docs/OPERATIONS.md。JSON 契约和金融公式不变；hash 链接无需额外服务器路由。无已知阻塞，手机宽度仍使用横向滚动浏览完整指标。
