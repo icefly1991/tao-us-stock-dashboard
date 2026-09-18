@@ -31,7 +31,7 @@
   "collections": [
     {
       "id": "original",
-      "label": "原 Watchlist",
+      "label": "持仓股",
       "codes": [
         "SMR",
         "VIX",
@@ -91,7 +91,7 @@
     },
     {
       "id": "research",
-      "label": "新增列表",
+      "label": "活跃股观察列表",
       "codes": [
         "HOOD",
         "MP",

@@ -43,7 +43,7 @@ def build_dashboard_payload(
             for item in watchlist if item.trading_status == "suspended"
         ]
         collections = []
-        for key, label in (("original", "原 Watchlist"), ("research", "新增列表"),
+        for key, label in (("original", "持仓股"), ("research", "活跃股观察列表"),
                            ("A", "A 档"), ("B", "B 档"), ("C", "C 档")):
             codes = [item.code for item in watchlist if
                      (item.watchlist == "original" if key == "original" else

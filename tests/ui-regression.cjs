@@ -25,7 +25,7 @@ const labels = ['距年线', '今年涨跌幅', '距52周高点', '距52周低�
     for (const [hash, id] of [['#/watchlist', 'original'], ['#/research', 'research'], ['#/research/A', 'A'], ['#/research/B', 'B'], ['#/research/C', 'C']]) {
       await page.goto(base + hash);
       await page.locator('.market-row[data-code]').first().waitFor();
-      assert.equal(await page.getByRole('navigation', { name: '新增列表分档', exact: true }).count(), id === 'original' ? 0 : 1);
+      assert.equal(await page.getByRole('navigation', { name: '活跃股观察列表分档', exact: true }).count(), id === 'original' ? 0 : 1);
       for (const [mode, modeLabel] of [['adjusted', '复权价'], ['raw', '未复权价']]) {
         await page.getByRole('button', { name: modeLabel, exact: true }).click();
         for (let j = 0; j < metrics.length; j++) {
@@ -42,9 +42,9 @@ const labels = ['距年线', '今年涨跌幅', '距52周高点', '距52周低�
         }
       }
     }
-    await page.getByRole('link', { name: '原 Watchlist', exact: true }).click();
+    await page.getByRole('link', { name: '持仓股', exact: true }).click();
     await page.waitForURL('**/#/watchlist');
-    await page.getByRole('link', { name: '新增列表', exact: true }).click();
+    await page.getByRole('link', { name: '活跃股观察列表', exact: true }).click();
     await page.waitForURL('**/#/research');
     await page.getByRole('link', { name: 'A 档 · 30', exact: true }).click();
     await page.waitForURL('**/#/research/A');

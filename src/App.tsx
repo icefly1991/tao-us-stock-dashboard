@@ -147,7 +147,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-    document.title = `${researchPage ? '新增列表' : '原 Watchlist'} · Tao 美股趋势看板`
+    document.title = `${researchPage ? '活跃股观察列表' : '持仓股'} · Tao 美股趋势看板`
   }, [researchPage])
 
   useEffect(() => {
@@ -196,7 +196,7 @@ function App() {
             <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-3xl">
                 <div className="inline-flex rounded-full border border-slate-200/80 bg-white/80 px-3 py-1 text-[11px] font-medium tracking-[0.22em] text-slate-500">DAILY MARKET SNAPSHOT</div>
-                <h1 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl lg:text-5xl">{researchPage ? '新增股票列表' : '原 Watchlist'}</h1>
+                <h1 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl lg:text-5xl">{researchPage ? '活跃股观察列表' : '持仓股'}</h1>
                 <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600 sm:text-base">美股常规交易时段收盘后更新，数据用于个人研究与趋势观察。</p>
                 <div className="mt-4 flex flex-wrap gap-2 text-xs text-slate-500">
                   <span className="rounded-full border border-slate-200 bg-white/85 px-3 py-1">yfinance 日线数据</span>
@@ -212,8 +212,8 @@ function App() {
             </div>
 
             <nav aria-label="列表页面" className="flex flex-wrap gap-2">
-              <a href="#/watchlist" aria-current={!researchPage ? 'page' : undefined} className={`page-link ${!researchPage ? 'selected' : ''}`}>原 Watchlist</a>
-              <a href="#/research" aria-current={researchPage ? 'page' : undefined} className={`page-link ${researchPage ? 'selected' : ''}`}>新增列表</a>
+              <a href="#/watchlist" aria-current={!researchPage ? 'page' : undefined} className={`page-link ${!researchPage ? 'selected' : ''}`}>持仓股</a>
+              <a href="#/research" aria-current={researchPage ? 'page' : undefined} className={`page-link ${researchPage ? 'selected' : ''}`}>活跃股观察列表</a>
             </nav>
 
             <div className="rounded-[1.6rem] border border-slate-200/80 bg-white/70 p-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.85)]">
@@ -256,7 +256,7 @@ function App() {
           )}
           {data.errors?.length ? <p className="mb-4 text-sm text-amber-800">本次有 {data.errors.length} 条数据提示；可用标的继续展示。</p> : null}
           {researchPage && data.collections && (
-            <nav aria-label="新增列表分档" className="mb-4 flex flex-wrap gap-2">
+            <nav aria-label="活跃股观察列表分档" className="mb-4 flex flex-wrap gap-2">
               {data.collections.filter((item) => item.id !== 'original').map((item) => (
                 <a key={item.id} href={item.id === 'research' ? '#/research' : `#/research/${item.id}`}
                   aria-current={collectionId === item.id ? 'page' : undefined}

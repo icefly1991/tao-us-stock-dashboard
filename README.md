@@ -120,3 +120,5 @@ yfinance 不需要 API Key，因此仓库不需要行情密钥。
 - [新增列表](https://icefly1991.github.io/tao-us-stock-dashboard/#/research)，分档可用 #/research/A、#/research/B、#/research/C。
 
 五个指标均数值从低到高，优先展示相对弱势标的；缺失值和停牌置后。榜单标题、指标按钮与列标题下滑吸顶，横向滚动时列名同步。
+
+当前页面名称为“持仓股”和“活跃股观察列表”，分别对应 #/watchlist 和 #/research，旧链接继续有效。
