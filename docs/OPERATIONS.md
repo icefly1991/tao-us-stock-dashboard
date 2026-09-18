@@ -81,3 +81,7 @@ DATA-007 / UI-002：生成时下载 133 个唯一代码，原列表 42、新列�
 ### 2026-09-18 多列表生产验证
 
 [运行 35295285660](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/35295285660) 已成功部署 ec2ed60。13 项 Python 测试、lint、build 通过，成功 131、失败 2（PSTG、CFLT），两口径各 131 行，data_date=20260917。原列表 42/42、新列表 98/100，A/B/C 分别 30/30、33/35、35/35。PSTG 的 P 映射已准备但待 CR-002 用户确认；CFLT 保留为缺失成员（已收购停止交易）。本地请求因 Yahoo 限流 0 成功 / 133 失败，data_date 不可用，未覆盖占位文件；真实验证以云端运行及线上 JSON 为准。
+
+2026-09-18 验证：[运行 35319942727](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/35319942727)，功能提交 dfa84c7；14 项 Python 测试、lint、build、Pages 部署通过。真实数据成功 132、失败 0、停牌 1；两口径各 132 行，data_date=20260918。PSTG 使用 symbol=P，CFLT 独立 suspended 元数据。新列表 99 只有行情 + 1 只停牌，原列表 42 只有行情。
+
+本次变更文件：AGENTS.md、README.md、docs/ARCHITECTURE.md、docs/CHANGELOG.md、docs/CHANGE_REQUESTS.md、docs/DECISIONS.md、docs/REQUIREMENTS.md、docs/OPERATIONS.md、public/data/dashboard.json（仅安全占位与停牌身份）、scripts/stock_list.csv、scripts/data_pipeline/config.py、scripts/data_pipeline/summary.py、scripts/data_pipeline/yfinance_client.py、scripts/generate_dashboard.py、src/App.tsx、tests/test_collections.py。需求 DATA-008/UI-003；JSON 仅新增可选 suspended，原行情行和金融公式不变。风险：停牌配置需按核实结果维护，上游可用性仍取决于 Yahoo；普通取数失败不会被标记为停牌。

@@ -27,7 +27,7 @@
 
 ### 自选列表
 
-CSV 唯一来源是 `scripts/stock_list.csv`。当前共 133 个唯一展示代码：原 watchlist 42 只，新增列表 100 只（A/B/C 为 30/35/35），跨列表重合 9 只。CSV 的 `watchlist=original` 和 `tier=A/B/C` 管理归属；页面默认原列表并可切换新列表与分档。JSON 通过可选 `collections` 提供成员与 Python 生成的汇总；旧字段与指标公式不变。参见 DATA-007 / UI-002、CR-001、ADR-007。新增功能已通过云端发布：131/133 成功，新列表 98/100。PSTG 已核实更名为 P，CR-002 已获用户确认，保留展示代码 PSTG 并查询 P。CFLT 已被收购停止交易，用户要求显示“停牌”：CSV 显式标记 trading_status=suspended，JSON 可选 suspended 数组保留身份与说明；页面末尾展示停牌、指标“—”，不计涨跌或下载失败，不替换为 IBM。未知下载失败不得推断为停牌。最终验证见 docs/OPERATIONS.md。
+CSV 唯一来源是 `scripts/stock_list.csv`。当前共 133 个唯一展示代码：原 watchlist 42 只，新增列表 100 只（A/B/C 为 30/35/35），跨列表重合 9 只。CSV 的 `watchlist=original` 和 `tier=A/B/C` 管理归属；页面默认原列表并可切换新列表与分档。JSON 通过可选 `collections` 提供成员与 Python 生成的汇总；旧字段与指标公式不变。参见 DATA-007 / UI-002、CR-001、ADR-007。新增功能已通过云端发布：132 只行情成功、0 失败、1 只停牌，新列表 99 只有行情 + CFLT 停牌。PSTG 已核实更名为 P，CR-002 已获用户确认，保留展示代码 PSTG 并查询 P。CFLT 已被收购停止交易，用户要求显示“停牌”：CSV 显式标记 trading_status=suspended，JSON 可选 suspended 数组保留身份与说明；页面末尾展示停牌、指标“—”，不计涨跌或下载失败，不替换为 IBM。未知下载失败不得推断为停牌。最终验证见 docs/OPERATIONS.md。
 
 原 42 个代码保留如下：
 

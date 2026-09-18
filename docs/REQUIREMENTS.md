@@ -263,7 +263,7 @@ README 和页面必须说明 yfinance/Yahoo 数据用于个人研究，可能延
 
 ## DATA-008 / UI-003：停牌状态展示
 
-- 状态：Accepted
+- 状态：Implemented
 - 日期：2026-09-18
 - 关联：CR-002、DATA-007、UI-002
 - 来源：用户授权处理 PSTG/CFLT，并要求停牌显示停牌。

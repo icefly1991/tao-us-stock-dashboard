@@ -60,3 +60,5 @@
 
 - CR-002 经用户明确确认：PSTG 查询 P，展示名称 Everpure (P)。
 - DATA-008 / UI-003、ADR-008：CFLT 在榜单末尾显示“停牌”和收购停止交易说明，各项数据为“—”；不再作为下载失败报警，列表总数保留。JSON 可选新增 suspended 元数据，既有指标行和公式不变。
+
+2026-09-18 验证：[运行 35319942727](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/35319942727)，功能提交 dfa84c7；14 项 Python 测试、lint、build、Pages 部署通过。真实数据成功 132、失败 0、停牌 1；两口径各 132 行，data_date=20260918。PSTG 使用 symbol=P，CFLT 独立 suspended 元数据。新列表 99 只有行情 + 1 只停牌，原列表 42 只有行情。
