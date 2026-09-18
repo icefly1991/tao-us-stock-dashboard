@@ -29,6 +29,12 @@ type DashboardData = {
   source: string
   updated_at: string
   data_date: string | null
+  collections?: {
+    id: string
+    label: string
+    codes: string[]
+    summaries: Record<AdjustmentKey, Record<SummaryKey, number>>
+  }[]
   adjustments: Record<AdjustmentKey, { summary: Record<SummaryKey, number>; rows: Row[] }>
   errors?: { code: string; name: string; error: string }[]
 }
@@ -138,6 +144,7 @@ function App() {
   const [adjustment, setAdjustment] = useState<AdjustmentKey>('adjusted')
   const [tab, setTab] = useState<MetricKey>('distance_ma250_pct')
   const [error, setError] = useState(false)
+  const [collectionId, setCollectionId] = useState('original')
 
   useEffect(() => {
     document.title = 'Tao 美股趋势看板'
@@ -152,12 +159,15 @@ function App() {
   }, [])
 
   const current = data?.adjustments[adjustment]
+  const collection = useMemo(() => data?.collections?.find((item) => item.id === collectionId), [data, collectionId])
+  const summary = collection?.summaries[adjustment] ?? current?.summary
+  const missingCodes = collection?.codes.filter((code) => !current?.rows.some((row) => row.code === code)) ?? []
   const rows = useMemo(
     () =>
       current
-        ? [...current.rows].sort((a, b) => compareMetric(a, b, tab))
+        ? current.rows.filter((row) => !collection || collection.codes.includes(row.code)).sort((a, b) => compareMetric(a, b, tab))
         : [],
-    [current, tab],
+    [current, collection, tab],
   )
   const maxMetric = useMemo(
     () => Math.max(...rows.map((row) => Math.abs(row[tab] ?? 0)), 1),
@@ -210,6 +220,18 @@ function App() {
               </div>
             </div>
 
+            {data.collections && (
+              <div aria-label="股票列表" className="flex flex-wrap gap-2">
+                {data.collections.map((item) => (
+                  <button key={item.id} type="button" aria-pressed={collectionId === item.id}
+                    onClick={() => setCollectionId(item.id)}
+                    className={`rounded-full border px-4 py-2.5 text-sm font-medium transition ${collectionId === item.id ? 'border-slate-900 bg-slate-900 text-white' : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'}`}>
+                    {item.label} · {item.codes.length}
+                  </button>
+                ))}
+              </div>
+            )}
+
             <div className="rounded-[1.6rem] border border-slate-200/80 bg-white/70 p-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.85)]">
               <div className="grid grid-cols-2 gap-1">
                 {(['adjusted', 'raw'] as const).map((key) => (
@@ -234,7 +256,7 @@ function App() {
               {cards.map((card, index) => (
                 <motion.div key={card.key} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 + index * 0.06, duration: 0.3 }} className="rounded-[1.75rem] border border-white/90 bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(248,245,239,0.95))] p-5 shadow-[0_18px_40px_rgba(15,23,42,0.05)]">
                   <p className="text-sm text-slate-500">{card.label}</p>
-                  <p className="mt-4 text-4xl font-semibold tracking-tight text-slate-950">{current.summary[card.key]}</p>
+                  <p className="mt-4 text-4xl font-semibold tracking-tight text-slate-950">{summary?.[card.key]}</p>
                   <p className="mt-3 text-sm text-slate-500">{card.note}</p>
                 </motion.div>
               ))}
@@ -243,6 +265,11 @@ function App() {
         </motion.section>
 
         <motion.section initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.08, duration: 0.35 }} className="rounded-[2rem] border border-white/80 bg-[linear-gradient(180deg,rgba(255,255,255,0.82),rgba(250,250,248,0.78))] p-5 shadow-[0_24px_60px_rgba(15,23,42,0.05)] backdrop-blur-sm sm:p-6">
+          {missingCodes.length > 0 && (
+            <div role="status" className="mb-4 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
+              当前列表可用 {rows.length} / {collection?.codes.length} 只；暂无可用行情：{missingCodes.join('、')}。列表总数包含这些标的，涨跌统计仅含可用行情。
+            </div>
+          )}
           {data.errors?.length ? (
             <div className="mb-4 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
               本次有 {data.errors.length} 条数据提示；可用标的继续展示，详情请查看生成日志。
@@ -269,14 +296,14 @@ function App() {
             <div className="-mx-4 -mt-4 mb-5 border-b border-slate-200/60 bg-[rgba(255,255,255,0.72)] px-4 py-4 backdrop-blur-xl sm:-mx-5 sm:-mt-5 sm:px-5 sm:py-5">
               <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <h2 className="text-xl font-semibold tracking-tight text-slate-950">{metricText[tab]}榜单</h2>
+                <h2 className="text-xl font-semibold tracking-tight text-slate-950">{collection?.label ?? '自选'} · {metricText[tab]}榜单</h2>
                 <p className="mt-1 text-sm text-slate-600">当前展示基于 {adjustmentText[adjustment]} 口径排序</p>
               </div>
               <div className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-500">{continuousMetrics.includes(tab) ? '连续排序视图' : '可视化榜单'}</div>
               </div>
             </div>
 
-            <div className="mt-5 overflow-visible rounded-[1.5rem] border border-slate-200/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(250,250,249,0.9))] shadow-[inset_0_1px_0_rgba(255,255,255,0.92)]">
+            <div className="mt-5 overflow-x-auto rounded-[1.5rem] border border-slate-200/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(250,250,249,0.9))] shadow-[inset_0_1px_0_rgba(255,255,255,0.92)]">
               <div className="min-w-[960px]">
                 <div className={`sticky top-[72px] z-40 ${tableGridClass} min-h-[108px] border-b border-slate-200/85 bg-[#fcfcfb] px-4 py-3.5 text-[11px] font-medium tracking-[0.18em] text-slate-400 shadow-[0_10px_24px_rgba(15,23,42,0.06)]`}>
                   <div className="flex items-center justify-center">

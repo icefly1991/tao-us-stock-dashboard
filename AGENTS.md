@@ -27,7 +27,9 @@
 
 ### 自选列表
 
-CSV 唯一来源是 `scripts/stock_list.csv`，共 42 个去重后的展示代码：
+CSV 唯一来源是 `scripts/stock_list.csv`。当前共 133 个唯一展示代码：原 watchlist 42 只，新增列表 100 只（A/B/C 为 30/35/35），跨列表重合 9 只。CSV 的 `watchlist=original` 和 `tier=A/B/C` 管理归属；页面默认原列表并可切换新列表与分档。JSON 通过可选 `collections` 提供成员与 Python 生成的汇总；旧字段与指标公式不变。参见 DATA-007 / UI-002、CR-001、ADR-007。新增功能尚待生产发布验证。
+
+原 42 个代码保留如下：
 
 ```text
 SMR, VIX, IMSR, NABL, HOOD, MP, ORCL, HIMS, BITX, CRWV, IBIT, RZLV,

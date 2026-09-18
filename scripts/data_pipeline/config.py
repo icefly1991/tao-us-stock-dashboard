@@ -21,6 +21,8 @@ class WatchlistItem:
     name: str
     symbol: str
     asset_type: str
+    watchlist: str = "original"
+    tier: str = ""
 
 
 @dataclass(frozen=True)
@@ -68,6 +70,12 @@ def load_watchlist(path: Path) -> list[WatchlistItem]:
             name = (row.get("name") or "").strip()
             symbol = (row.get("symbol") or code).strip().upper()
             asset_type = (row.get("asset_type") or "stock").strip().lower()
+            watchlist = row.get("watchlist", "original").strip()
+            tier = (row.get("tier") or "").strip().upper()
+            if watchlist not in {"", "original"} or tier not in {"", "A", "B", "C"}:
+                raise RuntimeError(f"Unsupported list membership on row {row_number} in {path}")
+            if not watchlist and not tier:
+                raise RuntimeError(f"Missing list membership on row {row_number} in {path}")
             if not code:
                 continue
             if asset_type not in {"stock", "etf", "index", "crypto"}:
@@ -78,6 +86,8 @@ def load_watchlist(path: Path) -> list[WatchlistItem]:
                     name=name or code,
                     symbol=symbol,
                     asset_type=asset_type,
+                    watchlist=watchlist,
+                    tier=tier,
                 )
             )
 

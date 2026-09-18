@@ -60,3 +60,9 @@ Vite dist ---------- GitHub Pages
 - 更换数据源：新增客户端并继续输出标准化 `trade_date/close/high/low` DataFrame。
 - 新增指标：先写需求与公式，再在 `indicators.py` 实现，更新 JSON 类型和 UI。
 - 新增资产：先确认 yfinance symbol 和资产类型，不在前端硬编码映射。
+
+## 多列表扩展（CR-001 / DATA-007 / UI-002）
+
+CSV 增加 watchlist、tier：原 42 只标记 watchlist=original，新 100 只标记 tier=A/B/C，9 只兼属两个列表。所有代码仍唯一，共 133 只。旧 CSV 无新增列时默认为原列表。
+
+可选顶层 collections 为数组，每项包含 id（original/research/A/B/C）、label、codes（含下载失败的代码）及 summaries.adjusted/raw。汇总仍为 watchlist_total/today_up/today_down，总数为成员数量，涨跌数仅统计成功行。原 adjustments 行字段不变，顶层汇总涵盖全部唯一代码。页面根据 codes 筛选行，显示当前列表缺失代码；无 collections 的旧 JSON 回退为原有单列表视图。

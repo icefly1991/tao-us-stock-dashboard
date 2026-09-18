@@ -73,3 +73,7 @@
 - [ ] 缺失指标显示“—”并排在末尾
 - [ ] CHANGELOG 已更新
 - [ ] `AGENTS.md` 的一次读懂摘要已与正式需求同步
+
+## 多列表验证
+
+DATA-007 / UI-002：生成时下载 133 个唯一代码，原列表 42、新列表 100、A/B/C 为 30/35/35。检查 collections 的代码和 summaries，以及页面两种口径下的列表切换。失败代码不删除或猜测替换，按 errors 排障。Windows 可使用 .venv\Scripts\python.exe 和 npm.cmd 执行命令。

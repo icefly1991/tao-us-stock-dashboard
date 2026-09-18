@@ -1,0 +1,42 @@
+from __future__ import annotations
+
+import sys
+import unittest
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+
+from data_pipeline.config import STOCK_LIST_FILE, WatchlistItem, load_watchlist
+from data_pipeline.summary import build_dashboard_payload
+
+
+class CollectionTests(unittest.TestCase):
+    def test_membership_counts_and_original_list_preserved(self):
+        items = load_watchlist(STOCK_LIST_FILE)
+        original = {item.code for item in items if item.watchlist == "original"}
+        expected = set("SMR VIX IMSR NABL HOOD MP ORCL HIMS BITX CRWV IBIT RZLV MCD IREN ATCH CRCL NVDA NKE KLAR MNTN MSFT META RGTI NXH AVGO QQQ ETOR ARKO UAA PG DOGEUSD STUB VOR MSTR GEMI OSCR DKNG AMD TQQQ APP WBTN FIG".split())
+        self.assertEqual(original, expected)
+        self.assertEqual(len(items), 133)
+        self.assertEqual(len({item.symbol for item in items}), 133)
+        self.assertEqual([sum(item.tier == tier for item in items) for tier in "ABC"], [30, 35, 35])
+        self.assertEqual(len(original & {item.code for item in items if item.tier}), 9)
+
+    def test_shared_stock_and_failed_member_counts_in_both_modes(self):
+        items = [WatchlistItem("SHARED", "Shared", "SHARED", "stock", "original", "A"),
+                 WatchlistItem("MISSING", "Missing", "MISSING", "stock", "", "B")]
+        payload = build_dashboard_payload(
+            {"adjusted": [{"code": "SHARED", "today_return_pct": 1}],
+             "raw": [{"code": "SHARED", "today_return_pct": -1}]},
+            [{"code": "MISSING", "error": "no data"}], 2, watchlist=items)
+        groups = {item["id"]: item for item in payload["collections"]}
+        self.assertEqual(groups["research"]["codes"], ["SHARED", "MISSING"])
+        self.assertEqual(groups["research"]["summaries"]["adjusted"],
+                         {"watchlist_total": 2, "today_up": 1, "today_down": 0})
+        self.assertEqual(groups["A"]["summaries"]["raw"]["today_down"], 1)
+        self.assertEqual(groups["B"]["summaries"]["raw"],
+                         {"watchlist_total": 1, "today_up": 0, "today_down": 0})
+        self.assertEqual(groups["original"]["codes"], ["SHARED"])
+
+
+if __name__ == "__main__":
+    unittest.main()

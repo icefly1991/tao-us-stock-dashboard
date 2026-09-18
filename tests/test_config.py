@@ -48,6 +48,12 @@ class WatchlistTests(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError, "Unsupported"):
             load_watchlist(path)
 
+    def test_rejects_invalid_membership(self) -> None:
+        for membership in (",D", ",", "unknown,A"):
+            path = self.write_csv("code,name,symbol,asset_type,watchlist,tier\nTEST,Test,TEST,stock," + membership + "\n")
+            with self.assertRaisesRegex(RuntimeError, "membership"):
+                load_watchlist(path)
+
 
 if __name__ == "__main__":
     unittest.main()
