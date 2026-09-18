@@ -127,3 +127,7 @@ EIKN 代码依据：[Nasdaq 上市记录](https://www.nasdaqprivatemarket.com/co
 变更文件：src/App.tsx、scripts/stock_list.csv、public/data/dashboard.json（安全占位）、tests/test_collections.py、tests/history-ui-regression.cjs、AGENTS.md、docs/{REQUIREMENTS,CHANGE_REQUESTS,CHANGELOG,DECISIONS,OPERATIONS,LIST_REVIEW}.md。研究代表性公司资料截至 2026-09-19，非全名单逐只尽调或当前估值审核。
 
 线上另验名称按钮移除、观察 99/无停牌、TTAN 真实 K 线；首次图表网络加载超时，重试通过。最新 262 份历史文件已逐份校验同批版本并同步本地。
+
+## DATA-011 名称数据修复
+
+原因：CSV 中大量新增股票的 name 被初始化为 ticker；不是 React 重复渲染。数据源核实于 2026-09-19：[Nasdaq 股票目录](https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt)、[其他交易所目录](https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt)。移除证券类别后保留公司名称；RH 现名确实与代码相同，显示 RH (formerly Restoration Hardware)，依据 [RH FAQ](https://ir.rh.com/resources/faq)。名称仅改 CSV，不增加行情请求、前端映射或 JSON 字段。
