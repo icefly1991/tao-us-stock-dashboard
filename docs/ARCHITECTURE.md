@@ -82,3 +82,5 @@ CSV 新增 trading_status（active 默认 / suspended）和 status_note。顶层
 生成脚本在榜单 JSON 前导出 data/history/{adjusted|raw}/{code}.json，字段 code/adjustment/updated_at/source/requested_start/actual_start/actual_end/daily/weekly/metrics。daily/weekly 元素 time(YYYY-MM-DD)/open/high/low/close/volume（可 null）。updated_at 与 dashboard 同次生成。CFLT 不生成文件；仓库不提交真实历史行情。
 
 StockCopy/clipboard 提供写剪贴板、旧接口降级和手动复制框。StockHistoryPreview 使用 portal，StockHistoryChart 懒加载 lightweight-charts，按 code/adjustment/updated_at 缓存，失败移除缓存允许重试。页面或口径改变会卸载旧预览；前端只绘图和时间筛选，不计算金融指标。
+
+CR-004 数据质量处理：已验证 Yahoo 的 MNTN/ONON/IOT 含历史 OHLC 矛盾日线。图表不修造价格，跳过并以 skipped_dates 记录、窗口明确提示；受影响周按可用日线聚合，周成交量置 null，避免不完整总量冒充完整周。若最新日异常导致图表最后日期与榜单不同，则图表仍不可用。原榜单计算不变。

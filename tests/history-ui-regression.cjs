@@ -22,7 +22,7 @@ const base = process.env.DASHBOARD_TEST_URL || 'http://127.0.0.1:5174/tao-us-sto
   if(code==='TTAN' && requests[key]===1)return r.fulfill({status:503,body:'unavailable'});
   const scale=mode==='raw'?2:1;
   const daily=Array.from({length:30},(_,i)=>({time:new Date(Date.UTC(2026,7,i+1)).toISOString().slice(0,10),open:(10+i)*scale,high:(13+i)*scale,low:(9+i)*scale,close:(12+i)*scale,volume:i===0?null:100+i}));
-  return r.fulfill({contentType:'application/json',body:JSON.stringify({code,adjustment:mode,updated_at:code==='HOOD'?'wrong-version':data.updated_at,requested_start:'2021-09-18',actual_start:daily[0].time,actual_end:daily.at(-1).time,daily,weekly:daily.filter((_,i)=>i%5===0),metrics:{high:42*scale,low:9*scale,close:41*scale,distance_high_pct:-2.38,position_pct:96.97}})});
+  return r.fulfill({contentType:'application/json',body:JSON.stringify({code,adjustment:mode,updated_at:code==='HOOD'?'wrong-version':data.updated_at,skipped_dates:code==='EIKN'?['2026-07-31']:[],requested_start:'2021-09-18',actual_start:daily[0].time,actual_end:daily.at(-1).time,daily,weekly:daily.filter((_,i)=>i%5===0),metrics:{high:42*scale,low:9*scale,close:41*scale,distance_high_pct:-2.38,position_pct:96.97}})});
  });
  await page.goto(base+'#/watchlist');
  await page.locator('[data-code="EIKN"]').waitFor();
@@ -43,6 +43,7 @@ const base = process.env.DASHBOARD_TEST_URL || 'http://127.0.0.1:5174/tao-us-sto
  await page.getByRole('button',{name:'近一年 · 日K',exact:true}).click();
  await page.getByRole('dialog').locator('[aria-label="近一年日K线及成交量（复权）"]').waitFor();
  assert.equal(requests['adjusted:EIKN'],1);
+ await page.getByRole('note').waitFor();
  await page.screenshot({path:'.cache/browser/history-desktop.png'});
  await page.keyboard.press('Escape');
  assert.equal(await page.evaluate(()=>document.activeElement.getAttribute('aria-label')),'查看Eikon Therapeutics历史K线');

@@ -45,6 +45,23 @@ class HistoryTests(unittest.TestCase):
         self.assertIsNone(chart["weekly"][0]["volume"])
         self.assertEqual(chart["weekly"][1]["volume"], 50)
 
+    def test_invalid_older_bar_is_omitted_and_week_volume_is_not_faked(self):
+        self.downloaded.loc[self.downloaded.index[0], ("TEST", "Open")] = 99
+        chart = self.chart()
+        self.assertEqual(chart["skipped_dates"], ["2026-09-10"])
+        self.assertEqual(len(chart["daily"]), 3)
+        self.assertIsNone(chart["weekly"][0]["volume"])
+        self.assertEqual(chart["weekly"][1]["volume"], 50)
+
+    def test_invalid_latest_bar_cannot_serve_a_stale_chart(self):
+        self.downloaded.loc[self.downloaded.index[-1], ("TEST", "Open")] = 99
+        config = replace(build_runtime_config(date(2026, 9, 18)), watchlist=[WatchlistItem("TEST", "Test", "TEST", "stock")])
+        client = YFinancePipelineClient(config)
+        client.download_history = Mock(return_value=self.downloaded)
+        result = client.build_adjustment_rows()
+        self.assertFalse(result.rows_by_adjustment["adjusted"][0]["history_available"])
+        self.assertEqual(len(result.history_errors), 2)
+
     def test_missing_open_does_not_remove_valid_dashboard_metrics(self):
         self.downloaded = self.downloaded.drop(columns=[("TEST", "Open")])
         config = replace(build_runtime_config(date(2026, 9, 18)), watchlist=[WatchlistItem("TEST", "Test", "TEST", "stock")])

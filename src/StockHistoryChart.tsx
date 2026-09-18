@@ -6,6 +6,7 @@ type Bar = { time: string; open: number; high: number; low: number; close: numbe
 type History = {
   code: string; updated_at: string; adjustment: string; actual_start: string; actual_end: string; requested_start: string
   daily: Bar[]; weekly: Bar[]
+  skipped_dates?: string[]
   metrics: { position_pct: number | null; distance_high_pct: number; high: number; low: number; close: number }
 }
 const cache = new Map<string, Promise<History>>()
@@ -67,6 +68,7 @@ export default function StockHistoryChart({ code, updatedAt, adjustment = 'adjus
       <span className="text-[10px] text-slate-400">绿涨红跌 · 下方为成交量</span>
     </div>
     <CandleChart history={history} mode={mode} />
+    {!!history.skipped_dates?.length && <p role="note" className="mt-2 rounded-lg bg-amber-50 p-2 text-xs text-amber-800">已略过 {history.skipped_dates.length} 条异常日线，区间信息仅基于有效数据。受影响的周 K 按可用日线聚合，周成交量显示“—”。</p>}
     <p className="mt-1 text-[10px] leading-4 text-slate-500">{history.actual_start} 至 {history.actual_end}{shorter ? ' · 历史不足五年，按可用区间展示' : ''}。周K按周内交易日聚合，末周可能尚未结束。</p>
     <div className="mt-1 flex flex-wrap justify-between gap-1 text-[10px] text-slate-400"><span>yfinance 日线 · 成交量使用原始单位，缺失不补零</span><a href="https://www.tradingview.com/" target="_blank" rel="noreferrer" className="hover:text-sky-700">TradingView Lightweight Charts™ © 2026 TradingView, Inc.</a></div>
   </div>

@@ -20,6 +20,10 @@ def main() -> None:
     print(f"Chart errors: {len(result.history_errors)}")
     for error in result.history_errors:
         print(f"Chart unavailable: {error['code']} {error['error']}")
+    for adjustment, histories in result.histories.items():
+        for code, history in histories.items():
+            if history.get("skipped_dates"):
+                print(f"Chart gaps: {code} {adjustment} {history['skipped_dates']}")
 
     if valid_row_count == 0:
         status = "Kept existing dashboard.json." if dashboard_exists(config.output_json_file) else "No dashboard.json written."
