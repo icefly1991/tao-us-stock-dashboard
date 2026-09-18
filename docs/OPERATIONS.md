@@ -131,3 +131,5 @@ EIKN 代码依据：[Nasdaq 上市记录](https://www.nasdaqprivatemarket.com/co
 ## DATA-011 名称数据修复
 
 原因：CSV 中大量新增股票的 name 被初始化为 ticker；不是 React 重复渲染。数据源核实于 2026-09-19：[Nasdaq 股票目录](https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt)、[其他交易所目录](https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt)。移除证券类别后保留公司名称；RH 现名确实与代码相同，显示 RH (formerly Restoration Hardware)，依据 [RH FAQ](https://ir.rh.com/resources/faq)。名称仅改 CSV，不增加行情请求、前端映射或 JSON 字段。
+
+DATA-011 验收：补齐 91 条名称。21 项 Python 测试、lint/build 通过；本地与线上浏览器逐行检查两页面/两口径，133 条名称非空且不重复代码，持仓 43/观察 99、名称无复制按钮。生产运行 [35375181062](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/35375181062)，提交 c1c9951：真实行情 133 成功、0 失败、0 停牌，data_date=20260918；262 个 K 线文件，4 个口径级源数据错误沿用明确不可用提示。变更文件 scripts/stock_list.csv、AGENTS.md、docs/REQUIREMENTS.md、docs/CHANGELOG.md、docs/OPERATIONS.md；JSON 契约不变。长名称按现有布局省略，鼠标停留可查看完整名称；名称未来变更需维护 CSV。
