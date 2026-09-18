@@ -84,3 +84,5 @@ UI-004 已发布：[运行 35327105376](https://github.com/icefly1991/tao-us-sto
 - CR-004 / ADR-010：同次请求扩展五年；新增历史 JSON 和 history_available，原指标窗口与公式不变。
 
 CR-004 数据质量处理：已验证 Yahoo 的 MNTN/ONON/IOT 含历史 OHLC 矛盾日线。图表不修造价格，跳过并以 skipped_dates 记录、窗口明确提示；受影响周按可用日线聚合，周成交量置 null，避免不完整总量冒充完整周。若最新日异常导致图表最后日期与榜单不同，则图表仍不可用。原榜单计算不变。
+
+2026-09-19：CR-004 已部署，21 项 Python 测试及浏览器检查通过；榜单 133 成功/0 失败/1 停牌，K 线 260 文件。MNTN/ONON/IOT 因最新日源 OHLC 异常明确暂不可用。完整验收见 OPERATIONS.md。

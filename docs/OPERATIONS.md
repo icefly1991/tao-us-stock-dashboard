@@ -96,8 +96,21 @@ UI-004 已发布：[运行 35327105376](https://github.com/icefly1991/tao-us-sto
 
 ## 复制与 K 线检查（CR-004）
 
-测试：`python -m unittest discover -s tests -v`（当前 19 项）、`npm run lint`、`npm run build`。本地 Vite 5174 启动后运行 `node tests/ui-regression.cjs` 和 `node tests/history-ui-regression.cjs`，使用合成数据拦截检查，不写入生产行情。后者覆盖持仓 43/OSCR 观察归属、复制及失败手动降级、悬停/固定/Esc/焦点返回、缓存、周日切换、口径、版本校验、重试、停牌无图表和手机窗口边界。
+测试：`python -m unittest discover -s tests -v`（当前 21 项）、`npm run lint`、`npm run build`。本地 Vite 5174 启动后运行 `node tests/ui-regression.cjs` 和 `node tests/history-ui-regression.cjs`，使用合成数据拦截检查，不写入生产行情。后者覆盖持仓 43/OSCR 观察归属、复制及失败手动降级、悬停/固定/Esc/焦点返回、缓存、周日切换、口径、版本校验、重试、停牌无图表和手机窗口边界。
 
 生成脚本新增 Chart files / Chart errors 日志；预期 133 个非停牌标的、两口径合计最多 266 个图表文件。图表失败独立记录，不影响有效榜单行；K 线文件 version（updated_at）必须与 dashboard 一致，避免不同发布批次混用。历史文件仅在工作流生成，不提交仓库；本地预览同步同一发布批次的 dashboard 和 history 文件。
 
 EIKN 代码依据：[Nasdaq 上市记录](https://www.nasdaqprivatemarket.com/company/eikon-therapeutics/)，[Yahoo](https://finance.yahoo.com/quote/EIKN/)。实际取数验收以本次生成记录为准。
+
+
+### 2026-09-19 CR-004 发布验收
+
+[运行 35365878362](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/35365878362)，功能提交 5494105：21 项 Python 测试、lint、build、Pages 部署通过。data_date=20260918；榜单成功 133、失败 0、停牌 1。持仓 43（移出 OSCR，加入 EIKN/TTAN），观察列表 100（OSCR 保留）。
+
+图表成功 130 只、两口径共 260 文件；6 个口径级错误对应 MNTN/ONON/IOT 三只股票：源数据最新日 OHLC 不一致，过滤后末日与榜单不同，因此显示暂不可用，不展示旧日冒充当前。原榜单指标未修改。此为剩余上游数据限制，后续每日生成会重新检查。
+
+浏览器合成数据回归通过：原 50 组排序/吸顶/导航检查，以及复制、悬浮/固定、日周切换、复权、失败重试、版本拒绝、缺失提示、移动端边界。真实数据另验本地 5175 与生产页面的 EIKN/TTAN 图表、43 只持仓、OSCR 观察列表归属、MNTN 不可用提示及手机窗口；260 份历史 JSON 同步本地前逐份校验版本/代码/口径。
+
+关联需求 DATA-009/UI-005/UI-006、CR-004、ADR-010。JSON 契约：榜单行新增可选 history_available，独立 data/history/{adjusted|raw}/{code}.json 新增 OHLCV 日/周线、实际区间、区间指标及 skipped_dates；原指标公式不变。实际行情及历史文件不提交仓库。
+
+变更文件：scripts/stock_list.csv、scripts/data_pipeline/{config,indicators,history,yfinance_client}.py、scripts/generate_dashboard.py、src/{App,StockCopy,StockHistoryPreview,StockHistoryChart,icons}.tsx、src/clipboard.ts、package.json/package-lock.json、.gitignore、public/data/dashboard.json（安全占位）、tests/{test_collections,test_history}.py、tests/history-ui-regression.cjs，以及 AGENTS.md、README.md 和 docs 下需求、CR、ADR、架构、指标、变更日志、运行文档。

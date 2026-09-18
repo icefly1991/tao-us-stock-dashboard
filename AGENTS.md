@@ -27,7 +27,7 @@
 
 ### 自选列表
 
-CSV 唯一来源是 `scripts/stock_list.csv`。当前共 134 个唯一展示代码：持仓股 43 只，活跃股观察列表 100 只（A/B/C 为 30/35/35），跨列表重合 9 只。CSV 的 `watchlist=original` 和 `tier=A/B/C` 管理归属；页面默认原列表（#/watchlist），通过链接进入独立新增列表页面（#/research），后者支持 A/B/C 分档深链接。五个指标均数值升序、弱势优先，缺失与停牌置后；榜单标题、选项和表头统一吸顶，参见 UI-004/CR-003。JSON 通过可选 `collections` 提供成员与 Python 生成的汇总；旧字段与指标公式不变。参见 DATA-007 / UI-002、CR-001、ADR-007。新增功能已通过云端发布：132 只行情成功、0 失败、1 只停牌，新列表 99 只有行情 + CFLT 停牌。PSTG 已核实更名为 P，CR-002 已获用户确认，保留展示代码 PSTG 并查询 P。CFLT 已被收购停止交易，用户要求显示“停牌”：CSV 显式标记 trading_status=suspended，JSON 可选 suspended 数组保留身份与说明；页面末尾展示停牌、指标“—”，不计涨跌或下载失败，不替换为 IBM。未知下载失败不得推断为停牌。最终验证见 docs/OPERATIONS.md。
+CSV 唯一来源是 `scripts/stock_list.csv`。当前共 134 个唯一展示代码：持仓股 43 只，活跃股观察列表 100 只（A/B/C 为 30/35/35），跨列表重合 9 只。CSV 的 `watchlist=original` 和 `tier=A/B/C` 管理归属；页面默认原列表（#/watchlist），通过链接进入独立新增列表页面（#/research），后者支持 A/B/C 分档深链接。五个指标均数值升序、弱势优先，缺失与停牌置后；榜单标题、选项和表头统一吸顶，参见 UI-004/CR-003。JSON 通过可选 `collections` 提供成员与 Python 生成的汇总；旧字段与指标公式不变。参见 DATA-007 / UI-002、CR-001、ADR-007。新增功能已通过云端发布：133 只行情成功、0 失败、1 只停牌，新列表 99 只有行情 + CFLT 停牌。PSTG 已核实更名为 P，CR-002 已获用户确认，保留展示代码 PSTG 并查询 P。CFLT 已被收购停止交易，用户要求显示“停牌”：CSV 显式标记 trading_status=suspended，JSON 可选 suspended 数组保留身份与说明；页面末尾展示停牌、指标“—”，不计涨跌或下载失败，不替换为 IBM。未知下载失败不得推断为停牌。最终验证见 docs/OPERATIONS.md。
 
 最初 42 个代码基线如下（历史记录）；当前持仓已按 CR-004 移除 OSCR，加入 EIKN 与 TTAN：
 
@@ -128,3 +128,5 @@ npm run build
 ## 复制与 K 线速览（CR-004）
 
 持仓 43、观察列表 100、交集 9、合计 134（CFLT 停牌）。EIKN 为 Eikon Therapeutics；OSCR 仅移出持仓，TTAN 同时属于两列表。点击名称/代码复制；悬停代码预览，点图标固定，手机点击打开。data/history/{adjusted|raw}/{code}.json 按需加载，版本、代码、口径须与榜单一致；停牌不请求图表。参见 DATA-009/UI-005/UI-006。
+
+CR-004 已发布并验证：21 项 Python 测试、lint/build 及浏览器回归通过；data_date=20260918，133 只榜单成功、0 失败、CFLT 停牌。130 只提供两口径共 260 个 K 线文件；MNTN/ONON/IOT 最新日 OHLC 矛盾，图表明确不可用，榜单保留。生产与本地真实数据窗口验证见 docs/OPERATIONS.md。
