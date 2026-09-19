@@ -133,3 +133,14 @@ EIKN 代码依据：[Nasdaq 上市记录](https://www.nasdaqprivatemarket.com/co
 原因：CSV 中大量新增股票的 name 被初始化为 ticker；不是 React 重复渲染。数据源核实于 2026-09-19：[Nasdaq 股票目录](https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt)、[其他交易所目录](https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt)。移除证券类别后保留公司名称；RH 现名确实与代码相同，显示 RH (formerly Restoration Hardware)，依据 [RH FAQ](https://ir.rh.com/resources/faq)。名称仅改 CSV，不增加行情请求、前端映射或 JSON 字段。
 
 DATA-011 验收：补齐 91 条名称。21 项 Python 测试、lint/build 通过；本地与线上浏览器逐行检查两页面/两口径，133 条名称非空且不重复代码，持仓 43/观察 99、名称无复制按钮。生产运行 [35375181062](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/35375181062)，提交 c1c9951：真实行情 133 成功、0 失败、0 停牌，data_date=20260918；262 个 K 线文件，4 个口径级源数据错误沿用明确不可用提示。变更文件 scripts/stock_list.csv、AGENTS.md、docs/REQUIREMENTS.md、docs/CHANGELOG.md、docs/OPERATIONS.md；JSON 契约不变。长名称按现有布局省略，鼠标停留可查看完整名称；名称未来变更需维护 CSV。
+
+
+## 2026-09-19 CR-006 名单更新
+
+DATA-012/RES-003：按用户要求排除中概，边界 AOSL 因中国经营敞口从严排除。移除 FUTU/TIGR/LI/XPEV/BILI/ACMR/AOSL，增加观察 FIG/FSLY/POWL/HUT/WULF/ASTS/IONQ/CRSP。观察 100（30/35/35），持仓 43，交集 10，唯一代码 133。FIG 仅加观察归属，不新增重复行。
+
+[生产运行 35420819068](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/35420819068)，功能提交 7a3399a。21 项 Python 测试、lint/build、50 组排序/吸顶/导航及复制/K 线浏览器回归通过；真实 yfinance 133 成功、0 失败、0 停牌，data_date=20260918，266 个 K 线文件、图表错误 0。之前 ONON/IOT 等图表不可用是历史数据源状态，本批已恢复。
+
+变更文件：scripts/stock_list.csv、public/data/dashboard.json（安全占位）、tests/test_collections.py、AGENTS.md、docs/{REQUIREMENTS,CHANGE_REQUESTS,CHANGELOG,LIST_REVIEW,OPERATIONS}.md、docs/reviews/2026-09-19-ex-china.md。JSON 契约、榜单公式、数据源与更新频率不变。详细业务依据、波动证据、分类边界见研究记录。定时复核任务尚未注册，不因模板更新声称自动执行。
+
+CR-006 最终复核：本地 5175 与线上页面均通过 100 只观察/43 只持仓、七只剔除、八只新增和两口径全部 16 个新成员 K 线及手机边界检查。266 份历史文件已逐份核验版本/代码/口径并同步本地；同批 60 日波动及流动性代理统计存入研究记录。
