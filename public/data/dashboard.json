@@ -96,6 +96,7 @@
         "OSCR",
         "DKNG",
         "APP",
+        "FIG",
         "CRDO",
         "ALAB",
         "NBIS",
@@ -133,8 +134,6 @@
         "MTSI",
         "TOST",
         "NU",
-        "FUTU",
-        "TIGR",
         "DAVE",
         "ROOT",
         "LMND",
@@ -164,9 +163,6 @@
         "NXT",
         "FLNC",
         "RIVN",
-        "LI",
-        "XPEV",
-        "BILI",
         "CHWY",
         "BROS",
         "RH",
@@ -176,25 +172,30 @@
         "RELY",
         "SYM",
         "AAOI",
-        "ACMR",
         "ACLS",
         "SITM",
         "AMBA",
         "AEHR",
-        "AOSL",
         "INOD",
         "PATH",
         "DOCN",
-        "ROKU"
+        "ROKU",
+        "FSLY",
+        "HUT",
+        "WULF",
+        "ASTS",
+        "IONQ",
+        "CRSP",
+        "POWL"
       ],
       "summaries": {
         "adjusted": {
-          "watchlist_total": 99,
+          "watchlist_total": 100,
           "today_up": 0,
           "today_down": 0
         },
         "raw": {
-          "watchlist_total": 99,
+          "watchlist_total": 100,
           "today_up": 0,
           "today_down": 0
         }
@@ -254,6 +255,7 @@
       "codes": [
         "OSCR",
         "DKNG",
+        "FIG",
         "MRVL",
         "CLS",
         "VRT",
@@ -267,8 +269,6 @@
         "MTSI",
         "TOST",
         "NU",
-        "FUTU",
-        "TIGR",
         "DAVE",
         "ROOT",
         "LMND",
@@ -285,16 +285,18 @@
         "TMDX",
         "NTRA",
         "TEM",
-        "RXST"
+        "RXST",
+        "FSLY",
+        "POWL"
       ],
       "summaries": {
         "adjusted": {
-          "watchlist_total": 34,
+          "watchlist_total": 35,
           "today_up": 0,
           "today_down": 0
         },
         "raw": {
-          "watchlist_total": 34,
+          "watchlist_total": 35,
           "today_up": 0,
           "today_down": 0
         }
@@ -317,9 +319,6 @@
         "NXT",
         "FLNC",
         "RIVN",
-        "LI",
-        "XPEV",
-        "BILI",
         "CHWY",
         "BROS",
         "RH",
@@ -329,16 +328,19 @@
         "RELY",
         "SYM",
         "AAOI",
-        "ACMR",
         "ACLS",
         "SITM",
         "AMBA",
         "AEHR",
-        "AOSL",
         "INOD",
         "PATH",
         "DOCN",
-        "ROKU"
+        "ROKU",
+        "HUT",
+        "WULF",
+        "ASTS",
+        "IONQ",
+        "CRSP"
       ],
       "summaries": {
         "adjusted": {

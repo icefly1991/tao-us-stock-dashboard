@@ -94,3 +94,5 @@ CR-004 数据质量处理：已验证 Yahoo 的 MNTN/ONON/IOT 含历史 OHLC 矛
 2026-09-19（DATA-011）：修复 CSV 中代码充当名称的问题，按 Nasdaq Trader 股票目录补齐公司名称；RH 标明原 Restoration Hardware。仅名称元数据变更，成员、symbol、排序、指标和 JSON 结构不变。
 
 2026-09-19（RES-002）：记录用户长期偏好与每三个月更新观察列表的明确授权，更新季度任务模板以允许证据充分的名单调整。当前仅文档变更，无定时注册能力，自动执行尚未启用；本次未改股票成员、JSON 或页面。
+
+2026-09-19（CR-006 / DATA-012 / RES-003）：观察池移除 FUTU/TIGR/LI/XPEV/BILI/ACMR，AOSL 按中国经营敞口边界从严排除；补入 FIG/FSLY/POWL/HUT/WULF/ASTS/IONQ/CRSP。观察 100（30/35/35），持仓 43 不变，交集 10、唯一代码 133。长期排除中概规则与季度模板同步，定时任务仍未注册。
