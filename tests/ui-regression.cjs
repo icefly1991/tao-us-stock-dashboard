@@ -38,6 +38,15 @@ const labels = ['距年线', '今年涨跌幅', '距52周高点', '距52周低�
             return x - y || a.code.localeCompare(b.code);
           }).map(r => r.code);
           assert.deepEqual(await page.locator('.market-row[data-code]').evaluateAll(rows => rows.map(r => r.dataset.code)), expected);
+          assert.equal(await page.locator('.market-header > div').count(), j === 4 ? 10 : 9);
+          if (j === 4) {
+            assert.equal(await page.locator('.market-header > div').nth(7).innerText(), '距52周低点');
+            const actual = await page.locator('.market-row[data-code]').evaluateAll(rows => rows.map(r => [r.dataset.code, r.children[7].textContent]));
+            for (const [code, text] of actual) {
+              const value = fixture.adjustments[mode].rows.find(r => r.code === code).distance_52w_low_pct;
+              assert.equal(text, value === null ? '—' : `${value > 0 ? '+' : ''}${value.toFixed(1)}%`);
+            }
+          }
           assert.equal(await page.locator('[data-trading-status="suspended"]').count(), codes.includes('CFLT') ? 1 : 0);
         }
       }
@@ -54,6 +63,8 @@ const labels = ['距年线', '今年涨跌幅', '距52周高点', '距52周低�
     await page.waitForURL('**/#/research');
     await page.goForward();
     await page.waitForURL('**/#/research/A');
+    for (const label of ['距年线', '52周内位置']) {
+    await page.getByRole('button', { name: label, exact: true }).click();
     for (const width of [390, 768, 1440]) {
       await page.setViewportSize({ width, height: 900 });
       await page.evaluate(() => window.scrollTo(0, 0));
@@ -75,6 +86,7 @@ const labels = ['距年线', '今年涨跌幅', '距52周高点', '距52周低�
       assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `page overflow ${width}`);
       await page.locator('.ranking-body-scroll').evaluate(el => { el.scrollLeft = 0; });
       await page.screenshot({ path: `.cache/browser/ui004-${width}.png` });
+    }
     }
     assert.deepEqual(errors, []);
     console.log('PASS: 50 route/mode/metric rankings; nulls/suspension; native navigation/reload/back/forward; 390/768/1440 sticky and first-row geometry; horizontal column alignment. Synthetic data only.');

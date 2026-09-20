@@ -4,6 +4,7 @@ from data_pipeline.config import build_runtime_config
 from data_pipeline.exporter import dashboard_exists, export_dashboard
 from data_pipeline.summary import build_dashboard_payload
 from data_pipeline.yfinance_client import YFinancePipelineClient
+from generate_boxes import generate_boxes
 
 
 def main() -> None:
@@ -43,6 +44,7 @@ def main() -> None:
         for code, history in histories.items():
             export_dashboard(config.output_json_file.parent / "history" / adjustment / f"{code}.json", history)
     export_dashboard(config.output_json_file, payload)
+    generate_boxes(config.output_json_file.parent)
     print(f"Output file path: {config.output_json_file}")
 
 

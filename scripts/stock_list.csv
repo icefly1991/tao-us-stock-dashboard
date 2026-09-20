@@ -1,134 +1,134 @@
-code,name,symbol,asset_type,watchlist,tier,trading_status,status_note
-SMR,NuScale Power,SMR,stock,original,,active,
-VIX,CBOE Volatility Index,^VIX,index,original,,active,
-IMSR,Terrestrial Energy,IMSR,stock,original,,active,
-NABL,N-able,NABL,stock,original,,active,
-HOOD,Robinhood Markets,HOOD,stock,original,A,active,
-MP,MP Materials,MP,stock,original,C,active,
-ORCL,Oracle,ORCL,stock,original,,active,
-HIMS,Hims & Hers Health,HIMS,stock,original,A,active,
-BITX,2x Bitcoin Strategy ETF,BITX,etf,original,,active,
-CRWV,CoreWeave,CRWV,stock,original,A,active,
-IBIT,iShares Bitcoin Trust ETF,IBIT,etf,original,,active,
-RZLV,Rezolve AI,RZLV,stock,original,,active,
-MCD,McDonald's,MCD,stock,original,,active,
-IREN,IREN Limited,IREN,stock,original,A,active,
-ATCH,AtlasClear Holdings,ATCH,stock,original,,active,
-CRCL,Circle Internet Group,CRCL,stock,original,A,active,
-NVDA,NVIDIA,NVDA,stock,original,,active,
-NKE,NIKE,NKE,stock,original,,active,
-KLAR,Klarna Group,KLAR,stock,original,,active,
-MNTN,"MNTN, Inc.",MNTN,stock,original,,active,
-MSFT,Microsoft,MSFT,stock,original,,active,
-META,Meta Platforms,META,stock,original,,active,
-RGTI,Rigetti Computing,RGTI,stock,original,,active,
-NXH,Neighborhood Intelligence,NXH,stock,original,,active,
-AVGO,Broadcom,AVGO,stock,original,,active,
-QQQ,Invesco QQQ Trust,QQQ,etf,original,,active,
-ETOR,eToro Group,ETOR,stock,original,,active,
-ARKO,ARKO Corp.,ARKO,stock,original,,active,
-UAA,Under Armour,UAA,stock,original,,active,
-PG,Procter & Gamble,PG,stock,original,,active,
-DOGEUSD,Dogecoin / US Dollar,DOGE-USD,crypto,original,,active,
-STUB,StubHub Holdings,STUB,stock,original,,active,
-VOR,Vor Biopharma,VOR,stock,original,,active,
-MSTR,Strategy,MSTR,stock,original,,active,
-GEMI,Gemini Space Station,GEMI,stock,original,,active,
-OSCR,Oscar Health,OSCR,stock,,B,active,
-DKNG,DraftKings,DKNG,stock,original,B,active,
-AMD,Advanced Micro Devices,AMD,stock,original,,active,
-TQQQ,ProShares UltraPro QQQ,TQQQ,etf,original,,active,
-APP,AppLovin,APP,stock,original,A,active,
-WBTN,WEBTOON Entertainment,WBTN,stock,original,,active,
-FIG,Figma,FIG,stock,original,B,active,
-CRDO,Credo Technology Group Holding Ltd,CRDO,stock,,A,active,
-ALAB,"Astera Labs, Inc.",ALAB,stock,,A,active,
-NBIS,Nebius Group N.V.,NBIS,stock,,A,active,
-COIN,"Coinbase Global, Inc.",COIN,stock,,A,active,
-RDDT,"Reddit, Inc.",RDDT,stock,,A,active,
-RKLB,Rocket Lab Corporation,RKLB,stock,,A,active,
-CELH,"Celsius Holdings, Inc.",CELH,stock,,A,active,
-AFRM,"Affirm Holdings, Inc.",AFRM,stock,,A,active,
-UPST,"Upstart Holdings, Inc.",UPST,stock,,A,active,
-CVNA,Carvana Co.,CVNA,stock,,A,active,
-APLD,Applied Digital Corporation,APLD,stock,,A,active,
-RBLX,Roblox Corporation,RBLX,stock,,A,active,
-CAVA,"CAVA Group, Inc.",CAVA,stock,,A,active,
-ONON,On Holding AG,ONON,stock,,A,active,
-DUOL,"Duolingo, Inc.",DUOL,stock,,A,active,
-ELF,"e.l.f. Beauty, Inc.",ELF,stock,,A,active,
-SOFI,"SoFi Technologies, Inc.",SOFI,stock,,A,active,
-SHOP,Shopify Inc.,SHOP,stock,,A,active,
-SE,Sea Limited,SE,stock,,A,active,
-NET,"Cloudflare, Inc.",NET,stock,,A,active,
-PLTR,Palantir Technologies Inc.,PLTR,stock,,A,active,
-ARM,Arm Holdings plc,ARM,stock,,A,active,
-LITE,Lumentum Holdings Inc.,LITE,stock,,A,active,
-COHR,Coherent Corp.,COHR,stock,,A,active,
-MRVL,"Marvell Technology, Inc.",MRVL,stock,,B,active,
-CLS,"Celestica, Inc.",CLS,stock,,B,active,
-VRT,"Vertiv Holdings, LLC",VRT,stock,,B,active,
-MU,"Micron Technology, Inc.",MU,stock,,B,active,
-SNDK,Sandisk Corporation,SNDK,stock,,B,active,
-WDC,Western Digital Corporation,WDC,stock,,B,active,
-CIEN,Ciena Corporation,CIEN,stock,,B,active,
-SMCI,"Super Micro Computer, Inc.",SMCI,stock,,B,active,
-BE,Bloom Energy Corporation,BE,stock,,B,active,
-PSTG,Everpure (P),P,stock,,B,active,
-MTSI,"MACOM Technology Solutions Holdings, Inc.",MTSI,stock,,B,active,
-TOST,"Toast, Inc.",TOST,stock,,B,active,
-NU,Nu Holdings Ltd.,NU,stock,,B,active,
-DAVE,Dave Inc.,DAVE,stock,,B,active,
-ROOT,"Root, Inc.",ROOT,stock,,B,active,
-LMND,"Lemonade, Inc.",LMND,stock,,B,active,
-TTAN,ServiceTitan,TTAN,stock,original,B,active,
-IOT,Samsara Inc.,IOT,stock,,B,active,
-MNDY,monday.com Ltd.,MNDY,stock,,B,active,
-MDB,"MongoDB, Inc.",MDB,stock,,B,active,
-GTLB,GitLab Inc.,GTLB,stock,,B,active,
-FROG,JFrog Ltd.,FROG,stock,,B,active,
-ESTC,Elastic N.V.,ESTC,stock,,B,active,
-S,"SentinelOne, Inc.",S,stock,,B,active,
-TTD,"The Trade Desk, Inc.",TTD,stock,,B,active,
-ZETA,Zeta Global Holdings Corp.,ZETA,stock,,B,active,
-TMDX,"TransMedics Group, Inc.",TMDX,stock,,B,active,
-NTRA,"Natera, Inc.",NTRA,stock,,B,active,
-TEM,"Tempus AI, Inc.",TEM,stock,,B,active,
-RXST,"RxSight, Inc.",RXST,stock,,B,active,
-KTOS,"Kratos Defense & Security Solutions, Inc.",KTOS,stock,,C,active,
-AVAV,"AeroVironment, Inc.",AVAV,stock,,C,active,
-RDW,Redwire Corporation,RDW,stock,,C,active,
-LUNR,"Intuitive Machines, Inc.",LUNR,stock,,C,active,
-LEU,Centrus Energy Corp.,LEU,stock,,C,active,
-UUUU,Energy Fuels Inc,UUUU,stock,,C,active,
-UEC,Uranium Energy Corp.,UEC,stock,,C,active,
-ALB,Albemarle Corporation,ALB,stock,,C,active,
-ENPH,"Enphase Energy, Inc.",ENPH,stock,,C,active,
-NXT,Nextpower Inc.,NXT,stock,,C,active,
-FLNC,"Fluence Energy, Inc.",FLNC,stock,,C,active,
-RIVN,"Rivian Automotive, Inc.",RIVN,stock,,C,active,
-CHWY,"Chewy, Inc.",CHWY,stock,,C,active,
-BROS,Dutch Bros Inc.,BROS,stock,,C,active,
-RH,RH (formerly Restoration Hardware),RH,stock,,C,active,
-SG,"Sweetgreen, Inc.",SG,stock,,C,active,
-FOUR,"Shift4 Payments, Inc.",FOUR,stock,,C,active,
-BILL,"BILL Holdings, Inc.",BILL,stock,,C,active,
-RELY,"Remitly Global, Inc.",RELY,stock,,C,active,
-SYM,Symbotic Inc.,SYM,stock,,C,active,
-AAOI,"Applied Optoelectronics, Inc.",AAOI,stock,,C,active,
-ACLS,"Axcelis Technologies, Inc.",ACLS,stock,,C,active,
-SITM,SiTime Corporation,SITM,stock,,C,active,
-AMBA,"Ambarella, Inc.",AMBA,stock,,C,active,
-AEHR,Aehr Test Systems,AEHR,stock,,C,active,
-INOD,Innodata Inc.,INOD,stock,,C,active,
-PATH,"UiPath, Inc.",PATH,stock,,C,active,
-DOCN,"DigitalOcean Holdings, Inc.",DOCN,stock,,C,active,
-ROKU,"Roku, Inc.",ROKU,stock,,C,active,
-EIKN,Eikon Therapeutics,EIKN,stock,original,,active,
-FSLY,"Fastly, Inc.",FSLY,stock,,B,active,
-HUT,Hut 8 Corp.,HUT,stock,,C,active,
-WULF,TeraWulf Inc.,WULF,stock,,C,active,
-ASTS,"AST SpaceMobile, Inc.",ASTS,stock,,C,active,
-IONQ,"IonQ, Inc.",IONQ,stock,,C,active,
-CRSP,CRISPR Therapeutics AG,CRSP,stock,,C,active,
-POWL,"Powell Industries, Inc.",POWL,stock,,B,active,
+code,name,symbol,asset_type,watchlist,tier,trading_status,status_note,business
+SMR,NuScale Power,SMR,stock,original,,active,,小型核反应堆
+VIX,CBOE Volatility Index,^VIX,index,original,,active,,市场波动率指数
+IMSR,Terrestrial Energy,IMSR,stock,original,,active,,熔盐核反应堆
+NABL,N-able,NABL,stock,original,,active,,IT运维软件
+HOOD,Robinhood Markets,HOOD,stock,original,A,active,,证券/加密交易
+MP,MP Materials,MP,stock,original,C,active,,稀土开采/磁材
+ORCL,Oracle,ORCL,stock,original,,active,,数据库/云服务
+HIMS,Hims & Hers Health,HIMS,stock,original,A,active,,在线医疗
+BITX,2x Bitcoin Strategy ETF,BITX,etf,original,,active,,两倍比特币期货ETF
+CRWV,CoreWeave,CRWV,stock,original,A,active,,AI算力云
+IBIT,iShares Bitcoin Trust ETF,IBIT,etf,original,,active,,比特币现货ETF
+RZLV,Rezolve AI,RZLV,stock,original,,active,,AI电商软件
+MCD,McDonald's,MCD,stock,original,,active,,连锁快餐
+IREN,IREN Limited,IREN,stock,original,A,active,,AI数据中心/挖矿
+ATCH,AtlasClear Holdings,ATCH,stock,original,,active,,证券清算服务
+CRCL,Circle Internet Group,CRCL,stock,original,A,active,,稳定币/支付
+NVDA,NVIDIA,NVDA,stock,original,,active,,GPU/AI芯片
+NKE,NIKE,NKE,stock,original,,active,,运动服饰
+KLAR,Klarna Group,KLAR,stock,original,,active,,先买后付
+MNTN,"MNTN, Inc.",MNTN,stock,original,,active,,联网电视广告
+MSFT,Microsoft,MSFT,stock,original,,active,,软件/云服务
+META,Meta Platforms,META,stock,original,,active,,社交平台/广告
+RGTI,Rigetti Computing,RGTI,stock,original,,active,,量子计算
+NXH,Neighborhood Intelligence,NXH,stock,original,,active,,家居零售/服务
+AVGO,Broadcom,AVGO,stock,original,,active,,芯片/基础软件
+QQQ,Invesco QQQ Trust,QQQ,etf,original,,active,,纳指100ETF
+ETOR,eToro Group,ETOR,stock,original,,active,,证券/加密交易
+ARKO,ARKO Corp.,ARKO,stock,original,,active,,加油站/便利店
+UAA,Under Armour,UAA,stock,original,,active,,运动服饰
+PG,Procter & Gamble,PG,stock,original,,active,,日用消费品
+DOGEUSD,Dogecoin / US Dollar,DOGE-USD,crypto,original,,active,,加密货币
+STUB,StubHub Holdings,STUB,stock,original,,active,,演出票务平台
+VOR,Vor Biopharma,VOR,stock,original,,active,,自身免疫新药
+MSTR,Strategy,MSTR,stock,original,,active,,比特币资产/软件
+GEMI,Gemini Space Station,GEMI,stock,original,,active,,加密交易平台
+OSCR,Oscar Health,OSCR,stock,,B,active,,健康保险
+DKNG,DraftKings,DKNG,stock,original,B,active,,在线体育博彩
+AMD,Advanced Micro Devices,AMD,stock,original,,active,,CPU/GPU芯片
+TQQQ,ProShares UltraPro QQQ,TQQQ,etf,original,,active,,三倍纳指100ETF
+APP,AppLovin,APP,stock,original,A,active,,广告技术
+WBTN,WEBTOON Entertainment,WBTN,stock,original,,active,,数字漫画平台
+FIG,Figma,FIG,stock,original,B,active,,协作设计软件
+CRDO,Credo Technology Group Holding Ltd,CRDO,stock,,A,active,,高速互联芯片
+ALAB,"Astera Labs, Inc.",ALAB,stock,,A,active,,AI互联芯片
+NBIS,Nebius Group N.V.,NBIS,stock,,A,active,,AI算力云
+COIN,"Coinbase Global, Inc.",COIN,stock,,A,active,,加密交易平台
+RDDT,"Reddit, Inc.",RDDT,stock,,A,active,,社区/数字广告
+RKLB,Rocket Lab Corporation,RKLB,stock,,A,active,,火箭/航天系统
+CELH,"Celsius Holdings, Inc.",CELH,stock,,A,active,,能量饮料
+AFRM,"Affirm Holdings, Inc.",AFRM,stock,,A,active,,先买后付
+UPST,"Upstart Holdings, Inc.",UPST,stock,,A,active,,AI消费信贷
+CVNA,Carvana Co.,CVNA,stock,,A,active,,二手车电商
+APLD,Applied Digital Corporation,APLD,stock,,A,active,,AI数据中心
+RBLX,Roblox Corporation,RBLX,stock,,A,active,,游戏创作平台
+CAVA,"CAVA Group, Inc.",CAVA,stock,,A,active,,连锁餐饮
+ONON,On Holding AG,ONON,stock,,A,active,,运动鞋服
+DUOL,"Duolingo, Inc.",DUOL,stock,,A,active,,语言学习平台
+ELF,"e.l.f. Beauty, Inc.",ELF,stock,,A,active,,美妆品牌
+SOFI,"SoFi Technologies, Inc.",SOFI,stock,,A,active,,数字银行/金融
+SHOP,Shopify Inc.,SHOP,stock,,A,active,,电商建站平台
+SE,Sea Limited,SE,stock,,A,active,,电商/游戏/金融
+NET,"Cloudflare, Inc.",NET,stock,,A,active,,云网络/安全
+PLTR,Palantir Technologies Inc.,PLTR,stock,,A,active,,数据分析/AI软件
+ARM,Arm Holdings plc,ARM,stock,,A,active,,芯片架构授权
+LITE,Lumentum Holdings Inc.,LITE,stock,,A,active,,光通信器件
+COHR,Coherent Corp.,COHR,stock,,A,active,,光通信/激光
+MRVL,"Marvell Technology, Inc.",MRVL,stock,,B,active,,定制AI/网络芯片
+CLS,"Celestica, Inc.",CLS,stock,,B,active,,电子制造/AI硬件
+VRT,"Vertiv Holdings, LLC",VRT,stock,,B,active,,数据中心电力/散热
+MU,"Micron Technology, Inc.",MU,stock,,B,active,,存储芯片
+SNDK,Sandisk Corporation,SNDK,stock,,B,active,,闪存存储
+WDC,Western Digital Corporation,WDC,stock,,B,active,,硬盘存储
+CIEN,Ciena Corporation,CIEN,stock,,B,active,,光网络设备
+SMCI,"Super Micro Computer, Inc.",SMCI,stock,,B,active,,AI服务器
+BE,Bloom Energy Corporation,BE,stock,,B,active,,燃料电池发电
+PSTG,Everpure (P),P,stock,,B,active,,企业闪存存储
+MTSI,"MACOM Technology Solutions Holdings, Inc.",MTSI,stock,,B,active,,射频/光通信芯片
+TOST,"Toast, Inc.",TOST,stock,,B,active,,餐饮收银/支付
+NU,Nu Holdings Ltd.,NU,stock,,B,active,,拉美数字银行
+DAVE,Dave Inc.,DAVE,stock,,B,active,,数字银行/信贷
+ROOT,"Root, Inc.",ROOT,stock,,B,active,,汽车保险
+LMND,"Lemonade, Inc.",LMND,stock,,B,active,,互联网保险
+TTAN,ServiceTitan,TTAN,stock,original,B,active,,家居服务业软件
+IOT,Samsara Inc.,IOT,stock,,B,active,,工业物联网软件
+MNDY,monday.com Ltd.,MNDY,stock,,B,active,,工作协作软件
+MDB,"MongoDB, Inc.",MDB,stock,,B,active,,云数据库
+GTLB,GitLab Inc.,GTLB,stock,,B,active,,软件开发平台
+FROG,JFrog Ltd.,FROG,stock,,B,active,,软件供应链工具
+ESTC,Elastic N.V.,ESTC,stock,,B,active,,搜索/数据分析
+S,"SentinelOne, Inc.",S,stock,,B,active,,终端网络安全
+TTD,"The Trade Desk, Inc.",TTD,stock,,B,active,,程序化广告
+ZETA,Zeta Global Holdings Corp.,ZETA,stock,,B,active,,营销数据软件
+TMDX,"TransMedics Group, Inc.",TMDX,stock,,B,active,,器官移植设备
+NTRA,"Natera, Inc.",NTRA,stock,,B,active,,基因检测
+TEM,"Tempus AI, Inc.",TEM,stock,,B,active,,医疗数据/AI
+RXST,"RxSight, Inc.",RXST,stock,,B,active,,可调人工晶体
+KTOS,"Kratos Defense & Security Solutions, Inc.",KTOS,stock,,C,active,,无人机/国防系统
+AVAV,"AeroVironment, Inc.",AVAV,stock,,C,active,,军用无人机
+RDW,Redwire Corporation,RDW,stock,,C,active,,航天基础设施
+LUNR,"Intuitive Machines, Inc.",LUNR,stock,,C,active,,月球探测服务
+LEU,Centrus Energy Corp.,LEU,stock,,C,active,,核燃料/铀浓缩
+UUUU,Energy Fuels Inc,UUUU,stock,,C,active,,铀矿/稀土
+UEC,Uranium Energy Corp.,UEC,stock,,C,active,,铀矿
+ALB,Albemarle Corporation,ALB,stock,,C,active,,锂/特种化学品
+ENPH,"Enphase Energy, Inc.",ENPH,stock,,C,active,,光伏逆变器
+NXT,Nextpower Inc.,NXT,stock,,C,active,,光伏跟踪/电站设备
+FLNC,"Fluence Energy, Inc.",FLNC,stock,,C,active,,电网储能
+RIVN,"Rivian Automotive, Inc.",RIVN,stock,,C,active,,电动汽车
+CHWY,"Chewy, Inc.",CHWY,stock,,C,active,,宠物用品电商
+BROS,Dutch Bros Inc.,BROS,stock,,C,active,,连锁咖啡
+RH,RH (formerly Restoration Hardware),RH,stock,,C,active,,高端家居
+SG,"Sweetgreen, Inc.",SG,stock,,C,active,,健康快餐
+FOUR,"Shift4 Payments, Inc.",FOUR,stock,,C,active,,商户支付
+BILL,"BILL Holdings, Inc.",BILL,stock,,C,active,,企业账单/支付
+RELY,"Remitly Global, Inc.",RELY,stock,,C,active,,跨境汇款
+SYM,Symbotic Inc.,SYM,stock,,C,active,,仓储机器人
+AAOI,"Applied Optoelectronics, Inc.",AAOI,stock,,C,active,,光通信模块
+ACLS,"Axcelis Technologies, Inc.",ACLS,stock,,C,active,,离子注入设备
+SITM,SiTime Corporation,SITM,stock,,C,active,,时钟芯片
+AMBA,"Ambarella, Inc.",AMBA,stock,,C,active,,视觉/边缘AI芯片
+AEHR,Aehr Test Systems,AEHR,stock,,C,active,,半导体测试设备
+INOD,Innodata Inc.,INOD,stock,,C,active,,AI数据服务
+PATH,"UiPath, Inc.",PATH,stock,,C,active,,流程自动化软件
+DOCN,"DigitalOcean Holdings, Inc.",DOCN,stock,,C,active,,中小企业云服务
+ROKU,"Roku, Inc.",ROKU,stock,,C,active,,流媒体/广告
+EIKN,Eikon Therapeutics,EIKN,stock,original,,active,,肿瘤新药研发
+FSLY,"Fastly, Inc.",FSLY,stock,,B,active,,边缘云/CDN
+HUT,Hut 8 Corp.,HUT,stock,,C,active,,数据中心/挖矿
+WULF,TeraWulf Inc.,WULF,stock,,C,active,,数据中心/挖矿
+ASTS,"AST SpaceMobile, Inc.",ASTS,stock,,C,active,,卫星手机通信
+IONQ,"IonQ, Inc.",IONQ,stock,,C,active,,量子计算
+CRSP,CRISPR Therapeutics AG,CRSP,stock,,C,active,,基因编辑新药
+POWL,"Powell Industries, Inc.",POWL,stock,,B,active,,工业配电设备

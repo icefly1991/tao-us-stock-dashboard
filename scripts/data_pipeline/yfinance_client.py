@@ -8,7 +8,7 @@ import pandas as pd
 import yfinance as yf
 
 from .config import RuntimeConfig, WatchlistItem
-from .indicators import build_metrics, merge_name_and_metrics
+from .indicators import build_metrics, merge_name_and_metrics, build_rsi_history, normalize_history
 from .history import build_chart_history
 
 
@@ -62,6 +62,8 @@ class YFinancePipelineClient:
                         chart = build_chart_history(chart_frame, item.code, adjustment, self.config.updated_at, self.config.start_date)
                         if chart["actual_end"].replace("-", "") != trade_date:
                             raise ValueError("Chart and ranking last dates differ.")
+                        ranking_frame = normalize_history(extract_symbol_frame(history, item.symbol, adjustment == "adjusted"))
+                        chart["rsi_history"] = build_rsi_history(ranking_frame)
                         histories[adjustment][item.code] = chart
                         row["history_available"] = True
                     except Exception as exc:
@@ -132,6 +134,7 @@ class YFinancePipelineClient:
         metrics = build_metrics(frame, self.config.year_start)
         trade_date = str(frame["trade_date"].astype(str).max())
         row = merge_name_and_metrics(item.code, item.name, metrics)
+        row["business"] = item.business
         row["symbol"] = item.symbol
         row["asset_type"] = item.asset_type
         row["adjustment"] = adjustment

@@ -1,7 +1,12 @@
+import DataFreshness from './DataFreshness'
+import PageNavigation from './PageNavigation'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { CopyStockButton, StockCopyProvider } from './StockCopy'
 import { StockHistoryCode, StockHistoryProvider } from './StockHistoryPreview'
+import BoxScreener from './BoxScreener'
+import ListReviewNotice from './ListReviewNotice'
+import RsiCell, { type RsiData } from './RsiCell'
 
 type AdjustmentKey = 'adjusted' | 'raw'
 type MetricKey =
@@ -13,6 +18,8 @@ type MetricKey =
 type SummaryKey = 'watchlist_total' | 'today_up' | 'today_down'
 
 type Row = {
+  business?: string
+  rsi?: RsiData | null
   code: string
   name: string
   symbol: string
@@ -32,7 +39,7 @@ type DashboardData = {
   source: string
   updated_at: string
   data_date: string | null
-  suspended?: { code: string; name: string; symbol: string; note: string }[]
+  suspended?: { code: string; name: string; business?: string; symbol: string; note: string }[]
   collections?: {
     id: string
     label: string
@@ -70,6 +77,7 @@ const dashboardUrl = `${import.meta.env.BASE_URL}data/dashboard.json`
 
 const getCollectionFromHash = () => {
   const path = window.location.hash.replace(/^#/, '')
+  if (path === '/boxes') return 'boxes'
   if (path === '/research') return 'research'
   const tier = path.match(/^\/research\/([ABC])$/)?.[1]
   return tier ?? 'original'
@@ -150,8 +158,8 @@ function App() {
   }, [])
 
   useEffect(() => {
-    document.title = `${researchPage ? '活跃股观察列表' : '持仓股'} · Tao 美股趋势看板`
-  }, [researchPage])
+    document.title = `${collectionId === 'boxes' ? '箱体观察' : researchPage ? '活跃股观察列表' : '持仓股'} · Tao 美股趋势看板`
+  }, [researchPage, collectionId])
 
   useEffect(() => {
     let mounted = true
@@ -184,8 +192,11 @@ function App() {
     ? ['ytd_return_pct', 'distance_52w_high_pct']
     : tab === 'ytd_return_pct'
       ? ['distance_ma250_pct', 'distance_52w_high_pct']
-      : ['distance_ma250_pct', 'ytd_return_pct']
+      : tab === 'position_52w_pct'
+        ? ['distance_ma250_pct', 'ytd_return_pct', 'distance_52w_low_pct']
+        : ['distance_ma250_pct', 'ytd_return_pct']
 
+  if (collectionId === 'boxes') return <BoxScreener />
   if (error || (data && !current)) return <StateView text="无法加载 /data/dashboard.json" error />
   if (!data || !current) return <StateView text="加载中..." />
 
@@ -193,11 +204,12 @@ function App() {
     <StockCopyProvider>
     <StockHistoryProvider key={`${collectionId}:${adjustment}`}>
     <main className="min-h-screen bg-[radial-gradient(circle_at_top,rgba(186,230,253,0.2),transparent_30%),linear-gradient(180deg,#fcfbf8_0%,#f5f1ea_58%,#f1ece5_100%)] px-4 py-6 text-slate-900 sm:px-6 sm:py-8">
-      <div className="mx-auto max-w-6xl space-y-6">
+      <div className="mx-auto max-w-[1440px] space-y-6">
         <motion.section initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35 }} className="relative overflow-hidden rounded-[2rem] border border-white/80 bg-[linear-gradient(135deg,rgba(255,255,255,0.97),rgba(247,242,234,0.94))] p-5 shadow-[0_24px_60px_rgba(15,23,42,0.06)] sm:p-7">
           <div className="absolute inset-x-0 top-0 h-28 bg-[radial-gradient(circle_at_top,rgba(191,219,254,0.32),transparent_72%)]" />
           <div className="absolute right-[-5rem] top-[-5rem] h-40 w-40 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.95),rgba(255,255,255,0))]" />
           <div className="relative flex flex-col gap-5">
+            <PageNavigation page={researchPage ? 'research' : 'watchlist'} />
             <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-3xl">
                 <div className="inline-flex rounded-full border border-slate-200/80 bg-white/80 px-3 py-1 text-[11px] font-medium tracking-[0.22em] text-slate-500">DAILY MARKET SNAPSHOT</div>
@@ -209,17 +221,10 @@ function App() {
                   <span className="rounded-full border border-slate-200 bg-white/70 px-3 py-1">支持复权价 / 未复权价</span>
                 </div>
               </div>
-              <div className="rounded-[1.4rem] border border-white/80 bg-[linear-gradient(180deg,rgba(255,255,255,0.92),rgba(255,255,255,0.72))] px-4 py-3 text-sm text-slate-600 shadow-[0_10px_30px_rgba(15,23,42,0.05)] backdrop-blur">
-                <div className="text-[11px] font-medium tracking-[0.16em] text-slate-400">LAST REFRESH</div>
-                <div className="mt-1 text-sm font-medium text-slate-900">生成：{data.updated_at.replace('T', ' ')}</div>
-                <div className="mt-1 text-xs text-slate-500">最新数据日：{data.data_date ?? '—'}</div>
-              </div>
+              <DataFreshness updatedAt={data.updated_at} dataDate={data.data_date} />
             </div>
 
-            <nav aria-label="列表页面" className="flex flex-wrap gap-2">
-              <a href="#/watchlist" aria-current={!researchPage ? 'page' : undefined} className={`page-link ${!researchPage ? 'selected' : ''}`}>持仓股</a>
-              <a href="#/research" aria-current={researchPage ? 'page' : undefined} className={`page-link ${researchPage ? 'selected' : ''}`}>活跃股观察列表</a>
-            </nav>
+            {researchPage && <ListReviewNotice />}
 
             <div className="rounded-[1.6rem] border border-slate-200/80 bg-white/70 p-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.85)]">
               <div className="grid grid-cols-2 gap-1">
@@ -253,7 +258,7 @@ function App() {
           </div>
         </motion.section>
 
-        <section className="ranking-section rounded-[2rem] border border-white/80 bg-white/80 p-3 shadow-[0_24px_60px_rgba(15,23,42,0.05)] sm:p-6">
+        <section data-position-view={tab === 'position_52w_pct'} className="ranking-section rounded-[2rem] border border-white/80 bg-white/80 p-3 shadow-[0_24px_60px_rgba(15,23,42,0.05)] sm:p-6">
           {missingCodes.length > 0 && (
             <div role="status" className="mb-4 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
               暂无可用行情：{missingCodes.join('、')}。列表总数包含这些标的，涨跌统计仅含可用行情。
@@ -271,7 +276,7 @@ function App() {
               ))}
             </nav>
           )}
-          <p className="mb-3 px-2 text-xs text-slate-500">点击代码复制后可快速粘贴；悬停代码或点击 K 线图标查看走势。</p>
+          <p className="mb-3 px-2 text-xs text-slate-500">点击代码复制后可快速粘贴；悬停代码或点击 K 线图标查看走势。<span className="lg:hidden"> 左右滑动表格查看全部指标，股票名称保持固定。</span></p>
           <div className="ranking-sticky" data-testid="ranking-sticky">
             <div className="overflow-x-auto py-2" aria-label="指标选项">
               <div className="flex w-max gap-2">
@@ -291,8 +296,9 @@ function App() {
               if (bodyScroll.current) bodyScroll.current.scrollLeft = event.currentTarget.scrollLeft
             }}>
               <div className="market-grid market-header" data-testid="column-header">
-                <div>#</div><div className="text-left">标的</div><div>收盘价</div><div>今日</div>
+                <div>#</div><div className="stock-identity text-left">标的</div><div className="business-cell">业务/板块</div><div>收盘价</div><div>今日</div>
                 {contextMetrics.map((metric) => <div key={metric}>{metricText[metric]}</div>)}
+                <div title="日线Wilder RSI(14)与该股票自身年内百分位">RSI(14) / 年内分位</div>
                 <div className="text-sky-800">{metricText[tab]} ↑</div>
               </div>
             </div>
@@ -304,15 +310,17 @@ function App() {
               {rows.map((row, index) => (
                 <div key={row.code} data-code={row.code} data-metric={row[tab] ?? 'missing'} className="market-grid market-row">
                   <div className="text-xs text-slate-400">{index + 1}</div>
-                  <div className="min-w-0 text-left">
+                  <div className="stock-identity min-w-0 text-left">
                     <span title={row.name} className="block truncate font-medium text-slate-900">{row.name}</span>
                     <StockHistoryCode code={row.code} name={row.name} updatedAt={data.updated_at} adjustment={adjustment} available={row.history_available}>
                       <CopyStockButton value={row.code} label="代码" target={`${row.code}-code`} secondary />
                     </StockHistoryCode>
                   </div>
+                  <div className="business-cell">{row.business || '—'}</div>
                   <div className="font-medium text-slate-900">{formatClose(row)}</div>
                   <div className={getMetricTextClass(row.today_return_pct)}>{formatPct(row.today_return_pct)}</div>
                   {contextMetrics.map((metric) => <div key={metric} className={getMetricTextClass(row[metric])}>{formatMetric(metric, row[metric])}</div>)}
+                  <RsiCell key={`${row.code}/${adjustment}/${data.updated_at}`} rsi={row.rsi} stock={{ code: row.code, name: row.name, adjustment, updatedAt: data.updated_at }} />
                   <div>
                     <div className={getActiveMetricCellClass(tab, tab)}>
                       <span className={getActiveMetricTextClass(tab, row[tab])}>{formatMetric(tab, row[tab])}</span>
@@ -328,13 +336,14 @@ function App() {
               {suspended.map((item) => (
                 <div key={item.code} data-trading-status="suspended" className="market-grid market-row text-slate-400">
                   <div>—</div>
-                  <div className="text-left">
+                  <div className="stock-identity text-left">
                     <span title={item.name} className="block truncate font-medium text-slate-900">{item.name}</span>
                     <CopyStockButton value={item.code} label="代码" target={`${item.code}-code`} secondary />
                     <span className="mt-2 inline-block rounded bg-slate-200 px-2 py-1 text-xs text-slate-600">停牌</span>
                     {item.note && <p className="mt-1 text-xs">{item.note}</p>}
                   </div>
-                  {[0, 1, 2, 3, 4].map((column) => <div key={column}>—</div>)}
+                  <div className="business-cell">{item.business || '—'}</div>
+                  {Array.from({ length: contextMetrics.length + 4 }, (_, column) => column).map((column) => <div key={column}>—</div>)}
                 </div>
               ))}
             </div>

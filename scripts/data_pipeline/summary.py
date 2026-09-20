@@ -39,7 +39,7 @@ def build_dashboard_payload(
         payload["errors"] = errors
     if watchlist is not None:
         payload["suspended"] = [
-            {"code": item.code, "name": item.name, "symbol": item.symbol, "note": item.status_note}
+            {"code": item.code, "name": item.name, "symbol": item.symbol, "note": item.status_note, "business": item.business}
             for item in watchlist if item.trading_status == "suspended"
         ]
         collections = []

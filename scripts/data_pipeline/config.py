@@ -26,6 +26,7 @@ class WatchlistItem:
     tier: str = ""
     trading_status: str = "active"
     status_note: str = ""
+    business: str = ""
 
 
 @dataclass(frozen=True)
@@ -98,6 +99,7 @@ def load_watchlist(path: Path) -> list[WatchlistItem]:
                     tier=tier,
                     trading_status=trading_status,
                     status_note=status_note,
+                    business=(row.get("business") or "").strip(),
                 )
             )
 

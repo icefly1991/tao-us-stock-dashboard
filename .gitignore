@@ -36,3 +36,4 @@ __pycache__/
 
 # Generated real chart data
 public/data/history/
+public/data/boxes.json
