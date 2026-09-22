@@ -284,3 +284,9 @@ UI-015验证结果：45项Python测试、lint/build通过；箱体页面、RSI�
 - Actions 运行页 Summary 展示中文原因分类、数量及逐只日期/字段表；data-diagnostics-<run_id>-<attempt> artifact 保留14天。包含 report.json/summary.md，白名单保存状态、代码、末日字段、行情时间及 yfinance 版本，不保存请求查询参数、Cookie、Token 或原始响应正文；诊断故障不吞掉数据层原错误。
 - 真实生成输出隔离至 .cache/upstream-live/data，当前133成功/0失败、266历史文件/0错误、箱体100成功/0错误、data_date20260921；诊断133个原始响应均complete。60项测试、lint/build通过，覆盖缺价且quote已有价、恢复、HTTP分类、超时、格式错误、脱敏与Actions摘要。
 - 文件：scripts/data_pipeline/{diagnostics,yfinance_client}.py、scripts/generate_dashboard.py、requirements.txt、.github/workflows/deploy.yml、tests/test_diagnostics.py及需求/摘要/日志。关联OPS-003、CR-014/DATA-020；公共JSON契约无变化，尚未提交/推送，线上尚未启用增强诊断。
+
+## 2026-09-21 CR-014 / DATA-020 / OPS-003 已发布验证
+- 用户明确授权 push 并重新部署。功能提交253cdc14053648d8c1fb2a8ade3b91a02e1884c8已推送main，触发新版运行 https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/35677183584 ；build和deploy均success，不是重跑旧提交。
+- 云端60项Python测试、lint/build通过；133成功/0失败、266历史文件/0错误，箱体100成功/0错误，data_date=20260921。线上dashboard.json实际HTTP200，updated_at=2026-09-21T21:49-04:00，两口径各133行。
+- 诊断artifact实际上传成功：data-diagnostics-35677183584-1，9629字节，https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/35677183584/artifacts/10673976388 ，到期2026-10-06。上传路径仅.cache/pipeline-diagnostics，明确include-hidden-files保证该目录可收集，不上传其它缓存。
+- 本节覆盖本次此前“本地未发布”备注：最新缺价拦截及上游诊断已上线；名单/公共JSON契约/公式不变。Yahoo后续仍可能延迟或故障，届时失败保护及可定位日志生效。

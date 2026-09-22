@@ -170,3 +170,5 @@ CR-004 数据质量处理：已验证 Yahoo 的 MNTN/ONON/IOT 含历史 OHLC 矛
 - Yahoo 返回的新交易日日线只要有行情内容，但 Close/High/Low 或复权模式的 Adj Close 缺失，就必须报告 symbol、session、missing、last_usable；不得 dropna 后用旧日线计作成功。存在此类错误时，在任何 dashboard/history/boxes 写入前阻止整批发布。
 - 普通单只下载失败继续遵守原隔离规则；本 CR 为明确检测到最新日线缺价的发布门禁。跨标的日期合并产生的全空行不视为该标的交易日，历史中间缺值处理不变。
 - 不用 regularMarketPrice 替代 Close，不推算 Adj Close；不自动重置日期、不修改金融公式、JSON 契约或名单。
+
+CR-014 发布确认（2026-09-21）：状态已为Implemented（已发布），提交253cdc1，Actions 35677183584成功。上述“本地，未发布”为历史记录，实际证据见OPERATIONS最新发布段。
