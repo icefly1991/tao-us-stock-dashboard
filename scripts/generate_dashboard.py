@@ -5,12 +5,17 @@ from data_pipeline.exporter import dashboard_exists, export_dashboard
 from data_pipeline.summary import build_dashboard_payload
 from data_pipeline.yfinance_client import YFinancePipelineClient
 from generate_boxes import generate_boxes
+from data_pipeline.diagnostics import write_diagnostics
 
 
 def main() -> None:
     config = build_runtime_config()
     client = YFinancePipelineClient(config)
     result = client.build_adjustment_rows()
+    try:
+        write_diagnostics(config, result, client.session.evidence)
+    except Exception as error:
+        print(f"Diagnostics unavailable: {type(error).__name__}; see original data errors below.")
     valid_row_count = sum(len(rows) for rows in result.rows_by_adjustment.values())
 
     print(f"Latest data date: {result.latest_trade_date or 'unavailable'}")
@@ -19,6 +24,12 @@ def main() -> None:
     print(f"Suspended stocks: {sum(item.trading_status == 'suspended' for item in config.watchlist)}")
     print(f"Chart files: {sum(len(items) for items in result.histories.values())}")
     print(f"Chart errors: {len(result.history_errors)}")
+    for error in result.errors:
+        print(f"Data error: {error['code']}: {error['error']}")
+    if result.incomplete_latest_errors:
+        affected = sorted({error["code"] for error in result.incomplete_latest_errors})
+        print(f"::error title=Latest daily prices incomplete::{len(affected)} symbols have incomplete latest-session prices: {', '.join(affected)}. See Data error lines for session, missing fields and last usable date. Deployment stopped; previous published data retained.")
+        raise RuntimeError("Latest-session stock prices are incomplete; no dashboard/history/boxes files were written. Retry after Yahoo daily prices are complete.")
     for error in result.history_errors:
         print(f"Chart unavailable: {error['code']} {error['error']}")
     for adjustment, histories in result.histories.items():

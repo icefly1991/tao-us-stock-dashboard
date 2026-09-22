@@ -10,6 +10,11 @@ import yfinance as yf
 from .config import RuntimeConfig, WatchlistItem
 from .indicators import build_metrics, merge_name_and_metrics, build_rsi_history, normalize_history
 from .history import build_chart_history
+from .diagnostics import DiagnosticSession
+
+
+class IncompleteLatestBarError(ValueError):
+    """A returned session exists but is missing required ranking prices."""
 
 
 @dataclass(frozen=True)
@@ -21,6 +26,7 @@ class PipelineRunResult:
     failed_stocks: int
     histories: dict[str, dict[str, dict[str, Any]]] = field(default_factory=dict)
     history_errors: list[dict[str, str]] = field(default_factory=list)
+    incomplete_latest_errors: list[dict[str, str]] = field(default_factory=list)
 
 
 class YFinancePipelineClient:
@@ -29,6 +35,7 @@ class YFinancePipelineClient:
         cache_dir = config.root_dir / ".cache" / "yfinance"
         cache_dir.mkdir(parents=True, exist_ok=True)
         yf.set_tz_cache_location(str(cache_dir))
+        self.session = DiagnosticSession()
 
     def build_adjustment_rows(self) -> PipelineRunResult:
         rows_by_adjustment = {adjustment: [] for adjustment in self.config.adjustments}
@@ -39,6 +46,7 @@ class YFinancePipelineClient:
         failed_codes: set[str] = set()
         histories = {adjustment: {} for adjustment in self.config.adjustments}
         history_errors = []
+        incomplete_latest_errors = []
 
         active_items = [item for item in self.config.watchlist if item.trading_status == "active"]
         symbols = [item.symbol for item in active_items]
@@ -71,6 +79,8 @@ class YFinancePipelineClient:
                         history_errors.append({"code": item.code, "error": f"{adjustment}: {exc}"})
                 except Exception as exc:  # noqa: BLE001
                     item_failed = True
+                    if isinstance(exc, IncompleteLatestBarError):
+                        incomplete_latest_errors.append({"code": item.code, "error": f"{adjustment}: {exc}"})
                     errors.append(
                         {
                             "code": item.code,
@@ -93,6 +103,7 @@ class YFinancePipelineClient:
             failed_stocks=len(failed_codes),
             histories=histories,
             history_errors=history_errors,
+            incomplete_latest_errors=incomplete_latest_errors,
         )
 
     def download_history(self, symbols: list[str]) -> pd.DataFrame:
@@ -115,6 +126,7 @@ class YFinancePipelineClient:
                 progress=False,
                 multi_level_index=True,
                 timeout=30,
+                session=self.session,
             )
             if frame is not None and not frame.empty:
                 return frame
@@ -167,6 +179,28 @@ def extract_symbol_frame(downloaded: pd.DataFrame, symbol: str, adjusted: bool, 
     missing = required_columns.difference(frame.columns)
     if missing:
         raise ValueError(f"Missing yfinance columns: {', '.join(sorted(missing))}")
+
+    # Inspect before dropna: otherwise an incomplete new session silently falls
+    # back to an older close and is incorrectly counted as a successful update.
+    # Ignore all-empty rows introduced by the multi-symbol/crypto date union.
+    price_columns = [column for column in ("Open", "High", "Low", "Close", "Adj Close") if column in frame]
+    prices_present = frame[price_columns].apply(pd.to_numeric, errors="coerce").notna().any(axis=1)
+    if "Volume" in frame:
+        prices_present |= pd.to_numeric(frame["Volume"], errors="coerce").gt(0)
+    sessions = frame.loc[prices_present].sort_values(date_column)
+    if not sessions.empty:
+        latest = sessions.iloc[-1]
+        ranking_columns = ["Close", "High", "Low"] + (["Adj Close"] if adjusted else [])
+        missing_prices = [column for column in ranking_columns if pd.isna(pd.to_numeric(latest[column], errors="coerce"))]
+        if missing_prices:
+            complete = sessions[ranking_columns].apply(pd.to_numeric, errors="coerce").notna().all(axis=1)
+            previous = sessions.loc[complete, date_column]
+            last_valid = pd.Timestamp(previous.iloc[-1]).strftime("%Y-%m-%d") if not previous.empty else "none"
+            session_date = pd.Timestamp(latest[date_column]).strftime("%Y-%m-%d")
+            raise IncompleteLatestBarError(
+                f"Yahoo daily prices incomplete: symbol={symbol}, session={session_date}, "
+                f"missing={','.join(missing_prices)}, last_usable={last_valid}. "
+                "The latest session cannot be replaced with an older daily bar.")
 
     if adjusted:
         raw_close = pd.to_numeric(frame["Close"], errors="coerce")

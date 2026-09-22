@@ -263,3 +263,24 @@ UI-015验证结果：45项Python测试、lint/build通过；箱体页面、RSI�
 - 线上两个主表已实际运行table-fit-ui回归：两列表×五指标×1024/1298/1440/1920宽度均完整显示右侧列，表头对齐；390px最后列可滚动到达，无整页溢出。该验证针对真实线上页面，不是仅本地模拟。
 - 此生产状态覆盖此前所有“本地未发布”备注；那些段落保留为历史验证记录。新增箱体、RSI、业务及维护日期提示已进入已启用的纽约工作日18:30生成/部署流程，无需新增定时任务。名单成员及基本面复核仍手动，超过30天仅提示。
 - 线上箱体页也已实际加载验证：100只扫描、20已验证/7待观察共27候选，生成时间2026-09-19T22:03-04:00，数据日2026-09-18。直接API大文件检查曾遇30秒传输超时，浏览器实际页面随后加载成功；未将超时API检查记作通过。
+
+## 2026-09-21 自动更新失败排查（运行 UTC 2026-09-22）
+- 关联 OPS-001 / OPS-002 / NFR-001 / DATA-018；运行 https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/35674037463 。49 项测试通过，行情 133 成功/0 失败、历史 266 文件/0 错误、data_date=20260921；generate_boxes 抛出“箱体扫描无有效结果”，build 失败、deploy 跳过，未覆盖旧线上产物。
+- 原日志没有逐只箱体错误，也没有上传中间产物，不能断言已还原云端每只日期。本地重新真实下载复现相同错误：131 只股票/ETF 截至 2026-09-18，VIX 截至 2026-09-21，DOGEUSD 截至 2026-09-20；全局日期取非 crypto 最大值，被 VIX 推至 21 日，100 只观察股全部因历史日期不等于全局日期被拒绝。输入保存于 ignored 的 .cache/deploy-diagnosis/data；未覆盖 public 安全占位。
+- 本地补充逐只箱体错误及日期日志，增加日期错位/保留旧文件回归。50 项 Python 测试、lint/build 通过；真实生成仍失败，不能记为恢复。修改未 push、未部署；JSON 契约、日期算法、名单及维护日期不变。
+- 预防建议：引入每只行情日期，用自身日期核对历史；箱体按扫描池的实际数据日期标注，避免持仓指数推动箱体日期；明确混合日期及陈旧数据提示。该方案涉及日期契约，需按 CR 流程确认后实现，不能简单放宽日期校验或把旧数据标成新数据。后续可为失败运行保留中间行情产物，并针对源数据暂时未更新做有限重试。Node/Pandas 弃用警告不是本次致命错误。
+
+### 2026-09-21 后续直接源数据核查与用户纠正（CR-014 / DATA-020）
+- 上述“按扫描池拆分日期”仅为此前建议，用户已明确否决此方向：应保留部署失败并解释缺少当天完整股价。
+- 纽约 21:28 左右直接查询 Yahoo chart query1/query2，NVDA 的 5d 与明确起止请求均返回 9/21 日期，但 Close/Adj Close 为 null。NVDA/MSFT/QQQ/HOOD 的 Open/High/Low/Volume 有值，报价元数据 regularMarketPrice 也有 9/21 收盘时点值；VIX 的日线完整。请求 end=2026-09-22 正确。证据 .cache/deploy-diagnosis/raw-feed-check.json；不将报价元数据拼成复权日线，不臆测 Yahoo 后端具体故障或修复时间。
+- 修复：yfinance_client 在 dropna 前检查最新有内容的日线；不完整日线计失败并携带诊断，主入口写入前失败；GitHub annotation 和逐只日志给出 session/missing/last_usable。保留箱体原日期保护和上轮诊断增强。
+- 真实主入口验证输出 .cache/deploy-guard-check.log：成功 2（VIX、DOGE），失败 131（股票/ETF 9/21 Close/Adj Close 缺失），data_date=20260921（VIX），历史 4 文件在内存中、0 图表错误；进程按预期 exit 1，隔离输出目录未创建，未导出任何 JSON。该结果证明门禁正确，不能描述为行情恢复或部署成功。
+- 54 项 Python 测试、lint/build 通过；JSON 契约、名单、维护日期和公式不变。修改尚未提交/推送。限制：识别已返回新日线中的缺价，未新增交易所日历来判定完全未返回新日期的情况。
+
+### 2026-09-21 上游原因复查与诊断实现（OPS-003）
+- 先前 HTTP 200 的 NVDA/MSFT/QQQ/HOOD chart 日线 Close/Adj Close=null，但 regularMarketPrice 已有收盘时报价；直接 query1/query2 和短/长请求均曾出现，不是本地 dropna 制造空值。21:35–21:40 纽约时间复查，相同接口已补齐。由这一前后变化推断是上游日线发布/补齐延迟；Yahoo 未说明内部原因，不能具体归因服务器、供应商或缓存故障。
+- Yahoo 官方提供商说明 https://help.yahoo.com/kb/SLN2310.html 列明历史数据/每日更新供应商；不能据此认定本次是供应商故障。yfinance 讨论 https://github.com/ranaroussi/yfinance/discussions/2854 有相似缺最后日价格的用户报告，属于背景材料，不是本次事故公告。
+- 新诊断在实际下载会话只读观察，成功 HTTP 的原始必需字段缺失才能标为 incomplete_daily；429/401/403/5xx/网络/格式/API 错误分别标注；没有 HTTP 证据标 unknown；原始字段完整但本地失败提示检查本地处理，避免误报上游。
+- Actions 运行页 Summary 展示中文原因分类、数量及逐只日期/字段表；data-diagnostics-<run_id>-<attempt> artifact 保留14天。包含 report.json/summary.md，白名单保存状态、代码、末日字段、行情时间及 yfinance 版本，不保存请求查询参数、Cookie、Token 或原始响应正文；诊断故障不吞掉数据层原错误。
+- 真实生成输出隔离至 .cache/upstream-live/data，当前133成功/0失败、266历史文件/0错误、箱体100成功/0错误、data_date20260921；诊断133个原始响应均complete。60项测试、lint/build通过，覆盖缺价且quote已有价、恢复、HTTP分类、超时、格式错误、脱敏与Actions摘要。
+- 文件：scripts/data_pipeline/{diagnostics,yfinance_client}.py、scripts/generate_dashboard.py、requirements.txt、.github/workflows/deploy.yml、tests/test_diagnostics.py及需求/摘要/日志。关联OPS-003、CR-014/DATA-020；公共JSON契约无变化，尚未提交/推送，线上尚未启用增强诊断。

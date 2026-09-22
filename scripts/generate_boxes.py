@@ -21,7 +21,7 @@ def generate_boxes(data_dir: Path) -> dict:
             if history["updated_at"] != dashboard["updated_at"] or history["code"] != stock["code"] or history["adjustment"] != "adjusted":
                 raise ValueError("历史文件版本/代码/口径不匹配")
             if not history["daily"] or history["actual_end"].replace("-", "") != dashboard["data_date"]:
-                raise ValueError("历史行情日期未对齐最新市场日")
+                raise ValueError(f"历史行情日期未对齐最新市场日: history={history['actual_end']}, dashboard={dashboard['data_date']}")
             start = history["daily"][-252:][0]["time"]
             if any(date >= start for date in history.get("skipped_dates", [])):
                 raise ValueError("扫描区间存在缺失日线，不能准确统计交易日耗时")
@@ -35,6 +35,9 @@ def generate_boxes(data_dir: Path) -> dict:
             errors.append({"code": stock["code"], "error": str(error)})
     processed = {row["code"] for row in rows} | {row["code"] for row in errors}
     errors.extend({"code": code, "error": "本批缺少可用行情"} for code in sorted(codes - processed))
+    print(f"Box scan: {len(rows)} processed / {len(errors)} errors; data_date={dashboard['data_date']}")
+    for error in errors:
+        print(f"Box scan error: {error['code']}: {error['error']}")
     payload = {"schema_version": 4, "updated_at": dashboard["updated_at"], "data_date": dashboard["data_date"],
                "adjustment": "adjusted", "source": "yfinance", "universe": "活跃股观察列表 · 固定扫描池",
                "universe_count": len(codes), "market_scan_enabled": False, "rows": rows, "errors": errors}

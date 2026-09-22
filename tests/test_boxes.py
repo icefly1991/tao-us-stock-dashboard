@@ -2,6 +2,8 @@ import json
 import sys
 import tempfile
 import unittest
+from contextlib import redirect_stdout
+from io import StringIO
 from pathlib import Path
 
 import pandas as pd
@@ -216,6 +218,26 @@ class BoxTests(unittest.TestCase):
             (root / "boxes.json").write_text('previous')
             with self.assertRaises(RuntimeError):
                 generate_boxes(root)
+            self.assertEqual((root / "boxes.json").read_text(), 'previous')
+
+    def test_market_date_ahead_reports_each_error_and_preserves_previous(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            (root / "history/adjusted").mkdir(parents=True)
+            dashboard = {"updated_at": "same", "data_date": "20260921",
+                         "collections": [{"id": "research", "codes": ["X"]}],
+                         "adjustments": {"adjusted": {"rows": [{"code": "X", "name": "Example"}]}}}
+            history = {"updated_at": "same", "code": "X", "adjustment": "adjusted",
+                       "actual_end": "2026-09-18", "daily": [{"time": "2026-09-18"}]}
+            (root / "dashboard.json").write_text(json.dumps(dashboard))
+            (root / "history/adjusted/X.json").write_text(json.dumps(history))
+            (root / "boxes.json").write_text('previous')
+            output = StringIO()
+            with redirect_stdout(output), self.assertRaises(RuntimeError):
+                generate_boxes(root)
+            self.assertIn("0 processed / 1 errors", output.getvalue())
+            self.assertIn("Box scan error: X:", output.getvalue())
+            self.assertIn("history=2026-09-18, dashboard=20260921", output.getvalue())
             self.assertEqual((root / "boxes.json").read_text(), 'previous')
 
 
