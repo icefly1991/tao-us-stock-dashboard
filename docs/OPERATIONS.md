@@ -303,3 +303,8 @@ UI-015验证结果：45项Python测试、lint/build通过；箱体页面、RSI�
 ### 发布完成
 - 功能提交ca2fb1e已推送main；https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36232841113 的build/deploy均success。65项测试、lint/build通过；真实生成首轮成功，133成功/0失败、266历史文件/0错误、100箱体扫描/0错误，data_date=20260925。诊断artifact上传成功。
 - 线上dashboard.json HTTP200，updated_at=2026-09-26T05:28-04:00，data_date=20260925。新工作流调度及重试入口已上线，覆盖本节此前待发布备注。尚未观察未来定时首轮及真实上游缺价恢复周期，不能保证每次首轮成功；重试逻辑已通过模拟恢复/耗尽测试。
+
+## 2026-09-26 UI-015 纽约时间显示已发布
+- 用户要求统一纽约时间并push；f192c68已上线，https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36262250107 的build/deploy成功。
+- 三页共享src/DataFreshness.tsx，标题“更新时间（纽约时间）”，生成显示YYYY-MM-DD HH:mm，不展示容易误读成范围的UTC偏移。Intl固定America/New_York，自动处理夏令时；最新数据日保持行情日期。JSON与名单、公式无变化。
+- 65项Python测试、lint/build通过；组件静态渲染核验截图时间、冬令时转换及午夜00:07通过。云端真实行情133成功/0失败、266历史文件/0错误，data_date=20260925；线上页面与新JS均HTTP200，确认已引用index-DoeyDaVy.js。未新增页面布局或交互。
