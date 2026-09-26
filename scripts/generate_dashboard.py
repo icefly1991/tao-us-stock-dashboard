@@ -8,6 +8,10 @@ from generate_boxes import generate_boxes
 from data_pipeline.diagnostics import write_diagnostics
 
 
+class IncompleteLatestPricesError(RuntimeError):
+    """Only this known upstream condition is eligible for automatic retry."""
+
+
 def main() -> None:
     config = build_runtime_config()
     client = YFinancePipelineClient(config)
@@ -29,7 +33,7 @@ def main() -> None:
     if result.incomplete_latest_errors:
         affected = sorted({error["code"] for error in result.incomplete_latest_errors})
         print(f"::error title=Latest daily prices incomplete::{len(affected)} symbols have incomplete latest-session prices: {', '.join(affected)}. See Data error lines for session, missing fields and last usable date. Deployment stopped; previous published data retained.")
-        raise RuntimeError("Latest-session stock prices are incomplete; no dashboard/history/boxes files were written. Retry after Yahoo daily prices are complete.")
+        raise IncompleteLatestPricesError("Latest-session stock prices are incomplete; no dashboard/history/boxes files were written. Retry after Yahoo daily prices are complete.")
     for error in result.history_errors:
         print(f"Chart unavailable: {error['code']} {error['error']}")
     for adjustment, histories in result.histories.items():
@@ -60,4 +64,8 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except IncompleteLatestPricesError as error:
+        print(error)
+        raise SystemExit(75)

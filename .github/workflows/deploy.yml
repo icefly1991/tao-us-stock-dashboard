@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   schedule:
     # Run after the regular US session and allow the daily feed time to settle.
-    - cron: "30 18 * * 1-5"
+    - cron: "30 22 * * 1-5"
       timezone: "America/New_York"
 
 permissions:
@@ -21,6 +21,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 300
 
     steps:
       - name: Checkout repository
@@ -47,7 +48,7 @@ jobs:
         run: python -m unittest discover -s tests -v
 
       - name: Generate dashboard data
-        run: python scripts/generate_dashboard.py
+        run: python scripts/retry_dashboard.py
 
       - name: Upload data diagnostics
         if: ${{ always() }}

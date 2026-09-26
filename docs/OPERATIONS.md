@@ -290,3 +290,12 @@ UI-015验证结果：45项Python测试、lint/build通过；箱体页面、RSI�
 - 云端60项Python测试、lint/build通过；133成功/0失败、266历史文件/0错误，箱体100成功/0错误，data_date=20260921。线上dashboard.json实际HTTP200，updated_at=2026-09-21T21:49-04:00，两口径各133行。
 - 诊断artifact实际上传成功：data-diagnostics-35677183584-1，9629字节，https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/35677183584/artifacts/10673976388 ，到期2026-10-06。上传路径仅.cache/pipeline-diagnostics，明确include-hidden-files保证该目录可收集，不上传其它缓存。
 - 本节覆盖本次此前“本地未发布”备注：最新缺价拦截及上游诊断已上线；名单/公共JSON契约/公式不变。Yahoo后续仍可能延迟或故障，届时失败保护及可定位日志生效。
+
+## 2026-09-26 调度诊断与修复（CR-015 / OPS-004）
+- GitHub API核实：36205954802首次9/25纽约20:44，131只缺Close/Adj Close，9/26纽约04:06重跑成功；36078502518首次9/24纽约20:39缺价，23:19重跑成功；35939418018首次9/23纽约20:39缺价，后续独立运行36011583640成功。最新远端代码4308fca，最新运行36205954802成功（attempt2）。
+- 证据：https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36205954802 、https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36078502518 。成功时刻只是观察上界，不等于刚补齐的时刻。
+- Yahoo官方 https://in.help.yahoo.com/kb/SLN2310.html 介绍供应商和行情延迟，未查到日线必需价格保证补齐的时刻；盘中报价延迟不能当成日线完成承诺。
+- 新调度纽约周一至周五22:30，北京次日夏令时10:30、冬令时11:30。缺价每30分钟重试，最多9次，正常约覆盖到次日02:30；GitHub延迟可能顺延。完整后继续发布，全程未恢复则失败保留旧页面。
+- scripts/retry_dashboard.py为工作流入口，exit75专指最新日线缺价。Summary逐轮记录，data-diagnostics的attempt-01等目录保留报告14天。build上限300分钟，无新增权限、密钥或依赖；等待会占用runner。
+- 同一run内重试不增加GitHub run_attempt，请看Summary的行情尝试编号。push和手动Run workflow同样支持自动重试。当前待验证与发布。
+- 本地验证：65项Python测试通过，npm lint/build通过。隔离输出至.cache/retry-live/data的真实yfinance生成通过：133成功、0失败、0停牌，266历史文件、0历史错误，100只箱体扫描、0错误，data_date=20260925。未覆盖仓库占位文件。失败→等待→恢复及耗尽分支以模拟测试验证，未人为等待4小时或伪造Yahoo故障。
