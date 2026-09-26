@@ -299,3 +299,7 @@ UI-015验证结果：45项Python测试、lint/build通过；箱体页面、RSI�
 - scripts/retry_dashboard.py为工作流入口，exit75专指最新日线缺价。Summary逐轮记录，data-diagnostics的attempt-01等目录保留报告14天。build上限300分钟，无新增权限、密钥或依赖；等待会占用runner。
 - 同一run内重试不增加GitHub run_attempt，请看Summary的行情尝试编号。push和手动Run workflow同样支持自动重试。当前待验证与发布。
 - 本地验证：65项Python测试通过，npm lint/build通过。隔离输出至.cache/retry-live/data的真实yfinance生成通过：133成功、0失败、0停牌，266历史文件、0历史错误，100只箱体扫描、0错误，data_date=20260925。未覆盖仓库占位文件。失败→等待→恢复及耗尽分支以模拟测试验证，未人为等待4小时或伪造Yahoo故障。
+
+### 发布完成
+- 功能提交ca2fb1e已推送main；https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36232841113 的build/deploy均success。65项测试、lint/build通过；真实生成首轮成功，133成功/0失败、266历史文件/0错误、100箱体扫描/0错误，data_date=20260925。诊断artifact上传成功。
+- 线上dashboard.json HTTP200，updated_at=2026-09-26T05:28-04:00，data_date=20260925。新工作流调度及重试入口已上线，覆盖本节此前待发布备注。尚未观察未来定时首轮及真实上游缺价恢复周期，不能保证每次首轮成功；重试逻辑已通过模拟恢复/耗尽测试。
