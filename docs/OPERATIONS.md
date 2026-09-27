@@ -326,4 +326,5 @@ UI-015验证结果：45项Python测试、lint/build通过；箱体页面、RSI�
 - 本地93项Python、原32项浏览器及新增11项池回归通过，lint/build通过。覆盖原归属保留、跨池去重、两箱体隔离、分级/币种/期间/证据日期、错误恢复、弹窗和响应式。
 - 真实数据桌面1440/手机390截图检查新两页、证据弹窗及原持仓/活跃通过，无脚本错误；截图在.cache/pool-visual。public/dashboard为350成员的无行情占位，不提交真实历史/箱体文件。
 - 研究数据为独立静态pool-review.json，日常不刷新评级；原list-review.json未改变。234只全部做财报初筛，其中23只原文专项核查，57只保留待核实。报告与限制见reviews/2026-09-27-pool-review.md。
-- 云端发布与线上复验结果在本次push完成后补记。
+- 功能提交`8ed8610`，[Actions 36311510736](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36311510736) checks/build/deploy全流程成功：93项Python、43项Chromium回归、lint/build；350行情首次生成成功、0失败、700历史文件/0错误、100与234两池扫描均0错误。
+- 线上1440/390五页复验成功：持仓43、原活跃100、原箱体默认24、新池234、新箱体默认58。压力筛选12只、RZLV财报弹窗/关闭正常，无脚本错误；线上两口径各350行，data_date=20260925，updated_at=2026-09-27T06:09-04:00。证据截图.cache/pool-visual/production-*.png。
