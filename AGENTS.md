@@ -197,3 +197,5 @@ CR-015已发布：ca2fb1e，Actions 36232841113 build/deploy成功；65项测试
 
 ## UI-019 / NFR-003 / CR-016（2026-09-26）
 三页精简重复说明，详细方法放项目文档并以折叠链接展示；持仓、活跃与A/B/C进入时默认“52周内进度”。箱体筛选不变。新增离线Playwright回归（npm test），PR和部署前自动运行Python、lint、TypeScript/build及浏览器检查。异常JSON/缺失集合显示可恢复错误，缺值同分按代码排序；导出严格JSON与单文件原子替换。金融公式、名单、名单日期、公共JSON字段不变。审查报告见docs/reviews/2026-09-26-quality.md。
+
+CR-016已发布：提交0de1d33，Actions 36287978859全流程通过（79项Python/32项浏览器/lint/build）；133行情、266历史文件、100箱体扫描成功，data_date20260925。线上桌面/手机三页复验通过，详情见OPERATIONS。

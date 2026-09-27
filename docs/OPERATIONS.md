@@ -314,4 +314,9 @@ UI-015验证结果：45项Python测试、lint/build通过；箱体页面、RSI�
 - 本地真实行情输出隔离至.cache/quality-live/data：133成功、0失败、0停牌；266历史文件、0错误；100只箱体、0错误；data_date=20260925。public占位文件未改写。
 - PR与deploy共用checks.yml，顺序为Python→lint/build→离线浏览器回归；通过后deploy继续真实行情与Pages。浏览器失败证据保留14天。
 - 首次本地运行：npm ci；npx playwright install chromium；npm test。已安装Edge时PowerShell可用$env:PLAYWRIGHT_CHANNEL='msedge'。浏览器进程须有正常启动/退出权限。
-- 截图对照与限制见reviews/2026-09-26-quality.md；云端发布结果待本次push后补记。
+- 截图对照与限制见reviews/2026-09-26-quality.md。
+
+### CR-016 已发布验证
+功能提交`0de1d33`，[Actions 36287978859](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36287978859)的checks/build/deploy全部成功；79项Python、32项云端Chromium回归、lint/build通过。真实行情第1次成功：133只、266历史文件，100只箱体扫描/0错误，data_date=20260925。
+
+线上1440/390三页复验：持仓43行、活跃100行、箱体默认24行；列表默认52周内进度，无浏览器脚本错误，两口径各133行，updated_at=2026-09-26T22:17-04:00。截图保存在.cache/quality-review/production-*.png。公共JSON契约、公式、名单及维护日期均未改变。
