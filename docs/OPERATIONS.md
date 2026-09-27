@@ -337,4 +337,6 @@ UI-015验证结果：45项Python测试、lint/build通过；箱体页面、RSI�
 - CR-018功能提交4f5aef0已由[Actions 36339033786](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36339033786)完成checks/build/deploy，均成功。
 - CR-019本地105项Python、51项浏览器、lint/build通过；覆盖短语证据、旧字段兼容、损坏来源、缺亮点、临床收入与盈利分离、金融现金流、同币种同日期比较、箱体展示范围。
 - 真实234只研究与350只行情的1440/390浏览器截图检查通过，无页面异常或全页溢出；原始行情仍使用本轮已验证的20260925数据，最终云端再生成。截图.cache/risk-visual。
-- pool-review v2兼容扩展，不改变dashboard/boxes/history契约，研究日期仍2026-09-27，原名单日期不变。发布记录待本轮Actions完成补充。
+- pool-review v2兼容扩展，不改变dashboard/boxes/history契约，研究日期仍2026-09-27，原名单日期不变。
+- 功能提交`311c5f4`，[Actions 36358576352](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36358576352) checks/build/deploy全部成功。真实行情首次生成成功：350成功、0失败、700历史文件；两箱体100/234处理均0错误，data_date=20260925。
+- 线上1440/390五页复验通过：新池两列、234条摘要、临床22/亏损融资14筛选、GEMI/IMSR/HUBG证据弹窗、箱体仅详情摘要和原三页均正常，无脚本错误或全页横向溢出。线上updated_at=2026-09-27T19:26-04:00；HUBG仍唯一资金等级待核实，18家公司本轮无可确认亮点。截图.cache/risk-visual/production-*.png。

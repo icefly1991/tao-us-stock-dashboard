@@ -126,3 +126,5 @@ WatchlistItem.pool为布尔值，CSV用空值/tradingview；与tier互斥、与�
 pool-review.json初版schema_version=1，已由CR-018升级v2；仍是独立静态文件：reviewed_at、source_snapshot_date、rows（code/grade/tags/reason/business/facts/sources/review_method/runway_months及v2类型字段）、excluded。facts每项含value/unit/start?/end/filed/url，缺失null；审查日期不会因行情刷新变更。前端校验结构/来源协议/重复代码，失败保留行情并明确基本面不可用。
 ## CR-018：研究契约v2
 `pool-review.json.schema_version=2`，新增逐行`category`（枚举）、`category_reason`、`category_method`、非空`category_sources`、`evidence_gap`。`grade`仍是独立四档资金/经营判断，两页交叉筛选；CSV成员与业务、行情指标、boxes v4不变。前端拒绝旧v1和无类型证据的数据，但保留价格表。独立`pool_categories.json`经`apply_categories`生成类型，不参与每日价格/箱体计算。补查事实允许部分空值，换期间时不混入旧数据；行业专门口径关闭通用runway。具体维护见POOL_RESEARCH。
+### CR-019 / DATA-023：基本面短语兼容扩展
+研究v2行可选`highlights`和`risks`，每组0–3项`{text,method,sources:[{title,url}]}`。text为1–24字符，method限原文提炼/财报规则初筛，sources非空且HTTPS。缺字段兼容旧v2并显示摘要待补充；空数组不等同无风险或公司无优点。`apply_briefs`以`pool_briefs.json`原文摘要优先补充财报事实，每项保留证据；不进入每日行情计算。只改变高风险池主表及箱体单股详情，原dashboard/boxes/history数据契约不变。
