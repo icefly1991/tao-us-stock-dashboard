@@ -2,6 +2,7 @@ import DataFreshness from './DataFreshness'
 import PageNavigation from './PageNavigation'
 import { useEffect, useMemo, useState } from 'react'
 import ListReviewNotice from './ListReviewNotice'
+import { isBoxScan } from './dataValidation'
 
 type Bar = { time: string; open: number; high: number; low: number; close: number; volume?: number | null; rsi_value?: number | null }
 type Trip = { direction: string; start: string; end: string; start_index: number; end_index: number; days: number; return_pct: number }
@@ -109,7 +110,7 @@ function BoxChart({ row }: { row: Box }) {
         </> : <text x="480" y="679" textAnchor="middle" fontSize="11" fill="#64748b">可用历史 {bars.length} 日 · 未识别有效箱体</text>}
       </svg>
     </div>
-    <p className="box-footnote">蓝线：箱体边界；紫线：上行穿越；橙线：下行穿越。穿越按收盘进入底部/顶部20%区域识别，不代表恰好买到最低、卖到最高。K线、成交量和RSI共用日期；移动鼠标或手机点按可看同日数值，键盘左右键逐日查看。RSI沿用完整历史计算结果；缺失处留空。手机可横向拖动图表。</p>
+    <p className="box-footnote">蓝线为箱体，紫/橙线为上行/下行。悬停、点按或左右键查看同日数值；手机可横滑。</p>
   </>
 }
 
@@ -141,7 +142,7 @@ function LongRangeChart({ row }: { row: Box }) {
     </>}
     </div>
     <div className="box-detail-stats"><span>长期区间位置 <b>{number(row.long_position_pct, '%')}</b></span><span>近一年涨幅 <b>{number(row.year_return_pct, '%')}</b></span><span>较一年低点上涨 <b>{number(row.year_low_gain_pct, '%')}</b></span></div>
-    <p>蓝色虚线与浅蓝区间：上方日线识别出的当前箱体，投影到长期价格图供比较，不表示四年间一直存在这个箱体。浅红区域为长期价格区间顶部20%。曲线每5个交易日采样并保留最新价；指标使用全部可用日线。{(row.year_history_days ?? 0) < 252 ? '一年低点使用实际可用历史。' : ''}</p>
+    <details className="page-help"><summary>背景图说明</summary><p>蓝色为当前日线箱体，非四年固定边界；红色为长期区间顶部20%。曲线每5日采样，指标用全部日线。{(row.year_history_days ?? 0) < 252 ? '一年低点使用可用历史。' : ''}</p></details>
   </div>
 }
 
@@ -159,7 +160,7 @@ export default function BoxScreener() {
       if (!response.ok) throw new Error('missing')
       return response.json() as Promise<Scan>
     }).then(result => {
-      if (result.schema_version !== 4 || !Array.isArray(result.rows)) throw new Error('invalid')
+      if (!isBoxScan(result)) throw new Error('invalid')
       setData(result)
     }).catch(error => { if (error.name !== 'AbortError') setError(true) })
     return () => controller.abort()
@@ -176,28 +177,27 @@ export default function BoxScreener() {
     <header className="box-hero">
       <PageNavigation page="boxes" />
       <div className="box-hero-heading"><div>
-      <div className="box-eyebrow">RANGE EXPLORER / 研究原型</div>
+      <div className="box-eyebrow">仅复权日线 · 回顾性形态</div>
       <h1>宽箱体形态识别</h1>
-      <p>大小箱体都可以 · 空间与速度兼顾 · 业务有支撑。先看真实走势，再决定哪些值得持续跟踪。</p>
+      <p>形态筛选，基本面待复核。</p>
       </div>{data && <DataFreshness updatedAt={data.updated_at} dataDate={data.data_date} />}</div>
-      <div className="box-chips"><span>箱体幅度 ≥ 20%</span><span>平均一轮 ≤ 120 自然日</span><span>60 / 90 / 120 / 252 日多尺度</span><span>仅复权日线</span></div>
     </header>
-    {error ? <section className="box-panel" role="alert">暂时无法读取箱体扫描结果。请刷新重试；原有两份列表仍可使用。</section> : !data ? <section className="box-panel" role="status">正在读取扫描结果…</section> : <>
+    {error ? <section className="box-panel" role="alert">箱体数据暂不可用。<button className="underline" onClick={() => window.location.reload()}>刷新重试</button></section> : !data ? <section className="box-panel" role="status">正在读取扫描结果…</section> : <>
       <section className="box-stats" aria-label="扫描概况">
         <div><small>本轮扫描范围</small><strong>{data.universe_count}<em>只</em></strong><span>活跃列表 · 固定扫描池</span></div>
         <div><small>形态候选</small><strong>{matches + watching}<em>只</em></strong><span>已验证 {matches} · 待观察 {watching} · 基本面待复核</span></div>
       </section>
       <ListReviewNotice />
-      <div className="box-scope">最近一年扫描箱体；四年区间位置 ≥ 80%、一年涨幅 ≥ 100% 或较一年低点上涨 ≥ 200%，任一满足即排除。历史不足四年时使用实际可用历史并标注。</div>
+
       <section className="box-panel">
-        <div className="box-toolbar"><div><h2>形态候选</h2><p>先看已验证，再看接近一轮的待观察；同状态按箱体幅度/平均周期排序。</p></div><button className="box-reference" onClick={() => { setFilter('all'); setQuery('CRWV'); setSelected('CRWV') }}>查看 CRWV 对照</button></div>
+        <div className="box-toolbar"><div><h2>形态候选</h2><p>已验证优先 · 同类按空间效率排序</p></div><button className="box-reference" onClick={() => { setFilter('all'); setQuery('CRWV'); setSelected('CRWV') }}>查看 CRWV 对照</button></div>
         <div className="box-filters"><label>状态<select aria-label="状态" value={filter} onChange={event => setFilter(event.target.value)}><option value="candidates">候选（已验证 / 待观察）</option><option value="all">全部结果（含已排除）</option>{Object.entries(statusLabels).map(([key, label]) => <option key={key} value={key}>{label}</option>)}</select></label><label>查找股票<input aria-label="查找股票" value={query} onChange={event => setQuery(event.target.value)} placeholder="代码或公司名称" /></label><span>{rows.length} 个结果</span></div>
         <div className="box-table-scroll"><table className="box-table"><thead><tr><th>股票 / 形态</th><th>箱体下沿–上沿</th><th>箱体幅度 / 内部空间</th><th>平均周期 / 完成轮数</th><th>当前未完成</th><th>空间效率</th><th>箱体位置</th><th>长期位置 / 一年涨幅</th></tr></thead><tbody>{rows.map(row => <tr key={row.code} className={active?.code === row.code ? 'selected' : ''}>
           <td><button aria-pressed={active?.code === row.code} onClick={() => setSelected(row.code)}><strong>{row.code}</strong><span>{row.name}</span></button><span className={`box-status ${row.status}`}>{statusLabels[row.status]}</span><small className="box-history-note">{row.window_days ?? '—'}日窗口{row.contracting ? ' · 宽转窄' : ''}</small></td>
           <td>{number(row.low, '', 2)} – {number(row.high, '', 2)}</td><td>{number(row.width_pct, '%')} / {number(row.inner_space_pct, '%')}</td><td>{number(row.cycle_days)} 天 / {row.round_count ?? 0} 轮</td><td>{number(row.pending_days, ' 天', 0)}</td><td>{number(row.efficiency, '', 2)}<small className="box-history-note">百分点 / 自然日</small></td><td>{number(row.position_pct, '%')}</td><td>{number(row.long_position_pct, '%')} / {number(row.year_return_pct, '%')}<small className="box-history-note">{row.long_history_complete ? '近四年' : '不足四年 · 可用历史'}</small></td>
         </tr>)}</tbody></table></div>
-        {!rows.length && <p role="status" className="box-empty">当前条件没有匹配结果，不降低标准凑数。可切换“全部结果”查看未达标原因。</p>}
-        <p className="box-footnote">一轮＝下→上→下→上，或上→下→上→下，共三个单程。平均周期只统计已完成轮次，按自然日算术平均；当前未完成耗时只展示、不用于排除。待观察尚无完整周期，不视为速度已达标。</p>
+        {!rows.length && <p role="status" className="box-empty">暂无匹配结果，可切换“全部结果”。</p>}
+
       </section>
       {active && <section className="box-panel box-detail" aria-label="箱体走势详情">
         <div className="box-toolbar"><div><div className="box-eyebrow">DAILY CHART / 最近一年</div><h2>{active.code} <span>{active.name}</span></h2><p className="box-business">业务 / 板块：{active.business || '—'}</p></div><span className={`box-status ${active.status}`}>{statusLabels[active.status]}</span></div>
@@ -210,7 +210,7 @@ export default function BoxScreener() {
             <span>{item.round_count ?? 0}轮 · {number(item.cycle_days, ' 自然日')}</span>
           </button>)}
         </div>
-        <p className="box-footnote">{active.selection_note}。当前查看 {active.window_days} 日窗口。</p>
+        <details className="page-help"><summary>窗口选择说明</summary><p>{active.selection_note}</p></details>
         {active.prior_box && <p className="box-contract-note">{active.contracting ? '识别到宽转窄' : '较长窗口对照（近期形态待验证）'}：较长的 {active.prior_box.window_days} 日窗口空间 {number(active.prior_box.width_pct, '%')}，默认近期 {active.selected_window_days} 日窗口空间 {number(stock?.width_pct, '%')}。</p>}
         <div className="box-detail-stats"><span>边界空间 <b>{number(active.width_pct, '%')}</b></span><span>内部空间 <b>{number(active.inner_space_pct, '%')}</b></span><span>空间效率 <b>{number(active.efficiency, '', 2)} 百分点/天</b></span></div>
         <BoxChart key={`${active.code}:${active.window_days}`} row={active} />
@@ -225,7 +225,14 @@ export default function BoxScreener() {
         <details className="box-rounds"><summary>展开完整轮次记录（{active.round_count ?? 0} 轮）</summary>{active.rounds?.length ? active.rounds.map((round, i) => <p key={i}>{round.turns.map(turn => `${turn.time} ${turn.side === 'low' ? '下区' : '上区'}`).join(' → ')} · <strong>{round.calendar_days} 自然日</strong> / {round.trading_days} 交易日</p>) : <p>尚未完成三个交替单程，不能以单向或山峰结构冒充一轮。</p>}</details>
         <details><summary>展开每次穿越的日期、幅度和耗时（{active.trips?.length ?? 0} 次）</summary><div className="box-trips">{active.trips?.length ? active.trips.map((trip, i) => <p key={i}>{trip.direction === 'up' ? '↗ 上行' : '↘ 下行'} · {trip.start} → {trip.end} · <strong>{trip.days} 个交易日</strong> · {number(trip.return_pct, '%')}</p>) : <p>观察期内未识别到完整穿越。</p>}</div></details>
       </section>}
-      <section className="box-panel box-method"><h2>这次扫描怎样判断？</h2><p>最近一年作为背景，检查60/90/120/252交易日窗口。每个窗口用整段收盘价10%/90%分位数识别统一上下沿，并在整段统计往返；优先选已验证的最短窗口，再选待观察窗口。每天重新识别，边界可能变化；这是回顾已经发生的形态，不代表当时已知的交易信号。</p><p>箱体幅度＝（上沿÷下沿−1）×100%，要求≥20%。例如3–8美元幅度为166.67%，不是5%或62.5%。收盘进入底部/顶部各20%价格区域算触边，同侧停留不重复计数；下→上→下→上或上→下→上→下为一轮。三个单程不能在多轮之间重复使用。</p><p>已验证：至少完成一轮，已完成轮次平均自然日≤120天，幅度与稳定性合格。待观察：已完成两个交替单程，第三单程推进至少一半，尚无完整一轮；不把单边、单个山峰或谷底当候选。平均周期采用算术平均，只看已完成轮次；最近一轮及当前未完成耗时单独展示，不另作排除门槛。</p><p>前后半段收盘均价漂移不得超过箱体高度50%，当前持续突破/跌破另行标记，四年高位过滤保持适用。区间内收盘占比只作描述，不作为独立验证证据。内部空间按上下20%区域内侧价格计算，空间效率仅用于排序，均不代表实际交易收益；基本面仍待专项复核。</p><details><summary>活跃列表怎样更新？</summary><p>日常只扫描活跃列表。名单上次完成维护超过30天时，页面提示你联系助手手动更新；不再安排季度自动更新或全市场自动扫描。每次手动更新遵循项目文档 ACTIVE_LIST_UPDATE.md，可从名单外寻找替代公司，核验非中概、高波动和实质业务后再调整名单。</p><p>名单日期只有完成实际复核、记录依据及验证后才更新；行情刷新与页面刷新不重置它。</p></details></section>
+      <details className="box-panel box-method page-help">
+        <summary>箱体方法与选股标准</summary>
+        <p>60/90/120/252日窗口；幅度≥20%，已完成轮次平均≤120自然日。一轮为三个交替单程，未完成耗时不参与平均。</p>
+        <p>四年区间位置≥80%、一年涨幅≥100%或较一年低点涨幅≥200%排除。日常仅扫描活跃列表，名单手动维护。</p>
+        <a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/BOX_DEFINITIONS.md" target="_blank" rel="noreferrer">完整箱体方法</a>
+        <a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/LIST_REVIEW.md" target="_blank" rel="noreferrer">选股标准</a>
+        <a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/ACTIVE_LIST_UPDATE.md" target="_blank" rel="noreferrer">名单维护</a>
+      </details>
       {data.errors.length > 0 && <section className="box-panel"><details><summary>未完成扫描：{data.errors.length} 只</summary>{data.errors.map(item => <p key={item.code}>{item.code}：{item.error}</p>)}</details></section>}
       <footer className="box-footer">{data.source ?? 'yfinance'} · {data.universe} · 数据和形态仅供研究</footer>
     </>}

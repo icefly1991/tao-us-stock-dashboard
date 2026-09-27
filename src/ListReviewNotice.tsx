@@ -22,7 +22,7 @@ export default function ListReviewNotice() {
   const days = valid ? Math.floor((today - stamp) / 86_400_000) : null
   const overdue = days !== null && days > 30
   return <div className={`list-review-notice ${overdue ? 'overdue' : ''}`} data-testid="list-review-notice" data-overdue={overdue}>
-    <strong>{date === null ? '正在读取列表更新日期…' : days === null ? '列表上次更新日期暂不可用，请核实维护记录。' : `列表上次更新是 ${date}，距今 ${days} 天。`}</strong>
-    <span>{overdue ? '已超过30天，可以联系我手动更新活跃列表。' : '扫描池固定为活跃股观察列表；行情更新不会重置名单日期。'}</span>
+    <strong>{date === null ? '正在读取列表更新日期…' : days === null ? '名单日期暂不可用，请核实。' : `名单更新 ${date} · ${days} 天前`}</strong>
+    {overdue && <span>超过30天，请手动更新名单。</span>}
   </div>
 }

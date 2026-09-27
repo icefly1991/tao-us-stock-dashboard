@@ -58,6 +58,8 @@ npm run dev
 python -m unittest discover -s tests -v
 npm run lint
 npm run build
+npx playwright install chromium
+npm test
 ```
 
 ## 修改自选列表
@@ -73,7 +75,7 @@ QQQ,Invesco QQQ Trust,QQQ,etf
 ```
 
 - `code`：页面显示代码，必须唯一。
-- `name`：页面显示名称；为空时使用 `code`。
+- `name`：已核实的公司名称，不使用代码占位。
 - `symbol`：交给 yfinance 查询的代码。
 - `asset_type`：只允许 `stock`、`etf`、`index`、`crypto`。
 
@@ -108,11 +110,11 @@ yfinance 不需要 API Key，因此仓库不需要行情密钥。
 
 ## 两份股票列表
 
-原 Watchlist 保留 42 只；2026-09-18 新增用户提供的 100 只列表，A/B/C 分别 30/35/35。页面按钮可切换两份列表和各档，所有列表共用原有指标和复权切换。共 133 个唯一代码，重合股票在两个列表都可见。
+当前持仓股 43 只，活跃股观察列表 100 只，A/B/C 分别 30/35/35。页面按钮可切换两份列表和各档，所有列表共用原有指标和复权切换。共 133 个唯一代码，重合股票在两个列表都可见。
 
-维护只编辑 scripts/stock_list.csv：watchlist=original 表示原列表成员；tier=A/B/C 表示新列表成员；两列可同时有值。新增代码没有用户提供的公司名称时，名称使用 ticker。无法获取行情的代码保留成员资格并在页面提示。相关需求 DATA-007 / UI-002，变更 CR-001。
+维护只编辑 scripts/stock_list.csv：watchlist=original 表示原列表成员；tier=A/B/C 表示新列表成员；两列可同时有值。公司名称须核实，不使用 ticker 占位；短业务词组由 CSV business 维护。无法获取行情的代码保留成员资格并在页面提示。相关需求 DATA-007 / UI-002，变更 CR-001。
 
-停牌处理：CSV trading_status 默认 active；已核实且确认的停牌标的设 suspended，并填写 status_note。页面显示“停牌”、指标“—”；不得把限流或下载错误标记为停牌。PSTG 保留展示代码、以新代码 P 查询，CFLT 因收购停止交易按用户要求显示停牌。
+停牌处理：CSV trading_status 默认 active；已核实且确认的停牌标的设 suspended，并填写 status_note。页面显示“停牌”、指标“—”；不得把限流或下载错误标记为停牌。PSTG 保留展示代码、以新代码 P 查询，CFLT 已按 CR-005 移除，当前没有停牌成员，通用停牌支持保留。
 
 ## 页面链接与默认排序
 
@@ -125,6 +127,12 @@ yfinance 不需要 API Key，因此仓库不需要行情密钥。
 
 ## 快速复制与 K 线
 
-点击名称或代码即可复制以便粘贴；悬停代码速览 K 线，点击图标固定，手机直接点击。支持最多五年周 K、近一年日 K 和成交量，跟随页面复权模式。Esc/关闭按钮/窗口外点击关闭；历史不足显示实际区间，停牌无图表。持仓现为 43 只（OSCR 移出、EIKN/TTAN 加入），观察列表仍 100 只。
+点击代码即可复制以便粘贴，名称为纯文本；悬停代码速览 K 线，点击图标固定，手机直接点击。支持最多五年周 K、近一年日 K 和成交量，跟随页面复权模式。Esc/关闭按钮/窗口外点击关闭；历史不足显示实际区间，停牌无图表。持仓现为 43 只（OSCR 移出、EIKN/TTAN 加入），观察列表仍 100 只。
 
 Yahoo最新日线缺价时每30分钟自动重试，最多9次；耗尽仍失败并保留旧页面，详见OPS-004 / CR-015。
+
+## 默认视图与回归保障
+
+持仓、活跃及A/B/C分档默认“52周内进度”，导航进入会重置默认指标。详细选股与箱体标准见docs/LIST_REVIEW.md和docs/BOX_DEFINITIONS.md；页面保留折叠说明。
+
+PR及部署前自动执行Python、lint、TypeScript/build与32项浏览器回归；测试使用固定数据，真实Yahoo数据另由部署验证。完整审查见[质量报告](./docs/reviews/2026-09-26-quality.md)。

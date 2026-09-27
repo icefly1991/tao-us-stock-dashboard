@@ -6,62 +6,22 @@ import { CopyStockButton, StockCopyProvider } from './StockCopy'
 import { StockHistoryCode, StockHistoryProvider } from './StockHistoryPreview'
 import BoxScreener from './BoxScreener'
 import ListReviewNotice from './ListReviewNotice'
-import RsiCell, { type RsiData } from './RsiCell'
-
-type AdjustmentKey = 'adjusted' | 'raw'
-type MetricKey =
-  | 'distance_ma250_pct'
-  | 'ytd_return_pct'
-  | 'distance_52w_high_pct'
-  | 'distance_52w_low_pct'
-  | 'position_52w_pct'
-type SummaryKey = 'watchlist_total' | 'today_up' | 'today_down'
-
-type Row = {
-  business?: string
-  rsi?: RsiData | null
-  code: string
-  name: string
-  symbol: string
-  asset_type: 'stock' | 'etf' | 'index' | 'crypto'
-  close: number
-  today_return_pct: number
-  distance_ma250_pct: number | null
-  ytd_return_pct: number | null
-  distance_52w_high_pct: number | null
-  distance_52w_low_pct: number | null
-  position_52w_pct: number | null
-  history_days: number
-  history_available?: boolean
-}
-
-type DashboardData = {
-  source: string
-  updated_at: string
-  data_date: string | null
-  suspended?: { code: string; name: string; business?: string; symbol: string; note: string }[]
-  collections?: {
-    id: string
-    label: string
-    codes: string[]
-    summaries: Record<AdjustmentKey, Record<SummaryKey, number>>
-  }[]
-  adjustments: Record<AdjustmentKey, { summary: Record<SummaryKey, number>; rows: Row[] }>
-  errors?: { code: string; name: string; error: string }[]
-}
+import RsiCell from './RsiCell'
+import { isDashboardData } from './dataValidation'
+import type { AdjustmentKey, MetricKey, SummaryKey, Row, DashboardData } from './dashboardData'
 
 const tabs: { id: MetricKey; label: string }[] = [
+  { id: 'position_52w_pct', label: '52周内进度' },
   { id: 'distance_ma250_pct', label: '距年线' },
   { id: 'ytd_return_pct', label: '今年涨跌幅' },
   { id: 'distance_52w_high_pct', label: '距52周高点' },
   { id: 'distance_52w_low_pct', label: '距52周低点' },
-  { id: 'position_52w_pct', label: '52周内位置' },
 ]
 
-const cards: { key: SummaryKey; label: string; note: string }[] = [
-  { key: 'watchlist_total', label: '自选总数', note: '今日跟踪池' },
-  { key: 'today_up', label: '今日上涨', note: '收红个股' },
-  { key: 'today_down', label: '今日下跌', note: '回撤个股' },
+const cards: { key: SummaryKey; label: string }[] = [
+  { key: 'watchlist_total', label: '自选总数' },
+  { key: 'today_up', label: '今日上涨' },
+  { key: 'today_down', label: '今日下跌' },
 ]
 
 const metricText: Record<MetricKey, string> = {
@@ -69,7 +29,7 @@ const metricText: Record<MetricKey, string> = {
   ytd_return_pct: '今年涨跌幅',
   distance_52w_high_pct: '距52周高点',
   distance_52w_low_pct: '距52周低点',
-  position_52w_pct: '52周内位置',
+  position_52w_pct: '52周内进度',
 }
 
 const adjustmentText = { adjusted: '复权价', raw: '未复权价' }
@@ -122,7 +82,7 @@ const getMetricBarWidth = (metric: MetricKey, value: MetricValue, maxMetric: num
 const compareMetric = (a: Row, b: Row, metric: MetricKey) => {
   const aValue = a[metric]
   const bValue = b[metric]
-  if (typeof aValue !== 'number') return typeof bValue !== 'number' ? 0 : 1
+  if (typeof aValue !== 'number') return typeof bValue !== 'number' ? a.code.localeCompare(b.code) : 1
   if (typeof bValue !== 'number') return -1
   return aValue - bValue || a.code.localeCompare(b.code)
 }
@@ -141,7 +101,7 @@ const getActiveMetricCellClass = (metric: MetricKey, activeMetric: MetricKey) =>
 function App() {
   const [data, setData] = useState<DashboardData | null>(null)
   const [adjustment, setAdjustment] = useState<AdjustmentKey>('adjusted')
-  const [tab, setTab] = useState<MetricKey>('distance_ma250_pct')
+  const [tab, setTab] = useState<MetricKey>('position_52w_pct')
   const [error, setError] = useState(false)
   const [collectionId, setCollectionId] = useState(getCollectionFromHash)
   const researchPage = collectionId !== 'original'
@@ -151,6 +111,7 @@ function App() {
   useEffect(() => {
     const navigate = () => {
       setCollectionId(getCollectionFromHash())
+      setTab('position_52w_pct')
       window.scrollTo(0, 0)
     }
     window.addEventListener('hashchange', navigate)
@@ -165,7 +126,10 @@ function App() {
     let mounted = true
     fetch(dashboardUrl)
       .then((res) => (res.ok ? res.json() : Promise.reject()))
-      .then((json: DashboardData) => mounted && setData(json))
+      .then((json: unknown) => {
+        if (!isDashboardData(json)) throw new Error('invalid dashboard')
+        if (mounted) setData(json)
+      })
       .catch(() => mounted && setError(true))
     return () => {
       mounted = false
@@ -197,7 +161,8 @@ function App() {
         : ['distance_ma250_pct', 'ytd_return_pct']
 
   if (collectionId === 'boxes') return <BoxScreener />
-  if (error || (data && !current)) return <StateView text="无法加载 /data/dashboard.json" error />
+  if (error || (data && !current)) return <StateView text="行情暂不可用，请刷新重试。" error />
+  if (data && !collection && (researchPage || data.collections)) return <StateView text="当前列表数据缺失，请刷新重试。" error />
   if (!data || !current) return <StateView text="加载中..." />
 
   return (
@@ -212,14 +177,8 @@ function App() {
             <PageNavigation page={researchPage ? 'research' : 'watchlist'} />
             <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-3xl">
-                <div className="inline-flex rounded-full border border-slate-200/80 bg-white/80 px-3 py-1 text-[11px] font-medium tracking-[0.22em] text-slate-500">DAILY MARKET SNAPSHOT</div>
-                <h1 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl lg:text-5xl">{researchPage ? '活跃股观察列表' : '持仓股'}</h1>
-                <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600 sm:text-base">美股常规交易时段收盘后更新，数据用于个人研究与趋势观察。</p>
-                <div className="mt-4 flex flex-wrap gap-2 text-xs text-slate-500">
-                  <span className="rounded-full border border-slate-200 bg-white/85 px-3 py-1">yfinance 日线数据</span>
-                  <span className="rounded-full border border-slate-200 bg-white/70 px-3 py-1">按指标排序浏览</span>
-                  <span className="rounded-full border border-slate-200 bg-white/70 px-3 py-1">支持复权价 / 未复权价</span>
-                </div>
+                <h1 className="text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">{researchPage ? '活跃股观察列表' : '持仓股'}</h1>
+                <p className="mt-2 text-xs text-slate-500">yfinance 日线 · 仅供研究</p>
               </div>
               <DataFreshness updatedAt={data.updated_at} dataDate={data.data_date} />
             </div>
@@ -232,6 +191,7 @@ function App() {
                   <button
                     key={key}
                     type="button"
+                    aria-pressed={adjustment === key}
                     onClick={() => setAdjustment(key)}
                     className={`rounded-[1.2rem] px-4 py-3 text-sm font-medium transition ${adjustment === key ? 'bg-white text-slate-950 shadow-[0_8px_18px_rgba(15,23,42,0.08)]' : 'text-slate-500 hover:bg-white/60'}`}
                   >
@@ -241,17 +201,12 @@ function App() {
               </div>
             </div>
 
-            <div className="flex flex-wrap items-center justify-between gap-3 rounded-[1.6rem] border border-slate-200/80 bg-white/65 px-4 py-3 text-sm text-slate-600">
-              <div>当前口径：<span className="font-medium text-slate-900">{adjustmentText[adjustment]}</span>，下方榜单与汇总数据已同步切换。</div>
-              <div className="rounded-full bg-slate-900 px-3 py-1 text-[11px] font-medium tracking-[0.14em] text-white">FOCUS MODE</div>
-            </div>
 
-            <div className="grid gap-4 md:grid-cols-3">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4" aria-label="列表概况">
               {cards.map((card, index) => (
-                <motion.div key={card.key} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 + index * 0.06, duration: 0.3 }} className="rounded-[1.75rem] border border-white/90 bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(248,245,239,0.95))] p-5 shadow-[0_18px_40px_rgba(15,23,42,0.05)]">
-                  <p className="text-sm text-slate-500">{card.label}</p>
-                  <p className="mt-4 text-4xl font-semibold tracking-tight text-slate-950">{summary?.[card.key]}</p>
-                  <p className="mt-3 text-sm text-slate-500">{card.note}</p>
+                <motion.div key={card.key} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 + index * 0.06, duration: 0.3 }} className="rounded-[1.75rem] border border-white/90 bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(248,245,239,0.95))] p-3 sm:p-4 shadow-[0_18px_40px_rgba(15,23,42,0.05)]">
+                  <p className="text-xs text-slate-500">{card.label}</p>
+                  <p className="mt-2 text-2xl sm:text-3xl font-semibold tracking-tight text-slate-950">{summary?.[card.key]}</p>
                 </motion.div>
               ))}
             </div>
@@ -276,7 +231,13 @@ function App() {
               ))}
             </nav>
           )}
-          <p className="mb-3 px-2 text-xs text-slate-500">点击代码复制后可快速粘贴；悬停代码或点击 K 线图标查看走势。<span className="lg:hidden"> 左右滑动表格查看全部指标，股票名称保持固定。</span></p>
+          <details className="page-help mb-3">
+            <summary>使用说明与选股标准</summary>
+            <p>点击代码复制；悬停代码或点图标看 K 线，点 RSI 看走势。手机可左右滑动表格。</p>
+            <p>指标升序，缺失与停牌置后；52周内进度是价格在52周高低区间的位置。</p>
+            <a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/LIST_REVIEW.md" target="_blank" rel="noreferrer">选股标准</a>
+            <a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/METRIC_DEFINITIONS.md" target="_blank" rel="noreferrer">指标定义</a>
+          </details>
           <div className="ranking-sticky" data-testid="ranking-sticky">
             <div className="overflow-x-auto py-2" aria-label="指标选项">
               <div className="flex w-max gap-2">
@@ -359,7 +320,7 @@ function App() {
 function StateView({ text, error = false }: { text: string; error?: boolean }) {
   return (
     <main className="flex min-h-screen items-center justify-center bg-[linear-gradient(180deg,#fcfbf8_0%,#f5f1ea_100%)] px-4">
-      <div className={`rounded-[1.6rem] border px-5 py-4 text-sm shadow-[0_16px_40px_rgba(15,23,42,0.05)] ${error ? 'border-rose-200 bg-rose-50 text-rose-600' : 'border-slate-200 bg-white text-slate-600'}`}>{text}</div>
+      <div className="space-y-4"><PageNavigation page={getCollectionFromHash() === 'original' ? 'watchlist' : 'research'} /><div role={error ? 'alert' : 'status'} className={`rounded-[1.6rem] border px-5 py-4 text-sm shadow-[0_16px_40px_rgba(15,23,42,0.05)] ${error ? 'border-rose-200 bg-rose-50 text-rose-600' : 'border-slate-200 bg-white text-slate-600'}`}>{text}{error && <button className="ml-3 underline" onClick={() => window.location.reload()}>刷新</button>}</div></div>
     </main>
   )
 }

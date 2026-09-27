@@ -122,3 +122,9 @@ CSV 保持 code 唯一；watchlist=original 标记原列表，tier=A/B/C 标记�
 
 ## ADR-015：同一次部署内有限重试（CR-015 / OPS-004）
 采用Python标准库wrapper；仅明确最新日线缺价返回75，每30分钟启动新进程，最多9次。无需新增依赖、PAT或actions:write，不递归触发workflow_run。代价是等待期间占用runner，最多4小时等待加生成时间，build超时300分钟。22:30是经验时间，不是Yahoo SLA。每轮证据保留，最终耗尽仍失败。
+
+## ADR-016：确定性浏览器回归与发布前检查
+- 状态：Accepted；关联CR-016 / UI-019 / NFR-003。
+- Playwright用固定JSON拦截数据请求，覆盖导航、排序、图表、复制、异常与响应式布局，不依赖Yahoo。真实数据生成仍在部署build独立验证。
+- checks.yml复用于PR与deploy，失败保存截图/trace 14天；deploy仅在检查通过后生成真实行情。未配置仓库分支保护，不将PR检查等同于强制合并规则。
+- JSON入口校验关键结构，异常显示重试；exporter拒绝非有限数字，临时文件原子替换单个目标。不是多文件事务，生成失败不得部署。

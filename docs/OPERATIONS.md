@@ -308,3 +308,10 @@ UI-015验证结果：45项Python测试、lint/build通过；箱体页面、RSI�
 - 用户要求统一纽约时间并push；f192c68已上线，https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36262250107 的build/deploy成功。
 - 三页共享src/DataFreshness.tsx，标题“更新时间（纽约时间）”，生成显示YYYY-MM-DD HH:mm，不展示容易误读成范围的UTC偏移。Intl固定America/New_York，自动处理夏令时；最新数据日保持行情日期。JSON与名单、公式无变化。
 - 65项Python测试、lint/build通过；组件静态渲染核验截图时间、冬令时转换及午夜00:07通过。云端真实行情133成功/0失败、266历史文件/0错误，data_date=20260925；线上页面与新JS均HTTP200，确认已引用index-DoeyDaVy.js。未新增页面布局或交互。
+
+## 2026-09-26 质量回归验收（CR-016）
+- 本地Python 79项通过；Playwright 32项通过（独立Edge/Chromium，Asia/Shanghai浏览器时区验证纽约时间展示）；lint与包含测试代码的TypeScript/build通过。
+- 本地真实行情输出隔离至.cache/quality-live/data：133成功、0失败、0停牌；266历史文件、0错误；100只箱体、0错误；data_date=20260925。public占位文件未改写。
+- PR与deploy共用checks.yml，顺序为Python→lint/build→离线浏览器回归；通过后deploy继续真实行情与Pages。浏览器失败证据保留14天。
+- 首次本地运行：npm ci；npx playwright install chromium；npm test。已安装Edge时PowerShell可用$env:PLAYWRIGHT_CHANNEL='msedge'。浏览器进程须有正常启动/退出权限。
+- 截图对照与限制见reviews/2026-09-26-quality.md；云端发布结果待本次push后补记。

@@ -51,7 +51,7 @@ DKNG, AMD, TQQQ, APP, WBTN, FIG
 
 ### 页面与自动化
 
-- 默认显示“复权价”和“距年线”，用户可切换复权口径及五个长期指标。
+- 默认显示“复权价”和“52周内进度”，用户可切换复权口径及五个长期指标；进入列表或A/B/C分档时重置为52周内进度（UI-019）。
 - 手机优先，桌面可用；缺失指标显示“—”并排在排序末尾。
 - GitHub Actions 在纽约时间工作日 22:30 尝试更新，也支持手动触发。
 - 工作流依次安装依赖、运行 Python 测试、生成真实行情、lint、构建并部署 Pages。
@@ -109,6 +109,7 @@ DKNG, AMD, TQQQ, APP, WBTN, FIG
 python -m unittest discover -s tests -v
 npm run lint
 npm run build
+npm test
 ```
 
 数据层、symbol 或依赖变化还必须运行 `python scripts/generate_dashboard.py`，或用 GitHub Actions 对真实 yfinance 数据完成同等验证。报告成功/失败标的数和 `data_date`，不得把限流或未知状态写成成功。
@@ -193,3 +194,6 @@ CR-014 / DATA-020 / OPS-003 已发布，提交253cdc1，Actions 35677183584 buil
 用户授权调整deploy并自动重试Yahoo缺价。首轮纽约工作日22:30；同一run每30分钟重试，最多9次，仅明确缺价exit75可重试。每轮新进程和独立诊断；其它错误立即失败，耗尽不部署，build上限300分钟。没有已核实的Yahoo固定日线完成时刻；调度可能延迟。JSON/指标/名单日期不变，发布证据见OPERATIONS最新记录。
 
 CR-015已发布：ca2fb1e，Actions 36232841113 build/deploy成功；65项测试、lint/build、133行情、266历史文件、100箱体扫描通过，0失败，data_date20260925。线上HTTP200、updated_at纽约2026-09-26 05:28。新的22:30调度及缺价自动重试已生效；未来上游故障仍可能超过重试上限。
+
+## UI-019 / NFR-003 / CR-016（2026-09-26）
+三页精简重复说明，详细方法放项目文档并以折叠链接展示；持仓、活跃与A/B/C进入时默认“52周内进度”。箱体筛选不变。新增离线Playwright回归（npm test），PR和部署前自动运行Python、lint、TypeScript/build及浏览器检查。异常JSON/缺失集合显示可恢复错误，缺值同分按代码排序；导出严格JSON与单文件原子替换。金融公式、名单、名单日期、公共JSON字段不变。审查报告见docs/reviews/2026-09-26-quality.md。

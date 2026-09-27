@@ -119,6 +119,14 @@ body {
 
 .list-review-notice { margin: 18px 0; padding: 16px 20px; border: 1px solid #cadde1; border-radius: 12px; background: #edf5f6; color: #315662; font-size: 13px; line-height: 1.8; }
 .list-review-notice strong,.list-review-notice span { display: block; }
+
+/* UI-019: concise defaults; full explanations remain available on demand. */
+.page-help { color: #526475; font-size: 12px; line-height: 1.8; }
+.page-help summary { cursor: pointer; padding: 4px 0; font-weight: 500; }
+.page-help summary:focus-visible { outline: 2px solid #0284c7; outline-offset: 3px; }
+.page-help p { margin: 8px 0; }
+.page-help a { display: inline-block; color: #0369a1; text-decoration: underline; margin-right: 16px; }
+.list-review-notice { margin: 8px 0; padding: 9px 14px; }
 .list-review-notice.overdue { background: #fff7ed; border-color: #fdba74; color: #9a3412; }
 .box-status.excluded { background: #fff1f2; color: #be123c; }
 .box-history-note { display: block; font-size: 10px; color: #64748b; }
