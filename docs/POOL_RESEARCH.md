@@ -42,10 +42,20 @@
 
 ## 维护与复现
 
-CSV为成员、名称和业务短标签唯一来源。资金判断和数值保存于`scripts/pool_review_overrides.json`，类型依据保存于`scripts/pool_categories.json`，输出`public/data/pool-review.json`为schema v2。每日Yahoo刷新不写人工研究，无自动名单/研究更新任务。
+CSV为成员、名称和业务短标签唯一来源。资金判断和数值保存于`scripts/pool_review_overrides.json`，类型依据保存于`scripts/pool_categories.json`，短语原文提炼保存于`scripts/pool_briefs.json`，输出`public/data/pool-review.json`为schema v2。每日Yahoo刷新不写人工研究，无自动名单/研究更新任务。
 
 ```text
-python scripts/research_pool.py --evidence-dir .cache/tradingview/sec --cutoff 2026-09-27 --source-manifest docs/reviews/2026-09-27-pool-sources.json --overrides scripts/pool_review_overrides.json --categories scripts/pool_categories.json --output public/data/pool-review.json
+python scripts/research_pool.py --evidence-dir .cache/tradingview/sec --cutoff 2026-09-27 --source-manifest docs/reviews/2026-09-27-pool-sources.json --overrides scripts/pool_review_overrides.json --categories scripts/pool_categories.json --briefs scripts/pool_briefs.json --output public/data/pool-review.json
 ```
 
 命令复现本轮，不更新研究日期。新一轮须重新下载证据、读公告、核实成员；脚本拒绝旧人工研究冒充新日期、类型无证据或非成员。发布前运行Python、lint/build、浏览器和真实行情验证。名单日期、研究日期独立于行情更新。
+
+## 亮点与风险短语（CR-019 / UI-022 / DATA-023）
+
+股票池主表增加两列，箱体只在单股详情展示。每组最多3条短语，每条携带`text`、`method`和`sources[{title,url}]`；主表仅显示短语，核查弹窗提供逐条链接。schema v2可选增加`highlights`/`risks`，旧快照缺字段显示摘要待补充，空亮点明确暂无可确认亮点，空风险不是无风险。
+
+人工原文提炼优先，财报规则补充报告期账面盈利/亏损、经营现金流方向、已有收入、同币种同日期流动资产缺口。临床合作收入不能推为药品销售，净利可能含估值变动，经营现金流不等于自由现金流。金融和数字资产不按经营净流出自动贴烧钱标签。
+
+“现金/历史年化消耗≥2年”仅复用已有现金覆盖估计，非承诺可存活两年，未计资本开支、偿债、投资变现和未来业务变化。“现金及短期投资储备”仅说明已披露储备，不能覆盖所有开发承诺。已完成融资补充是阶段事实，不等同经营自给。
+
+本轮234只均有风险短语，216只有可确认亮点，18只不强行填入正面结论。亮点为空意味着本轮证据未提炼出可靠正面结论，并非公司绝无优点；短语不是全面风险清单。逐只短语与来源见[补充报告](reviews/2026-09-27-high-risk-pool.md)。

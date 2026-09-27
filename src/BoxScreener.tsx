@@ -1,6 +1,6 @@
 import DataFreshness from './DataFreshness'
 import PageNavigation from './PageNavigation'
-import { FundamentalBadge, PoolFilter } from './PoolReview'
+import { FundamentalBadge, FundamentalSummary, PoolFilter } from './PoolReview'
 import { usePoolReview, matchesPoolReview } from './poolReviewData'
 import { useEffect, useMemo, useState } from 'react'
 import ListReviewNotice from './ListReviewNotice'
@@ -208,7 +208,7 @@ export default function BoxScreener({ pool = false }: { pool?: boolean }) {
       </section>
       {active && <section className="box-panel box-detail" aria-label="箱体走势详情">
         <div className="box-toolbar"><div><div className="box-eyebrow">DAILY CHART / 最近一年</div><h2>{active.code} <span>{active.name}</span></h2><p className="box-business">业务 / 板块：{active.business || '—'}</p></div><span className={`box-status ${active.status}`}>{statusLabels[active.status]}</span></div>
-        <p className="box-reason">{active.reason}</p>{pool && <FundamentalBadge assessment={review.data?.rows.find(item => item.code === active.code)} />}
+        <p className="box-reason">{active.reason}</p>{pool && <><FundamentalSummary assessment={review.data?.rows.find(item => item.code === active.code)} /><FundamentalBadge assessment={review.data?.rows.find(item => item.code === active.code)} /></>}
         {active.short_year && <p className="box-footnote">历史不足一年，本次使用 {active.bars.length} 个可用交易日。</p>}
         <div className="box-window-options" aria-label="箱体窗口对照">
           {active.windows?.map(item => <button key={item.window_days} aria-pressed={active.window_days === item.window_days} onClick={() => setComparison({ code: active.code, days: item.window_days })}>

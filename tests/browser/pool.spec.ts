@@ -5,6 +5,8 @@ function review() {
   return { schema_version: 2, reviewed_at: '2026-09-27', excluded: [{ code: 'EXCLUDED', reason: '已核实排除', url: 'https://www.sec.gov/' }], rows: ['AAA', 'DDD', 'ZZZ'].map((code, i) => ({
     code, category: ['operating', 'funded_loss', 'clinical'][i], category_reason: '固定经营类型依据', category_method: '原文经营类型核查', category_sources: [{ title: '类型依据', url: 'https://www.sec.gov/' }], evidence_gap: '', grade: ['supported', 'pressure', 'unknown'][i], tags: ['测试风险'], reason: '固定财报证据', business: '测试业务', reviewed_at: '2026-09-27', review_method: '原文专项核查', runway_months: null,
     facts: { revenue: { value: 10000000, unit: 'USD', start: '2026-01-01', end: '2026-06-30', filed: '2026-08-01', url: 'https://www.sec.gov/' } }, sources: [{ title: '测试财报', url: 'https://www.sec.gov/' }],
+    highlights: i === 2 ? [] : [{ text: '已有收入基础', method: '财报规则初筛', sources: [{ title: '摘要来源', url: 'https://www.sec.gov/Archives/' }] }],
+    risks: [{ text: '经营消耗待改善', method: '原文提炼', sources: [{ title: '摘要来源', url: 'https://www.sec.gov/Archives/' }] }],
   })) }
 }
 
@@ -20,6 +22,40 @@ async function seedPool(page: Page) {
 }
 
 test.beforeEach(async ({ page }) => seedPool(page))
+
+test('摘要两列、逐项来源与缺少亮点，不扩展原列表', async ({ page }) => {
+  await page.goto('#/pool')
+  await expect(page.getByTestId('column-header')).toContainText('基本面亮点')
+  await expect(page.getByTestId('column-header')).toContainText('基本面风险')
+  await expect(page.locator('[data-code="ZZZ"] > .highlights')).toHaveText('暂无可确认亮点')
+  await page.getByRole('button', { name: 'AAA 核查依据' }).click()
+  await expect(page.getByRole('dialog').locator('.highlights a')).toHaveAttribute('href', 'https://www.sec.gov/Archives/')
+  await page.keyboard.press('Escape')
+  await page.goto('#/research')
+  await expect(page.getByTestId('column-header')).not.toContainText('基本面亮点')
+})
+
+test('箱体摘要仅在详情，不增加形态表列', async ({ page }) => {
+  await page.goto('#/pool-boxes')
+  await expect(page.locator('.box-table thead')).not.toContainText('基本面亮点')
+  await expect(page.locator('.fundamental-summary').first()).toContainText('已有收入基础')
+})
+
+test('旧摘要字段兼容，损坏来源不作有效研究', async ({ page }) => {
+  const old = review()
+  for (const row of old.rows) {
+    delete (row as Partial<typeof row>).highlights
+    delete (row as Partial<typeof row>).risks
+  }
+  await page.route('**/data/pool-review.json', route => route.fulfill({ json: old }))
+  await page.goto('#/pool')
+  await expect(page.locator('[data-code="AAA"] > .highlights')).toHaveText('摘要待补充')
+  const bad = review(); bad.rows[0].risks[0].sources[0].url = 'javascript:alert(1)'
+  await page.route('**/data/pool-review.json', route => route.fulfill({ json: bad }))
+  await page.reload()
+  await expect(page.getByText('基本面资料暂不可用，不能视为低风险')).toBeVisible()
+  await expect(page.locator('.market-row')).toHaveCount(3)
+})
 
 test('新池默认进度、基本面筛选与返回，不污染原列表', async ({ page }) => {
   await page.goto('#/pool')

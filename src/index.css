@@ -236,3 +236,19 @@ body {
 .fundamental-dialog-heading button { border:1px solid #cbd5e1; padding:6px 12px; border-radius:8px; flex-shrink:0; }
 .fundamental-category { display: block; font-size: 12px; font-weight: 650; color: #334155; margin-bottom: 4px; }
 .fundamental-gap { padding: 10px; background: #fff7ed; border-radius: 8px; color: #9a3412; }
+/* UI-022: evidence summaries belong to the risk pool, not the original tables. */
+.ranking-section[data-pool="true"] .market-grid {
+  min-width: 1360px;
+  grid-template-columns: 22px minmax(140px,1.2fr) 126px 135px 150px repeat(var(--numeric-columns,4),minmax(70px,.8fr)) 110px 120px;
+  gap: 10px;
+}
+.fundamental-phrases, .fundamental-column-heading { text-align: left; font-size: 12px; line-height: 1.65; overflow-wrap: anywhere; }
+.fundamental-phrases ul { margin: 0; padding: 0; list-style: none; }
+.fundamental-phrases li + li { margin-top: 4px; }
+.fundamental-phrases.highlights { color: #23604d; }
+.fundamental-phrases.risks { color: #92452e; }
+.fundamental-phrases small { display: block; color: #64748b; }
+.fundamental-empty { color: #64748b; }
+.fundamental-summary { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; margin: 16px 0; }
+.fundamental-summary h3 { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+.fundamental-summary a { text-decoration: underline; }

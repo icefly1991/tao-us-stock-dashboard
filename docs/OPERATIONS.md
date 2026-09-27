@@ -333,3 +333,8 @@ UI-015验证结果：45项Python测试、lint/build通过；箱体页面、RSI�
 - 本地真实Yahoo生成：350成功、0失败、0停牌，data_date=20260925；700历史文件/0错误，原100及新池234只箱体扫描均0错误。产物在.cache/pool-live，仓库dashboard仍安全占位。
 - 独立Edge真实数据检查1440/390两页、临床筛选、IMSR/GEMI/HUBG证据弹窗通过，无页面异常或全页横向溢出；截图.cache/risk-visual。线上发布证据待本轮Actions完成后补记。
 - 变更UI-021/DATA-022/RES-007，研究契约v2，行情/箱体v4不变；原57待核实中56已补查，HUBG仍待可靠完整财报。类型原文核查82只、资金原文80只，非全池全面尽调。
+## 2026-09-27 CR-019 基本面摘要验收
+- CR-018功能提交4f5aef0已由[Actions 36339033786](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36339033786)完成checks/build/deploy，均成功。
+- CR-019本地105项Python、51项浏览器、lint/build通过；覆盖短语证据、旧字段兼容、损坏来源、缺亮点、临床收入与盈利分离、金融现金流、同币种同日期比较、箱体展示范围。
+- 真实234只研究与350只行情的1440/390浏览器截图检查通过，无页面异常或全页溢出；原始行情仍使用本轮已验证的20260925数据，最终云端再生成。截图.cache/risk-visual。
+- pool-review v2兼容扩展，不改变dashboard/boxes/history契约，研究日期仍2026-09-27，原名单日期不变。发布记录待本轮Actions完成补充。

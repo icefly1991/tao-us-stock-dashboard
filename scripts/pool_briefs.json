@@ -1,0 +1,2239 @@
+{
+  "reviewed_at": "2026-09-27",
+  "overrides": {
+    "ARDT": {
+      "risks": [
+        {
+          "text": "医保支付及追溯审计",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001756655/000162828026055215/ardt-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "ARHS": {
+      "risks": [
+        {
+          "text": "关税及退款不确定性",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001875444/000187544426000030/arhs-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "ARRY": {
+      "risks": [
+        {
+          "text": "补贴政策及关税敞口",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001820721/000162828026053517/arry-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "AVNT": {
+      "risks": [
+        {
+          "text": "原料成本及需求波动",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001122976/000112297626000126/avnt-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "CPRI": {
+      "risks": [
+        {
+          "text": "品牌需求及竞争压力",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001530721/000153072126000081/cpri-20260627.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "CRCT": {
+      "risks": [
+        {
+          "text": "关税政策不确定性",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001828962/000182896226000049/crct-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "CXM": {
+      "risks": [
+        {
+          "text": "软件竞争及价格压力",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001569345/000156934526000038/cxm-20260731.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "EVER": {
+      "risks": [
+        {
+          "text": "保险客户集中",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001640428/000119312526332775/ever-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "FPS": {
+      "risks": [
+        {
+          "text": "订单兑现不确定",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002080126/000208012626000035/fps-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "GEHC": {
+      "risks": [
+        {
+          "text": "关税及供应链敞口",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001932393/000193239326000046/gehc-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "GOGO": {
+      "risks": [
+        {
+          "text": "长期债务负担",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001537054/000119312526337921/gogo-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "HGV": {
+      "risks": [
+        {
+          "text": "客户贷款违约敞口",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001674168/000167416826000100/hgv-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "HLLY": {
+      "risks": [
+        {
+          "text": "消费需求及关税压力",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001822928/000182292826000068/hlly-20260628.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "HRL": {
+      "risks": [
+        {
+          "text": "原料价格波动",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000048465/000004846526000055/hrl-20260726.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "HUBS": {
+      "risks": [
+        {
+          "text": "AI竞争及客户续费",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001404655/000119312526335232/hubs-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "KVYO": {
+      "risks": [
+        {
+          "text": "营销软件竞争",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001835830/000183583026000040/kvyo-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "LIF": {
+      "risks": [
+        {
+          "text": "隐私监管敞口",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001581760/000158176026000141/lifx-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "LYTS": {
+      "risks": [
+        {
+          "text": "原料及关税侵蚀毛利",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000763532/000143774926029621/lyts20260630d_10k.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "MAX": {
+      "risks": [
+        {
+          "text": "依赖搜索渠道引流",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001818383/000181838326000200/max-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "MCD": {
+      "risks": [
+        {
+          "text": "消费需求及地区经营风险",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000063908/000006390826000073/mcd-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "MNTN": {
+      "risks": [
+        {
+          "text": "广告预算周期",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001891027/000189102726000073/mntn-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "MTCH": {
+      "risks": [
+        {
+          "text": "付费用户留存及平台依赖",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000891103/000089110326000130/mtch-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "MTH": {
+      "risks": [
+        {
+          "text": "房贷利率及住房需求",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000833079/000083307926000128/mth-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "MWH": {
+      "risks": [
+        {
+          "text": "大客户及项目履约风险",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002065636/000119312526352447/d152940d10q.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "NABL": {
+      "risks": [
+        {
+          "text": "网络安全事件敞口",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001834488/000183448826000047/nabl-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "NKE": {
+      "risks": [
+        {
+          "text": "关税及全球消费敞口",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000088/nke-20260531.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "NRDS": {
+      "risks": [
+        {
+          "text": "信贷需求及流量变现",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001625278/000162527826000060/nrds-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "OXM": {
+      "risks": [
+        {
+          "text": "可选消费及关税压力",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000075288/000007528826000084/oxm-20260801.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "PLNT": {
+      "risks": [
+        {
+          "text": "债务偿付负担",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001637207/000163720726000044/plnt-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "PYPL": {
+      "risks": [
+        {
+          "text": "支付监管及反垄断调查",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000082/pypl-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "RGEN": {
+      "risks": [
+        {
+          "text": "客户采购周期",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000730272/000119312526323773/rgen-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "SONO": {
+      "risks": [
+        {
+          "text": "关税退款不确定",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001314727/000131472726000086/sono-20260627.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "STUB": {
+      "risks": [
+        {
+          "text": "债务及内控整改",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001337634/000162828026056402/stub-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "SWIM": {
+      "risks": [
+        {
+          "text": "授信续期风险",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001833197/000162828026052925/swim-20260627.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "TASK": {
+      "risks": [
+        {
+          "text": "依赖关键客户",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001829864/000182986426000149/task-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "UAA": {
+      "risks": [
+        {
+          "text": "关税及退款不确定",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001336917/000133691726000111/ua-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "UHS": {
+      "risks": [
+        {
+          "text": "医保支付及合规敞口",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000352915/000119312526340278/uhs-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "WLFC": {
+      "risks": [
+        {
+          "text": "租赁资产融资负担",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001018164/000101816426000068/wlfc-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "WRBY": {
+      "risks": [
+        {
+          "text": "供应链及关税敞口",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001504776/000150477626000019/wrby-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "WWW": {
+      "risks": [
+        {
+          "text": "库存及关税压力",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000110471/000162828026056524/www-20260704.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "YELP": {
+      "risks": [
+        {
+          "text": "广告收入依赖",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001345016/000134501626000066/yelp-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "ZG": {
+      "risks": [
+        {
+          "text": "房地产周期及数据依赖",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司最新定期财报",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001617640/000161764026000052/z-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "ALMS": {
+      "risks": [
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001847367/000184736726000018/alms-20260630x10q.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "ARQQ": {
+      "risks": [
+        {
+          "text": "亏损期间依赖外部资金",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001859690/000110465926064890/arqq-20260331xex99d2.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "AURA": {
+      "risks": [
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001501796/000119312526343429/aura-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "BBNX": {
+      "risks": [
+        {
+          "text": "亏损期间依赖外部资金",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001674632/000119312526323777/bbnx-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "BEAM": {
+      "risks": [
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001745999/000119312526331541/beam-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "BKKT": {
+      "risks": [
+        {
+          "text": "亏损期间依赖外部资金",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001820302/000162828026055275/bakkt-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "BTBT": {
+      "risks": [
+        {
+          "text": "数字资产价格及估值波动",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001710350/000121390026088709/ea0300693-10q_bitdigital.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "CABA": {
+      "risks": [
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001759138/000175913826000039/caba-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "highlights": [
+        {
+          "text": "近期融资补充资金",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001759138/000175913826000041/caba-20260914.htm"
+            },
+            {
+              "title": "2026二季报风险背景",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001759138/000175913826000039/caba-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "CATX": {
+      "risks": [
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000728387/000119312526342512/catx-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "CLSK": {
+      "risks": [
+        {
+          "text": "数字资产价格及估值波动",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000827876/000119312526338382/clsk-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "highlights": [
+        {
+          "text": "已有比特币挖矿业务",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000827876/000119312526338382/clsk-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0000827876&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "CRML": {
+      "risks": [
+        {
+          "text": "核心业务商业化待兑现",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001951089/000121390026103607/ea0302128-20f_critical.htm"
+            }
+          ]
+        },
+        {
+          "text": "近期义务需进一步筹资",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001951089/000121390026103607/ea0302128-20f_critical.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001951089&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "EDIT": {
+      "risks": [
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001650664/000165066426000083/edit-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "EIKN": {
+      "risks": [
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001861123/000119312526349185/eikn-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "EVEX": {
+      "risks": [
+        {
+          "text": "核心业务商业化待兑现",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001823652/000155485526001685/evex-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "EVMN": {
+      "risks": [
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002044725/000119312526337984/evmn-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "EYPT": {
+      "risks": [
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001314102/000119312526335037/eypt-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "FAC": {
+      "risks": [
+        {
+          "text": "核心业务商业化待兑现",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002049662/000162828026055707/fac-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "highlights": [
+        {
+          "text": "上市融资缓解资金疑虑",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002049662/000162828026055707/fac-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0002049662&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "FATE": {
+      "risks": [
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001434316/000119312526347988/fate-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "FRMI": {
+      "risks": [
+        {
+          "text": "核心业务商业化待兑现",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002071778/000207177826000051/frmi-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "highlights": [
+        {
+          "text": "后续融资缓解资金疑虑",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002071778/000207177826000051/frmi-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0002071778&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "FWDI": {
+      "risks": [
+        {
+          "text": "数字资产价格及估值波动",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000038264/000168316826006270/forward_i10q-063026.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "GLXY": {
+      "risks": [
+        {
+          "text": "数字资产价格及估值波动",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001859392/000185939226000091/glxy-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "IE": {
+      "risks": [
+        {
+          "text": "核心业务商业化待兑现",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001879016/000187901626000017/ie-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "IKT": {
+      "risks": [
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001750149/000119312526344707/ikt-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "IMSR": {
+      "risks": [
+        {
+          "text": "核心业务商业化待兑现",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002019804/000110465926094085/tmb-20260630x10q.htm"
+            }
+          ]
+        }
+      ],
+      "highlights": [
+        {
+          "text": "现金及短期投资储备",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002019804/000110465926094085/tmb-20260630x10q.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "INDI": {
+      "risks": [
+        {
+          "text": "亏损期间依赖外部资金",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001841925/000119312526340396/indi-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "KYTX": {
+      "risks": [
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001994702/000119312526344607/kytx-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "LAES": {
+      "risks": [
+        {
+          "text": "亏损期间依赖外部资金",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001951222/000121390026099476/ea030513901ex99-1.htm"
+            }
+          ]
+        }
+      ],
+      "highlights": [
+        {
+          "text": "已有安全芯片销售",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001951222/000121390026099476/ea030513901ex99-1.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001951222&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "LCID": {
+      "risks": [
+        {
+          "text": "亏损期间依赖外部资金",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001811210/000162828026052606/lcid-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "LZM": {
+      "risks": [
+        {
+          "text": "已披露持续经营疑虑",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001958217/000195821726000009/lzm-20251231.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001958217&owner=exclude"
+            }
+          ]
+        },
+        {
+          "text": "核心业务商业化待兑现",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001958217/000195821726000009/lzm-20251231.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "MRLN": {
+      "risks": [
+        {
+          "text": "核心业务商业化待兑现",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002028707/000162828026056882/mrln-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "NB": {
+      "risks": [
+        {
+          "text": "核心业务商业化待兑现",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001512228/000119312526402806/nb-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "NKLR": {
+      "risks": [
+        {
+          "text": "核心业务商业化待兑现",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002067627/000121390026090062/ea0300681-10q_terra.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "NMRA": {
+      "risks": [
+        {
+          "text": "已披露持续经营疑虑",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001885522/000119312526350370/nmra-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001885522&owner=exclude"
+            }
+          ]
+        },
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001885522/000119312526350370/nmra-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "NNE": {
+      "risks": [
+        {
+          "text": "核心业务商业化待兑现",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001923891/000149315226037345/form10-q.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "NPWR": {
+      "risks": [
+        {
+          "text": "核心业务商业化待兑现",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001845437/000184543726000033/npwr-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "NRGV": {
+      "risks": [
+        {
+          "text": "亏损期间依赖外部资金",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001828536/000182853626000101/nrgv-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "NTLA": {
+      "risks": [
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001652130/000119312526337952/ntla-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "OKLO": {
+      "risks": [
+        {
+          "text": "核心业务商业化待兑现",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001849056/000162828026054571/oklo-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "ORBS": {
+      "risks": [
+        {
+          "text": "数字资产价格及估值波动",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001892492/000149315226036637/form10-q.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "PRME": {
+      "risks": [
+        {
+          "text": "已披露持续经营疑虑",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001894562/000162828026053883/prme-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001894562&owner=exclude"
+            }
+          ]
+        },
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001894562/000162828026053883/prme-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "QS": {
+      "risks": [
+        {
+          "text": "核心业务商业化待兑现",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001811414/000119312526316073/qs-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "highlights": [
+        {
+          "text": "现金及有价证券储备",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001811414/000119312526316073/qs-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001811414&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "RGNX": {
+      "risks": [
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001590877/000119312526336725/rgnx-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "RR": {
+      "risks": [
+        {
+          "text": "亏损期间依赖外部资金",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001963685/000121390026091798/ea0302286-10q_richtech.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "RUM": {
+      "risks": [
+        {
+          "text": "亏损期间依赖外部资金",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001830081/000121390026087311/ea0301267-10q_rumgroup.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "RXRX": {
+      "risks": [
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001601830/000160183026000098/rxrx-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "RZLV": {
+      "risks": [
+        {
+          "text": "已披露持续经营疑虑",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526378541/rzlv-ex99_2.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001920294&owner=exclude"
+            }
+          ]
+        },
+        {
+          "text": "亏损期间依赖外部资金",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001920294/000119312526132456/rzlv-20251231.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "SANA": {
+      "risks": [
+        {
+          "text": "已披露持续经营疑虑",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001770121/000119312526342395/sana-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001770121&owner=exclude"
+            }
+          ]
+        },
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001770121/000119312526342395/sana-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "SECZ": {
+      "risks": [
+        {
+          "text": "亏损期间依赖外部资金",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002094496/000162828026056164/exhibit991-secz2q26earning.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "SERV": {
+      "risks": [
+        {
+          "text": "亏损期间依赖外部资金",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001832483/000183248326000035/serv-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "SGMT": {
+      "risks": [
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001400118/000119312526343441/sgmt-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "SLDP": {
+      "risks": [
+        {
+          "text": "核心业务商业化待兑现",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001844862/000110465926090634/sldp-20260630x10q.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "SMMT": {
+      "risks": [
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001599298/000159929826000068/smmt-20260630.htm"
+            }
+          ]
+        },
+        {
+          "text": "未来一年计划需再融资",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001599298/000159929826000068/smmt-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001599298&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "SMR": {
+      "risks": [
+        {
+          "text": "核心业务商业化待兑现",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001822966/000182296626000085/smr-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "SOUN": {
+      "risks": [
+        {
+          "text": "亏损期间依赖外部资金",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001840856/000184085626000022/soun-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "TRON": {
+      "risks": [
+        {
+          "text": "数字资产价格及估值波动",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001956744/000149315226037161/form10-q.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "UPB": {
+      "risks": [
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002022626/000119312526343417/upb-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "VOR": {
+      "risks": [
+        {
+          "text": "核心管线临床及审批待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001817229/000119312526343607/vor-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "XXI": {
+      "risks": [
+        {
+          "text": "数字资产价格及估值波动",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002070457/000121390026087471/ea0299640-10q_twentyone.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "GEMI": {
+      "highlights": [
+        {
+          "text": "交易平台已有收入",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002055592/000205559226000065/gemi-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0002055592&owner=exclude"
+            }
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "text": "依赖关联方及外部融资",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002055592/000205559226000065/gemi-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0002055592&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "HUBG": {
+      "risks": [
+        {
+          "text": "财报重述及披露延迟",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000940942/000119312526394408/d574815dex991.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0000940942&owner=exclude"
+            }
+          ]
+        },
+        {
+          "text": "收到退市决定并申诉",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000940942/000119312526394408/d574815dex991.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0000940942&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "DNLI": {
+      "highlights": [
+        {
+          "text": "已有获批产品销售",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001714899/000171489926000097/dnli-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "RCKT": {
+      "highlights": [
+        {
+          "text": "核心产品已获批",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001281895/000119312526342348/rckt-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "text": "获批后销售仍待兑现",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001281895/000119312526342348/rckt-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "DXYZ": {
+      "highlights": [
+        {
+          "text": "持有现金管理资产",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001843974/000121390026095201/ea0302101-01_ncsrs.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001843974&owner=exclude"
+            }
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "text": "非上市资产估值及流动性",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001843974/000121390026095201/ea0302101-01_ncsrs.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001843974&owner=exclude"
+            }
+          ]
+        },
+        {
+          "text": "股价与净值可能偏离",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001843974/000121390026095201/ea0302101-01_ncsrs.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001843974&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "ALHC": {
+      "risks": [
+        {
+          "text": "医保赔付率及支付政策",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001832466/000162828026051060/alhc-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001832466&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "ALVO": {
+      "risks": [
+        {
+          "text": "制造供货恢复待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/1898416/000162828026057988/earningsreleaseq22026.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001898416&owner=exclude"
+            }
+          ]
+        }
+      ],
+      "highlights": [
+        {
+          "text": "已有生物类似药销售",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/1898416/000162828026057988/earningsreleaseq22026.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001898416&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "CE": {
+      "risks": [
+        {
+          "text": "债务及化工周期压力",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001306830/000130683026000117/ce-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001306830&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "CLFD": {
+      "risks": [
+        {
+          "text": "处置业务影响可比性",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000796505/000117184326005329/clfd20260630_10q.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0000796505&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "GLOB": {
+      "risks": [
+        {
+          "text": "增长及利润修复待验证",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001557860/000110465926095916/tm2623064d1_ex99-1.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001557860&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "JACK": {
+      "risks": [
+        {
+          "text": "加盟商欠款及债务压力",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000807882/000080788226000091/jack-20260705.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0000807882&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "KLAR": {
+      "risks": [
+        {
+          "text": "贷款信用及资金成本",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/2003292/000162828026057573/q22026earningsrelease.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0002003292&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "MPT": {
+      "risks": [
+        {
+          "text": "租户及债务重组风险",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001287865/000119312526342583/mpt-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001287865&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "ODD": {
+      "risks": [
+        {
+          "text": "收入下滑及获客修复",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001907085/000110465926106126/tm2624995d1_ex99-1.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001907085&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "PGY": {
+      "risks": [
+        {
+          "text": "信贷表现及证券化融资",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001883085/000188308526000058/pgy-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001883085&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "PPLI": {
+      "risks": [
+        {
+          "text": "剥离及持股估值影响可比性",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001800227/000162828026051881/ppli-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001800227&owner=exclude"
+            }
+          ]
+        }
+      ],
+      "highlights": [
+        {
+          "text": "持续经营现金流转正",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001800227/000162828026051881/ppli-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001800227&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "RKT": {
+      "risks": [
+        {
+          "text": "房贷周转及仓储融资",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001805284/000162828026054577/rkt-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001805284&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "SLDE": {
+      "risks": [
+        {
+          "text": "巨灾赔付及再保险敞口",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001886428/000119312526326333/slde-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001886428&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "SRAD": {
+      "risks": [
+        {
+          "text": "利润转化及版权成本",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001836470/000110465926089457/tm2621599d1_ex99-1.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001836470&owner=exclude"
+            }
+          ]
+        }
+      ],
+      "highlights": [
+        {
+          "text": "经营现金流为正",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001836470/000110465926089457/tm2621599d1_ex99-1.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001836470&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "WD": {
+      "risks": [
+        {
+          "text": "地产贷款担保及风险分担",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001497770/000110465926091536/wd-20260630x10q.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001497770&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "GETY": {
+      "risks": [
+        {
+          "text": "已披露持续经营疑虑",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001898496/000121390026095778/ea0304109-8k_getty.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001898496&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "INV": {
+      "risks": [
+        {
+          "text": "已披露持续经营疑虑",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002001557/000200155726000154/innv-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0002001557&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "VELO": {
+      "risks": [
+        {
+          "text": "已披露持续经营疑虑",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001825079/000119312526344560/velo-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001825079&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "SPRY": {
+      "risks": [
+        {
+          "text": "经营消耗与资金压力",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://ir.ars-pharma.com/news-releases/news-release-details/ars-pharmaceuticals-outlines-strategic-priorities-including"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001671858&owner=exclude"
+            }
+          ]
+        }
+      ]
+    },
+    "CLB": {
+      "risks": [
+        {
+          "text": "油价波动影响客户需求",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司定期财报风险披露",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001958086/000119312526326345/clb-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "WAY": {
+      "risks": [
+        {
+          "text": "网络安全及医疗数据合规",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司定期财报风险披露",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001990354/000199035426000035/way-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "CHYM": {
+      "risks": [
+        {
+          "text": "合作银行及费率依赖",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司定期财报风险披露",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001795586/000179558626000048/chym-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "ETOR": {
+      "risks": [
+        {
+          "text": "极端行情及加密资产敞口",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司定期财报风险披露",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001493318/000121390026022034/ea0278371-20f_etoro.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "GSHD": {
+      "risks": [
+        {
+          "text": "或有佣金不确定性",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司定期财报风险披露",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001726978/000172697826000060/gshd-20260630.htm"
+            }
+          ]
+        }
+      ]
+    },
+    "WLTH": {
+      "risks": [
+        {
+          "text": "信贷及融资流动性敞口",
+          "method": "原文提炼",
+          "sources": [
+            {
+              "title": "公司定期财报风险披露",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001524566/000162828026061848/wlth-20260731.htm"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

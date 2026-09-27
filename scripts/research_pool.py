@@ -160,6 +160,46 @@ def apply_categories(payload: dict, categories: dict, cutoff: str) -> dict:
     payload['schema_version'] = 2
     return payload
 
+def apply_briefs(payload: dict, overrides: dict, cutoff: str) -> dict:
+    """Evidence-linked observations, not forecasts or a second grading model."""
+    if overrides['reviewed_at'] != cutoff or not set(overrides['overrides']) <= {r['code'] for r in payload['rows']}:
+        raise ValueError('Brief date or membership mismatch')
+    for row in payload['rows']:
+        highlights, risks = [], []
+        manual = overrides['overrides'].get(row['code'], {})
+        def add(target, label, *facts):
+            target.append({'text': label, 'method': '财报规则初筛', 'sources': list({f['url']: {'title': f"财报 · {f['end']}", 'url': f['url']} for f in facts}.values())})
+        facts = row['facts']
+        profit, ocf, revenue = (facts.get(k) for k in ('net_income', 'operating_cash_flow', 'revenue'))
+        if profit and profit['value'] > 0:
+            add(highlights, '报告期账面盈利', profit)
+        if ocf and ocf['value'] > 0:
+            add(highlights, '经营现金流为正', ocf)
+        manual_revenue = any(any(term in p['text'] for term in ('收入', '销售', '业务')) for p in manual.get('highlights', []))
+        if revenue and revenue['value'] > 0 and len(highlights) < 2 and not manual_revenue:
+            add(highlights, '已有收入基础', revenue)
+        cash = facts.get('cash')
+        if row.get('runway_months') is not None and row['runway_months'] >= 24 and cash and ocf and ocf['value'] < 0 and len(highlights) < 2:
+            add(highlights, '现金/历史年化消耗≥2年', cash, ocf)
+        if profit and profit['value'] < 0:
+            add(risks, '报告期亏损', profit)
+        if ocf and ocf['value'] < 0 and row['category'] not in {'financial', 'digital_assets'}:
+            add(risks, '经营现金净流出', ocf)
+        assets, liabilities = facts.get('current_assets'), facts.get('current_liabilities')
+        if assets and liabilities and assets['end'] == liabilities['end'] and assets['unit'] == liabilities['unit'] and liabilities['value'] > assets['value']:
+            add(risks, '流动负债高于流动资产', assets, liabilities)
+        for key, generated in [('highlights', highlights), ('risks', risks)]:
+            phrases = manual.get(key, []) + generated
+            unique = list({item['text']: item for item in reversed(phrases)}.values())[::-1][:3]
+            for item in unique:
+                if not isinstance(item.get('text'), str) or not item['text'].strip() or len(item['text']) > 24 or item.get('method') not in {'原文提炼', '财报规则初筛'} or not item.get('sources'):
+                    raise ValueError('Brief requires a short phrase, method and evidence')
+                if any(not s.get('title') or not isinstance(s.get('url'), str) or not s['url'].startswith('https://') for s in item['sources']):
+                    raise ValueError('Brief requires HTTPS primary evidence')
+            row[key] = unique
+    return payload
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--evidence-dir', type=Path, required=True)
@@ -168,6 +208,7 @@ if __name__ == '__main__':
     parser.add_argument('--source-manifest', type=Path)
     parser.add_argument('--overrides', type=Path)
     parser.add_argument('--categories', type=Path)
+    parser.add_argument('--briefs', type=Path)
     args = parser.parse_args()
     rows = [build_assessment(path.name.removesuffix('-submissions.json'), args.evidence_dir, args.cutoff) for path in sorted(args.evidence_dir.glob('*-submissions.json'))]
     payload = {'reviewed_at': args.cutoff, 'rows': rows, 'excluded': []}
@@ -184,6 +225,8 @@ if __name__ == '__main__':
         for row in payload['rows']:
             row['sic_description'] = row['business']
             row['business'] = members[row['code']].business
+        if args.briefs:
+            payload = apply_briefs(payload, json.loads(args.briefs.read_text(encoding='utf-8')), args.cutoff)
     args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2, allow_nan=False), encoding='utf-8')
     from collections import Counter
     print(Counter(row['grade'] for row in payload['rows']))

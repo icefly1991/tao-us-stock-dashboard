@@ -7,7 +7,7 @@ import { StockHistoryCode, StockHistoryProvider } from './StockHistoryPreview'
 import BoxScreener from './BoxScreener'
 import ListReviewNotice from './ListReviewNotice'
 import RsiCell from './RsiCell'
-import { FundamentalBadge, PoolFilter } from './PoolReview'
+import { FundamentalBadge, FundamentalPhrases, PoolFilter } from './PoolReview'
 import { usePoolReview, matchesPoolReview } from './poolReviewData'
 import { isDashboardData } from './dataValidation'
 import type { AdjustmentKey, MetricKey, SummaryKey, Row, DashboardData } from './dashboardData'
@@ -224,7 +224,7 @@ function App() {
           </div>
         </motion.section>
 
-        <section data-position-view={tab === 'position_52w_pct'} className="ranking-section rounded-[2rem] border border-white/80 bg-white/80 p-3 shadow-[0_24px_60px_rgba(15,23,42,0.05)] sm:p-6">
+        <section data-pool={poolPage} data-position-view={tab === 'position_52w_pct'} className="ranking-section rounded-[2rem] border border-white/80 bg-white/80 p-3 shadow-[0_24px_60px_rgba(15,23,42,0.05)] sm:p-6">
           {poolPage && <PoolFilter review={poolReview.data} error={poolReview.error} value={grade} onChange={setGrade} category={category} onCategoryChange={setCategory} />}
           {missingCodes.length > 0 && (
             <div role="status" className="mb-4 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
@@ -269,7 +269,7 @@ function App() {
               if (bodyScroll.current) bodyScroll.current.scrollLeft = event.currentTarget.scrollLeft
             }}>
               <div className="market-grid market-header" data-testid="column-header">
-                <div>#</div><div className="stock-identity text-left">标的</div><div className="business-cell">业务/板块</div><div>收盘价</div><div>今日</div>
+                <div>#</div><div className="stock-identity text-left">标的</div><div className="business-cell">业务/板块</div>{poolPage && <><div className="fundamental-column-heading">基本面亮点</div><div className="fundamental-column-heading">基本面风险</div></>}<div>收盘价</div><div>今日</div>
                 {contextMetrics.map((metric) => <div key={metric}>{metricText[metric]}</div>)}
                 <div title="日线Wilder RSI(14)与该股票自身年内百分位">RSI(14) / 年内分位</div>
                 <div className="text-sky-800">{metricText[tab]} ↑</div>
@@ -290,6 +290,7 @@ function App() {
                     </StockHistoryCode>
                   </div>
                   <div className="business-cell">{row.business || '—'}{poolPage && <FundamentalBadge assessment={poolReview.data?.rows.find(item => item.code === row.code)} />}</div>
+                  {poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(item => item.code === row.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(item => item.code === row.code)} kind="risks" /></>}
                   <div className="font-medium text-slate-900">{formatClose(row)}</div>
                   <div className={getMetricTextClass(row.today_return_pct)}>{formatPct(row.today_return_pct)}</div>
                   {contextMetrics.map((metric) => <div key={metric} className={getMetricTextClass(row[metric])}>{formatMetric(metric, row[metric])}</div>)}
@@ -315,7 +316,7 @@ function App() {
                     <span className="mt-2 inline-block rounded bg-slate-200 px-2 py-1 text-xs text-slate-600">停牌</span>
                     {item.note && <p className="mt-1 text-xs">{item.note}</p>}
                   </div>
-                  <div className="business-cell">{item.business || '—'}</div>
+                  <div className="business-cell">{item.business || '—'}</div>{poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="risks" /></>}
                   {Array.from({ length: contextMetrics.length + 4 }, (_, column) => column).map((column) => <div key={column}>—</div>)}
                 </div>
               ))}

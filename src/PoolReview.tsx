@@ -12,6 +12,17 @@ export function PoolFilter({ review, error, value, onChange, category, onCategor
 }
 
 const factLabels: Record<string, string> = { revenue: '收入', net_income: '净利润', operating_cash_flow: '经营现金流', cash: '现金及等价物', equity_proceeds: '股权融资所得', financing_cash_flow: '融资现金流', current_assets: '流动资产', current_liabilities: '流动负债', net_assets: '基金净资产' }
+export function FundamentalPhrases({ assessment, kind, evidence = false }: { assessment?: Assessment; kind: 'highlights' | 'risks'; evidence?: boolean }) {
+  const phrases = assessment?.[kind]
+  return <div className={`fundamental-phrases ${kind}`} aria-label={kind === 'highlights' ? '基本面亮点' : '基本面风险'}>
+    {phrases?.length ? <ul>{phrases.map(item => <li key={item.text}>{item.text}{evidence && <small>{item.method} · {item.sources.map((source, index) => <a key={source.url} href={source.url} target="_blank" rel="noreferrer" title={source.title}>依据{index + 1} </a>)}</small>}</li>)}</ul> : <span className="fundamental-empty">{phrases === undefined ? '摘要待补充' : kind === 'highlights' ? '暂无可确认亮点' : '具体风险待补充'}</span>}
+  </div>
+}
+
+export function FundamentalSummary({ assessment, evidence = false }: { assessment?: Assessment; evidence?: boolean }) {
+  return <div className="fundamental-summary">{(['highlights', 'risks'] as const).map(kind => <section key={kind}><h3>{kind === 'highlights' ? '基本面亮点' : '基本面风险'}</h3><FundamentalPhrases assessment={assessment} kind={kind} evidence={evidence} /></section>)}</div>
+}
+
 export function FundamentalBadge({ assessment, compact = false }: { assessment?: Assessment; compact?: boolean }) {
   const dialog = useRef<HTMLDialogElement>(null)
   if (!assessment) return <span className="fundamental-badge unknown">待核实</span>
@@ -23,6 +34,7 @@ export function FundamentalBadge({ assessment, compact = false }: { assessment?:
       <div className="fundamental-dialog-heading"><h2>{assessment.code} · {gradeLabels[assessment.grade]}</h2><button onClick={() => dialog.current?.close()} autoFocus>关闭</button></div>
       <p><strong>{categoryLabels[assessment.category]}</strong> · {assessment.category_reason}</p>
       <small>{assessment.category_method}</small>
+      <FundamentalSummary assessment={assessment} evidence />
       {assessment.reason !== assessment.category_reason && <p>{assessment.reason}</p>}<p>{assessment.business} · {assessment.tags.join(' · ')}</p><small>{assessment.review_method} · 核查 {assessment.reviewed_at}</small>
       {assessment.evidence_gap && <p className="fundamental-gap">仍待确认：{assessment.evidence_gap}</p>}
       {Object.entries(assessment.facts).map(([key, fact]) => <p key={key}>{factLabels[key] ?? key}：{fact ? <>{(fact.value / 1e6).toLocaleString('zh-CN', { maximumFractionDigits: 2 })} 百万 {fact.unit}<br /><small>{fact.start ? `${fact.start} 至 ` : ''}{fact.end} · 申报 {fact.filed}</small> <a href={fact.url} target="_blank" rel="noreferrer">财报</a></> : '未取得可比值'}</p>)}
