@@ -2,8 +2,8 @@ import { test, expect, type Page } from '@playwright/test'
 import { dashboard, boxes, seed } from './fixtures'
 
 function review() {
-  return { schema_version: 1, reviewed_at: '2026-09-27', excluded: [{ code: 'EXCLUDED', reason: '已核实排除', url: 'https://www.sec.gov/' }], rows: ['AAA', 'DDD', 'ZZZ'].map((code, i) => ({
-    code, grade: ['supported', 'pressure', 'unknown'][i], tags: ['测试风险'], reason: '固定财报证据', business: '测试业务', reviewed_at: '2026-09-27', review_method: '原文专项核查', runway_months: null,
+  return { schema_version: 2, reviewed_at: '2026-09-27', excluded: [{ code: 'EXCLUDED', reason: '已核实排除', url: 'https://www.sec.gov/' }], rows: ['AAA', 'DDD', 'ZZZ'].map((code, i) => ({
+    code, category: ['operating', 'funded_loss', 'clinical'][i], category_reason: '固定经营类型依据', category_method: '原文经营类型核查', category_sources: [{ title: '类型依据', url: 'https://www.sec.gov/' }], evidence_gap: '', grade: ['supported', 'pressure', 'unknown'][i], tags: ['测试风险'], reason: '固定财报证据', business: '测试业务', reviewed_at: '2026-09-27', review_method: '原文专项核查', runway_months: null,
     facts: { revenue: { value: 10000000, unit: 'USD', start: '2026-01-01', end: '2026-06-30', filed: '2026-08-01', url: 'https://www.sec.gov/' } }, sources: [{ title: '测试财报', url: 'https://www.sec.gov/' }],
   })) }
 }
@@ -11,7 +11,7 @@ function review() {
 async function seedPool(page: Page) {
   await seed(page)
   const data = dashboard()
-  data.collections.push({ id: 'pool', label: '活跃股票池', codes: ['AAA', 'DDD', 'ZZZ'], summaries: { adjusted: { watchlist_total: 3, today_up: 1, today_down: 2 }, raw: { watchlist_total: 3, today_up: 1, today_down: 2 } } })
+  data.collections.push({ id: 'pool', label: '高风险公司股票池', codes: ['AAA', 'DDD', 'ZZZ'], summaries: { adjusted: { watchlist_total: 3, today_up: 1, today_down: 2 }, raw: { watchlist_total: 3, today_up: 1, today_down: 2 } } })
   await page.route('**/data/dashboard.json', route => route.fulfill({ json: data }))
   await page.route('**/data/pool-review.json', route => route.fulfill({ json: review() }))
   const scan = boxes(); scan.rows = [scan.rows[0], { ...scan.rows[0], code: 'DDD', name: 'Delta Inc' }]
@@ -32,7 +32,7 @@ test('新池默认进度、基本面筛选与返回，不污染原列表', async
   await page.getByRole('link', { name: '活跃股观察列表', exact: true }).click()
   await expect(page.locator('.market-row')).toHaveCount(2)
   await expect(page.locator('[aria-label="基本面筛选"]')).toHaveCount(0)
-  await page.getByRole('link', { name: '活跃股票池', exact: true }).click()
+  await page.getByRole('link', { name: '高风险公司股票池', exact: true }).click()
   await expect(page.getByLabel('基本面等级')).toHaveValue('all')
   await expect(page.locator('.market-row')).toHaveCount(3)
   await page.reload()
@@ -57,14 +57,14 @@ test('新池集合缺失不能回退全部股票，错误态仍可导航', async
   await page.goto('#/pool')
   await expect(page.getByRole('alert')).toContainText('当前列表数据缺失')
   await expect(page.locator('.market-row')).toHaveCount(0)
-  await expect(page.getByRole('link', { name: '活跃股票池', exact: true })).toHaveAttribute('aria-current', 'page')
+  await expect(page.getByRole('link', { name: '高风险公司股票池', exact: true })).toHaveAttribute('aria-current', 'page')
   await page.getByRole('link', { name: '活跃股观察列表', exact: true }).click()
   await expect(page.locator('.market-row')).toHaveCount(2)
 })
 
 test('新箱体独立数据与基本面过滤、旧箱体无误筛选', async ({ page }) => {
   await page.goto('#/pool-boxes')
-  await expect(page.getByRole('heading', { name: '股票池箱体研究', exact: true })).toBeVisible()
+  await expect(page.getByRole('heading', { name: '高风险公司箱体研究', exact: true })).toBeVisible()
   await expect(page.locator('.box-table tbody tr')).toHaveCount(2)
   await expect(page.getByRole('button', { name: '查看 CRWV 对照' })).toHaveCount(0)
   await page.getByLabel('基本面等级').selectOption('pressure')
@@ -75,7 +75,7 @@ test('新箱体独立数据与基本面过滤、旧箱体无误筛选', async ({
   await expect(page.getByRole('button', { name: '查看 CRWV 对照' })).toBeVisible()
 })
 
-for (const invalid of ['unavailable', 'bad-grade', 'bad-fact', 'duplicate']) {
+for (const invalid of ['unavailable', 'bad-grade', 'bad-fact', 'duplicate', 'old-schema', 'bad-category', 'missing-category-source']) {
   test(`研究资料失败保留行情且不冒充良好 ${invalid}`, async ({ page }) => {
     await page.route('**/data/pool-review.json', route => {
       if (invalid === 'unavailable') return route.fulfill({ status: 503 })
@@ -83,6 +83,9 @@ for (const invalid of ['unavailable', 'bad-grade', 'bad-fact', 'duplicate']) {
       if (invalid === 'bad-grade') data.rows[0].grade = 'constructor'
       if (invalid === 'bad-fact') data.rows[0].facts.revenue.value = 'bad' as unknown as number
       if (invalid === 'duplicate') data.rows.push(data.rows[0])
+      if (invalid === 'old-schema') data.schema_version = 1
+      if (invalid === 'bad-category') data.rows[0].category = 'constructor'
+      if (invalid === 'missing-category-source') data.rows[0].category_sources = []
       return route.fulfill({ json: data })
     })
     await page.goto('#/pool')
@@ -91,6 +94,36 @@ for (const invalid of ['unavailable', 'bad-grade', 'bad-fact', 'duplicate']) {
     await expect(page.locator('.market-row .fundamental-badge.unknown')).toHaveCount(3)
   })
 }
+
+test('经营类型与资金等级交叉筛选，切页重置', async ({ page }) => {
+  await page.goto('#/pool')
+  await page.getByLabel('经营类型', { exact: true }).selectOption('clinical')
+  await expect(page.locator('.market-row')).toHaveCount(1)
+  await expect(page.locator('.market-row')).toHaveAttribute('data-code', 'ZZZ')
+  await page.getByLabel('基本面等级').selectOption('pressure')
+  await expect(page.locator('.market-row')).toHaveCount(0)
+  await page.getByLabel('经营类型', { exact: true }).selectOption('funded_loss')
+  await expect(page.locator('.market-row')).toHaveAttribute('data-code', 'DDD')
+  await page.getByRole('button', { name: 'DDD 核查依据' }).click()
+  await expect(page.getByRole('dialog')).toContainText('固定经营类型依据')
+  await page.keyboard.press('Escape')
+  await page.getByRole('link', { name: '持仓股', exact: true }).click()
+  await page.getByRole('link', { name: '高风险公司股票池', exact: true }).click()
+  await expect(page.getByLabel('经营类型', { exact: true })).toHaveValue('all')
+  await expect(page.getByLabel('基本面等级')).toHaveValue('all')
+})
+
+test('箱体按经营类型筛选并保留形态约束', async ({ page }) => {
+  await page.goto('#/pool-boxes')
+  await page.getByLabel('经营类型', { exact: true }).selectOption('funded_loss')
+  await expect(page.locator('.box-table tbody tr')).toHaveCount(1)
+  await expect(page.locator('.box-table tbody tr')).toContainText('DDD')
+  await page.getByLabel('基本面等级').selectOption('supported')
+  await expect(page.locator('.box-table tbody tr')).toHaveCount(0)
+  await page.getByLabel('经营类型', { exact: true }).selectOption('operating')
+  await expect(page.locator('.box-table tbody tr')).toHaveCount(1)
+  await expect(page.locator('.box-table tbody tr')).toContainText('AAA')
+})
 
 for (const width of [390, 1024, 1440]) {
   test(`新池与箱体响应式 ${width}`, async ({ page }) => {
@@ -103,7 +136,7 @@ for (const width of [390, 1024, 1440]) {
     const bounds = await dialog.boundingBox()
     expect(bounds!.width).toBeLessThanOrEqual(width)
     await dialog.getByRole('button', { name: '关闭' }).click()
-    await page.getByRole('link', { name: '股票池箱体研究', exact: true }).click()
+    await page.getByRole('link', { name: '高风险公司箱体研究', exact: true }).click()
     await expect(page.locator('.box-table tbody tr')).toHaveCount(2)
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
   })

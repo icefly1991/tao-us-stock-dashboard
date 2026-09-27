@@ -16,6 +16,8 @@ TAGS = {
     'financing_cash_flow': ['NetCashProvidedByUsedInFinancingActivities', 'CashFlowsFromUsedInFinancingActivities'],
 }
 INSTANT = {'cash', 'current_assets', 'current_liabilities'}
+CATEGORIES = {'clinical', 'precommercial', 'funded_loss', 'turnaround', 'commercial_medical',
+              'digital_assets', 'financial', 'operating', 'disclosure_risk', 'unresolved'}
 
 def extract_facts(company: dict, submissions: dict, cutoff: str) -> dict:
     namespaces = company.get('facts', {})
@@ -118,11 +120,45 @@ def apply_review(rows: list[dict], manifest: dict, overrides: dict, cutoff: str)
         if override:
             if override['grade'] not in {'supported', 'watch', 'pressure', 'unknown'} or not override.get('sources'):
                 raise ValueError('Manual classification requires a valid grade and primary sources')
-            row = {**row, **override, 'tags': list(dict.fromkeys(override['tags'] + row['tags'])), 'sources': override['sources'] + row['sources'], 'review_method': '原文专项核查'}
+            # A fresh narrative review can replace obsolete missing-field or old-period tags.
+            tags = override['tags'] if override.get('replace_tags') else list(dict.fromkeys(override['tags'] + row['tags']))
+            row = {**row, **override, 'tags': tags, 'sources': override['sources'] + row['sources'], 'review_method': '原文专项核查'}
+            row.pop('replace_tags', None)
         if not row['facts']:
             row['business_clarity'] = '业务/财务资料待补，不能判为基本面尚可'
         final.append(row)
     return {'schema_version': 1, 'reviewed_at': cutoff, 'source_snapshot_date': manifest['captured_at'], 'rows': final, 'excluded': manifest['excluded']}
+
+
+def apply_categories(payload: dict, categories: dict, cutoff: str) -> dict:
+    """Business type is independent of liquidity grade; manual types require evidence."""
+    if categories['reviewed_at'] != cutoff:
+        raise ValueError('Category evidence date must match review date')
+    members = {row['code'] for row in payload['rows']}
+    if not set(categories['overrides']) <= members:
+        raise ValueError('Category overrides contain non-members')
+    for row in payload['rows']:
+        override = categories['overrides'].get(row['code'])
+        if override:
+            if override.get('category') not in CATEGORIES or not override.get('category_reason') or not override.get('category_sources'):
+                raise ValueError('Business category requires a valid type, reason and sources')
+            for source in override['category_sources']:
+                if not isinstance(source.get('url'), str) or not source['url'].startswith('https://'):
+                    raise ValueError('Business category requires HTTPS evidence')
+            row.update(override)
+        else:
+            row['category'] = 'operating' if row['grade'] == 'supported' else 'unresolved' if row['grade'] == 'unknown' else 'turnaround'
+            row['category_reason'] = ('报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。' if row['category'] == 'operating' else
+                                      '资料不足以确认经营类型，具体缺口见资金核查。' if row['category'] == 'unresolved' else
+                                      '已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。')
+            row['category_sources'] = row['sources'] if row['review_method'] == '原文专项核查' else list({f['url']: {'title': '财报初筛依据', 'url': f['url']} for f in row['facts'].values() if f}.values())
+            row['category_method'] = '财报规则初筛'
+        row.setdefault('evidence_gap', '')
+        # Sector financing/asset valuation cannot use industrial-company cash burn runway.
+        if row['category'] in {'financial', 'digital_assets', 'disclosure_risk'}:
+            row['runway_months'] = None
+    payload['schema_version'] = 2
+    return payload
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -131,13 +167,16 @@ if __name__ == '__main__':
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--source-manifest', type=Path)
     parser.add_argument('--overrides', type=Path)
+    parser.add_argument('--categories', type=Path)
     args = parser.parse_args()
     rows = [build_assessment(path.name.removesuffix('-submissions.json'), args.evidence_dir, args.cutoff) for path in sorted(args.evidence_dir.glob('*-submissions.json'))]
     payload = {'reviewed_at': args.cutoff, 'rows': rows, 'excluded': []}
     if args.source_manifest or args.overrides:
-        if not args.source_manifest or not args.overrides:
-            parser.error('Final review requires both --source-manifest and --overrides')
+        if not args.source_manifest or not args.overrides or not args.categories:
+            parser.error('Final review requires --source-manifest, --overrides and --categories (schema v2)')
         payload = apply_review(rows, json.loads(args.source_manifest.read_text(encoding='utf-8')), json.loads(args.overrides.read_text(encoding='utf-8')), args.cutoff)
+        if args.categories:
+            payload = apply_categories(payload, json.loads(args.categories.read_text(encoding='utf-8')), args.cutoff)
         from data_pipeline.config import load_watchlist, STOCK_LIST_FILE
         members = {item.code: item for item in load_watchlist(STOCK_LIST_FILE) if item.pool}
         if set(members) != {row['code'] for row in payload['rows']}:

@@ -328,3 +328,8 @@ UI-015验证结果：45项Python测试、lint/build通过；箱体页面、RSI�
 - 研究数据为独立静态pool-review.json，日常不刷新评级；原list-review.json未改变。234只全部做财报初筛，其中23只原文专项核查，57只保留待核实。报告与限制见reviews/2026-09-27-pool-review.md。
 - 功能提交`8ed8610`，[Actions 36311510736](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36311510736) checks/build/deploy全流程成功：93项Python、43项Chromium回归、lint/build；350行情首次生成成功、0失败、700历史文件/0错误、100与234两池扫描均0错误。
 - 线上1440/390五页复验成功：持仓43、原活跃100、原箱体默认24、新池234、新箱体默认58。压力筛选12只、RZLV财报弹窗/关闭正常，无脚本错误；线上两口径各350行，data_date=20260925，updated_at=2026-09-27T06:09-04:00。证据截图.cache/pool-visual/production-*.png。
+## 2026-09-27 CR-018：高风险公司股票池（本轮发布验证）
+- 99项Python、48项浏览器、lint和build通过。新增经营类型/资金等级组合筛选、非法类别/旧schema/无来源失败保护，以及医药获批、融资依赖、受限资金、HUBG披露缺口回归。
+- 本地真实Yahoo生成：350成功、0失败、0停牌，data_date=20260925；700历史文件/0错误，原100及新池234只箱体扫描均0错误。产物在.cache/pool-live，仓库dashboard仍安全占位。
+- 独立Edge真实数据检查1440/390两页、临床筛选、IMSR/GEMI/HUBG证据弹窗通过，无页面异常或全页横向溢出；截图.cache/risk-visual。线上发布证据待本轮Actions完成后补记。
+- 变更UI-021/DATA-022/RES-007，研究契约v2，行情/箱体v4不变；原57待核实中56已补查，HUBG仍待可靠完整财报。类型原文核查82只、资金原文80只，非全池全面尽调。

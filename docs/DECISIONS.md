@@ -134,3 +134,9 @@ CSV 保持 code 唯一；watchlist=original 标记原列表，tier=A/B/C 标记�
 - CSV新增pool=tradingview；复用一个Yahoo批次与历史文件，collections增加pool，箱体生成器参数化输出pool-boxes.json。旧research仍仅100只，原公式和v4形态规则不变。
 - 基本面不塞入每日行情刷新：独立版本1研究JSON与有来源的人工覆盖记录；财报筛查和原文专项核查分别标识。新池页等级筛选、证据原生dialog（键盘Escape/焦点恢复）不影响原三页。
 - 不新增依赖，不实时同步TradingView、不创建自动名单/基本面任务。扩大批次增加请求量与产物体积，原缺价保护及有限重试照常适用于全批。
+
+## ADR-018：经营类型与资金等级分离
+- CR-018 / UI-021 / DATA-022 / RES-007；用户明确将新池定位困境反转跟踪。保留路由及成员，重命名两页。
+- pool-review升v2，增加category/category_reason/category_method/category_sources/evidence_gap。人工类型由独立pool_categories.json维护；临床、商业化前期、融资依赖必须有原文支持，默认规则不推断融资依赖。
+- 两页组合筛选，单股证据展示两种判断及剩余缺口；前端拒绝v1及非法类别。资金原文补查可覆盖旧缺口标签与旧期间事实。金融/数字资产不显示通用现金消耗月数。
+- CSV业务标签仍唯一来源；保留部分数字为空，不能为了消灭待核实而编造数值。HUBG可靠完整财报未补齐，继续明确待核实。

@@ -39,7 +39,7 @@ def generate_boxes(data_dir: Path, collection_id: str = "research", output_name:
     for error in errors:
         print(f"Box scan error: {error['code']}: {error['error']}")
     payload = {"schema_version": 4, "updated_at": dashboard["updated_at"], "data_date": dashboard["data_date"],
-               "adjustment": "adjusted", "source": "yfinance", "universe": "活跃股票池" if collection_id == "pool" else "活跃股观察列表 · 固定扫描池",
+               "adjustment": "adjusted", "source": "yfinance", "universe": "高风险公司股票池" if collection_id == "pool" else "活跃股观察列表 · 固定扫描池",
                "universe_count": len(codes), "market_scan_enabled": False, "rows": rows, "errors": errors}
     if not rows:
         raise RuntimeError("箱体扫描无有效结果；保留已有文件")

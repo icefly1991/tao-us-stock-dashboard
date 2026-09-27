@@ -374,6 +374,2120 @@
           "url": "https://ir.ars-pharma.com/news-releases/news-release-details/ars-pharmaceuticals-outlines-strategic-priorities-including"
         }
       ]
+    },
+    "AESI": {
+      "grade": "watch",
+      "reason": "油田服务收入已落地，报告期净亏损但经营现金流为正；债务及增长投资仍需观察。",
+      "tags": [
+        "现金原文补录",
+        "经营修复观察"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001984060/000119312526333424/aesi-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": {
+          "value": 558761000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1984060/000119312526333424/aesi-20260630.htm",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "start": "2026-01-01"
+        },
+        "net_income": {
+          "value": -72360000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1984060/000119312526333424/aesi-20260630.htm",
+          "tag": "NetIncomeLoss",
+          "start": "2026-01-01"
+        },
+        "operating_cash_flow": {
+          "value": 18443000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1984060/000119312526333424/aesi-20260630.htm",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "start": "2026-01-01"
+        },
+        "cash": {
+          "value": 168216000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001984060/000119312526333424/aesi-20260630.htm",
+          "tag": "manual-primary-filing"
+        },
+        "current_assets": {
+          "value": 479064000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1984060/000119312526333424/aesi-20260630.htm",
+          "tag": "AssetsCurrent"
+        },
+        "current_liabilities": {
+          "value": 262677000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1984060/000119312526333424/aesi-20260630.htm",
+          "tag": "LiabilitiesCurrent"
+        },
+        "equity_proceeds": null,
+        "financing_cash_flow": {
+          "value": 283274000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1984060/000119312526333424/aesi-20260630.htm",
+          "tag": "NetCashProvidedByUsedInFinancingActivities",
+          "start": "2026-01-01"
+        }
+      }
+    },
+    "AVNT": {
+      "grade": "supported",
+      "reason": "特种材料收入、净利润及经营现金流均为正；已从资产负债表补得现金，原待核实为字段缺口。",
+      "tags": [
+        "现金原文补录",
+        "经营修复观察"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001122976/000112297626000126/avnt-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": {
+          "value": 1764400000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1122976/000112297626000126/avnt-20260630.htm",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "start": "2026-01-01"
+        },
+        "net_income": {
+          "value": 120500000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1122976/000112297626000126/avnt-20260630.htm",
+          "tag": "NetIncomeLoss",
+          "start": "2026-01-01"
+        },
+        "operating_cash_flow": {
+          "value": 59300000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1122976/000112297626000126/avnt-20260630.htm",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "start": "2026-01-01"
+        },
+        "cash": {
+          "value": 425600000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001122976/000112297626000126/avnt-20260630.htm",
+          "tag": "manual-primary-filing"
+        },
+        "current_assets": {
+          "value": 1533400000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1122976/000112297626000126/avnt-20260630.htm",
+          "tag": "AssetsCurrent"
+        },
+        "current_liabilities": {
+          "value": 806900000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1122976/000112297626000126/avnt-20260630.htm",
+          "tag": "LiabilitiesCurrent"
+        },
+        "equity_proceeds": null,
+        "financing_cash_flow": {
+          "value": -103000000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1122976/000112297626000126/avnt-20260630.htm",
+          "tag": "NetCashProvidedByUsedInFinancingActivities",
+          "start": "2026-01-01"
+        }
+      }
+    },
+    "CE": {
+      "grade": "watch",
+      "reason": "化工业务现金流为正，但债务及化工周期修复仍是核心观察点；不能只凭本期盈利认定已经反转。",
+      "tags": [
+        "现金原文补录",
+        "经营修复观察"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001306830/000130683026000117/ce-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": {
+          "value": 5089000000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1306830/000130683026000117/ce-20260630.htm",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "start": "2026-01-01"
+        },
+        "net_income": {
+          "value": 169000000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1306830/000130683026000117/ce-20260630.htm",
+          "tag": "NetIncomeLoss",
+          "start": "2026-01-01"
+        },
+        "operating_cash_flow": {
+          "value": 285000000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1306830/000130683026000117/ce-20260630.htm",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "start": "2026-01-01"
+        },
+        "cash": {
+          "value": 1364000000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001306830/000130683026000117/ce-20260630.htm",
+          "tag": "manual-primary-filing"
+        },
+        "current_assets": {
+          "value": 5795000000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1306830/000130683026000117/ce-20260630.htm",
+          "tag": "AssetsCurrent"
+        },
+        "current_liabilities": {
+          "value": 4006000000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1306830/000130683026000117/ce-20260630.htm",
+          "tag": "LiabilitiesCurrent"
+        },
+        "equity_proceeds": null,
+        "financing_cash_flow": {
+          "value": -549000000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1306830/000130683026000117/ce-20260630.htm",
+          "tag": "NetCashProvidedByUsedInFinancingActivities",
+          "start": "2026-01-01"
+        }
+      }
+    },
+    "CRNC": {
+      "grade": "watch",
+      "reason": "汽车软件业务已有收入，经营现金流为正但本期仍小幅净亏损；关注许可收入持续性。",
+      "tags": [
+        "现金原文补录",
+        "经营修复观察"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001768267/000162828026054339/crnc-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": {
+          "value": 248855000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1768267/000162828026054339/crnc-20260630.htm",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "start": "2025-10-01"
+        },
+        "net_income": {
+          "value": -2033000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1768267/000162828026054339/crnc-20260630.htm",
+          "tag": "NetIncomeLoss",
+          "start": "2025-10-01"
+        },
+        "operating_cash_flow": {
+          "value": 71961000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1768267/000162828026054339/crnc-20260630.htm",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "start": "2025-10-01"
+        },
+        "cash": {
+          "value": 127600000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001768267/000162828026054339/crnc-20260630.htm",
+          "tag": "manual-primary-filing"
+        },
+        "current_assets": {
+          "value": 212256000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1768267/000162828026054339/crnc-20260630.htm",
+          "tag": "AssetsCurrent"
+        },
+        "current_liabilities": {
+          "value": 101936000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1768267/000162828026054339/crnc-20260630.htm",
+          "tag": "LiabilitiesCurrent"
+        },
+        "equity_proceeds": {
+          "value": 8112000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1768267/000162828026054339/crnc-20260630.htm",
+          "tag": "ProceedsFromIssuanceOfCommonStock",
+          "start": "2025-10-01"
+        },
+        "financing_cash_flow": {
+          "value": -27106000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1768267/000162828026054339/crnc-20260630.htm",
+          "tag": "NetCashProvidedByUsedInFinancingActivities",
+          "start": "2025-10-01"
+        }
+      }
+    },
+    "OLN": {
+      "grade": "watch",
+      "reason": "成熟化工业务，本期亏损且经营现金净流出；财报解释需求及营运资金影响，观察行业复苏和债务。",
+      "tags": [
+        "现金原文补录",
+        "经营修复观察"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000074303/000007430326000077/oln-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": {
+          "value": 3324900000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-07-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/74303/000007430326000077/oln-20260630.htm",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "start": "2026-01-01"
+        },
+        "net_income": {
+          "value": -96300000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-07-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/74303/000007430326000077/oln-20260630.htm",
+          "tag": "NetIncomeLoss",
+          "start": "2026-01-01"
+        },
+        "operating_cash_flow": {
+          "value": -40700000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-07-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/74303/000007430326000077/oln-20260630.htm",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "start": "2026-01-01"
+        },
+        "cash": {
+          "value": 177400000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-07-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000074303/000007430326000077/oln-20260630.htm",
+          "tag": "manual-primary-filing"
+        },
+        "current_assets": {
+          "value": 2187900000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-07-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/74303/000007430326000077/oln-20260630.htm",
+          "tag": "AssetsCurrent"
+        },
+        "current_liabilities": {
+          "value": 1543100000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-07-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/74303/000007430326000077/oln-20260630.htm",
+          "tag": "LiabilitiesCurrent"
+        },
+        "equity_proceeds": null,
+        "financing_cash_flow": {
+          "value": 126300000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-07-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/74303/000007430326000077/oln-20260630.htm",
+          "tag": "NetCashProvidedByUsedInFinancingActivities",
+          "start": "2026-01-01"
+        }
+      }
+    },
+    "RR": {
+      "grade": "watch",
+      "reason": "机器人已有小规模销售但仍亏损；财报说明增发显著补充现金及短期投资。属于亏损融资型，但现有资金较多，不等于短期断粮。",
+      "tags": [
+        "现金原文补录",
+        "经营修复观察"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001963685/000121390026091798/ea0302286-10q_richtech.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": {
+          "value": 3945000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-19",
+          "url": "https://www.sec.gov/Archives/edgar/data/1963685/000121390026091798/ea0302286-10q_richtech.htm",
+          "tag": "Revenues",
+          "start": "2025-10-01"
+        },
+        "net_income": {
+          "value": -20402000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-19",
+          "url": "https://www.sec.gov/Archives/edgar/data/1963685/000121390026091798/ea0302286-10q_richtech.htm",
+          "tag": "NetIncomeLoss",
+          "start": "2025-10-01"
+        },
+        "operating_cash_flow": {
+          "value": -3568000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-19",
+          "url": "https://www.sec.gov/Archives/edgar/data/1963685/000121390026091798/ea0302286-10q_richtech.htm",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "start": "2025-10-01"
+        },
+        "cash": {
+          "value": 301962000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-19",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001963685/000121390026091798/ea0302286-10q_richtech.htm",
+          "tag": "manual-primary-filing"
+        },
+        "current_assets": {
+          "value": 344784000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-19",
+          "url": "https://www.sec.gov/Archives/edgar/data/1963685/000121390026091798/ea0302286-10q_richtech.htm",
+          "tag": "AssetsCurrent"
+        },
+        "current_liabilities": {
+          "value": 3683000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-19",
+          "url": "https://www.sec.gov/Archives/edgar/data/1963685/000121390026091798/ea0302286-10q_richtech.htm",
+          "tag": "LiabilitiesCurrent"
+        },
+        "equity_proceeds": {
+          "value": 110301000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-19",
+          "url": "https://www.sec.gov/Archives/edgar/data/1963685/000121390026091798/ea0302286-10q_richtech.htm",
+          "tag": "ProceedsFromIssuanceOfCommonStock",
+          "start": "2025-10-01"
+        },
+        "financing_cash_flow": {
+          "value": 112988000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-19",
+          "url": "https://www.sec.gov/Archives/edgar/data/1963685/000121390026091798/ea0302286-10q_richtech.htm",
+          "tag": "NetCashProvidedByUsedInFinancingActivities",
+          "start": "2025-10-01"
+        }
+      }
+    },
+    "UMAC": {
+      "grade": "watch",
+      "reason": "无人机部件有实际销售，本期账面盈利但经营现金流为负；公司称现有现金支持超过12个月计划，关注备货与产能扩张。",
+      "tags": [
+        "现金原文补录",
+        "经营修复观察"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001956955/000168316826006016/umac_i10q-063026.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": {
+          "value": 24818304,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1956955/000168316826006016/umac_i10q-063026.htm",
+          "tag": "Revenues",
+          "start": "2026-01-01"
+        },
+        "net_income": {
+          "value": 2499441,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1956955/000168316826006016/umac_i10q-063026.htm",
+          "tag": "NetIncomeLoss",
+          "start": "2026-01-01"
+        },
+        "operating_cash_flow": {
+          "value": -38891945,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1956955/000168316826006016/umac_i10q-063026.htm",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "start": "2026-01-01"
+        },
+        "cash": {
+          "value": 229598776,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001956955/000168316826006016/umac_i10q-063026.htm",
+          "tag": "manual-primary-filing"
+        },
+        "current_assets": {
+          "value": 370575945,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1956955/000168316826006016/umac_i10q-063026.htm",
+          "tag": "AssetsCurrent"
+        },
+        "current_liabilities": {
+          "value": 6885146,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1956955/000168316826006016/umac_i10q-063026.htm",
+          "tag": "LiabilitiesCurrent"
+        },
+        "equity_proceeds": {
+          "value": 60000000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1956955/000168316826006016/umac_i10q-063026.htm",
+          "tag": "ProceedsFromIssuanceOfCommonStock",
+          "start": "2026-01-01"
+        },
+        "financing_cash_flow": {
+          "value": 200981341,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1956955/000168316826006016/umac_i10q-063026.htm",
+          "tag": "NetCashProvidedByUsedInFinancingActivities",
+          "start": "2026-01-01"
+        }
+      }
+    },
+    "WWW": {
+      "grade": "supported",
+      "reason": "鞋履业务本期净利润和经营现金流均为正，债务仍需跟踪；原缺口只是现金提取失败。",
+      "tags": [
+        "现金原文补录",
+        "经营修复观察"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000110471/000162828026056524/www-20260704.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": {
+          "value": 964000000,
+          "unit": "USD",
+          "end": "2026-07-04",
+          "filed": "2026-08-13",
+          "url": "https://www.sec.gov/Archives/edgar/data/110471/000162828026056524/www-20260704.htm",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "start": "2026-01-04"
+        },
+        "net_income": {
+          "value": 51400000,
+          "unit": "USD",
+          "end": "2026-07-04",
+          "filed": "2026-08-13",
+          "url": "https://www.sec.gov/Archives/edgar/data/110471/000162828026056524/www-20260704.htm",
+          "tag": "NetIncomeLoss",
+          "start": "2026-01-04"
+        },
+        "operating_cash_flow": {
+          "value": 3400000,
+          "unit": "USD",
+          "end": "2026-07-04",
+          "filed": "2026-08-13",
+          "url": "https://www.sec.gov/Archives/edgar/data/110471/000162828026056524/www-20260704.htm",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "start": "2026-01-04"
+        },
+        "cash": {
+          "value": 158500000,
+          "unit": "USD",
+          "end": "2026-07-04",
+          "filed": "2026-08-13",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000110471/000162828026056524/www-20260704.htm",
+          "tag": "manual-primary-filing"
+        },
+        "current_assets": {
+          "value": 736200000,
+          "unit": "USD",
+          "end": "2026-07-04",
+          "filed": "2026-08-13",
+          "url": "https://www.sec.gov/Archives/edgar/data/110471/000162828026056524/www-20260704.htm",
+          "tag": "AssetsCurrent"
+        },
+        "current_liabilities": {
+          "value": 475200000,
+          "unit": "USD",
+          "end": "2026-07-04",
+          "filed": "2026-08-13",
+          "url": "https://www.sec.gov/Archives/edgar/data/110471/000162828026056524/www-20260704.htm",
+          "tag": "LiabilitiesCurrent"
+        },
+        "equity_proceeds": null,
+        "financing_cash_flow": {
+          "value": -46300000,
+          "unit": "USD",
+          "end": "2026-07-04",
+          "filed": "2026-08-13",
+          "url": "https://www.sec.gov/Archives/edgar/data/110471/000162828026056524/www-20260704.htm",
+          "tag": "NetCashProvidedByUsedInFinancingActivities",
+          "start": "2026-01-04"
+        }
+      }
+    },
+    "AURA": {
+      "grade": "watch",
+      "reason": "财报业务及融资章节已核实：核心药物仍处研发/临床阶段，尚未形成自主药品销售现金流，主要依靠股权、合作或债务资金推进研发。临床结果、审批及资金消耗分别跟踪；收入缺失字段仍保留空值，不补零。",
+      "tags": [
+        "临床结果博弈",
+        "研发资金消耗",
+        "未形成药品销售自给"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001501796/000119312526343429/aura-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "CATX": {
+      "grade": "watch",
+      "reason": "财报业务及融资章节已核实：核心药物仍处研发/临床阶段，尚未形成自主药品销售现金流，主要依靠股权、合作或债务资金推进研发。临床结果、审批及资金消耗分别跟踪；收入缺失字段仍保留空值，不补零。",
+      "tags": [
+        "临床结果博弈",
+        "研发资金消耗",
+        "未形成药品销售自给"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000728387/000119312526342512/catx-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "EIKN": {
+      "grade": "watch",
+      "reason": "财报业务及融资章节已核实：核心药物仍处研发/临床阶段，尚未形成自主药品销售现金流，主要依靠股权、合作或债务资金推进研发。临床结果、审批及资金消耗分别跟踪；收入缺失字段仍保留空值，不补零。",
+      "tags": [
+        "临床结果博弈",
+        "研发资金消耗",
+        "未形成药品销售自给"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001861123/000119312526349185/eikn-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "IKT": {
+      "grade": "watch",
+      "reason": "财报业务及融资章节已核实：核心药物仍处研发/临床阶段，尚未形成自主药品销售现金流，主要依靠股权、合作或债务资金推进研发。临床结果、审批及资金消耗分别跟踪；收入缺失字段仍保留空值，不补零。",
+      "tags": [
+        "临床结果博弈",
+        "研发资金消耗",
+        "未形成药品销售自给"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001750149/000119312526344707/ikt-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": {
+          "value": 0,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-11",
+          "url": "https://www.sec.gov/Archives/edgar/data/1750149/000119312526344707/ikt-20260630.htm",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "start": "2026-01-01"
+        },
+        "net_income": {
+          "value": -35972071,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-11",
+          "url": "https://www.sec.gov/Archives/edgar/data/1750149/000119312526344707/ikt-20260630.htm",
+          "tag": "NetIncomeLoss",
+          "start": "2026-01-01"
+        },
+        "operating_cash_flow": {
+          "value": -24503334,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-11",
+          "url": "https://www.sec.gov/Archives/edgar/data/1750149/000119312526344707/ikt-20260630.htm",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "start": "2026-01-01"
+        },
+        "cash": {
+          "value": 31206707,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-11",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001750149/000119312526344707/ikt-20260630.htm",
+          "tag": "manual-primary-filing"
+        },
+        "current_assets": {
+          "value": 162343915,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-11",
+          "url": "https://www.sec.gov/Archives/edgar/data/1750149/000119312526344707/ikt-20260630.htm",
+          "tag": "AssetsCurrent"
+        },
+        "current_liabilities": {
+          "value": 10260026,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-11",
+          "url": "https://www.sec.gov/Archives/edgar/data/1750149/000119312526344707/ikt-20260630.htm",
+          "tag": "LiabilitiesCurrent"
+        },
+        "equity_proceeds": {
+          "value": 2897611,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-11",
+          "url": "https://www.sec.gov/Archives/edgar/data/1750149/000119312526344707/ikt-20260630.htm",
+          "tag": "ProceedsFromIssuanceOfCommonStock",
+          "start": "2026-01-01"
+        },
+        "financing_cash_flow": {
+          "value": 2883122,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-11",
+          "url": "https://www.sec.gov/Archives/edgar/data/1750149/000119312526344707/ikt-20260630.htm",
+          "tag": "NetCashProvidedByUsedInFinancingActivities",
+          "start": "2026-01-01"
+        }
+      }
+    },
+    "KYTX": {
+      "grade": "watch",
+      "reason": "财报业务及融资章节已核实：核心药物仍处研发/临床阶段，尚未形成自主药品销售现金流，主要依靠股权、合作或债务资金推进研发。临床结果、审批及资金消耗分别跟踪；收入缺失字段仍保留空值，不补零。",
+      "tags": [
+        "临床结果博弈",
+        "研发资金消耗",
+        "未形成药品销售自给"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001994702/000119312526344607/kytx-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "SGMT": {
+      "grade": "watch",
+      "reason": "财报业务及融资章节已核实：核心药物仍处研发/临床阶段，尚未形成自主药品销售现金流，主要依靠股权、合作或债务资金推进研发。临床结果、审批及资金消耗分别跟踪；收入缺失字段仍保留空值，不补零。",
+      "tags": [
+        "临床结果博弈",
+        "研发资金消耗",
+        "未形成药品销售自给"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001400118/000119312526343441/sgmt-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "VOR": {
+      "grade": "watch",
+      "reason": "财报业务及融资章节已核实：核心药物仍处研发/临床阶段，尚未形成自主药品销售现金流，主要依靠股权、合作或债务资金推进研发。临床结果、审批及资金消耗分别跟踪；收入缺失字段仍保留空值，不补零。",
+      "tags": [
+        "临床结果博弈",
+        "研发资金消耗",
+        "未形成药品销售自给"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001817229/000119312526343607/vor-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "IMSR": {
+      "grade": "watch",
+      "reason": "熔盐核反应堆仍在设计、许可及开发阶段，核心电站业务尚未商业化。本期亏损且经营现金净流出，历史主要依靠融资；现金及短期投资提供缓冲，不能等同于即将资金耗尽。",
+      "tags": [
+        "商业化前期",
+        "研发/建设融资"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002019804/000110465926094085/tmb-20260630x10q.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "EVEX": {
+      "grade": "watch",
+      "reason": "电动垂直起降飞机仍待认证及量产，公司明确尚无收入；融资、金融投资和贷款支持研发，不把订单意向当作已交付收入。",
+      "tags": [
+        "商业化前期",
+        "研发/建设融资"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001823652/000155485526001685/evex-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "NB": {
+      "grade": "watch",
+      "reason": "Elk Creek矿产项目尚未投产、没有经营收入；募资增加现金，但建设还需资金、许可和执行。",
+      "tags": [
+        "商业化前期",
+        "研发/建设融资"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001512228/000119312526402806/nb-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "NKLR": {
+      "grade": "watch",
+      "reason": "SOLO微型反应堆仍在研发，公司明确尚未产生外部客户收入；依靠上市及PIPE资金，商业化还需许可与交付。",
+      "tags": [
+        "商业化前期",
+        "研发/建设融资"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002067627/000121390026090062/ea0300681-10q_terra.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "NPWR": {
+      "grade": "watch",
+      "reason": "财报明确为无收入开发期公司；原技术资产减值及项目转向后，Project Permian尚无最终投资决定或约束性售电合同，建设资金未完全落实。",
+      "tags": [
+        "商业化前期",
+        "研发/建设融资"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001845437/000184543726000033/npwr-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "QS": {
+      "grade": "watch",
+      "reason": "固态电池仍在研发与产业化验证阶段，财报明确尚无收入；现金及有价证券较多，但许可、量产和客户采用仍待验证。",
+      "tags": [
+        "商业化前期",
+        "研发/建设融资"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001811414/000119312526316073/qs-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "ALHC": {
+      "grade": "supported",
+      "reason": "医保承保业务可核验，本期盈利及经营现金流为正；需跟踪赔付率、医保支付和受监管子公司资本，保险储备不能当自由现金。",
+      "tags": [
+        "行业原文核查",
+        "不使用通用存活月数"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001832466/000162828026051060/alhc-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "CHYM": {
+      "grade": "supported",
+      "reason": "已从支付等服务取得实际收入，本期盈利且经营现金流为正；受限资金和产品抵押资金须与自由现金区分。",
+      "tags": [
+        "行业原文核查",
+        "不使用通用存活月数"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001795586/000179558626000048/chym-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "GSHD": {
+      "grade": "supported",
+      "reason": "保险经纪佣金业务已有收入和正经营现金流，本期盈利；属于经纪业务而非承保资金池。",
+      "tags": [
+        "行业原文核查",
+        "不使用通用存活月数"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001726978/000172697826000060/gshd-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "PGY": {
+      "grade": "supported",
+      "reason": "信贷撮合平台有收入、利润和正经营现金流；贷款投资及证券化需融资是业务模式的一部分，不直接等同亏损续命。",
+      "tags": [
+        "行业原文核查",
+        "不使用通用存活月数"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001883085/000188308526000058/pgy-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "RKT": {
+      "grade": "supported",
+      "reason": "抵押贷款发放及服务有真实业务，本期净利润和经营现金流为正；仓储融资支持贷款周转，不按一般制造业烧钱估算。",
+      "tags": [
+        "行业原文核查",
+        "不使用通用存活月数"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001805284/000162828026054577/rkt-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "SLDE": {
+      "grade": "supported",
+      "reason": "财险承保业务本期盈利，经营现金流为正；巨灾赔付、再保险与法定资本是主要风险，不将全部现金当可分配现金。",
+      "tags": [
+        "行业原文核查",
+        "不使用通用存活月数"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001886428/000119312526326333/slde-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "WD": {
+      "grade": "supported",
+      "reason": "商业地产贷款和服务业务本期盈利；仓储额度、担保和风险分担需要专项观察，不能用贷款周转现金流推算存活月份。",
+      "tags": [
+        "行业原文核查",
+        "不使用通用存活月数"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001497770/000110465926091536/wd-20260630x10q.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "WLTH": {
+      "grade": "supported",
+      "reason": "理财平台本期盈利及经营现金流为正；客户资产、清算负债和监管隔离现金不属于公司可自由消耗资金。",
+      "tags": [
+        "行业原文核查",
+        "不使用通用存活月数"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001524566/000162828026061848/wlth-20260731.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "BETR": {
+      "grade": "watch",
+      "reason": "抵押贷款业务有收入但仍显著亏损；发行股票及融资支持运营。经营现金流包含贷款发放/出售周转，不据该总额推算短期现金耗尽。",
+      "tags": [
+        "行业原文核查",
+        "不使用通用存活月数"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001835856/000162828026055745/aurcu-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "GLXY": {
+      "grade": "watch",
+      "reason": "数字资产交易、投资和数据中心均有业务；本期净亏损、经营现金流为正，利润受资产估值影响，债务及股权资金也支持扩张。",
+      "tags": [
+        "行业原文核查",
+        "不使用通用存活月数"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001859392/000185939226000091/glxy-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "BTBT": {
+      "grade": "watch",
+      "reason": "数字资产及数据中心业务已有收入，本期净亏损但经营现金流为正；持币估值、抵押借款和子公司资金不可视为无条件现金。",
+      "tags": [
+        "行业原文核查",
+        "不使用通用存活月数"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001710350/000121390026088709/ea0300693-10q_bitdigital.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "CLSK": {
+      "grade": "watch",
+      "reason": "比特币挖矿已有业务，AI/HPC在财报期尚无收入；利润受币价及估值影响，并依靠持币变现、转债及授信支持运营/扩张。",
+      "tags": [
+        "行业原文核查",
+        "不使用通用存活月数"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000827876/000119312526338382/clsk-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "WYFI": {
+      "grade": "watch",
+      "reason": "数据中心已有业务及经营现金流，但本期亏损且负营运资金，需跟踪到期债务再融资与扩建执行；不是没有业务的概念公司。",
+      "tags": [
+        "行业原文核查",
+        "不使用通用存活月数"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "TRON": {
+      "grade": "watch",
+      "reason": "公司已转向TRX数字资产储备及质押；账面盈利不能当作稳定经营现金创造，主要跟踪币价、持币及稀释。",
+      "tags": [
+        "行业原文核查",
+        "不使用通用存活月数"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001956744/000149315226037161/form10-q.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "XXI": {
+      "grade": "watch",
+      "reason": "比特币储备平台，本期亏损受数字资产会计影响；披露现金约1.061亿美元且管理层认为支持至少一年，不能按净亏损机械判定断粮。",
+      "tags": [
+        "行业原文核查",
+        "不使用通用存活月数"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002070457/000121390026087471/ea0299640-10q_twentyone.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "cash": {
+          "value": 106132084,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-11",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002070457/000121390026087471/ea0299640-10q_twentyone.htm",
+          "tag": "manual-primary-filing"
+        }
+      }
+    },
+    "GEMI": {
+      "grade": "pressure",
+      "reason": "交易所及托管业务已落地，但2026上半年收入9575万美元、净亏损2.167亿美元、经营现金净流出1.059亿美元。财报明确依赖历史股权及关联方/第三方借款，关联融资中断可能损害流动性。客户托管资金不用于公司续命；归入亏损融资型，不宣称已披露持续经营疑虑。",
+      "tags": [
+        "亏损融资型",
+        "关联方借款",
+        "客户资金不可挪用"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002055592/000205559226000065/gemi-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "DXYZ": {
+      "grade": "watch",
+      "reason": "封闭式投资基金，已核查2026半年N-CSRS；核心是非上市资产估值、流动性及股价相对净值溢价，不属于一般经营亏损公司。",
+      "tags": [
+        "补查原文及附件"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001843974/000121390026095201/ea0302101-01_ncsrs.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "net_assets": {
+          "value": 1634830252,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-28",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001843974/000121390026095201/ea0302101-01_ncsrs.htm",
+          "tag": "manual-primary-filing"
+        }
+      }
+    },
+    "ARQQ": {
+      "grade": "watch",
+      "reason": "量子安全软件已有少量收入，2026上半年收入62.3万美元、净亏损3303.2万美元，经营现金净流出2566.8万美元；股权资金支撑商业化推进。8月公告仍需结合后续融资看资金，不沿用2025旧半年数据。",
+      "tags": [
+        "补查原文及附件"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001859690/000110465926064890/arqq-20260331xex99d2.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": {
+          "value": 623000,
+          "unit": "USD",
+          "end": "2026-03-31",
+          "filed": "2026-05-21",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001859690/000110465926064890/arqq-20260331xex99d2.htm",
+          "tag": "manual-primary-filing",
+          "start": "2025-10-01"
+        },
+        "net_income": {
+          "value": -33032000,
+          "unit": "USD",
+          "end": "2026-03-31",
+          "filed": "2026-05-21",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001859690/000110465926064890/arqq-20260331xex99d2.htm",
+          "tag": "manual-primary-filing",
+          "start": "2025-10-01"
+        },
+        "operating_cash_flow": {
+          "value": -25668000,
+          "unit": "USD",
+          "end": "2026-03-31",
+          "filed": "2026-05-21",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001859690/000110465926064890/arqq-20260331xex99d2.htm",
+          "tag": "manual-primary-filing",
+          "start": "2025-10-01"
+        },
+        "cash": {
+          "value": 28860000,
+          "unit": "USD",
+          "end": "2026-03-31",
+          "filed": "2026-05-21",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001859690/000110465926064890/arqq-20260331xex99d2.htm",
+          "tag": "manual-primary-filing"
+        },
+        "current_assets": null,
+        "current_liabilities": null,
+        "equity_proceeds": null,
+        "financing_cash_flow": {
+          "value": 17395000,
+          "unit": "USD",
+          "end": "2026-03-31",
+          "filed": "2026-05-21",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001859690/000110465926064890/arqq-20260331xex99d2.htm",
+          "tag": "manual-primary-filing",
+          "start": "2025-10-01"
+        }
+      }
+    },
+    "ALVO": {
+      "grade": "watch",
+      "reason": "已有多款生物类似药销售，不是纯临床彩票；半年制造供应问题影响收入，公告披露股权融资与新贷款支持，观察供货恢复与商业兑现。",
+      "tags": [
+        "补查原文及附件"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/1898416/000162828026057988/earningsreleaseq22026.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": null,
+        "net_income": null,
+        "operating_cash_flow": null,
+        "cash": null,
+        "current_assets": null,
+        "current_liabilities": null,
+        "equity_proceeds": null,
+        "financing_cash_flow": null
+      }
+    },
+    "GENI": {
+      "grade": "watch",
+      "reason": "体育数据及媒体业务有实际收入；2026半年收入3.835亿美元、净亏损1.322亿美元，收购交易及利息影响显著，观察整合及盈利修复。",
+      "tags": [
+        "补查原文及附件"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001834489/000119312526336663/geni-ex99_2.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": {
+          "value": 383455000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001834489/000119312526336663/geni-ex99_2.htm",
+          "tag": "manual-primary-filing",
+          "start": "2026-01-01"
+        },
+        "net_income": {
+          "value": -132201000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001834489/000119312526336663/geni-ex99_2.htm",
+          "tag": "manual-primary-filing",
+          "start": "2026-01-01"
+        },
+        "operating_cash_flow": null,
+        "cash": null,
+        "current_assets": null,
+        "current_liabilities": null,
+        "equity_proceeds": null,
+        "financing_cash_flow": null
+      }
+    },
+    "GLOB": {
+      "grade": "watch",
+      "reason": "IT服务业务已成熟，最新季报收入约6.144亿美元；需观察增长停滞及利润修复，不能用旧年报盈利直接判定现状。",
+      "tags": [
+        "补查原文及附件"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001557860/000110465926095916/tm2623064d1_ex99-1.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": {
+          "value": 614417000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-13",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001557860/000110465926095916/tm2623064d1_ex99-1.htm",
+          "tag": "manual-primary-filing",
+          "start": "2026-04-01"
+        },
+        "net_income": {
+          "value": 3607000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-13",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001557860/000110465926095916/tm2623064d1_ex99-1.htm",
+          "tag": "manual-primary-filing",
+          "start": "2026-04-01"
+        },
+        "operating_cash_flow": {
+          "value": 30217000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-13",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001557860/000110465926095916/tm2623064d1_ex99-1.htm",
+          "tag": "manual-primary-filing",
+          "start": "2026-04-01"
+        },
+        "cash": {
+          "value": 163766000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-13",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001557860/000110465926095916/tm2623064d1_ex99-1.htm",
+          "tag": "manual-primary-filing"
+        },
+        "current_assets": null,
+        "current_liabilities": null,
+        "equity_proceeds": null,
+        "financing_cash_flow": null
+      }
+    },
+    "ODD": {
+      "grade": "watch",
+      "reason": "已有美妆销售且二季度盈利，但收入同比下降约25%，公司在修复广告账户及获客问题；属于经营修复而非无业务。",
+      "tags": [
+        "补查原文及附件"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001907085/000110465926106126/tm2624995d1_ex99-1.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": {
+          "value": 181000000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-09-09",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001907085/000110465926106126/tm2624995d1_ex99-1.htm",
+          "tag": "manual-primary-filing",
+          "start": "2026-04-01"
+        },
+        "net_income": {
+          "value": 13000000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-09-09",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001907085/000110465926106126/tm2624995d1_ex99-1.htm",
+          "tag": "manual-primary-filing",
+          "start": "2026-04-01"
+        },
+        "operating_cash_flow": null,
+        "cash": null,
+        "current_assets": null,
+        "current_liabilities": null,
+        "equity_proceeds": null,
+        "financing_cash_flow": null
+      }
+    },
+    "SRAD": {
+      "grade": "watch",
+      "reason": "体育数据业务已有收入和正经营现金流；最新季度仍亏损，现金及回购可核验，观察利润转化和体育版权成本。",
+      "tags": [
+        "补查原文及附件"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001836470/000110465926089457/tm2621599d1_ex99-1.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": null,
+        "net_income": null,
+        "operating_cash_flow": null,
+        "cash": null,
+        "current_assets": null,
+        "current_liabilities": null,
+        "equity_proceeds": null,
+        "financing_cash_flow": null
+      }
+    },
+    "LAES": {
+      "grade": "watch",
+      "reason": "安全芯片已有销售，2026半年收入约1115万美元、净亏损约2780万美元；股权融资提供较多储备，仍需产品规模化。现金披露含受限部分时不当作全部可用现金。",
+      "tags": [
+        "补查原文及附件"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001951222/000121390026099476/ea030513901ex99-1.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": null,
+        "net_income": null,
+        "operating_cash_flow": {
+          "value": -23731000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-09-14",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001951222/000121390026099476/ea030513901ex99-1.htm",
+          "tag": "manual-primary-filing",
+          "start": "2026-01-01"
+        },
+        "cash": {
+          "value": 479797000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-09-14",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001951222/000121390026099476/ea030513901ex99-1.htm",
+          "tag": "manual-primary-filing"
+        },
+        "current_assets": null,
+        "current_liabilities": null,
+        "equity_proceeds": null,
+        "financing_cash_flow": {
+          "value": 114641000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-09-14",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001951222/000121390026099476/ea030513901ex99-1.htm",
+          "tag": "manual-primary-filing",
+          "start": "2026-01-01"
+        }
+      }
+    },
+    "KLAR": {
+      "grade": "watch",
+      "reason": "银行及先买后付业务已落地，最新二季度净利润约900万美元；存款及贷款周转影响现金流，不能沿用旧年度亏损判为依赖融资续命。",
+      "tags": [
+        "补查原文及附件"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/2003292/000162828026057573/q22026earningsrelease.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": {
+          "value": 1042000000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-18",
+          "url": "https://www.sec.gov/Archives/edgar/data/2003292/000162828026057573/q22026earningsrelease.htm",
+          "tag": "manual-primary-filing",
+          "start": "2026-04-01"
+        },
+        "net_income": {
+          "value": 9000000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-18",
+          "url": "https://www.sec.gov/Archives/edgar/data/2003292/000162828026057573/q22026earningsrelease.htm",
+          "tag": "manual-primary-filing",
+          "start": "2026-04-01"
+        },
+        "operating_cash_flow": null,
+        "cash": {
+          "value": 2672000000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-18",
+          "url": "https://www.sec.gov/Archives/edgar/data/2003292/000162828026057573/q22026earningsrelease.htm",
+          "tag": "manual-primary-filing"
+        },
+        "current_assets": null,
+        "current_liabilities": null,
+        "equity_proceeds": null,
+        "financing_cash_flow": null
+      }
+    },
+    "ETOR": {
+      "grade": "supported",
+      "reason": "已核查二季度公告：交易投资平台持续产生收入和利润；客户托管资产与公司资金区分，不使用通用现金消耗月数。",
+      "tags": [
+        "补查原文及附件"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001493318/000121390026087525/ea030151001ex99-1.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": null,
+        "net_income": {
+          "value": 135884000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-11",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001493318/000121390026087525/ea030151001ex99-1.htm",
+          "tag": "manual-primary-filing",
+          "start": "2026-01-01"
+        },
+        "operating_cash_flow": null,
+        "cash": null,
+        "current_assets": null,
+        "current_liabilities": null,
+        "equity_proceeds": null,
+        "financing_cash_flow": null
+      }
+    },
+    "SECZ": {
+      "grade": "watch",
+      "reason": "已查到经营主体二季度公告，资产代币化业务有约1440万美元季度收入但净亏损约2170万美元；合并上市后约3.5亿美元现金是期后数字，不与6月底现金混用。",
+      "tags": [
+        "补查原文及附件"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002094496/000162828026056164/exhibit991-secz2q26earning.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": {
+          "value": 14400000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-12",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002094496/000162828026056164/exhibit991-secz2q26earning.htm",
+          "tag": "manual-primary-filing",
+          "start": "2026-04-01"
+        },
+        "net_income": {
+          "value": -21689202,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-12",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002094496/000162828026056164/exhibit991-secz2q26earning.htm",
+          "tag": "manual-primary-filing",
+          "start": "2026-04-01"
+        }
+      }
+    },
+    "HUBG": {
+      "grade": "unknown",
+      "reason": "已查至9月公告：公司正在重述历史财报，最新完整可依赖报表尚未补齐；9月仅公布部分初步业绩并收到Nasdaq退市决定通知、拟申诉。经营业务明确，但暂不能可靠确认完整财务状况。",
+      "tags": [
+        "财报重述",
+        "上市合规风险",
+        "完整财务待确认"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000940942/000119312526394408/d574815dex991.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "重述尚未完成，已核查9月15日初步业绩及9月17日上市合规公告；旧财报不作为可靠当前分级依据。",
+      "facts": {
+        "revenue": null,
+        "net_income": null,
+        "operating_cash_flow": null,
+        "cash": null,
+        "current_assets": null,
+        "current_liabilities": null,
+        "equity_proceeds": null,
+        "financing_cash_flow": null
+      }
+    },
+    "FOXF": {
+      "grade": "watch",
+      "reason": "悬挂系统已有实际销售；2026半年净亏损约1094万美元但经营现金流为正，关注需求、库存和经营修复。",
+      "tags": [
+        "最新财报原文核查"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001424929/000142492926000049/foxf-20260703.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": {
+          "value": 726779000,
+          "unit": "USD",
+          "end": "2026-07-03",
+          "filed": "2026-08-07",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001424929/000142492926000049/foxf-20260703.htm",
+          "tag": "manual-primary-filing",
+          "start": "2026-01-03"
+        },
+        "net_income": {
+          "value": -10943000,
+          "unit": "USD",
+          "end": "2026-07-03",
+          "filed": "2026-08-07",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001424929/000142492926000049/foxf-20260703.htm",
+          "tag": "manual-primary-filing",
+          "start": "2026-01-03"
+        },
+        "operating_cash_flow": {
+          "value": 13150000,
+          "unit": "USD",
+          "end": "2026-07-03",
+          "filed": "2026-08-07",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001424929/000142492926000049/foxf-20260703.htm",
+          "tag": "manual-primary-filing",
+          "start": "2026-01-03"
+        },
+        "cash": {
+          "value": 61276000,
+          "unit": "USD",
+          "end": "2026-07-03",
+          "filed": "2026-08-07",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001424929/000142492926000049/foxf-20260703.htm",
+          "tag": "manual-primary-filing"
+        },
+        "current_assets": null,
+        "current_liabilities": null,
+        "equity_proceeds": null,
+        "financing_cash_flow": null
+      }
+    },
+    "JACK": {
+      "grade": "watch",
+      "reason": "餐饮业务已经落地，最新财年前三季净利润恢复为正，但加盟商付款延迟及债务仍影响流动性；旧年度亏损不代表当前期间。",
+      "tags": [
+        "最新财报原文核查"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000807882/000080788226000091/jack-20260705.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": null,
+        "net_income": {
+          "value": 27909000,
+          "unit": "USD",
+          "end": "2026-07-05",
+          "filed": "2026-08-12",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000807882/000080788226000091/jack-20260705.htm",
+          "tag": "manual-primary-filing",
+          "start": "2025-09-29"
+        },
+        "operating_cash_flow": null,
+        "cash": {
+          "value": 46318000,
+          "unit": "USD",
+          "end": "2026-07-05",
+          "filed": "2026-08-12",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000807882/000080788226000091/jack-20260705.htm",
+          "tag": "manual-primary-filing"
+        },
+        "current_assets": null,
+        "current_liabilities": null,
+        "equity_proceeds": null,
+        "financing_cash_flow": null
+      }
+    },
+    "CLFD": {
+      "grade": "watch",
+      "reason": "光纤设备已有销售，最新财年前三季净利润约185.8万美元；处置业务改变可比性，关注通信需求及业务修复。",
+      "tags": [
+        "最新财报原文核查"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000796505/000117184326005329/clfd20260630_10q.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": null,
+        "net_income": {
+          "value": 1858000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000796505/000117184326005329/clfd20260630_10q.htm",
+          "tag": "manual-primary-filing",
+          "start": "2025-10-01"
+        },
+        "operating_cash_flow": null,
+        "cash": {
+          "value": 20449000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000796505/000117184326005329/clfd20260630_10q.htm",
+          "tag": "manual-primary-filing"
+        },
+        "current_assets": null,
+        "current_liabilities": null,
+        "equity_proceeds": null,
+        "financing_cash_flow": null
+      }
+    },
+    "MPT": {
+      "grade": "watch",
+      "reason": "医院地产已有租金收入，但租户及债务重组仍是核心风险；2026半年经营现金流约4800万美元，不能用旧一季净流出机械推断生存压力。",
+      "tags": [
+        "最新财报原文核查"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001287865/000119312526342583/mpt-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": {
+          "value": 511348000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-10",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001287865/000119312526342583/mpt-20260630.htm",
+          "tag": "manual-primary-filing",
+          "start": "2026-01-01"
+        },
+        "net_income": {
+          "value": 30819000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-10",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001287865/000119312526342583/mpt-20260630.htm",
+          "tag": "manual-primary-filing",
+          "start": "2026-01-01"
+        },
+        "operating_cash_flow": null,
+        "cash": {
+          "value": 396558000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-10",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001287865/000119312526342583/mpt-20260630.htm",
+          "tag": "manual-primary-filing"
+        },
+        "current_assets": null,
+        "current_liabilities": null,
+        "equity_proceeds": null,
+        "financing_cash_flow": null
+      }
+    },
+    "MTH": {
+      "grade": "supported",
+      "reason": "住宅交付业务可核验，本期盈利及经营现金流为正；收入在住宅及土地子项披露，字段缺失不等于没有收入。",
+      "tags": [
+        "最新财报原文核查"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000833079/000083307926000128/mth-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": ""
+    },
+    "SWIM": {
+      "grade": "supported",
+      "reason": "泳池制造已有收入，本期盈利和经营现金流为正；财报说明符合债务契约，仍需跟踪2027年到期授信续期。",
+      "tags": [
+        "最新财报原文核查"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001833197/000162828026052925/swim-20260627.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": {
+          "value": 314789000,
+          "unit": "USD",
+          "end": "2026-06-27",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1833197/000162828026052925/swim-20260627.htm",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "start": "2026-01-01"
+        },
+        "net_income": {
+          "value": 4220000,
+          "unit": "USD",
+          "end": "2026-06-27",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1833197/000162828026052925/swim-20260627.htm",
+          "tag": "NetIncomeLoss",
+          "start": "2026-01-01"
+        },
+        "operating_cash_flow": {
+          "value": 5783000,
+          "unit": "USD",
+          "end": "2026-06-27",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1833197/000162828026052925/swim-20260627.htm",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "start": "2026-01-01"
+        },
+        "cash": {
+          "value": 43480000,
+          "unit": "USD",
+          "end": "2026-06-27",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001833197/000162828026052925/swim-20260627.htm",
+          "tag": "manual-primary-filing"
+        },
+        "current_assets": {
+          "value": 240627000,
+          "unit": "USD",
+          "end": "2026-06-27",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1833197/000162828026052925/swim-20260627.htm",
+          "tag": "AssetsCurrent"
+        },
+        "current_liabilities": {
+          "value": 111527000,
+          "unit": "USD",
+          "end": "2026-06-27",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1833197/000162828026052925/swim-20260627.htm",
+          "tag": "LiabilitiesCurrent"
+        },
+        "equity_proceeds": null,
+        "financing_cash_flow": {
+          "value": -3730000,
+          "unit": "USD",
+          "end": "2026-06-27",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1833197/000162828026052925/swim-20260627.htm",
+          "tag": "NetCashProvidedByUsedInFinancingActivities",
+          "start": "2026-01-01"
+        }
+      }
+    },
+    "PPLI": {
+      "grade": "watch",
+      "reason": "重组后出版媒体业务有真实收入，2026半年持续经营现金流转正；剥离业务及持股估值影响可比性，不沿用2024年度数据。",
+      "tags": [
+        "最新财报原文核查"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001800227/000162828026051881/ppli-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": null,
+        "net_income": null,
+        "operating_cash_flow": null,
+        "cash": null,
+        "current_assets": null,
+        "current_liabilities": null,
+        "equity_proceeds": null,
+        "financing_cash_flow": null
+      }
+    },
+    "RUN": {
+      "grade": "watch",
+      "reason": "住宅太阳能已有客户与收入；项目基金和无追索权融资是商业模式的重要部分，不能将投资建造融资直接等同于持续经营危机。",
+      "tags": [
+        "最新财报原文核查"
+      ],
+      "sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001469367/000162828026053366/run-20260630.htm"
+        }
+      ],
+      "replace_tags": true,
+      "runway_months": null,
+      "evidence_gap": "",
+      "facts": {
+        "revenue": {
+          "value": 1592219000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1469367/000162828026053366/run-20260630.htm",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "start": "2026-01-01"
+        },
+        "net_income": {
+          "value": 282796000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1469367/000162828026053366/run-20260630.htm",
+          "tag": "NetIncomeLoss",
+          "start": "2026-01-01"
+        },
+        "operating_cash_flow": {
+          "value": -175556000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1469367/000162828026053366/run-20260630.htm",
+          "tag": "NetCashProvidedByUsedInOperatingActivities",
+          "start": "2026-01-01"
+        },
+        "cash": {
+          "value": 712400000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001469367/000162828026053366/run-20260630.htm",
+          "tag": "manual-primary-filing"
+        },
+        "current_assets": {
+          "value": 2166508000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1469367/000162828026053366/run-20260630.htm",
+          "tag": "AssetsCurrent"
+        },
+        "current_liabilities": {
+          "value": 1523449000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1469367/000162828026053366/run-20260630.htm",
+          "tag": "LiabilitiesCurrent"
+        },
+        "equity_proceeds": null,
+        "financing_cash_flow": {
+          "value": 952687000,
+          "unit": "USD",
+          "end": "2026-06-30",
+          "filed": "2026-08-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1469367/000162828026053366/run-20260630.htm",
+          "tag": "NetCashProvidedByUsedInFinancingActivities",
+          "start": "2026-01-01"
+        }
+      }
     }
   }
 }

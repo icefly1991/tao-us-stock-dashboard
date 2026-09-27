@@ -1,0 +1,907 @@
+{
+  "reviewed_at": "2026-09-27",
+  "overrides": {
+    "ALMS": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001847367/000184736726000018/alms-20260630x10q.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "AURA": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001501796/000119312526343429/aura-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "BEAM": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001745999/000119312526331541/beam-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "CABA": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001759138/000175913826000039/caba-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "CATX": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000728387/000119312526342512/catx-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "EDIT": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001650664/000165066426000083/edit-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "EIKN": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001861123/000119312526349185/eikn-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "EVMN": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002044725/000119312526337984/evmn-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "EYPT": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001314102/000119312526335037/eypt-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "FATE": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001434316/000119312526347988/fate-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "IKT": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001750149/000119312526344707/ikt-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "KYTX": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001994702/000119312526344607/kytx-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "NMRA": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001885522/000119312526350370/nmra-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "NTLA": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001652130/000119312526337952/ntla-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "PRME": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001894562/000162828026053883/prme-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "RGNX": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001590877/000119312526336725/rgnx-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "RXRX": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001601830/000160183026000098/rxrx-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "SANA": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001770121/000119312526342395/sana-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "SGMT": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001400118/000119312526343441/sgmt-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "SMMT": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001599298/000159929826000068/smmt-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "UPB": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002022626/000119312526343417/upb-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "VOR": {
+      "category": "clinical",
+      "category_reason": "核心价值依赖在研药物临床结果及监管审批；合作收入、授权或少量历史销售不等于核心管线已获批并形成稳定销售。关注读出、审批和融资稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001817229/000119312526343607/vor-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "IMSR": {
+      "category": "precommercial",
+      "category_reason": "熔盐核反应堆仍在设计、许可及开发阶段，核心电站业务尚未商业化。本期亏损且经营现金净流出，历史主要依靠融资；现金及短期投资提供缓冲，不能等同于即将资金耗尽。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002019804/000110465926094085/tmb-20260630x10q.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "EVEX": {
+      "category": "precommercial",
+      "category_reason": "电动垂直起降飞机仍待认证及量产，公司明确尚无收入；融资、金融投资和贷款支持研发，不把订单意向当作已交付收入。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001823652/000155485526001685/evex-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "NB": {
+      "category": "precommercial",
+      "category_reason": "Elk Creek矿产项目尚未投产、没有经营收入；募资增加现金，但建设还需资金、许可和执行。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001512228/000119312526402806/nb-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "NKLR": {
+      "category": "precommercial",
+      "category_reason": "SOLO微型反应堆仍在研发，公司明确尚未产生外部客户收入；依靠上市及PIPE资金，商业化还需许可与交付。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002067627/000121390026090062/ea0300681-10q_terra.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "NPWR": {
+      "category": "precommercial",
+      "category_reason": "财报明确为无收入开发期公司；原技术资产减值及项目转向后，Project Permian尚无最终投资决定或约束性售电合同，建设资金未完全落实。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001845437/000184543726000033/npwr-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "QS": {
+      "category": "precommercial",
+      "category_reason": "固态电池仍在研发与产业化验证阶段，财报明确尚无收入；现金及有价证券较多，但许可、量产和客户采用仍待验证。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001811414/000119312526316073/qs-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "NNE": {
+      "category": "precommercial",
+      "category_reason": "核心反应堆、飞行器、材料或资源项目尚待许可、建设、量产或规模化交付；即使有工程、研发合作收入，也不代表核心商业模式已落地。关注里程碑、资本需求和交付。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001923891/000149315226037345/form10-q.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "OKLO": {
+      "category": "precommercial",
+      "category_reason": "核心反应堆、飞行器、材料或资源项目尚待许可、建设、量产或规模化交付；即使有工程、研发合作收入，也不代表核心商业模式已落地。关注里程碑、资本需求和交付。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001849056/000162828026054571/oklo-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "SMR": {
+      "category": "precommercial",
+      "category_reason": "核心反应堆、飞行器、材料或资源项目尚待许可、建设、量产或规模化交付；即使有工程、研发合作收入，也不代表核心商业模式已落地。关注里程碑、资本需求和交付。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001822966/000182296626000085/smr-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "FAC": {
+      "category": "precommercial",
+      "category_reason": "核心反应堆、飞行器、材料或资源项目尚待许可、建设、量产或规模化交付；即使有工程、研发合作收入，也不代表核心商业模式已落地。关注里程碑、资本需求和交付。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002049662/000162828026055707/fac-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "FRMI": {
+      "category": "precommercial",
+      "category_reason": "核心反应堆、飞行器、材料或资源项目尚待许可、建设、量产或规模化交付；即使有工程、研发合作收入，也不代表核心商业模式已落地。关注里程碑、资本需求和交付。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002071778/000207177826000051/frmi-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "IE": {
+      "category": "precommercial",
+      "category_reason": "核心反应堆、飞行器、材料或资源项目尚待许可、建设、量产或规模化交付；即使有工程、研发合作收入，也不代表核心商业模式已落地。关注里程碑、资本需求和交付。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001879016/000187901626000017/ie-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "SLDP": {
+      "category": "precommercial",
+      "category_reason": "核心反应堆、飞行器、材料或资源项目尚待许可、建设、量产或规模化交付；即使有工程、研发合作收入，也不代表核心商业模式已落地。关注里程碑、资本需求和交付。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001844862/000110465926090634/sldp-20260630x10q.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "MRLN": {
+      "category": "precommercial",
+      "category_reason": "核心反应堆、飞行器、材料或资源项目尚待许可、建设、量产或规模化交付；即使有工程、研发合作收入，也不代表核心商业模式已落地。关注里程碑、资本需求和交付。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002028707/000162828026056882/mrln-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "AGIO": {
+      "category": "commercial_medical",
+      "category_reason": "已有获批产品或药品/再生医疗商业业务，区别于纯临床研发；获批不保证销售或盈利，需跟踪安全性、准入和放量。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001439222/000143922226000118/agio-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "ALVO": {
+      "category": "commercial_medical",
+      "category_reason": "已有获批产品或药品/再生医疗商业业务，区别于纯临床研发；获批不保证销售或盈利，需跟踪安全性、准入和放量。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/1898416/000162828026057988/earningsreleaseq22026.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "COLL": {
+      "category": "commercial_medical",
+      "category_reason": "已有获批产品或药品/再生医疗商业业务，区别于纯临床研发；获批不保证销售或盈利，需跟踪安全性、准入和放量。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001267565/000162828026053851/coll-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "DNLI": {
+      "category": "commercial_medical",
+      "category_reason": "已有获批产品或药品/再生医疗商业业务，区别于纯临床研发；获批不保证销售或盈利，需跟踪安全性、准入和放量。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001714899/000171489926000097/dnli-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "GERN": {
+      "category": "commercial_medical",
+      "category_reason": "已有获批产品或药品/再生医疗商业业务，区别于纯临床研发；获批不保证销售或盈利，需跟踪安全性、准入和放量。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000886744/000088674426000037/gern-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "ORGO": {
+      "category": "commercial_medical",
+      "category_reason": "已有获批产品或药品/再生医疗商业业务，区别于纯临床研发；获批不保证销售或盈利，需跟踪安全性、准入和放量。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001661181/000119312526338049/orgo-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "RCKT": {
+      "category": "commercial_medical",
+      "category_reason": "已有获批产品或药品/再生医疗商业业务，区别于纯临床研发；获批不保证销售或盈利，需跟踪安全性、准入和放量。KRESLADI于2026年3月获批，本财报期尚未确认产品销售收入，仍待商业上市兑现。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001281895/000119312526342348/rckt-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "SPRY": {
+      "category": "commercial_medical",
+      "category_reason": "已有获批产品或药品/再生医疗商业业务，区别于纯临床研发；获批不保证销售或盈利，需跟踪安全性、准入和放量。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001671858/000119312526349140/spry-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "SRPT": {
+      "category": "commercial_medical",
+      "category_reason": "已有获批产品或药品/再生医疗商业业务，区别于纯临床研发；获批不保证销售或盈利，需跟踪安全性、准入和放量。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000873303/000119312526335003/srpt-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "GEMI": {
+      "category": "funded_loss",
+      "category_reason": "交易所及托管业务已落地，但2026上半年收入9575万美元、净亏损2.167亿美元、经营现金净流出1.059亿美元。财报明确依赖历史股权及关联方/第三方借款，关联融资中断可能损害流动性。客户托管资金不用于公司续命；归入亏损融资型，不宣称已披露持续经营疑虑。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002055592/000205559226000065/gemi-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "RR": {
+      "category": "funded_loss",
+      "category_reason": "已有客户业务及收入，但尚未经营自给；亏损/现金消耗由股权、借款或上市融资支持。融资后资金充裕仍可属于此类型，资金紧迫程度另看等级。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001963685/000121390026091798/ea0302286-10q_richtech.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "ARQQ": {
+      "category": "funded_loss",
+      "category_reason": "量子安全软件已有少量收入，2026上半年收入62.3万美元、净亏损3303.2万美元，经营现金净流出2566.8万美元；股权资金支撑商业化推进。8月公告仍需结合后续融资看资金，不沿用2025旧半年数据。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001859690/000110465926064890/arqq-20260331xex99d2.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "LAES": {
+      "category": "funded_loss",
+      "category_reason": "安全芯片已有销售，2026半年收入约1115万美元、净亏损约2780万美元；股权融资提供较多储备，仍需产品规模化。现金披露含受限部分时不当作全部可用现金。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001951222/000121390026099476/ea030513901ex99-1.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "BKKT": {
+      "category": "funded_loss",
+      "category_reason": "已有客户业务及收入，但尚未经营自给；亏损/现金消耗由股权、借款或上市融资支持。融资后资金充裕仍可属于此类型，资金紧迫程度另看等级。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001820302/000162828026055275/bakkt-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "LCID": {
+      "category": "funded_loss",
+      "category_reason": "已有客户业务及收入，但尚未经营自给；亏损/现金消耗由股权、借款或上市融资支持。融资后资金充裕仍可属于此类型，资金紧迫程度另看等级。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001811210/000162828026052606/lcid-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "RZLV": {
+      "category": "funded_loss",
+      "category_reason": "已有客户业务及收入，但尚未经营自给；亏损/现金消耗由股权、借款或上市融资支持。融资后资金充裕仍可属于此类型，资金紧迫程度另看等级。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001920294/000119312526132456/rzlv-20251231.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "SECZ": {
+      "category": "funded_loss",
+      "category_reason": "已查到经营主体二季度公告，资产代币化业务有约1440万美元季度收入但净亏损约2170万美元；合并上市后约3.5亿美元现金是期后数字，不与6月底现金混用。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002094496/000162828026056164/exhibit991-secz2q26earning.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "BTBT": {
+      "category": "digital_assets",
+      "category_reason": "核心敞口包含数字资产储备、挖矿、质押或交易投资；资产重估盈亏与经营现金流分开看，跟踪币价、抵押、增发和净资产。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001710350/000121390026088709/ea0300693-10q_bitdigital.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "CLSK": {
+      "category": "digital_assets",
+      "category_reason": "核心敞口包含数字资产储备、挖矿、质押或交易投资；资产重估盈亏与经营现金流分开看，跟踪币价、抵押、增发和净资产。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000827876/000119312526338382/clsk-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "GLXY": {
+      "category": "digital_assets",
+      "category_reason": "核心敞口包含数字资产储备、挖矿、质押或交易投资；资产重估盈亏与经营现金流分开看，跟踪币价、抵押、增发和净资产。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001859392/000185939226000091/glxy-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "FWDI": {
+      "category": "digital_assets",
+      "category_reason": "核心敞口包含数字资产储备、挖矿、质押或交易投资；资产重估盈亏与经营现金流分开看，跟踪币价、抵押、增发和净资产。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000038264/000168316826006270/forward_i10q-063026.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "ORBS": {
+      "category": "digital_assets",
+      "category_reason": "核心敞口包含数字资产储备、挖矿、质押或交易投资；资产重估盈亏与经营现金流分开看，跟踪币价、抵押、增发和净资产。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001892492/000149315226036637/form10-q.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "TRON": {
+      "category": "digital_assets",
+      "category_reason": "核心敞口包含数字资产储备、挖矿、质押或交易投资；资产重估盈亏与经营现金流分开看，跟踪币价、抵押、增发和净资产。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001956744/000149315226037161/form10-q.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "XXI": {
+      "category": "digital_assets",
+      "category_reason": "核心敞口包含数字资产储备、挖矿、质押或交易投资；资产重估盈亏与经营现金流分开看，跟踪币价、抵押、增发和净资产。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002070457/000121390026087471/ea0299640-10q_twentyone.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "ALHC": {
+      "category": "financial",
+      "category_reason": "金融、保险、信贷、地产或投资业务采用行业口径；客户资产、存款、法定资本及仓储融资不按一般企业现金消耗评判。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001832466/000162828026051060/alhc-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "BETR": {
+      "category": "financial",
+      "category_reason": "金融、保险、信贷、地产或投资业务采用行业口径；客户资产、存款、法定资本及仓储融资不按一般企业现金消耗评判。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001835856/000162828026055745/aurcu-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "CHYM": {
+      "category": "financial",
+      "category_reason": "金融、保险、信贷、地产或投资业务采用行业口径；客户资产、存款、法定资本及仓储融资不按一般企业现金消耗评判。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001795586/000179558626000048/chym-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "ETOR": {
+      "category": "financial",
+      "category_reason": "金融、保险、信贷、地产或投资业务采用行业口径；客户资产、存款、法定资本及仓储融资不按一般企业现金消耗评判。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001493318/000121390026087525/ea030151001ex99-1.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "GSHD": {
+      "category": "financial",
+      "category_reason": "金融、保险、信贷、地产或投资业务采用行业口径；客户资产、存款、法定资本及仓储融资不按一般企业现金消耗评判。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001726978/000172697826000060/gshd-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "KLAR": {
+      "category": "financial",
+      "category_reason": "金融、保险、信贷、地产或投资业务采用行业口径；客户资产、存款、法定资本及仓储融资不按一般企业现金消耗评判。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/2003292/000162828026057573/q22026earningsrelease.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "MPT": {
+      "category": "financial",
+      "category_reason": "金融、保险、信贷、地产或投资业务采用行业口径；客户资产、存款、法定资本及仓储融资不按一般企业现金消耗评判。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001287865/000119312526342583/mpt-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "PGY": {
+      "category": "financial",
+      "category_reason": "金融、保险、信贷、地产或投资业务采用行业口径；客户资产、存款、法定资本及仓储融资不按一般企业现金消耗评判。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001883085/000188308526000058/pgy-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "RKT": {
+      "category": "financial",
+      "category_reason": "金融、保险、信贷、地产或投资业务采用行业口径；客户资产、存款、法定资本及仓储融资不按一般企业现金消耗评判。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001805284/000162828026054577/rkt-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "SLDE": {
+      "category": "financial",
+      "category_reason": "金融、保险、信贷、地产或投资业务采用行业口径；客户资产、存款、法定资本及仓储融资不按一般企业现金消耗评判。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001886428/000119312526326333/slde-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "WD": {
+      "category": "financial",
+      "category_reason": "金融、保险、信贷、地产或投资业务采用行业口径；客户资产、存款、法定资本及仓储融资不按一般企业现金消耗评判。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001497770/000110465926091536/wd-20260630x10q.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "WLTH": {
+      "category": "financial",
+      "category_reason": "金融、保险、信贷、地产或投资业务采用行业口径；客户资产、存款、法定资本及仓储融资不按一般企业现金消耗评判。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001524566/000162828026061848/wlth-20260731.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "DXYZ": {
+      "category": "financial",
+      "category_reason": "封闭式投资基金，核查N-CSRS而非等待10-Q；跟踪组合估值、未上市资产流动性和股价相对净值溢价。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001843974/000121390026095201/ea0302101-01_ncsrs.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "HUBG": {
+      "category": "disclosure_risk",
+      "category_reason": "有真实运输物流业务，但财报重述及上市合规问题妨碍可靠财务判断；这是已识别的披露风险，不是完全没有资料。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000940942/000119312526394408/d574815dex991.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "CRML": {
+      "category": "precommercial",
+      "category_reason": "矿产开发项目仍需建设和融资；核心投产及现金创造尚待兑现，资金压力另列。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001951089/000121390026103607/ea0302128-20f_critical.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "LZM": {
+      "category": "precommercial",
+      "category_reason": "矿产开发项目仍需建设和融资；核心投产及现金创造尚待兑现，资金压力另列。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001958217/000195821726000009/lzm-20251231.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "SERV": {
+      "category": "funded_loss",
+      "category_reason": "配送机器人已有商业运营及收入，但本期亏损、经营现金净流出；增发等融资提供支持，仍需验证部署规模与单位经济性。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001832483/000183248326000035/serv-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "SOUN": {
+      "category": "funded_loss",
+      "category_reason": "语音AI已有客户收入，财报明确历史主要依靠股权/债务融资且持续亏损；管理层预计资金支持至少12个月，融资依赖与短期危机分开。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001840856/000184085626000022/soun-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "BBNX": {
+      "category": "funded_loss",
+      "category_reason": "iLet胰岛素设备已销售，但公司仍亏损、经营现金净流出，主要以IPO等股权资金及销售支持；属于商业化设备烧钱，不归入新药临床彩票。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001674632/000119312526323777/bbnx-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "NRGV": {
+      "category": "funded_loss",
+      "category_reason": "储能业务已有交付和收入，但本期亏损且经营现金净流出；财报明确历史以股权、PIPE和债务资金支持，项目融资与公司运营资金须区分。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001828536/000182853626000101/nrgv-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "INDI": {
+      "category": "funded_loss",
+      "category_reason": "汽车芯片已有销售，但本期亏损、经营现金净流出；ATM增发和授信为资金来源，管理层预计足以支持至少12个月，关注销量和稀释。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001841925/000119312526340396/indi-20260630.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    },
+    "RUM": {
+      "category": "funded_loss",
+      "category_reason": "视频平台已有收入，但本期亏损、经营现金净流出，历史募资现金继续支持内容支出及云设施投入；不因有现金储备就视为经营自给。",
+      "category_sources": [
+        {
+          "title": "SEC财报/公告原文",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001830081/000121390026087311/ea0301267-10q_rumgroup.htm"
+        }
+      ],
+      "category_method": "原文经营类型核查"
+    }
+  }
+}

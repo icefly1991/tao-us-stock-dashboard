@@ -8,7 +8,7 @@ import BoxScreener from './BoxScreener'
 import ListReviewNotice from './ListReviewNotice'
 import RsiCell from './RsiCell'
 import { FundamentalBadge, PoolFilter } from './PoolReview'
-import { usePoolReview } from './poolReviewData'
+import { usePoolReview, matchesPoolReview } from './poolReviewData'
 import { isDashboardData } from './dataValidation'
 import type { AdjustmentKey, MetricKey, SummaryKey, Row, DashboardData } from './dashboardData'
 
@@ -111,6 +111,7 @@ function App() {
   const poolPage = collectionId === 'pool'
   const poolReview = usePoolReview(poolPage)
   const [grade, setGrade] = useState('all')
+  const [category, setCategory] = useState('all')
   const researchPage = collectionId !== 'original'
   const headerScroll = useRef<HTMLDivElement>(null)
   const bodyScroll = useRef<HTMLDivElement>(null)
@@ -120,6 +121,7 @@ function App() {
       setCollectionId(getCollectionFromHash())
       setTab('position_52w_pct')
       setGrade('all')
+      setCategory('all')
       window.scrollTo(0, 0)
     }
     window.addEventListener('hashchange', navigate)
@@ -127,7 +129,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-    document.title = `${collectionId === 'pool-boxes' ? '股票池箱体研究' : poolPage ? '活跃股票池' : collectionId === 'boxes' ? '箱体观察' : researchPage ? '活跃股观察列表' : '持仓股'} · Tao 美股趋势看板`
+    document.title = `${collectionId === 'pool-boxes' ? '高风险公司箱体研究' : poolPage ? '高风险公司股票池' : collectionId === 'boxes' ? '箱体观察' : researchPage ? '活跃股观察列表' : '持仓股'} · Tao 美股趋势看板`
   }, [researchPage, collectionId, poolPage])
 
   useEffect(() => {
@@ -152,9 +154,9 @@ function App() {
   const rows = useMemo(
     () =>
       current
-        ? current.rows.filter((row) => (!collection || collection.codes.includes(row.code)) && (!poolPage || grade === 'all' || (poolReview.data?.rows.find(item => item.code === row.code)?.grade ?? 'unknown') === grade)).sort((a, b) => compareMetric(a, b, tab))
+        ? current.rows.filter((row) => (!collection || collection.codes.includes(row.code)) && (!poolPage || matchesPoolReview(poolReview.data?.rows.find(item => item.code === row.code), grade, category))).sort((a, b) => compareMetric(a, b, tab))
         : [],
-    [current, collection, tab, poolPage, grade, poolReview.data],
+    [current, collection, tab, poolPage, grade, category, poolReview.data],
   )
   const maxMetric = useMemo(
     () => Math.max(...rows.map((row) => Math.abs(row[tab] ?? 0)), 1),
@@ -186,8 +188,8 @@ function App() {
             <PageNavigation page={poolPage ? 'pool' : researchPage ? 'research' : 'watchlist'} />
             <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-3xl">
-                <h1 className="text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">{poolPage ? '活跃股票池' : researchPage ? '活跃股观察列表' : '持仓股'}</h1>
-                <p className="mt-2 text-xs text-slate-500">yfinance 日线 · 仅供研究</p>
+                <h1 className="text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">{poolPage ? '高风险公司股票池' : researchPage ? '活跃股观察列表' : '持仓股'}</h1>
+                <p className="mt-2 text-xs text-slate-500">{poolPage ? '经营困境与潜在反转跟踪 · yfinance 日线' : 'yfinance 日线 · 仅供研究'}</p>
               </div>
               <DataFreshness updatedAt={data.updated_at} dataDate={data.data_date} />
             </div>
@@ -223,7 +225,7 @@ function App() {
         </motion.section>
 
         <section data-position-view={tab === 'position_52w_pct'} className="ranking-section rounded-[2rem] border border-white/80 bg-white/80 p-3 shadow-[0_24px_60px_rgba(15,23,42,0.05)] sm:p-6">
-          {poolPage && <PoolFilter review={poolReview.data} error={poolReview.error} value={grade} onChange={setGrade} />}
+          {poolPage && <PoolFilter review={poolReview.data} error={poolReview.error} value={grade} onChange={setGrade} category={category} onCategoryChange={setCategory} />}
           {missingCodes.length > 0 && (
             <div role="status" className="mb-4 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
               暂无可用行情：{missingCodes.join('、')}。列表总数包含这些标的，涨跌统计仅含可用行情。

@@ -1,7 +1,7 @@
 import DataFreshness from './DataFreshness'
 import PageNavigation from './PageNavigation'
 import { FundamentalBadge, PoolFilter } from './PoolReview'
-import { usePoolReview } from './poolReviewData'
+import { usePoolReview, matchesPoolReview } from './poolReviewData'
 import { useEffect, useMemo, useState } from 'react'
 import ListReviewNotice from './ListReviewNotice'
 import { isBoxScan } from './dataValidation'
@@ -151,6 +151,7 @@ function LongRangeChart({ row }: { row: Box }) {
 export default function BoxScreener({ pool = false }: { pool?: boolean }) {
   const review = usePoolReview(pool)
   const [grade, setGrade] = useState('all')
+  const [category, setCategory] = useState('all')
   const [data, setData] = useState<Scan | null>(null)
   const [error, setError] = useState(false)
   const [filter, setFilter] = useState('candidates')
@@ -158,7 +159,7 @@ export default function BoxScreener({ pool = false }: { pool?: boolean }) {
   const [selected, setSelected] = useState('')
   const [comparison, setComparison] = useState<{ code: string; days: number } | null>(null)
   useEffect(() => {
-    document.title = `${pool ? '股票池箱体研究' : '箱体观察'} · Tao 美股趋势看板`
+    document.title = `${pool ? '高风险公司箱体研究' : '箱体观察'} · Tao 美股趋势看板`
     const controller = new AbortController()
     fetch(`${import.meta.env.BASE_URL}data/${pool ? 'pool-boxes' : 'boxes'}.json`, { signal: controller.signal }).then(response => {
       if (!response.ok) throw new Error('missing')
@@ -170,9 +171,9 @@ export default function BoxScreener({ pool = false }: { pool?: boolean }) {
     return () => controller.abort()
   }, [pool])
   const rows = useMemo(() => (data?.rows ?? []).filter(row =>
-    (!pool || grade === 'all' || (review.data?.rows.find(item => item.code === row.code)?.grade ?? 'unknown') === grade) &&
+    (!pool || matchesPoolReview(review.data?.rows.find(item => item.code === row.code), grade, category)) &&
     (filter === 'all' || (filter === 'candidates' ? ['match', 'watch'].includes(row.status) : row.status === filter)) && `${row.code} ${row.name}`.toLowerCase().includes(query.toLowerCase()),
-  ).sort((a, b) => statusOrder[a.status] - statusOrder[b.status] || (b.efficiency ?? -1) - (a.efficiency ?? -1) || (b.passed_count ?? 0) - (a.passed_count ?? 0) || (a.position_pct ?? Infinity) - (b.position_pct ?? Infinity) || a.code.localeCompare(b.code)), [data, filter, query, pool, grade, review.data])
+  ).sort((a, b) => statusOrder[a.status] - statusOrder[b.status] || (b.efficiency ?? -1) - (a.efficiency ?? -1) || (b.passed_count ?? 0) - (a.passed_count ?? 0) || (a.position_pct ?? Infinity) - (b.position_pct ?? Infinity) || a.code.localeCompare(b.code)), [data, filter, query, pool, grade, category, review.data])
   const stock = rows.find(row => row.code === selected) ?? rows[0]
   const comparedWindow = stock && comparison?.code === stock.code ? stock.windows?.find(item => item.window_days === comparison.days) : undefined
   const active = stock ? { ...stock, ...comparedWindow } : undefined
@@ -183,17 +184,17 @@ export default function BoxScreener({ pool = false }: { pool?: boolean }) {
       <PageNavigation page={pool ? 'pool-boxes' : 'boxes'} />
       <div className="box-hero-heading"><div>
       <div className="box-eyebrow">仅复权日线 · 回顾性形态</div>
-      <h1>{pool ? '股票池箱体研究' : '宽箱体形态识别'}</h1>
-      <p>{pool ? '形态与基本面分开核查。' : '形态筛选，基本面待复核。'}</p>
+      <h1>{pool ? '高风险公司箱体研究' : '宽箱体形态识别'}</h1>
+      <p>{pool ? '经营困境与潜在反转跟踪。' : '形态筛选，基本面待复核。'}</p>
       </div>{data && <DataFreshness updatedAt={data.updated_at} dataDate={data.data_date} />}</div>
     </header>
     {error ? <section className="box-panel" role="alert">箱体数据暂不可用。<button className="underline" onClick={() => window.location.reload()}>刷新重试</button></section> : !data ? <section className="box-panel" role="status">正在读取扫描结果…</section> : <>
       <section className="box-stats" aria-label="扫描概况">
-        <div><small>本轮扫描范围</small><strong>{data.universe_count}<em>只</em></strong><span>{pool ? '活跃股票池' : '活跃列表 · 固定扫描池'}</span></div>
+        <div><small>本轮扫描范围</small><strong>{data.universe_count}<em>只</em></strong><span>{pool ? '高风险公司股票池' : '活跃列表 · 固定扫描池'}</span></div>
         <div><small>形态候选</small><strong>{matches + watching}<em>只</em></strong><span>已验证 {matches} · 待观察 {watching}{!pool && ' · 基本面待复核'}</span></div>
       </section>
       {!pool && <ListReviewNotice />}
-      {pool && <PoolFilter review={review.data} error={review.error} value={grade} onChange={setGrade} />}
+      {pool && <PoolFilter review={review.data} error={review.error} value={grade} onChange={setGrade} category={category} onCategoryChange={setCategory} />}
 
       <section className="box-panel">
         <div className="box-toolbar"><div><h2>形态候选</h2><p>已验证优先 · 同类按空间效率排序</p></div>{!pool && <button className="box-reference" onClick={() => { setFilter('all'); setQuery('CRWV'); setSelected('CRWV') }}>查看 CRWV 对照</button>}</div>

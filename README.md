@@ -135,9 +135,9 @@ Yahoo最新日线缺价时每30分钟自动重试，最多9次；耗尽仍失败
 
 持仓、活跃及A/B/C分档默认“52周内进度”，导航进入会重置默认指标。详细选股与箱体标准见docs/LIST_REVIEW.md和docs/BOX_DEFINITIONS.md；页面保留折叠说明。
 
-PR及部署前自动执行Python、lint、TypeScript/build与32项浏览器回归；测试使用固定数据，真实Yahoo数据另由部署验证。完整审查见[质量报告](./docs/reviews/2026-09-26-quality.md)。
+PR及部署前自动执行99项Python、lint、TypeScript/build与48项浏览器回归；测试使用固定数据，真实Yahoo数据另由部署验证。完整审查见[质量报告](./docs/reviews/2026-09-26-quality.md)。
 
-## 独立活跃股票池
-[活跃股票池](https://icefly1991.github.io/tao-us-stock-dashboard/#/pool)与[股票池箱体研究](https://icefly1991.github.io/tao-us-stock-dashboard/#/pool-boxes)来自用户两个TradingView名单合并，排除原活跃成员与已核实中概/边界标的，当前234只。原持仓43、原活跃100保持独立，总350唯一标的。
+## 高风险公司股票池
+[高风险公司股票池](https://icefly1991.github.io/tao-us-stock-dashboard/#/pool)与[高风险公司箱体研究](https://icefly1991.github.io/tao-us-stock-dashboard/#/pool-boxes)追踪经营困境和潜在反转，来自用户两个TradingView名单合并，排除原活跃成员与已核实中概/边界标的，当前234只。原持仓43、原活跃100保持独立，总350唯一标的。
 
-新池支持基本面分级与证据弹窗；未盈利不直接等于业务差，数据不足标待核实。详见[方法](docs/POOL_RESEARCH.md)和[逐只核查报告](docs/reviews/2026-09-27-pool-review.md)。研究人工维护，不随行情自动更新。
+按临床研发、商业化前期、亏损融资等类型与资金等级交叉筛选，单股可看原文依据。原57待核实补查56，HUBG保留财报重述缺口；不因池名把全部成员判为经营危机。详见[方法](docs/POOL_RESEARCH.md)和[逐只补充报告](docs/reviews/2026-09-27-high-risk-pool.md)。研究人工维护，不随行情自动更新。

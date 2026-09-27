@@ -357,7 +357,7 @@
     },
     {
       "id": "pool",
-      "label": "活跃股票池",
+      "label": "高风险公司股票池",
       "codes": [
         "SMR",
         "IMSR",

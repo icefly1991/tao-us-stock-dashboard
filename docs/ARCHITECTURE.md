@@ -123,4 +123,6 @@ boxes v4的bars保留原始volume并新增可选rsi_value:number|null。生成�
 ## CR-017 独立股票池
 WatchlistItem.pool为布尔值，CSV用空值/tradingview；与tier互斥、与持仓可重叠。dashboard.collections增加id=pool，行/金融指标不变；总summary计350唯一成员，各集合summary独立。generate_boxes默认research/boxes.json，新调用pool/pool-boxes.json，两文件均schema_version=4，共享同批history。
 
-pool-review.json（schema_version=1）独立静态文件：reviewed_at、source_snapshot_date、rows（code/grade/tags/reason/business/facts/sources/review_method/runway_months）、excluded。facts每项含value/unit/start?/end/filed/url，缺失null；审查日期不会因行情刷新变更。前端校验结构/来源协议/重复代码，失败保留行情并明确基本面不可用。
+pool-review.json初版schema_version=1，已由CR-018升级v2；仍是独立静态文件：reviewed_at、source_snapshot_date、rows（code/grade/tags/reason/business/facts/sources/review_method/runway_months及v2类型字段）、excluded。facts每项含value/unit/start?/end/filed/url，缺失null；审查日期不会因行情刷新变更。前端校验结构/来源协议/重复代码，失败保留行情并明确基本面不可用。
+## CR-018：研究契约v2
+`pool-review.json.schema_version=2`，新增逐行`category`（枚举）、`category_reason`、`category_method`、非空`category_sources`、`evidence_gap`。`grade`仍是独立四档资金/经营判断，两页交叉筛选；CSV成员与业务、行情指标、boxes v4不变。前端拒绝旧v1和无类型证据的数据，但保留价格表。独立`pool_categories.json`经`apply_categories`生成类型，不参与每日价格/箱体计算。补查事实允许部分空值，换期间时不混入旧数据；行业专门口径关闭通用runway。具体维护见POOL_RESEARCH。
