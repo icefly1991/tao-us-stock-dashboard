@@ -199,3 +199,8 @@ CR-015已发布：ca2fb1e，Actions 36232841113 build/deploy成功；65项测试
 三页精简重复说明，详细方法放项目文档并以折叠链接展示；持仓、活跃与A/B/C进入时默认“52周内进度”。箱体筛选不变。新增离线Playwright回归（npm test），PR和部署前自动运行Python、lint、TypeScript/build及浏览器检查。异常JSON/缺失集合显示可恢复错误，缺值同分按代码排序；导出严格JSON与单文件原子替换。金融公式、名单、名单日期、公共JSON字段不变。审查报告见docs/reviews/2026-09-26-quality.md。
 
 CR-016已发布：提交0de1d33，Actions 36287978859全流程通过（79项Python/32项浏览器/lint/build）；133行情、266历史文件、100箱体扫描成功，data_date20260925。线上桌面/手机三页复验通过，详情见OPERATIONS。
+
+## 独立股票池（CR-017 / DATA-021 / UI-020 / RES-006）
+用户授权合并TradingView两个池（203773185/338476933），扣除原活跃列表并新增#/pool与#/pool-boxes，确认沿用非中概/边界排除。164+114去重266，剔除原活跃28和AOSL/BULL/ECX/LEGN四项后234；与持仓交集17，总CSV350。原持仓43、原活跃100和名单日期不变。CSV新增pool=tradingview，不能与tier同时存在。
+
+新行情页默认52周内进度；独立箱体复用v4，日常扫描两池且不混成员。基本面40经营支撑较好/125观察/12压力/57待核实：全池财报初筛+23只原文专项核查，不冒充全面尽调。证据与日期在pool-review.json静态维护，每日生成不得覆盖；公司盈利/经营现金流/融资风险与箱体分开。维护与限制见POOL_RESEARCH，逐只报告docs/reviews/2026-09-27-pool-review.md。发布结果见OPERATIONS。

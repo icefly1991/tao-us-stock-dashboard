@@ -1,134 +1,351 @@
-code,name,symbol,asset_type,watchlist,tier,trading_status,status_note,business
-SMR,NuScale Power,SMR,stock,original,,active,,小型核反应堆
-VIX,CBOE Volatility Index,^VIX,index,original,,active,,市场波动率指数
-IMSR,Terrestrial Energy,IMSR,stock,original,,active,,熔盐核反应堆
-NABL,N-able,NABL,stock,original,,active,,IT运维软件
-HOOD,Robinhood Markets,HOOD,stock,original,A,active,,证券/加密交易
-MP,MP Materials,MP,stock,original,C,active,,稀土开采/磁材
-ORCL,Oracle,ORCL,stock,original,,active,,数据库/云服务
-HIMS,Hims & Hers Health,HIMS,stock,original,A,active,,在线医疗
-BITX,2x Bitcoin Strategy ETF,BITX,etf,original,,active,,两倍比特币期货ETF
-CRWV,CoreWeave,CRWV,stock,original,A,active,,AI算力云
-IBIT,iShares Bitcoin Trust ETF,IBIT,etf,original,,active,,比特币现货ETF
-RZLV,Rezolve AI,RZLV,stock,original,,active,,AI电商软件
-MCD,McDonald's,MCD,stock,original,,active,,连锁快餐
-IREN,IREN Limited,IREN,stock,original,A,active,,AI数据中心/挖矿
-ATCH,AtlasClear Holdings,ATCH,stock,original,,active,,证券清算服务
-CRCL,Circle Internet Group,CRCL,stock,original,A,active,,稳定币/支付
-NVDA,NVIDIA,NVDA,stock,original,,active,,GPU/AI芯片
-NKE,NIKE,NKE,stock,original,,active,,运动服饰
-KLAR,Klarna Group,KLAR,stock,original,,active,,先买后付
-MNTN,"MNTN, Inc.",MNTN,stock,original,,active,,联网电视广告
-MSFT,Microsoft,MSFT,stock,original,,active,,软件/云服务
-META,Meta Platforms,META,stock,original,,active,,社交平台/广告
-RGTI,Rigetti Computing,RGTI,stock,original,,active,,量子计算
-NXH,Neighborhood Intelligence,NXH,stock,original,,active,,家居零售/服务
-AVGO,Broadcom,AVGO,stock,original,,active,,芯片/基础软件
-QQQ,Invesco QQQ Trust,QQQ,etf,original,,active,,纳指100ETF
-ETOR,eToro Group,ETOR,stock,original,,active,,证券/加密交易
-ARKO,ARKO Corp.,ARKO,stock,original,,active,,加油站/便利店
-UAA,Under Armour,UAA,stock,original,,active,,运动服饰
-PG,Procter & Gamble,PG,stock,original,,active,,日用消费品
-DOGEUSD,Dogecoin / US Dollar,DOGE-USD,crypto,original,,active,,加密货币
-STUB,StubHub Holdings,STUB,stock,original,,active,,演出票务平台
-VOR,Vor Biopharma,VOR,stock,original,,active,,自身免疫新药
-MSTR,Strategy,MSTR,stock,original,,active,,比特币资产/软件
-GEMI,Gemini Space Station,GEMI,stock,original,,active,,加密交易平台
-OSCR,Oscar Health,OSCR,stock,,B,active,,健康保险
-DKNG,DraftKings,DKNG,stock,original,B,active,,在线体育博彩
-AMD,Advanced Micro Devices,AMD,stock,original,,active,,CPU/GPU芯片
-TQQQ,ProShares UltraPro QQQ,TQQQ,etf,original,,active,,三倍纳指100ETF
-APP,AppLovin,APP,stock,original,A,active,,广告技术
-WBTN,WEBTOON Entertainment,WBTN,stock,original,,active,,数字漫画平台
-FIG,Figma,FIG,stock,original,B,active,,协作设计软件
-CRDO,Credo Technology Group Holding Ltd,CRDO,stock,,A,active,,高速互联芯片
-ALAB,"Astera Labs, Inc.",ALAB,stock,,A,active,,AI互联芯片
-NBIS,Nebius Group N.V.,NBIS,stock,,A,active,,AI算力云
-COIN,"Coinbase Global, Inc.",COIN,stock,,A,active,,加密交易平台
-RDDT,"Reddit, Inc.",RDDT,stock,,A,active,,社区/数字广告
-RKLB,Rocket Lab Corporation,RKLB,stock,,A,active,,火箭/航天系统
-CELH,"Celsius Holdings, Inc.",CELH,stock,,A,active,,能量饮料
-AFRM,"Affirm Holdings, Inc.",AFRM,stock,,A,active,,先买后付
-UPST,"Upstart Holdings, Inc.",UPST,stock,,A,active,,AI消费信贷
-CVNA,Carvana Co.,CVNA,stock,,A,active,,二手车电商
-APLD,Applied Digital Corporation,APLD,stock,,A,active,,AI数据中心
-RBLX,Roblox Corporation,RBLX,stock,,A,active,,游戏创作平台
-CAVA,"CAVA Group, Inc.",CAVA,stock,,A,active,,连锁餐饮
-ONON,On Holding AG,ONON,stock,,A,active,,运动鞋服
-DUOL,"Duolingo, Inc.",DUOL,stock,,A,active,,语言学习平台
-ELF,"e.l.f. Beauty, Inc.",ELF,stock,,A,active,,美妆品牌
-SOFI,"SoFi Technologies, Inc.",SOFI,stock,,A,active,,数字银行/金融
-SHOP,Shopify Inc.,SHOP,stock,,A,active,,电商建站平台
-SE,Sea Limited,SE,stock,,A,active,,电商/游戏/金融
-NET,"Cloudflare, Inc.",NET,stock,,A,active,,云网络/安全
-PLTR,Palantir Technologies Inc.,PLTR,stock,,A,active,,数据分析/AI软件
-ARM,Arm Holdings plc,ARM,stock,,A,active,,芯片架构授权
-LITE,Lumentum Holdings Inc.,LITE,stock,,A,active,,光通信器件
-COHR,Coherent Corp.,COHR,stock,,A,active,,光通信/激光
-MRVL,"Marvell Technology, Inc.",MRVL,stock,,B,active,,定制AI/网络芯片
-CLS,"Celestica, Inc.",CLS,stock,,B,active,,电子制造/AI硬件
-VRT,"Vertiv Holdings, LLC",VRT,stock,,B,active,,数据中心电力/散热
-MU,"Micron Technology, Inc.",MU,stock,,B,active,,存储芯片
-SNDK,Sandisk Corporation,SNDK,stock,,B,active,,闪存存储
-WDC,Western Digital Corporation,WDC,stock,,B,active,,硬盘存储
-CIEN,Ciena Corporation,CIEN,stock,,B,active,,光网络设备
-SMCI,"Super Micro Computer, Inc.",SMCI,stock,,B,active,,AI服务器
-BE,Bloom Energy Corporation,BE,stock,,B,active,,燃料电池发电
-PSTG,Everpure (P),P,stock,,B,active,,企业闪存存储
-MTSI,"MACOM Technology Solutions Holdings, Inc.",MTSI,stock,,B,active,,射频/光通信芯片
-TOST,"Toast, Inc.",TOST,stock,,B,active,,餐饮收银/支付
-NU,Nu Holdings Ltd.,NU,stock,,B,active,,拉美数字银行
-DAVE,Dave Inc.,DAVE,stock,,B,active,,数字银行/信贷
-ROOT,"Root, Inc.",ROOT,stock,,B,active,,汽车保险
-LMND,"Lemonade, Inc.",LMND,stock,,B,active,,互联网保险
-TTAN,ServiceTitan,TTAN,stock,original,B,active,,家居服务业软件
-IOT,Samsara Inc.,IOT,stock,,B,active,,工业物联网软件
-MNDY,monday.com Ltd.,MNDY,stock,,B,active,,工作协作软件
-MDB,"MongoDB, Inc.",MDB,stock,,B,active,,云数据库
-GTLB,GitLab Inc.,GTLB,stock,,B,active,,软件开发平台
-FROG,JFrog Ltd.,FROG,stock,,B,active,,软件供应链工具
-ESTC,Elastic N.V.,ESTC,stock,,B,active,,搜索/数据分析
-S,"SentinelOne, Inc.",S,stock,,B,active,,终端网络安全
-TTD,"The Trade Desk, Inc.",TTD,stock,,B,active,,程序化广告
-ZETA,Zeta Global Holdings Corp.,ZETA,stock,,B,active,,营销数据软件
-TMDX,"TransMedics Group, Inc.",TMDX,stock,,B,active,,器官移植设备
-NTRA,"Natera, Inc.",NTRA,stock,,B,active,,基因检测
-TEM,"Tempus AI, Inc.",TEM,stock,,B,active,,医疗数据/AI
-RXST,"RxSight, Inc.",RXST,stock,,B,active,,可调人工晶体
-KTOS,"Kratos Defense & Security Solutions, Inc.",KTOS,stock,,C,active,,无人机/国防系统
-AVAV,"AeroVironment, Inc.",AVAV,stock,,C,active,,军用无人机
-RDW,Redwire Corporation,RDW,stock,,C,active,,航天基础设施
-LUNR,"Intuitive Machines, Inc.",LUNR,stock,,C,active,,月球探测服务
-LEU,Centrus Energy Corp.,LEU,stock,,C,active,,核燃料/铀浓缩
-UUUU,Energy Fuels Inc,UUUU,stock,,C,active,,铀矿/稀土
-UEC,Uranium Energy Corp.,UEC,stock,,C,active,,铀矿
-ALB,Albemarle Corporation,ALB,stock,,C,active,,锂/特种化学品
-ENPH,"Enphase Energy, Inc.",ENPH,stock,,C,active,,光伏逆变器
-NXT,Nextpower Inc.,NXT,stock,,C,active,,光伏跟踪/电站设备
-FLNC,"Fluence Energy, Inc.",FLNC,stock,,C,active,,电网储能
-RIVN,"Rivian Automotive, Inc.",RIVN,stock,,C,active,,电动汽车
-CHWY,"Chewy, Inc.",CHWY,stock,,C,active,,宠物用品电商
-BROS,Dutch Bros Inc.,BROS,stock,,C,active,,连锁咖啡
-RH,RH (formerly Restoration Hardware),RH,stock,,C,active,,高端家居
-SG,"Sweetgreen, Inc.",SG,stock,,C,active,,健康快餐
-FOUR,"Shift4 Payments, Inc.",FOUR,stock,,C,active,,商户支付
-BILL,"BILL Holdings, Inc.",BILL,stock,,C,active,,企业账单/支付
-RELY,"Remitly Global, Inc.",RELY,stock,,C,active,,跨境汇款
-SYM,Symbotic Inc.,SYM,stock,,C,active,,仓储机器人
-AAOI,"Applied Optoelectronics, Inc.",AAOI,stock,,C,active,,光通信模块
-ACLS,"Axcelis Technologies, Inc.",ACLS,stock,,C,active,,离子注入设备
-SITM,SiTime Corporation,SITM,stock,,C,active,,时钟芯片
-AMBA,"Ambarella, Inc.",AMBA,stock,,C,active,,视觉/边缘AI芯片
-AEHR,Aehr Test Systems,AEHR,stock,,C,active,,半导体测试设备
-INOD,Innodata Inc.,INOD,stock,,C,active,,AI数据服务
-PATH,"UiPath, Inc.",PATH,stock,,C,active,,流程自动化软件
-DOCN,"DigitalOcean Holdings, Inc.",DOCN,stock,,C,active,,中小企业云服务
-ROKU,"Roku, Inc.",ROKU,stock,,C,active,,流媒体/广告
-EIKN,Eikon Therapeutics,EIKN,stock,original,,active,,肿瘤新药研发
-FSLY,"Fastly, Inc.",FSLY,stock,,B,active,,边缘云/CDN
-HUT,Hut 8 Corp.,HUT,stock,,C,active,,数据中心/挖矿
-WULF,TeraWulf Inc.,WULF,stock,,C,active,,数据中心/挖矿
-ASTS,"AST SpaceMobile, Inc.",ASTS,stock,,C,active,,卫星手机通信
-IONQ,"IonQ, Inc.",IONQ,stock,,C,active,,量子计算
-CRSP,CRISPR Therapeutics AG,CRSP,stock,,C,active,,基因编辑新药
-POWL,"Powell Industries, Inc.",POWL,stock,,B,active,,工业配电设备
+code,name,symbol,asset_type,watchlist,tier,trading_status,status_note,business,pool
+SMR,NuScale Power,SMR,stock,original,,active,,小型核反应堆,tradingview
+VIX,CBOE Volatility Index,^VIX,index,original,,active,,市场波动率指数,
+IMSR,Terrestrial Energy,IMSR,stock,original,,active,,熔盐核反应堆,tradingview
+NABL,N-able,NABL,stock,original,,active,,IT运维软件,tradingview
+HOOD,Robinhood Markets,HOOD,stock,original,A,active,,证券/加密交易,
+MP,MP Materials,MP,stock,original,C,active,,稀土开采/磁材,
+ORCL,Oracle,ORCL,stock,original,,active,,数据库/云服务,
+HIMS,Hims & Hers Health,HIMS,stock,original,A,active,,在线医疗,
+BITX,2x Bitcoin Strategy ETF,BITX,etf,original,,active,,两倍比特币期货ETF,
+CRWV,CoreWeave,CRWV,stock,original,A,active,,AI算力云,
+IBIT,iShares Bitcoin Trust ETF,IBIT,etf,original,,active,,比特币现货ETF,
+RZLV,Rezolve AI,RZLV,stock,original,,active,,AI电商软件,tradingview
+MCD,McDonald's,MCD,stock,original,,active,,连锁快餐,tradingview
+IREN,IREN Limited,IREN,stock,original,A,active,,AI数据中心/挖矿,
+ATCH,AtlasClear Holdings,ATCH,stock,original,,active,,证券清算服务,
+CRCL,Circle Internet Group,CRCL,stock,original,A,active,,稳定币/支付,
+NVDA,NVIDIA,NVDA,stock,original,,active,,GPU/AI芯片,
+NKE,NIKE,NKE,stock,original,,active,,运动服饰,tradingview
+KLAR,Klarna Group,KLAR,stock,original,,active,,先买后付,tradingview
+MNTN,"MNTN, Inc.",MNTN,stock,original,,active,,联网电视广告,tradingview
+MSFT,Microsoft,MSFT,stock,original,,active,,软件/云服务,
+META,Meta Platforms,META,stock,original,,active,,社交平台/广告,
+RGTI,Rigetti Computing,RGTI,stock,original,,active,,量子计算,tradingview
+NXH,Neighborhood Intelligence,NXH,stock,original,,active,,家居零售/服务,
+AVGO,Broadcom,AVGO,stock,original,,active,,芯片/基础软件,
+QQQ,Invesco QQQ Trust,QQQ,etf,original,,active,,纳指100ETF,
+ETOR,eToro Group,ETOR,stock,original,,active,,证券/加密交易,tradingview
+ARKO,ARKO Corp.,ARKO,stock,original,,active,,加油站/便利店,tradingview
+UAA,Under Armour,UAA,stock,original,,active,,运动服饰,tradingview
+PG,Procter & Gamble,PG,stock,original,,active,,日用消费品,
+DOGEUSD,Dogecoin / US Dollar,DOGE-USD,crypto,original,,active,,加密货币,
+STUB,StubHub Holdings,STUB,stock,original,,active,,演出票务平台,tradingview
+VOR,Vor Biopharma,VOR,stock,original,,active,,自身免疫新药,tradingview
+MSTR,Strategy,MSTR,stock,original,,active,,比特币资产/软件,
+GEMI,Gemini Space Station,GEMI,stock,original,,active,,加密交易平台,tradingview
+OSCR,Oscar Health,OSCR,stock,,B,active,,健康保险,
+DKNG,DraftKings,DKNG,stock,original,B,active,,在线体育博彩,
+AMD,Advanced Micro Devices,AMD,stock,original,,active,,CPU/GPU芯片,
+TQQQ,ProShares UltraPro QQQ,TQQQ,etf,original,,active,,三倍纳指100ETF,
+APP,AppLovin,APP,stock,original,A,active,,广告技术,
+WBTN,WEBTOON Entertainment,WBTN,stock,original,,active,,数字漫画平台,tradingview
+FIG,Figma,FIG,stock,original,B,active,,协作设计软件,
+CRDO,Credo Technology Group Holding Ltd,CRDO,stock,,A,active,,高速互联芯片,
+ALAB,"Astera Labs, Inc.",ALAB,stock,,A,active,,AI互联芯片,
+NBIS,Nebius Group N.V.,NBIS,stock,,A,active,,AI算力云,
+COIN,"Coinbase Global, Inc.",COIN,stock,,A,active,,加密交易平台,
+RDDT,"Reddit, Inc.",RDDT,stock,,A,active,,社区/数字广告,
+RKLB,Rocket Lab Corporation,RKLB,stock,,A,active,,火箭/航天系统,
+CELH,"Celsius Holdings, Inc.",CELH,stock,,A,active,,能量饮料,
+AFRM,"Affirm Holdings, Inc.",AFRM,stock,,A,active,,先买后付,
+UPST,"Upstart Holdings, Inc.",UPST,stock,,A,active,,AI消费信贷,
+CVNA,Carvana Co.,CVNA,stock,,A,active,,二手车电商,
+APLD,Applied Digital Corporation,APLD,stock,,A,active,,AI数据中心,
+RBLX,Roblox Corporation,RBLX,stock,,A,active,,游戏创作平台,
+CAVA,"CAVA Group, Inc.",CAVA,stock,,A,active,,连锁餐饮,
+ONON,On Holding AG,ONON,stock,,A,active,,运动鞋服,
+DUOL,"Duolingo, Inc.",DUOL,stock,,A,active,,语言学习平台,
+ELF,"e.l.f. Beauty, Inc.",ELF,stock,,A,active,,美妆品牌,
+SOFI,"SoFi Technologies, Inc.",SOFI,stock,,A,active,,数字银行/金融,
+SHOP,Shopify Inc.,SHOP,stock,,A,active,,电商建站平台,
+SE,Sea Limited,SE,stock,,A,active,,电商/游戏/金融,
+NET,"Cloudflare, Inc.",NET,stock,,A,active,,云网络/安全,
+PLTR,Palantir Technologies Inc.,PLTR,stock,,A,active,,数据分析/AI软件,
+ARM,Arm Holdings plc,ARM,stock,,A,active,,芯片架构授权,
+LITE,Lumentum Holdings Inc.,LITE,stock,,A,active,,光通信器件,
+COHR,Coherent Corp.,COHR,stock,,A,active,,光通信/激光,
+MRVL,"Marvell Technology, Inc.",MRVL,stock,,B,active,,定制AI/网络芯片,
+CLS,"Celestica, Inc.",CLS,stock,,B,active,,电子制造/AI硬件,
+VRT,"Vertiv Holdings, LLC",VRT,stock,,B,active,,数据中心电力/散热,
+MU,"Micron Technology, Inc.",MU,stock,,B,active,,存储芯片,
+SNDK,Sandisk Corporation,SNDK,stock,,B,active,,闪存存储,
+WDC,Western Digital Corporation,WDC,stock,,B,active,,硬盘存储,
+CIEN,Ciena Corporation,CIEN,stock,,B,active,,光网络设备,
+SMCI,"Super Micro Computer, Inc.",SMCI,stock,,B,active,,AI服务器,
+BE,Bloom Energy Corporation,BE,stock,,B,active,,燃料电池发电,
+PSTG,Everpure (P),P,stock,,B,active,,企业闪存存储,
+MTSI,"MACOM Technology Solutions Holdings, Inc.",MTSI,stock,,B,active,,射频/光通信芯片,
+TOST,"Toast, Inc.",TOST,stock,,B,active,,餐饮收银/支付,
+NU,Nu Holdings Ltd.,NU,stock,,B,active,,拉美数字银行,
+DAVE,Dave Inc.,DAVE,stock,,B,active,,数字银行/信贷,
+ROOT,"Root, Inc.",ROOT,stock,,B,active,,汽车保险,
+LMND,"Lemonade, Inc.",LMND,stock,,B,active,,互联网保险,
+TTAN,ServiceTitan,TTAN,stock,original,B,active,,家居服务业软件,
+IOT,Samsara Inc.,IOT,stock,,B,active,,工业物联网软件,
+MNDY,monday.com Ltd.,MNDY,stock,,B,active,,工作协作软件,
+MDB,"MongoDB, Inc.",MDB,stock,,B,active,,云数据库,
+GTLB,GitLab Inc.,GTLB,stock,,B,active,,软件开发平台,
+FROG,JFrog Ltd.,FROG,stock,,B,active,,软件供应链工具,
+ESTC,Elastic N.V.,ESTC,stock,,B,active,,搜索/数据分析,
+S,"SentinelOne, Inc.",S,stock,,B,active,,终端网络安全,
+TTD,"The Trade Desk, Inc.",TTD,stock,,B,active,,程序化广告,
+ZETA,Zeta Global Holdings Corp.,ZETA,stock,,B,active,,营销数据软件,
+TMDX,"TransMedics Group, Inc.",TMDX,stock,,B,active,,器官移植设备,
+NTRA,"Natera, Inc.",NTRA,stock,,B,active,,基因检测,
+TEM,"Tempus AI, Inc.",TEM,stock,,B,active,,医疗数据/AI,
+RXST,"RxSight, Inc.",RXST,stock,,B,active,,可调人工晶体,
+KTOS,"Kratos Defense & Security Solutions, Inc.",KTOS,stock,,C,active,,无人机/国防系统,
+AVAV,"AeroVironment, Inc.",AVAV,stock,,C,active,,军用无人机,
+RDW,Redwire Corporation,RDW,stock,,C,active,,航天基础设施,
+LUNR,"Intuitive Machines, Inc.",LUNR,stock,,C,active,,月球探测服务,
+LEU,Centrus Energy Corp.,LEU,stock,,C,active,,核燃料/铀浓缩,
+UUUU,Energy Fuels Inc,UUUU,stock,,C,active,,铀矿/稀土,
+UEC,Uranium Energy Corp.,UEC,stock,,C,active,,铀矿,
+ALB,Albemarle Corporation,ALB,stock,,C,active,,锂/特种化学品,
+ENPH,"Enphase Energy, Inc.",ENPH,stock,,C,active,,光伏逆变器,
+NXT,Nextpower Inc.,NXT,stock,,C,active,,光伏跟踪/电站设备,
+FLNC,"Fluence Energy, Inc.",FLNC,stock,,C,active,,电网储能,
+RIVN,"Rivian Automotive, Inc.",RIVN,stock,,C,active,,电动汽车,
+CHWY,"Chewy, Inc.",CHWY,stock,,C,active,,宠物用品电商,
+BROS,Dutch Bros Inc.,BROS,stock,,C,active,,连锁咖啡,
+RH,RH (formerly Restoration Hardware),RH,stock,,C,active,,高端家居,
+SG,"Sweetgreen, Inc.",SG,stock,,C,active,,健康快餐,
+FOUR,"Shift4 Payments, Inc.",FOUR,stock,,C,active,,商户支付,
+BILL,"BILL Holdings, Inc.",BILL,stock,,C,active,,企业账单/支付,
+RELY,"Remitly Global, Inc.",RELY,stock,,C,active,,跨境汇款,
+SYM,Symbotic Inc.,SYM,stock,,C,active,,仓储机器人,
+AAOI,"Applied Optoelectronics, Inc.",AAOI,stock,,C,active,,光通信模块,
+ACLS,"Axcelis Technologies, Inc.",ACLS,stock,,C,active,,离子注入设备,
+SITM,SiTime Corporation,SITM,stock,,C,active,,时钟芯片,
+AMBA,"Ambarella, Inc.",AMBA,stock,,C,active,,视觉/边缘AI芯片,
+AEHR,Aehr Test Systems,AEHR,stock,,C,active,,半导体测试设备,
+INOD,Innodata Inc.,INOD,stock,,C,active,,AI数据服务,
+PATH,"UiPath, Inc.",PATH,stock,,C,active,,流程自动化软件,
+DOCN,"DigitalOcean Holdings, Inc.",DOCN,stock,,C,active,,中小企业云服务,
+ROKU,"Roku, Inc.",ROKU,stock,,C,active,,流媒体/广告,
+EIKN,Eikon Therapeutics,EIKN,stock,original,,active,,肿瘤新药研发,tradingview
+FSLY,"Fastly, Inc.",FSLY,stock,,B,active,,边缘云/CDN,
+HUT,Hut 8 Corp.,HUT,stock,,C,active,,数据中心/挖矿,
+WULF,TeraWulf Inc.,WULF,stock,,C,active,,数据中心/挖矿,
+ASTS,"AST SpaceMobile, Inc.",ASTS,stock,,C,active,,卫星手机通信,
+IONQ,"IonQ, Inc.",IONQ,stock,,C,active,,量子计算,
+CRSP,CRISPR Therapeutics AG,CRSP,stock,,C,active,,基因编辑新药,
+POWL,"Powell Industries, Inc.",POWL,stock,,B,active,,工业配电设备,
+SECZ,Securitize Corp.,SECZ,stock,,,active,,应用软件,tradingview
+BKKT,"Bakkt, Inc.",BKKT,stock,,,active,,基础软件,tradingview
+CRML,Critical Metals Corp.,CRML,stock,,,active,,工业金属矿产,tradingview
+CLSK,"CLEANSPARK, INC.",CLSK,stock,,,active,,资本市场服务,tradingview
+BTBT,"Bit Digital, Inc",BTBT,stock,,,active,,资本市场服务,tradingview
+SOC,Sable Offshore Corp.,SOC,stock,,,active,,油气钻探,tradingview
+AURA,"Aura Biosciences, Inc.",AURA,stock,,,active,,生物技术研发,tradingview
+EVMN,"Evommune, Inc.",EVMN,stock,,,active,,生物技术研发,tradingview
+WYFI,"WhiteFiber, Inc.",WYFI,stock,,,active,,IT服务,tradingview
+XXI,"Twenty One Capital, Inc.",XXI,stock,,,active,,教育培训,tradingview
+DNA,"Ginkgo Bioworks Holdings, Inc.",DNA,stock,,,active,,生物技术研发,tradingview
+GETY,"Getty Images Holdings, Inc.",GETY,stock,,,active,,互联网内容,tradingview
+QDEL,QuidelOrtho Corp,QDEL,stock,,,active,,医疗器械,tradingview
+TRON,Tron Inc.,TRON,stock,,,active,,休闲产品,tradingview
+VITL,"Vital Farms, Inc.",VITL,stock,,,active,,农业产品,tradingview
+FWDI,"Forward Industries, Inc.",FWDI,stock,,,active,,鞋类/配饰,tradingview
+UPB,"Upstream Bio, Inc.",UPB,stock,,,active,,生物技术研发,tradingview
+SRAD,Sportradar Group AG,SRAD,stock,,,active,,应用软件,tradingview
+WRBY,Warby Parker Inc.,WRBY,stock,,,active,,医疗耗材/器械,tradingview
+HTFL,"Heartflow, Inc.",HTFL,stock,,,active,,医疗信息服务,tradingview
+AMC,"AMC ENTERTAINMENT HOLDINGS, INC.",AMC,stock,,,active,,娱乐内容,tradingview
+SANA,"Sana Biotechnology, Inc.",SANA,stock,,,active,,生物技术研发,tradingview
+CHYM,"Chime Financial, Inc.",CHYM,stock,,,active,,应用软件,tradingview
+SPRY,"ARS Pharmaceuticals, Inc.",SPRY,stock,,,active,,生物技术研发,tradingview
+PACB,"PACIFIC BIOSCIENCES OF CALIFORNIA, INC.",PACB,stock,,,active,,医疗器械,tradingview
+ALKT,"ALKAMI TECHNOLOGY, INC.",ALKT,stock,,,active,,应用软件,tradingview
+KLC,"KinderCare Learning Companies, Inc.",KLC,stock,,,active,,教育培训,tradingview
+NTSK,Netskope Inc,NTSK,stock,,,active,,基础软件,tradingview
+MAX,"MediaAlpha, Inc.",MAX,stock,,,active,,互联网内容,tradingview
+SHEN,SHENANDOAH TELECOMMUNICATIONS CO/VA/,SHEN,stock,,,active,,电信服务,tradingview
+EYPT,"EyePoint, Inc.",EYPT,stock,,,active,,生物技术研发,tradingview
+PSFE,Paysafe Ltd,PSFE,stock,,,active,,基础软件,tradingview
+USAR,"USA Rare Earth, Inc.",USAR,stock,,,active,,工业金属矿产,tradingview
+BRCB,"Black Rock Coffee Bar, Inc.",BRCB,stock,,,active,,连锁餐饮,tradingview
+MPT,MEDICAL PROPERTIES TRUST INC,MPT,stock,,,active,,医疗地产,tradingview
+BEAM,Beam Therapeutics Inc.,BEAM,stock,,,active,,生物技术研发,tradingview
+HRL,HORMEL FOODS CORP /DE/,HRL,stock,,,active,,包装食品,tradingview
+NMRA,"Neumora Therapeutics, Inc.",NMRA,stock,,,active,,生物技术研发,tradingview
+RGEN,REPLIGEN CORP,RGEN,stock,,,active,,医疗耗材/器械,tradingview
+INFQ,"Infleqtion, Inc.",INFQ,stock,,,active,,基础软件,tradingview
+LYTS,LSI INDUSTRIES INC,LYTS,stock,,,active,,电子元件,tradingview
+FAC,Factorial Energy Inc.,FAC,stock,,,active,,电气设备,tradingview
+INV,"Innventure, Inc.",INV,stock,,,active,,资产管理,tradingview
+RBRK,"Rubrik, Inc.",RBRK,stock,,,active,,基础软件,tradingview
+WMG,Warner Music Group Corp.,WMG,stock,,,active,,娱乐内容,tradingview
+OLN,OLIN Corp,OLN,stock,,,active,,化工产品,tradingview
+CMG,CHIPOTLE MEXICAN GRILL INC,CMG,stock,,,active,,连锁餐饮,tradingview
+CXM,"Sprinklr, Inc.",CXM,stock,,,active,,应用软件,tradingview
+NKLR,Terra Innovatum Global N.V.,NKLR,stock,,,active,,电力供应,tradingview
+SAIL,"SailPoint, Inc.",SAIL,stock,,,active,,基础软件,tradingview
+ALMS,ALUMIS INC.,ALMS,stock,,,active,,生物技术研发,tradingview
+ARDT,"Ardent Health, Inc.",ARDT,stock,,,active,,医疗服务,tradingview
+SGMT,Sagimet Biosciences Inc.,SGMT,stock,,,active,,生物技术研发,tradingview
+FWRG,"First Watch Restaurant Group, Inc.",FWRG,stock,,,active,,连锁餐饮,tradingview
+SLDE,"Slide Insurance Holdings, Inc.",SLDE,stock,,,active,,财产保险,tradingview
+INDI,"indie Semiconductor, Inc.",INDI,stock,,,active,,半导体,tradingview
+MYGN,MYRIAD GENETICS INC,MYGN,stock,,,active,,诊断/生命科学,tradingview
+DOCU,"DOCUSIGN, INC.",DOCU,stock,,,active,,应用软件,tradingview
+CLFD,"Clearfield, Inc.",CLFD,stock,,,active,,通信设备,tradingview
+RUM,RUM Group Inc.,RUM,stock,,,active,,互联网内容,tradingview
+EGHT,8X8 INC /DE/,EGHT,stock,,,active,,应用软件,tradingview
+GERN,GERON CORP,GERN,stock,,,active,,生物技术研发,tradingview
+EVEX,"Eve Holding, Inc.",EVEX,stock,,,active,,航空航天/国防,tradingview
+OKLO,Oklo Inc.,OKLO,stock,,,active,,独立发电,tradingview
+OXM,OXFORD INDUSTRIES INC,OXM,stock,,,active,,服装制造,tradingview
+MTH,Meritage Homes CORP,MTH,stock,,,active,,住宅建造,tradingview
+SNAP,Snap Inc,SNAP,stock,,,active,,互联网内容,tradingview
+WHR,WHIRLPOOL CORP /DE/,WHR,stock,,,active,,家具/家居,tradingview
+ARRY,"Array Technologies, Inc.",ARRY,stock,,,active,,太阳能,tradingview
+TE,T1 Energy Inc.,TE,stock,,,active,,电气设备,tradingview
+ARQQ,Arqit Quantum Inc.,ARQQ,stock,,,active,,基础软件,tradingview
+PYPL,"PayPal Holdings, Inc.",PYPL,stock,,,active,,信贷服务,tradingview
+MNRO,"MONRO, INC.",MNRO,stock,,,active,,汽车零部件,tradingview
+XE,"X-Energy, Inc.",XE,stock,,,active,,专用工业机械,tradingview
+ADTN,"ADTRAN Holdings, Inc.",ADTN,stock,,,active,,通信设备,tradingview
+ENOV,Enovis CORP,ENOV,stock,,,active,,医疗器械,tradingview
+PLAY,"Dave & Buster's Entertainment, Inc.",PLAY,stock,,,active,,娱乐内容,tradingview
+FPS,"Forgent Power Solutions, Inc.",FPS,stock,,,active,,电气设备,tradingview
+ODD,Oddity Tech Ltd,ODD,stock,,,active,,日用消费品,tradingview
+NTGR,"NETGEAR, INC.",NTGR,stock,,,active,,通信设备,tradingview
+ENVX,Enovix Corp,ENVX,stock,,,active,,电气设备,tradingview
+LYFT,"Lyft, Inc.",LYFT,stock,,,active,,应用软件,tradingview
+SOUN,"SOUNDHOUND AI, INC.",SOUN,stock,,,active,,应用软件,tradingview
+AVNT,AVIENT CORP,AVNT,stock,,,active,,特种化工,tradingview
+SLDP,"Solid Power, Inc.",SLDP,stock,,,active,,汽车零部件,tradingview
+VIA,"Via Transportation, Inc.",VIA,stock,,,active,,应用软件,tradingview
+CYH,COMMUNITY HEALTH SYSTEMS INC,CYH,stock,,,active,,医疗服务,tradingview
+OMDA,"Omada Health, Inc.",OMDA,stock,,,active,,医疗信息服务,tradingview
+LCID,"Lucid Group, Inc.",LCID,stock,,,active,,汽车制造,tradingview
+MWH,"SOLV Energy, Inc.",MWH,stock,,,active,,可再生能源,tradingview
+HLLY,Holley Inc.,HLLY,stock,,,active,,汽车零部件,tradingview
+NNE,Nano Nuclear Energy Inc.,NNE,stock,,,active,,专用工业机械,tradingview
+PLNT,"Planet Fitness, Inc.",PLNT,stock,,,active,,休闲产品,tradingview
+CRNC,Cerence Inc.,CRNC,stock,,,active,,应用软件,tradingview
+ALHC,"Alignment Healthcare, Inc.",ALHC,stock,,,active,,医疗保险,tradingview
+QS,QuantumScape Corp,QS,stock,,,active,,汽车零部件,tradingview
+YSS,York Space Systems Inc.,YSS,stock,,,active,,航空航天/国防,tradingview
+NRDS,"NERDWALLET, INC.",NRDS,stock,,,active,,互联网内容,tradingview
+FRMI,Fermi Inc.,FRMI,stock,,,active,,专业地产开发,tradingview
+HUBG,"Hub Group, Inc.",HUBG,stock,,,active,,货运物流,tradingview
+UHS,UNIVERSAL HEALTH SERVICES INC,UHS,stock,,,active,,医疗服务,tradingview
+WLTH,WEALTHFRONT CORP,WLTH,stock,,,active,,应用软件,tradingview
+ALMU,"Aeluma, Inc.",ALMU,stock,,,active,,半导体,tradingview
+ONT,"Onterris, Inc.",ONT,stock,,,active,,废物处理,tradingview
+NCLH,Norwegian Cruise Line Holdings Ltd.,NCLH,stock,,,active,,旅行服务,tradingview
+RR,RICHTECH ROBOTICS INC.,RR,stock,,,active,,专用工业机械,tradingview
+KVYO,"Klaviyo, Inc.",KVYO,stock,,,active,,应用软件,tradingview
+BKSY,BlackSky Technology Inc.,BKSY,stock,,,active,,企业服务,tradingview
+JACK,JACK IN THE BOX INC,JACK,stock,,,active,,连锁餐饮,tradingview
+ASPI,ASP Isotopes Inc.,ASPI,stock,,,active,,特种化工,tradingview
+CLB,Core Laboratories Inc. /DE/,CLB,stock,,,active,,油田设备/服务,tradingview
+FUBO,FuboTV Inc.,FUBO,stock,,,active,,广播电视,tradingview
+CE,Celanese Corp,CE,stock,,,active,,化工产品,tradingview
+VOYG,"Voyager Technologies, Inc./TX",VOYG,stock,,,active,,航空航天/国防,tradingview
+ARHS,"Arhaus, Inc.",ARHS,stock,,,active,,专业零售,tradingview
+ULCC,"Frontier Group Holdings, Inc.",ULCC,stock,,,active,,航空运输,tradingview
+WOLF,"WOLFSPEED, INC.",WOLF,stock,,,active,,半导体,tradingview
+ACDC,ProFrac Holding Corp.,ACDC,stock,,,active,,油田设备/服务,tradingview
+RGNX,REGENXBIO Inc.,RGNX,stock,,,active,,生物技术研发,tradingview
+EQPT,EquipmentShare.com Inc,EQPT,stock,,,active,,设备租赁,tradingview
+VELO,"Velo3D, Inc.",VELO,stock,,,active,,计算硬件,tradingview
+FLY,Firefly Aerospace Inc.,FLY,stock,,,active,,航空航天/国防,tradingview
+BETA,"BETA Technologies, Inc.",BETA,stock,,,active,,航空航天/国防,tradingview
+GENI,Genius Sports Ltd,GENI,stock,,,active,,互联网内容,tradingview
+MRLN,"Merlin, Inc.",MRLN,stock,,,active,,航空航天/国防,tradingview
+EOSE,"Eos Energy Enterprises, Inc.",EOSE,stock,,,active,,电气设备,tradingview
+RCKT,"ROCKET PHARMACEUTICALS, INC.",RCKT,stock,,,active,,生物技术研发,tradingview
+CABA,"Cabaletta Bio, Inc.",CABA,stock,,,active,,生物技术研发,tradingview
+BETR,Better Home & Finance Holding Co,BETR,stock,,,active,,住房抵押金融,tradingview
+RUN,Sunrun Inc.,RUN,stock,,,active,,太阳能,tradingview
+IE,Ivanhoe Electric Inc.,IE,stock,,,active,,铜矿开发,tradingview
+FATE,FATE THERAPEUTICS INC,FATE,stock,,,active,,生物技术研发,tradingview
+WD,"Walker & Dunlop, Inc.",WD,stock,,,active,,住房抵押金融,tradingview
+PCT,"PureCycle Technologies, Inc.",PCT,stock,,,active,,环境处理设备,tradingview
+APTV,Aptiv PLC,APTV,stock,,,active,,汽车零部件,tradingview
+CATX,"Perspective Therapeutics, Inc.",CATX,stock,,,active,,医疗器械,tradingview
+GLOB,Globant S.A.,GLOB,stock,,,active,,IT服务,tradingview
+LZM,Lifezone Metals Ltd,LZM,stock,,,active,,工业金属矿产,tradingview
+FIP,FTAI Infrastructure Inc.,FIP,stock,,,active,,技术产业孵化,tradingview
+NTLA,"Intellia Therapeutics, Inc.",NTLA,stock,,,active,,生物技术研发,tradingview
+KYTX,"Kyverna Therapeutics, Inc.",KYTX,stock,,,active,,生物技术研发,tradingview
+FLUT,Flutter Entertainment plc,FLUT,stock,,,active,,博彩服务,tradingview
+GOGO,Gogo Inc.,GOGO,stock,,,active,,电信服务,tradingview
+RKT,"Rocket Companies, Inc.",RKT,stock,,,active,,住房抵押金融,tradingview
+SVV,"Savers Value Village, Inc.",SVV,stock,,,active,,专业零售,tradingview
+AGIO,"AGIOS PHARMACEUTICALS, INC.",AGIO,stock,,,active,,生物技术研发,tradingview
+NPWR,Net Power Inc.,NPWR,stock,,,active,,专用工业机械,tradingview
+EDIT,"Editas Medicine, Inc.",EDIT,stock,,,active,,生物技术研发,tradingview
+MAGN,Magnera Corp,MAGN,stock,,,active,,日用消费品,tradingview
+ABAT,AMERICAN BATTERY TECHNOLOGY Co,ABAT,stock,,,active,,废物处理,tradingview
+LAES,SEALSQ Corp,LAES,stock,,,active,,半导体,tradingview
+PGY,Pagaya Technologies Ltd.,PGY,stock,,,active,,基础软件,tradingview
+DFH,"Dream Finders Homes, Inc.",DFH,stock,,,active,,住宅建造,tradingview
+EFX,EQUIFAX INC,EFX,stock,,,active,,企业咨询,tradingview
+ORGO,Organogenesis Holdings Inc.,ORGO,stock,,,active,,专科药物,tradingview
+GLXY,Galaxy Digital Inc.,GLXY,stock,,,active,,资本市场服务,tradingview
+IKT,"Inhibikase Therapeutics, Inc.",IKT,stock,,,active,,生物技术研发,tradingview
+NRGV,"Energy Vault Holdings, Inc.",NRGV,stock,,,active,,可再生能源,tradingview
+ZG,"ZILLOW GROUP, INC.",ZG,stock,,,active,,互联网内容,tradingview
+BBNX,"Beta Bionics, Inc.",BBNX,stock,,,active,,医疗器械,tradingview
+DNLI,Denali Therapeutics Inc.,DNLI,stock,,,active,,生物技术研发,tradingview
+HGV,Hilton Grand Vacations Inc.,HGV,stock,,,active,,度假/赌场,tradingview
+HUBS,HUBSPOT INC,HUBS,stock,,,active,,应用软件,tradingview
+ORBS,Eightco Holdings Inc.,ORBS,stock,,,active,,包装容器,tradingview
+NB,NIOCORP DEVELOPMENTS LTD,NB,stock,,,active,,工业金属矿产,tradingview
+LZ,"LEGALZOOM.COM, INC.",LZ,stock,,,active,,企业服务,tradingview
+CPRI,Capri Holdings Ltd,CPRI,stock,,,active,,奢侈品,tradingview
+SITE,"SiteOne Landscape Supply, Inc.",SITE,stock,,,active,,工业品分销,tradingview
+AI,"C3.ai, Inc.",AI,stock,,,active,,基础软件,tradingview
+DXYZ,Destiny Tech100 Inc.,DXYZ,stock,,,active,,资产管理,tradingview
+VERX,"Vertex, Inc.",VERX,stock,,,active,,应用软件,tradingview
+SMMT,Summit Therapeutics Inc.,SMMT,stock,,,active,,生物技术研发,tradingview
+TASK,"TaskUs, Inc.",TASK,stock,,,active,,IT服务,tradingview
+PACK,Ranpak Holdings Corp.,PACK,stock,,,active,,包装容器,tradingview
+FOXF,FOX FACTORY HOLDING CORP,FOXF,stock,,,active,,汽车零部件,tradingview
+SIBN,"SI-BONE, Inc.",SIBN,stock,,,active,,医疗器械,tradingview
+VRRM,VERRA MOBILITY Corp,VRRM,stock,,,active,,IT服务,tradingview
+GTM,ZoomInfo Technologies Inc.,GTM,stock,,,active,,应用软件,tradingview
+SENS,"Senseonics Holdings, Inc.",SENS,stock,,,active,,医疗器械,tradingview
+BRZE,"Braze, Inc.",BRZE,stock,,,active,,应用软件,tradingview
+WDAY,"Workday, Inc.",WDAY,stock,,,active,,应用软件,tradingview
+NUAI,"New ERA Energy & Digital, Inc.",NUAI,stock,,,active,,基础软件,tradingview
+WLFC,WILLIS LEASE FINANCE CORP,WLFC,stock,,,active,,设备租赁,tradingview
+OEC,Orion S.A.,OEC,stock,,,active,,特种化工,tradingview
+HAYW,"Hayward Holdings, Inc.",HAYW,stock,,,active,,电气设备,tradingview
+SWIM,"Latham Group, Inc.",SWIM,stock,,,active,,建筑设备,tradingview
+GEHC,GE HealthCare Technologies Inc.,GEHC,stock,,,active,,医疗器械,tradingview
+STAA,STAAR SURGICAL CO,STAA,stock,,,active,,医疗耗材/器械,tradingview
+EVER,"EverQuote, Inc.",EVER,stock,,,active,,互联网内容,tradingview
+WEAV,"Weave Communications, Inc.",WEAV,stock,,,active,,医疗信息服务,tradingview
+SRPT,"Sarepta Therapeutics, Inc.",SRPT,stock,,,active,,生物技术研发,tradingview
+EYE,"National Vision Holdings, Inc.",EYE,stock,,,active,,专业零售,tradingview
+WWW,WOLVERINE WORLD WIDE INC /DE/,WWW,stock,,,active,,鞋类/配饰,tradingview
+RXRX,"RECURSION PHARMACEUTICALS, INC.",RXRX,stock,,,active,,生物技术研发,tradingview
+WAY,Waystar Holding Corp.,WAY,stock,,,active,,医疗信息服务,tradingview
+LIF,"Life360, Inc.",LIF,stock,,,active,,应用软件,tradingview
+COLL,"COLLEGIUM PHARMACEUTICAL, INC",COLL,stock,,,active,,专科药物,tradingview
+UMAC,"Unusual Machines, Inc.",UMAC,stock,,,active,,计算硬件,tradingview
+SONO,Sonos Inc,SONO,stock,,,active,,消费电子,tradingview
+GSHD,"Goosehead Insurance, Inc.",GSHD,stock,,,active,,保险经纪,tradingview
+CERT,"Certara, Inc.",CERT,stock,,,active,,医疗信息服务,tradingview
+TDOC,"Teladoc Health, Inc.",TDOC,stock,,,active,,医疗信息服务,tradingview
+COUR,"Coursera, Inc.",COUR,stock,,,active,,教育培训,tradingview
+INSP,"Inspire Medical Systems, Inc.",INSP,stock,,,active,,医疗器械,tradingview
+SERV,Serve Robotics Inc. /DE/,SERV,stock,,,active,,货运物流,tradingview
+TRIP,"TripAdvisor, Inc.",TRIP,stock,,,active,,旅行服务,tradingview
+CRCT,"Cricut, Inc.",CRCT,stock,,,active,,计算硬件,tradingview
+MTCH,"Match Group, Inc.",MTCH,stock,,,active,,互联网内容,tradingview
+YELP,YELP INC,YELP,stock,,,active,,互联网内容,tradingview
+ALVO,Alvotech,ALVO,stock,,,active,,专科药物,tradingview
+REI,"RING ENERGY, INC.",REI,stock,,,active,,油气勘探开采,tradingview
+KOS,Kosmos Energy Ltd.,KOS,stock,,,active,,油气勘探开采,tradingview
+NEO,NEOGENOMICS INC,NEO,stock,,,active,,诊断/生命科学,tradingview
+QMCO,QUANTUM CORP /DE/,QMCO,stock,,,active,,计算硬件,tradingview
+AESI,Atlas Energy Solutions Inc.,AESI,stock,,,active,,油田设备/服务,tradingview
+PRME,"Prime Medicine, Inc.",PRME,stock,,,active,,生物技术研发,tradingview
+PPLI,People Inc,PPLI,stock,,,active,,互联网内容,tradingview

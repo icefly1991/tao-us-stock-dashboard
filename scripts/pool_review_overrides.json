@@ -1,0 +1,379 @@
+{
+  "reviewed_at": "2026-09-27",
+  "overrides": {
+    "CRML": {
+      "grade": "pressure",
+      "tags": [
+        "财报披露持续经营疑虑",
+        "后续融资依赖"
+      ],
+      "reason": "2026年6月年报明确提示：现有流动性不足以保障近期义务，需进一步筹资。矿产项目尚需开发资金；有现金并不能覆盖全部承诺。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001951089/000121390026103607/ea0302128-20f_critical.htm"
+        }
+      ]
+    },
+    "GETY": {
+      "grade": "pressure",
+      "tags": [
+        "财报披露持续经营疑虑",
+        "后续融资依赖"
+      ],
+      "reason": "2026年二季报及8月31日公告仍披露持续经营疑虑：诉讼付款、债务与可用流动性共同形成压力。成熟图片业务不等于资产负债表安全。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001898496/000121390026095778/ea0304109-8k_getty.htm"
+        }
+      ]
+    },
+    "INV": {
+      "grade": "pressure",
+      "tags": [
+        "财报披露持续经营疑虑",
+        "后续融资依赖"
+      ],
+      "reason": "2026年二季报明确持续经营疑虑，经营现金消耗需外部资金支持；9月管理层调整与成本削减不等于已完成融资。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002001557/000200155726000154/innv-20260630.htm"
+        }
+      ]
+    },
+    "LZM": {
+      "grade": "pressure",
+      "tags": [
+        "财报披露持续经营疑虑",
+        "后续融资依赖"
+      ],
+      "reason": "最新可得2025年报明确提示持续经营疑虑，Kabanga矿产项目开发依赖后续融资；年报期偏旧，需留意后续项目资金公告。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001958217/000195821726000009/lzm-20251231.htm"
+        }
+      ]
+    },
+    "NMRA": {
+      "grade": "pressure",
+      "tags": [
+        "财报披露持续经营疑虑",
+        "后续融资依赖"
+      ],
+      "reason": "2026年二季报明确现有现金不足以覆盖申报日起12个月运营计划，并披露持续经营疑虑；临床研发业务可核验，但尚无产品销售收入。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001885522/000119312526350370/nmra-20260630.htm"
+        }
+      ]
+    },
+    "PRME": {
+      "grade": "pressure",
+      "tags": [
+        "财报披露持续经营疑虑",
+        "后续融资依赖"
+      ],
+      "reason": "2026年二季报明确后续融资不确定、持续经营疑虑未消除；基因编辑研发不等于已有商业收入。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001894562/000162828026053883/prme-20260630.htm"
+        }
+      ]
+    },
+    "SANA": {
+      "grade": "pressure",
+      "tags": [
+        "财报披露持续经营疑虑",
+        "后续融资依赖"
+      ],
+      "reason": "2026年二季报明确现有资源可能不足以覆盖申报日起一年计划，披露持续经营疑虑；细胞疗法研发需继续筹资。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001770121/000119312526342395/sana-20260630.htm"
+        }
+      ]
+    },
+    "SMMT": {
+      "grade": "pressure",
+      "tags": [
+        "财报披露持续经营疑虑",
+        "后续融资依赖"
+      ],
+      "reason": "2026年二季报明确营运资金不足以覆盖未来12个月计划，需进一步融资；临床进展与资金风险应分开判断。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001599298/000159929826000068/smmt-20260630.htm"
+        }
+      ]
+    },
+    "VELO": {
+      "grade": "pressure",
+      "tags": [
+        "财报披露持续经营疑虑",
+        "后续融资依赖"
+      ],
+      "reason": "2026年二季报明确：虽已增发、转债及偿债改善流动性，持续经营疑虑仍存在，运营计划需要额外融资。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001825079/000119312526344560/velo-20260630.htm"
+        }
+      ]
+    },
+    "RZLV": {
+      "grade": "pressure",
+      "tags": [
+        "持续经营疑虑",
+        "经营现金净流出",
+        "并购影响可比性"
+      ],
+      "reason": "2026年9月披露的上半年报告仍明确持续经营疑虑；半年收入1.308亿美元但净亏损1.395亿美元、经营现金净流出9196万美元，增长含并购影响。募资成功不等于经营已自给。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526378541/rzlv-ex99_2.htm"
+        }
+      ],
+      "facts": {
+        "revenue": {
+          "value": 130788000,
+          "unit": "USD",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "filed": "2026-09-01",
+          "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526378541/rzlv-ex99_2.htm",
+          "tag": "manual-primary-filing"
+        },
+        "net_income": {
+          "value": -139478000,
+          "unit": "USD",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "filed": "2026-09-01",
+          "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526378541/rzlv-ex99_2.htm",
+          "tag": "manual-primary-filing"
+        },
+        "operating_cash_flow": {
+          "value": -91956000,
+          "unit": "USD",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "filed": "2026-09-01",
+          "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526378541/rzlv-ex99_2.htm",
+          "tag": "manual-primary-filing"
+        },
+        "cash": null,
+        "current_assets": null,
+        "current_liabilities": null,
+        "equity_proceeds": null,
+        "financing_cash_flow": {
+          "value": 232513000,
+          "unit": "USD",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "filed": "2026-09-01",
+          "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526378541/rzlv-ex99_2.htm",
+          "tag": "manual-primary-filing"
+        }
+      },
+      "runway_months": null
+    },
+    "CABA": {
+      "grade": "watch",
+      "tags": [
+        "临床研发",
+        "期后补充融资",
+        "历史持续经营提示"
+      ],
+      "reason": "二季报披露持续经营疑虑；9月14日8-K确认7月至认股权证到期新增约1.15亿美元总募资，不能把6月底现金当作当前余额。资金补充后列观察，仍关注研发消耗与稀释。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001759138/000175913826000041/caba-20260914.htm"
+        },
+        {
+          "title": "2026二季报风险背景",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001759138/000175913826000039/caba-20260630.htm"
+        }
+      ]
+    },
+    "BKKT": {
+      "grade": "watch",
+      "tags": [
+        "亏损",
+        "已补充股权资金"
+      ],
+      "reason": "二季报记载年初ATM及直接发行募资后，管理层认为不存在未来12个月持续经营疑虑；仍需扩大营收并控制现金支出。不要把会计准则的说明段当作实际风险结论。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001820302/000162828026055275/bakkt-20260630.htm"
+        }
+      ]
+    },
+    "FAC": {
+      "grade": "watch",
+      "tags": [
+        "商业化前期",
+        "融资后缓解"
+      ],
+      "reason": "固态电池研发仍需商业化验证；二季报明确de-SPAC/PIPE资金到位后，管理层认定此前持续经营疑虑已缓解。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002049662/000162828026055707/fac-20260630.htm"
+        }
+      ]
+    },
+    "FRMI": {
+      "grade": "watch",
+      "tags": [
+        "项目开发期",
+        "融资依赖",
+        "融资后缓解"
+      ],
+      "reason": "尚未产生经营收入且项目投资需求大；二季报认为7月融资、已有承诺授信及支出安排缓解持续经营疑虑。仍依赖项目执行与外部资本，不标为当前已确认持续经营危机。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002071778/000207177826000051/frmi-20260630.htm"
+        }
+      ]
+    },
+    "NUAI": {
+      "grade": "watch",
+      "tags": [
+        "转型观察",
+        "融资后缓解"
+      ],
+      "reason": "二季报明确4月股债融资及偿债后，之前持续经营疑虑已消除；新业务仍需验证，不沿用旧风险结论。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002028336/000121390026090138/ea0301610-10q_newera.htm"
+        }
+      ]
+    },
+    "SOC": {
+      "grade": "watch",
+      "tags": [
+        "经营现金净流出",
+        "再融资后缓解"
+      ],
+      "reason": "二季报明确2026再融资延长债务期限，持续经营疑虑已缓解。账面现金低与历史消耗仍需关注，但不能忽略已完成融资和生产进展。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001831481/000183148126000104/socc-20260630.htm"
+        }
+      ]
+    },
+    "NNE": {
+      "grade": "watch",
+      "tags": [
+        "商业化前期",
+        "研发/稀释风险"
+      ],
+      "reason": "核能研发尚需许可与商业化；2026年6月期报告认为现有营运资金可满足至少12个月义务。长期仍可能融资，不能据研发亏损直接认定短期生存危机。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001923891/000149315226037345/form10-q.htm"
+        }
+      ]
+    },
+    "ORBS": {
+      "grade": "watch",
+      "tags": [
+        "数字资产储备",
+        "资产价格波动"
+      ],
+      "reason": "二季报除现金外还列短期投资、稳定币及数字资产；管理层认为不存在未来12个月持续经营疑虑。通用只看现金的覆盖算法会失真，需观察资产价值及流动性。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001892492/000149315226036637/form10-q.htm"
+        }
+      ]
+    },
+    "FWDI": {
+      "grade": "watch",
+      "tags": [
+        "数字资产储备",
+        "负营运资金"
+      ],
+      "reason": "2026年6月期报告虽有负营运资金，但公司以数字资产持仓及变现渠道解释不存在持续经营疑虑；数字资产价格/抵押风险须专项观察。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000038264/000168316826006270/forward_i10q-063026.htm"
+        }
+      ]
+    },
+    "RGNX": {
+      "grade": "watch",
+      "tags": [
+        "临床研发",
+        "期后补充融资"
+      ],
+      "reason": "8月公告披露7月新增超过2亿美元资本，将公司预计资金期限延至2027年第四季度；不能用6月底现金余额直接判为一年内融资危机。研发与稀释风险继续观察。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://regenxbio.gcs-web.com/news-releases/news-release-details/regenxbio-reports-second-quarter-2026-financial-results-and"
+        }
+      ]
+    },
+    "EYPT": {
+      "grade": "watch",
+      "tags": [
+        "研发现金消耗",
+        "现金含可售证券"
+      ],
+      "reason": "二季报披露现金及可售证券合计约1.805亿美元，并认为可支持申报日起至少12个月计划；历史经营现金消耗较高，不能把简单年化覆盖当作公司资金期限。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001314102/000119312526335037/eypt-20260630.htm"
+        }
+      ]
+    },
+    "LCID": {
+      "grade": "pressure",
+      "tags": [
+        "持续亏损",
+        "经营现金净流出",
+        "外部融资支撑"
+      ],
+      "reason": "二季报现金消耗与融资需求较高；公司8月公告称融资及运营措施可支持至2027年较后时间。标记融资/经营压力，不宣称已存在持续经营疑虑或即将资金耗尽。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://lucidmotors.gcs-web.com/news-releases/news-release-details/lucid-announces-operational-reset-and-second-quarter-2026"
+        }
+      ]
+    },
+    "SPRY": {
+      "grade": "pressure",
+      "tags": [
+        "商业推广消耗",
+        "亏损",
+        "资金计划待执行"
+      ],
+      "reason": "neffy已有真实销售，但上半年经营现金消耗显著。8月公告提出削减开支、争取2027年底现金流盈亏平衡；这是未来计划，仍列经营资金压力，不标持续经营疑虑。",
+      "sources": [
+        {
+          "title": "原文专项核查：财报/公告",
+          "url": "https://ir.ars-pharma.com/news-releases/news-release-details/ars-pharmaceuticals-outlines-strategic-priorities-including"
+        }
+      ]
+    }
+  }
+}

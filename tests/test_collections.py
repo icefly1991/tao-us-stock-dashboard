@@ -49,8 +49,10 @@ class CollectionTests(unittest.TestCase):
         self.assertTrue({"FIG", "FSLY", "HUT", "WULF", "ASTS", "IONQ", "CRSP", "POWL"} <= observation)
         self.assertEqual(len(observation), 100)
         self.assertNotIn("CFLT", {item.code for item in items})
-        self.assertEqual(len(items), 133)
-        self.assertEqual(len({item.symbol for item in items}), 133)
+        self.assertEqual(len(items), 350)
+        self.assertEqual(sum(item.pool for item in items), 234)
+        self.assertEqual(len([item for item in items if item.watchlist == 'original' or item.tier]), 133)
+        self.assertEqual(len({item.symbol for item in items}), 350)
         self.assertEqual([sum(item.tier == tier for item in items) for tier in "ABC"], [30, 35, 35])
         self.assertEqual(len(original & {item.code for item in items if item.tier}), 10)
 

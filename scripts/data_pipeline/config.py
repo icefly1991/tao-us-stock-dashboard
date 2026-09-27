@@ -27,6 +27,7 @@ class WatchlistItem:
     trading_status: str = "active"
     status_note: str = ""
     business: str = ""
+    pool: bool = False
 
 
 @dataclass(frozen=True)
@@ -79,11 +80,16 @@ def load_watchlist(path: Path) -> list[WatchlistItem]:
             tier = (row.get("tier") or "").strip().upper()
             trading_status = (row.get("trading_status") or "active").strip()
             status_note = (row.get("status_note") or "").strip()
+            pool_value = (row.get("pool") or "").strip()
+            if pool_value not in {"", "tradingview"}:
+                raise RuntimeError(f"Unsupported pool on row {row_number} in {path}")
+            if pool_value and tier:
+                raise RuntimeError(f"Pool and active list membership overlap on row {row_number} in {path}")
             if trading_status not in {"active", "suspended"}:
                 raise RuntimeError(f"Unsupported trading_status on row {row_number} in {path}")
             if watchlist not in {"", "original"} or tier not in {"", "A", "B", "C"}:
                 raise RuntimeError(f"Unsupported list membership on row {row_number} in {path}")
-            if not watchlist and not tier:
+            if not watchlist and not tier and not pool_value:
                 raise RuntimeError(f"Missing list membership on row {row_number} in {path}")
             if not code:
                 continue
@@ -100,6 +106,7 @@ def load_watchlist(path: Path) -> list[WatchlistItem]:
                     trading_status=trading_status,
                     status_note=status_note,
                     business=(row.get("business") or "").strip(),
+                    pool=pool_value == "tradingview",
                 )
             )
 

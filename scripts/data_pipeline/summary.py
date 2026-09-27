@@ -44,9 +44,9 @@ def build_dashboard_payload(
         ]
         collections = []
         for key, label in (("original", "持仓股"), ("research", "活跃股观察列表"),
-                           ("A", "A 档"), ("B", "B 档"), ("C", "C 档")):
+                           ("A", "A 档"), ("B", "B 档"), ("C", "C 档"), ("pool", "活跃股票池")):
             codes = [item.code for item in watchlist if
-                     (item.watchlist == "original" if key == "original" else
+                     (item.pool if key == "pool" else item.watchlist == "original" if key == "original" else
                       bool(item.tier) if key == "research" else item.tier == key)]
             members = set(codes)
             collections.append({

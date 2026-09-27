@@ -7,6 +7,8 @@ import { StockHistoryCode, StockHistoryProvider } from './StockHistoryPreview'
 import BoxScreener from './BoxScreener'
 import ListReviewNotice from './ListReviewNotice'
 import RsiCell from './RsiCell'
+import { FundamentalBadge, PoolFilter } from './PoolReview'
+import { usePoolReview } from './poolReviewData'
 import { isDashboardData } from './dataValidation'
 import type { AdjustmentKey, MetricKey, SummaryKey, Row, DashboardData } from './dashboardData'
 
@@ -38,6 +40,8 @@ const dashboardUrl = `${import.meta.env.BASE_URL}data/dashboard.json`
 const getCollectionFromHash = () => {
   const path = window.location.hash.replace(/^#/, '')
   if (path === '/boxes') return 'boxes'
+  if (path === '/pool') return 'pool'
+  if (path === '/pool-boxes') return 'pool-boxes'
   if (path === '/research') return 'research'
   const tier = path.match(/^\/research\/([ABC])$/)?.[1]
   return tier ?? 'original'
@@ -104,6 +108,9 @@ function App() {
   const [tab, setTab] = useState<MetricKey>('position_52w_pct')
   const [error, setError] = useState(false)
   const [collectionId, setCollectionId] = useState(getCollectionFromHash)
+  const poolPage = collectionId === 'pool'
+  const poolReview = usePoolReview(poolPage)
+  const [grade, setGrade] = useState('all')
   const researchPage = collectionId !== 'original'
   const headerScroll = useRef<HTMLDivElement>(null)
   const bodyScroll = useRef<HTMLDivElement>(null)
@@ -112,6 +119,7 @@ function App() {
     const navigate = () => {
       setCollectionId(getCollectionFromHash())
       setTab('position_52w_pct')
+      setGrade('all')
       window.scrollTo(0, 0)
     }
     window.addEventListener('hashchange', navigate)
@@ -119,8 +127,8 @@ function App() {
   }, [])
 
   useEffect(() => {
-    document.title = `${collectionId === 'boxes' ? '箱体观察' : researchPage ? '活跃股观察列表' : '持仓股'} · Tao 美股趋势看板`
-  }, [researchPage, collectionId])
+    document.title = `${collectionId === 'pool-boxes' ? '股票池箱体研究' : poolPage ? '活跃股票池' : collectionId === 'boxes' ? '箱体观察' : researchPage ? '活跃股观察列表' : '持仓股'} · Tao 美股趋势看板`
+  }, [researchPage, collectionId, poolPage])
 
   useEffect(() => {
     let mounted = true
@@ -144,9 +152,9 @@ function App() {
   const rows = useMemo(
     () =>
       current
-        ? current.rows.filter((row) => !collection || collection.codes.includes(row.code)).sort((a, b) => compareMetric(a, b, tab))
+        ? current.rows.filter((row) => (!collection || collection.codes.includes(row.code)) && (!poolPage || grade === 'all' || (poolReview.data?.rows.find(item => item.code === row.code)?.grade ?? 'unknown') === grade)).sort((a, b) => compareMetric(a, b, tab))
         : [],
-    [current, collection, tab],
+    [current, collection, tab, poolPage, grade, poolReview.data],
   )
   const maxMetric = useMemo(
     () => Math.max(...rows.map((row) => Math.abs(row[tab] ?? 0)), 1),
@@ -161,6 +169,7 @@ function App() {
         : ['distance_ma250_pct', 'ytd_return_pct']
 
   if (collectionId === 'boxes') return <BoxScreener />
+  if (collectionId === 'pool-boxes') return <BoxScreener key="pool-boxes" pool />
   if (error || (data && !current)) return <StateView text="行情暂不可用，请刷新重试。" error />
   if (data && !collection && (researchPage || data.collections)) return <StateView text="当前列表数据缺失，请刷新重试。" error />
   if (!data || !current) return <StateView text="加载中..." />
@@ -174,16 +183,16 @@ function App() {
           <div className="absolute inset-x-0 top-0 h-28 bg-[radial-gradient(circle_at_top,rgba(191,219,254,0.32),transparent_72%)]" />
           <div className="absolute right-[-5rem] top-[-5rem] h-40 w-40 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.95),rgba(255,255,255,0))]" />
           <div className="relative flex flex-col gap-5">
-            <PageNavigation page={researchPage ? 'research' : 'watchlist'} />
+            <PageNavigation page={poolPage ? 'pool' : researchPage ? 'research' : 'watchlist'} />
             <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-3xl">
-                <h1 className="text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">{researchPage ? '活跃股观察列表' : '持仓股'}</h1>
+                <h1 className="text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">{poolPage ? '活跃股票池' : researchPage ? '活跃股观察列表' : '持仓股'}</h1>
                 <p className="mt-2 text-xs text-slate-500">yfinance 日线 · 仅供研究</p>
               </div>
               <DataFreshness updatedAt={data.updated_at} dataDate={data.data_date} />
             </div>
 
-            {researchPage && <ListReviewNotice />}
+            {researchPage && !poolPage && <ListReviewNotice />}
 
             <div className="rounded-[1.6rem] border border-slate-200/80 bg-white/70 p-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.85)]">
               <div className="grid grid-cols-2 gap-1">
@@ -214,13 +223,14 @@ function App() {
         </motion.section>
 
         <section data-position-view={tab === 'position_52w_pct'} className="ranking-section rounded-[2rem] border border-white/80 bg-white/80 p-3 shadow-[0_24px_60px_rgba(15,23,42,0.05)] sm:p-6">
+          {poolPage && <PoolFilter review={poolReview.data} error={poolReview.error} value={grade} onChange={setGrade} />}
           {missingCodes.length > 0 && (
             <div role="status" className="mb-4 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
               暂无可用行情：{missingCodes.join('、')}。列表总数包含这些标的，涨跌统计仅含可用行情。
             </div>
           )}
           {data.errors?.length ? <p className="mb-4 text-sm text-amber-800">本次有 {data.errors.length} 条数据提示；可用标的继续展示。</p> : null}
-          {researchPage && data.collections && (
+          {researchPage && !poolPage && data.collections && (
             <nav aria-label="活跃股观察列表分档" className="mb-4 flex flex-wrap gap-2">
               {data.collections.filter((item) => item.id !== 'original').map((item) => (
                 <a key={item.id} href={item.id === 'research' ? '#/research' : `#/research/${item.id}`}
@@ -277,7 +287,7 @@ function App() {
                       <CopyStockButton value={row.code} label="代码" target={`${row.code}-code`} secondary />
                     </StockHistoryCode>
                   </div>
-                  <div className="business-cell">{row.business || '—'}</div>
+                  <div className="business-cell">{row.business || '—'}{poolPage && <FundamentalBadge assessment={poolReview.data?.rows.find(item => item.code === row.code)} />}</div>
                   <div className="font-medium text-slate-900">{formatClose(row)}</div>
                   <div className={getMetricTextClass(row.today_return_pct)}>{formatPct(row.today_return_pct)}</div>
                   {contextMetrics.map((metric) => <div key={metric} className={getMetricTextClass(row[metric])}>{formatMetric(metric, row[metric])}</div>)}
@@ -318,9 +328,11 @@ function App() {
 }
 
 function StateView({ text, error = false }: { text: string; error?: boolean }) {
+  const id = getCollectionFromHash()
+  const page = id === 'original' ? 'watchlist' : id === 'pool' ? 'pool' : 'research'
   return (
     <main className="flex min-h-screen items-center justify-center bg-[linear-gradient(180deg,#fcfbf8_0%,#f5f1ea_100%)] px-4">
-      <div className="space-y-4"><PageNavigation page={getCollectionFromHash() === 'original' ? 'watchlist' : 'research'} /><div role={error ? 'alert' : 'status'} className={`rounded-[1.6rem] border px-5 py-4 text-sm shadow-[0_16px_40px_rgba(15,23,42,0.05)] ${error ? 'border-rose-200 bg-rose-50 text-rose-600' : 'border-slate-200 bg-white text-slate-600'}`}>{text}{error && <button className="ml-3 underline" onClick={() => window.location.reload()}>刷新</button>}</div></div>
+      <div className="space-y-4"><PageNavigation page={page} /><div role={error ? 'alert' : 'status'} className={`rounded-[1.6rem] border px-5 py-4 text-sm shadow-[0_16px_40px_rgba(15,23,42,0.05)] ${error ? 'border-rose-200 bg-rose-50 text-rose-600' : 'border-slate-200 bg-white text-slate-600'}`}>{text}{error && <button className="ml-3 underline" onClick={() => window.location.reload()}>刷新</button>}</div></div>
     </main>
   )
 }

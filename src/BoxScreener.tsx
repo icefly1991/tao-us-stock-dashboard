@@ -1,5 +1,7 @@
 import DataFreshness from './DataFreshness'
 import PageNavigation from './PageNavigation'
+import { FundamentalBadge, PoolFilter } from './PoolReview'
+import { usePoolReview } from './poolReviewData'
 import { useEffect, useMemo, useState } from 'react'
 import ListReviewNotice from './ListReviewNotice'
 import { isBoxScan } from './dataValidation'
@@ -146,7 +148,9 @@ function LongRangeChart({ row }: { row: Box }) {
   </div>
 }
 
-export default function BoxScreener() {
+export default function BoxScreener({ pool = false }: { pool?: boolean }) {
+  const review = usePoolReview(pool)
+  const [grade, setGrade] = useState('all')
   const [data, setData] = useState<Scan | null>(null)
   const [error, setError] = useState(false)
   const [filter, setFilter] = useState('candidates')
@@ -154,9 +158,9 @@ export default function BoxScreener() {
   const [selected, setSelected] = useState('')
   const [comparison, setComparison] = useState<{ code: string; days: number } | null>(null)
   useEffect(() => {
-    document.title = '箱体观察 · Tao 美股趋势看板'
+    document.title = `${pool ? '股票池箱体研究' : '箱体观察'} · Tao 美股趋势看板`
     const controller = new AbortController()
-    fetch(`${import.meta.env.BASE_URL}data/boxes.json`, { signal: controller.signal }).then(response => {
+    fetch(`${import.meta.env.BASE_URL}data/${pool ? 'pool-boxes' : 'boxes'}.json`, { signal: controller.signal }).then(response => {
       if (!response.ok) throw new Error('missing')
       return response.json() as Promise<Scan>
     }).then(result => {
@@ -164,10 +168,11 @@ export default function BoxScreener() {
       setData(result)
     }).catch(error => { if (error.name !== 'AbortError') setError(true) })
     return () => controller.abort()
-  }, [])
+  }, [pool])
   const rows = useMemo(() => (data?.rows ?? []).filter(row =>
+    (!pool || grade === 'all' || (review.data?.rows.find(item => item.code === row.code)?.grade ?? 'unknown') === grade) &&
     (filter === 'all' || (filter === 'candidates' ? ['match', 'watch'].includes(row.status) : row.status === filter)) && `${row.code} ${row.name}`.toLowerCase().includes(query.toLowerCase()),
-  ).sort((a, b) => statusOrder[a.status] - statusOrder[b.status] || (b.efficiency ?? -1) - (a.efficiency ?? -1) || (b.passed_count ?? 0) - (a.passed_count ?? 0) || (a.position_pct ?? Infinity) - (b.position_pct ?? Infinity) || a.code.localeCompare(b.code)), [data, filter, query])
+  ).sort((a, b) => statusOrder[a.status] - statusOrder[b.status] || (b.efficiency ?? -1) - (a.efficiency ?? -1) || (b.passed_count ?? 0) - (a.passed_count ?? 0) || (a.position_pct ?? Infinity) - (b.position_pct ?? Infinity) || a.code.localeCompare(b.code)), [data, filter, query, pool, grade, review.data])
   const stock = rows.find(row => row.code === selected) ?? rows[0]
   const comparedWindow = stock && comparison?.code === stock.code ? stock.windows?.find(item => item.window_days === comparison.days) : undefined
   const active = stock ? { ...stock, ...comparedWindow } : undefined
@@ -175,25 +180,26 @@ export default function BoxScreener() {
   const watching = data?.rows.filter(row => row.status === 'watch').length ?? 0
   return <main className="box-page">
     <header className="box-hero">
-      <PageNavigation page="boxes" />
+      <PageNavigation page={pool ? 'pool-boxes' : 'boxes'} />
       <div className="box-hero-heading"><div>
       <div className="box-eyebrow">仅复权日线 · 回顾性形态</div>
-      <h1>宽箱体形态识别</h1>
-      <p>形态筛选，基本面待复核。</p>
+      <h1>{pool ? '股票池箱体研究' : '宽箱体形态识别'}</h1>
+      <p>{pool ? '形态与基本面分开核查。' : '形态筛选，基本面待复核。'}</p>
       </div>{data && <DataFreshness updatedAt={data.updated_at} dataDate={data.data_date} />}</div>
     </header>
     {error ? <section className="box-panel" role="alert">箱体数据暂不可用。<button className="underline" onClick={() => window.location.reload()}>刷新重试</button></section> : !data ? <section className="box-panel" role="status">正在读取扫描结果…</section> : <>
       <section className="box-stats" aria-label="扫描概况">
-        <div><small>本轮扫描范围</small><strong>{data.universe_count}<em>只</em></strong><span>活跃列表 · 固定扫描池</span></div>
-        <div><small>形态候选</small><strong>{matches + watching}<em>只</em></strong><span>已验证 {matches} · 待观察 {watching} · 基本面待复核</span></div>
+        <div><small>本轮扫描范围</small><strong>{data.universe_count}<em>只</em></strong><span>{pool ? '活跃股票池' : '活跃列表 · 固定扫描池'}</span></div>
+        <div><small>形态候选</small><strong>{matches + watching}<em>只</em></strong><span>已验证 {matches} · 待观察 {watching}{!pool && ' · 基本面待复核'}</span></div>
       </section>
-      <ListReviewNotice />
+      {!pool && <ListReviewNotice />}
+      {pool && <PoolFilter review={review.data} error={review.error} value={grade} onChange={setGrade} />}
 
       <section className="box-panel">
-        <div className="box-toolbar"><div><h2>形态候选</h2><p>已验证优先 · 同类按空间效率排序</p></div><button className="box-reference" onClick={() => { setFilter('all'); setQuery('CRWV'); setSelected('CRWV') }}>查看 CRWV 对照</button></div>
+        <div className="box-toolbar"><div><h2>形态候选</h2><p>已验证优先 · 同类按空间效率排序</p></div>{!pool && <button className="box-reference" onClick={() => { setFilter('all'); setQuery('CRWV'); setSelected('CRWV') }}>查看 CRWV 对照</button>}</div>
         <div className="box-filters"><label>状态<select aria-label="状态" value={filter} onChange={event => setFilter(event.target.value)}><option value="candidates">候选（已验证 / 待观察）</option><option value="all">全部结果（含已排除）</option>{Object.entries(statusLabels).map(([key, label]) => <option key={key} value={key}>{label}</option>)}</select></label><label>查找股票<input aria-label="查找股票" value={query} onChange={event => setQuery(event.target.value)} placeholder="代码或公司名称" /></label><span>{rows.length} 个结果</span></div>
         <div className="box-table-scroll"><table className="box-table"><thead><tr><th>股票 / 形态</th><th>箱体下沿–上沿</th><th>箱体幅度 / 内部空间</th><th>平均周期 / 完成轮数</th><th>当前未完成</th><th>空间效率</th><th>箱体位置</th><th>长期位置 / 一年涨幅</th></tr></thead><tbody>{rows.map(row => <tr key={row.code} className={active?.code === row.code ? 'selected' : ''}>
-          <td><button aria-pressed={active?.code === row.code} onClick={() => setSelected(row.code)}><strong>{row.code}</strong><span>{row.name}</span></button><span className={`box-status ${row.status}`}>{statusLabels[row.status]}</span><small className="box-history-note">{row.window_days ?? '—'}日窗口{row.contracting ? ' · 宽转窄' : ''}</small></td>
+          <td><button aria-pressed={active?.code === row.code} onClick={() => setSelected(row.code)}><strong>{row.code}</strong><span>{row.name}</span></button>{pool && <FundamentalBadge compact assessment={review.data?.rows.find(item => item.code === row.code)} />}<span className={`box-status ${row.status}`}>{statusLabels[row.status]}</span><small className="box-history-note">{row.window_days ?? '—'}日窗口{row.contracting ? ' · 宽转窄' : ''}</small></td>
           <td>{number(row.low, '', 2)} – {number(row.high, '', 2)}</td><td>{number(row.width_pct, '%')} / {number(row.inner_space_pct, '%')}</td><td>{number(row.cycle_days)} 天 / {row.round_count ?? 0} 轮</td><td>{number(row.pending_days, ' 天', 0)}</td><td>{number(row.efficiency, '', 2)}<small className="box-history-note">百分点 / 自然日</small></td><td>{number(row.position_pct, '%')}</td><td>{number(row.long_position_pct, '%')} / {number(row.year_return_pct, '%')}<small className="box-history-note">{row.long_history_complete ? '近四年' : '不足四年 · 可用历史'}</small></td>
         </tr>)}</tbody></table></div>
         {!rows.length && <p role="status" className="box-empty">暂无匹配结果，可切换“全部结果”。</p>}
@@ -201,7 +207,7 @@ export default function BoxScreener() {
       </section>
       {active && <section className="box-panel box-detail" aria-label="箱体走势详情">
         <div className="box-toolbar"><div><div className="box-eyebrow">DAILY CHART / 最近一年</div><h2>{active.code} <span>{active.name}</span></h2><p className="box-business">业务 / 板块：{active.business || '—'}</p></div><span className={`box-status ${active.status}`}>{statusLabels[active.status]}</span></div>
-        <p className="box-reason">{active.reason}</p>
+        <p className="box-reason">{active.reason}</p>{pool && <FundamentalBadge assessment={review.data?.rows.find(item => item.code === active.code)} />}
         {active.short_year && <p className="box-footnote">历史不足一年，本次使用 {active.bars.length} 个可用交易日。</p>}
         <div className="box-window-options" aria-label="箱体窗口对照">
           {active.windows?.map(item => <button key={item.window_days} aria-pressed={active.window_days === item.window_days} onClick={() => setComparison({ code: active.code, days: item.window_days })}>
@@ -216,7 +222,7 @@ export default function BoxScreener() {
         <BoxChart key={`${active.code}:${active.window_days}`} row={active} />
         <LongRangeChart row={active} />
         {active.status === 'excluded' && <p className="box-footnote">原始形态：{statusLabels[active.shape_status ?? 'watch']} · {active.shape_reason}。仅从箱体候选排除，活跃列表仍保留。</p>}
-        <div className="box-detail-stats"><span>窗口内收盘占比 <b>{number(active.occupancy_pct, '%')}</b></span><span>识别区间 <b>{active.window_start ?? '—'} — {active.window_end ?? '—'}</b></span><span>业务复核 <b>待完成</b></span></div>
+        <div className="box-detail-stats"><span>窗口内收盘占比 <b>{number(active.occupancy_pct, '%')}</b></span><span>识别区间 <b>{active.window_start ?? '—'} — {active.window_end ?? '—'}</b></span>{!pool && <span>业务复核 <b>待完成</b></span>}</div>
         <div className="box-cycle-summary">
           <strong>完整轮次 {active.round_count ?? 0} 轮 · 平均 {number(active.cycle_days, ' 自然日')}</strong>
           <p>最近完成一轮：{number(active.latest_cycle_days, ' 自然日')}；当前未完成：{number(active.pending_days, ' 自然日', 0)}{active.pending_start ? `（从 ${active.pending_start} 开始，已完成${active.pending_completed_legs ?? 0}/3个单程，${active.pending_phase === 'awaiting_low' ? '等待进入下区' : '等待进入上区'}）` : '（尚未进入边界区域）'}。</p>
@@ -228,7 +234,7 @@ export default function BoxScreener() {
       <details className="box-panel box-method page-help">
         <summary>箱体方法与选股标准</summary>
         <p>60/90/120/252日窗口；幅度≥20%，已完成轮次平均≤120自然日。一轮为三个交替单程，未完成耗时不参与平均。</p>
-        <p>四年区间位置≥80%、一年涨幅≥100%或较一年低点涨幅≥200%排除。日常仅扫描活跃列表，名单手动维护。</p>
+        <p>四年区间位置≥80%、一年涨幅≥100%或较一年低点涨幅≥200%排除。日常扫描本页名单，名单手动维护。</p>
         <a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/BOX_DEFINITIONS.md" target="_blank" rel="noreferrer">完整箱体方法</a>
         <a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/LIST_REVIEW.md" target="_blank" rel="noreferrer">选股标准</a>
         <a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/ACTIVE_LIST_UPDATE.md" target="_blank" rel="noreferrer">名单维护</a>

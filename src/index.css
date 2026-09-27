@@ -213,3 +213,24 @@ body {
  .market-grid > * { min-width:0; }
  .market-row > :last-child > div { width:100%; padding-left:10px; padding-right:10px; }
 }
+
+.pool-review-controls { background: #fff; border: 1px solid #dde5ec; border-radius: 18px; padding: 16px; margin: 12px 0; color: #475569; font-size: 13px; }
+.pool-review-controls label { display: inline-flex; gap: 12px; align-items: center; margin-right: 18px; }
+.pool-review-controls select { border: 1px solid #cbd5e1; border-radius: 8px; padding: 8px; background: white; max-width: 100%; }
+.pool-review-controls > span { display: inline-block; margin: 8px 0; }
+.fundamental-badge { display: inline-block; padding: 3px 6px; border-radius: 5px; font-size: 11px; line-height: 1.5; margin: 4px 0; white-space: normal; }
+.fundamental-badge.supported { background: #e4f5ee; color: #146247; }
+.fundamental-badge.watch { background: #fff3dc; color: #875910; }
+.fundamental-badge.pressure { background: #ffe8e8; color: #a73131; }
+.fundamental-badge.unknown { background: #eef0f4; color: #59677a; }
+.fundamental-review { font-size: 12px; text-align: left; white-space: normal; overflow-wrap: anywhere; }
+.fundamental-tags { font-size: 10px; color: #64748b; }
+.fundamental-review summary { cursor: pointer; color: #235b82; padding: 4px 0; }
+.fundamental-review p { margin: 8px 0; line-height: 1.6; }
+.fundamental-review a { color: #235b82; text-decoration: underline; }
+.fundamental-open { color:#235b82; cursor:pointer; text-decoration:underline; padding:4px 0; }
+.fundamental-dialog { margin:auto; width:min(680px,calc(100vw - 32px)); max-height:85vh; overflow:auto; border:1px solid #dce4ea; border-radius:18px; padding:24px; background:#fff; color:#334155; font-size:14px; text-align:left; }
+.fundamental-dialog::backdrop { background:rgba(15,23,42,.45); }
+.fundamental-dialog-heading { display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.fundamental-dialog-heading h2 { font-size:18px; font-weight:600; }
+.fundamental-dialog-heading button { border:1px solid #cbd5e1; padding:6px 12px; border-radius:8px; flex-shrink:0; }

@@ -119,3 +119,8 @@ boxes.json schema_version=4。全窗口分位边界与穿越；每轮turns四个
 
 ## CR-013 / DATA-019 增量详情数据
 boxes v4的bars保留原始volume并新增可选rsi_value:number|null。生成器用同一history文件的rsi_history.points按time关联到一年bars，不重新计算或截断后重置RSI；既有文件code/mode/updated_at校验仍适用。缺rsi_history则逐日null。所有窗口与一年背景共享该序列，React仅裁切绘图。business复用已有行字段，显示详情而非候选列。向后兼容，schema仍4。
+
+## CR-017 独立股票池
+WatchlistItem.pool为布尔值，CSV用空值/tradingview；与tier互斥、与持仓可重叠。dashboard.collections增加id=pool，行/金融指标不变；总summary计350唯一成员，各集合summary独立。generate_boxes默认research/boxes.json，新调用pool/pool-boxes.json，两文件均schema_version=4，共享同批history。
+
+pool-review.json（schema_version=1）独立静态文件：reviewed_at、source_snapshot_date、rows（code/grade/tags/reason/business/facts/sources/review_method/runway_months）、excluded。facts每项含value/unit/start?/end/filed/url，缺失null；审查日期不会因行情刷新变更。前端校验结构/来源协议/重复代码，失败保留行情并明确基本面不可用。

@@ -9,9 +9,9 @@ from data_pipeline.indicators import build_box_metrics
 from data_pipeline.exporter import export_dashboard
 
 
-def generate_boxes(data_dir: Path) -> dict:
+def generate_boxes(data_dir: Path, collection_id: str = "research", output_name: str = "boxes.json") -> dict:
     dashboard = json.loads((data_dir / "dashboard.json").read_text(encoding="utf-8"))
-    codes = set(next(item["codes"] for item in dashboard["collections"] if item["id"] == "research"))
+    codes = set(next(item["codes"] for item in dashboard["collections"] if item["id"] == collection_id))
     rows, errors = [], []
     for stock in dashboard["adjustments"]["adjusted"]["rows"]:
         if stock["code"] not in codes:
@@ -39,11 +39,11 @@ def generate_boxes(data_dir: Path) -> dict:
     for error in errors:
         print(f"Box scan error: {error['code']}: {error['error']}")
     payload = {"schema_version": 4, "updated_at": dashboard["updated_at"], "data_date": dashboard["data_date"],
-               "adjustment": "adjusted", "source": "yfinance", "universe": "活跃股观察列表 · 固定扫描池",
+               "adjustment": "adjusted", "source": "yfinance", "universe": "活跃股票池" if collection_id == "pool" else "活跃股观察列表 · 固定扫描池",
                "universe_count": len(codes), "market_scan_enabled": False, "rows": rows, "errors": errors}
     if not rows:
         raise RuntimeError("箱体扫描无有效结果；保留已有文件")
-    export_dashboard(data_dir / "boxes.json", payload)
+    export_dashboard(data_dir / output_name, payload)
     return payload
 
 

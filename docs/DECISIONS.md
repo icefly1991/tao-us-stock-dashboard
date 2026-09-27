@@ -128,3 +128,9 @@ CSV 保持 code 唯一；watchlist=original 标记原列表，tier=A/B/C 标记�
 - Playwright用固定JSON拦截数据请求，覆盖导航、排序、图表、复制、异常与响应式布局，不依赖Yahoo。真实数据生成仍在部署build独立验证。
 - checks.yml复用于PR与deploy，失败保存截图/trace 14天；deploy仅在检查通过后生成真实行情。未配置仓库分支保护，不将PR检查等同于强制合并规则。
 - JSON入口校验关键结构，异常显示重试；exporter拒绝非有限数字，临时文件原子替换单个目标。不是多文件事务，生成失败不得部署。
+
+## ADR-017：共享行情、独立股票池与研究快照
+- 状态Accepted；CR-017 / DATA-021 / UI-020 / RES-006。
+- CSV新增pool=tradingview；复用一个Yahoo批次与历史文件，collections增加pool，箱体生成器参数化输出pool-boxes.json。旧research仍仅100只，原公式和v4形态规则不变。
+- 基本面不塞入每日行情刷新：独立版本1研究JSON与有来源的人工覆盖记录；财报筛查和原文专项核查分别标识。新池页等级筛选、证据原生dialog（键盘Escape/焦点恢复）不影响原三页。
+- 不新增依赖，不实时同步TradingView、不创建自动名单/基本面任务。扩大批次增加请求量与产物体积，原缺价保护及有限重试照常适用于全批。

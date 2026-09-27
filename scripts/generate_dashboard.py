@@ -60,6 +60,8 @@ def main() -> None:
             export_dashboard(config.output_json_file.parent / "history" / adjustment / f"{code}.json", history)
     export_dashboard(config.output_json_file, payload)
     generate_boxes(config.output_json_file.parent)
+    if any(item.pool for item in config.watchlist):
+        generate_boxes(config.output_json_file.parent, "pool", "pool-boxes.json")
     print(f"Output file path: {config.output_json_file}")
 
 
