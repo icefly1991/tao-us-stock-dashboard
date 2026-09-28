@@ -30,7 +30,7 @@ def generate_boxes(data_dir: Path, collection_id: str = "research", output_name:
                            for point in history.get("rsi_history", {}).get("points", [])}
             result["bars"] = [{**bar, "rsi_value": rsi_by_date.get(bar["time"])} for bar in result["bars"]]
             rows.append({"code": stock["code"], "name": stock["name"], "fundamentals": "待专项复核",
-                         "rsi": stock.get("rsi"), "business": stock.get("business", ""), **result})
+                         "rsi": stock.get("rsi"), "volatility_3m": stock.get("volatility_3m"), "business": stock.get("business", ""), **result})
         except (OSError, KeyError, ValueError) as error:
             errors.append({"code": stock["code"], "error": str(error)})
     processed = {row["code"] for row in rows} | {row["code"] for row in errors}

@@ -128,3 +128,10 @@ pool-review.json初版schema_version=1，已由CR-018升级v2；仍是独立静�
 `pool-review.json.schema_version=2`，新增逐行`category`（枚举）、`category_reason`、`category_method`、非空`category_sources`、`evidence_gap`。`grade`仍是独立四档资金/经营判断，两页交叉筛选；CSV成员与业务、行情指标、boxes v4不变。前端拒绝旧v1和无类型证据的数据，但保留价格表。独立`pool_categories.json`经`apply_categories`生成类型，不参与每日价格/箱体计算。补查事实允许部分空值，换期间时不混入旧数据；行业专门口径关闭通用runway。具体维护见POOL_RESEARCH。
 ### CR-019 / DATA-023：基本面短语兼容扩展
 研究v2行可选`highlights`和`risks`，每组0–3项`{text,method,sources:[{title,url}]}`。text为1–24字符，method限原文提炼/财报规则初筛，sources非空且HTTPS。缺字段兼容旧v2并显示摘要待补充；空数组不等同无风险或公司无优点。`apply_briefs`以`pool_briefs.json`原文摘要优先补充财报事实，每项保留证据；不进入每日行情计算。只改变高风险池主表及箱体单股详情，原dashboard/boxes/history数据契约不变。
+### DATA-024 / DATA-025：波幅及重大事项
+- dashboard行和boxes v4行兼容增加`volatility_3m`可选对象；指标仅在indicators.py计算，箱体透传复权结果，历史文件契约不变。
+- 新独立`governance-review.json` v1：reviewed_at、rows[{code,coverage,filing_date,sources,events}]，事件含kind/label/detail/state/legal_status/severity/disclosed_at/sources。`scripts/governance_events.json`是人工事件源，覆盖文件独立记录查过的报告；生成器拒绝无来源、非法枚举、未来日期、缺成员或重复成员。
+- 前端独立加载和校验，失效保留行情并提示风险资料不可用。当前/历史/已解决分离，默认不删标的或改现有基本面等级。所有研究均不随Yahoo每日刷新改日期。
+
+### 生存风险摘要（CR-022）
+governance-review v1行新增可选distress={level,reasons}，level为major/watch/unknown/not_flagged/not_applicable；生成器从当前事件的人工distress证据标记聚合，历史/解决排除。React只展示筛选；旧行无摘要按核查待补处理。not_flagged只表示事件初筛未触发。此研究独立于每日行情生成，不改变dashboard/boxes其他契约。

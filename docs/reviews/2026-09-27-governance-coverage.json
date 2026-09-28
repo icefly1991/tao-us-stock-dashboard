@@ -1,0 +1,3825 @@
+{
+  "reviewed_at": "2026-09-27",
+  "rows": [
+    {
+      "code": "SMR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001822966/000182296626000085/smr-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "VIX",
+      "coverage": "not_applicable",
+      "sources": [],
+      "filing_date": null
+    },
+    {
+      "code": "IMSR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002019804/000110465926094085/tmb-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-11"
+    },
+    {
+      "code": "NABL",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001834488/000183448826000047/nabl-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "HOOD",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001783879/000178387926000114/hood-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30"
+    },
+    {
+      "code": "MP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001801368/000180136826000048/mp-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "ORCL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001341439/000119312526389274/orcl-20260831.htm"
+        }
+      ],
+      "filing_date": "2026-09-11"
+    },
+    {
+      "code": "HIMS",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001773751/000177375126000163/hims-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "BITX",
+      "coverage": "not_applicable",
+      "sources": [],
+      "filing_date": null
+    },
+    {
+      "code": "CRWV",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001769628/000176962826000366/crwv-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-12"
+    },
+    {
+      "code": "IBIT",
+      "coverage": "not_applicable",
+      "sources": [],
+      "filing_date": null
+    },
+    {
+      "code": "RZLV",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001920294/000119312526132456/rzlv-20251231.htm"
+        }
+      ],
+      "filing_date": "2026-03-30"
+    },
+    {
+      "code": "MCD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000063908/000006390826000073/mcd-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "IREN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-27"
+    },
+    {
+      "code": "ATCH",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001963088/000149315226044008/form10-k.htm"
+        }
+      ],
+      "filing_date": "2026-09-24"
+    },
+    {
+      "code": "CRCL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001876042/000187604226000248/crcl-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "NVDA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000075/nvda-20260726.htm"
+        }
+      ],
+      "filing_date": "2026-08-26"
+    },
+    {
+      "code": "NKE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000088/nke-20260531.htm"
+        }
+      ],
+      "filing_date": "2026-07-15"
+    },
+    {
+      "code": "KLAR",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002003292/000200329226000007/klar-20251231.htm"
+        }
+      ],
+      "filing_date": "2026-02-26"
+    },
+    {
+      "code": "MNTN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001891027/000189102726000073/mntn-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "MSFT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000789019/000119312526323660/msft-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29"
+    },
+    {
+      "code": "META",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026050705/meta-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30"
+    },
+    {
+      "code": "RGTI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001838359/000110465926091993/rgti-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "NXH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001130713/000162828026052744/byon-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "AVGO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000080/avgo-20260802.htm"
+        }
+      ],
+      "filing_date": "2026-09-10"
+    },
+    {
+      "code": "QQQ",
+      "coverage": "not_applicable",
+      "sources": [],
+      "filing_date": null
+    },
+    {
+      "code": "ETOR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001493318/000121390026022034/ea0278371-20f_etoro.htm"
+        }
+      ],
+      "filing_date": "2026-03-02"
+    },
+    {
+      "code": "ARKO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001823794/000119312526339096/arko-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "UAA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001336917/000133691726000111/ua-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "PG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000080424/000008042426000103/pg-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "DOGEUSD",
+      "coverage": "not_applicable",
+      "sources": [],
+      "filing_date": null
+    },
+    {
+      "code": "STUB",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001337634/000162828026056402/stub-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "VOR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001817229/000119312526343607/vor-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11"
+    },
+    {
+      "code": "MSTR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001050446/000105044626000044/mstr-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-03"
+    },
+    {
+      "code": "GEMI",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002055592/000205559226000065/gemi-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "OSCR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001568651/000156865126000069/oscr-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "DKNG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001883685/000188368526000029/dkng-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "AMD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000123/amd-20260627.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "TQQQ",
+      "coverage": "not_applicable",
+      "sources": [],
+      "filing_date": null
+    },
+    {
+      "code": "APP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001751008/000175100826000059/app-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "WBTN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001997859/000199785926000089/wbtn-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "FIG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001579878/000162828026053348/fig-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "CRDO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001807794/000162828026060111/crdo-20260801.htm"
+        }
+      ],
+      "filing_date": "2026-09-02"
+    },
+    {
+      "code": "ALAB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001736297/000173629726000035/alab-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "NBIS",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926052948/nbis-20251231x20f.htm"
+        }
+      ],
+      "filing_date": "2026-04-30"
+    },
+    {
+      "code": "COIN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001679788/000167978826000088/coin-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30"
+    },
+    {
+      "code": "RDDT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000100/rddt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-31"
+    },
+    {
+      "code": "RKLB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001819994/000181999426000062/rklb-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "CELH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001341766/000134176626000050/celh-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "AFRM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001820953/000162828026059279/afrm-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-27"
+    },
+    {
+      "code": "UPST",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001647639/000164763926000063/upst-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "CVNA",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001690820/000169082026000055/cvna-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29"
+    },
+    {
+      "code": "APLD",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001144879/000114487926000048/apld-20260531.htm"
+        }
+      ],
+      "filing_date": "2026-07-29"
+    },
+    {
+      "code": "RBLX",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001315098/000162828026051082/rblx-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30"
+    },
+    {
+      "code": "CAVA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001639438/000162828026055864/cava-20260712.htm"
+        }
+      ],
+      "filing_date": "2026-08-12"
+    },
+    {
+      "code": "ONON",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001858985/000185898526000008/onholdingag-20251231.htm"
+        }
+      ],
+      "filing_date": "2026-03-03"
+    },
+    {
+      "code": "DUOL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001562088/000162828026053603/duol-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "ELF",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001600033/000160003326000040/elf-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "SOFI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001818874/000181887426000054/sofi-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "SHOP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001594805/000159480526000047/shop-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "SE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001703399/000114036126015366/ef20067274_20f.htm"
+        }
+      ],
+      "filing_date": "2026-04-17"
+    },
+    {
+      "code": "NET",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001477333/000147733326000054/cloud-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "PLTR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000041/pltr-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "ARM",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001973239/000197323926000097/arm-20260331.htm"
+        }
+      ],
+      "filing_date": "2026-05-26"
+    },
+    {
+      "code": "LITE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001633978/000162828026057358/lite-20260627.htm"
+        }
+      ],
+      "filing_date": "2026-08-17"
+    },
+    {
+      "code": "COHR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000820318/000082031826000020/iivi-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-14"
+    },
+    {
+      "code": "MRVL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001835632/000183563226000025/mrvl-20260801.htm"
+        }
+      ],
+      "filing_date": "2026-08-28"
+    },
+    {
+      "code": "CLS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001030894/000103089426000044/cls-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-27"
+    },
+    {
+      "code": "VRT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001674101/000162828026050609/vrt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29"
+    },
+    {
+      "code": "MU",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000015/mu-20260528.htm"
+        }
+      ],
+      "filing_date": "2026-06-25"
+    },
+    {
+      "code": "SNDK",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002023554/000162828026057406/sndk-20260703.htm"
+        }
+      ],
+      "filing_date": "2026-08-17"
+    },
+    {
+      "code": "WDC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000106040/000162828026057139/wdc-20260703.htm"
+        }
+      ],
+      "filing_date": "2026-08-14"
+    },
+    {
+      "code": "CIEN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000936395/000162828026060361/cien-20260801.htm"
+        }
+      ],
+      "filing_date": "2026-09-03"
+    },
+    {
+      "code": "SMCI",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001375365/000137536526000022/smci-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-31"
+    },
+    {
+      "code": "BE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001664703/000162828026050247/be-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-28"
+    },
+    {
+      "code": "PSTG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001474432/000147443226000088/pstg-20260802.htm"
+        }
+      ],
+      "filing_date": "2026-09-04"
+    },
+    {
+      "code": "MTSI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001493594/000149359426000038/mtsi-20260703.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "TOST",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001650164/000165016426000164/tost-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "NU",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001691493/000129281426002166/nuform20f_2025.htm"
+        }
+      ],
+      "filing_date": "2026-04-08"
+    },
+    {
+      "code": "DAVE",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001841408/000119312526335154/dave-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "ROOT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001788882/000178888226000061/root-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "LMND",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001691421/000169142126000055/lmnd-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "TTAN",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001638826/000163882626000094/ttan-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-08"
+    },
+    {
+      "code": "IOT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001642896/000162828026060909/iot-20260801.htm"
+        }
+      ],
+      "filing_date": "2026-09-08"
+    },
+    {
+      "code": "MNDY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001845338/000117891326000870/zk2634436.htm"
+        }
+      ],
+      "filing_date": "2026-03-13"
+    },
+    {
+      "code": "MDB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001441816/000162828026059830/mdb-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-01"
+    },
+    {
+      "code": "GTLB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001653482/000162828026059943/gtlb-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-02"
+    },
+    {
+      "code": "FROG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001800667/000119312526340294/frog-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "ESTC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001707753/000170775326000054/estc-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-08-28"
+    },
+    {
+      "code": "S",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001583708/000158370826000055/s-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-08-28"
+    },
+    {
+      "code": "TTD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001671933/000167193326000086/ttd-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "ZETA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001851003/000119312526333902/zeta-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "TMDX",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001756262/000119312526332843/tmdx-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "NTRA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001604821/000162828026054525/ntra-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "TEM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001717115/000119312526326090/tem-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30"
+    },
+    {
+      "code": "RXST",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001111485/000119312526335153/rxst-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "KTOS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001069258/000106925826000077/ktos-20260628.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "AVAV",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001368622/000110465926106423/avav-20260801x10q.htm"
+        }
+      ],
+      "filing_date": "2026-09-10"
+    },
+    {
+      "code": "RDW",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001819810/000181981026000124/rdw-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "LUNR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001844452/000162828026056821/lunr-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "LEU",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001065059/000162828026053863/leu-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "UUUU",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001385849/000138584926000029/efr-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "UEC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001334933/000143774926019889/uec20260430_10q.htm"
+        }
+      ],
+      "filing_date": "2026-06-09"
+    },
+    {
+      "code": "ALB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000915913/000091591326000102/alb-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "ENPH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001463101/000146310126000081/enph-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-28"
+    },
+    {
+      "code": "NXT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001852131/000185213126000048/nxt-20260703.htm"
+        }
+      ],
+      "filing_date": "2026-08-03"
+    },
+    {
+      "code": "FLNC",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001868941/000186894126000029/flnc-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "RIVN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001874178/000187417826000054/rivn-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30"
+    },
+    {
+      "code": "CHWY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001766502/000162828026061018/chwy-20260802.htm"
+        }
+      ],
+      "filing_date": "2026-09-09"
+    },
+    {
+      "code": "BROS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001866581/000186658126000133/bros-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "RH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001528849/000110465926106764/rh-20260801x10q.htm"
+        }
+      ],
+      "filing_date": "2026-09-10"
+    },
+    {
+      "code": "SG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001477815/000162828026054522/sg-20260628.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "FOUR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001794669/000179466926000045/four-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "BILL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001786352/000162828026058238/bill-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-20"
+    },
+    {
+      "code": "RELY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001782170/000162828026053424/rely-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "SYM",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001837240/000183724026000043/sym-20260627.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "AAOI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001158114/000143774926026278/aaoi20260630_10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "ACLS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001113232/000110465926091999/acls-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "SITM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001451809/000145180926000060/sitm-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "AMBA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001280263/000119312526383365/amba-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-04"
+    },
+    {
+      "code": "AEHR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001040470/000165495426006919/aehr_10k.htm"
+        }
+      ],
+      "filing_date": "2026-07-27"
+    },
+    {
+      "code": "INOD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000903651/000110465926092021/inod-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "PATH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001734722/000173472226000050/path-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-08"
+    },
+    {
+      "code": "DOCN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001582961/000162828026052556/docn-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "ROKU",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001428439/000162828026054335/roku-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "EIKN",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001861123/000119312526349185/eikn-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "FSLY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001517413/000151741326000213/fsly-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "HUT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001964789/000110465926090025/hut-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "WULF",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001083301/000108330126000166/wulf-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "ASTS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001780312/000119312526342550/asts-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "IONQ",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001824920/000119312526341001/ionq-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "CRSP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001674416/000119312526330672/crsp-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-03"
+    },
+    {
+      "code": "POWL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000080420/000008042026000107/powl-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "SECZ",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002094496/000162828026056788/secz-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "BKKT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001820302/000162828026055275/bakkt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "CRML",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001951089/000121390026103607/ea0302128-20f_critical.htm"
+        }
+      ],
+      "filing_date": "2026-09-25"
+    },
+    {
+      "code": "CLSK",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000827876/000119312526338382/clsk-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "BTBT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001710350/000121390026088709/ea0300693-10q_bitdigital.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "SOC",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001831481/000183148126000104/socc-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "AURA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001501796/000119312526343429/aura-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11"
+    },
+    {
+      "code": "EVMN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002044725/000119312526337984/evmn-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "WYFI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+        }
+      ],
+      "filing_date": "2026-08-12"
+    },
+    {
+      "code": "XXI",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002070457/000121390026087471/ea0299640-10q_twentyone.htm"
+        }
+      ],
+      "filing_date": "2026-08-11"
+    },
+    {
+      "code": "DNA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001830214/000162828026054298/dna-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "GETY",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001898496/000162828026055246/gety-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "QDEL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001906324/000190632426000033/qdel-20260628.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "TRON",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001956744/000149315226037161/form10-q.htm"
+        }
+      ],
+      "filing_date": "2026-08-11"
+    },
+    {
+      "code": "VITL",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001579733/000119312526336753/vitl-20260628.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "FWDI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000038264/000168316826006270/forward_i10q-063026.htm"
+        }
+      ],
+      "filing_date": "2026-08-12"
+    },
+    {
+      "code": "UPB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002022626/000119312526343417/upb-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11"
+    },
+    {
+      "code": "SRAD",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001836470/000110465926035485/srad-20251231x20f.htm"
+        }
+      ],
+      "filing_date": "2026-03-27"
+    },
+    {
+      "code": "WRBY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001504776/000150477626000019/wrby-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "HTFL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001464521/000146452126000131/htfl-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "AMC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000059/amc-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-07-23"
+    },
+    {
+      "code": "SANA",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001770121/000119312526342395/sana-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "CHYM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001795586/000179558626000048/chym-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "SPRY",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001671858/000119312526349140/spry-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "PACB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001299130/000129913026000122/pacb-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "ALKT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001529274/000152927426000052/alk-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30"
+    },
+    {
+      "code": "KLC",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001873529/000119312526349480/klc-20260704.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "NTSK",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002063196/000119312526380428/ntsk-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-02"
+    },
+    {
+      "code": "MAX",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001818383/000181838326000200/max-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29"
+    },
+    {
+      "code": "SHEN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000354963/000035496326000209/shen-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29"
+    },
+    {
+      "code": "EYPT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001314102/000119312526335037/eypt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "PSFE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001833835/000119312526088095/psfe-20251231.htm"
+        }
+      ],
+      "filing_date": "2026-03-03"
+    },
+    {
+      "code": "USAR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001970622/000197062226000057/usar-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "BRCB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002068577/000162828026055868/brcb-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-12"
+    },
+    {
+      "code": "MPT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001287865/000119312526342583/mpt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "BEAM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001745999/000119312526331541/beam-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "HRL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000048465/000004846526000055/hrl-20260726.htm"
+        }
+      ],
+      "filing_date": "2026-08-27"
+    },
+    {
+      "code": "NMRA",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001885522/000119312526350370/nmra-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-14"
+    },
+    {
+      "code": "RGEN",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000730272/000119312526323773/rgen-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29"
+    },
+    {
+      "code": "INFQ",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002007825/000162828026057508/infq-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-18"
+    },
+    {
+      "code": "LYTS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000763532/000143774926029621/lyts20260630d_10k.htm"
+        }
+      ],
+      "filing_date": "2026-09-03"
+    },
+    {
+      "code": "FAC",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002049662/000162828026055707/fac-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11"
+    },
+    {
+      "code": "INV",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002001557/000200155726000154/innv-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "RBRK",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001943896/000194389626000060/rbrk-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-01"
+    },
+    {
+      "code": "WMG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001319161/000131916126000032/wmg-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "OLN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000074303/000007430326000077/oln-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-31"
+    },
+    {
+      "code": "CMG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001058090/000105809026000066/cmg-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-31"
+    },
+    {
+      "code": "CXM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001569345/000156934526000038/cxm-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-03"
+    },
+    {
+      "code": "NKLR",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002067627/000121390026090062/ea0300681-10q_terra.htm"
+        }
+      ],
+      "filing_date": "2026-08-14"
+    },
+    {
+      "code": "SAIL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002030781/000203078126000021/sail-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-10"
+    },
+    {
+      "code": "ALMS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001847367/000184736726000018/alms-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "ARDT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001756655/000162828026055215/ardt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "SGMT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001400118/000119312526343441/sgmt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11"
+    },
+    {
+      "code": "FWRG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001789940/000178994026000090/fwrg-20260628.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "SLDE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001886428/000119312526326333/slde-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30"
+    },
+    {
+      "code": "INDI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001841925/000119312526340396/indi-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "MYGN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000899923/000089992326000072/mygn-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-31"
+    },
+    {
+      "code": "DOCU",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001261333/000126133326000099/docu-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-04"
+    },
+    {
+      "code": "CLFD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000796505/000117184326005329/clfd20260630_10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "RUM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001830081/000121390026087311/ea0301267-10q_rumgroup.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "EGHT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001023731/000102373126000114/eght-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "GERN",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000886744/000088674426000037/gern-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "EVEX",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001823652/000155485526001685/evex-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "OKLO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001849056/000162828026054571/oklo-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "OXM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000075288/000007528826000084/oxm-20260801.htm"
+        }
+      ],
+      "filing_date": "2026-09-04"
+    },
+    {
+      "code": "MTH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000833079/000083307926000128/mth-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-31"
+    },
+    {
+      "code": "SNAP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001564408/000156440826000052/snap-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "WHR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000106640/000010664026000061/whr-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "ARRY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001820721/000162828026053517/arry-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "TE",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001992243/000199224326000022/t1-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-12"
+    },
+    {
+      "code": "ARQQ",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001859690/000110465925119500/arqq-20250930x20f.htm"
+        }
+      ],
+      "filing_date": "2025-12-09"
+    },
+    {
+      "code": "PYPL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000082/pypl-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-28"
+    },
+    {
+      "code": "MNRO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000876427/000087642726000010/mnro-20260627x10q.htm"
+        }
+      ],
+      "filing_date": "2026-07-29"
+    },
+    {
+      "code": "XE",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002088896/000119312526347752/xe-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "ADTN",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000926282/000119312526331632/adtn-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "ENOV",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001420800/000142080026000035/cfx-20260703.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "PLAY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001525769/000152576926000038/play-20260804.htm"
+        }
+      ],
+      "filing_date": "2026-09-14"
+    },
+    {
+      "code": "FPS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002080126/000208012626000035/fps-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-09-15"
+    },
+    {
+      "code": "ODD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001907085/000110465926029490/odd-20251231x20f.htm"
+        }
+      ],
+      "filing_date": "2026-03-17"
+    },
+    {
+      "code": "NTGR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001122904/000119312526338402/ntgr-20260628.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "ENVX",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001828318/000182831826000056/envx-20260705.htm"
+        }
+      ],
+      "filing_date": "2026-08-12"
+    },
+    {
+      "code": "LYFT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001759509/000162828026054499/lyft-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "SOUN",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001840856/000184085626000022/soun-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "AVNT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001122976/000112297626000126/avnt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "SLDP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001844862/000110465926090634/sldp-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "VIA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001603015/000160301526000026/via-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "CYH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001108109/000119312526314196/cyh-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-23"
+    },
+    {
+      "code": "OMDA",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001611115/000162828026054840/omda-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "LCID",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001811210/000162828026052606/lcid-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "MWH",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002065636/000119312526352447/d152940d10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-14"
+    },
+    {
+      "code": "HLLY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001822928/000182292826000068/hlly-20260628.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "NNE",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001923891/000149315226037345/form10-q.htm"
+        }
+      ],
+      "filing_date": "2026-08-12"
+    },
+    {
+      "code": "PLNT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001637207/000163720726000044/plnt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "CRNC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001768267/000162828026054339/crnc-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "ALHC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001832466/000162828026051060/alhc-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30"
+    },
+    {
+      "code": "QS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001811414/000119312526316073/qs-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-24"
+    },
+    {
+      "code": "YSS",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002086587/000162828026056874/yss-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-14"
+    },
+    {
+      "code": "NRDS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001625278/000162527826000060/nrds-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "FRMI",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002071778/000207177826000051/frmi-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-14"
+    },
+    {
+      "code": "HUBG",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000940942/000119312525266623/hubg-20250930.htm"
+        }
+      ],
+      "filing_date": "2025-11-05"
+    },
+    {
+      "code": "UHS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000352915/000119312526340278/uhs-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "WLTH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001524566/000162828026061848/wlth-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-14"
+    },
+    {
+      "code": "ALMU",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001828805/000121390026100584/ea0305364-10k_aeluma.htm"
+        }
+      ],
+      "filing_date": "2026-09-16"
+    },
+    {
+      "code": "ONT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001643615/000119312526337925/ont-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "NCLH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001513761/000110465926089657/nclh-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-03"
+    },
+    {
+      "code": "RR",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001963685/000121390026091798/ea0302286-10q_richtech.htm"
+        }
+      ],
+      "filing_date": "2026-08-19"
+    },
+    {
+      "code": "KVYO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001835830/000183583026000040/kvyo-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "BKSY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001753539/000175353926000124/bksy-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "JACK",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000807882/000080788226000091/jack-20260705.htm"
+        }
+      ],
+      "filing_date": "2026-08-12"
+    },
+    {
+      "code": "ASPI",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001921865/000119312526352603/aspi-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-14"
+    },
+    {
+      "code": "CLB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001958086/000119312526326345/clb-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30"
+    },
+    {
+      "code": "FUBO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001484769/000162828026053535/fubo-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "CE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001306830/000130683026000117/ce-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "VOYG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001788060/000162828026052292/voyg-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "ARHS",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001875444/000187544426000030/arhs-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "ULCC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001670076/000167007626000087/fron-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29"
+    },
+    {
+      "code": "WOLF",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000895419/000089541926000054/wolf-20260628.htm"
+        }
+      ],
+      "filing_date": "2026-08-20"
+    },
+    {
+      "code": "ACDC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001881487/000119312526337969/acdc-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "RGNX",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001590877/000119312526336725/rgnx-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "EQPT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001693736/000169373626000020/eqpt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "VELO",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001825079/000119312526344560/velo-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11"
+    },
+    {
+      "code": "FLY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001860160/000186016026000023/fly-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11"
+    },
+    {
+      "code": "BETA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001784570/000162828026055982/bta-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-12"
+    },
+    {
+      "code": "GENI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001834489/000119312526110749/geni-20251231.htm"
+        }
+      ],
+      "filing_date": "2026-03-17"
+    },
+    {
+      "code": "MRLN",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002028707/000162828026056882/mrln-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-14"
+    },
+    {
+      "code": "EOSE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001805077/000162828026052906/eose-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "RCKT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001281895/000119312526342348/rckt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "CABA",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001759138/000175913826000039/caba-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "BETR",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001835856/000162828026055745/aurcu-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11"
+    },
+    {
+      "code": "RUN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001469367/000162828026053366/run-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "IE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001879016/000187901626000017/ie-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "FATE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001434316/000119312526347988/fate-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "WD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001497770/000110465926091536/wd-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "PCT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001830033/000183003326000026/pct-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "APTV",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001521332/000152133226000061/aptv-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "CATX",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000728387/000119312526342512/catx-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "GLOB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001557860/000162828026012910/glob-20251231.htm"
+        }
+      ],
+      "filing_date": "2026-02-27"
+    },
+    {
+      "code": "LZM",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001958217/000195821726000009/lzm-20251231.htm"
+        }
+      ],
+      "filing_date": "2026-03-19"
+    },
+    {
+      "code": "FIP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001899883/000189988326000036/fip-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "NTLA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001652130/000119312526337952/ntla-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "KYTX",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001994702/000119312526344607/kytx-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11"
+    },
+    {
+      "code": "FLUT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001635327/000163532726000056/flut-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "GOGO",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001537054/000119312526337921/gogo-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "RKT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001805284/000162828026054577/rkt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "SVV",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001883313/000188331326000060/svv-20260704.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "AGIO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001439222/000143922226000118/agio-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30"
+    },
+    {
+      "code": "NPWR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001845437/000184543726000033/npwr-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "EDIT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001650664/000165066426000083/edit-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "MAGN",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000041719/000004171926000049/form10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "ABAT",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001576873/000149315226042497/form10-k.htm"
+        }
+      ],
+      "filing_date": "2026-09-14"
+    },
+    {
+      "code": "LAES",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001951222/000110465926037706/laes-20251231x20f.htm"
+        }
+      ],
+      "filing_date": "2026-03-31"
+    },
+    {
+      "code": "PGY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001883085/000188308526000058/pgy-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30"
+    },
+    {
+      "code": "DFH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001825088/000162828026050969/dfh-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30"
+    },
+    {
+      "code": "EFX",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000033185/000003318526000028/efx-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-21"
+    },
+    {
+      "code": "ORGO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001661181/000119312526338049/orgo-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "GLXY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001859392/000185939226000091/glxy-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "IKT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001750149/000119312526344707/ikt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11"
+    },
+    {
+      "code": "NRGV",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001828536/000182853626000101/nrgv-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11"
+    },
+    {
+      "code": "ZG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001617640/000161764026000052/z-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "BBNX",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001674632/000119312526323777/bbnx-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29"
+    },
+    {
+      "code": "DNLI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001714899/000171489926000097/dnli-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "HGV",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001674168/000167416826000100/hgv-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30"
+    },
+    {
+      "code": "HUBS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001404655/000119312526335232/hubs-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "ORBS",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001892492/000149315226036637/form10-q.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "NB",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001512228/000119312526402806/nb-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-09-25"
+    },
+    {
+      "code": "LZ",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001286139/000128613926000031/lz-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "CPRI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001530721/000153072126000081/cpri-20260627.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "SITE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001650729/000165072926000016/site-20260628.htm"
+        }
+      ],
+      "filing_date": "2026-07-29"
+    },
+    {
+      "code": "AI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001577526/000157752626000126/ai-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-09"
+    },
+    {
+      "code": "DXYZ",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001843974/000121390026095201/ea0302101-01_ncsrs.htm"
+        }
+      ],
+      "filing_date": "2026-08-28"
+    },
+    {
+      "code": "VERX",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001806837/000110465926090420/verx-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "SMMT",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001599298/000159929826000068/smmt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-23"
+    },
+    {
+      "code": "TASK",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001829864/000182986426000149/task-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "PACK",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001712463/000162828026050839/pack-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30"
+    },
+    {
+      "code": "FOXF",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001424929/000142492926000049/foxf-20260703.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "SIBN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001459839/000145983926000069/sibn-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "VRRM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001682745/000119312526335490/vrrm-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "GTM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001794515/000179451526000056/zi-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "SENS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001616543/000110465926092056/sens-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "BRZE",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001676238/000167623826000040/brze-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-09"
+    },
+    {
+      "code": "WDAY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001327811/000132781126000044/wday-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-08-27"
+    },
+    {
+      "code": "NUAI",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002028336/000121390026090138/ea0301610-10q_newera.htm"
+        }
+      ],
+      "filing_date": "2026-08-14"
+    },
+    {
+      "code": "WLFC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001018164/000101816426000068/wlfc-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "OEC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001609804/000162828026053422/oec-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "HAYW",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001834622/000183462226000047/hayw-20260627.htm"
+        }
+      ],
+      "filing_date": "2026-07-29"
+    },
+    {
+      "code": "SWIM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001833197/000162828026052925/swim-20260627.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "GEHC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001932393/000193239326000046/gehc-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29"
+    },
+    {
+      "code": "STAA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000718937/000071893726000037/staa-20260703.htm"
+        }
+      ],
+      "filing_date": "2026-08-12"
+    },
+    {
+      "code": "EVER",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001640428/000119312526332775/ever-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "WEAV",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001609151/000160915126000074/weav-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "SRPT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000873303/000119312526335003/srpt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "EYE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001710155/000162828026056493/eye-20260704.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "WWW",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000110471/000162828026056524/www-20260704.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "RXRX",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001601830/000160183026000098/rxrx-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "WAY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001990354/000199035426000035/way-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29"
+    },
+    {
+      "code": "LIF",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001581760/000158176026000141/lifx-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "COLL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001267565/000162828026053851/coll-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "UMAC",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001956955/000168316826006016/umac_i10q-063026.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "SONO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001314727/000131472726000086/sono-20260627.htm"
+        }
+      ],
+      "filing_date": "2026-07-29"
+    },
+    {
+      "code": "GSHD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001726978/000172697826000060/gshd-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-23"
+    },
+    {
+      "code": "CERT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001827090/000182709026000028/cert-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "TDOC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001477449/000147744926000038/tdoc-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30"
+    },
+    {
+      "code": "COUR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001651562/000165156226000063/cour-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "INSP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001609550/000160955026000047/insp-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-03"
+    },
+    {
+      "code": "SERV",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001832483/000183248326000035/serv-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "TRIP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001526520/000119312526336693/trip-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "CRCT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001828962/000182896226000049/crct-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "MTCH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000891103/000089110326000130/mtch-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "YELP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001345016/000134501626000066/yelp-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "ALVO",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001898416/000189841626000004/alvo-20251231.htm"
+        }
+      ],
+      "filing_date": "2026-03-31"
+    },
+    {
+      "code": "REI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001384195/000138419526000080/rei-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "KOS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001509991/000150999126000049/kos-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-03"
+    },
+    {
+      "code": "NEO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001077183/000107718326000059/neo-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-28"
+    },
+    {
+      "code": "QMCO",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000709283/000162828026055417/qtm-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11"
+    },
+    {
+      "code": "AESI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001984060/000119312526333424/aesi-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "PRME",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001894562/000162828026053883/prme-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "PPLI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001800227/000162828026051881/ppli-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-03"
+    }
+  ]
+}

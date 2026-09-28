@@ -1,0 +1,7114 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-27",
+  "rows": [
+    {
+      "code": "SMR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001822966/000182296626000085/smr-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "VIX",
+      "coverage": "not_applicable",
+      "sources": [],
+      "filing_date": null,
+      "events": [],
+      "distress": {
+        "level": "not_applicable",
+        "reasons": []
+      }
+    },
+    {
+      "code": "IMSR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002019804/000110465926094085/tmb-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-11",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NABL",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001834488/000183448826000047/nabl-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-10",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001834488/000183448826000047/nabl-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "HOOD",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001783879/000178387926000114/hood-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30",
+      "events": [
+        {
+          "kind": "enforcement",
+          "label": "历史SEC调查已结束",
+          "detail": "公司披露SEC于2025年2月关闭RHC相关调查且不建议执法；2024年Wells通知不得继续标为本轮未结案件。",
+          "state": "resolved",
+          "legal_status": "disclosed",
+          "severity": "info",
+          "disclosed_at": "2026-07-30",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001783879/000178387926000114/hood-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "MP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001801368/000180136826000048/mp-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ORCL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001341439/000119312526389274/orcl-20260831.htm"
+        }
+      ],
+      "filing_date": "2026-09-11",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "HIMS",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001773751/000177375126000163/hims-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [
+        {
+          "kind": "enforcement",
+          "label": "配制药监管及调查转介",
+          "detail": "公司财报披露HHS已将潜在药品法律违规事项转介司法部，FDA点名拟限制相关配制GLP-1业务。转介不等于刑事起诉或定罪，但核心业务政策与经营可能受影响。",
+          "state": "current",
+          "legal_status": "investigation",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-10",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001773751/000177375126000163/hims-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "BITX",
+      "coverage": "not_applicable",
+      "sources": [],
+      "filing_date": null,
+      "events": [],
+      "distress": {
+        "level": "not_applicable",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CRWV",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001769628/000176962826000366/crwv-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-12",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-12",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001769628/000176962826000366/crwv-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "IBIT",
+      "coverage": "not_applicable",
+      "sources": [],
+      "filing_date": null,
+      "events": [],
+      "distress": {
+        "level": "not_applicable",
+        "reasons": []
+      }
+    },
+    {
+      "code": "RZLV",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001920294/000119312526132456/rzlv-20251231.htm"
+        }
+      ],
+      "filing_date": "2026-03-30",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-03-30",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001920294/000119312526132456/rzlv-20251231.htm"
+            }
+          ]
+        },
+        {
+          "kind": "survival",
+          "label": "持续经营重大疑虑",
+          "detail": "2026年9月披露的上半年报告仍明确持续经营疑虑；半年收入1.308亿美元但净亏损1.395亿美元、经营现金净流出9196万美元，增长含并购影响。募资成功不等于经营已自给。 这是财报持续经营披露，不等同已经破产。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "high",
+          "disclosed_at": "2026-03-30",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526378541/rzlv-ex99_2.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001920294&owner=exclude"
+            }
+          ],
+          "distress": "major"
+        }
+      ],
+      "distress": {
+        "level": "major",
+        "reasons": [
+          "持续经营重大疑虑"
+        ]
+      }
+    },
+    {
+      "code": "MCD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000063908/000006390826000073/mcd-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "IREN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-27",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ATCH",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001963088/000149315226044008/form10-k.htm"
+        }
+      ],
+      "filing_date": "2026-09-24",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "历史内控缺陷已整改",
+          "detail": "所列报告明确披露此前重大内控缺陷已整改；保留历史记录，不作为本轮仍未整改事项。",
+          "state": "resolved",
+          "legal_status": "disclosed",
+          "severity": "info",
+          "disclosed_at": "2026-09-24",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001963088/000149315226044008/form10-k.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CRCL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001876042/000187604226000248/crcl-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NVDA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000075/nvda-20260726.htm"
+        }
+      ],
+      "filing_date": "2026-08-26",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NKE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000088/nke-20260531.htm"
+        }
+      ],
+      "filing_date": "2026-07-15",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "KLAR",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002003292/000200329226000007/klar-20251231.htm"
+        }
+      ],
+      "filing_date": "2026-02-26",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "历史内控缺陷已整改",
+          "detail": "所列报告明确披露此前重大内控缺陷已整改；保留历史记录，不作为本轮仍未整改事项。",
+          "state": "resolved",
+          "legal_status": "disclosed",
+          "severity": "info",
+          "disclosed_at": "2026-02-26",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002003292/000200329226000007/klar-20251231.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "MNTN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001891027/000189102726000073/mntn-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "MSFT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000789019/000119312526323660/msft-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "META",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026050705/meta-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "RGTI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001838359/000110465926091993/rgti-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NXH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001130713/000162828026052744/byon-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "AVGO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000080/avgo-20260802.htm"
+        }
+      ],
+      "filing_date": "2026-09-10",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "QQQ",
+      "coverage": "not_applicable",
+      "sources": [],
+      "filing_date": null,
+      "events": [],
+      "distress": {
+        "level": "not_applicable",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ETOR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001493318/000121390026022034/ea0278371-20f_etoro.htm"
+        }
+      ],
+      "filing_date": "2026-03-02",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ARKO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001823794/000119312526339096/arko-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "UAA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001336917/000133691726000111/ua-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "PG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000080424/000008042426000103/pg-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "DOGEUSD",
+      "coverage": "not_applicable",
+      "sources": [],
+      "filing_date": null,
+      "events": [],
+      "distress": {
+        "level": "not_applicable",
+        "reasons": []
+      }
+    },
+    {
+      "code": "STUB",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001337634/000162828026056402/stub-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-13",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001337634/000162828026056402/stub-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "VOR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001817229/000119312526343607/vor-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "MSTR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001050446/000105044626000044/mstr-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-03",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "GEMI",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002055592/000205559226000065/gemi-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-13",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002055592/000205559226000065/gemi-20260630.htm"
+            }
+          ]
+        },
+        {
+          "kind": "financing",
+          "label": "经营消耗与融资依赖",
+          "detail": "交易所及托管业务已落地，但2026上半年收入9575万美元、净亏损2.167亿美元、经营现金净流出1.059亿美元。财报明确依赖历史股权及关联方/第三方借款，关联融资中断可能损害流动性。客户托管资金不用于公司续命；归入亏损融资型，不宣称已披露持续经营疑虑。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "distress": "watch",
+          "disclosed_at": "2026-08-13",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002055592/000205559226000065/gemi-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0002055592&owner=exclude"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "watch",
+        "reasons": [
+          "经营消耗与融资依赖"
+        ]
+      }
+    },
+    {
+      "code": "OSCR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001568651/000156865126000069/oscr-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "DKNG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001883685/000188368526000029/dkng-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "AMD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000123/amd-20260627.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "TQQQ",
+      "coverage": "not_applicable",
+      "sources": [],
+      "filing_date": null,
+      "events": [],
+      "distress": {
+        "level": "not_applicable",
+        "reasons": []
+      }
+    },
+    {
+      "code": "APP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001751008/000175100826000059/app-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "WBTN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001997859/000199785926000089/wbtn-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "FIG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001579878/000162828026053348/fig-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CRDO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001807794/000162828026060111/crdo-20260801.htm"
+        }
+      ],
+      "filing_date": "2026-09-02",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ALAB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001736297/000173629726000035/alab-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NBIS",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926052948/nbis-20251231x20f.htm"
+        }
+      ],
+      "filing_date": "2026-04-30",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-04-30",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926052948/nbis-20251231x20f.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "COIN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001679788/000167978826000088/coin-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "RDDT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000100/rddt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-31",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "RKLB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001819994/000181999426000062/rklb-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CELH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001341766/000134176626000050/celh-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "AFRM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001820953/000162828026059279/afrm-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-27",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "UPST",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001647639/000164763926000063/upst-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CVNA",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001690820/000169082026000055/cvna-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29",
+      "events": [
+        {
+          "kind": "enforcement",
+          "label": "SEC传票／财务指控待核",
+          "detail": "公司披露2025年6月收到SEC传票，认为主要涉及做空报告相关指控，正配合调查；公司否认报告内容，传票不等于SEC已认定造假。",
+          "state": "current",
+          "legal_status": "investigation",
+          "severity": "elevated",
+          "disclosed_at": "2026-07-29",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001690820/000169082026000055/cvna-20260630.htm"
+            }
+          ]
+        },
+        {
+          "kind": "controller",
+          "label": "控制人历史银行欺诈认罪",
+          "detail": "特拉华法院判决背景记载Ernest Garcia II于1990年就银行欺诈重罪认罪；2026代理文件确认Garcia父子集团控制多数投票权。历史个人行为不是Carvana当前财务造假结论。",
+          "state": "historical",
+          "legal_status": "admitted",
+          "severity": "elevated",
+          "disclosed_at": "2026-03-13",
+          "sources": [
+            {
+              "title": "特拉华法院判决事实背景",
+              "url": "https://courts.delaware.gov/Opinions/Download.aspx?id=334950"
+            },
+            {
+              "title": "Carvana 2026代理文件：控制权",
+              "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000017/cvna-20260313.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "APLD",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001144879/000114487926000048/apld-20260531.htm"
+        }
+      ],
+      "filing_date": "2026-07-29",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "历史内控缺陷已整改",
+          "detail": "所列报告明确披露此前重大内控缺陷已整改；保留历史记录，不作为本轮仍未整改事项。",
+          "state": "resolved",
+          "legal_status": "disclosed",
+          "severity": "info",
+          "disclosed_at": "2026-07-29",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001144879/000114487926000048/apld-20260531.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "RBLX",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001315098/000162828026051082/rblx-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CAVA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001639438/000162828026055864/cava-20260712.htm"
+        }
+      ],
+      "filing_date": "2026-08-12",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ONON",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001858985/000185898526000008/onholdingag-20251231.htm"
+        }
+      ],
+      "filing_date": "2026-03-03",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "历史内控缺陷已整改",
+          "detail": "所列报告明确披露此前重大内控缺陷已整改；保留历史记录，不作为本轮仍未整改事项。",
+          "state": "resolved",
+          "legal_status": "disclosed",
+          "severity": "info",
+          "disclosed_at": "2026-03-03",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001858985/000185898526000008/onholdingag-20251231.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "DUOL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001562088/000162828026053603/duol-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ELF",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001600033/000160003326000040/elf-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SOFI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001818874/000181887426000054/sofi-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SHOP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001594805/000159480526000047/shop-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001703399/000114036126015366/ef20067274_20f.htm"
+        }
+      ],
+      "filing_date": "2026-04-17",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NET",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001477333/000147733326000054/cloud-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "PLTR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000041/pltr-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ARM",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001973239/000197323926000097/arm-20260331.htm"
+        }
+      ],
+      "filing_date": "2026-05-26",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "历史内控缺陷已整改",
+          "detail": "所列报告明确披露此前重大内控缺陷已整改；保留历史记录，不作为本轮仍未整改事项。",
+          "state": "resolved",
+          "legal_status": "disclosed",
+          "severity": "info",
+          "disclosed_at": "2026-05-26",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001973239/000197323926000097/arm-20260331.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "LITE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001633978/000162828026057358/lite-20260627.htm"
+        }
+      ],
+      "filing_date": "2026-08-17",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "COHR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000820318/000082031826000020/iivi-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-14",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "MRVL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001835632/000183563226000025/mrvl-20260801.htm"
+        }
+      ],
+      "filing_date": "2026-08-28",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CLS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001030894/000103089426000044/cls-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-27",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "VRT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001674101/000162828026050609/vrt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "MU",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000015/mu-20260528.htm"
+        }
+      ],
+      "filing_date": "2026-06-25",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SNDK",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002023554/000162828026057406/sndk-20260703.htm"
+        }
+      ],
+      "filing_date": "2026-08-17",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "WDC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000106040/000162828026057139/wdc-20260703.htm"
+        }
+      ],
+      "filing_date": "2026-08-14",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CIEN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000936395/000162828026060361/cien-20260801.htm"
+        }
+      ],
+      "filing_date": "2026-09-03",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SMCI",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001375365/000137536526000022/smci-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-31",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-31",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001375365/000137536526000022/smci-20260630.htm"
+            }
+          ]
+        },
+        {
+          "kind": "management",
+          "label": "共同创始人被刑事起诉",
+          "detail": "美国司法部3月起诉共同创始人、时任董事Wally Liaw等涉嫌规避出口管制；不是定罪，公司不是该起诉的被告。8月公司内部调查称未发现现任高管知情、未发现需因此否定已发财报的证据，三人已无公司职务；内部调查结论不替代司法结论。",
+          "state": "current",
+          "legal_status": "charged",
+          "severity": "high",
+          "disclosed_at": "2026-08-20",
+          "sources": [
+            {
+              "title": "美国司法部2026-03-19起诉公告",
+              "url": "https://www.justice.gov/usao-sdny/pr/three-charged-conspiring-unlawfully-divert-us-artificial-intelligence-technology-china"
+            },
+            {
+              "title": "公司2026-08-20调查更新",
+              "url": "https://www.supermicro.com/en/pressreleases/supermicro-announces-completion-independent-investigation-and-continued-enhancement"
+            },
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001375365/000137536526000022/smci-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "BE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001664703/000162828026050247/be-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-28",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "PSTG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001474432/000147443226000088/pstg-20260802.htm"
+        }
+      ],
+      "filing_date": "2026-09-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "MTSI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001493594/000149359426000038/mtsi-20260703.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "TOST",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001650164/000165016426000164/tost-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NU",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001691493/000129281426002166/nuform20f_2025.htm"
+        }
+      ],
+      "filing_date": "2026-04-08",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "DAVE",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001841408/000119312526335154/dave-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [
+        {
+          "kind": "enforcement",
+          "label": "消费者业务监管调查",
+          "detail": "公司披露马里兰州总检察长及纽约金融服务部门传票，涉及产品、营销、费用与银行合作；调查仍在进行，未据此认定违法。",
+          "state": "current",
+          "legal_status": "investigation",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-05",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001841408/000119312526335154/dave-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ROOT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001788882/000178888226000061/root-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "LMND",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001691421/000169142126000055/lmnd-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "TTAN",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001638826/000163882626000094/ttan-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-08",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "历史内控缺陷已整改",
+          "detail": "所列报告明确披露此前重大内控缺陷已整改；保留历史记录，不作为本轮仍未整改事项。",
+          "state": "resolved",
+          "legal_status": "disclosed",
+          "severity": "info",
+          "disclosed_at": "2026-09-08",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001638826/000163882626000094/ttan-20260731.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "IOT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001642896/000162828026060909/iot-20260801.htm"
+        }
+      ],
+      "filing_date": "2026-09-08",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "MNDY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001845338/000117891326000870/zk2634436.htm"
+        }
+      ],
+      "filing_date": "2026-03-13",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "MDB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001441816/000162828026059830/mdb-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-01",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "GTLB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001653482/000162828026059943/gtlb-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-02",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "FROG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001800667/000119312526340294/frog-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ESTC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001707753/000170775326000054/estc-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-08-28",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "S",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001583708/000158370826000055/s-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-08-28",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "TTD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001671933/000167193326000086/ttd-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ZETA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001851003/000119312526333902/zeta-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "TMDX",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001756262/000119312526332843/tmdx-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-04",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001756262/000119312526332843/tmdx-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NTRA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001604821/000162828026054525/ntra-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "TEM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001717115/000119312526326090/tem-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "RXST",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001111485/000119312526335153/rxst-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "KTOS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001069258/000106925826000077/ktos-20260628.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "AVAV",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001368622/000110465926106423/avav-20260801x10q.htm"
+        }
+      ],
+      "filing_date": "2026-09-10",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-09-10",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001368622/000110465926106423/avav-20260801x10q.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "RDW",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001819810/000181981026000124/rdw-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-06",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001819810/000181981026000124/rdw-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "LUNR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001844452/000162828026056821/lunr-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "LEU",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001065059/000162828026053863/leu-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "UUUU",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001385849/000138584926000029/efr-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "UEC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001334933/000143774926019889/uec20260430_10q.htm"
+        }
+      ],
+      "filing_date": "2026-06-09",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ALB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000915913/000091591326000102/alb-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ENPH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001463101/000146310126000081/enph-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-28",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NXT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001852131/000185213126000048/nxt-20260703.htm"
+        }
+      ],
+      "filing_date": "2026-08-03",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "FLNC",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001868941/000186894126000029/flnc-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [
+        {
+          "kind": "enforcement",
+          "label": "SEC财报调查",
+          "detail": "公司披露SEC就财务报告索取信息并正在配合调查；结果尚不确定，公司表示据已有信息不预计成本对财务状况重大。不能写成已认定造假。",
+          "state": "current",
+          "legal_status": "investigation",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-05",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001868941/000186894126000029/flnc-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "RIVN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001874178/000187417826000054/rivn-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CHWY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001766502/000162828026061018/chwy-20260802.htm"
+        }
+      ],
+      "filing_date": "2026-09-09",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "BROS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001866581/000186658126000133/bros-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "RH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001528849/000110465926106764/rh-20260801x10q.htm"
+        }
+      ],
+      "filing_date": "2026-09-10",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001477815/000162828026054522/sg-20260628.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "FOUR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001794669/000179466926000045/four-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "BILL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001786352/000162828026058238/bill-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-20",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "RELY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001782170/000162828026053424/rely-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SYM",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001837240/000183724026000043/sym-20260627.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-05",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001837240/000183724026000043/sym-20260627.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "AAOI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001158114/000143774926026278/aaoi20260630_10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ACLS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001113232/000110465926091999/acls-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SITM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001451809/000145180926000060/sitm-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "AMBA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001280263/000119312526383365/amba-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "AEHR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001040470/000165495426006919/aehr_10k.htm"
+        }
+      ],
+      "filing_date": "2026-07-27",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "INOD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000903651/000110465926092021/inod-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "PATH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001734722/000173472226000050/path-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-08",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "DOCN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001582961/000162828026052556/docn-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ROKU",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001428439/000162828026054335/roku-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "EIKN",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001861123/000119312526349185/eikn-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-13",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001861123/000119312526349185/eikn-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "FSLY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001517413/000151741326000213/fsly-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "HUT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001964789/000110465926090025/hut-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "WULF",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001083301/000108330126000166/wulf-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ASTS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001780312/000119312526342550/asts-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "IONQ",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001824920/000119312526341001/ionq-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CRSP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001674416/000119312526330672/crsp-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-03",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "POWL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000080420/000008042026000107/powl-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SECZ",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002094496/000162828026056788/secz-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "经营主体内控缺陷",
+          "detail": "合并前壳公司控制有效，但报告明确经营主体Old Securitize存在多个重大内控缺陷，合并后控制将涵盖其业务，整改尚需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-13",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002094496/000162828026056788/secz-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "BKKT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001820302/000162828026055275/bakkt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CRML",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001951089/000121390026103607/ea0302128-20f_critical.htm"
+        }
+      ],
+      "filing_date": "2026-09-25",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-09-25",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001951089/000121390026103607/ea0302128-20f_critical.htm"
+            }
+          ]
+        },
+        {
+          "kind": "survival",
+          "label": "持续经营重大疑虑",
+          "detail": "2026年6月年报明确提示：现有流动性不足以保障近期义务，需进一步筹资。矿产项目尚需开发资金；有现金并不能覆盖全部承诺。 这是财报持续经营披露，不等同已经破产。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "high",
+          "disclosed_at": "2026-09-25",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001951089/000121390026103607/ea0302128-20f_critical.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001951089&owner=exclude"
+            }
+          ],
+          "distress": "major"
+        }
+      ],
+      "distress": {
+        "level": "major",
+        "reasons": [
+          "持续经营重大疑虑"
+        ]
+      }
+    },
+    {
+      "code": "CLSK",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000827876/000119312526338382/clsk-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "BTBT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001710350/000121390026088709/ea0300693-10q_bitdigital.htm"
+        }
+      ],
+      "filing_date": "2026-08-13",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SOC",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001831481/000183148126000104/socc-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [
+        {
+          "kind": "enforcement",
+          "label": "SEC及检方传票",
+          "detail": "公司披露2025年12月收到SEC及纽约南区检方传票，涉及媒体报告及证券交易等问题，正在提供资料；不是认定欺诈。",
+          "state": "current",
+          "legal_status": "investigation",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-10",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001831481/000183148126000104/socc-20260630.htm"
+            }
+          ]
+        },
+        {
+          "kind": "operations",
+          "label": "环境刑事指控／许可争议",
+          "detail": "公司披露2025年9月地方检方就施工等事项提出21项刑事指控，其中5项重罪指控；公司已聘律师抗辩。许可、诉讼与生产推进有关，指控不是定罪。",
+          "state": "current",
+          "legal_status": "charged",
+          "severity": "high",
+          "disclosed_at": "2026-08-10",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001831481/000183148126000104/socc-20260630.htm"
+            }
+          ],
+          "distress": "watch"
+        }
+      ],
+      "distress": {
+        "level": "watch",
+        "reasons": [
+          "环境刑事指控／许可争议"
+        ]
+      }
+    },
+    {
+      "code": "AURA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001501796/000119312526343429/aura-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "EVMN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002044725/000119312526337984/evmn-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "WYFI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002042022/000121390026088026/ea0300877-10q_whitefiber.htm"
+        }
+      ],
+      "filing_date": "2026-08-12",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "XXI",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002070457/000121390026087471/ea0299640-10q_twentyone.htm"
+        }
+      ],
+      "filing_date": "2026-08-11",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-11",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002070457/000121390026087471/ea0299640-10q_twentyone.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "DNA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001830214/000162828026054298/dna-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "GETY",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001898496/000162828026055246/gety-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [
+        {
+          "kind": "survival",
+          "label": "持续经营重大疑虑",
+          "detail": "2026年二季报及8月31日公告仍披露持续经营疑虑：诉讼付款、债务与可用流动性共同形成压力。成熟图片业务不等于资产负债表安全。 这是财报持续经营披露，不等同已经破产。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "high",
+          "disclosed_at": "2026-08-10",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001898496/000121390026095778/ea0304109-8k_getty.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001898496&owner=exclude"
+            }
+          ],
+          "distress": "major"
+        }
+      ],
+      "distress": {
+        "level": "major",
+        "reasons": [
+          "持续经营重大疑虑"
+        ]
+      }
+    },
+    {
+      "code": "QDEL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001906324/000190632426000033/qdel-20260628.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "TRON",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001956744/000149315226037161/form10-q.htm"
+        }
+      ],
+      "filing_date": "2026-08-11",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "VITL",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001579733/000119312526336753/vitl-20260628.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "历史内控缺陷已整改",
+          "detail": "所列报告明确披露此前重大内控缺陷已整改；保留历史记录，不作为本轮仍未整改事项。",
+          "state": "resolved",
+          "legal_status": "disclosed",
+          "severity": "info",
+          "disclosed_at": "2026-08-06",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001579733/000119312526336753/vitl-20260628.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "FWDI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000038264/000168316826006270/forward_i10q-063026.htm"
+        }
+      ],
+      "filing_date": "2026-08-12",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "UPB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002022626/000119312526343417/upb-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SRAD",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001836470/000110465926035485/srad-20251231x20f.htm"
+        }
+      ],
+      "filing_date": "2026-03-27",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-03-27",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001836470/000110465926035485/srad-20251231x20f.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "WRBY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001504776/000150477626000019/wrby-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "HTFL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001464521/000146452126000131/htfl-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-13",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "AMC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001411579/000141157926000059/amc-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-07-23",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SANA",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001770121/000119312526342395/sana-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [
+        {
+          "kind": "survival",
+          "label": "持续经营重大疑虑",
+          "detail": "2026年二季报明确现有资源可能不足以覆盖申报日起一年计划，披露持续经营疑虑；细胞疗法研发需继续筹资。 这是财报持续经营披露，不等同已经破产。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "high",
+          "disclosed_at": "2026-08-10",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001770121/000119312526342395/sana-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001770121&owner=exclude"
+            }
+          ],
+          "distress": "major"
+        }
+      ],
+      "distress": {
+        "level": "major",
+        "reasons": [
+          "持续经营重大疑虑"
+        ]
+      }
+    },
+    {
+      "code": "CHYM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001795586/000179558626000048/chym-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SPRY",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001671858/000119312526349140/spry-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13",
+      "events": [
+        {
+          "kind": "financing",
+          "label": "经营消耗与融资依赖",
+          "detail": "neffy已有真实销售，但上半年经营现金消耗显著。8月公告提出削减开支、争取2027年底现金流盈亏平衡；这是未来计划，仍列经营资金压力，不标持续经营疑虑。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "distress": "watch",
+          "disclosed_at": "2026-08-13",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://ir.ars-pharma.com/news-releases/news-release-details/ars-pharmaceuticals-outlines-strategic-priorities-including"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001671858&owner=exclude"
+            },
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001671858/000119312526349140/spry-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "watch",
+        "reasons": [
+          "经营消耗与融资依赖"
+        ]
+      }
+    },
+    {
+      "code": "PACB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001299130/000129913026000122/pacb-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ALKT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001529274/000152927426000052/alk-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "KLC",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001873529/000119312526349480/klc-20260704.htm"
+        }
+      ],
+      "filing_date": "2026-08-13",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-13",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001873529/000119312526349480/klc-20260704.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NTSK",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002063196/000119312526380428/ntsk-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-02",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "MAX",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001818383/000181838326000200/max-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SHEN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000354963/000035496326000209/shen-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "EYPT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001314102/000119312526335037/eypt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "PSFE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001833835/000119312526088095/psfe-20251231.htm"
+        }
+      ],
+      "filing_date": "2026-03-03",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "USAR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001970622/000197062226000057/usar-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "BRCB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002068577/000162828026055868/brcb-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-12",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "MPT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001287865/000119312526342583/mpt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "BEAM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001745999/000119312526331541/beam-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "HRL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000048465/000004846526000055/hrl-20260726.htm"
+        }
+      ],
+      "filing_date": "2026-08-27",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NMRA",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001885522/000119312526350370/nmra-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-14",
+      "events": [
+        {
+          "kind": "survival",
+          "label": "持续经营重大疑虑",
+          "detail": "2026年二季报明确现有现金不足以覆盖申报日起12个月运营计划，并披露持续经营疑虑；临床研发业务可核验，但尚无产品销售收入。 这是财报持续经营披露，不等同已经破产。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "high",
+          "disclosed_at": "2026-08-14",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001885522/000119312526350370/nmra-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001885522&owner=exclude"
+            }
+          ],
+          "distress": "major"
+        }
+      ],
+      "distress": {
+        "level": "major",
+        "reasons": [
+          "持续经营重大疑虑"
+        ]
+      }
+    },
+    {
+      "code": "RGEN",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000730272/000119312526323773/rgen-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-07-29",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000730272/000119312526323773/rgen-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "INFQ",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002007825/000162828026057508/infq-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-18",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-18",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002007825/000162828026057508/infq-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "LYTS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000763532/000143774926029621/lyts20260630d_10k.htm"
+        }
+      ],
+      "filing_date": "2026-09-03",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "FAC",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002049662/000162828026055707/fac-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-11",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002049662/000162828026055707/fac-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "INV",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002001557/000200155726000154/innv-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13",
+      "events": [
+        {
+          "kind": "survival",
+          "label": "持续经营重大疑虑",
+          "detail": "2026年二季报明确持续经营疑虑，经营现金消耗需外部资金支持；9月管理层调整与成本削减不等于已完成融资。 这是财报持续经营披露，不等同已经破产。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "high",
+          "disclosed_at": "2026-08-13",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002001557/000200155726000154/innv-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0002001557&owner=exclude"
+            }
+          ],
+          "distress": "major"
+        }
+      ],
+      "distress": {
+        "level": "major",
+        "reasons": [
+          "持续经营重大疑虑"
+        ]
+      }
+    },
+    {
+      "code": "RBRK",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001943896/000194389626000060/rbrk-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-01",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "WMG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001319161/000131916126000032/wmg-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "OLN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000074303/000007430326000077/oln-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-31",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CMG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001058090/000105809026000066/cmg-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-31",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CXM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001569345/000156934526000038/cxm-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-03",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NKLR",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002067627/000121390026090062/ea0300681-10q_terra.htm"
+        }
+      ],
+      "filing_date": "2026-08-14",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-14",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002067627/000121390026090062/ea0300681-10q_terra.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SAIL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002030781/000203078126000021/sail-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-10",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ALMS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001847367/000184736726000018/alms-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-13",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ARDT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001756655/000162828026055215/ardt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SGMT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001400118/000119312526343441/sgmt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "FWRG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001789940/000178994026000090/fwrg-20260628.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SLDE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001886428/000119312526326333/slde-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "INDI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001841925/000119312526340396/indi-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "MYGN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000899923/000089992326000072/mygn-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-31",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "DOCU",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001261333/000126133326000099/docu-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CLFD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000796505/000117184326005329/clfd20260630_10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "RUM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001830081/000121390026087311/ea0301267-10q_rumgroup.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "EGHT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001023731/000102373126000114/eght-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "GERN",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000886744/000088674426000037/gern-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "历史内控缺陷已整改",
+          "detail": "所列报告明确披露此前重大内控缺陷已整改；保留历史记录，不作为本轮仍未整改事项。",
+          "state": "resolved",
+          "legal_status": "disclosed",
+          "severity": "info",
+          "disclosed_at": "2026-08-05",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000886744/000088674426000037/gern-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "EVEX",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001823652/000155485526001685/evex-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "OKLO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001849056/000162828026054571/oklo-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "OXM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000075288/000007528826000084/oxm-20260801.htm"
+        }
+      ],
+      "filing_date": "2026-09-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "MTH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000833079/000083307926000128/mth-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-31",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SNAP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001564408/000156440826000052/snap-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "WHR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000106640/000010664026000061/whr-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ARRY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001820721/000162828026053517/arry-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "TE",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001992243/000199224326000022/t1-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-12",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-12",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001992243/000199224326000022/t1-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ARQQ",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001859690/000110465925119500/arqq-20250930x20f.htm"
+        }
+      ],
+      "filing_date": "2025-12-09",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2025-12-09",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001859690/000110465925119500/arqq-20250930x20f.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "PYPL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000082/pypl-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-28",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "MNRO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000876427/000087642726000010/mnro-20260627x10q.htm"
+        }
+      ],
+      "filing_date": "2026-07-29",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "XE",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002088896/000119312526347752/xe-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-13",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002088896/000119312526347752/xe-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ADTN",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000926282/000119312526331632/adtn-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-04",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000926282/000119312526331632/adtn-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ENOV",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001420800/000142080026000035/cfx-20260703.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "PLAY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001525769/000152576926000038/play-20260804.htm"
+        }
+      ],
+      "filing_date": "2026-09-14",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "FPS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002080126/000208012626000035/fps-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-09-15",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ODD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001907085/000110465926029490/odd-20251231x20f.htm"
+        }
+      ],
+      "filing_date": "2026-03-17",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NTGR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001122904/000119312526338402/ntgr-20260628.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ENVX",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001828318/000182831826000056/envx-20260705.htm"
+        }
+      ],
+      "filing_date": "2026-08-12",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "历史内控缺陷已整改",
+          "detail": "所列报告明确披露此前重大内控缺陷已整改；保留历史记录，不作为本轮仍未整改事项。",
+          "state": "resolved",
+          "legal_status": "disclosed",
+          "severity": "info",
+          "disclosed_at": "2026-08-12",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001828318/000182831826000056/envx-20260705.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "LYFT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001759509/000162828026054499/lyft-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SOUN",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001840856/000184085626000022/soun-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-10",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001840856/000184085626000022/soun-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "AVNT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001122976/000112297626000126/avnt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SLDP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001844862/000110465926090634/sldp-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "VIA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001603015/000160301526000026/via-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CYH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001108109/000119312526314196/cyh-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-23",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "OMDA",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001611115/000162828026054840/omda-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-07",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001611115/000162828026054840/omda-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "LCID",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001811210/000162828026052606/lcid-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [
+        {
+          "kind": "financing",
+          "label": "经营消耗与融资依赖",
+          "detail": "二季报现金消耗与融资需求较高；公司8月公告称融资及运营措施可支持至2027年较后时间。标记融资/经营压力，不宣称已存在持续经营疑虑或即将资金耗尽。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "distress": "watch",
+          "disclosed_at": "2026-08-04",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://lucidmotors.gcs-web.com/news-releases/news-release-details/lucid-announces-operational-reset-and-second-quarter-2026"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001811210&owner=exclude"
+            },
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001811210/000162828026052606/lcid-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "watch",
+        "reasons": [
+          "经营消耗与融资依赖"
+        ]
+      }
+    },
+    {
+      "code": "MWH",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002065636/000119312526352447/d152940d10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-14",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-14",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002065636/000119312526352447/d152940d10q.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "HLLY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001822928/000182292826000068/hlly-20260628.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NNE",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001923891/000149315226037345/form10-q.htm"
+        }
+      ],
+      "filing_date": "2026-08-12",
+      "events": [
+        {
+          "kind": "enforcement",
+          "label": "SEC传票／服务商事项",
+          "detail": "报告披露2026年1月收到涉及两家服务商的SEC传票，继2025年信息请求后持续配合；不等于公司或高管已被定罪。",
+          "state": "current",
+          "legal_status": "investigation",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-12",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001923891/000149315226037345/form10-q.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "PLNT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001637207/000163720726000044/plnt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CRNC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001768267/000162828026054339/crnc-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ALHC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001832466/000162828026051060/alhc-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "QS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001811414/000119312526316073/qs-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-24",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "YSS",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002086587/000162828026056874/yss-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-14",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-14",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002086587/000162828026056874/yss-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NRDS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001625278/000162527826000060/nrds-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "FRMI",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002071778/000207177826000051/frmi-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-14",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-14",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002071778/000207177826000051/frmi-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "HUBG",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000940942/000119312525266623/hubg-20250930.htm"
+        }
+      ],
+      "filing_date": "2025-11-05",
+      "events": [
+        {
+          "kind": "accounting",
+          "label": "财报重述及延迟",
+          "detail": "已查至9月公告：公司正在重述历史财报，最新完整可依赖报表尚未补齐；9月仅公布部分初步业绩并收到Nasdaq退市决定通知、拟申诉。经营业务明确，但暂不能可靠确认完整财务状况。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "high",
+          "disclosed_at": "2026-09-17",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000940942/000119312526394408/d574815dex991.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0000940942&owner=exclude"
+            }
+          ],
+          "distress": "major"
+        },
+        {
+          "kind": "listing",
+          "label": "退市决定／拟申诉",
+          "detail": "公司9月披露收到Nasdaq退市决定通知并拟申诉；不是已经停止交易或已退市。财报重述和逾期报告是关键待解决事项。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "high",
+          "disclosed_at": "2026-09-17",
+          "sources": [
+            {
+              "title": "SEC财报/公告原文",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000940942/000119312526394408/d574815dex991.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0000940942&owner=exclude"
+            }
+          ],
+          "distress": "major"
+        }
+      ],
+      "distress": {
+        "level": "major",
+        "reasons": [
+          "财报重述及延迟",
+          "退市决定／拟申诉"
+        ]
+      }
+    },
+    {
+      "code": "UHS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000352915/000119312526340278/uhs-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "WLTH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001524566/000162828026061848/wlth-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-14",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ALMU",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001828805/000121390026100584/ea0305364-10k_aeluma.htm"
+        }
+      ],
+      "filing_date": "2026-09-16",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-09-16",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001828805/000121390026100584/ea0305364-10k_aeluma.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ONT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001643615/000119312526337925/ont-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NCLH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001513761/000110465926089657/nclh-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-03",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "RR",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001963685/000121390026091798/ea0302286-10q_richtech.htm"
+        }
+      ],
+      "filing_date": "2026-08-19",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-19",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001963685/000121390026091798/ea0302286-10q_richtech.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "KVYO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001835830/000183583026000040/kvyo-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "BKSY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001753539/000175353926000124/bksy-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "JACK",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000807882/000080788226000091/jack-20260705.htm"
+        }
+      ],
+      "filing_date": "2026-08-12",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ASPI",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001921865/000119312526352603/aspi-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-14",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-14",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001921865/000119312526352603/aspi-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CLB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001958086/000119312526326345/clb-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "FUBO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001484769/000162828026053535/fubo-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001306830/000130683026000117/ce-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "VOYG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001788060/000162828026052292/voyg-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ARHS",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001875444/000187544426000030/arhs-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-06",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001875444/000187544426000030/arhs-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ULCC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001670076/000167007626000087/fron-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "WOLF",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000895419/000089541926000054/wolf-20260628.htm"
+        }
+      ],
+      "filing_date": "2026-08-20",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ACDC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001881487/000119312526337969/acdc-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "RGNX",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001590877/000119312526336725/rgnx-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "EQPT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001693736/000169373626000020/eqpt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "VELO",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001825079/000119312526344560/velo-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-11",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001825079/000119312526344560/velo-20260630.htm"
+            }
+          ]
+        },
+        {
+          "kind": "survival",
+          "label": "持续经营重大疑虑",
+          "detail": "2026年二季报明确：虽已增发、转债及偿债改善流动性，持续经营疑虑仍存在，运营计划需要额外融资。 这是财报持续经营披露，不等同已经破产。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "high",
+          "disclosed_at": "2026-08-11",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001825079/000119312526344560/velo-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001825079&owner=exclude"
+            }
+          ],
+          "distress": "major"
+        }
+      ],
+      "distress": {
+        "level": "major",
+        "reasons": [
+          "持续经营重大疑虑"
+        ]
+      }
+    },
+    {
+      "code": "FLY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001860160/000186016026000023/fly-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "BETA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001784570/000162828026055982/bta-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-12",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "GENI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001834489/000119312526110749/geni-20251231.htm"
+        }
+      ],
+      "filing_date": "2026-03-17",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "MRLN",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002028707/000162828026056882/mrln-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-14",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-14",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002028707/000162828026056882/mrln-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "EOSE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001805077/000162828026052906/eose-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "RCKT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001281895/000119312526342348/rckt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CABA",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001759138/000175913826000039/caba-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13",
+      "events": [
+        {
+          "kind": "survival",
+          "label": "持续经营疑虑／后续已融资",
+          "detail": "二季报披露持续经营疑虑；9月14日8-K确认7月至认股权证到期新增约1.15亿美元总募资，不能把6月底现金当作当前余额。资金补充后列观察，仍关注研发消耗与稀释。 后续募资是缓解因素，不据此宣称审计疑虑已正式撤销。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-13",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001759138/000175913826000041/caba-20260914.htm"
+            },
+            {
+              "title": "2026二季报风险背景",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001759138/000175913826000039/caba-20260630.htm"
+            }
+          ],
+          "distress": "watch"
+        }
+      ],
+      "distress": {
+        "level": "watch",
+        "reasons": [
+          "持续经营疑虑／后续已融资"
+        ]
+      }
+    },
+    {
+      "code": "BETR",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001835856/000162828026055745/aurcu-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11",
+      "events": [
+        {
+          "kind": "listing",
+          "label": "独立董事比例不合规",
+          "detail": "8月临时CEO任命后独立董事为4/8，公司8月4日告知Nasdaq不满足多数独立董事要求；报告称拟在整改期恢复，不是已退市。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-06",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001835856/000162828026055745/aurcu-20260630.htm"
+            }
+          ],
+          "distress": "watch"
+        }
+      ],
+      "distress": {
+        "level": "watch",
+        "reasons": [
+          "独立董事比例不合规"
+        ]
+      }
+    },
+    {
+      "code": "RUN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001469367/000162828026053366/run-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "IE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001879016/000187901626000017/ie-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "FATE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001434316/000119312526347988/fate-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "WD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001497770/000110465926091536/wd-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "PCT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001830033/000183003326000026/pct-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "APTV",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001521332/000152133226000061/aptv-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CATX",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000728387/000119312526342512/catx-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "GLOB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001557860/000162828026012910/glob-20251231.htm"
+        }
+      ],
+      "filing_date": "2026-02-27",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "LZM",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001958217/000195821726000009/lzm-20251231.htm"
+        }
+      ],
+      "filing_date": "2026-03-19",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-03-19",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001958217/000195821726000009/lzm-20251231.htm"
+            }
+          ]
+        },
+        {
+          "kind": "survival",
+          "label": "持续经营重大疑虑",
+          "detail": "最新可得2025年报明确提示持续经营疑虑，Kabanga矿产项目开发依赖后续融资；年报期偏旧，需留意后续项目资金公告。 这是财报持续经营披露，不等同已经破产。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "high",
+          "disclosed_at": "2026-03-19",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001958217/000195821726000009/lzm-20251231.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001958217&owner=exclude"
+            }
+          ],
+          "distress": "major"
+        }
+      ],
+      "distress": {
+        "level": "major",
+        "reasons": [
+          "持续经营重大疑虑"
+        ]
+      }
+    },
+    {
+      "code": "FIP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001899883/000189988326000036/fip-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NTLA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001652130/000119312526337952/ntla-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "KYTX",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001994702/000119312526344607/kytx-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "历史内控缺陷已整改",
+          "detail": "所列报告明确披露此前重大内控缺陷已整改；保留历史记录，不作为本轮仍未整改事项。",
+          "state": "resolved",
+          "legal_status": "disclosed",
+          "severity": "info",
+          "disclosed_at": "2026-08-11",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001994702/000119312526344607/kytx-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "FLUT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001635327/000163532726000056/flut-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "GOGO",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001537054/000119312526337921/gogo-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-06",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001537054/000119312526337921/gogo-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "RKT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001805284/000162828026054577/rkt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SVV",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001883313/000188331326000060/svv-20260704.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "AGIO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001439222/000143922226000118/agio-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NPWR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001845437/000184543726000033/npwr-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "EDIT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001650664/000165066426000083/edit-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "MAGN",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000041719/000004171926000049/form10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-06",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000041719/000004171926000049/form10q.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ABAT",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001576873/000149315226042497/form10-k.htm"
+        }
+      ],
+      "filing_date": "2026-09-14",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-09-14",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001576873/000149315226042497/form10-k.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "LAES",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001951222/000110465926037706/laes-20251231x20f.htm"
+        }
+      ],
+      "filing_date": "2026-03-31",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "PGY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001883085/000188308526000058/pgy-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "DFH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001825088/000162828026050969/dfh-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "EFX",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000033185/000003318526000028/efx-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-21",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ORGO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001661181/000119312526338049/orgo-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "GLXY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001859392/000185939226000091/glxy-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "IKT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001750149/000119312526344707/ikt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NRGV",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001828536/000182853626000101/nrgv-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ZG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001617640/000161764026000052/z-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "BBNX",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001674632/000119312526323777/bbnx-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "DNLI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001714899/000171489926000097/dnli-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "HGV",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001674168/000167416826000100/hgv-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "HUBS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001404655/000119312526335232/hubs-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ORBS",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001892492/000149315226036637/form10-q.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-07",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001892492/000149315226036637/form10-q.htm"
+            }
+          ]
+        },
+        {
+          "kind": "listing",
+          "label": "最低股价合规通知",
+          "detail": "8月5日收到Nasdaq最低1美元股价不合规通知，披露整改期至2027年2月1日；通知不等于退市，需跟踪正式恢复合规公告。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-05",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001892492/000149315226036637/form10-q.htm"
+            }
+          ],
+          "distress": "watch"
+        }
+      ],
+      "distress": {
+        "level": "watch",
+        "reasons": [
+          "最低股价合规通知"
+        ]
+      }
+    },
+    {
+      "code": "NB",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001512228/000119312526402806/nb-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-09-25",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-09-25",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001512228/000119312526402806/nb-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "LZ",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001286139/000128613926000031/lz-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "历史内控缺陷已整改",
+          "detail": "所列报告明确披露此前重大内控缺陷已整改；保留历史记录，不作为本轮仍未整改事项。",
+          "state": "resolved",
+          "legal_status": "disclosed",
+          "severity": "info",
+          "disclosed_at": "2026-08-05",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001286139/000128613926000031/lz-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CPRI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001530721/000153072126000081/cpri-20260627.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SITE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001650729/000165072926000016/site-20260628.htm"
+        }
+      ],
+      "filing_date": "2026-07-29",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "AI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001577526/000157752626000126/ai-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-09",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "DXYZ",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001843974/000121390026095201/ea0302101-01_ncsrs.htm"
+        }
+      ],
+      "filing_date": "2026-08-28",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "VERX",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001806837/000110465926090420/verx-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SMMT",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001599298/000159929826000068/smmt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-23",
+      "events": [
+        {
+          "kind": "survival",
+          "label": "持续经营重大疑虑",
+          "detail": "2026年二季报明确营运资金不足以覆盖未来12个月计划，需进一步融资；临床进展与资金风险应分开判断。 这是财报持续经营披露，不等同已经破产。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "high",
+          "disclosed_at": "2026-07-23",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001599298/000159929826000068/smmt-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001599298&owner=exclude"
+            }
+          ],
+          "distress": "major"
+        }
+      ],
+      "distress": {
+        "level": "major",
+        "reasons": [
+          "持续经营重大疑虑"
+        ]
+      }
+    },
+    {
+      "code": "TASK",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001829864/000182986426000149/task-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "PACK",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001712463/000162828026050839/pack-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "FOXF",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001424929/000142492926000049/foxf-20260703.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SIBN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001459839/000145983926000069/sibn-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "VRRM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001682745/000119312526335490/vrrm-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "GTM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001794515/000179451526000056/zi-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SENS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001616543/000110465926092056/sens-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "BRZE",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001676238/000167623826000040/brze-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-09",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-09-09",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001676238/000167623826000040/brze-20260731.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "WDAY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001327811/000132781126000044/wday-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-08-27",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NUAI",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0002028336/000121390026090138/ea0301610-10q_newera.htm"
+        }
+      ],
+      "filing_date": "2026-08-14",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-14",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0002028336/000121390026090138/ea0301610-10q_newera.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "WLFC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001018164/000101816426000068/wlfc-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "OEC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001609804/000162828026053422/oec-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "HAYW",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001834622/000183462226000047/hayw-20260627.htm"
+        }
+      ],
+      "filing_date": "2026-07-29",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SWIM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001833197/000162828026052925/swim-20260627.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "GEHC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001932393/000193239326000046/gehc-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "STAA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000718937/000071893726000037/staa-20260703.htm"
+        }
+      ],
+      "filing_date": "2026-08-12",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "EVER",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001640428/000119312526332775/ever-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "WEAV",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001609151/000160915126000074/weav-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SRPT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000873303/000119312526335003/srpt-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "EYE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001710155/000162828026056493/eye-20260704.htm"
+        }
+      ],
+      "filing_date": "2026-08-13",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "WWW",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000110471/000162828026056524/www-20260704.htm"
+        }
+      ],
+      "filing_date": "2026-08-13",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "RXRX",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001601830/000160183026000098/rxrx-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-05",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001601830/000160183026000098/rxrx-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "WAY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001990354/000199035426000035/way-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-29",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "LIF",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001581760/000158176026000141/lifx-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-10",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "COLL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001267565/000162828026053851/coll-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "UMAC",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001956955/000168316826006016/umac_i10q-063026.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "历史内控缺陷已整改",
+          "detail": "所列报告明确披露此前重大内控缺陷已整改；保留历史记录，不作为本轮仍未整改事项。",
+          "state": "resolved",
+          "legal_status": "disclosed",
+          "severity": "info",
+          "disclosed_at": "2026-08-06",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001956955/000168316826006016/umac_i10q-063026.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SONO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001314727/000131472726000086/sono-20260627.htm"
+        }
+      ],
+      "filing_date": "2026-07-29",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "GSHD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001726978/000172697826000060/gshd-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-23",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CERT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001827090/000182709026000028/cert-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-04",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "TDOC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001477449/000147744926000038/tdoc-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-30",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "COUR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001651562/000165156226000063/cour-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "INSP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001609550/000160955026000047/insp-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-03",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "SERV",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001832483/000183248326000035/serv-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-06",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001832483/000183248326000035/serv-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "TRIP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001526520/000119312526336693/trip-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "CRCT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001828962/000182896226000049/crct-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "MTCH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000891103/000089110326000130/mtch-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "YELP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001345016/000134501626000066/yelp-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "ALVO",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001898416/000189841626000004/alvo-20251231.htm"
+        }
+      ],
+      "filing_date": "2026-03-31",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-03-31",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001898416/000189841626000004/alvo-20251231.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "REI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001384195/000138419526000080/rei-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "KOS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001509991/000150999126000049/kos-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-03",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "NEO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001077183/000107718326000059/neo-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-07-28",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "QMCO",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000709283/000162828026055417/qtm-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-11",
+      "events": [
+        {
+          "kind": "controls",
+          "label": "重大内控缺陷待整改",
+          "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "elevated",
+          "disclosed_at": "2026-08-11",
+          "sources": [
+            {
+              "title": "公司定期报告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0000709283/000162828026055417/qtm-20260630.htm"
+            }
+          ]
+        }
+      ],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "AESI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001984060/000119312526333424/aesi-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-05",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    },
+    {
+      "code": "PRME",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001894562/000162828026053883/prme-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-06",
+      "events": [
+        {
+          "kind": "survival",
+          "label": "持续经营重大疑虑",
+          "detail": "2026年二季报明确后续融资不确定、持续经营疑虑未消除；基因编辑研发不等于已有商业收入。 这是财报持续经营披露，不等同已经破产。",
+          "state": "current",
+          "legal_status": "disclosed",
+          "severity": "high",
+          "disclosed_at": "2026-08-06",
+          "sources": [
+            {
+              "title": "原文专项核查：财报/公告",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001894562/000162828026053883/prme-20260630.htm"
+            },
+            {
+              "title": "SEC 公司申报记录",
+              "url": "https://www.sec.gov/edgar/browse/?CIK=0001894562&owner=exclude"
+            }
+          ],
+          "distress": "major"
+        }
+      ],
+      "distress": {
+        "level": "major",
+        "reasons": [
+          "持续经营重大疑虑"
+        ]
+      }
+    },
+    {
+      "code": "PPLI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "公司定期报告",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001800227/000162828026051881/ppli-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-03",
+      "events": [],
+      "distress": {
+        "level": "not_flagged",
+        "reasons": []
+      }
+    }
+  ]
+}

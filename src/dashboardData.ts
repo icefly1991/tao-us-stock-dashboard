@@ -8,10 +8,12 @@ export type MetricKey =
   | 'distance_52w_low_pct'
   | 'position_52w_pct'
 export type SummaryKey = 'watchlist_total' | 'today_up' | 'today_down'
+export type VolatilityData = { value: number | null; window_start: string; window_end: string; sample_count: number; status: 'available' | 'insufficient' | 'invalid' }
 
 export type Row = {
   business?: string
   rsi?: RsiData | null
+  volatility_3m?: VolatilityData | null
   code: string
   name: string
   symbol: string

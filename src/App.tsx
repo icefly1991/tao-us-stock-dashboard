@@ -1,3 +1,6 @@
+import { GovernanceBadge, GovernanceFilter } from './GovernanceReview'
+import { useGovernance, matchesGovernance } from './governanceData'
+import VolatilityCell from './VolatilityCell'
 import DataFreshness from './DataFreshness'
 import PageNavigation from './PageNavigation'
 import { useEffect, useMemo, useRef, useState } from 'react'
@@ -106,10 +109,13 @@ function App() {
   const [data, setData] = useState<DashboardData | null>(null)
   const [adjustment, setAdjustment] = useState<AdjustmentKey>('adjusted')
   const [tab, setTab] = useState<MetricKey>('position_52w_pct')
+  const [volatilitySort, setVolatilitySort] = useState(false)
   const [error, setError] = useState(false)
   const [collectionId, setCollectionId] = useState(getCollectionFromHash)
   const poolPage = collectionId === 'pool'
   const poolReview = usePoolReview(poolPage)
+  const governance = useGovernance()
+  const [riskFilter, setRiskFilter] = useState('all')
   const [grade, setGrade] = useState('all')
   const [category, setCategory] = useState('all')
   const researchPage = collectionId !== 'original'
@@ -120,8 +126,10 @@ function App() {
     const navigate = () => {
       setCollectionId(getCollectionFromHash())
       setTab('position_52w_pct')
+      setVolatilitySort(false)
       setGrade('all')
       setCategory('all')
+      setRiskFilter('all')
       window.scrollTo(0, 0)
     }
     window.addEventListener('hashchange', navigate)
@@ -149,14 +157,20 @@ function App() {
   const current = data?.adjustments[adjustment]
   const collection = useMemo(() => data?.collections?.find((item) => item.id === collectionId), [data, collectionId])
   const summary = collection?.summaries[adjustment] ?? current?.summary
-  const suspended = data?.suspended?.filter((item) => !collection || collection.codes.includes(item.code)) ?? []
-  const missingCodes = collection?.codes.filter((code) => !current?.rows.some((row) => row.code === code) && !suspended.some((item) => item.code === code)) ?? []
+  const suspended = data?.suspended?.filter((item) => (!collection || collection.codes.includes(item.code)) && matchesGovernance(governance.data?.rows.find(row => row.code === item.code), riskFilter)) ?? []
+  const missingCodes = collection?.codes.filter((code) => !current?.rows.some((row) => row.code === code) && !data?.suspended?.some((item) => item.code === code)) ?? []
   const rows = useMemo(
     () =>
       current
-        ? current.rows.filter((row) => (!collection || collection.codes.includes(row.code)) && (!poolPage || matchesPoolReview(poolReview.data?.rows.find(item => item.code === row.code), grade, category))).sort((a, b) => compareMetric(a, b, tab))
+        ? current.rows.filter((row) => matchesGovernance(governance.data?.rows.find(item => item.code === row.code), riskFilter) && (!collection || collection.codes.includes(row.code)) && (!poolPage || matchesPoolReview(poolReview.data?.rows.find(item => item.code === row.code), grade, category))).sort((a, b) => {
+          if (!volatilitySort) return compareMetric(a, b, tab)
+          const av = a.volatility_3m?.value, bv = b.volatility_3m?.value
+          if (av == null) return bv == null ? a.code.localeCompare(b.code) : 1
+          if (bv == null) return -1
+          return bv - av || a.code.localeCompare(b.code)
+        })
         : [],
-    [current, collection, tab, poolPage, grade, category, poolReview.data],
+    [current, collection, tab, poolPage, grade, category, poolReview.data, volatilitySort, governance.data, riskFilter],
   )
   const maxMetric = useMemo(
     () => Math.max(...rows.map((row) => Math.abs(row[tab] ?? 0)), 1),
@@ -232,9 +246,10 @@ function App() {
             </div>
           )}
           {data.errors?.length ? <p className="mb-4 text-sm text-amber-800">本次有 {data.errors.length} 条数据提示；可用标的继续展示。</p> : null}
+          <GovernanceFilter value={riskFilter} onChange={setRiskFilter} date={governance.data?.reviewed_at} error={governance.error} />
           {researchPage && !poolPage && data.collections && (
             <nav aria-label="活跃股观察列表分档" className="mb-4 flex flex-wrap gap-2">
-              {data.collections.filter((item) => item.id !== 'original').map((item) => (
+              {data.collections.filter((item) => ['research', 'A', 'B', 'C'].includes(item.id)).map((item) => (
                 <a key={item.id} href={item.id === 'research' ? '#/research' : `#/research/${item.id}`}
                   aria-current={collectionId === item.id ? 'page' : undefined}
                   className={`page-link ${collectionId === item.id ? 'selected' : ''}`}>
@@ -254,16 +269,16 @@ function App() {
             <div className="overflow-x-auto py-2" aria-label="指标选项">
               <div className="flex w-max gap-2">
                 {tabs.map((item) => (
-                  <button key={item.id} type="button" onClick={() => setTab(item.id)} aria-pressed={tab === item.id}
-                    className={`rounded-full border px-4 py-2 text-sm font-medium ${tab === item.id ? 'border-slate-400 bg-slate-100 text-slate-950' : 'border-slate-200 bg-white text-slate-600'}`}>
+                  <button key={item.id} type="button" onClick={() => { setTab(item.id); setVolatilitySort(false) }} aria-pressed={tab === item.id && !volatilitySort}
+                    className={`rounded-full border px-4 py-2 text-sm font-medium ${tab === item.id && !volatilitySort ? 'border-slate-400 bg-slate-100 text-slate-950' : 'border-slate-200 bg-white text-slate-600'}`}>
                     {item.label}
                   </button>
                 ))}
               </div>
             </div>
             <div className="border-b border-slate-200 px-2 py-3">
-              <h2 className="text-lg font-semibold text-slate-950">{collection?.label ?? '自选'} · {metricText[tab]}榜单</h2>
-              <p className="mt-1 text-xs text-slate-600">{adjustmentText[adjustment]} · {sortingNotes[tab]} · 缺失与停牌置后</p>
+              <h2 className="text-lg font-semibold text-slate-950">{collection?.label ?? '自选'} · {volatilitySort ? '近3月日均波幅' : metricText[tab]}榜单</h2>
+              <p className="mt-1 text-xs text-slate-600">{adjustmentText[adjustment]} · {volatilitySort ? '日均波幅越大越靠前' : sortingNotes[tab]} · 缺失与停牌置后</p>
             </div>
             <div ref={headerScroll} className="ranking-header-scroll" onScroll={(event) => {
               if (bodyScroll.current) bodyScroll.current.scrollLeft = event.currentTarget.scrollLeft
@@ -271,8 +286,9 @@ function App() {
               <div className="market-grid market-header" data-testid="column-header">
                 <div>#</div><div className="stock-identity text-left">标的</div><div className="business-cell">业务/板块</div>{poolPage && <><div className="fundamental-column-heading">基本面亮点</div><div className="fundamental-column-heading">基本面风险</div></>}<div>收盘价</div><div>今日</div>
                 {contextMetrics.map((metric) => <div key={metric}>{metricText[metric]}</div>)}
+                <div><button className="volatility-sort" aria-pressed={volatilitySort} onClick={() => setVolatilitySort(value => !value)} title="近三个自然月日均真实波幅百分比，含跳空；点击按波动从大到小排序">近3月日均波幅{volatilitySort ? ' ↓' : ' ↕'}</button></div>
                 <div title="日线Wilder RSI(14)与该股票自身年内百分位">RSI(14) / 年内分位</div>
-                <div className="text-sky-800">{metricText[tab]} ↑</div>
+                <div className="text-sky-800">{metricText[tab]}{volatilitySort ? '' : ' ↑'}</div>
               </div>
             </div>
           </div>
@@ -288,12 +304,14 @@ function App() {
                     <StockHistoryCode code={row.code} name={row.name} updatedAt={data.updated_at} adjustment={adjustment} available={row.history_available}>
                       <CopyStockButton value={row.code} label="代码" target={`${row.code}-code`} secondary />
                     </StockHistoryCode>
+                    <GovernanceBadge row={governance.data?.rows.find(item => item.code === row.code)} reviewedAt={governance.data?.reviewed_at} />
                   </div>
                   <div className="business-cell">{row.business || '—'}{poolPage && <FundamentalBadge assessment={poolReview.data?.rows.find(item => item.code === row.code)} />}</div>
                   {poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(item => item.code === row.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(item => item.code === row.code)} kind="risks" /></>}
                   <div className="font-medium text-slate-900">{formatClose(row)}</div>
                   <div className={getMetricTextClass(row.today_return_pct)}>{formatPct(row.today_return_pct)}</div>
                   {contextMetrics.map((metric) => <div key={metric} className={getMetricTextClass(row[metric])}>{formatMetric(metric, row[metric])}</div>)}
+                  <div><VolatilityCell value={row.volatility_3m} /></div>
                   <RsiCell key={`${row.code}/${adjustment}/${data.updated_at}`} rsi={row.rsi} stock={{ code: row.code, name: row.name, adjustment, updatedAt: data.updated_at }} />
                   <div>
                     <div className={getActiveMetricCellClass(tab, tab)}>
@@ -315,9 +333,10 @@ function App() {
                     <CopyStockButton value={item.code} label="代码" target={`${item.code}-code`} secondary />
                     <span className="mt-2 inline-block rounded bg-slate-200 px-2 py-1 text-xs text-slate-600">停牌</span>
                     {item.note && <p className="mt-1 text-xs">{item.note}</p>}
+                    <GovernanceBadge row={governance.data?.rows.find(row => row.code === item.code)} reviewedAt={governance.data?.reviewed_at} />
                   </div>
                   <div className="business-cell">{item.business || '—'}</div>{poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="risks" /></>}
-                  {Array.from({ length: contextMetrics.length + 4 }, (_, column) => column).map((column) => <div key={column}>—</div>)}
+                  {Array.from({ length: contextMetrics.length + 5 }, (_, column) => column).map((column) => <div key={column}>—</div>)}
                 </div>
               ))}
             </div>

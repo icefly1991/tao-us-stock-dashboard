@@ -125,3 +125,20 @@ CR-004 数据质量处理：已验证 Yahoo 的 MNTN/ONON/IOT 含历史 OHLC 矛
 
 ## 两年RSI走势（DATA-017）
 先按与榜单RSI相同的完整有效日线计算Wilder14，再截取最新行情日减两个自然年至当日的有效RSI点。不能先裁价格再计算，否则平滑起点会改变结果。最新点与榜单RSI共用一位小数口径。前端仅按日期绘图，不计算RSI、百分位或金融阈值。历史完整性容许7个自然日的休市差；不足明示实际可用范围。
+## DATA-024：近3月日均波幅 `volatility_3m`（CR-020）
+
+用于跨股比较历史日常摆动幅度，不是收益率、方向、年化标准差或破产概率。借鉴[ATR真实波幅](https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/atr)与[ATRP百分比比较](https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/atrp)的思路，但本项目先逐日除前收盘再平均，**不是标准Wilder ATRP**。
+
+以该标的最新有效日线日T为结束，S=T向前移3个自然月（月底按日历回退）；纳入S < trade_date <= T的日线，含最新日。
+
+```text
+TR_t = max(high_t-low_t, abs(high_t-close_(t-1)), abs(low_t-close_(t-1)))
+日波幅百分比_t = TR_t / close_(t-1) * 100
+value = 所有纳入日波幅百分比的算术平均，保留2位小数
+```
+
+要求可用历史覆盖S（至少一条S或此前记录作首个前收盘基准），且窗口内至少40个有效日线样本；否则value=null/status=insufficient，不用IPO以来短历史冒充完整三个月。每条high/low/close及前收必须有限且>0，并满足low<=close<=high，否则整项null/status=invalid，不跳过异常日美化结果。按现有有效日线序列相邻点计算，不新增交易所日历；40样本是最低门槛，不保证所有应交易日都齐全，因此提供真实sample_count和窗口日期。
+
+adjusted/raw分别计算且不混用。跨股票比较默认建议复权价；公司行动可能影响不同口径。股票、ETF、指数和加密均按三个自然月，各自交易日数不同，不强行令加密只取63天。
+
+对象字段：value、window_start（排除边界）、window_end（包含）、sample_count、status（available/insufficient/invalid）。旧JSON可缺对象，显示—；零波幅是真实0。主表常驻列，可降序排序（缺失置后、同值按代码），默认和其它指标仍保持原排序。箱体复用同批复权对象，仅详情展示，不改变筛选算法。

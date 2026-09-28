@@ -340,3 +340,9 @@ UI-015验证结果：45项Python测试、lint/build通过；箱体页面、RSI�
 - pool-review v2兼容扩展，不改变dashboard/boxes/history契约，研究日期仍2026-09-27，原名单日期不变。
 - 功能提交`311c5f4`，[Actions 36358576352](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36358576352) checks/build/deploy全部成功。真实行情首次生成成功：350成功、0失败、700历史文件；两箱体100/234处理均0错误，data_date=20260925。
 - 线上1440/390五页复验通过：新池两列、234条摘要、临床22/亏损融资14筛选、GEMI/IMSR/HUBG证据弹窗、箱体仅详情摘要和原三页均正常，无脚本错误或全页横向溢出。线上updated_at=2026-09-27T19:26-04:00；HUBG仍唯一资金等级待核实，18家公司本轮无可确认亮点。截图.cache/risk-visual/production-*.png。
+
+## 2026-09-28 CR-020 / CR-021 / CR-022 本地验收
+- 117项Python、55项独立Edge浏览器回归、lint/build通过。首次默认Chromium运行因本机未安装该浏览器而未执行测试，随后以PLAYWRIGHT_CHANNEL=msedge完整通过；CI继续安装并使用Chromium。
+- 真实Yahoo：350成功/0失败/0停牌，700历史文件/0错误，箱体100/234处理均0错误；data_date=20260925，updated_at=2026-09-28T00:23-04:00。两口径349只有三个月波幅，SECZ因完整三个月历史不足保留空值；IREN8.79%、MCD1.99%，各64个样本。
+- 1440/1024/390五页真实数据检查：无全页溢出，原两表桌面完整，风险弹窗/筛选及箱体详情正常。截图.cache/volatility-visual。来源重复键已修复；风险筛选不会把过滤掉的停牌股误报行情缺失。
+- 新增dashboard/boxes可选volatility_3m、独立governance-review v1及distress摘要，旧指标与箱体v4不变。350成员、名单维护日期、pool原评级不改。研究为2026-09-27快照，88条事件/78代码，11只重大风险、7只观察；不是全量偿债能力尽调或自动实时预警。

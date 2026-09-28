@@ -240,6 +240,28 @@ def build_box_metrics(bars: list[dict[str, Any]]) -> dict[str, Any]:
             "prior_box": {key: reference[key] for key in ("window_days", "low", "high", "width_pct")} if reference else None,
             "selection_note": "优先已验证的最短窗口，其次接近一轮的待观察窗口；其余展示达标项最多的窗口。整段回顾识别，非事前信号"}
 
+def build_volatility_metrics(frame: pd.DataFrame) -> dict[str, Any]:
+    """Three-calendar-month arithmetic mean of daily true range / previous close."""
+    ordered = frame.sort_values('trade_date').drop_duplicates('trade_date', keep='last')
+    dates = pd.to_datetime(ordered['trade_date'], format='mixed')
+    end = dates.iloc[-1]
+    cutoff = end - pd.DateOffset(months=3)
+    result = {'value': None, 'window_start': cutoff.strftime('%Y-%m-%d'),
+              'window_end': end.strftime('%Y-%m-%d'), 'sample_count': int((dates > cutoff).sum()), 'status': 'insufficient'}
+    if not (dates <= cutoff).any() or result['sample_count'] < 40:
+        return result
+    values = []
+    for i in [i for i, timestamp in enumerate(dates) if timestamp > cutoff and i > 0]:
+        current, previous = ordered.iloc[i], ordered.iloc[i - 1]
+        high, low, close, prior = (float(v) for v in (current['high'], current['low'], current['close'], previous['close']))
+        if not all(math.isfinite(v) and v > 0 for v in (high, low, close, prior)) or not low <= close <= high:
+            return {**result, 'status': 'invalid'}
+        values.append(max(high - low, abs(high - prior), abs(low - prior)) / prior * 100)
+    if not values:
+        return result
+    return {**result, 'value': round(sum(values) / len(values), 2), 'sample_count': len(values), 'status': 'available'}
+
+
 def build_metrics(frame: pd.DataFrame, year_start: str) -> dict[str, Any]:
     ordered = normalize_history(frame)
     latest = ordered.iloc[-1]
@@ -267,6 +289,7 @@ def build_metrics(frame: pd.DataFrame, year_start: str) -> dict[str, Any]:
         "position_52w_pct": rounded_range_position(close, low_52w, high_52w),
         "history_days": len(ordered),
         "rsi": build_rsi_metrics(ordered),
+        "volatility_3m": build_volatility_metrics(ordered),
     }
 
 
