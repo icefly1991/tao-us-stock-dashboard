@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "scanned_at": "2026-09-30T14:09:45.468Z",
+  "scanned_at": "2026-09-30T14:30:37.960Z",
   "pool_reviewed_at": "2026-09-27",
   "governance_reviewed_at": "2026-09-27",
   "method": "SEC structured facts and filing metadata; no automatic legal or survival conclusion",
@@ -109,102 +109,13 @@
     },
     {
       "code": "ALVO",
-      "status": "new_structured_facts",
-      "grade": "unknown",
-      "grade_reason": "尚未取得同报告期、同币种的完整可比字段；不以缺失数据推断基本面尚可。",
-      "highlights": [
-        {
-          "text": "报告期账面盈利",
-          "method": "财报规则初筛",
-          "sources": [
-            {
-              "title": "财报 · 2025-12-31",
-              "url": "https://www.sec.gov/Archives/edgar/data/1898416/000189841626000004/alvo-20251231.htm"
-            }
-          ]
-        },
-        {
-          "text": "现金/历史年化消耗≥2年",
-          "method": "财报规则初筛",
-          "sources": [
-            {
-              "title": "财报 · 2025-12-31",
-              "url": "https://www.sec.gov/Archives/edgar/data/1898416/000189841626000004/alvo-20251231.htm"
-            }
-          ]
-        }
-      ],
-      "risks": [
-        {
-          "text": "经营现金净流出",
-          "method": "财报规则初筛",
-          "sources": [
-            {
-              "title": "财报 · 2025-12-31",
-              "url": "https://www.sec.gov/Archives/edgar/data/1898416/000189841626000004/alvo-20251231.htm"
-            }
-          ]
-        }
-      ],
-      "facts": {
-        "revenue": null,
-        "net_income": {
-          "value": 27919000,
-          "unit": "USD",
-          "end": "2025-12-31",
-          "filed": "2026-03-31",
-          "url": "https://www.sec.gov/Archives/edgar/data/1898416/000189841626000004/alvo-20251231.htm",
-          "tag": "ProfitLoss",
-          "start": "2025-01-01"
-        },
-        "operating_cash_flow": {
-          "value": -50197000,
-          "unit": "USD",
-          "end": "2025-12-31",
-          "filed": "2026-03-31",
-          "url": "https://www.sec.gov/Archives/edgar/data/1898416/000189841626000004/alvo-20251231.htm",
-          "tag": "CashFlowsFromUsedInOperatingActivities",
-          "start": "2025-01-01"
-        },
-        "cash": {
-          "value": 172359000,
-          "unit": "USD",
-          "end": "2025-12-31",
-          "filed": "2026-03-31",
-          "url": "https://www.sec.gov/Archives/edgar/data/1898416/000189841626000004/alvo-20251231.htm",
-          "tag": "CashAndCashEquivalents"
-        },
-        "current_assets": {
-          "value": 574015000,
-          "unit": "USD",
-          "end": "2025-12-31",
-          "filed": "2026-03-31",
-          "url": "https://www.sec.gov/Archives/edgar/data/1898416/000189841626000004/alvo-20251231.htm",
-          "tag": "CurrentAssets"
-        },
-        "current_liabilities": {
-          "value": 304078000,
-          "unit": "USD",
-          "end": "2025-12-31",
-          "filed": "2026-03-31",
-          "url": "https://www.sec.gov/Archives/edgar/data/1898416/000189841626000004/alvo-20251231.htm",
-          "tag": "CurrentLiabilities"
-        },
-        "equity_proceeds": null,
-        "financing_cash_flow": {
-          "value": 270832000,
-          "unit": "USD",
-          "end": "2025-12-31",
-          "filed": "2026-03-31",
-          "url": "https://www.sec.gov/Archives/edgar/data/1898416/000189841626000004/alvo-20251231.htm",
-          "tag": "CashFlowsFromUsedInFinancingActivities",
-          "start": "2025-01-01"
-        }
-      },
+      "status": "unchanged",
+      "grade": null,
+      "highlights": [],
+      "risks": [],
+      "facts": {},
       "facts_filed_at": "2026-03-31",
-      "source": "https://www.sec.gov/Archives/edgar/data/1898416/000189841626000004/alvo-20251231.htm",
-      "manual_grade": "watch",
-      "manual_reviewed_at": "2026-09-27"
+      "source": null
     },
     {
       "code": "AMC",
@@ -1018,99 +929,13 @@
     },
     {
       "code": "HUBG",
-      "status": "new_structured_facts",
+      "status": "unchanged",
       "grade": null,
-      "grade_reason": "行业或披露事项需专门口径，结构化财报不自动分级。",
-      "highlights": [
-        {
-          "text": "报告期账面盈利",
-          "method": "财报规则初筛",
-          "sources": [
-            {
-              "title": "财报 · 2025-09-30",
-              "url": "https://www.sec.gov/Archives/edgar/data/940942/000119312525266623/hubg-20250930.htm"
-            }
-          ]
-        },
-        {
-          "text": "经营现金流为正",
-          "method": "财报规则初筛",
-          "sources": [
-            {
-              "title": "财报 · 2025-09-30",
-              "url": "https://www.sec.gov/Archives/edgar/data/940942/000119312525266623/hubg-20250930.htm"
-            }
-          ]
-        }
-      ],
+      "highlights": [],
       "risks": [],
-      "facts": {
-        "revenue": {
-          "value": 2755360000,
-          "unit": "USD",
-          "end": "2025-09-30",
-          "filed": "2025-11-05",
-          "url": "https://www.sec.gov/Archives/edgar/data/940942/000119312525266623/hubg-20250930.htm",
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-          "start": "2025-01-01"
-        },
-        "net_income": {
-          "value": 80648000,
-          "unit": "USD",
-          "end": "2025-09-30",
-          "filed": "2025-11-05",
-          "url": "https://www.sec.gov/Archives/edgar/data/940942/000119312525266623/hubg-20250930.htm",
-          "tag": "NetIncomeLoss",
-          "start": "2025-01-01"
-        },
-        "operating_cash_flow": {
-          "value": 159633000,
-          "unit": "USD",
-          "end": "2025-09-30",
-          "filed": "2025-11-05",
-          "url": "https://www.sec.gov/Archives/edgar/data/940942/000119312525266623/hubg-20250930.htm",
-          "tag": "NetCashProvidedByUsedInOperatingActivities",
-          "start": "2025-01-01"
-        },
-        "cash": {
-          "value": 119699000,
-          "unit": "USD",
-          "end": "2025-09-30",
-          "filed": "2025-11-05",
-          "url": "https://www.sec.gov/Archives/edgar/data/940942/000119312525266623/hubg-20250930.htm",
-          "tag": "CashAndCashEquivalentsAtCarryingValue"
-        },
-        "current_assets": {
-          "value": 788333000,
-          "unit": "USD",
-          "end": "2025-09-30",
-          "filed": "2025-11-05",
-          "url": "https://www.sec.gov/Archives/edgar/data/940942/000119312525266623/hubg-20250930.htm",
-          "tag": "AssetsCurrent"
-        },
-        "current_liabilities": {
-          "value": 535001000,
-          "unit": "USD",
-          "end": "2025-09-30",
-          "filed": "2025-11-05",
-          "url": "https://www.sec.gov/Archives/edgar/data/940942/000119312525266623/hubg-20250930.htm",
-          "tag": "LiabilitiesCurrent"
-        },
-        "equity_proceeds": null,
-        "financing_cash_flow": {
-          "value": -53151000,
-          "unit": "USD",
-          "end": "2025-09-30",
-          "filed": "2025-11-05",
-          "url": "https://www.sec.gov/Archives/edgar/data/940942/000119312525266623/hubg-20250930.htm",
-          "tag": "NetCashProvidedByUsedInFinancingActivities",
-          "start": "2025-01-01"
-        }
-      },
+      "facts": {},
       "facts_filed_at": "2025-11-05",
-      "source": "https://www.sec.gov/Archives/edgar/data/940942/000119312525266623/hubg-20250930.htm",
-      "manual_grade": "unknown",
-      "manual_reviewed_at": "2026-09-27"
+      "source": null
     },
     {
       "code": "HUBS",
@@ -1734,110 +1559,13 @@
     },
     {
       "code": "PPLI",
-      "status": "new_structured_facts",
-      "grade": "unknown",
-      "grade_reason": "结构化数据报告期距核查日超过200天，需补最新中期/公司公告。",
-      "highlights": [
-        {
-          "text": "经营现金流为正",
-          "method": "财报规则初筛",
-          "sources": [
-            {
-              "title": "财报 · 2024-12-31",
-              "url": "https://www.sec.gov/Archives/edgar/data/1800227/000180022725000013/iaci-20241231.htm"
-            }
-          ]
-        },
-        {
-          "text": "已有收入基础",
-          "method": "财报规则初筛",
-          "sources": [
-            {
-              "title": "财报 · 2024-12-31",
-              "url": "https://www.sec.gov/Archives/edgar/data/1800227/000162828026009997/iaci-20251231.htm"
-            }
-          ]
-        }
-      ],
-      "risks": [
-        {
-          "text": "报告期亏损",
-          "method": "财报规则初筛",
-          "sources": [
-            {
-              "title": "财报 · 2024-12-31",
-              "url": "https://www.sec.gov/Archives/edgar/data/1800227/000162828026009997/iaci-20251231.htm"
-            }
-          ]
-        }
-      ],
-      "facts": {
-        "revenue": {
-          "value": 2622121000,
-          "unit": "USD",
-          "end": "2024-12-31",
-          "filed": "2026-02-20",
-          "url": "https://www.sec.gov/Archives/edgar/data/1800227/000162828026009997/iaci-20251231.htm",
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-          "start": "2024-01-01"
-        },
-        "net_income": {
-          "value": -539897000,
-          "unit": "USD",
-          "end": "2024-12-31",
-          "filed": "2026-02-20",
-          "url": "https://www.sec.gov/Archives/edgar/data/1800227/000162828026009997/iaci-20251231.htm",
-          "tag": "NetIncomeLoss",
-          "start": "2024-01-01"
-        },
-        "operating_cash_flow": {
-          "value": 354518000,
-          "unit": "USD",
-          "end": "2024-12-31",
-          "filed": "2025-02-28",
-          "url": "https://www.sec.gov/Archives/edgar/data/1800227/000180022725000013/iaci-20241231.htm",
-          "tag": "NetCashProvidedByUsedInOperatingActivities",
-          "start": "2024-01-01"
-        },
-        "cash": {
-          "value": 1363547000,
-          "unit": "USD",
-          "end": "2024-12-31",
-          "filed": "2026-08-03",
-          "url": "https://www.sec.gov/Archives/edgar/data/1800227/000162828026051881/ppli-20260630.htm",
-          "tag": "CashAndCashEquivalentsAtCarryingValue"
-        },
-        "current_assets": {
-          "value": 2485036000,
-          "unit": "USD",
-          "end": "2024-12-31",
-          "filed": "2026-02-20",
-          "url": "https://www.sec.gov/Archives/edgar/data/1800227/000162828026009997/iaci-20251231.htm",
-          "tag": "AssetsCurrent"
-        },
-        "current_liabilities": {
-          "value": 886192000,
-          "unit": "USD",
-          "end": "2024-12-31",
-          "filed": "2026-02-20",
-          "url": "https://www.sec.gov/Archives/edgar/data/1800227/000162828026009997/iaci-20251231.htm",
-          "tag": "LiabilitiesCurrent"
-        },
-        "equity_proceeds": null,
-        "financing_cash_flow": {
-          "value": -129099000,
-          "unit": "USD",
-          "end": "2024-12-31",
-          "filed": "2025-02-28",
-          "url": "https://www.sec.gov/Archives/edgar/data/1800227/000180022725000013/iaci-20241231.htm",
-          "tag": "NetCashProvidedByUsedInFinancingActivities",
-          "start": "2024-01-01"
-        }
-      },
+      "status": "unchanged",
+      "grade": null,
+      "highlights": [],
+      "risks": [],
+      "facts": {},
       "facts_filed_at": "2026-08-03",
-      "source": "https://www.sec.gov/Archives/edgar/data/1800227/000162828026051881/ppli-20260630.htm",
-      "manual_grade": "watch",
-      "manual_reviewed_at": "2026-09-27"
+      "source": null
     },
     {
       "code": "PRME",
@@ -2201,99 +1929,13 @@
     },
     {
       "code": "SRAD",
-      "status": "new_structured_facts",
-      "grade": "unknown",
-      "grade_reason": "结构化数据报告期距核查日超过200天，需补最新中期/公司公告。",
-      "highlights": [
-        {
-          "text": "报告期账面盈利",
-          "method": "财报规则初筛",
-          "sources": [
-            {
-              "title": "财报 · 2025-12-31",
-              "url": "https://www.sec.gov/Archives/edgar/data/1836470/000110465926035485/srad-20251231x20f.htm"
-            }
-          ]
-        },
-        {
-          "text": "经营现金流为正",
-          "method": "财报规则初筛",
-          "sources": [
-            {
-              "title": "财报 · 2025-12-31",
-              "url": "https://www.sec.gov/Archives/edgar/data/1836470/000110465926035485/srad-20251231x20f.htm"
-            }
-          ]
-        }
-      ],
+      "status": "unchanged",
+      "grade": null,
+      "highlights": [],
       "risks": [],
-      "facts": {
-        "revenue": {
-          "value": 1289965000,
-          "unit": "EUR",
-          "end": "2025-12-31",
-          "filed": "2026-03-27",
-          "url": "https://www.sec.gov/Archives/edgar/data/1836470/000110465926035485/srad-20251231x20f.htm",
-          "tag": "Revenue",
-          "start": "2025-01-01"
-        },
-        "net_income": {
-          "value": 100324000,
-          "unit": "EUR",
-          "end": "2025-12-31",
-          "filed": "2026-03-27",
-          "url": "https://www.sec.gov/Archives/edgar/data/1836470/000110465926035485/srad-20251231x20f.htm",
-          "tag": "ProfitLoss",
-          "start": "2025-01-01"
-        },
-        "operating_cash_flow": {
-          "value": 403015000,
-          "unit": "EUR",
-          "end": "2025-12-31",
-          "filed": "2026-03-27",
-          "url": "https://www.sec.gov/Archives/edgar/data/1836470/000110465926035485/srad-20251231x20f.htm",
-          "tag": "CashFlowsFromUsedInOperatingActivities",
-          "start": "2025-01-01"
-        },
-        "cash": {
-          "value": 365295000,
-          "unit": "EUR",
-          "end": "2025-12-31",
-          "filed": "2026-03-27",
-          "url": "https://www.sec.gov/Archives/edgar/data/1836470/000110465926035485/srad-20251231x20f.htm",
-          "tag": "CashAndCashEquivalents"
-        },
-        "current_assets": {
-          "value": 670474000,
-          "unit": "EUR",
-          "end": "2025-12-31",
-          "filed": "2026-03-27",
-          "url": "https://www.sec.gov/Archives/edgar/data/1836470/000110465926035485/srad-20251231x20f.htm",
-          "tag": "CurrentAssets"
-        },
-        "current_liabilities": {
-          "value": 574630000,
-          "unit": "EUR",
-          "end": "2025-12-31",
-          "filed": "2026-03-27",
-          "url": "https://www.sec.gov/Archives/edgar/data/1836470/000110465926035485/srad-20251231x20f.htm",
-          "tag": "CurrentLiabilities"
-        },
-        "equity_proceeds": null,
-        "financing_cash_flow": {
-          "value": -127773000,
-          "unit": "EUR",
-          "end": "2025-12-31",
-          "filed": "2026-03-27",
-          "url": "https://www.sec.gov/Archives/edgar/data/1836470/000110465926035485/srad-20251231x20f.htm",
-          "tag": "CashFlowsFromUsedInFinancingActivities",
-          "start": "2025-01-01"
-        }
-      },
+      "facts": {},
       "facts_filed_at": "2026-03-27",
-      "source": "https://www.sec.gov/Archives/edgar/data/1836470/000110465926035485/srad-20251231x20f.htm",
-      "manual_grade": "watch",
-      "manual_reviewed_at": "2026-09-27"
+      "source": null
     },
     {
       "code": "SRPT",
@@ -2711,6 +2353,7 @@
       "code": "SMR",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Fabricated Plate Work (Boiler Shops)"
@@ -2725,6 +2368,7 @@
       "code": "IMSR",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Fabricated Plate Work (Boiler Shops)"
@@ -2733,6 +2377,7 @@
       "code": "NABL",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -2741,6 +2386,7 @@
       "code": "HOOD",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Security Brokers, Dealers & Flotation Companies"
@@ -2749,6 +2395,7 @@
       "code": "MP",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Metal Mining"
@@ -2757,6 +2404,7 @@
       "code": "ORCL",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -2765,6 +2413,7 @@
       "code": "HIMS",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Offices & Clinics of  Doctors of  Medicine"
@@ -2779,6 +2428,7 @@
       "code": "CRWV",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -2793,6 +2443,7 @@
       "code": "RZLV",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Programming, Data Processing, Etc."
@@ -2801,6 +2452,7 @@
       "code": "MCD",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Retail-Eating  Places"
@@ -2809,6 +2461,7 @@
       "code": "IREN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -2817,6 +2470,7 @@
       "code": "ATCH",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -2825,6 +2479,7 @@
       "code": "CRCL",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -2833,6 +2488,7 @@
       "code": "NVDA",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Semiconductors & Related Devices"
@@ -2841,6 +2497,7 @@
       "code": "NKE",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Rubber & Plastics Footwear"
@@ -2849,6 +2506,7 @@
       "code": "KLAR",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -2857,6 +2515,7 @@
       "code": "MNTN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Advertising"
@@ -2865,6 +2524,7 @@
       "code": "MSFT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -2873,6 +2533,7 @@
       "code": "META",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Programming, Data Processing, Etc."
@@ -2881,6 +2542,7 @@
       "code": "RGTI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Programming Services"
@@ -2889,6 +2551,7 @@
       "code": "NXH",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Retail-Catalog & Mail-Order Houses"
@@ -2897,6 +2560,7 @@
       "code": "AVGO",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Semiconductors & Related Devices"
@@ -2911,6 +2575,7 @@
       "code": "ETOR",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Security Brokers, Dealers & Flotation Companies"
@@ -2919,6 +2584,7 @@
       "code": "ARKO",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Retail-Convenience Stores"
@@ -2927,6 +2593,7 @@
       "code": "UAA",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Apparel & Other Finishd Prods of  Fabrics & Similar Matl"
@@ -2935,6 +2602,7 @@
       "code": "PG",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics"
@@ -2949,6 +2617,7 @@
       "code": "STUB",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Miscellaneous Amusement & Recreation"
@@ -2957,6 +2626,7 @@
       "code": "VOR",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Biological Products, (No Diagnostic Substances)"
@@ -2974,6 +2644,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526403417/mstr-20260914.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001193125-26-403417"
@@ -2984,6 +2655,7 @@
       "code": "GEMI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -2992,6 +2664,7 @@
       "code": "OSCR",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Hospital & Medical Service Plans"
@@ -3000,6 +2673,7 @@
       "code": "DKNG",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Miscellaneous Amusement & Recreation"
@@ -3017,6 +2691,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000182/amd-20260926.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0000002488-26-000182"
@@ -3033,6 +2708,7 @@
       "code": "APP",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Programming, Data Processing, Etc."
@@ -3041,6 +2717,7 @@
       "code": "WBTN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Miscellaneous Publishing"
@@ -3049,6 +2726,7 @@
       "code": "FIG",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -3057,6 +2735,7 @@
       "code": "CRDO",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Semiconductors & Related Devices"
@@ -3065,6 +2744,7 @@
       "code": "ALAB",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Semiconductors & Related Devices"
@@ -3073,6 +2753,7 @@
       "code": "NBIS",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Programming, Data Processing, Etc."
@@ -3081,6 +2762,7 @@
       "code": "COIN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -3089,6 +2771,7 @@
       "code": "RDDT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Processing & Data Preparation"
@@ -3097,6 +2780,7 @@
       "code": "RKLB",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Guided Missiles & Space Vehicles & Parts"
@@ -3105,6 +2789,7 @@
       "code": "CELH",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Bottled & Canned Soft Drinks & Carbonated Waters"
@@ -3113,6 +2798,7 @@
       "code": "AFRM",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Personal Credit Institutions"
@@ -3121,6 +2807,7 @@
       "code": "UPST",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -3129,6 +2816,7 @@
       "code": "CVNA",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Retail-Auto Dealers & Gasoline Stations"
@@ -3137,6 +2825,7 @@
       "code": "APLD",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Processing & Data Preparation"
@@ -3145,6 +2834,7 @@
       "code": "RBLX",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -3153,6 +2843,7 @@
       "code": "CAVA",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Retail-Eating  Places"
@@ -3161,6 +2852,7 @@
       "code": "ONON",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Rubber & Plastics Footwear"
@@ -3169,6 +2861,7 @@
       "code": "DUOL",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -3177,6 +2870,7 @@
       "code": "ELF",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Perfumes, Cosmetics & Other Toilet Preparations"
@@ -3185,6 +2879,7 @@
       "code": "SOFI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -3193,6 +2888,7 @@
       "code": "SHOP",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -3201,6 +2897,7 @@
       "code": "SE",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Miscellaneous Business Services"
@@ -3209,6 +2906,7 @@
       "code": "NET",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -3217,6 +2915,7 @@
       "code": "PLTR",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -3225,6 +2924,7 @@
       "code": "ARM",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Semiconductors & Related Devices"
@@ -3233,6 +2933,7 @@
       "code": "LITE",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Communications Equipment, NEC"
@@ -3241,6 +2942,7 @@
       "code": "COHR",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Optical Instruments & Lenses"
@@ -3249,6 +2951,7 @@
       "code": "MRVL",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Semiconductors & Related Devices"
@@ -3257,6 +2960,7 @@
       "code": "CLS",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Printed Circuit Boards"
@@ -3265,6 +2969,7 @@
       "code": "VRT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Electronic Components, NEC"
@@ -3273,6 +2978,7 @@
       "code": "MU",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Semiconductors & Related Devices"
@@ -3281,6 +2987,7 @@
       "code": "SNDK",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Computer Storage Devices"
@@ -3289,6 +2996,7 @@
       "code": "WDC",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Computer Storage Devices"
@@ -3297,6 +3005,7 @@
       "code": "CIEN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Telephone & Telegraph Apparatus"
@@ -3305,6 +3014,7 @@
       "code": "SMCI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Electronic Computers"
@@ -3313,6 +3023,7 @@
       "code": "BE",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Electrical Industrial Apparatus"
@@ -3321,6 +3032,7 @@
       "code": "PSTG",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Computer Storage Devices"
@@ -3329,6 +3041,7 @@
       "code": "MTSI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Semiconductors & Related Devices"
@@ -3337,6 +3050,7 @@
       "code": "TOST",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Processing & Data Preparation"
@@ -3345,6 +3059,7 @@
       "code": "NU",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -3353,6 +3068,7 @@
       "code": "DAVE",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -3361,6 +3077,7 @@
       "code": "ROOT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Fire, Marine & Casualty Insurance"
@@ -3369,6 +3086,7 @@
       "code": "LMND",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Fire, Marine & Casualty Insurance"
@@ -3377,6 +3095,7 @@
       "code": "TTAN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -3385,6 +3104,7 @@
       "code": "IOT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Integrated Systems Design"
@@ -3393,6 +3113,7 @@
       "code": "MNDY",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -3418,6 +3139,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1441816/000162828026063657/mdb-20260924.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001628280-26-063657",
@@ -3429,6 +3151,7 @@
       "code": "GTLB",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -3437,6 +3160,7 @@
       "code": "FROG",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -3445,6 +3169,7 @@
       "code": "ESTC",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -3453,6 +3178,7 @@
       "code": "S",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -3461,6 +3187,7 @@
       "code": "TTD",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Programming, Data Processing, Etc."
@@ -3469,6 +3196,7 @@
       "code": "ZETA",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -3477,6 +3205,7 @@
       "code": "TMDX",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Electromedical & Electrotherapeutic Apparatus"
@@ -3485,6 +3214,7 @@
       "code": "NTRA",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Medical Laboratories"
@@ -3493,6 +3223,7 @@
       "code": "TEM",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Programming, Data Processing, Etc."
@@ -3501,6 +3232,7 @@
       "code": "RXST",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Ophthalmic Goods"
@@ -3509,6 +3241,7 @@
       "code": "KTOS",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Guided Missiles & Space Vehicles & Parts"
@@ -3526,6 +3259,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1368622/000110465926112083/tm2626631d1_8k.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001104659-26-112083"
@@ -3536,6 +3270,7 @@
       "code": "RDW",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Guided Missiles & Space Vehicles & Parts"
@@ -3544,6 +3279,7 @@
       "code": "LUNR",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Search, Detection, Navigation, Guidance, Aeronautical Sys"
@@ -3552,6 +3288,7 @@
       "code": "LEU",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Mining & Quarrying of  Nonmetallic Minerals (No Fuels)"
@@ -3560,6 +3297,7 @@
       "code": "UUUU",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Mining & Quarrying of  Nonmetallic Minerals (No Fuels)"
@@ -3585,6 +3323,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1334933/000143774926031414/uec20260731_10k.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001437749-26-031414",
@@ -3596,6 +3335,7 @@
       "code": "ALB",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Plastic Materials, Synth Resins & Nonvulcan Elastomers"
@@ -3604,6 +3344,7 @@
       "code": "ENPH",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Semiconductors & Related Devices"
@@ -3612,6 +3353,7 @@
       "code": "NXT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Semiconductors & Related Devices"
@@ -3620,6 +3362,7 @@
       "code": "FLNC",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Miscellaneous Electrical Machinery, Equipment & Supplies"
@@ -3628,6 +3371,7 @@
       "code": "RIVN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Motor Vehicles & Passenger Car Bodies"
@@ -3636,6 +3380,7 @@
       "code": "CHWY",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Retail-Catalog & Mail-Order Houses"
@@ -3644,6 +3389,7 @@
       "code": "BROS",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Retail-Eating & Drinking Places"
@@ -3652,6 +3398,7 @@
       "code": "RH",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Retail-Furniture Stores"
@@ -3660,6 +3407,7 @@
       "code": "SG",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Retail-Eating  Places"
@@ -3668,6 +3416,7 @@
       "code": "FOUR",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Business Services, NEC"
@@ -3676,6 +3425,7 @@
       "code": "BILL",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -3684,6 +3434,7 @@
       "code": "RELY",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Business Services, NEC"
@@ -3692,6 +3443,7 @@
       "code": "SYM",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "General Industrial Machinery & Equipment, NEC"
@@ -3700,6 +3452,7 @@
       "code": "AAOI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Semiconductors & Related Devices"
@@ -3708,6 +3461,7 @@
       "code": "ACLS",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Special Industry Machinery, NEC"
@@ -3716,6 +3470,7 @@
       "code": "SITM",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Semiconductors & Related Devices"
@@ -3724,6 +3479,7 @@
       "code": "AMBA",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Semiconductors & Related Devices"
@@ -3732,6 +3488,7 @@
       "code": "AEHR",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Instruments For Meas & Testing of  Electricity & Elec Signals"
@@ -3740,6 +3497,7 @@
       "code": "INOD",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Processing & Data Preparation"
@@ -3748,6 +3506,7 @@
       "code": "PATH",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -3756,6 +3515,7 @@
       "code": "DOCN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Programming, Data Processing, Etc."
@@ -3764,6 +3524,7 @@
       "code": "ROKU",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Cable & Other Pay Television Services"
@@ -3772,6 +3533,7 @@
       "code": "EIKN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Biological Products, (No Diagnostic Substances)"
@@ -3780,6 +3542,7 @@
       "code": "FSLY",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -3797,6 +3560,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926111154/tm2625691d1_8k.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001104659-26-111154"
@@ -3807,6 +3571,7 @@
       "code": "WULF",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -3824,6 +3589,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1780312/000149315226044647/form8-k.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001493152-26-044647"
@@ -3840,9 +3606,10 @@
           "filed": "2026-09-30",
           "document": "xslF25X02/primary_doc.xml",
           "items": "",
-          "url": "https://www.sec.gov/Archives/edgar/data/1824920/000087666126000804/xslF25X02%2Fprimary_doc.xml"
+          "url": "https://www.sec.gov/Archives/edgar/data/1824920/000087666126000804/xslF25X02/primary_doc.xml"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [
         "退市/摘牌表格申报，须核实证券与生效状态"
       ],
@@ -3855,6 +3622,7 @@
       "code": "CRSP",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Biological Products, (No Diagnostic Substances)"
@@ -3863,6 +3631,7 @@
       "code": "POWL",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Switchgear & Switchboard Apparatus"
@@ -3871,6 +3640,7 @@
       "code": "SECZ",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -3879,6 +3649,7 @@
       "code": "BKKT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -3887,6 +3658,7 @@
       "code": "CRML",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Metal Mining"
@@ -3895,6 +3667,7 @@
       "code": "CLSK",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -3903,6 +3676,7 @@
       "code": "BTBT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -3920,6 +3694,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1831481/000183148126000113/socc-20260928.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001831481-26-000113"
@@ -3930,6 +3705,7 @@
       "code": "AURA",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Biological Products, (No Diagnostic Substances)"
@@ -3938,6 +3714,7 @@
       "code": "EVMN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Pharmaceutical Preparations"
@@ -3946,6 +3723,7 @@
       "code": "WYFI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -3954,6 +3732,7 @@
       "code": "XXI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -3962,6 +3741,7 @@
       "code": "DNA",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Biological Products, (No Diagnostic Substances)"
@@ -3979,6 +3759,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1898496/000121390026104907/ea0307141-8k_getty.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001213900-26-104907"
@@ -3989,6 +3770,7 @@
       "code": "QDEL",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "In Vitro & In Vivo Diagnostic Substances"
@@ -3997,6 +3779,7 @@
       "code": "TRON",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -4005,6 +3788,7 @@
       "code": "VITL",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Food and Kindred Products"
@@ -4013,6 +3797,7 @@
       "code": "FWDI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -4021,6 +3806,7 @@
       "code": "UPB",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Pharmaceutical Preparations"
@@ -4029,6 +3815,7 @@
       "code": "SRAD",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Programming, Data Processing, Etc."
@@ -4037,6 +3824,7 @@
       "code": "WRBY",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Ophthalmic Goods"
@@ -4045,6 +3833,7 @@
       "code": "HTFL",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Surgical & Medical Instruments & Apparatus"
@@ -4053,6 +3842,7 @@
       "code": "AMC",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Motion Picture Theaters"
@@ -4061,6 +3851,7 @@
       "code": "SANA",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Biological Products, (No Diagnostic Substances)"
@@ -4069,6 +3860,7 @@
       "code": "CHYM",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -4077,6 +3869,7 @@
       "code": "SPRY",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Pharmaceutical Preparations"
@@ -4085,6 +3878,7 @@
       "code": "PACB",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Laboratory Analytical Instruments"
@@ -4093,6 +3887,7 @@
       "code": "ALKT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -4101,6 +3896,7 @@
       "code": "KLC",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Child Day Care Services"
@@ -4109,6 +3905,7 @@
       "code": "NTSK",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -4117,6 +3914,7 @@
       "code": "MAX",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Business Services, NEC"
@@ -4125,6 +3923,7 @@
       "code": "SHEN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Telephone Communications (No Radiotelephone)"
@@ -4133,6 +3932,7 @@
       "code": "EYPT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Laboratory Analytical Instruments"
@@ -4141,6 +3941,7 @@
       "code": "PSFE",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Business Services, NEC"
@@ -4149,6 +3950,7 @@
       "code": "USAR",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Metal Mining"
@@ -4157,6 +3959,7 @@
       "code": "BRCB",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Retail-Eating & Drinking Places"
@@ -4165,6 +3968,7 @@
       "code": "MPT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Real Estate Investment Trusts"
@@ -4173,6 +3977,7 @@
       "code": "BEAM",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Biological Products, (No Diagnostic Substances)"
@@ -4190,6 +3995,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/48465/000110465926112101/tm2626547d1_8k.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001104659-26-112101"
@@ -4200,6 +4006,7 @@
       "code": "NMRA",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Biological Products, (No Diagnostic Substances)"
@@ -4208,6 +4015,7 @@
       "code": "RGEN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Biological Products, (No Diagnostic Substances)"
@@ -4216,6 +4024,7 @@
       "code": "INFQ",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Processing & Data Preparation"
@@ -4224,6 +4033,7 @@
       "code": "LYTS",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Electric Lighting & Wiring Equipment"
@@ -4232,6 +4042,7 @@
       "code": "FAC",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Miscellaneous Electrical Machinery, Equipment & Supplies"
@@ -4240,6 +4051,7 @@
       "code": "INV",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Blank Checks"
@@ -4248,6 +4060,7 @@
       "code": "RBRK",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -4256,6 +4069,7 @@
       "code": "WMG",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Amusement & Recreation Services"
@@ -4264,6 +4078,7 @@
       "code": "OLN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Chemicals & Allied Products"
@@ -4272,6 +4087,7 @@
       "code": "CMG",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Retail-Eating  Places"
@@ -4280,6 +4096,7 @@
       "code": "CXM",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -4288,6 +4105,7 @@
       "code": "NKLR",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Fabricated Plate Work (Boiler Shops)"
@@ -4296,6 +4114,7 @@
       "code": "SAIL",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -4304,6 +4123,7 @@
       "code": "ALMS",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Pharmaceutical Preparations"
@@ -4312,6 +4132,7 @@
       "code": "ARDT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-General Medical & Surgical Hospitals, NEC"
@@ -4337,6 +4158,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1400118/000119312526408210/d14484d424b3.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001193125-26-408210",
@@ -4348,6 +4170,7 @@
       "code": "FWRG",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Retail-Eating  Places"
@@ -4356,6 +4179,7 @@
       "code": "SLDE",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Fire, Marine & Casualty Insurance"
@@ -4364,6 +4188,7 @@
       "code": "INDI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Semiconductors & Related Devices"
@@ -4372,6 +4197,7 @@
       "code": "MYGN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "In Vitro & In Vivo Diagnostic Substances"
@@ -4380,6 +4206,7 @@
       "code": "DOCU",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -4388,6 +4215,7 @@
       "code": "CLFD",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Telephone & Telegraph Apparatus"
@@ -4396,6 +4224,7 @@
       "code": "RUM",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Programming, Data Processing, Etc."
@@ -4404,6 +4233,7 @@
       "code": "EGHT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Processing & Data Preparation"
@@ -4412,6 +4242,7 @@
       "code": "GERN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Pharmaceutical Preparations"
@@ -4420,6 +4251,7 @@
       "code": "EVEX",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Aircraft"
@@ -4428,6 +4260,7 @@
       "code": "OKLO",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Electric Services"
@@ -4436,6 +4269,7 @@
       "code": "OXM",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Men's & Boys' Furnishgs, Work Clothg, & Allied Garments"
@@ -4444,6 +4278,7 @@
       "code": "MTH",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Operative Builders"
@@ -4452,6 +4287,7 @@
       "code": "SNAP",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Programming, Data Processing, Etc."
@@ -4460,6 +4296,7 @@
       "code": "WHR",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Household Appliances"
@@ -4468,6 +4305,7 @@
       "code": "ARRY",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Semiconductors & Related Devices"
@@ -4485,6 +4323,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1992243/000121390026104291/ea0306948-8k_t1energy.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001213900-26-104291"
@@ -4495,6 +4334,7 @@
       "code": "ARQQ",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -4503,6 +4343,7 @@
       "code": "PYPL",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Business Services, NEC"
@@ -4511,6 +4352,7 @@
       "code": "MNRO",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Automotive Repair, Services & Parking"
@@ -4519,6 +4361,7 @@
       "code": "XE",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Fabricated Plate Work (Boiler Shops)"
@@ -4527,6 +4370,7 @@
       "code": "ADTN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Telephone & Telegraph Apparatus"
@@ -4535,6 +4379,7 @@
       "code": "ENOV",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Orthopedic, Prosthetic & Surgical Appliances & Supplies"
@@ -4543,6 +4388,7 @@
       "code": "PLAY",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Retail-Eating  Places"
@@ -4551,6 +4397,7 @@
       "code": "FPS",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Electrical Industrial Apparatus"
@@ -4559,6 +4406,7 @@
       "code": "ODD",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Perfumes, Cosmetics & Other Toilet Preparations"
@@ -4567,6 +4415,7 @@
       "code": "NTGR",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Computer Communications Equipment"
@@ -4575,6 +4424,7 @@
       "code": "ENVX",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Miscellaneous Electrical Machinery, Equipment & Supplies"
@@ -4583,6 +4433,7 @@
       "code": "LYFT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Business Services, NEC"
@@ -4591,6 +4442,7 @@
       "code": "SOUN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -4599,6 +4451,7 @@
       "code": "AVNT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Plastic Materials, Synth Resins & Nonvulcan Elastomers"
@@ -4607,6 +4460,7 @@
       "code": "SLDP",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Miscellaneous Electrical Machinery, Equipment & Supplies"
@@ -4615,6 +4469,7 @@
       "code": "VIA",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -4623,6 +4478,7 @@
       "code": "CYH",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-General Medical & Surgical Hospitals, NEC"
@@ -4631,6 +4487,7 @@
       "code": "OMDA",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Health Services"
@@ -4639,6 +4496,7 @@
       "code": "LCID",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Motor Vehicles & Passenger Car Bodies"
@@ -4647,6 +4505,7 @@
       "code": "MWH",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Heavy Construction Other Than Bldg Const - Contractors"
@@ -4655,6 +4514,7 @@
       "code": "HLLY",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Motor Vehicle Parts & Accessories"
@@ -4663,6 +4523,7 @@
       "code": "NNE",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Electric Services"
@@ -4671,6 +4532,7 @@
       "code": "PLNT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Membership Sports & Recreation Clubs"
@@ -4679,6 +4541,7 @@
       "code": "CRNC",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -4687,6 +4550,7 @@
       "code": "ALHC",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Hospital & Medical Service Plans"
@@ -4695,6 +4559,7 @@
       "code": "QS",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Miscellaneous Electrical Machinery, Equipment & Supplies"
@@ -4703,6 +4568,7 @@
       "code": "YSS",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Guided Missiles & Space Vehicles & Parts"
@@ -4711,6 +4577,7 @@
       "code": "NRDS",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Processing & Data Preparation"
@@ -4719,6 +4586,7 @@
       "code": "FRMI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Real Estate Investment Trusts"
@@ -4727,6 +4595,7 @@
       "code": "HUBG",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Arrangement of  Transportation of  Freight & Cargo"
@@ -4735,6 +4604,7 @@
       "code": "UHS",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-General Medical & Surgical Hospitals, NEC"
@@ -4743,6 +4613,7 @@
       "code": "WLTH",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -4751,6 +4622,7 @@
       "code": "ALMU",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Semiconductors & Related Devices"
@@ -4759,6 +4631,7 @@
       "code": "ONT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Management Consulting Services"
@@ -4776,6 +4649,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1513761/000110465926112116/tm2626633d1_8k.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001104659-26-112116"
@@ -4786,6 +4660,7 @@
       "code": "RR",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "General Industrial Machinery & Equipment, NEC"
@@ -4794,6 +4669,7 @@
       "code": "KVYO",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -4802,6 +4678,7 @@
       "code": "BKSY",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Radio & Tv Broadcasting & Communications Equipment"
@@ -4810,6 +4687,7 @@
       "code": "JACK",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Retail-Eating  Places"
@@ -4818,6 +4696,7 @@
       "code": "ASPI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Miscellaneous Chemical Products"
@@ -4826,6 +4705,7 @@
       "code": "CLB",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Oil & Gas Field Services, NEC"
@@ -4834,6 +4714,7 @@
       "code": "FUBO",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Motion Picture & Video Tape Production"
@@ -4842,6 +4723,7 @@
       "code": "CE",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Plastic Material, Synth Resin/Rubber, Cellulos (No Glass)"
@@ -4859,6 +4741,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1788060/000162828026063717/voyg-20260922.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001628280-26-063717"
@@ -4869,6 +4752,7 @@
       "code": "ARHS",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Retail-Furniture Stores"
@@ -4877,6 +4761,7 @@
       "code": "ULCC",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Air Transportation, Scheduled"
@@ -4885,6 +4770,7 @@
       "code": "WOLF",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Semiconductors & Related Devices"
@@ -4893,6 +4779,7 @@
       "code": "ACDC",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Oil & Gas Field Services, NEC"
@@ -4901,6 +4788,7 @@
       "code": "RGNX",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Biological Products, (No Diagnostic Substances)"
@@ -4909,6 +4797,7 @@
       "code": "EQPT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Equipment Rental & Leasing, NEC"
@@ -4917,6 +4806,7 @@
       "code": "VELO",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Special Industry Machinery, NEC"
@@ -4925,6 +4815,7 @@
       "code": "FLY",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Guided Missiles & Space Vehicles & Parts"
@@ -4933,6 +4824,7 @@
       "code": "BETA",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Aircraft"
@@ -4941,6 +4833,7 @@
       "code": "GENI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Miscellaneous Amusement & Recreation"
@@ -4949,6 +4842,7 @@
       "code": "MRLN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Integrated Systems Design"
@@ -4957,6 +4851,7 @@
       "code": "EOSE",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Miscellaneous Electrical Machinery, Equipment & Supplies"
@@ -4965,6 +4860,7 @@
       "code": "RCKT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Pharmaceutical Preparations"
@@ -4973,6 +4869,7 @@
       "code": "CABA",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Biological Products, (No Diagnostic Substances)"
@@ -4981,6 +4878,7 @@
       "code": "BETR",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Loan Brokers"
@@ -4989,6 +4887,7 @@
       "code": "RUN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Construction - Special Trade Contractors"
@@ -4997,6 +4896,7 @@
       "code": "IE",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Metal Mining"
@@ -5014,6 +4914,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1434316/000119312526403429/fate-20260925.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001193125-26-403429"
@@ -5024,6 +4925,7 @@
       "code": "WD",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -5032,6 +4934,7 @@
       "code": "PCT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Plastic Materials, Synth Resins & Nonvulcan Elastomers"
@@ -5040,6 +4943,7 @@
       "code": "APTV",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Motor Vehicle Parts & Accessories"
@@ -5048,6 +4952,7 @@
       "code": "CATX",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Pharmaceutical Preparations"
@@ -5056,6 +4961,7 @@
       "code": "GLOB",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Processing & Data Preparation"
@@ -5064,6 +4970,7 @@
       "code": "LZM",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Metal Mining"
@@ -5081,6 +4988,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1899883/000114036126037763/ef20082849_8k.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001140361-26-037763"
@@ -5091,6 +4999,7 @@
       "code": "NTLA",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "In Vitro & In Vivo Diagnostic Substances"
@@ -5099,6 +5008,7 @@
       "code": "KYTX",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Biological Products, (No Diagnostic Substances)"
@@ -5116,6 +5026,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1635327/000119312526403357/d484581d8k.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001193125-26-403357"
@@ -5126,6 +5037,7 @@
       "code": "GOGO",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Communications Services, NEC"
@@ -5134,6 +5046,7 @@
       "code": "RKT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Mortgage Bankers & Loan Correspondents"
@@ -5142,6 +5055,7 @@
       "code": "SVV",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Retail-Miscellaneous Retail"
@@ -5150,6 +5064,7 @@
       "code": "AGIO",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Pharmaceutical Preparations"
@@ -5158,6 +5073,7 @@
       "code": "NPWR",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Electrical Industrial Apparatus"
@@ -5166,6 +5082,7 @@
       "code": "EDIT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Biological Products, (No Diagnostic Substances)"
@@ -5174,6 +5091,7 @@
       "code": "MAGN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Paper Mills"
@@ -5182,6 +5100,7 @@
       "code": "ABAT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Mining & Quarrying of  Nonmetallic Minerals (No Fuels)"
@@ -5190,6 +5109,7 @@
       "code": "LAES",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Semiconductors & Related Devices"
@@ -5198,6 +5118,7 @@
       "code": "PGY",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -5206,6 +5127,7 @@
       "code": "DFH",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Operative Builders"
@@ -5214,6 +5136,7 @@
       "code": "EFX",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Consumer Credit Reporting, Collection Agencies"
@@ -5222,6 +5145,7 @@
       "code": "ORGO",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Pharmaceutical Preparations"
@@ -5230,6 +5154,7 @@
       "code": "GLXY",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Security Brokers, Dealers & Flotation Companies"
@@ -5238,6 +5163,7 @@
       "code": "IKT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Biological Products, (No Diagnostic Substances)"
@@ -5246,6 +5172,7 @@
       "code": "NRGV",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Miscellaneous Electrical Machinery, Equipment & Supplies"
@@ -5254,6 +5181,7 @@
       "code": "ZG",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Business Services, NEC"
@@ -5262,6 +5190,7 @@
       "code": "BBNX",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Surgical & Medical Instruments & Apparatus"
@@ -5270,6 +5199,7 @@
       "code": "DNLI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Biological Products, (No Diagnostic Substances)"
@@ -5278,6 +5208,7 @@
       "code": "HGV",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Hotels, Rooming Houses, Camps & Other Lodging Places"
@@ -5286,6 +5217,7 @@
       "code": "HUBS",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -5294,6 +5226,7 @@
       "code": "ORBS",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Finance Services"
@@ -5302,6 +5235,7 @@
       "code": "NB",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Metal Mining"
@@ -5310,6 +5244,7 @@
       "code": "LZ",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Processing & Data Preparation"
@@ -5318,6 +5253,7 @@
       "code": "CPRI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Leather & Leather Products"
@@ -5326,6 +5262,7 @@
       "code": "SITE",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Wholesale-Professional & Commercial Equipment & Supplies"
@@ -5334,6 +5271,7 @@
       "code": "AI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -5342,6 +5280,7 @@
       "code": "DXYZ",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": ""
@@ -5350,6 +5289,7 @@
       "code": "VERX",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -5367,6 +5307,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1599298/000119312526405776/d178892d8k.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001193125-26-405776"
@@ -5377,6 +5318,7 @@
       "code": "TASK",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Processing & Data Preparation"
@@ -5385,6 +5327,7 @@
       "code": "PACK",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Converted Paper & Paperboard Prods (No Contaners/Boxes)"
@@ -5402,6 +5345,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1424929/000142492926000057/foxf-20260925.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001424929-26-000057"
@@ -5412,6 +5356,7 @@
       "code": "SIBN",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Surgical & Medical Instruments & Apparatus"
@@ -5420,6 +5365,7 @@
       "code": "VRRM",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Transportation Services"
@@ -5428,6 +5374,7 @@
       "code": "GTM",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -5436,6 +5383,7 @@
       "code": "SENS",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Industrial Instruments For Measurement, Display, and Control"
@@ -5444,6 +5392,7 @@
       "code": "BRZE",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -5461,6 +5410,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1327811/000132781126000048/wday-20260929.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001327811-26-000048"
@@ -5471,6 +5421,7 @@
       "code": "NUAI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Crude Petroleum & Natural Gas"
@@ -5479,6 +5430,7 @@
       "code": "WLFC",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Wholesale-Machinery, Equipment & Supplies"
@@ -5487,6 +5439,7 @@
       "code": "OEC",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Miscellaneous Chemical Products"
@@ -5495,6 +5448,7 @@
       "code": "HAYW",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Refrigeration & Service Industry Machinery"
@@ -5503,6 +5457,7 @@
       "code": "SWIM",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Plastics Products, NEC"
@@ -5511,6 +5466,7 @@
       "code": "GEHC",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "X-Ray Apparatus & Tubes & Related Irradiation Apparatus"
@@ -5519,6 +5475,7 @@
       "code": "STAA",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Ophthalmic Goods"
@@ -5527,6 +5484,7 @@
       "code": "EVER",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Programming, Data Processing, Etc."
@@ -5535,6 +5493,7 @@
       "code": "WEAV",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -5543,6 +5502,7 @@
       "code": "SRPT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Pharmaceutical Preparations"
@@ -5551,6 +5511,7 @@
       "code": "EYE",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Ophthalmic Goods"
@@ -5559,6 +5520,7 @@
       "code": "WWW",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Footwear, (No Rubber)"
@@ -5567,6 +5529,7 @@
       "code": "RXRX",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Biological Products, (No Diagnostic Substances)"
@@ -5575,6 +5538,7 @@
       "code": "WAY",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Integrated Systems Design"
@@ -5583,6 +5547,7 @@
       "code": "LIF",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Processing & Data Preparation"
@@ -5591,6 +5556,7 @@
       "code": "COLL",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Pharmaceutical Preparations"
@@ -5599,6 +5565,7 @@
       "code": "UMAC",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Radio & Tv Broadcasting & Communications Equipment"
@@ -5607,6 +5574,7 @@
       "code": "SONO",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Household Audio & Video Equipment"
@@ -5615,6 +5583,7 @@
       "code": "GSHD",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Insurance Agents, Brokers & Service"
@@ -5623,6 +5592,7 @@
       "code": "CERT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -5631,6 +5601,7 @@
       "code": "TDOC",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Offices & Clinics of  Doctors of  Medicine"
@@ -5639,6 +5610,7 @@
       "code": "COUR",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Prepackaged Software"
@@ -5647,6 +5619,7 @@
       "code": "INSP",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Surgical & Medical Instruments & Apparatus"
@@ -5655,6 +5628,7 @@
       "code": "SERV",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "General Industrial Machinery & Equipment, NEC"
@@ -5663,6 +5637,7 @@
       "code": "TRIP",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Programming, Data Processing, Etc."
@@ -5671,6 +5646,7 @@
       "code": "CRCT",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Special Industry Machinery, NEC"
@@ -5679,6 +5655,7 @@
       "code": "MTCH",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Programming, Data Processing, Etc."
@@ -5687,6 +5664,7 @@
       "code": "YELP",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Personal Services"
@@ -5695,6 +5673,7 @@
       "code": "ALVO",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Biological Products, (No Diagnostic Substances)"
@@ -5703,6 +5682,7 @@
       "code": "REI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Crude Petroleum & Natural Gas"
@@ -5711,6 +5691,7 @@
       "code": "KOS",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Crude Petroleum & Natural Gas"
@@ -5719,6 +5700,7 @@
       "code": "NEO",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Testing Laboratories"
@@ -5736,6 +5718,7 @@
           "url": "https://www.sec.gov/Archives/edgar/data/709283/000162828026063661/qtm-20260928.htm"
         }
       ],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [
         "0001628280-26-063661"
@@ -5746,6 +5729,7 @@
       "code": "AESI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Crude Petroleum & Natural Gas"
@@ -5754,6 +5738,7 @@
       "code": "PRME",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Biological Products, (No Diagnostic Substances)"
@@ -5762,6 +5747,7 @@
       "code": "PPLI",
       "status": "no_new_relevant_filing",
       "filings": [],
+      "new_since_last_scan": 0,
       "attention": [],
       "seen_accessions": [],
       "sic_description": "Services-Computer Programming, Data Processing, Etc."
