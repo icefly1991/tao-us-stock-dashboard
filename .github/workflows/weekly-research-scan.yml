@@ -8,20 +8,15 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
-  group: github-pages
+  group: weekly-research
   cancel-in-progress: false
 
 jobs:
   scan:
     runs-on: ubuntu-latest
     timeout-minutes: 90
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -46,7 +41,7 @@ jobs:
         run: node scripts/scan_research_weekly.mjs
       - name: Build weekly machine research
         run: python scripts/build_weekly_research.py
-      - name: Build Pages
+      - name: Build UI with weekly research
         run: npm run build
       - name: Browser regression checks
         run: |
@@ -59,13 +54,10 @@ jobs:
           git add public/data/weekly-research.json
           git commit -m "data: refresh weekly machine research"
           git push origin HEAD:main
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-      - name: Deploy Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Request dashboard build with real market data
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
       - name: Upload research scan
         if: always()
         uses: actions/upload-artifact@v4

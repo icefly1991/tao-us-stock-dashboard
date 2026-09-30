@@ -138,4 +138,4 @@ governance-review v1行新增可选distress={level,reasons}，level为major/watc
 
 CR-023兼容扩展：`governance-review` 当前事件可带 `review_due_at`（研究日后30天的行政复核日），前端对旧数据用`reviewed_at+30天`提示；逾期不改`state`或`distress`。`pool-review`仍v2，财报默认经营类型统一为`unresolved`，人工类型不变；原等级和数值字段不变。资金复核报告是独立文档，不进入每日行情JSON。
 
-CR-024周度机器层：`weekly-research.json` v1独立于原人工研究，含`scanned_at`、两个原研究日期、234行`pool_rows`（新结构化事实状态、机器等级/理由、数字短语及来源）与350行`company_rows`（SEC新申报、条款关注点、SIC描述）。下载或成员校验失败不写新文件；旧人工风险不因没有申报而解除。周度Actions成功后只提交此JSON并部署Pages；每日行情工作流从main读取它，不用行情日期覆盖研究扫描日期。前端校验失败时保留人工研究并提示周度资料不可用。
+CR-024周度机器层：`weekly-research.json` v1独立于原人工研究，含`scanned_at`、两个原研究日期、234行`pool_rows`（新结构化事实状态、机器等级/理由、数字短语及来源）与350行`company_rows`（SEC新申报、条款关注点、SIC描述）。下载或成员校验失败不写新文件；旧人工风险不因没有申报而解除。周度Actions成功后只提交此JSON到main，再以`workflow_dispatch`启动现有行情工作流重新生成真实行情并部署Pages；若行情生成失败，线上保留旧页面，不把仓库占位行情发布。前端校验失败时保留人工研究并提示周度资料不可用。
