@@ -17,7 +17,7 @@ test('箱体默认候选、筛选与搜索、不增加业务RSI列', async ({ pa
   await expect(page.locator('.box-table tbody tr')).toHaveCount(1)
   await expect(page.locator('.box-reason')).toContainText('长期区间位置')
   await page.getByLabel('查找股票', { exact: true }).fill('no-match')
-  await expect(page.getByRole('status')).toContainText('暂无匹配结果')
+  await expect(page.locator('.box-empty')).toContainText('暂无匹配结果')
 })
 
 test('窗口、长期边界与共轴副图同步；null不补0', async ({ page }) => {
