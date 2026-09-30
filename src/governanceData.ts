@@ -4,7 +4,7 @@ export const riskKinds = { controls: '重大内控缺陷', accounting: '重述/�
 export const distressLabels = { major: '重大风险', watch: '风险观察', unknown: '核查待补', not_flagged: '事件初筛未触发', not_applicable: '公司生存评估不适用' }
 type Distress = { level: keyof typeof distressLabels; reasons: string[] }
 export type RiskKind = keyof typeof riskKinds
-export type GovernanceEvent = { kind: RiskKind; label: string; detail: string; state: 'current' | 'historical' | 'resolved'; legal_status: 'disclosed' | 'investigation' | 'charged' | 'admitted' | 'adjudicated' | 'alleged'; severity: 'high' | 'elevated' | 'info'; disclosed_at: string; sources: { title: string; url: string }[] }
+export type GovernanceEvent = { kind: RiskKind; label: string; detail: string; state: 'current' | 'historical' | 'resolved'; legal_status: 'disclosed' | 'investigation' | 'charged' | 'admitted' | 'adjudicated' | 'alleged'; severity: 'high' | 'elevated' | 'info'; disclosed_at: string; review_due_at?: string; sources: { title: string; url: string }[] }
 export type GovernanceRow = { code: string; coverage: 'targeted' | 'screened' | 'unavailable' | 'not_applicable'; filing_date: string | null; sources: { title: string; url: string }[]; events: GovernanceEvent[]; distress?: Distress }
 export type GovernanceReview = { schema_version: number; reviewed_at: string; rows: GovernanceRow[] }
 const record = (v: unknown): v is Record<string, unknown> => !!v && typeof v === 'object' && !Array.isArray(v)
@@ -14,7 +14,18 @@ export function validGovernance(v: unknown): v is GovernanceReview {
   if (!record(v) || v.schema_version !== 1 || !text(v.reviewed_at) || !Array.isArray(v.rows)) return false
   return v.rows.every(r => record(r) && text(r.code) && (r.distress === undefined || (record(r.distress) && text(r.distress.level) && Object.hasOwn(distressLabels, r.distress.level) && Array.isArray(r.distress.reasons) && r.distress.reasons.every(text) && (!['major', 'watch'].includes(r.distress.level) || r.distress.reasons.length > 0))) && ['targeted', 'screened', 'unavailable', 'not_applicable'].includes(String(r.coverage)) && (r.filing_date === null || text(r.filing_date)) && sources(r.sources) &&
     (!['targeted', 'screened'].includes(String(r.coverage)) || (r.sources as unknown[]).length > 0) && Array.isArray(r.events) && r.events.every(e => record(e) && text(e.kind) && Object.hasOwn(riskKinds, e.kind) && text(e.label) && text(e.detail) &&
-      ['current', 'historical', 'resolved'].includes(String(e.state)) && ['disclosed', 'investigation', 'charged', 'admitted', 'adjudicated', 'alleged'].includes(String(e.legal_status)) && ['high', 'elevated', 'info'].includes(String(e.severity)) && text(e.disclosed_at) && sources(e.sources) && (e.sources as unknown[]).length > 0)) && new Set(v.rows.map(r => r.code)).size === v.rows.length
+      ['current', 'historical', 'resolved'].includes(String(e.state)) && ['disclosed', 'investigation', 'charged', 'admitted', 'adjudicated', 'alleged'].includes(String(e.legal_status)) && ['high', 'elevated', 'info'].includes(String(e.severity)) && text(e.disclosed_at) && (e.review_due_at === undefined || text(e.review_due_at)) && sources(e.sources) && (e.sources as unknown[]).length > 0)) && new Set(v.rows.map(r => r.code)).size === v.rows.length
+}
+export function reviewDue(reviewedAt?: string, dueAt?: string): string | null {
+  if (dueAt && /^\d{4}-\d{2}-\d{2}$/.test(dueAt)) return dueAt
+  if (!reviewedAt || !/^\d{4}-\d{2}-\d{2}$/.test(reviewedAt)) return null
+  const date = new Date(`${reviewedAt}T00:00:00Z`)
+  date.setUTCDate(date.getUTCDate() + 30)
+  return date.toISOString().slice(0, 10)
+}
+export function isReviewStale(reviewedAt?: string, dueAt?: string, today = new Date().toISOString().slice(0, 10)): boolean {
+  const due = reviewDue(reviewedAt, dueAt)
+  return due !== null && today > due
 }
 export function matchesGovernance(row: GovernanceRow | undefined, filter: string) {
   if (filter === 'all') return true

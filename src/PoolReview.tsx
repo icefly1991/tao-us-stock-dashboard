@@ -1,5 +1,6 @@
 import { gradeLabels, categoryLabels } from './poolReviewData'
 import type { Assessment, PoolReview } from './poolReviewData'
+import type { WeeklyFinancial } from './weeklyResearch'
 import { useRef } from 'react'
 
 export function PoolFilter({ review, error, value, onChange, category, onCategoryChange }: { review: PoolReview | null; error: boolean; value: string; onChange: (value: string) => void; category: string; onCategoryChange: (value: string) => void }) {
@@ -23,17 +24,19 @@ export function FundamentalSummary({ assessment, evidence = false }: { assessmen
   return <div className="fundamental-summary">{(['highlights', 'risks'] as const).map(kind => <section key={kind}><h3>{kind === 'highlights' ? '基本面亮点' : '基本面风险'}</h3><FundamentalPhrases assessment={assessment} kind={kind} evidence={evidence} /></section>)}</div>
 }
 
-export function FundamentalBadge({ assessment, compact = false }: { assessment?: Assessment; compact?: boolean }) {
+export function FundamentalBadge({ assessment, compact = false, weekly }: { assessment?: Assessment; compact?: boolean; weekly?: WeeklyFinancial }) {
   const dialog = useRef<HTMLDialogElement>(null)
   if (!assessment) return <span className="fundamental-badge unknown">待核实</span>
   return <div className="fundamental-review">
     <span className="fundamental-category">{categoryLabels[assessment.category]}</span>
     <span className={`fundamental-badge ${assessment.grade}`}>{gradeLabels[assessment.grade]}</span>
+    {weekly?.status === 'new_structured_facts' && <span className="fundamental-badge unknown">新财报机器初筛：{weekly.grade ? (gradeLabels as Record<string, string>)[weekly.grade] ?? weekly.grade : '行业待判'}</span>}
     {!compact && <><div className="fundamental-tags" title={assessment.tags.join(' · ')}>{assessment.tags.slice(0, 2).join(' · ')}{assessment.tags.length > 2 ? ` 等${assessment.tags.length}项` : ''}</div><button className="fundamental-open" onClick={() => dialog.current?.showModal()} aria-label={`${assessment.code} 核查依据`}>核查依据</button>
     <dialog ref={dialog} className="fundamental-dialog" aria-label={`${assessment.code} 基本面核查`}>
       <div className="fundamental-dialog-heading"><h2>{assessment.code} · {gradeLabels[assessment.grade]}</h2><button onClick={() => dialog.current?.close()} autoFocus>关闭</button></div>
       <p><strong>{categoryLabels[assessment.category]}</strong> · {assessment.category_reason}</p>
       <small>{assessment.category_method}</small>
+      {weekly?.status === 'new_structured_facts' && <section className="fundamental-gap"><strong>本周新财报机器初筛</strong><p>申报 {weekly.facts_filed_at} · 机器等级 {weekly.grade ? (gradeLabels as Record<string, string>)[weekly.grade] ?? weekly.grade : '行业待判'}；原人工等级保留。</p><p>{weekly.grade_reason}</p>{Object.entries(weekly.facts).filter(([, fact]) => fact !== null).map(([key, fact]) => <p key={key}>{factLabels[key] ?? key}：{fact!.value.toLocaleString('zh-CN')} {fact!.unit} · {fact!.end}</p>)}{weekly.source && <a href={weekly.source} target="_blank" rel="noreferrer">本次财报来源</a>}</section>}
       <FundamentalSummary assessment={assessment} evidence />
       {assessment.reason !== assessment.category_reason && <p>{assessment.reason}</p>}<p>{assessment.business} · {assessment.tags.join(' · ')}</p><small>{assessment.review_method} · 核查 {assessment.reviewed_at}</small>
       {assessment.evidence_gap && <p className="fundamental-gap">仍待确认：{assessment.evidence_gap}</p>}

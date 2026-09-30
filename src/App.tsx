@@ -9,6 +9,8 @@ import { CopyStockButton, StockCopyProvider } from './StockCopy'
 import { StockHistoryCode, StockHistoryProvider } from './StockHistoryPreview'
 import BoxScreener from './BoxScreener'
 import ListReviewNotice from './ListReviewNotice'
+import WeeklyResearchNotice from './WeeklyResearchNotice'
+import { useWeeklyResearch } from './weeklyResearch'
 import RsiCell from './RsiCell'
 import { FundamentalBadge, FundamentalPhrases, PoolFilter } from './PoolReview'
 import { usePoolReview, matchesPoolReview } from './poolReviewData'
@@ -115,6 +117,7 @@ function App() {
   const poolPage = collectionId === 'pool'
   const poolReview = usePoolReview(poolPage)
   const governance = useGovernance()
+  const weekly = useWeeklyResearch()
   const [riskFilter, setRiskFilter] = useState('all')
   const [grade, setGrade] = useState('all')
   const [category, setCategory] = useState('all')
@@ -247,6 +250,7 @@ function App() {
           )}
           {data.errors?.length ? <p className="mb-4 text-sm text-amber-800">本次有 {data.errors.length} 条数据提示；可用标的继续展示。</p> : null}
           <GovernanceFilter value={riskFilter} onChange={setRiskFilter} date={governance.data?.reviewed_at} error={governance.error} />
+          <WeeklyResearchNotice pool={poolPage} data={weekly.data} error={weekly.error} />
           {researchPage && !poolPage && data.collections && (
             <nav aria-label="活跃股观察列表分档" className="mb-4 flex flex-wrap gap-2">
               {data.collections.filter((item) => ['research', 'A', 'B', 'C'].includes(item.id)).map((item) => (
@@ -304,9 +308,9 @@ function App() {
                     <StockHistoryCode code={row.code} name={row.name} updatedAt={data.updated_at} adjustment={adjustment} available={row.history_available}>
                       <CopyStockButton value={row.code} label="代码" target={`${row.code}-code`} secondary />
                     </StockHistoryCode>
-                    <GovernanceBadge row={governance.data?.rows.find(item => item.code === row.code)} reviewedAt={governance.data?.reviewed_at} />
+                    <GovernanceBadge row={governance.data?.rows.find(item => item.code === row.code)} reviewedAt={governance.data?.reviewed_at} weekly={weekly.data?.company_rows.find(item => item.code === row.code)} />
                   </div>
-                  <div className="business-cell">{row.business || '—'}{poolPage && <FundamentalBadge assessment={poolReview.data?.rows.find(item => item.code === row.code)} />}</div>
+                  <div className="business-cell">{row.business || '—'}{poolPage && <FundamentalBadge assessment={poolReview.data?.rows.find(item => item.code === row.code)} weekly={weekly.data?.pool_rows.find(item => item.code === row.code)} />}</div>
                   {poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(item => item.code === row.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(item => item.code === row.code)} kind="risks" /></>}
                   <div className="font-medium text-slate-900">{formatClose(row)}</div>
                   <div className={getMetricTextClass(row.today_return_pct)}>{formatPct(row.today_return_pct)}</div>
@@ -333,7 +337,7 @@ function App() {
                     <CopyStockButton value={item.code} label="代码" target={`${item.code}-code`} secondary />
                     <span className="mt-2 inline-block rounded bg-slate-200 px-2 py-1 text-xs text-slate-600">停牌</span>
                     {item.note && <p className="mt-1 text-xs">{item.note}</p>}
-                    <GovernanceBadge row={governance.data?.rows.find(row => row.code === item.code)} reviewedAt={governance.data?.reviewed_at} />
+                    <GovernanceBadge row={governance.data?.rows.find(row => row.code === item.code)} reviewedAt={governance.data?.reviewed_at} weekly={weekly.data?.company_rows.find(row => row.code === item.code)} />
                   </div>
                   <div className="business-cell">{item.business || '—'}</div>{poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="risks" /></>}
                   {Array.from({ length: contextMetrics.length + 5 }, (_, column) => column).map((column) => <div key={column}>—</div>)}

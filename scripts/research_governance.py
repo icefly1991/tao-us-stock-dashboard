@@ -1,7 +1,7 @@
 """Publish reviewed events; keyword hits are never promoted to accusations."""
 import argparse
 import json
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 KINDS = {'controls', 'accounting', 'listing', 'survival', 'controller', 'management', 'enforcement', 'operations', 'financing'}
@@ -57,7 +57,8 @@ def build_governance(coverage: dict, events: dict, members: set[str]) -> dict:
                 raise ValueError('Governance alone is not a survival signal')
         if row['coverage'] == 'not_applicable' and items:
             raise ValueError('Inapplicable coverage cannot contain company events')
-        result.append({**row, 'events': items, 'distress': distress_summary(row['coverage'], items)})
+        scheduled = [{**event, 'review_due_at': (date.fromisoformat(cutoff) + timedelta(days=30)).isoformat()} if event['state'] == 'current' else event for event in items]
+        result.append({**row, 'events': scheduled, 'distress': distress_summary(row['coverage'], items)})
     return {'schema_version': 1, 'reviewed_at': cutoff, 'rows': result}
 
 

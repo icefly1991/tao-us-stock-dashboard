@@ -40,6 +40,7 @@ class GovernanceTests(unittest.TestCase):
         self.assertEqual(rows['IREN']['events'], [])
         self.assertEqual(rows['IREN']['coverage'], 'screened')
         self.assertEqual(rows['IBIT']['coverage'], 'not_applicable')
+        self.assertTrue(all(e['review_due_at'] == '2026-10-27' for row in rows.values() for e in row['events'] if e['state'] == 'current'))
 
     def test_survival_risk_not_inferred_from_criminal_or_controls_severity(self):
         rows = {r['code']: r for r in build_governance(self.coverage, self.events, self.members)['rows']}

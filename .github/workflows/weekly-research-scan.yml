@@ -1,0 +1,79 @@
+name: Weekly Research Scan
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 10 * * 0"
+      timezone: "America/New_York"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install -r requirements.txt
+          npm ci
+      - name: Regression checks
+        run: |
+          python -m unittest discover -s tests -v
+          node --test tests/weekly-research.test.mjs
+          npm run lint
+      - name: Scan SEC filings
+        env:
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
+        run: node scripts/scan_research_weekly.mjs
+      - name: Build weekly machine research
+        run: python scripts/build_weekly_research.py
+      - name: Build Pages
+        run: npm run build
+      - name: Browser regression checks
+        run: |
+          npx playwright install --with-deps chromium
+          npm test
+      - name: Commit weekly research snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/weekly-research.json
+          git commit -m "data: refresh weekly machine research"
+          git push origin HEAD:main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Upload research scan
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-research-${{ github.run_id }}
+          path: |
+            .cache/weekly-research/report.md
+            .cache/weekly-research/scan.json
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 30

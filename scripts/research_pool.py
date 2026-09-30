@@ -99,7 +99,7 @@ def build_assessment(code: str, root: Path, cutoff: str) -> dict:
     company = json.loads(path.read_text(encoding='utf-8')) if path.exists() else {}
     facts = extract_facts(company, sub, cutoff)
     grade, tags, reason, runway = classify(facts, sub.get('sic', ''), cutoff)
-    return {'code': code, 'name': sub['name'], 'grade': grade, 'tags': tags, 'reason': reason, 'business': sub.get('sicDescription', '') or '业务分类待核实', 'reviewed_at': cutoff, 'facts': facts, 'sources': [{'title': 'SEC 公司申报记录', 'url': f'https://www.sec.gov/edgar/browse/?CIK={sub["cik"]}&owner=exclude'}], 'runway_months': runway, 'sic': sub.get('sic', ''), 'country': sub['addresses']['business'].get('stateOrCountryDescription')}
+    return {'code': code, 'name': sub.get('name') or code, 'grade': grade, 'tags': tags, 'reason': reason, 'business': sub.get('sicDescription', '') or '业务分类待核实', 'reviewed_at': cutoff, 'facts': facts, 'sources': [{'title': 'SEC 公司申报记录', 'url': f'https://www.sec.gov/edgar/browse/?CIK={sub["cik"]}&owner=exclude'}], 'runway_months': runway, 'sic': sub.get('sic', ''), 'country': (sub.get('addresses', {}).get('business') or {}).get('stateOrCountryDescription')}
 
 def apply_review(rows: list[dict], manifest: dict, overrides: dict, cutoff: str) -> dict:
     if overrides['reviewed_at'] != cutoff:
@@ -147,10 +147,8 @@ def apply_categories(payload: dict, categories: dict, cutoff: str) -> dict:
                     raise ValueError('Business category requires HTTPS evidence')
             row.update(override)
         else:
-            row['category'] = 'operating' if row['grade'] == 'supported' else 'unresolved' if row['grade'] == 'unknown' else 'turnaround'
-            row['category_reason'] = ('报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。' if row['category'] == 'operating' else
-                                      '资料不足以确认经营类型，具体缺口见资金核查。' if row['category'] == 'unresolved' else
-                                      '已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。')
+            row['category'] = 'unresolved'
+            row['category_reason'] = '财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。'
             row['category_sources'] = row['sources'] if row['review_method'] == '原文专项核查' else list({f['url']: {'title': '财报初筛依据', 'url': f['url']} for f in row['facts'].values() if f}.values())
             row['category_method'] = '财报规则初筛'
         row.setdefault('evidence_gap', '')

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 
-export const gradeLabels = { supported: '经营支撑较好', watch: '亏损/转型观察', pressure: '融资/经营压力', unknown: '待核实' }
+export const gradeLabels = { supported: '当期经营初筛有支撑', watch: '亏损/转型观察', pressure: '融资/经营压力', unknown: '待核实' }
 export type Grade = keyof typeof gradeLabels
-export const categoryLabels = { clinical: '临床研发型', precommercial: '商业化前期', funded_loss: '亏损融资型', turnaround: '经营修复/扩张', commercial_medical: '医药商业化', digital_assets: '数字资产型', financial: '金融/地产/投资', operating: '经营已有支撑', disclosure_risk: '财报/披露风险', unresolved: '类型待核实' }
+export const categoryLabels = { clinical: '临床研发型', precommercial: '商业化前期', funded_loss: '亏损融资型', turnaround: '经营修复/扩张', commercial_medical: '医药商业化', digital_assets: '数字资产型', financial: '金融/地产/投资', operating: '经营已有支撑', disclosure_risk: '财报/披露风险', unresolved: '类型未核实' }
 export type Category = keyof typeof categoryLabels
 type Fact = { value: number; unit: string; start?: string; end: string; filed: string; url: string }
 export type FundamentalPhrase = { text: string; method: string; sources: { title: string; url: string }[] }

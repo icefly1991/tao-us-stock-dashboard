@@ -349,3 +349,8 @@ UI-015验证结果：45项Python测试、lint/build通过；箱体页面、RSI�
 - 功能提交`22a6f28`已push，[Actions 36429474987](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36429474987) checks/build/deploy全部成功。云端117项Python、55项Chromium及lint/build通过。
 - 本次云端在纽约开盘后生成：data_date=20260928，updated_at=2026-09-28T09:36-04:00，350榜单成功/0失败；**仅500个K线文件，200条图表错误**，主要为图表与榜单末日不一致。原箱体65处理/35错误，新池172处理/62错误，不能描述为全量箱体正常。未放宽日期/价格校验，异常图表保持不可用；应在既有纽约22:30定时更新后复核上游恢复情况，不保证恢复时间。
 - 线上1440/1024/390五页验收通过：波幅展示及排序，重大风险11/观察7筛选，HUBG退市/申诉详情、CVNA历史与SMCI未决事项；无页面脚本/控制台错误或全页溢出。截图.cache/volatility-visual/live-*.png。当前行情包含盘中日线，不将9/28数据称为收盘终值；治理研究日期仍9/27。
+## 每周机器基本面研究（CR-024，本地未启用）
+
+独立工作流`.github/workflows/weekly-research-scan.yml`计划纽约时间周日10:00扫描SEC，运行Python/Node检查，生成`public/data/weekly-research.json`，自动提交该单文件并部署Pages。每日行情工作流下一次构建会从main沿用此文件，不用行情刷新改研究日期。执行范围与定性缺口见[WEEKLY_FUNDAMENTALS.md](WEEKLY_FUNDAMENTALS.md)。
+
+启用前，仓库所有者须在 Settings → Secrets and variables → Actions 中创建 Repository secret `SEC_CONTACT_EMAIL`，值为已提供的联系邮箱；不得提交到代码或日志。工作流使用该值构造SEC User-Agent。仓库还须允许`GITHUB_TOKEN`写入main及Pages部署；若分支保护阻止机器人提交，工作流应失败并保留旧页面，不可声称周更成功。首次发布后手动触发一次工作流，核对344个公司/基金主体及6个不适用、234只高风险池财务扫描、错误数、Actions Summary、周度JSON、Pages URL与次日行情部署留存。当前本地尚无Python/Playwright浏览器及该Secret，未做真实SEC端到端验证，工作流尚未发布。

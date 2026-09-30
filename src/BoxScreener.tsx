@@ -1,6 +1,8 @@
 import DataFreshness from './DataFreshness'
 import PageNavigation from './PageNavigation'
 import { GovernanceBadge } from './GovernanceReview'
+import WeeklyResearchNotice from './WeeklyResearchNotice'
+import { useWeeklyResearch } from './weeklyResearch'
 import { useGovernance } from './governanceData'
 import VolatilityCell from './VolatilityCell'
 import type { VolatilityData } from './dashboardData'
@@ -154,6 +156,7 @@ function LongRangeChart({ row }: { row: Box }) {
 
 export default function BoxScreener({ pool = false }: { pool?: boolean }) {
   const governance = useGovernance()
+  const weekly = useWeeklyResearch()
   const review = usePoolReview(pool)
   const [grade, setGrade] = useState('all')
   const [category, setCategory] = useState('all')
@@ -200,12 +203,13 @@ export default function BoxScreener({ pool = false }: { pool?: boolean }) {
       </section>
       {!pool && <ListReviewNotice />}
       {pool && <PoolFilter review={review.data} error={review.error} value={grade} onChange={setGrade} category={category} onCategoryChange={setCategory} />}
+      <WeeklyResearchNotice pool={pool} data={weekly.data} error={weekly.error} />
 
       <section className="box-panel">
         <div className="box-toolbar"><div><h2>形态候选</h2><p>已验证优先 · 同类按空间效率排序</p></div>{!pool && <button className="box-reference" onClick={() => { setFilter('all'); setQuery('CRWV'); setSelected('CRWV') }}>查看 CRWV 对照</button>}</div>
         <div className="box-filters"><label>状态<select aria-label="状态" value={filter} onChange={event => setFilter(event.target.value)}><option value="candidates">候选（已验证 / 待观察）</option><option value="all">全部结果（含已排除）</option>{Object.entries(statusLabels).map(([key, label]) => <option key={key} value={key}>{label}</option>)}</select></label><label>查找股票<input aria-label="查找股票" value={query} onChange={event => setQuery(event.target.value)} placeholder="代码或公司名称" /></label><span>{rows.length} 个结果</span></div>
         <div className="box-table-scroll"><table className="box-table"><thead><tr><th>股票 / 形态</th><th>箱体下沿–上沿</th><th>箱体幅度 / 内部空间</th><th>平均周期 / 完成轮数</th><th>当前未完成</th><th>空间效率</th><th>箱体位置</th><th>长期位置 / 一年涨幅</th></tr></thead><tbody>{rows.map(row => <tr key={row.code} className={active?.code === row.code ? 'selected' : ''}>
-          <td><button aria-pressed={active?.code === row.code} onClick={() => setSelected(row.code)}><strong>{row.code}</strong><span>{row.name}</span></button>{pool && <FundamentalBadge compact assessment={review.data?.rows.find(item => item.code === row.code)} />}<span className={`box-status ${row.status}`}>{statusLabels[row.status]}</span><small className="box-history-note">{row.window_days ?? '—'}日窗口{row.contracting ? ' · 宽转窄' : ''}</small></td>
+          <td><button aria-pressed={active?.code === row.code} onClick={() => setSelected(row.code)}><strong>{row.code}</strong><span>{row.name}</span></button>{pool && <FundamentalBadge compact assessment={review.data?.rows.find(item => item.code === row.code)} weekly={weekly.data?.pool_rows.find(item => item.code === row.code)} />}<span className={`box-status ${row.status}`}>{statusLabels[row.status]}</span><small className="box-history-note">{row.window_days ?? '—'}日窗口{row.contracting ? ' · 宽转窄' : ''}</small></td>
           <td>{number(row.low, '', 2)} – {number(row.high, '', 2)}</td><td>{number(row.width_pct, '%')} / {number(row.inner_space_pct, '%')}</td><td>{number(row.cycle_days)} 天 / {row.round_count ?? 0} 轮</td><td>{number(row.pending_days, ' 天', 0)}</td><td>{number(row.efficiency, '', 2)}<small className="box-history-note">百分点 / 自然日</small></td><td>{number(row.position_pct, '%')}</td><td>{number(row.long_position_pct, '%')} / {number(row.year_return_pct, '%')}<small className="box-history-note">{row.long_history_complete ? '近四年' : '不足四年 · 可用历史'}</small></td>
         </tr>)}</tbody></table></div>
         {!rows.length && <p role="status" className="box-empty">暂无匹配结果，可切换“全部结果”。</p>}
@@ -214,7 +218,7 @@ export default function BoxScreener({ pool = false }: { pool?: boolean }) {
       {active && <section className="box-panel box-detail" aria-label="箱体走势详情">
         {governance.error && <p className="box-footnote">风险资料不可用，不能视为安全</p>}
         <div className="box-toolbar"><div><div className="box-eyebrow">DAILY CHART / 最近一年</div><h2>{active.code} <span>{active.name}</span></h2><p className="box-business">业务 / 板块：{active.business || '—'}</p></div><span className={`box-status ${active.status}`}>{statusLabels[active.status]}</span></div>
-        <p className="box-reason">{active.reason}</p><GovernanceBadge row={governance.data?.rows.find(row => row.code === active.code)} reviewedAt={governance.data?.reviewed_at} /><p className="box-volatility">近3月日均波幅：<VolatilityCell value={active.volatility_3m} /></p>{pool && <><FundamentalSummary assessment={review.data?.rows.find(item => item.code === active.code)} /><FundamentalBadge assessment={review.data?.rows.find(item => item.code === active.code)} /></>}
+        <p className="box-reason">{active.reason}</p><GovernanceBadge row={governance.data?.rows.find(row => row.code === active.code)} reviewedAt={governance.data?.reviewed_at} weekly={weekly.data?.company_rows.find(row => row.code === active.code)} /><p className="box-volatility">近3月日均波幅：<VolatilityCell value={active.volatility_3m} /></p>{pool && <><FundamentalSummary assessment={review.data?.rows.find(item => item.code === active.code)} /><FundamentalBadge assessment={review.data?.rows.find(item => item.code === active.code)} weekly={weekly.data?.pool_rows.find(item => item.code === active.code)} /></>}
         {active.short_year && <p className="box-footnote">历史不足一年，本次使用 {active.bars.length} 个可用交易日。</p>}
         <div className="box-window-options" aria-label="箱体窗口对照">
           {active.windows?.map(item => <button key={item.window_days} aria-pressed={active.window_days === item.window_days} onClick={() => setComparison({ code: active.code, days: item.window_days })}>

@@ -43,10 +43,11 @@ class PoolCategoryTests(unittest.TestCase):
                 apply_categories(self.payload(), data, '2026-09-27')
 
     def test_default_screen_never_asserts_financing_dependence(self):
-        for grade, kind in [('supported', 'operating'), ('watch', 'turnaround'), ('pressure', 'turnaround'), ('unknown', 'unresolved')]:
+        for grade, kind in [('supported', 'unresolved'), ('watch', 'unresolved'), ('pressure', 'unresolved'), ('unknown', 'unresolved')]:
             data = self.payload(); data['rows'][0]['grade'] = grade
             result = apply_categories(data, {'reviewed_at': '2026-09-27', 'overrides': {}}, '2026-09-27')
             self.assertEqual(result['rows'][0]['category'], kind)
+            self.assertEqual(result['rows'][0]['category_method'], '财报规则初筛')
 
     def test_supplement_replaces_stale_facts_and_missing_field_tags(self):
         row = self.payload()['rows'][0] | {'tags': ['财报字段待补'], 'facts': {'cash': {'value': 99}}}

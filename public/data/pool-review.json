@@ -90,8 +90,8 @@
       "country": "NV",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -231,8 +231,8 @@
       "country": "TX",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -371,8 +371,8 @@
       "country": "AL",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -507,8 +507,8 @@
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
       "evidence_gap": "",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "SEC财报/公告原文",
@@ -773,8 +773,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -1042,8 +1042,8 @@
       "country": "TX",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -1326,8 +1326,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -1546,8 +1546,8 @@
       "country": "KS",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -1687,8 +1687,8 @@
       "country": "Switzerland",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -1817,8 +1817,8 @@
       "country": "TN",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -1947,8 +1947,8 @@
       "country": "OH",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -2077,8 +2077,8 @@
       "country": "VA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -2337,8 +2337,8 @@
       "country": "NM",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -2478,8 +2478,8 @@
       "country": "TX",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -2759,8 +2759,8 @@
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
       "evidence_gap": "",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "SEC财报/公告原文",
@@ -3179,8 +3179,8 @@
       "country": "VT",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -3571,8 +3571,8 @@
       "country": "VA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -3712,8 +3712,8 @@
       "country": "AZ",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -3842,8 +3842,8 @@
       "country": "NY",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -4409,8 +4409,8 @@
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
       "evidence_gap": "",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "SEC财报/公告原文",
@@ -4546,8 +4546,8 @@
       "country": "PA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -4811,8 +4811,8 @@
       "country": "TX",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -4908,8 +4908,8 @@
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
       "evidence_gap": "",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "SEC财报/公告原文",
@@ -5166,8 +5166,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -5429,8 +5429,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -5569,8 +5569,8 @@
       "country": "United Kingdom",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -5699,8 +5699,8 @@
       "country": "UT",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -5997,8 +5997,8 @@
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
       "evidence_gap": "",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "SEC财报/公告原文",
@@ -6130,8 +6130,8 @@
       "country": "NY",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -6260,8 +6260,8 @@
       "country": "TN",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -6372,13 +6372,13 @@
           "url": "https://www.sec.gov/edgar/browse/?CIK=0001825088&owner=exclude"
         }
       ],
-      "runway_months": 8.0,
+      "runway_months": 8,
       "sic": "1531",
       "country": "FL",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -6518,8 +6518,8 @@
       "country": "MA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -6789,8 +6789,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -7163,8 +7163,8 @@
       "country": "GA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -7293,8 +7293,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -7558,8 +7558,8 @@
       "country": "TX",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -7689,8 +7689,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -7828,8 +7828,8 @@
       "country": "PA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -7960,8 +7960,8 @@
       "country": "MO",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -8169,8 +8169,8 @@
       "country": "MA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -8557,8 +8557,8 @@
       "country": "GA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -9144,8 +9144,8 @@
       "country": "NY",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -9284,8 +9284,8 @@
       "country": "NY",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -9429,13 +9429,13 @@
           "url": "https://www.sec.gov/edgar/browse/?CIK=0001860160&owner=exclude"
         }
       ],
-      "runway_months": 19.0,
+      "runway_months": 19,
       "sic": "3760",
       "country": "TX",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -9547,8 +9547,8 @@
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
       "evidence_gap": "",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "SEC财报/公告原文",
@@ -9680,8 +9680,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -9939,13 +9939,13 @@
           "url": "https://www.sec.gov/edgar/browse/?CIK=0001484769&owner=exclude"
         }
       ],
-      "runway_months": 5.0,
+      "runway_months": 5,
       "sic": "7812",
       "country": "NY",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -10226,8 +10226,8 @@
       "country": "FL",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -10366,8 +10366,8 @@
       "country": "IL",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -10618,8 +10618,8 @@
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
       "evidence_gap": "",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "SEC财报/公告原文",
@@ -10890,8 +10890,8 @@
       "country": "WA",
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "原文专项核查：财报/公告",
@@ -11021,8 +11021,8 @@
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
       "evidence_gap": "",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "SEC财报/公告原文",
@@ -11303,8 +11303,8 @@
       "country": "CO",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -11568,8 +11568,8 @@
       "country": "WA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -11708,8 +11708,8 @@
       "country": "NC",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -11824,8 +11824,8 @@
       "country": "FL",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -11954,8 +11954,8 @@
       "country": "TN",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -12084,8 +12084,8 @@
       "country": "MN",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -12225,8 +12225,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -12435,8 +12435,8 @@
       "country": "MA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -13135,13 +13135,13 @@
           "url": "https://www.sec.gov/edgar/browse/?CIK=0002007825&owner=exclude"
         }
       ],
-      "runway_months": 59.0,
+      "runway_months": 59,
       "sic": "7374",
       "country": "CO",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -13280,8 +13280,8 @@
       "country": "MN",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -13419,8 +13419,8 @@
       "country": "FL",
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "原文专项核查：财报/公告",
@@ -13534,8 +13534,8 @@
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
       "evidence_gap": "",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "SEC财报/公告原文",
@@ -13769,8 +13769,8 @@
       "country": "OR",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -13918,8 +13918,8 @@
       "country": "TX",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -14058,8 +14058,8 @@
       "country": "MA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -14580,8 +14580,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -14719,8 +14719,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -14858,8 +14858,8 @@
       "country": "OH",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -14988,8 +14988,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -15279,8 +15279,8 @@
       "country": "NC",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -15409,8 +15409,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -15539,8 +15539,8 @@
       "country": "IL",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -15669,8 +15669,8 @@
       "country": "NY",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -15799,8 +15799,8 @@
       "country": "TX",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -16188,8 +16188,8 @@
       "country": "TX",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -16301,8 +16301,8 @@
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
       "evidence_gap": "",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "SEC财报/公告原文",
@@ -16434,8 +16434,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -16566,8 +16566,8 @@
       "country": "UT",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -16706,8 +16706,8 @@
       "country": "DE",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -16971,8 +16971,8 @@
       "country": "FL",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -17110,8 +17110,8 @@
       "country": "FL",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -17240,8 +17240,8 @@
       "country": "OR",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -17925,8 +17925,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -18208,8 +18208,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -18491,8 +18491,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -18640,8 +18640,8 @@
       "country": "TX",
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "原文专项核查：财报/公告",
@@ -18752,8 +18752,8 @@
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
       "evidence_gap": "",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "SEC财报/公告原文",
@@ -18890,8 +18890,8 @@
       "country": "TX",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -19188,8 +19188,8 @@
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
       "evidence_gap": "",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "SEC财报/公告原文",
@@ -19323,8 +19323,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -19455,8 +19455,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -19730,7 +19730,7 @@
           "url": "https://www.sec.gov/edgar/browse/?CIK=0001661181&owner=exclude"
         }
       ],
-      "runway_months": 26.0,
+      "runway_months": 26,
       "sic": "2834",
       "country": "MA",
       "review_method": "财报初筛",
@@ -19883,8 +19883,8 @@
       "country": "GA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -20015,8 +20015,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -20145,8 +20145,8 @@
       "country": "OH",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -20286,8 +20286,8 @@
       "country": "FL",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -20542,8 +20542,8 @@
       "country": "TX",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -20690,8 +20690,8 @@
       "country": "NH",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -20772,8 +20772,8 @@
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
       "evidence_gap": "",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "SEC财报/公告原文",
@@ -21037,8 +21037,8 @@
       "country": "United Kingdom",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -21167,8 +21167,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -21308,8 +21308,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -21448,8 +21448,8 @@
       "country": "CO",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -21737,8 +21737,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -22019,8 +22019,8 @@
       "country": "TX",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -22159,8 +22159,8 @@
       "country": "MA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -22449,8 +22449,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -23004,8 +23004,8 @@
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
       "evidence_gap": "",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "SEC财报/公告原文",
@@ -23419,8 +23419,8 @@
       "country": "TX",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -23794,8 +23794,8 @@
       "country": "MD",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -24210,8 +24210,8 @@
       "country": "VA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -24343,8 +24343,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -24494,8 +24494,8 @@
       "country": "GA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -25177,8 +25177,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -25315,8 +25315,8 @@
       "country": "TX",
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "原文专项核查：财报/公告",
@@ -25459,8 +25459,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -25837,8 +25837,8 @@
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
       "evidence_gap": "",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "SEC财报/公告原文",
@@ -26101,8 +26101,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -26231,8 +26231,8 @@
       "country": "NY",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -26361,8 +26361,8 @@
       "country": "WA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -26496,8 +26496,8 @@
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
       "evidence_gap": "",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "SEC财报/公告原文",
@@ -26629,8 +26629,8 @@
       "country": "TX",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -26759,8 +26759,8 @@
       "country": "NY",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -26901,8 +26901,8 @@
       "country": "TX",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -27031,8 +27031,8 @@
       "country": "MA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -27281,8 +27281,8 @@
       "country": "MD",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -27419,8 +27419,8 @@
       "country": "PA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -27550,8 +27550,8 @@
       "country": "CO",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -27704,8 +27704,8 @@
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
       "evidence_gap": "",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "SEC财报/公告原文",
@@ -27991,8 +27991,8 @@
       "country": "OK",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -28139,8 +28139,8 @@
       "country": "CA",
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "原文专项核查：财报/公告",
@@ -28287,8 +28287,8 @@
       "country": "PA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -28420,8 +28420,8 @@
       "country": "NY",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -28561,8 +28561,8 @@
       "country": "TX",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -28829,8 +28829,8 @@
       "country": "CO",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -28969,8 +28969,8 @@
       "country": "AZ",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -29099,8 +29099,8 @@
       "country": "UT",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -29241,8 +29241,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -29506,8 +29506,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -29636,8 +29636,8 @@
       "country": "UT",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -29776,8 +29776,8 @@
       "country": "MI",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -29892,8 +29892,8 @@
       "country": "FL",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -30158,8 +30158,8 @@
       "country": "NY",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -30298,8 +30298,8 @@
       "country": "NC",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -30438,8 +30438,8 @@
       "country": "NY",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -30574,8 +30574,8 @@
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
       "evidence_gap": "",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "SEC财报/公告原文",
@@ -30713,8 +30713,8 @@
       "review_method": "原文专项核查",
       "business_clarity": "行业可核验，商业质量需结合公告",
       "evidence_gap": "",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "SEC财报/公告原文",
@@ -30859,8 +30859,8 @@
       "country": "DE",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -31060,8 +31060,8 @@
       "country": "CA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -31187,13 +31187,13 @@
           "url": "https://www.sec.gov/edgar/browse/?CIK=0002086587&owner=exclude"
         }
       ],
-      "runway_months": 17.0,
+      "runway_months": 17,
       "sic": "3760",
       "country": "CO",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "turnaround",
-      "category_reason": "已有经营活动，但盈利、现金流、扩张或资产负债表仍需修复/验证；不自动认定依赖融资生存，也不表示反转已发生。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
@@ -31322,8 +31322,8 @@
       "country": "WA",
       "review_method": "财报初筛",
       "business_clarity": "行业可核验，商业质量需结合公告",
-      "category": "operating",
-      "category_reason": "报告期盈利及经营现金流提供支撑；保留在用户池内作为对照，不因池名断言经营困难。",
+      "category": "unresolved",
+      "category_reason": "财报数字不能单独确认主营业务阶段或经营类型；须读业务原文后分类。资金等级单独显示。",
       "category_sources": [
         {
           "title": "财报初筛依据",
