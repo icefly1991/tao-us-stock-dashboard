@@ -53,8 +53,9 @@ def build_weekly(scan: dict, pool: dict, governance: dict, evidence_dir: Path, p
         old_filed = newest_filing(previous['facts'])
         prior_machine = previous_pool.get(code)
         prior_filed = prior_machine.get('facts_filed_at') if prior_machine else None
-        if not filed or (old_filed and filed <= old_filed) or (prior_filed and filed <= prior_filed):
-            carried = {key: prior_machine.get(key) for key in ('grade', 'grade_reason', 'highlights', 'risks', 'facts', 'facts_filed_at', 'source', 'manual_grade', 'manual_reviewed_at') if prior_machine and key in prior_machine}
+        baseline = max(pool['reviewed_at'], old_filed or '')
+        if not filed or filed <= baseline or (prior_filed and filed <= prior_filed):
+            carried = {key: prior_machine.get(key) for key in ('grade', 'grade_reason', 'highlights', 'risks', 'facts', 'facts_filed_at', 'source', 'manual_grade', 'manual_reviewed_at') if prior_machine and prior_filed and prior_filed > baseline and key in prior_machine}
             machine_rows.append({'code': code, 'status': 'unchanged', 'grade': None, 'highlights': [], 'risks': [], 'facts': {}, 'facts_filed_at': filed, 'source': None, **carried})
             continue
         assessment['category'] = previous['category']

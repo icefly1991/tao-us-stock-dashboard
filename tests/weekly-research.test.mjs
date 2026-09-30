@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { cikFromSources, recentFilings, scan } from '../scripts/scan_research_weekly.mjs'
+import { cikFromSources, filingUrl, recentFilings, scan } from '../scripts/scan_research_weekly.mjs'
 
 test('extracts verified CIK and filters relevant new filings', () => {
   assert.equal(cikFromSources([{ url: 'https://www.sec.gov/Archives/edgar/data/12345/123/doc.htm' }]), '0000012345')
@@ -11,6 +11,10 @@ test('extracts verified CIK and filters relevant new filings', () => {
     primaryDocument: ['a.htm', 'b.htm', 'c.htm'],
   } } }, '2026-09-27')
   assert.deepEqual(result.map(item => item.form), ['10-Q'])
+})
+
+test('preserves SEC document subdirectories in filing links', () => {
+  assert.equal(filingUrl('0001824920', '0000876661-26-000804', 'xslF25X02/primary_doc.xml'), 'https://www.sec.gov/Archives/edgar/data/1824920/000087666126000804/xslF25X02/primary_doc.xml')
 })
 
 test('keeps failed company scans visible without refreshing research dates', async () => {

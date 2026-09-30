@@ -26,6 +26,11 @@ export function recentFilings(submissions, since) {
   })).filter(item => item.filed >= since && RELEVANT.test(item.form))
 }
 
+export function filingUrl(cik, accession, document) {
+  const safeDocument = document.split('/').map(encodeURIComponent).join('/')
+  return `https://www.sec.gov/Archives/edgar/data/${Number(cik)}/${accession.replaceAll('-', '')}/${safeDocument}`
+}
+
 async function secJson(cik, email, type = 'submissions') {
   const url = type === 'companyfacts' ? `https://data.sec.gov/api/xbrl/companyfacts/CIK${cik}.json` : `https://data.sec.gov/submissions/CIK${cik}.json`
   for (let attempt = 0; attempt < 3; attempt++) {
@@ -58,7 +63,7 @@ export async function scan({ coverage, pool, governance, email, fetchCompany = s
       if (oldest && oldest > since && submissions?.filings?.files?.length) throw new Error('SEC recent history does not reach research baseline; older archive needed')
       const filings = recentFilings(submissions, since).map(item => ({
         ...item,
-        url: `https://www.sec.gov/Archives/edgar/data/${Number(cik)}/${item.accession.replaceAll('-', '')}/${encodeURIComponent(item.document)}`,
+        url: filingUrl(cik, item.accession, item.document),
       }))
       let companyfacts = null
       let factsStatus = 'not_applicable'

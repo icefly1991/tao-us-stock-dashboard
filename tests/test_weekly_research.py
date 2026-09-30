@@ -1,5 +1,6 @@
 import sys
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
@@ -30,6 +31,18 @@ class WeeklyResearchTests(unittest.TestCase):
         result = build_weekly(scan, pool, governance, Path('.'), previous)
         self.assertEqual(result['company_rows'][0]['status'], 'no_new_relevant_filing')
         self.assertEqual(result['company_rows'][0]['attention'], [])
+
+    def test_older_facts_do_not_become_new_when_manual_snapshot_lacks_fact(self):
+        scan = {'errors': [], 'scanned_at': '2026-10-04T14:00:00Z', 'rows': [{'code': 'AAA', 'status': 'no_relevant_filing', 'facts_status': 'available', 'filings': []}]}
+        pool = {'reviewed_at': '2026-09-27', 'rows': [{'code': 'AAA', 'facts': {}, 'category': 'turnaround'}]}
+        governance = {'reviewed_at': '2026-09-27', 'rows': [{'code': 'AAA'}]}
+        previous = {'pool_reviewed_at': '2026-09-27', 'governance_reviewed_at': '2026-09-27', 'pool_rows': [{'code': 'AAA', 'facts_filed_at': '2026-03-31', 'grade': 'unknown', 'highlights': [{'text': 'stale'}]}], 'company_rows': []}
+        with patch('build_weekly_research.build_assessment', return_value={'facts': {'cash': {'filed': '2026-03-31'}}}):
+            result = build_weekly(scan, pool, governance, Path('.'), previous)
+        row = result['pool_rows'][0]
+        self.assertEqual(row['status'], 'unchanged')
+        self.assertIsNone(row['grade'])
+        self.assertEqual(row['highlights'], [])
 
 
 if __name__ == '__main__':
