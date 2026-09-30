@@ -30,4 +30,4 @@ CR-024。用户要求每周机器扫描并发布基本面研究，并限定只�
 5. 生成完整研究JSON后校验成员数、必填字段、HTTPS来源、日期、人工与机器结论差异及前端契约；门禁失败时不覆盖有效Pages文件，保留失败报告。
 6. 定时任务可延迟或失败；“每周更新”指每周尝试完整扫描与发布，页面必须区分本周已完成复核、无新证据、待核、失败和旧快照。
 
-执行链：`scripts/scan_research_weekly.mjs`下载申报与XBRL，`scripts/build_weekly_research.py`复用已有Python初筛和短语规则，页面在原人工结论旁展示本周机器层。工作流通过自动提交独立周度JSON并部署Pages，使次日行情部署继续包含本周结果；不改`pool-review.json`、`governance-review.json`或CSV人工源。仓库Secret `SEC_CONTACT_EMAIL` 尚需配置；真实SEC端到端、Python和浏览器回归未在本地环境完成前，不应宣称任务已上线。
+执行链：`scripts/scan_research_weekly.mjs`下载申报与XBRL，`scripts/build_weekly_research.py`复用已有Python初筛和短语规则，页面在原人工结论旁展示本周机器层。工作流通过自动提交独立周度JSON并部署Pages，使次日行情部署继续包含本周结果；不改`pool-review.json`、`governance-review.json`或CSV人工源。仓库Secret `SEC_CONTACT_EMAIL` 已配置，Linux 回归检查已通过；首次真实SEC端到端扫描及Pages发布仍须验证，完成前不应宣称任务已上线。

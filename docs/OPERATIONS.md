@@ -353,4 +353,4 @@ UI-015验证结果：45项Python测试、lint/build通过；箱体页面、RSI�
 
 独立工作流`.github/workflows/weekly-research-scan.yml`计划纽约时间周日10:00扫描SEC，运行Python/Node检查，生成`public/data/weekly-research.json`，自动提交该单文件并部署Pages。每日行情工作流下一次构建会从main沿用此文件，不用行情刷新改研究日期。执行范围与定性缺口见[WEEKLY_FUNDAMENTALS.md](WEEKLY_FUNDAMENTALS.md)。
 
-启用前，仓库所有者须在 Settings → Secrets and variables → Actions 中创建 Repository secret `SEC_CONTACT_EMAIL`，值为已提供的联系邮箱；不得提交到代码或日志。工作流使用该值构造SEC User-Agent。仓库还须允许`GITHUB_TOKEN`写入main及Pages部署；若分支保护阻止机器人提交，工作流应失败并保留旧页面，不可声称周更成功。首次发布后手动触发一次工作流，核对344个公司/基金主体及6个不适用、234只高风险池财务扫描、错误数、Actions Summary、周度JSON、Pages URL与次日行情部署留存。当前本地尚无Python/Playwright浏览器及该Secret，未做真实SEC端到端验证，工作流尚未发布。
+仓库Actions Secret `SEC_CONTACT_EMAIL` 已用用户提供的联系邮箱配置；值不在代码或日志中。工作流使用该值构造SEC User-Agent。仓库还须允许`GITHUB_TOKEN`写入main及Pages部署；若分支保护阻止机器人提交，工作流应失败并保留旧页面，不可声称周更成功。首次发布后手动触发一次工作流，核对344个公司/基金主体及6个不适用、234只高风险池财务扫描、错误数、Actions Summary、周度JSON、Pages URL与次日行情部署留存。分支Linux回归已通过，真实SEC端到端验证尚未完成，工作流尚未发布。
