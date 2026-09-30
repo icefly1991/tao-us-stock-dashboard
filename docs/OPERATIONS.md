@@ -349,8 +349,10 @@ UI-015验证结果：45项Python测试、lint/build通过；箱体页面、RSI�
 - 功能提交`22a6f28`已push，[Actions 36429474987](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36429474987) checks/build/deploy全部成功。云端117项Python、55项Chromium及lint/build通过。
 - 本次云端在纽约开盘后生成：data_date=20260928，updated_at=2026-09-28T09:36-04:00，350榜单成功/0失败；**仅500个K线文件，200条图表错误**，主要为图表与榜单末日不一致。原箱体65处理/35错误，新池172处理/62错误，不能描述为全量箱体正常。未放宽日期/价格校验，异常图表保持不可用；应在既有纽约22:30定时更新后复核上游恢复情况，不保证恢复时间。
 - 线上1440/1024/390五页验收通过：波幅展示及排序，重大风险11/观察7筛选，HUBG退市/申诉详情、CVNA历史与SMCI未决事项；无页面脚本/控制台错误或全页溢出。截图.cache/volatility-visual/live-*.png。当前行情包含盘中日线，不将9/28数据称为收盘终值；治理研究日期仍9/27。
-## 每周机器基本面研究（CR-024，本地未启用）
+## 每周机器基本面研究（CR-024，已启用）
 
 独立工作流`.github/workflows/weekly-research-scan.yml`计划纽约时间周日10:00扫描SEC，运行Python/Node检查，生成`public/data/weekly-research.json`并只提交该文件到main。提交后工作流明确调用`workflow_dispatch`启动现有行情工作流重新生成真实行情并部署Pages；不能直接用仓库中的占位行情部署。行情失败时周度JSON已提交但线上仍是旧版，须分别报告研究扫描与页面发布状态；行情日期不覆盖研究扫描日期。执行范围与定性缺口见[WEEKLY_FUNDAMENTALS.md](WEEKLY_FUNDAMENTALS.md)。
 
-仓库Actions Secret `SEC_CONTACT_EMAIL` 已用用户提供的联系邮箱配置；值不在代码或日志中。工作流使用该值构造SEC User-Agent。仓库还须允许`GITHUB_TOKEN`写入main；若分支保护阻止机器人提交，工作流应失败并保留旧页面，不可声称周更成功。首次修正后的运行须核对344个公司/基金主体及6个不适用、234只高风险池财务扫描、错误数、Actions Summary、周度JSON、后续行情工作流和Pages URL。分支Linux回归已通过；首次真实SEC运行因发现占位行情直接部署风险，在扫描开始前取消，修正后尚待重跑。
+仓库Actions Secret `SEC_CONTACT_EMAIL` 已用用户提供的联系邮箱配置；值不在代码或日志中。工作流使用该值构造SEC User-Agent。仓库须允许`GITHUB_TOKEN`写入main及派发Actions；若分支保护阻止机器人提交，工作流应失败并保留旧页面，不可声称周更成功。每次运行核对344个公司/基金主体及6个不适用、234只高风险池财务扫描、错误数、Actions Summary、周度JSON、后续行情工作流和Pages URL。首次真实SEC运行因发现占位行情直接部署风险在扫描前取消，修正后已重跑成功。
+
+2026-09-30 首次真实周更已完成：[SEC 扫描 36729221077](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36729221077)成功并提交`a57ad58`；[真实行情与Pages部署 36729923427](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36729923427)成功。扫描覆盖344个可核实CIK主体、6个不适用；234只高风险池财务请求均完成，研究日后有22个代码25份待判申报，0只出现新于人工研究日的结构化财务事实。线上`weekly-research.json` HTTP 200、234/350行，`scanned_at=2026-09-30T14:30:37.960Z`；真实行情`data_date=20260930`，复权/原价各350行。机器层不改人工经营类型、短语、治理结论或重大/观察风险；详细边界和IONQ权证核查见[首轮报告](reviews/2026-09-30-weekly-sec-first-run.md)。
