@@ -2,6 +2,9 @@ name: Regression Checks
 
 on:
   pull_request:
+  push:
+    branches:
+      - "codex/**"
   workflow_call:
   workflow_dispatch:
 
