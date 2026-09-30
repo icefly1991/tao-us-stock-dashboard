@@ -69,9 +69,10 @@ def build_weekly(scan: dict, pool: dict, governance: dict, evidence_dir: Path, p
             signals.append({'code': row['code'], 'status': 'not_applicable', 'filings': [], 'sic_description': None})
             continue
         seen = set(previous_companies.get(row['code'], {}).get('seen_accessions', []))
-        filings = [filing for filing in row['filings'] if filing['accession'] not in seen]
+        filings = row['filings']
+        new_since_last_scan = sum(filing['accession'] not in seen for filing in filings)
         seen.update(filing['accession'] for filing in row['filings'])
-        signals.append({'code': row['code'], 'status': 'new_filings_need_interpretation' if filings else 'no_new_relevant_filing', 'filings': filings, 'attention': attention(filings), 'seen_accessions': sorted(seen), 'sic_description': row.get('sic_description')})
+        signals.append({'code': row['code'], 'status': 'new_filings_need_interpretation' if filings else 'no_new_relevant_filing', 'filings': filings, 'new_since_last_scan': new_since_last_scan, 'attention': attention(filings), 'seen_accessions': sorted(seen), 'sic_description': row.get('sic_description')})
     return {'schema_version': 1, 'scanned_at': scan['scanned_at'], 'pool_reviewed_at': pool['reviewed_at'], 'governance_reviewed_at': governance['reviewed_at'], 'method': 'SEC structured facts and filing metadata; no automatic legal or survival conclusion', 'pool_count': len(machine_rows), 'company_count': len(signals), 'pool_rows': machine_rows, 'company_rows': signals}
 
 
