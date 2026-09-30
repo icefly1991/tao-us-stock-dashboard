@@ -23,20 +23,6 @@ async function seedPool(page: Page) {
 
 test.beforeEach(async ({ page }) => seedPool(page))
 
-test('每周机器财报与新申报同人工结论分开显示', async ({ page }) => {
-  await page.route('**/data/weekly-research.json', route => route.fulfill({ json: {
-    schema_version: 1, scanned_at: '2026-10-04T14:00:00Z', pool_reviewed_at: '2026-09-27', governance_reviewed_at: '2026-09-27', pool_count: 1, company_count: 1,
-    pool_rows: [{ code: 'AAA', status: 'new_structured_facts', grade: 'watch', grade_reason: '本期经营现金流待观察', highlights: [], risks: [{ text: '经营现金流为负', sources: [{ title: '财报', url: 'https://www.sec.gov/Archives/test' }] }], facts: { operating_cash_flow: { value: -100, unit: 'USD', end: '2026-09-30', filed: '2026-10-02', url: 'https://www.sec.gov/Archives/test' } }, facts_filed_at: '2026-10-02', source: 'https://www.sec.gov/Archives/test', manual_grade: 'supported' }],
-    company_rows: [{ code: 'AAA', status: 'new_filings_need_interpretation', filings: [{ accession: '0001-26-000001', form: '8-K', filed: '2026-10-02', url: 'https://www.sec.gov/Archives/test' }], attention: ['上市合规条款须核实'], sic_description: '测试行业' }],
-  } }))
-  await page.goto('#/pool')
-  await expect(page.getByText('每周机器扫描 2026-10-04')).toBeVisible()
-  await expect(page.locator('[data-code="AAA"] .fundamental-review')).toContainText('新财报机器初筛：亏损/转型观察')
-  await expect(page.locator('[data-code="AAA"] .fundamental-review')).toContainText('当期经营初筛有支撑')
-  await page.getByRole('button', { name: 'AAA 核查依据' }).click()
-  await expect(page.getByRole('dialog')).toContainText('本周新财报机器初筛')
-})
-
 test('摘要两列、逐项来源与缺少亮点，不扩展原列表', async ({ page }) => {
   await page.goto('#/pool')
   await expect(page.getByTestId('column-header')).toContainText('基本面亮点')

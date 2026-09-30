@@ -1,13 +1,13 @@
 import { gradeLabels, categoryLabels } from './poolReviewData'
 import type { Assessment, PoolReview } from './poolReviewData'
-import type { WeeklyFinancial } from './weeklyResearch'
+import { isReviewStale } from './governanceData'
 import { useRef } from 'react'
 
 export function PoolFilter({ review, error, value, onChange, category, onCategoryChange }: { review: PoolReview | null; error: boolean; value: string; onChange: (value: string) => void; category: string; onCategoryChange: (value: string) => void }) {
   return <section className="pool-review-controls" aria-label="基本面筛选">
     <label>经营类型 <select aria-label="经营类型" value={category} onChange={event => onCategoryChange(event.target.value)}><option value="all">全部类型</option>{Object.entries(categoryLabels).map(([key, label]) => <option key={key} value={key}>{label} · {review?.rows.filter(row => row.category === key).length ?? '—'}</option>)}</select></label>
     <label>基本面 <select aria-label="基本面等级" value={value} onChange={event => onChange(event.target.value)}><option value="all">全部等级</option>{Object.entries(gradeLabels).map(([key, label]) => <option key={key} value={key}>{label} · {review?.rows.filter(row => row.grade === key).length ?? '—'}</option>)}</select></label>
-    <span>{review ? `核查 ${review.reviewed_at}` : error ? '基本面资料暂不可用，不能视为低风险' : '读取基本面资料…'}</span>
+    <span>{review ? `核查 ${review.reviewed_at}${isReviewStale(review.reviewed_at) ? ' · 已过30天，请与名单一起手动复核' : ''}` : error ? '基本面资料暂不可用，不能视为低风险' : '读取基本面资料…'}</span>
     <details className="page-help"><summary>分类与依据</summary><p>追踪经营困境与潜在反转。类型说明业务阶段，等级说明资金与经营压力；临床研发不等于短期断粮，获批不等于盈利。选项数字为全池数量，箱体页还需满足形态筛选。</p><a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/POOL_RESEARCH.md" target="_blank" rel="noreferrer">分类方法与限制</a>{review?.excluded.map(item => <p key={item.code}>{item.code}：{item.reason} <a href={item.url} target="_blank" rel="noreferrer">依据</a></p>)}</details>
   </section>
 }
@@ -24,19 +24,17 @@ export function FundamentalSummary({ assessment, evidence = false }: { assessmen
   return <div className="fundamental-summary">{(['highlights', 'risks'] as const).map(kind => <section key={kind}><h3>{kind === 'highlights' ? '基本面亮点' : '基本面风险'}</h3><FundamentalPhrases assessment={assessment} kind={kind} evidence={evidence} /></section>)}</div>
 }
 
-export function FundamentalBadge({ assessment, compact = false, weekly }: { assessment?: Assessment; compact?: boolean; weekly?: WeeklyFinancial }) {
+export function FundamentalBadge({ assessment, compact = false }: { assessment?: Assessment; compact?: boolean }) {
   const dialog = useRef<HTMLDialogElement>(null)
   if (!assessment) return <span className="fundamental-badge unknown">待核实</span>
   return <div className="fundamental-review">
     <span className="fundamental-category">{categoryLabels[assessment.category]}</span>
     <span className={`fundamental-badge ${assessment.grade}`}>{gradeLabels[assessment.grade]}</span>
-    {weekly?.status === 'new_structured_facts' && <span className="fundamental-badge unknown">新财报机器初筛：{weekly.grade ? (gradeLabels as Record<string, string>)[weekly.grade] ?? weekly.grade : '行业待判'}</span>}
     {!compact && <><div className="fundamental-tags" title={assessment.tags.join(' · ')}>{assessment.tags.slice(0, 2).join(' · ')}{assessment.tags.length > 2 ? ` 等${assessment.tags.length}项` : ''}</div><button className="fundamental-open" onClick={() => dialog.current?.showModal()} aria-label={`${assessment.code} 核查依据`}>核查依据</button>
     <dialog ref={dialog} className="fundamental-dialog" aria-label={`${assessment.code} 基本面核查`}>
       <div className="fundamental-dialog-heading"><h2>{assessment.code} · {gradeLabels[assessment.grade]}</h2><button onClick={() => dialog.current?.close()} autoFocus>关闭</button></div>
       <p><strong>{categoryLabels[assessment.category]}</strong> · {assessment.category_reason}</p>
       <small>{assessment.category_method}</small>
-      {weekly?.status === 'new_structured_facts' && <section className="fundamental-gap"><strong>本周新财报机器初筛</strong><p>申报 {weekly.facts_filed_at} · 机器等级 {weekly.grade ? (gradeLabels as Record<string, string>)[weekly.grade] ?? weekly.grade : '行业待判'}；原人工等级保留。</p><p>{weekly.grade_reason}</p>{Object.entries(weekly.facts).filter(([, fact]) => fact !== null).map(([key, fact]) => <p key={key}>{factLabels[key] ?? key}：{fact!.value.toLocaleString('zh-CN')} {fact!.unit} · {fact!.end}</p>)}{weekly.source && <a href={weekly.source} target="_blank" rel="noreferrer">本次财报来源</a>}</section>}
       <FundamentalSummary assessment={assessment} evidence />
       {assessment.reason !== assessment.category_reason && <p>{assessment.reason}</p>}<p>{assessment.business} · {assessment.tags.join(' · ')}</p><small>{assessment.review_method} · 核查 {assessment.reviewed_at}</small>
       {assessment.evidence_gap && <p className="fundamental-gap">仍待确认：{assessment.evidence_gap}</p>}

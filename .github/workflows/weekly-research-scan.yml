@@ -1,18 +1,10 @@
-name: Weekly Research Scan
+name: Manual SEC Research Evidence
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 10 * * 0"
-      timezone: "America/New_York"
 
 permissions:
-  contents: write
-  actions: write
-
-concurrency:
-  group: weekly-research
-  cancel-in-progress: false
+  contents: read
 
 jobs:
   scan:
@@ -40,33 +32,17 @@ jobs:
         env:
           SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
         run: node scripts/scan_research_weekly.mjs
-      - name: Build weekly machine research
-        run: python scripts/build_weekly_research.py
-      - name: Build UI with weekly research
-        run: npm run build
-      - name: Browser regression checks
-        run: |
-          npx playwright install --with-deps chromium
-          npm test
-      - name: Commit weekly research snapshot
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/weekly-research.json
-          git commit -m "data: refresh weekly machine research"
-          git push origin HEAD:main
-      - name: Request dashboard build with real market data
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh workflow run deploy.yml --ref main
-      - name: Upload research scan
+      - name: Build research draft for monthly review
+        run: python scripts/build_weekly_research.py --output .cache/weekly-research/research-draft.json
+      - name: Upload evidence for review
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: weekly-research-${{ github.run_id }}
+          name: manual-research-evidence-${{ github.run_id }}
           path: |
             .cache/weekly-research/report.md
             .cache/weekly-research/scan.json
+            .cache/weekly-research/research-draft.json
           include-hidden-files: true
           if-no-files-found: ignore
           retention-days: 30

@@ -356,3 +356,7 @@ UI-015验证结果：45项Python测试、lint/build通过；箱体页面、RSI�
 仓库Actions Secret `SEC_CONTACT_EMAIL` 已用用户提供的联系邮箱配置；值不在代码或日志中。工作流使用该值构造SEC User-Agent。仓库须允许`GITHUB_TOKEN`写入main及派发Actions；若分支保护阻止机器人提交，工作流应失败并保留旧页面，不可声称周更成功。每次运行核对344个公司/基金主体及6个不适用、234只高风险池财务扫描、错误数、Actions Summary、周度JSON、后续行情工作流和Pages URL。首次真实SEC运行因发现占位行情直接部署风险在扫描前取消，修正后已重跑成功。
 
 2026-09-30 首次真实周更已完成：[SEC 扫描 36729221077](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36729221077)成功并提交`a57ad58`；[真实行情与Pages部署 36729923427](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36729923427)成功。扫描覆盖344个可核实CIK主体、6个不适用；234只高风险池财务请求均完成，研究日后有22个代码25份待判申报，0只出现新于人工研究日的结构化财务事实。线上`weekly-research.json` HTTP 200、234/350行，`scanned_at=2026-09-30T14:30:37.960Z`；真实行情`data_date=20260930`，复权/原价各350行。机器层不改人工经营类型、短语、治理结论或重大/观察风险；详细边界和IONQ权证核查见[首轮报告](reviews/2026-09-30-weekly-sec-first-run.md)。
+
+## 当前月度手动维护（CR-025，覆盖上节）
+
+用户每月主动发起一次，AI/维护者按[MONTHLY_REVIEW.md](MONTHLY_REVIEW.md)将股票列表与基本面、治理和生存风险同轮核查。`.github/workflows/weekly-research-scan.yml`已改为仅`workflow_dispatch`的只读取证任务，报告与研究草稿只上传artifact；不再定时、提交JSON或触发部署。原`weekly-research.json`及页面周度机器提示已移除，旧自动扫描结果仅保留历史报告。名单及研究的实际日期独立维护，未完成月度复核时不得推进；每日行情生成和Pages部署继续照常运行。

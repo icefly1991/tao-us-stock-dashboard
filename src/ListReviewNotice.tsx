@@ -23,6 +23,6 @@ export default function ListReviewNotice() {
   const overdue = days !== null && days > 30
   return <div className={`list-review-notice ${overdue ? 'overdue' : ''}`} data-testid="list-review-notice" data-overdue={overdue}>
     <strong>{date === null ? '正在读取列表更新日期…' : days === null ? '名单日期暂不可用，请核实。' : `名单更新 ${date} · ${days} 天前`}</strong>
-    {overdue && <span>超过30天，请手动更新名单。</span>}
+    {overdue && <span>超过30天，请一起手动更新名单和基本面研究。</span>}
   </div>
 }
