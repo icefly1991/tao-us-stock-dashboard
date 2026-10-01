@@ -494,5 +494,5 @@ README 和页面必须说明 yfinance/Yahoo 数据用于个人研究，可能延
 
 ## OPS-008（CR-027）：维护Actions运行时
 
-- 三个工作流使用官方Node 24 Actions版本，消除旧Action产生的Node 20、`punycode`和`url.parse()`弃用警告；项目的Node 22构建版本保持不变。
-- Python/浏览器回归、真实行情生成及Pages发布通过，且日志核对警告来源；不以`NODE_NO_WARNINGS`等全局屏蔽方式隐藏诊断。
+- 三个工作流使用官方Node 24 Actions版本，消除旧Action产生的Node 20及大部分`punycode`、`url.parse()`弃用警告；项目的Node 22构建版本保持不变。
+- Python/浏览器回归、真实行情生成及Pages发布通过，且日志核对剩余警告来源；最新版`deploy-pages`的上游`DEP0040`单独跟踪，不以`NODE_NO_WARNINGS`等全局屏蔽方式隐藏诊断。

@@ -227,3 +227,4 @@ UI-018及此前本地箱体/RSI/业务/日线量价功能已随3e3bdd7发布。A
 ## 2026-10-01 — CR-027 Actions运行时升级
 
 - 升级三个工作流的官方Actions到Node 24版本，处理旧版Action产生的Node 20与Node弃用警告。项目构建仍使用Node 22；行情、箱体和研究JSON契约不变。
+- Actions 36882107075真实部署通过：checks/build的Node警告清零；deploy-pages@v5仍有1条上游punycode提示，见官方问题#434。未用全局警告屏蔽。

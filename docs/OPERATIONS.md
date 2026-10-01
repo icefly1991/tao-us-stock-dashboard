@@ -372,3 +372,5 @@ CR-026已由[运行 36842000320](https://github.com/icefly1991/tao-us-stock-dash
 ## 2026-10-01 CR-027：Actions Node警告
 
 [运行 36842000320](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36842000320)的项目测试和部署均成功，但旧版官方Actions在Node 24 runner上产生`DEP0040 punycode`、`DEP0169 url.parse()`及Node.js 20弃用提示。三个工作流升级到官方Node 24 Actions，保留项目Node 22与Python 3.11。另有`yfinance/scrapers/history.py`触发的`Pandas4Warning`，它是Python上游警告，不计作Node修复成功；新运行需逐类核对。
+
+[升级后运行 36882107075](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36882107075) checks/build/deploy均成功：123 Python、55浏览器测试；350行情成功/0失败，数据日20261001，676历史文件/24图表错误，活跃箱体100/0、高风险箱体221/13。checks和build中Node 20、`DEP0040`、`DEP0169`均为0；deploy中的最新版`actions/deploy-pages@v5`仍有1条`DEP0040 punycode`。该上游问题见[actions/deploy-pages#434](https://github.com/actions/deploy-pages/issues/434)，当前无已发布的修复版；不能把剩余一条写成项目依赖或已修复。build另有350条来自`yfinance/scrapers/history.py`的`Pandas4Warning`，与Node警告无关。没有修改数据口径、研究日期或JSON契约。

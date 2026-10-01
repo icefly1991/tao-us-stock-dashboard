@@ -237,3 +237,5 @@ CR-020/021/022已发布：22a6f28，Actions 36429474987成功；117Python、55Ch
 
 ## CR-027 / OPS-008（2026-10-01）
 用户要求处理Actions日志中的Node警告。三个工作流升级官方Node 24 Actions；项目npm构建仍用Node 22，行情与研究契约不变。旧版Action的Node 20、punycode和url.parse提示与yfinance的Pandas4Warning需分开核对；真实运行证据见OPERATIONS。
+
+CR-027已发布：6126284 / Actions 36882107075 checks/build/deploy成功，前两段Node相关提示清零；最新版deploy-pages@v5仍产生1条上游punycode弃用提示，GitHub官方仓库问题#434未解决。不得用全局屏蔽把它称为修复；见OPERATIONS。

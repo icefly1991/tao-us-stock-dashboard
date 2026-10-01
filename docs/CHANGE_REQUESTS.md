@@ -250,4 +250,4 @@ CR-014 发布确认（2026-09-21）：状态已为Implemented（已发布），�
 ## CR-027：GitHub Actions Node 运行时警告（2026-10-01，用户要求）
 
 - [运行 36842000320](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36842000320)中的`DEP0040`、`DEP0169`和Node.js 20弃用提示来自旧版官方Actions及其依赖。升级三个工作流使用的官方checkout/setup-node/setup-python/Pages/artifact Actions到已发布的Node 24版本；保留项目构建用Node 22与Python 3.11，不改变金融数据或页面契约。
-- 验收：回归、真实行情构建和Pages部署通过；新运行中不再出现上述Node警告。`yfinance`的`Pandas4Warning`属于单独的Python上游依赖问题，不通过隐藏全部警告冒充已修复。
+- 验收：回归、真实行情构建和Pages部署通过；检查与构建日志不再出现旧版Action的Node警告。最新版`deploy-pages@v5`仍有一条上游`DEP0040`，以[官方仓库问题 #434](https://github.com/actions/deploy-pages/issues/434)跟踪，不通过全局屏蔽冒充已修复。`yfinance`的`Pandas4Warning`属于单独的Python上游依赖问题。
