@@ -58,7 +58,7 @@ class YFinancePipelineClient:
             errors.append({"code": "*", "name": "批量下载", "error": str(exc)})
 
         market_dates: dict[str, str] = {}
-        if not history.empty:
+        if isinstance(history, pd.DataFrame) and not history.empty:
             for item in active_items:
                 if item.asset_type == "crypto":
                     continue
