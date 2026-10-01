@@ -143,3 +143,5 @@ CR-024周度机器层：`weekly-research.json` v1独立于原人工研究，含`
 CR-025覆盖上述周度运行路径：生产页面不再读取`weekly-research.json`，仓库移除此文件；`pool-review.json`、`governance-review.json`和`list-review.json`仍是各自研究/名单状态来源。SEC扫描只在用户发起的月度更新中按需手动取证，输出artifact而不自动写仓库。每日行情和箱体数据流不变；完整月度流程见[MONTHLY_REVIEW.md](MONTHLY_REVIEW.md)。
 
 CR-026：Yahoo同批下载先检查各标的未截断的最新有内容日线，再按非加密且有可用行情的标的在全体、持仓、活跃、高风险池各至少80%覆盖确定共同市场日。无行情标的按原规则单列错误。非加密的榜单、RSI和历史均截到此日，再生成两个箱体文件；加密仍保留独立最新日。日志记录覆盖及较新日期暂缓数。`data_date`现表示这轮共同市场日，不再是任一非加密标的的最大日期；JSON字段和箱体v4不变。
+
+CR-027仅将三个工作流使用的官方GitHub Actions升级到Node 24运行时版本；`setup-node`仍安装Node 22执行本项目脚本，数据流及JSON契约不变。

@@ -246,3 +246,8 @@ CR-014 发布确认（2026-09-21）：状态已为Implemented（已发布），�
 - [失败运行 36692761065](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36692761065)中，350只行情可用，但少数标的先出现9月30日，使全局`data_date`前进；活跃池100只K线仍停在9月29日，箱体全部被拦截。用户要求改进。
 - 同批Yahoo下载先检查逐只**未截断**的最新有内容日线。缺Close/High/Low/Adj Close仍按CR-014阻止发布。随后从非加密标的的最新有效日期中，选出全体及持仓、活跃、高风险池中**有可用行情的标的**各至少80%已覆盖的最新共同市场日；缺数据的标的另行报错，不混入日期判断。较新日线暂缓使用，本轮榜单、RSI、K线和箱体统一截止到共同市场日；加密资产保留独立最新日。日志报告覆盖和暂缓数量。
 - 只调整本轮数据截止日，不改250/252窗口、箱体公式、成员、研究日期或JSON结构。少数缺少共同日的标的继续按逐只错误明示；整池无有效箱体仍不部署。后续数据覆盖达到门槛时自然推进。
+
+## CR-027：GitHub Actions Node 运行时警告（2026-10-01，用户要求）
+
+- [运行 36842000320](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36842000320)中的`DEP0040`、`DEP0169`和Node.js 20弃用提示来自旧版官方Actions及其依赖。升级三个工作流使用的官方checkout/setup-node/setup-python/Pages/artifact Actions到已发布的Node 24版本；保留项目构建用Node 22与Python 3.11，不改变金融数据或页面契约。
+- 验收：回归、真实行情构建和Pages部署通过；新运行中不再出现上述Node警告。`yfinance`的`Pandas4Warning`属于单独的Python上游依赖问题，不通过隐藏全部警告冒充已修复。

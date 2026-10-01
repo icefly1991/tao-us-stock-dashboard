@@ -366,3 +366,9 @@ UI-015验证结果：45项Python测试、lint/build通过；箱体页面、RSI�
 [失败运行 36692761065](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36692761065)为schedule触发，实际启动08:55 UTC（纽约04:55）。checks成功；build的行情350成功/0失败、700历史文件/0图表错误，但全局`data_date=20260930`、活跃池100只历史都停在2026-09-29，箱体0处理/100错误，因无有效箱体退出1且未部署。此次不属于已配置的“缺价exit75”重试。源站为何提前给少数标的下一日期，现有日志无法确定；不能把此现象简单称为全部Yahoo行情完整。
 
 修复方案：先校验原始最新日线缺价，再用全体及各集合80%覆盖选择共同市场日，截齐非加密榜单/历史/箱体。须验证早到少数标的、各池不同进度、未截断缺价及真实行情输出；发布后在本节补记Actions证据和线上日期。
+
+CR-026已由[运行 36842000320](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36842000320)真实验证：共同市场日20260930、349个非加密标的全部覆盖、1个较新日期暂缓；350行情成功/0失败、700历史文件/0错误、活跃及高风险箱体100/234只处理且0错误，build/deploy成功。上段“待验证”为实施时记录。
+
+## 2026-10-01 CR-027：Actions Node警告
+
+[运行 36842000320](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36842000320)的项目测试和部署均成功，但旧版官方Actions在Node 24 runner上产生`DEP0040 punycode`、`DEP0169 url.parse()`及Node.js 20弃用提示。三个工作流升级到官方Node 24 Actions，保留项目Node 22与Python 3.11。另有`yfinance/scrapers/history.py`触发的`Pandas4Warning`，它是Python上游警告，不计作Node修复成功；新运行需逐类核对。
