@@ -3,6 +3,7 @@ from __future__ import annotations
 import sys
 import tempfile
 import unittest
+from dataclasses import replace
 from datetime import date
 from pathlib import Path
 from unittest.mock import patch
@@ -15,8 +16,8 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
-from data_pipeline.config import RuntimeConfig, WatchlistItem  # noqa: E402
-from data_pipeline.yfinance_client import YFinancePipelineClient, extract_symbol_frame, IncompleteLatestBarError, PipelineRunResult  # noqa: E402
+from data_pipeline.config import RuntimeConfig, WatchlistItem, build_runtime_config  # noqa: E402
+from data_pipeline.yfinance_client import YFinancePipelineClient, extract_symbol_frame, IncompleteLatestBarError, PipelineRunResult, choose_common_market_date  # noqa: E402
 import generate_dashboard
 
 
@@ -75,6 +76,45 @@ class YFinanceFrameTests(unittest.TestCase):
             result = client.build_adjustment_rows()
 
             self.assertEqual(result.latest_trade_date, "20260911")
+
+    def test_common_date_requires_coverage_in_each_box_pool(self) -> None:
+        research = [WatchlistItem(f"R{i}", f"R{i}", f"R{i}", "stock", "", "A") for i in range(5)]
+        pool = [WatchlistItem(f"P{i}", f"P{i}", f"P{i}", "stock", "", "", pool=True) for i in range(5)]
+        dates = {item.code: "20260930" for item in research + pool}
+        dates["R4"] = "20260929"
+        dates["P3"] = dates["P4"] = "20260929"
+        self.assertEqual(choose_common_market_date(research + pool, dates), "20260929")
+        dates["P3"] = "20260930"
+        self.assertEqual(choose_common_market_date(research + pool, dates), "20260930")
+
+    def test_early_next_day_bar_is_deferred_for_rankings_and_histories(self) -> None:
+        items = [WatchlistItem("A", "A", "A", "stock", "", "A"),
+                 WatchlistItem("B", "B", "B", "stock", "", "B"),
+                 WatchlistItem("C", "C", "C", "stock", "", "", pool=True)]
+        columns = pd.MultiIndex.from_product([[item.symbol for item in items],
+                                              ["Open", "High", "Low", "Close", "Adj Close"]])
+        data = pd.DataFrame(index=pd.to_datetime(["2026-09-28", "2026-09-29", "2026-09-30"]),
+                            columns=columns, dtype=float)
+        data.index.name = "Date"
+        for symbol in ("A", "B", "C"):
+            for day in ("2026-09-28", "2026-09-29"):
+                data.loc[pd.Timestamp(day), symbol] = [100, 110, 90, 100, 100]
+        data.loc[pd.Timestamp("2026-09-30"), "A"] = [101, 111, 91, 101, 101]
+        client = YFinancePipelineClient(replace(build_runtime_config(), watchlist=items))
+        client.download_history = lambda symbols: data  # type: ignore[method-assign]
+        result = client.build_adjustment_rows()
+        self.assertEqual(result.latest_trade_date, "20260929")
+        self.assertEqual((result.successful_stocks, result.failed_stocks), (3, 0))
+        self.assertEqual(result.incomplete_latest_errors, [])
+        self.assertEqual({history["actual_end"] for history in result.histories["adjusted"].values()},
+                         {"2026-09-29"})
+        self.assertEqual({row["code"] for row in result.rows_by_adjustment["adjusted"]}, {"A", "B", "C"})
+
+        # The date cutoff must not hide an incomplete newer Yahoo session.
+        data.loc[pd.Timestamp("2026-09-30"), ("A", "Close")] = float("nan")
+        blocked = client.build_adjustment_rows()
+        self.assertEqual(blocked.latest_trade_date, "20260929")
+        self.assertIn("session=2026-09-30", blocked.incomplete_latest_errors[0]["error"])
 
     def test_incomplete_latest_session_is_not_silently_dropped(self):
         self.downloaded.loc[pd.Timestamp("2026-01-06")] = [float("nan"), float("nan"), 140, 110]

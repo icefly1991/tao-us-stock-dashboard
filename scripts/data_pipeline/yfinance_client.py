@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from math import ceil
 import time
 from typing import Any
 
@@ -56,21 +57,47 @@ class YFinancePipelineClient:
             history = pd.DataFrame()
             errors.append({"code": "*", "name": "批量下载", "error": str(exc)})
 
+        market_dates: dict[str, str] = {}
+        if not history.empty:
+            for item in active_items:
+                if item.asset_type == "crypto":
+                    continue
+                try:
+                    # Check the untrimmed latest row first. A missing new price must
+                    # still block publication under the latest-bar safety rule.
+                    frame = extract_symbol_frame(history, item.symbol, adjusted=True)
+                    market_dates[item.code] = str(frame["trade_date"].max())
+                except IncompleteLatestBarError as exc:
+                    incomplete_latest_errors.append({"code": item.code, "error": str(exc)})
+                except (KeyError, ValueError):
+                    # The ordinary per-symbol pass below reports missing symbols.
+                    pass
+        common_date = choose_common_market_date(active_items, market_dates)
+        if common_date:
+            covered = sum(date >= common_date for date in market_dates.values())
+            ahead = sum(date > common_date for date in market_dates.values())
+            print(f"Common market date: {common_date}; covered={covered}/{len(market_dates)}; "
+                  f"later symbol dates deferred={ahead}")
+            market_history = history.loc[pd.to_datetime(history.index).strftime("%Y%m%d") <= common_date]
+        else:
+            market_history = history
+
         for item in active_items:
             item_failed = False
+            item_history = history if item.asset_type == "crypto" else market_history
             for adjustment in self.config.adjustments:
                 try:
-                    row, trade_date = self.build_row(item, history, adjustment)
+                    row, trade_date = self.build_row(item, item_history, adjustment)
                     rows_by_adjustment[adjustment].append(row)
                     latest_any_date = max_known_trade_date(latest_any_date, trade_date)
                     if item.asset_type != "crypto":
                         latest_trade_date = max_known_trade_date(latest_trade_date, trade_date)
                     try:
-                        chart_frame = extract_symbol_frame(history, item.symbol, adjustment == "adjusted", include_ohlcv=True)
+                        chart_frame = extract_symbol_frame(item_history, item.symbol, adjustment == "adjusted", include_ohlcv=True)
                         chart = build_chart_history(chart_frame, item.code, adjustment, self.config.updated_at, self.config.start_date)
                         if chart["actual_end"].replace("-", "") != trade_date:
                             raise ValueError("Chart and ranking last dates differ.")
-                        ranking_frame = normalize_history(extract_symbol_frame(history, item.symbol, adjustment == "adjusted"))
+                        ranking_frame = normalize_history(extract_symbol_frame(item_history, item.symbol, adjustment == "adjusted"))
                         chart["rsi_history"] = build_rsi_history(ranking_frame)
                         histories[adjustment][item.code] = chart
                         row["history_available"] = True
@@ -151,6 +178,22 @@ class YFinancePipelineClient:
         row["asset_type"] = item.asset_type
         row["adjustment"] = adjustment
         return row, trade_date
+
+
+def choose_common_market_date(items: list[WatchlistItem], latest: dict[str, str]) -> str | None:
+    """Choose the newest date reached by at least 80% of each market collection."""
+    groups = (
+        [item.code for item in items if item.asset_type != "crypto"],
+        [item.code for item in items if item.asset_type != "crypto" and item.watchlist == "original"],
+        [item.code for item in items if item.asset_type != "crypto" and item.tier],
+        [item.code for item in items if item.asset_type != "crypto" and item.pool],
+    )
+    cutoffs = []
+    for group in groups:
+        dates = sorted((latest[code] for code in group if code in latest), reverse=True)
+        if dates:
+            cutoffs.append(dates[ceil(len(dates) * 0.8) - 1])
+    return min(cutoffs) if cutoffs else None
 
 
 def extract_symbol_frame(downloaded: pd.DataFrame, symbol: str, adjusted: bool, include_ohlcv: bool = False) -> pd.DataFrame:
