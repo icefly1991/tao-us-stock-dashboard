@@ -23,6 +23,12 @@ async function seedPool(page: Page) {
 
 test.beforeEach(async ({ page }) => seedPool(page))
 
+test('高风险池共用分析师目标价', async ({ page }) => {
+  await page.goto('#/pool')
+  await expect(page.getByTestId('column-header')).toContainText('情景估值 / 机构参照')
+  await expect(page.locator('[data-code="AAA"] .price-research-cell')).toContainText('机构均 $120')
+})
+
 test('摘要两列、逐项来源与缺少亮点，不扩展原列表', async ({ page }) => {
   await page.goto('#/pool')
   await expect(page.getByTestId('column-header')).toContainText('基本面亮点')

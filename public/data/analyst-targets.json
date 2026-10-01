@@ -1,0 +1,2807 @@
+{
+  "schema_version": 1,
+  "source": "yfinance / Yahoo Finance analyst price targets",
+  "fetched_at": "2026-10-01T12:45-04:00",
+  "rows": [
+    {
+      "code": "SMR",
+      "symbol": "SMR",
+      "status": "available",
+      "low": 6.0,
+      "mean": 11.9667,
+      "high": 20.0
+    },
+    {
+      "code": "VIX",
+      "symbol": "^VIX",
+      "status": "unavailable",
+      "low": null,
+      "mean": null,
+      "high": null
+    },
+    {
+      "code": "IMSR",
+      "symbol": "IMSR",
+      "status": "available",
+      "low": 8.0,
+      "mean": 11.6667,
+      "high": 15.0
+    },
+    {
+      "code": "NABL",
+      "symbol": "NABL",
+      "status": "available",
+      "low": 3.65,
+      "mean": 4.68,
+      "high": 8.0
+    },
+    {
+      "code": "HOOD",
+      "symbol": "HOOD",
+      "status": "available",
+      "low": 57.0,
+      "mean": 131.4496,
+      "high": 170.0
+    },
+    {
+      "code": "MP",
+      "symbol": "MP",
+      "status": "available",
+      "low": 57.0,
+      "mean": 74.2941,
+      "high": 100.0
+    },
+    {
+      "code": "ORCL",
+      "symbol": "ORCL",
+      "status": "available",
+      "low": 110.0,
+      "mean": 237.9742,
+      "high": 400.0
+    },
+    {
+      "code": "HIMS",
+      "symbol": "HIMS",
+      "status": "available",
+      "low": 23.0,
+      "mean": 31.1538,
+      "high": 42.0
+    },
+    {
+      "code": "BITX",
+      "symbol": "BITX",
+      "status": "unavailable",
+      "low": null,
+      "mean": null,
+      "high": null
+    },
+    {
+      "code": "CRWV",
+      "symbol": "CRWV",
+      "status": "available",
+      "low": 39.0,
+      "mean": 141.5789,
+      "high": 317.0
+    },
+    {
+      "code": "IBIT",
+      "symbol": "IBIT",
+      "status": "unavailable",
+      "low": null,
+      "mean": null,
+      "high": null
+    },
+    {
+      "code": "RZLV",
+      "symbol": "RZLV",
+      "status": "available",
+      "low": 7.0,
+      "mean": 10.0,
+      "high": 15.0
+    },
+    {
+      "code": "MCD",
+      "symbol": "MCD",
+      "status": "available",
+      "low": 230.0,
+      "mean": 297.2069,
+      "high": 390.0
+    },
+    {
+      "code": "IREN",
+      "symbol": "IREN",
+      "status": "available",
+      "low": 40.0,
+      "mean": 77.6944,
+      "high": 131.0
+    },
+    {
+      "code": "ATCH",
+      "symbol": "ATCH",
+      "status": "available",
+      "low": 1.0,
+      "mean": 1.0,
+      "high": 1.0
+    },
+    {
+      "code": "CRCL",
+      "symbol": "CRCL",
+      "status": "available",
+      "low": 37.0,
+      "mean": 105.0175,
+      "high": 243.0
+    },
+    {
+      "code": "NVDA",
+      "symbol": "NVDA",
+      "status": "available",
+      "low": 180.0,
+      "mean": 327.7,
+      "high": 515.0
+    },
+    {
+      "code": "NKE",
+      "symbol": "NKE",
+      "status": "available",
+      "low": 23.0,
+      "mean": 45.6278,
+      "high": 94.0
+    },
+    {
+      "code": "KLAR",
+      "symbol": "KLAR",
+      "status": "available",
+      "low": 14.0,
+      "mean": 19.9667,
+      "high": 38.3
+    },
+    {
+      "code": "MNTN",
+      "symbol": "MNTN",
+      "status": "available",
+      "low": 13.0,
+      "mean": 18.1,
+      "high": 22.0
+    },
+    {
+      "code": "MSFT",
+      "symbol": "MSFT",
+      "status": "available",
+      "low": 440.0,
+      "mean": 578.4152,
+      "high": 870.0
+    },
+    {
+      "code": "META",
+      "symbol": "META",
+      "status": "available",
+      "low": 580.0,
+      "mean": 793.9073,
+      "high": 1000.0
+    },
+    {
+      "code": "RGTI",
+      "symbol": "RGTI",
+      "status": "available",
+      "low": 17.3,
+      "mean": 28.525,
+      "high": 40.0
+    },
+    {
+      "code": "NXH",
+      "symbol": "NXH",
+      "status": "available",
+      "low": 5.5,
+      "mean": 9.375,
+      "high": 17.0
+    },
+    {
+      "code": "AVGO",
+      "symbol": "AVGO",
+      "status": "available",
+      "low": 215.88,
+      "mean": 531.8468,
+      "high": 715.0
+    },
+    {
+      "code": "QQQ",
+      "symbol": "QQQ",
+      "status": "unavailable",
+      "low": null,
+      "mean": null,
+      "high": null
+    },
+    {
+      "code": "ETOR",
+      "symbol": "ETOR",
+      "status": "available",
+      "low": 34.0,
+      "mean": 47.6,
+      "high": 90.0
+    },
+    {
+      "code": "ARKO",
+      "symbol": "ARKO",
+      "status": "available",
+      "low": 7.0,
+      "mean": 8.5,
+      "high": 10.0
+    },
+    {
+      "code": "UAA",
+      "symbol": "UAA",
+      "status": "available",
+      "low": 4.0,
+      "mean": 6.271,
+      "high": 12.0
+    },
+    {
+      "code": "PG",
+      "symbol": "PG",
+      "status": "available",
+      "low": 143.0,
+      "mean": 160.6087,
+      "high": 186.0
+    },
+    {
+      "code": "DOGEUSD",
+      "symbol": "DOGE-USD",
+      "status": "unavailable",
+      "low": null,
+      "mean": null,
+      "high": null
+    },
+    {
+      "code": "STUB",
+      "symbol": "STUB",
+      "status": "available",
+      "low": 7.0,
+      "mean": 11.125,
+      "high": 16.0
+    },
+    {
+      "code": "VOR",
+      "symbol": "VOR",
+      "status": "available",
+      "low": 27.0,
+      "mean": 39.0,
+      "high": 50.0
+    },
+    {
+      "code": "MSTR",
+      "symbol": "MSTR",
+      "status": "available",
+      "low": 136.0,
+      "mean": 229.8667,
+      "high": 435.0
+    },
+    {
+      "code": "GEMI",
+      "symbol": "GEMI",
+      "status": "available",
+      "low": 3.2,
+      "mean": 5.22,
+      "high": 7.0
+    },
+    {
+      "code": "OSCR",
+      "symbol": "OSCR",
+      "status": "available",
+      "low": 26.0,
+      "mean": 35.4,
+      "high": 49.0
+    },
+    {
+      "code": "DKNG",
+      "symbol": "DKNG",
+      "status": "available",
+      "low": 20.0,
+      "mean": 34.9514,
+      "high": 76.0
+    },
+    {
+      "code": "AMD",
+      "symbol": "AMD",
+      "status": "available",
+      "low": 365.0,
+      "mean": 618.508,
+      "high": 1250.0
+    },
+    {
+      "code": "TQQQ",
+      "symbol": "TQQQ",
+      "status": "unavailable",
+      "low": null,
+      "mean": null,
+      "high": null
+    },
+    {
+      "code": "APP",
+      "symbol": "APP",
+      "status": "available",
+      "low": 325.0,
+      "mean": 497.0455,
+      "high": 790.0
+    },
+    {
+      "code": "WBTN",
+      "symbol": "WBTN",
+      "status": "available",
+      "low": 10.0,
+      "mean": 11.2857,
+      "high": 13.0
+    },
+    {
+      "code": "FIG",
+      "symbol": "FIG",
+      "status": "available",
+      "low": 25.0,
+      "mean": 30.8,
+      "high": 37.0
+    },
+    {
+      "code": "CRDO",
+      "symbol": "CRDO",
+      "status": "available",
+      "low": 185.0,
+      "mean": 281.0931,
+      "high": 350.0
+    },
+    {
+      "code": "ALAB",
+      "symbol": "ALAB",
+      "status": "available",
+      "low": 190.0,
+      "mean": 389.9527,
+      "high": 500.0
+    },
+    {
+      "code": "NBIS",
+      "symbol": "NBIS",
+      "status": "available",
+      "low": 84.0,
+      "mean": 283.579,
+      "high": 415.0
+    },
+    {
+      "code": "COIN",
+      "symbol": "COIN",
+      "status": "available",
+      "low": 95.0,
+      "mean": 207.3469,
+      "high": 330.0
+    },
+    {
+      "code": "RDDT",
+      "symbol": "RDDT",
+      "status": "available",
+      "low": 130.0,
+      "mean": 213.7091,
+      "high": 300.0
+    },
+    {
+      "code": "RKLB",
+      "symbol": "RKLB",
+      "status": "available",
+      "low": 64.0,
+      "mean": 109.3684,
+      "high": 150.0
+    },
+    {
+      "code": "CELH",
+      "symbol": "CELH",
+      "status": "available",
+      "low": 26.0,
+      "mean": 42.2857,
+      "high": 64.0
+    },
+    {
+      "code": "AFRM",
+      "symbol": "AFRM",
+      "status": "available",
+      "low": 66.0,
+      "mean": 99.0938,
+      "high": 124.0
+    },
+    {
+      "code": "UPST",
+      "symbol": "UPST",
+      "status": "available",
+      "low": 20.0,
+      "mean": 40.0,
+      "high": 61.0
+    },
+    {
+      "code": "CVNA",
+      "symbol": "CVNA",
+      "status": "available",
+      "low": 60.0,
+      "mean": 83.3095,
+      "high": 120.0
+    },
+    {
+      "code": "APLD",
+      "symbol": "APLD",
+      "status": "available",
+      "low": 22.0,
+      "mean": 66.4333,
+      "high": 109.0
+    },
+    {
+      "code": "RBLX",
+      "symbol": "RBLX",
+      "status": "available",
+      "low": 33.0,
+      "mean": 48.9747,
+      "high": 65.0
+    },
+    {
+      "code": "CAVA",
+      "symbol": "CAVA",
+      "status": "available",
+      "low": 18.0,
+      "mean": 82.75,
+      "high": 110.0
+    },
+    {
+      "code": "ONON",
+      "symbol": "ONON",
+      "status": "available",
+      "low": 19.9157,
+      "mean": 43.3623,
+      "high": 71.3359
+    },
+    {
+      "code": "DUOL",
+      "symbol": "DUOL",
+      "status": "available",
+      "low": 80.0,
+      "mean": 134.2911,
+      "high": 210.0
+    },
+    {
+      "code": "ELF",
+      "symbol": "ELF",
+      "status": "available",
+      "low": 65.0,
+      "mean": 103.1875,
+      "high": 127.0
+    },
+    {
+      "code": "SOFI",
+      "symbol": "SOFI",
+      "status": "available",
+      "low": 12.0,
+      "mean": 20.3545,
+      "high": 30.0
+    },
+    {
+      "code": "SHOP",
+      "symbol": "SHOP",
+      "status": "available",
+      "low": 120.0,
+      "mean": 172.7708,
+      "high": 220.0
+    },
+    {
+      "code": "SE",
+      "symbol": "SE",
+      "status": "available",
+      "low": 105.0,
+      "mean": 155.11,
+      "high": 195.0
+    },
+    {
+      "code": "NET",
+      "symbol": "NET",
+      "status": "available",
+      "low": 160.0,
+      "mean": 336.8065,
+      "high": 400.0
+    },
+    {
+      "code": "PLTR",
+      "symbol": "PLTR",
+      "status": "available",
+      "low": 80.0,
+      "mean": 195.5654,
+      "high": 255.0
+    },
+    {
+      "code": "ARM",
+      "symbol": "ARM",
+      "status": "available",
+      "low": 125.0,
+      "mean": 288.705,
+      "high": 500.0
+    },
+    {
+      "code": "LITE",
+      "symbol": "LITE",
+      "status": "available",
+      "low": 820.0,
+      "mean": 1159.4017,
+      "high": 1400.0
+    },
+    {
+      "code": "COHR",
+      "symbol": "COHR",
+      "status": "available",
+      "low": 280.0,
+      "mean": 412.5201,
+      "high": 500.0
+    },
+    {
+      "code": "MRVL",
+      "symbol": "MRVL",
+      "status": "available",
+      "low": 210.0,
+      "mean": 290.9704,
+      "high": 400.0
+    },
+    {
+      "code": "CLS",
+      "symbol": "CLS",
+      "status": "available",
+      "low": 375.0,
+      "mean": 473.9143,
+      "high": 550.0
+    },
+    {
+      "code": "VRT",
+      "symbol": "VRT",
+      "status": "available",
+      "low": 236.0,
+      "mean": 337.7407,
+      "high": 427.0
+    },
+    {
+      "code": "MU",
+      "symbol": "MU",
+      "status": "available",
+      "low": 361.0,
+      "mean": 1533.8043,
+      "high": 2200.0
+    },
+    {
+      "code": "SNDK",
+      "symbol": "SNDK",
+      "status": "available",
+      "low": 1000.0,
+      "mean": 2136.5417,
+      "high": 3600.0
+    },
+    {
+      "code": "WDC",
+      "symbol": "WDC",
+      "status": "available",
+      "low": 420.0,
+      "mean": 664.9167,
+      "high": 1050.0
+    },
+    {
+      "code": "CIEN",
+      "symbol": "CIEN",
+      "status": "available",
+      "low": 347.0,
+      "mean": 512.9907,
+      "high": 660.0
+    },
+    {
+      "code": "SMCI",
+      "symbol": "SMCI",
+      "status": "available",
+      "low": 15.0,
+      "mean": 42.375,
+      "high": 60.0
+    },
+    {
+      "code": "BE",
+      "symbol": "BE",
+      "status": "available",
+      "low": 97.0,
+      "mean": 281.5846,
+      "high": 390.0
+    },
+    {
+      "code": "PSTG",
+      "symbol": "P",
+      "status": "available",
+      "low": 80.0,
+      "mean": 145.3158,
+      "high": 180.0
+    },
+    {
+      "code": "MTSI",
+      "symbol": "MTSI",
+      "status": "available",
+      "low": 300.0,
+      "mean": 395.3333,
+      "high": 475.0
+    },
+    {
+      "code": "TOST",
+      "symbol": "TOST",
+      "status": "available",
+      "low": 25.0,
+      "mean": 38.9231,
+      "high": 45.0
+    },
+    {
+      "code": "NU",
+      "symbol": "NU",
+      "status": "available",
+      "low": 12.0,
+      "mean": 18.6364,
+      "high": 23.0
+    },
+    {
+      "code": "DAVE",
+      "symbol": "DAVE",
+      "status": "available",
+      "low": 350.0,
+      "mean": 444.2143,
+      "high": 500.0
+    },
+    {
+      "code": "ROOT",
+      "symbol": "ROOT",
+      "status": "available",
+      "low": 50.0,
+      "mean": 60.2,
+      "high": 80.0
+    },
+    {
+      "code": "LMND",
+      "symbol": "LMND",
+      "status": "available",
+      "low": 37.0,
+      "mean": 59.2222,
+      "high": 92.0
+    },
+    {
+      "code": "TTAN",
+      "symbol": "TTAN",
+      "status": "available",
+      "low": 76.0,
+      "mean": 97.5333,
+      "high": 110.0
+    },
+    {
+      "code": "IOT",
+      "symbol": "IOT",
+      "status": "available",
+      "low": 39.0,
+      "mean": 52.1565,
+      "high": 60.0
+    },
+    {
+      "code": "MNDY",
+      "symbol": "MNDY",
+      "status": "available",
+      "low": 87.0,
+      "mean": 108.8696,
+      "high": 165.0
+    },
+    {
+      "code": "MDB",
+      "symbol": "MDB",
+      "status": "available",
+      "low": 272.64,
+      "mean": 446.5038,
+      "high": 565.0
+    },
+    {
+      "code": "GTLB",
+      "symbol": "GTLB",
+      "status": "available",
+      "low": 45.0,
+      "mean": 55.7083,
+      "high": 70.0
+    },
+    {
+      "code": "FROG",
+      "symbol": "FROG",
+      "status": "available",
+      "low": 90.0,
+      "mean": 112.0,
+      "high": 120.0
+    },
+    {
+      "code": "ESTC",
+      "symbol": "ESTC",
+      "status": "available",
+      "low": 75.0,
+      "mean": 110.6923,
+      "high": 130.0
+    },
+    {
+      "code": "S",
+      "symbol": "S",
+      "status": "available",
+      "low": 17.5,
+      "mean": 24.3833,
+      "high": 28.0
+    },
+    {
+      "code": "TTD",
+      "symbol": "TTD",
+      "status": "available",
+      "low": 9.0,
+      "mean": 13.5667,
+      "high": 20.0
+    },
+    {
+      "code": "ZETA",
+      "symbol": "ZETA",
+      "status": "available",
+      "low": 25.0,
+      "mean": 31.6429,
+      "high": 44.0
+    },
+    {
+      "code": "TMDX",
+      "symbol": "TMDX",
+      "status": "available",
+      "low": 65.0,
+      "mean": 97.3,
+      "high": 125.0
+    },
+    {
+      "code": "NTRA",
+      "symbol": "NTRA",
+      "status": "available",
+      "low": 280.0,
+      "mean": 355.9318,
+      "high": 460.0
+    },
+    {
+      "code": "TEM",
+      "symbol": "TEM",
+      "status": "available",
+      "low": 35.0,
+      "mean": 68.5556,
+      "high": 100.0
+    },
+    {
+      "code": "RXST",
+      "symbol": "RXST",
+      "status": "available",
+      "low": 5.5,
+      "mean": 7.5687,
+      "high": 11.0
+    },
+    {
+      "code": "KTOS",
+      "symbol": "KTOS",
+      "status": "available",
+      "low": 60.0,
+      "mean": 102.1905,
+      "high": 150.0
+    },
+    {
+      "code": "AVAV",
+      "symbol": "AVAV",
+      "status": "available",
+      "low": 148.57,
+      "mean": 219.3458,
+      "high": 315.0
+    },
+    {
+      "code": "RDW",
+      "symbol": "RDW",
+      "status": "available",
+      "low": 8.0,
+      "mean": 14.6875,
+      "high": 20.0
+    },
+    {
+      "code": "LUNR",
+      "symbol": "LUNR",
+      "status": "available",
+      "low": 13.0,
+      "mean": 29.5,
+      "high": 43.0
+    },
+    {
+      "code": "LEU",
+      "symbol": "LEU",
+      "status": "available",
+      "low": 168.77,
+      "mean": 247.3982,
+      "high": 340.0
+    },
+    {
+      "code": "UUUU",
+      "symbol": "UUUU",
+      "status": "available",
+      "low": 16.0,
+      "mean": 24.15,
+      "high": 32.5
+    },
+    {
+      "code": "UEC",
+      "symbol": "UEC",
+      "status": "available",
+      "low": 11.0,
+      "mean": 16.83,
+      "high": 26.75
+    },
+    {
+      "code": "ALB",
+      "symbol": "ALB",
+      "status": "available",
+      "low": 83.28,
+      "mean": 171.564,
+      "high": 225.0
+    },
+    {
+      "code": "ENPH",
+      "symbol": "ENPH",
+      "status": "available",
+      "low": 27.0,
+      "mean": 51.6037,
+      "high": 212.0
+    },
+    {
+      "code": "NXT",
+      "symbol": "NXT",
+      "status": "available",
+      "low": 70.0,
+      "mean": 138.9643,
+      "high": 175.0
+    },
+    {
+      "code": "FLNC",
+      "symbol": "FLNC",
+      "status": "available",
+      "low": 3.0,
+      "mean": 10.1053,
+      "high": 23.0
+    },
+    {
+      "code": "RIVN",
+      "symbol": "RIVN",
+      "status": "available",
+      "low": 13.0,
+      "mean": 19.3077,
+      "high": 25.0
+    },
+    {
+      "code": "CHWY",
+      "symbol": "CHWY",
+      "status": "available",
+      "low": 21.0,
+      "mean": 28.6364,
+      "high": 36.0
+    },
+    {
+      "code": "BROS",
+      "symbol": "BROS",
+      "status": "available",
+      "low": 29.0,
+      "mean": 73.8333,
+      "high": 95.0
+    },
+    {
+      "code": "RH",
+      "symbol": "RH",
+      "status": "available",
+      "low": 81.0,
+      "mean": 165.8235,
+      "high": 258.0
+    },
+    {
+      "code": "SG",
+      "symbol": "SG",
+      "status": "available",
+      "low": 4.4,
+      "mean": 7.875,
+      "high": 11.0
+    },
+    {
+      "code": "FOUR",
+      "symbol": "FOUR",
+      "status": "available",
+      "low": 40.0,
+      "mean": 55.0476,
+      "high": 96.0
+    },
+    {
+      "code": "BILL",
+      "symbol": "BILL",
+      "status": "available",
+      "low": 43.0,
+      "mean": 57.3,
+      "high": 75.0
+    },
+    {
+      "code": "RELY",
+      "symbol": "RELY",
+      "status": "available",
+      "low": 29.0,
+      "mean": 32.3333,
+      "high": 36.0
+    },
+    {
+      "code": "SYM",
+      "symbol": "SYM",
+      "status": "available",
+      "low": 38.0,
+      "mean": 62.8571,
+      "high": 85.0
+    },
+    {
+      "code": "AAOI",
+      "symbol": "AAOI",
+      "status": "available",
+      "low": 109.0,
+      "mean": 163.4,
+      "high": 220.0
+    },
+    {
+      "code": "ACLS",
+      "symbol": "ACLS",
+      "status": "available",
+      "low": 140.0,
+      "mean": 161.0,
+      "high": 198.0
+    },
+    {
+      "code": "SITM",
+      "symbol": "SITM",
+      "status": "available",
+      "low": 730.0,
+      "mean": 849.5,
+      "high": 900.0
+    },
+    {
+      "code": "AMBA",
+      "symbol": "AMBA",
+      "status": "available",
+      "low": 65.0,
+      "mean": 89.3636,
+      "high": 120.0
+    },
+    {
+      "code": "AEHR",
+      "symbol": "AEHR",
+      "status": "available",
+      "low": 110.0,
+      "mean": 128.0,
+      "high": 175.0
+    },
+    {
+      "code": "INOD",
+      "symbol": "INOD",
+      "status": "available",
+      "low": 111.0,
+      "mean": 122.75,
+      "high": 140.0
+    },
+    {
+      "code": "PATH",
+      "symbol": "PATH",
+      "status": "available",
+      "low": 10.0,
+      "mean": 15.4988,
+      "high": 23.0
+    },
+    {
+      "code": "DOCN",
+      "symbol": "DOCN",
+      "status": "available",
+      "low": 140.0,
+      "mean": 175.2,
+      "high": 200.0
+    },
+    {
+      "code": "ROKU",
+      "symbol": "ROKU",
+      "status": "available",
+      "low": 150.0,
+      "mean": 162.3265,
+      "high": 205.0
+    },
+    {
+      "code": "EIKN",
+      "symbol": "EIKN",
+      "status": "available",
+      "low": 4.0,
+      "mean": 24.6,
+      "high": 32.0
+    },
+    {
+      "code": "FSLY",
+      "symbol": "FSLY",
+      "status": "available",
+      "low": 22.0,
+      "mean": 27.9,
+      "high": 37.0
+    },
+    {
+      "code": "HUT",
+      "symbol": "HUT",
+      "status": "available",
+      "low": 96.0,
+      "mean": 157.0909,
+      "high": 273.0
+    },
+    {
+      "code": "WULF",
+      "symbol": "WULF",
+      "status": "available",
+      "low": 15.0,
+      "mean": 33.6917,
+      "high": 62.5
+    },
+    {
+      "code": "ASTS",
+      "symbol": "ASTS",
+      "status": "available",
+      "low": 42.5,
+      "mean": 79.6083,
+      "high": 108.0
+    },
+    {
+      "code": "IONQ",
+      "symbol": "IONQ",
+      "status": "available",
+      "low": 41.85,
+      "mean": 66.6321,
+      "high": 100.0
+    },
+    {
+      "code": "CRSP",
+      "symbol": "CRSP",
+      "status": "available",
+      "low": 44.0,
+      "mean": 87.5556,
+      "high": 291.0
+    },
+    {
+      "code": "POWL",
+      "symbol": "POWL",
+      "status": "available",
+      "low": 235.0,
+      "mean": 280.0,
+      "high": 333.0
+    },
+    {
+      "code": "SECZ",
+      "symbol": "SECZ",
+      "status": "available",
+      "low": 10.0,
+      "mean": 13.9429,
+      "high": 21.2
+    },
+    {
+      "code": "BKKT",
+      "symbol": "BKKT",
+      "status": "available",
+      "low": 12.0,
+      "mean": 12.0,
+      "high": 12.0
+    },
+    {
+      "code": "CRML",
+      "symbol": "CRML",
+      "status": "available",
+      "low": 8.0,
+      "mean": 13.0,
+      "high": 18.0
+    },
+    {
+      "code": "CLSK",
+      "symbol": "CLSK",
+      "status": "available",
+      "low": 21.0,
+      "mean": 23.8929,
+      "high": 27.0
+    },
+    {
+      "code": "BTBT",
+      "symbol": "BTBT",
+      "status": "available",
+      "low": 3.5,
+      "mean": 3.634,
+      "high": 4.0
+    },
+    {
+      "code": "SOC",
+      "symbol": "SOC",
+      "status": "available",
+      "low": 8.0,
+      "mean": 9.5,
+      "high": 11.0
+    },
+    {
+      "code": "AURA",
+      "symbol": "AURA",
+      "status": "available",
+      "low": 12.0,
+      "mean": 16.6,
+      "high": 23.0
+    },
+    {
+      "code": "EVMN",
+      "symbol": "EVMN",
+      "status": "available",
+      "low": 18.0,
+      "mean": 24.125,
+      "high": 30.0
+    },
+    {
+      "code": "WYFI",
+      "symbol": "WYFI",
+      "status": "available",
+      "low": 32.0,
+      "mean": 40.4545,
+      "high": 50.0
+    },
+    {
+      "code": "XXI",
+      "symbol": "XXI",
+      "status": "unavailable",
+      "low": null,
+      "mean": null,
+      "high": null
+    },
+    {
+      "code": "DNA",
+      "symbol": "DNA",
+      "status": "available",
+      "low": 5.0,
+      "mean": 7.0,
+      "high": 9.0
+    },
+    {
+      "code": "GETY",
+      "symbol": "GETY",
+      "status": "unavailable",
+      "low": null,
+      "mean": null,
+      "high": null
+    },
+    {
+      "code": "QDEL",
+      "symbol": "QDEL",
+      "status": "available",
+      "low": 12.0,
+      "mean": 14.6667,
+      "high": 20.0
+    },
+    {
+      "code": "TRON",
+      "symbol": "TRON",
+      "status": "unavailable",
+      "low": null,
+      "mean": null,
+      "high": null
+    },
+    {
+      "code": "VITL",
+      "symbol": "VITL",
+      "status": "available",
+      "low": 10.0,
+      "mean": 13.2222,
+      "high": 18.0
+    },
+    {
+      "code": "FWDI",
+      "symbol": "FWDI",
+      "status": "available",
+      "low": 8.5,
+      "mean": 11.8333,
+      "high": 16.0
+    },
+    {
+      "code": "UPB",
+      "symbol": "UPB",
+      "status": "available",
+      "low": 9.0,
+      "mean": 31.1429,
+      "high": 75.0
+    },
+    {
+      "code": "SRAD",
+      "symbol": "SRAD",
+      "status": "available",
+      "low": 13.5257,
+      "mean": 18.0941,
+      "high": 35.7456
+    },
+    {
+      "code": "WRBY",
+      "symbol": "WRBY",
+      "status": "available",
+      "low": 24.0,
+      "mean": 30.4615,
+      "high": 35.0
+    },
+    {
+      "code": "HTFL",
+      "symbol": "HTFL",
+      "status": "available",
+      "low": 39.0,
+      "mean": 46.0,
+      "high": 56.0
+    },
+    {
+      "code": "AMC",
+      "symbol": "AMC",
+      "status": "available",
+      "low": 2.2,
+      "mean": 2.95,
+      "high": 4.0
+    },
+    {
+      "code": "SANA",
+      "symbol": "SANA",
+      "status": "available",
+      "low": 6.0,
+      "mean": 8.4286,
+      "high": 12.0
+    },
+    {
+      "code": "CHYM",
+      "symbol": "CHYM",
+      "status": "available",
+      "low": 30.0,
+      "mean": 39.4091,
+      "high": 50.0
+    },
+    {
+      "code": "SPRY",
+      "symbol": "SPRY",
+      "status": "available",
+      "low": 15.0,
+      "mean": 22.5,
+      "high": 30.0
+    },
+    {
+      "code": "PACB",
+      "symbol": "PACB",
+      "status": "available",
+      "low": 1.25,
+      "mean": 2.1571,
+      "high": 3.0
+    },
+    {
+      "code": "ALKT",
+      "symbol": "ALKT",
+      "status": "available",
+      "low": 14.0,
+      "mean": 20.7143,
+      "high": 25.0
+    },
+    {
+      "code": "KLC",
+      "symbol": "KLC",
+      "status": "available",
+      "low": 2.0,
+      "mean": 4.0571,
+      "high": 6.0
+    },
+    {
+      "code": "NTSK",
+      "symbol": "NTSK",
+      "status": "available",
+      "low": 16.0,
+      "mean": 18.8611,
+      "high": 28.0
+    },
+    {
+      "code": "MAX",
+      "symbol": "MAX",
+      "status": "available",
+      "low": 11.0,
+      "mean": 15.4286,
+      "high": 19.0
+    },
+    {
+      "code": "SHEN",
+      "symbol": "SHEN",
+      "status": "available",
+      "low": 26.0,
+      "mean": 27.5,
+      "high": 29.0
+    },
+    {
+      "code": "EYPT",
+      "symbol": "EYPT",
+      "status": "available",
+      "low": 4.0,
+      "mean": 25.9091,
+      "high": 68.0
+    },
+    {
+      "code": "PSFE",
+      "symbol": "PSFE",
+      "status": "available",
+      "low": 7.0,
+      "mean": 8.5,
+      "high": 11.0
+    },
+    {
+      "code": "USAR",
+      "symbol": "USAR",
+      "status": "available",
+      "low": 21.0,
+      "mean": 35.5556,
+      "high": 45.0
+    },
+    {
+      "code": "BRCB",
+      "symbol": "BRCB",
+      "status": "available",
+      "low": 9.0,
+      "mean": 12.3333,
+      "high": 20.0
+    },
+    {
+      "code": "MPT",
+      "symbol": "MPT",
+      "status": "available",
+      "low": 4.25,
+      "mean": 5.125,
+      "high": 7.0
+    },
+    {
+      "code": "BEAM",
+      "symbol": "BEAM",
+      "status": "available",
+      "low": 26.0,
+      "mean": 52.1538,
+      "high": 80.0
+    },
+    {
+      "code": "HRL",
+      "symbol": "HRL",
+      "status": "available",
+      "low": 23.0,
+      "mean": 25.9375,
+      "high": 30.0
+    },
+    {
+      "code": "NMRA",
+      "symbol": "NMRA",
+      "status": "available",
+      "low": 3.0,
+      "mean": 6.1429,
+      "high": 14.0
+    },
+    {
+      "code": "RGEN",
+      "symbol": "RGEN",
+      "status": "available",
+      "low": 145.0,
+      "mean": 189.7,
+      "high": 225.0
+    },
+    {
+      "code": "INFQ",
+      "symbol": "INFQ",
+      "status": "available",
+      "low": 19.0,
+      "mean": 21.8333,
+      "high": 25.0
+    },
+    {
+      "code": "LYTS",
+      "symbol": "LYTS",
+      "status": "available",
+      "low": 29.0,
+      "mean": 30.0,
+      "high": 31.0
+    },
+    {
+      "code": "FAC",
+      "symbol": "FAC",
+      "status": "available",
+      "low": 8.0,
+      "mean": 13.0,
+      "high": 18.0
+    },
+    {
+      "code": "INV",
+      "symbol": "INV",
+      "status": "available",
+      "low": 5.0,
+      "mean": 5.5,
+      "high": 6.0
+    },
+    {
+      "code": "RBRK",
+      "symbol": "RBRK",
+      "status": "available",
+      "low": 110.0,
+      "mean": 120.1482,
+      "high": 139.0
+    },
+    {
+      "code": "WMG",
+      "symbol": "WMG",
+      "status": "available",
+      "low": 30.0,
+      "mean": 37.8125,
+      "high": 46.0
+    },
+    {
+      "code": "OLN",
+      "symbol": "OLN",
+      "status": "available",
+      "low": 16.0,
+      "mean": 20.7333,
+      "high": 30.0
+    },
+    {
+      "code": "CMG",
+      "symbol": "CMG",
+      "status": "available",
+      "low": 35.0,
+      "mean": 43.9194,
+      "high": 53.0
+    },
+    {
+      "code": "CXM",
+      "symbol": "CXM",
+      "status": "available",
+      "low": 6.0,
+      "mean": 8.4375,
+      "high": 12.0
+    },
+    {
+      "code": "NKLR",
+      "symbol": "NKLR",
+      "status": "available",
+      "low": 10.0,
+      "mean": 16.8,
+      "high": 25.0
+    },
+    {
+      "code": "SAIL",
+      "symbol": "SAIL",
+      "status": "available",
+      "low": 10.0,
+      "mean": 21.12,
+      "high": 27.0
+    },
+    {
+      "code": "ALMS",
+      "symbol": "ALMS",
+      "status": "available",
+      "low": 15.0,
+      "mean": 32.125,
+      "high": 46.0
+    },
+    {
+      "code": "ARDT",
+      "symbol": "ARDT",
+      "status": "available",
+      "low": 10.5,
+      "mean": 12.6667,
+      "high": 14.0
+    },
+    {
+      "code": "SGMT",
+      "symbol": "SGMT",
+      "status": "available",
+      "low": 7.0,
+      "mean": 28.0,
+      "high": 56.0
+    },
+    {
+      "code": "FWRG",
+      "symbol": "FWRG",
+      "status": "available",
+      "low": 17.0,
+      "mean": 19.5,
+      "high": 22.0
+    },
+    {
+      "code": "SLDE",
+      "symbol": "SLDE",
+      "status": "available",
+      "low": 22.0,
+      "mean": 25.8,
+      "high": 28.0
+    },
+    {
+      "code": "INDI",
+      "symbol": "INDI",
+      "status": "available",
+      "low": 4.25,
+      "mean": 5.7188,
+      "high": 8.0
+    },
+    {
+      "code": "MYGN",
+      "symbol": "MYGN",
+      "status": "available",
+      "low": 2.0,
+      "mean": 3.4125,
+      "high": 5.0
+    },
+    {
+      "code": "DOCU",
+      "symbol": "DOCU",
+      "status": "available",
+      "low": 46.89,
+      "mean": 69.9931,
+      "high": 86.0
+    },
+    {
+      "code": "CLFD",
+      "symbol": "CLFD",
+      "status": "available",
+      "low": 38.0,
+      "mean": 40.25,
+      "high": 45.0
+    },
+    {
+      "code": "RUM",
+      "symbol": "RUM",
+      "status": "available",
+      "low": 22.0,
+      "mean": 22.0,
+      "high": 22.0
+    },
+    {
+      "code": "EGHT",
+      "symbol": "EGHT",
+      "status": "available",
+      "low": 1.5,
+      "mean": 2.5833,
+      "high": 3.25
+    },
+    {
+      "code": "GERN",
+      "symbol": "GERN",
+      "status": "available",
+      "low": 3.0,
+      "mean": 4.25,
+      "high": 6.0
+    },
+    {
+      "code": "EVEX",
+      "symbol": "EVEX",
+      "status": "available",
+      "low": 3.3,
+      "mean": 6.2875,
+      "high": 9.0
+    },
+    {
+      "code": "OKLO",
+      "symbol": "OKLO",
+      "status": "available",
+      "low": 14.0,
+      "mean": 75.775,
+      "high": 130.0
+    },
+    {
+      "code": "OXM",
+      "symbol": "OXM",
+      "status": "available",
+      "low": 33.0,
+      "mean": 34.0,
+      "high": 35.0
+    },
+    {
+      "code": "MTH",
+      "symbol": "MTH",
+      "status": "available",
+      "low": 65.0,
+      "mean": 80.375,
+      "high": 93.0
+    },
+    {
+      "code": "SNAP",
+      "symbol": "SNAP",
+      "status": "available",
+      "low": 5.0,
+      "mean": 7.3943,
+      "high": 16.0
+    },
+    {
+      "code": "WHR",
+      "symbol": "WHR",
+      "status": "available",
+      "low": 31.0,
+      "mean": 50.6667,
+      "high": 137.0
+    },
+    {
+      "code": "ARRY",
+      "symbol": "ARRY",
+      "status": "available",
+      "low": 4.0,
+      "mean": 8.4891,
+      "high": 13.0
+    },
+    {
+      "code": "TE",
+      "symbol": "TE",
+      "status": "available",
+      "low": 5.0,
+      "mean": 8.7778,
+      "high": 16.0
+    },
+    {
+      "code": "ARQQ",
+      "symbol": "ARQQ",
+      "status": "unavailable",
+      "low": null,
+      "mean": null,
+      "high": null
+    },
+    {
+      "code": "PYPL",
+      "symbol": "PYPL",
+      "status": "available",
+      "low": 36.0,
+      "mean": 56.9172,
+      "high": 80.0
+    },
+    {
+      "code": "MNRO",
+      "symbol": "MNRO",
+      "status": "available",
+      "low": 15.0,
+      "mean": 22.0,
+      "high": 40.0
+    },
+    {
+      "code": "XE",
+      "symbol": "XE",
+      "status": "available",
+      "low": 9.0,
+      "mean": 34.375,
+      "high": 57.0
+    },
+    {
+      "code": "ADTN",
+      "symbol": "ADTN",
+      "status": "available",
+      "low": 11.0,
+      "mean": 14.6667,
+      "high": 21.0
+    },
+    {
+      "code": "ENOV",
+      "symbol": "ENOV",
+      "status": "available",
+      "low": 24.0,
+      "mean": 38.3333,
+      "high": 52.0
+    },
+    {
+      "code": "PLAY",
+      "symbol": "PLAY",
+      "status": "available",
+      "low": 9.0,
+      "mean": 13.0,
+      "high": 22.0
+    },
+    {
+      "code": "FPS",
+      "symbol": "FPS",
+      "status": "available",
+      "low": 44.0,
+      "mean": 56.4545,
+      "high": 76.0
+    },
+    {
+      "code": "ODD",
+      "symbol": "ODD",
+      "status": "available",
+      "low": 9.0,
+      "mean": 15.3125,
+      "high": 21.0
+    },
+    {
+      "code": "NTGR",
+      "symbol": "NTGR",
+      "status": "available",
+      "low": 34.0,
+      "mean": 35.0,
+      "high": 36.0
+    },
+    {
+      "code": "ENVX",
+      "symbol": "ENVX",
+      "status": "available",
+      "low": 5.0,
+      "mean": 11.35,
+      "high": 21.0
+    },
+    {
+      "code": "LYFT",
+      "symbol": "LYFT",
+      "status": "available",
+      "low": 14.0,
+      "mean": 19.4378,
+      "high": 30.0
+    },
+    {
+      "code": "SOUN",
+      "symbol": "SOUN",
+      "status": "available",
+      "low": 6.0,
+      "mean": 12.5714,
+      "high": 17.0
+    },
+    {
+      "code": "AVNT",
+      "symbol": "AVNT",
+      "status": "available",
+      "low": 46.0,
+      "mean": 50.8571,
+      "high": 56.0
+    },
+    {
+      "code": "SLDP",
+      "symbol": "SLDP",
+      "status": "available",
+      "low": 6.75,
+      "mean": 6.875,
+      "high": 7.0
+    },
+    {
+      "code": "VIA",
+      "symbol": "VIA",
+      "status": "available",
+      "low": 25.0,
+      "mean": 35.7778,
+      "high": 55.0
+    },
+    {
+      "code": "CYH",
+      "symbol": "CYH",
+      "status": "available",
+      "low": 2.0,
+      "mean": 3.1562,
+      "high": 4.0
+    },
+    {
+      "code": "OMDA",
+      "symbol": "OMDA",
+      "status": "available",
+      "low": 22.0,
+      "mean": 28.4167,
+      "high": 35.0
+    },
+    {
+      "code": "LCID",
+      "symbol": "LCID",
+      "status": "available",
+      "low": 3.5,
+      "mean": 7.9444,
+      "high": 17.0
+    },
+    {
+      "code": "MWH",
+      "symbol": "MWH",
+      "status": "available",
+      "low": 35.0,
+      "mean": 44.5455,
+      "high": 55.0
+    },
+    {
+      "code": "HLLY",
+      "symbol": "HLLY",
+      "status": "available",
+      "low": 3.5,
+      "mean": 4.5786,
+      "high": 7.0
+    },
+    {
+      "code": "NNE",
+      "symbol": "NNE",
+      "status": "available",
+      "low": 22.0,
+      "mean": 37.5714,
+      "high": 50.0
+    },
+    {
+      "code": "PLNT",
+      "symbol": "PLNT",
+      "status": "available",
+      "low": 49.2,
+      "mean": 66.3059,
+      "high": 106.0
+    },
+    {
+      "code": "CRNC",
+      "symbol": "CRNC",
+      "status": "available",
+      "low": 9.0,
+      "mean": 10.75,
+      "high": 12.0
+    },
+    {
+      "code": "ALHC",
+      "symbol": "ALHC",
+      "status": "available",
+      "low": 13.0,
+      "mean": 22.2308,
+      "high": 28.0
+    },
+    {
+      "code": "QS",
+      "symbol": "QS",
+      "status": "available",
+      "low": 2.5,
+      "mean": 6.6625,
+      "high": 10.0
+    },
+    {
+      "code": "YSS",
+      "symbol": "YSS",
+      "status": "available",
+      "low": 11.0,
+      "mean": 14.85,
+      "high": 18.0
+    },
+    {
+      "code": "NRDS",
+      "symbol": "NRDS",
+      "status": "available",
+      "low": 8.0,
+      "mean": 11.8,
+      "high": 15.0
+    },
+    {
+      "code": "FRMI",
+      "symbol": "FRMI",
+      "status": "available",
+      "low": 6.0,
+      "mean": 17.125,
+      "high": 35.0
+    },
+    {
+      "code": "HUBG",
+      "symbol": "HUBG",
+      "status": "available",
+      "low": 29.0,
+      "mean": 38.5833,
+      "high": 50.0
+    },
+    {
+      "code": "UHS",
+      "symbol": "UHS",
+      "status": "available",
+      "low": 166.0,
+      "mean": 194.3529,
+      "high": 290.0
+    },
+    {
+      "code": "WLTH",
+      "symbol": "WLTH",
+      "status": "available",
+      "low": 10.0,
+      "mean": 12.1071,
+      "high": 17.0
+    },
+    {
+      "code": "ALMU",
+      "symbol": "ALMU",
+      "status": "available",
+      "low": 22.0,
+      "mean": 23.5,
+      "high": 25.0
+    },
+    {
+      "code": "ONT",
+      "symbol": "ONT",
+      "status": "available",
+      "low": 15.0,
+      "mean": 18.6,
+      "high": 23.0
+    },
+    {
+      "code": "NCLH",
+      "symbol": "NCLH",
+      "status": "available",
+      "low": 13.0,
+      "mean": 20.2,
+      "high": 32.0
+    },
+    {
+      "code": "RR",
+      "symbol": "RR",
+      "status": "available",
+      "low": 2.0,
+      "mean": 2.0,
+      "high": 2.0
+    },
+    {
+      "code": "KVYO",
+      "symbol": "KVYO",
+      "status": "available",
+      "low": 19.0,
+      "mean": 26.5714,
+      "high": 36.0
+    },
+    {
+      "code": "BKSY",
+      "symbol": "BKSY",
+      "status": "available",
+      "low": 33.0,
+      "mean": 38.4237,
+      "high": 50.0
+    },
+    {
+      "code": "JACK",
+      "symbol": "JACK",
+      "status": "available",
+      "low": 12.0,
+      "mean": 19.9167,
+      "high": 36.0
+    },
+    {
+      "code": "ASPI",
+      "symbol": "ASPI",
+      "status": "available",
+      "low": 11.0,
+      "mean": 13.0,
+      "high": 15.0
+    },
+    {
+      "code": "CLB",
+      "symbol": "CLB",
+      "status": "available",
+      "low": 11.0,
+      "mean": 15.0,
+      "high": 21.0
+    },
+    {
+      "code": "FUBO",
+      "symbol": "FUBO",
+      "status": "available",
+      "low": 12.0,
+      "mean": 17.0,
+      "high": 23.0
+    },
+    {
+      "code": "CE",
+      "symbol": "CE",
+      "status": "available",
+      "low": 45.0,
+      "mean": 63.1176,
+      "high": 86.0
+    },
+    {
+      "code": "VOYG",
+      "symbol": "VOYG",
+      "status": "available",
+      "low": 21.0,
+      "mean": 46.7,
+      "high": 65.0
+    },
+    {
+      "code": "ARHS",
+      "symbol": "ARHS",
+      "status": "available",
+      "low": 9.0,
+      "mean": 10.5385,
+      "high": 13.0
+    },
+    {
+      "code": "ULCC",
+      "symbol": "ULCC",
+      "status": "available",
+      "low": 4.0,
+      "mean": 6.5556,
+      "high": 9.0
+    },
+    {
+      "code": "WOLF",
+      "symbol": "WOLF",
+      "status": "available",
+      "low": 25.0,
+      "mean": 27.5,
+      "high": 30.0
+    },
+    {
+      "code": "ACDC",
+      "symbol": "ACDC",
+      "status": "available",
+      "low": 4.5,
+      "mean": 5.4875,
+      "high": 6.7
+    },
+    {
+      "code": "RGNX",
+      "symbol": "RGNX",
+      "status": "available",
+      "low": 10.0,
+      "mean": 23.7273,
+      "high": 50.0
+    },
+    {
+      "code": "EQPT",
+      "symbol": "EQPT",
+      "status": "available",
+      "low": 22.0,
+      "mean": 32.7,
+      "high": 55.0
+    },
+    {
+      "code": "VELO",
+      "symbol": "VELO",
+      "status": "available",
+      "low": 17.0,
+      "mean": 23.25,
+      "high": 33.0
+    },
+    {
+      "code": "FLY",
+      "symbol": "FLY",
+      "status": "available",
+      "low": 25.0,
+      "mean": 38.6,
+      "high": 50.0
+    },
+    {
+      "code": "BETA",
+      "symbol": "BETA",
+      "status": "available",
+      "low": 29.0,
+      "mean": 32.0,
+      "high": 37.0
+    },
+    {
+      "code": "GENI",
+      "symbol": "GENI",
+      "status": "available",
+      "low": 6.0,
+      "mean": 10.881,
+      "high": 20.0
+    },
+    {
+      "code": "MRLN",
+      "symbol": "MRLN",
+      "status": "available",
+      "low": 7.0,
+      "mean": 8.5833,
+      "high": 10.0
+    },
+    {
+      "code": "EOSE",
+      "symbol": "EOSE",
+      "status": "available",
+      "low": 4.0,
+      "mean": 6.5,
+      "high": 10.0
+    },
+    {
+      "code": "RCKT",
+      "symbol": "RCKT",
+      "status": "available",
+      "low": 3.0,
+      "mean": 8.8542,
+      "high": 15.0
+    },
+    {
+      "code": "CABA",
+      "symbol": "CABA",
+      "status": "available",
+      "low": 3.0,
+      "mean": 13.25,
+      "high": 30.0
+    },
+    {
+      "code": "BETR",
+      "symbol": "BETR",
+      "status": "available",
+      "low": 16.0,
+      "mean": 25.7143,
+      "high": 35.0
+    },
+    {
+      "code": "RUN",
+      "symbol": "RUN",
+      "status": "available",
+      "low": 10.0,
+      "mean": 15.8684,
+      "high": 30.0
+    },
+    {
+      "code": "IE",
+      "symbol": "IE",
+      "status": "available",
+      "low": 16.0,
+      "mean": 21.4167,
+      "high": 28.5
+    },
+    {
+      "code": "FATE",
+      "symbol": "FATE",
+      "status": "available",
+      "low": 2.2,
+      "mean": 5.7444,
+      "high": 8.0
+    },
+    {
+      "code": "WD",
+      "symbol": "WD",
+      "status": "available",
+      "low": 55.0,
+      "mean": 57.0,
+      "high": 59.0
+    },
+    {
+      "code": "PCT",
+      "symbol": "PCT",
+      "status": "available",
+      "low": 6.0,
+      "mean": 10.6,
+      "high": 17.0
+    },
+    {
+      "code": "APTV",
+      "symbol": "APTV",
+      "status": "available",
+      "low": 55.0,
+      "mean": 66.6111,
+      "high": 78.0
+    },
+    {
+      "code": "CATX",
+      "symbol": "CATX",
+      "status": "available",
+      "low": 5.0,
+      "mean": 12.2857,
+      "high": 18.0
+    },
+    {
+      "code": "GLOB",
+      "symbol": "GLOB",
+      "status": "available",
+      "low": 33.0,
+      "mean": 51.5909,
+      "high": 100.0
+    },
+    {
+      "code": "LZM",
+      "symbol": "LZM",
+      "status": "available",
+      "low": 7.0,
+      "mean": 8.6267,
+      "high": 10.88
+    },
+    {
+      "code": "FIP",
+      "symbol": "FIP",
+      "status": "available",
+      "low": 8.75,
+      "mean": 9.9375,
+      "high": 12.0
+    },
+    {
+      "code": "NTLA",
+      "symbol": "NTLA",
+      "status": "available",
+      "low": 8.0,
+      "mean": 24.0,
+      "high": 61.0
+    },
+    {
+      "code": "KYTX",
+      "symbol": "KYTX",
+      "status": "available",
+      "low": 25.0,
+      "mean": 30.4,
+      "high": 33.0
+    },
+    {
+      "code": "FLUT",
+      "symbol": "FLUT",
+      "status": "available",
+      "low": 85.0,
+      "mean": 134.8687,
+      "high": 360.0
+    },
+    {
+      "code": "GOGO",
+      "symbol": "GOGO",
+      "status": "available",
+      "low": 7.0,
+      "mean": 8.5,
+      "high": 10.0
+    },
+    {
+      "code": "RKT",
+      "symbol": "RKT",
+      "status": "available",
+      "low": 14.0,
+      "mean": 17.7,
+      "high": 21.0
+    },
+    {
+      "code": "SVV",
+      "symbol": "SVV",
+      "status": "available",
+      "low": 11.0,
+      "mean": 14.2273,
+      "high": 20.0
+    },
+    {
+      "code": "AGIO",
+      "symbol": "AGIO",
+      "status": "available",
+      "low": 32.0,
+      "mean": 46.25,
+      "high": 73.0
+    },
+    {
+      "code": "NPWR",
+      "symbol": "NPWR",
+      "status": "available",
+      "low": 2.5,
+      "mean": 2.85,
+      "high": 3.5
+    },
+    {
+      "code": "EDIT",
+      "symbol": "EDIT",
+      "status": "available",
+      "low": 1.0,
+      "mean": 5.9,
+      "high": 15.0
+    },
+    {
+      "code": "MAGN",
+      "symbol": "MAGN",
+      "status": "available",
+      "low": 15.0,
+      "mean": 15.5,
+      "high": 16.0
+    },
+    {
+      "code": "ABAT",
+      "symbol": "ABAT",
+      "status": "available",
+      "low": 5.0,
+      "mean": 6.0,
+      "high": 7.0
+    },
+    {
+      "code": "LAES",
+      "symbol": "LAES",
+      "status": "available",
+      "low": 3.75,
+      "mean": 5.875,
+      "high": 8.0
+    },
+    {
+      "code": "PGY",
+      "symbol": "PGY",
+      "status": "available",
+      "low": 23.0,
+      "mean": 28.9091,
+      "high": 36.0
+    },
+    {
+      "code": "DFH",
+      "symbol": "DFH",
+      "status": "unavailable",
+      "low": null,
+      "mean": null,
+      "high": null
+    },
+    {
+      "code": "EFX",
+      "symbol": "EFX",
+      "status": "available",
+      "low": 160.0,
+      "mean": 212.1429,
+      "high": 245.0
+    },
+    {
+      "code": "ORGO",
+      "symbol": "ORGO",
+      "status": "available",
+      "low": 2.0,
+      "mean": 2.0,
+      "high": 2.0
+    },
+    {
+      "code": "GLXY",
+      "symbol": "GLXY",
+      "status": "available",
+      "low": 26.0,
+      "mean": 40.625,
+      "high": 57.0
+    },
+    {
+      "code": "IKT",
+      "symbol": "IKT",
+      "status": "available",
+      "low": 3.0,
+      "mean": 6.0,
+      "high": 8.0
+    },
+    {
+      "code": "NRGV",
+      "symbol": "NRGV",
+      "status": "available",
+      "low": 3.0,
+      "mean": 6.206,
+      "high": 8.03
+    },
+    {
+      "code": "ZG",
+      "symbol": "ZG",
+      "status": "available",
+      "low": 32.0,
+      "mean": 47.2273,
+      "high": 80.0
+    },
+    {
+      "code": "BBNX",
+      "symbol": "BBNX",
+      "status": "available",
+      "low": 16.0,
+      "mean": 23.2833,
+      "high": 30.4
+    },
+    {
+      "code": "DNLI",
+      "symbol": "DNLI",
+      "status": "available",
+      "low": 27.0,
+      "mean": 36.0625,
+      "high": 42.0
+    },
+    {
+      "code": "HGV",
+      "symbol": "HGV",
+      "status": "available",
+      "low": 46.0,
+      "mean": 55.9,
+      "high": 74.0
+    },
+    {
+      "code": "HUBS",
+      "symbol": "HUBS",
+      "status": "available",
+      "low": 190.0,
+      "mean": 249.7168,
+      "high": 320.0
+    },
+    {
+      "code": "ORBS",
+      "symbol": "ORBS",
+      "status": "unavailable",
+      "low": null,
+      "mean": null,
+      "high": null
+    },
+    {
+      "code": "NB",
+      "symbol": "NB",
+      "status": "available",
+      "low": 4.7,
+      "mean": 11.1167,
+      "high": 15.0
+    },
+    {
+      "code": "LZ",
+      "symbol": "LZ",
+      "status": "available",
+      "low": 6.0,
+      "mean": 7.6,
+      "high": 9.0
+    },
+    {
+      "code": "CPRI",
+      "symbol": "CPRI",
+      "status": "available",
+      "low": 16.0,
+      "mean": 22.2188,
+      "high": 45.5
+    },
+    {
+      "code": "SITE",
+      "symbol": "SITE",
+      "status": "available",
+      "low": 100.0,
+      "mean": 127.0833,
+      "high": 160.0
+    },
+    {
+      "code": "AI",
+      "symbol": "AI",
+      "status": "available",
+      "low": 6.0,
+      "mean": 8.3,
+      "high": 12.0
+    },
+    {
+      "code": "DXYZ",
+      "symbol": "DXYZ",
+      "status": "unavailable",
+      "low": null,
+      "mean": null,
+      "high": null
+    },
+    {
+      "code": "VERX",
+      "symbol": "VERX",
+      "status": "available",
+      "low": 12.0,
+      "mean": 17.1538,
+      "high": 25.0
+    },
+    {
+      "code": "SMMT",
+      "symbol": "SMMT",
+      "status": "available",
+      "low": 11.5115,
+      "mean": 29.4845,
+      "high": 42.9451
+    },
+    {
+      "code": "TASK",
+      "symbol": "TASK",
+      "status": "available",
+      "low": 7.0,
+      "mean": 8.5,
+      "high": 12.0
+    },
+    {
+      "code": "PACK",
+      "symbol": "PACK",
+      "status": "available",
+      "low": 6.0,
+      "mean": 7.0833,
+      "high": 8.0
+    },
+    {
+      "code": "FOXF",
+      "symbol": "FOXF",
+      "status": "available",
+      "low": 20.0,
+      "mean": 21.8333,
+      "high": 26.0
+    },
+    {
+      "code": "SIBN",
+      "symbol": "SIBN",
+      "status": "available",
+      "low": 20.0,
+      "mean": 25.0,
+      "high": 32.0
+    },
+    {
+      "code": "VRRM",
+      "symbol": "VRRM",
+      "status": "available",
+      "low": 5.0,
+      "mean": 7.0,
+      "high": 10.0
+    },
+    {
+      "code": "GTM",
+      "symbol": "GTM",
+      "status": "available",
+      "low": 2.5,
+      "mean": 4.5833,
+      "high": 15.0
+    },
+    {
+      "code": "SENS",
+      "symbol": "SENS",
+      "status": "available",
+      "low": 8.0,
+      "mean": 14.2,
+      "high": 18.0
+    },
+    {
+      "code": "BRZE",
+      "symbol": "BRZE",
+      "status": "available",
+      "low": 30.0,
+      "mean": 37.3,
+      "high": 50.0
+    },
+    {
+      "code": "WDAY",
+      "symbol": "WDAY",
+      "status": "available",
+      "low": 92.0,
+      "mean": 208.2597,
+      "high": 275.0
+    },
+    {
+      "code": "NUAI",
+      "symbol": "NUAI",
+      "status": "available",
+      "low": 12.0,
+      "mean": 12.5,
+      "high": 13.0
+    },
+    {
+      "code": "WLFC",
+      "symbol": "WLFC",
+      "status": "available",
+      "low": 71.0,
+      "mean": 75.5,
+      "high": 80.0
+    },
+    {
+      "code": "OEC",
+      "symbol": "OEC",
+      "status": "available",
+      "low": 5.0,
+      "mean": 6.6875,
+      "high": 8.5
+    },
+    {
+      "code": "HAYW",
+      "symbol": "HAYW",
+      "status": "available",
+      "low": 15.0,
+      "mean": 17.9286,
+      "high": 19.5
+    },
+    {
+      "code": "SWIM",
+      "symbol": "SWIM",
+      "status": "available",
+      "low": 6.0,
+      "mean": 8.6083,
+      "high": 13.0
+    },
+    {
+      "code": "GEHC",
+      "symbol": "GEHC",
+      "status": "available",
+      "low": 70.0,
+      "mean": 83.0526,
+      "high": 96.0
+    },
+    {
+      "code": "STAA",
+      "symbol": "STAA",
+      "status": "available",
+      "low": 19.0,
+      "mean": 27.7,
+      "high": 37.0
+    },
+    {
+      "code": "EVER",
+      "symbol": "EVER",
+      "status": "available",
+      "low": 28.0,
+      "mean": 29.5,
+      "high": 34.0
+    },
+    {
+      "code": "WEAV",
+      "symbol": "WEAV",
+      "status": "available",
+      "low": 7.4,
+      "mean": 7.4,
+      "high": 7.4
+    },
+    {
+      "code": "SRPT",
+      "symbol": "SRPT",
+      "status": "available",
+      "low": 5.0,
+      "mean": 21.7273,
+      "high": 38.0
+    },
+    {
+      "code": "EYE",
+      "symbol": "EYE",
+      "status": "available",
+      "low": 20.0,
+      "mean": 28.1818,
+      "high": 35.0
+    },
+    {
+      "code": "WWW",
+      "symbol": "WWW",
+      "status": "available",
+      "low": 19.0,
+      "mean": 24.3,
+      "high": 31.0
+    },
+    {
+      "code": "RXRX",
+      "symbol": "RXRX",
+      "status": "available",
+      "low": 4.0,
+      "mean": 7.2167,
+      "high": 10.0
+    },
+    {
+      "code": "WAY",
+      "symbol": "WAY",
+      "status": "available",
+      "low": 28.0,
+      "mean": 33.6818,
+      "high": 44.0
+    },
+    {
+      "code": "LIF",
+      "symbol": "LIF",
+      "status": "available",
+      "low": 40.0,
+      "mean": 60.7,
+      "high": 72.0
+    },
+    {
+      "code": "COLL",
+      "symbol": "COLL",
+      "status": "available",
+      "low": 43.0,
+      "mean": 49.0,
+      "high": 60.0
+    },
+    {
+      "code": "UMAC",
+      "symbol": "UMAC",
+      "status": "available",
+      "low": 30.0,
+      "mean": 39.0,
+      "high": 45.0
+    },
+    {
+      "code": "SONO",
+      "symbol": "SONO",
+      "status": "available",
+      "low": 15.5,
+      "mean": 18.625,
+      "high": 21.0
+    },
+    {
+      "code": "GSHD",
+      "symbol": "GSHD",
+      "status": "available",
+      "low": 44.0,
+      "mean": 68.6667,
+      "high": 100.0
+    },
+    {
+      "code": "CERT",
+      "symbol": "CERT",
+      "status": "available",
+      "low": 7.0,
+      "mean": 8.4864,
+      "high": 10.0
+    },
+    {
+      "code": "TDOC",
+      "symbol": "TDOC",
+      "status": "available",
+      "low": 5.5,
+      "mean": 7.6765,
+      "high": 10.5
+    },
+    {
+      "code": "COUR",
+      "symbol": "COUR",
+      "status": "available",
+      "low": 6.5,
+      "mean": 8.1667,
+      "high": 10.0
+    },
+    {
+      "code": "INSP",
+      "symbol": "INSP",
+      "status": "available",
+      "low": 40.0,
+      "mean": 63.8,
+      "high": 97.0
+    },
+    {
+      "code": "SERV",
+      "symbol": "SERV",
+      "status": "available",
+      "low": 7.0,
+      "mean": 12.1429,
+      "high": 22.0
+    },
+    {
+      "code": "TRIP",
+      "symbol": "TRIP",
+      "status": "available",
+      "low": 9.0,
+      "mean": 13.8667,
+      "high": 21.0
+    },
+    {
+      "code": "CRCT",
+      "symbol": "CRCT",
+      "status": "available",
+      "low": 3.7,
+      "mean": 4.0667,
+      "high": 4.5
+    },
+    {
+      "code": "MTCH",
+      "symbol": "MTCH",
+      "status": "available",
+      "low": 35.0,
+      "mean": 41.8824,
+      "high": 51.0
+    },
+    {
+      "code": "YELP",
+      "symbol": "YELP",
+      "status": "available",
+      "low": 19.0,
+      "mean": 25.125,
+      "high": 30.0
+    },
+    {
+      "code": "ALVO",
+      "symbol": "ALVO",
+      "status": "available",
+      "low": 4.0,
+      "mean": 6.8,
+      "high": 9.0
+    },
+    {
+      "code": "REI",
+      "symbol": "REI",
+      "status": "available",
+      "low": 2.0,
+      "mean": 2.0833,
+      "high": 2.25
+    },
+    {
+      "code": "KOS",
+      "symbol": "KOS",
+      "status": "available",
+      "low": 1.7,
+      "mean": 2.985,
+      "high": 4.7
+    },
+    {
+      "code": "NEO",
+      "symbol": "NEO",
+      "status": "available",
+      "low": 16.0,
+      "mean": 19.7222,
+      "high": 35.0
+    },
+    {
+      "code": "QMCO",
+      "symbol": "QMCO",
+      "status": "available",
+      "low": 24.0,
+      "mean": 26.5,
+      "high": 29.0
+    },
+    {
+      "code": "AESI",
+      "symbol": "AESI",
+      "status": "available",
+      "low": 12.0,
+      "mean": 18.0,
+      "high": 25.0
+    },
+    {
+      "code": "PRME",
+      "symbol": "PRME",
+      "status": "available",
+      "low": 4.25,
+      "mean": 7.1136,
+      "high": 11.0
+    },
+    {
+      "code": "PPLI",
+      "symbol": "PPLI",
+      "status": "available",
+      "low": 48.0,
+      "mean": 56.8,
+      "high": 70.0
+    }
+  ]
+}

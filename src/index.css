@@ -33,24 +33,37 @@ body {
 .ranking-header-scroll::-webkit-scrollbar { display: none; }
 .market-grid {
   display: grid;
-  grid-template-columns: 36px minmax(145px, 1.5fr) minmax(125px, 1fr) repeat(var(--numeric-columns, 4), minmax(100px, 1fr)) 90px minmax(150px, 1.3fr) minmax(180px, 1.7fr);
+  grid-template-columns: 36px minmax(145px, 1.5fr) minmax(125px, 1fr) repeat(var(--numeric-columns, 4), minmax(100px, 1fr)) minmax(128px, 1fr) 90px minmax(150px, 1.3fr) minmax(180px, 1.7fr);
   gap: 12px;
   align-items: center;
   padding: 12px 16px;
   text-align: right;
   font-variant-numeric: tabular-nums;
   font-size: 13px;
-  min-width: var(--table-width, 1199px);
+  min-width: var(--table-width, 1327px);
 }
 .market-grid > :first-child { text-align: center; }
 .market-header { min-height: 52px; color: #64748b; font-size: 12px; border-bottom: 1px solid #e2e8f0; }
-.market-body { min-width: var(--table-width, 1199px); }
+.market-body { min-width: var(--table-width, 1327px); }
 .market-row { min-height: 92px; border-bottom: 1px solid #e2e8f0; background: #fff; }
 .market-row:nth-child(even) { background: #fafaf9; }
 .market-row:last-child { border-bottom: 0; }
 .market-row:hover { background: #f1f5f9; }
 
-.ranking-section[data-position-view="true"] { --numeric-columns: 5; --table-width: 1311px; }
+.ranking-section[data-position-view="true"] { --numeric-columns: 5; --table-width: 1439px; }
+.target-cell, .target-column-heading { text-align: center; line-height: 1.55; }
+.target-cell { font-size: 11px; color: #334155; }
+.target-cell div { display: flex; flex-wrap: wrap; justify-content: center; gap: 2px 4px; }
+.target-cell span { color: #64748b; }
+.target-cell strong { color: #0f766e; }
+.target-cell small { display: block; color: #64748b; font-size: 10px; }
+.price-research-cell .scenario-prices { display: block; }
+.price-research-cell .scenario-prices > div { display: flex; justify-content: space-between; gap: 4px; }
+.price-research-dialog { text-align: left; color: #334155; }
+.price-research-dialog section { border-top: 1px solid #e2e8f0; margin-top: 14px; padding-top: 12px; }
+.price-research-dialog h3 { font-weight: 600; }
+.price-research-dialog a { color: #0369a1; text-decoration: underline; }
+.price-research-dialog .target-cell { text-align: left; }
 
 /* UI-009: independent range explorer, with bounded horizontal scroll. */
 .box-page { max-width: 1220px; margin: auto; padding: 24px; color: #172033; }
@@ -206,7 +219,7 @@ body {
 @media (min-width:1024px) {
  .ranking-section { --table-width:100%; }
  .ranking-section[data-position-view="true"] { --table-width:100%; }
- .market-grid { width:100%; grid-template-columns:16px minmax(110px,1.3fr) minmax(70px,.9fr) repeat(var(--numeric-columns,4),minmax(52px,.75fr)) 80px minmax(80px,1.1fr) minmax(86px,1.2fr); gap:6px; padding:12px; }
+ .market-grid { width:100%; grid-template-columns:16px minmax(110px,1.3fr) minmax(70px,.9fr) repeat(var(--numeric-columns,4),minmax(52px,.75fr)) minmax(100px,1fr) 80px minmax(80px,1.1fr) minmax(86px,1.2fr); gap:6px; padding:12px; }
  .market-body { width:100%; }
  .market-header { font-size:11px; }
  .market-row { font-size:12px; }
@@ -238,8 +251,8 @@ body {
 .fundamental-gap { padding: 10px; background: #fff7ed; border-radius: 8px; color: #9a3412; }
 /* UI-022: evidence summaries belong to the risk pool, not the original tables. */
 .ranking-section[data-pool="true"] .market-grid {
-  min-width: 1450px;
-  grid-template-columns: 22px minmax(140px,1.2fr) 126px 135px 150px repeat(var(--numeric-columns,4),minmax(70px,.8fr)) 80px 110px 120px;
+    min-width: 1580px;
+    grid-template-columns: 22px minmax(140px,1.2fr) 126px 135px 150px repeat(var(--numeric-columns,4),minmax(70px,.8fr)) 130px 80px 110px 120px;
   gap: 10px;
 }
 .fundamental-phrases, .fundamental-column-heading { text-align: left; font-size: 12px; line-height: 1.65; overflow-wrap: anywhere; }

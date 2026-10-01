@@ -12,6 +12,8 @@ CR-025 / RES-012 / OPS-006。用户每月主动发起一次更新；AI/维护者
 | 经营类型、业务阶段与证据缺口 | `scripts/pool_categories.json` → `pool-review.json` | 高风险池全部成员；不以缺字段推定业务类型 |
 | 基本面亮点与风险短语 | `scripts/pool_briefs.json` + 财报规则 → `pool-review.json` | 高风险池全部成员；每项保留来源和报告期 |
 | 治理事件、法律状态、生存/退市风险及复核日 | `scripts/governance_events.json` + 治理覆盖清单 → `public/data/governance-review.json` | 全部公司/基金主体；非公司资产标不适用 |
+| 分析师低／均／高目标价 | `python scripts/generate_analyst_targets.py` → `public/data/analyst-targets.json` | CSV 全部唯一代码；逐只标可用或不可用，不把抓取日冒充报告日 |
+| 乐观／保守／极端保守情景价值 | `scripts/valuation_assumptions.json` → `python scripts/generate_valuation_scenarios.py` → `public/data/valuation-scenarios.json` | 逐只原文与经营/融资/稀释假设；未完成研究的公司待核实，非公司资产需专门方法 |
 
 上一轮研究与本轮新申报的区别必须写清：无新 SEC 文件不代表无风险；公告标题或关键词不能直接判定破产、造假、退市或风险解除。`grade`、`category`、`distress`相互独立，冲突组合列入报告。完整分类规则见[RISK_CLASSIFICATION_METHOD.md](RISK_CLASSIFICATION_METHOD.md)，名单筛选规则见[ACTIVE_LIST_UPDATE.md](ACTIVE_LIST_UPDATE.md)。
 
@@ -20,7 +22,7 @@ CR-025 / RES-012 / OPS-006。用户每月主动发起一次更新；AI/维护者
 1. 读取 CSV、当前研究 JSON、上次名单与研究报告；列出当前成员、交集、各研究日期和待复核事件。按需手动运行 GitHub Actions 的 **Manual SEC Research Evidence**，取得 SEC 申报清单与结构化财务草稿；此任务只上传 artifact，不提交或部署。
 2. 按[名单维护规范](ACTIVE_LIST_UPDATE.md)核查活跃列表及高风险池成员。核实代码、主体、非中概边界、业务短标签、波动与箱体；持仓归属只有用户明确要求时才改。成员变化要同步研究覆盖，不能留下无主体对应的旧评级。
 3. 对全体适用主体查本轮新 SEC 财报、8-K/6-K、公司 IR、交易所公告及必要的监管原文；逐只记录报告期、申报/事件日期、证券种类和链接。优先处理新申报、当前事件、逾期复核、旧事实缺口和跨轴冲突。重大/观察风险的升级或解除要有直接原文依据。
-4. 更新上述唯一来源并生成 `pool-review.json`、`governance-review.json`。报告列出每只变化、维持、资料缺失及无法判断的公司，说明旧结论是否仍成立；空亮点/风险不得解读为安全。新增成员完成研究后才能写入“已核查”日期。
+4. 更新上述唯一来源并生成 `pool-review.json`、`governance-review.json`。运行 `python scripts/generate_analyst_targets.py` 更新目标价快照，报告可用/不可用数及 Yahoo 失败；任一目标价请求报错时保留旧快照并如实标记该维度未更新。按[情景估值规则](VALUATION_SCENARIOS.md)逐只核查模型、原文及三档经营/估值/融资/稀释假设，维护 `valuation_assumptions.json` 并运行 `python scripts/generate_valuation_scenarios.py`；报告已估值/待核实/需专门方法及假设变更，不因生成快照就推进未研究行的估值日。报告列出每只变化、维持、资料缺失及无法判断的公司，说明旧结论是否仍成立；空亮点/风险不得解读为安全。新增成员完成研究后才能写入“已核查”日期。
 5. `list-review.json.last_updated`仅在名单完整复核后更新；基本面/治理的`reviewed_at`仅在相应覆盖完整且通过校验后更新。两项尽量同次发布；若其中一项失败，保留其旧日期并在报告和页面明确缺口，不用另一项日期冒充已完成。
 6. 运行`python -m unittest discover -s tests -v`、`npm run lint`、`npm run build`、`npm test`和真实行情生成验证；记录成功/失败标的、`data_date`、研究行数、事件分布、来源及异常。最后更新CR/CHANGELOG/OPERATIONS并发布；不改变既有金融公式或名单日期的含义。
 

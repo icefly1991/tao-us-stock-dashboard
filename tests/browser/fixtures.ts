@@ -29,6 +29,14 @@ export function history(code = 'AAA', mode = 'adjusted') {
     rsi_history: { period: 14, complete: false, requested_start: '2024-09-25', points: daily.map((bar, i) => ({ time: bar.time, value: 37 + i })) } }
 }
 
+export function valuations() {
+  const scenario = (value: number) => ({ value, model: 'enterprise_dcf', inputs: { fcff: [10], discount_rate: .1, terminal_growth: 0, cash_and_nonoperating_assets: 0, debt_and_other_claims: 0, diluted_shares: 10 },
+    assumptions: { business: '虚构测试经营假设', valuation: '虚构测试估值假设', financing: '虚构测试融资假设', dilution: '虚构测试稀释假设', failure_case: '虚构测试失败事件' }, sources: [{ title: '测试原文', url: 'https://www.sec.gov/' }] })
+  return { schema_version: 1, basis: 'present_value', generated_at: '2026-10-01T12:45-04:00', coverage: { available: 1, pending: 4, not_applicable: 0 },
+    rows: codes.map(code => ({ code, symbol: code, currency: 'USD', status: code === 'AAA' ? 'available' : 'pending', valued_at: code === 'AAA' ? '2026-10-01' : null, evidence_date: code === 'AAA' ? '2026-09-27' : null,
+      reason: code === 'AAA' ? '虚构测试情景，不是实际证券估值' : '尚未完成原文核查', scenarios: code === 'AAA' ? { optimistic: scenario(160), conservative: scenario(90), stress: { ...scenario(0), model: 'asset_recovery', inputs: { recoverable_assets: 0, senior_claims: 1, recovery_costs: 0, current_common_shares: 10, existing_common_entitlement: 0, years_to_recovery: 1, discount_rate: .1 } } } : null })) }
+}
+
 export function boxes() {
   const bars = Array.from({ length: 90 }, (_, i) => ({ time: new Date(Date.UTC(2026, 5, 28 + i)).toISOString().slice(0, 10), open: 49, high: 60, low: 40, close: 50, volume: i === 0 ? null : i === 1 ? 0 : i * 100, rsi_value: i === 0 ? null : 40 + i % 30 }))
   const window = (days: number) => ({ window_days: days, window_start_index: 90 - days, window_start: bars[90 - days].time, window_end: bars[89].time,
@@ -47,6 +55,11 @@ export async function seed(page: Page) {
     const url = new URL(route.request().url())
     let data: unknown
     if (url.pathname.endsWith('/dashboard.json')) data = dashboard()
+    else if (url.pathname.endsWith('/valuation-scenarios.json')) data = valuations()
+    else if (url.pathname.endsWith('/analyst-targets.json')) data = { schema_version: 1, source: 'test', fetched_at: '2026-10-01T12:45-04:00', rows: [
+      { code: 'AAA', symbol: 'AAA', status: 'available', low: 80, mean: 120, high: 160 },
+      { code: 'BBB', symbol: 'BBB', status: 'unavailable', low: null, mean: null, high: null },
+    ] }
     else if (url.pathname.endsWith('/boxes.json')) data = boxes()
     else if (url.pathname.endsWith('/list-review.json')) data = { last_updated: '2026-09-19' }
     else {

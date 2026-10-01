@@ -1,0 +1,3512 @@
+{
+  "schema_version": 1,
+  "basis": "present_value",
+  "generated_at": "2026-10-01T13:20-04:00",
+  "coverage": {
+    "available": 0,
+    "pending": 344,
+    "not_applicable": 6
+  },
+  "rows": [
+    {
+      "code": "SMR",
+      "symbol": "SMR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "VIX",
+      "symbol": "^VIX",
+      "status": "not_applicable",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "首期公司估值模型不适用；该资产需另建专门方法"
+    },
+    {
+      "code": "IMSR",
+      "symbol": "IMSR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NABL",
+      "symbol": "NABL",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "HOOD",
+      "symbol": "HOOD",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "MP",
+      "symbol": "MP",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ORCL",
+      "symbol": "ORCL",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "HIMS",
+      "symbol": "HIMS",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "BITX",
+      "symbol": "BITX",
+      "status": "not_applicable",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "首期公司估值模型不适用；该资产需另建专门方法"
+    },
+    {
+      "code": "CRWV",
+      "symbol": "CRWV",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "IBIT",
+      "symbol": "IBIT",
+      "status": "not_applicable",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "首期公司估值模型不适用；该资产需另建专门方法"
+    },
+    {
+      "code": "RZLV",
+      "symbol": "RZLV",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "MCD",
+      "symbol": "MCD",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "IREN",
+      "symbol": "IREN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ATCH",
+      "symbol": "ATCH",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CRCL",
+      "symbol": "CRCL",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NVDA",
+      "symbol": "NVDA",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NKE",
+      "symbol": "NKE",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "KLAR",
+      "symbol": "KLAR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "MNTN",
+      "symbol": "MNTN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "MSFT",
+      "symbol": "MSFT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "META",
+      "symbol": "META",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "RGTI",
+      "symbol": "RGTI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NXH",
+      "symbol": "NXH",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "AVGO",
+      "symbol": "AVGO",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "QQQ",
+      "symbol": "QQQ",
+      "status": "not_applicable",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "首期公司估值模型不适用；该资产需另建专门方法"
+    },
+    {
+      "code": "ETOR",
+      "symbol": "ETOR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ARKO",
+      "symbol": "ARKO",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "UAA",
+      "symbol": "UAA",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "PG",
+      "symbol": "PG",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "DOGEUSD",
+      "symbol": "DOGE-USD",
+      "status": "not_applicable",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "首期公司估值模型不适用；该资产需另建专门方法"
+    },
+    {
+      "code": "STUB",
+      "symbol": "STUB",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "VOR",
+      "symbol": "VOR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "MSTR",
+      "symbol": "MSTR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "GEMI",
+      "symbol": "GEMI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "OSCR",
+      "symbol": "OSCR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "DKNG",
+      "symbol": "DKNG",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "AMD",
+      "symbol": "AMD",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "TQQQ",
+      "symbol": "TQQQ",
+      "status": "not_applicable",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "首期公司估值模型不适用；该资产需另建专门方法"
+    },
+    {
+      "code": "APP",
+      "symbol": "APP",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "WBTN",
+      "symbol": "WBTN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "FIG",
+      "symbol": "FIG",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CRDO",
+      "symbol": "CRDO",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ALAB",
+      "symbol": "ALAB",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NBIS",
+      "symbol": "NBIS",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "COIN",
+      "symbol": "COIN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "RDDT",
+      "symbol": "RDDT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "RKLB",
+      "symbol": "RKLB",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CELH",
+      "symbol": "CELH",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "AFRM",
+      "symbol": "AFRM",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "UPST",
+      "symbol": "UPST",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CVNA",
+      "symbol": "CVNA",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "APLD",
+      "symbol": "APLD",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "RBLX",
+      "symbol": "RBLX",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CAVA",
+      "symbol": "CAVA",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ONON",
+      "symbol": "ONON",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "DUOL",
+      "symbol": "DUOL",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ELF",
+      "symbol": "ELF",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SOFI",
+      "symbol": "SOFI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SHOP",
+      "symbol": "SHOP",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SE",
+      "symbol": "SE",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NET",
+      "symbol": "NET",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "PLTR",
+      "symbol": "PLTR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ARM",
+      "symbol": "ARM",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "LITE",
+      "symbol": "LITE",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "COHR",
+      "symbol": "COHR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "MRVL",
+      "symbol": "MRVL",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CLS",
+      "symbol": "CLS",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "VRT",
+      "symbol": "VRT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "MU",
+      "symbol": "MU",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SNDK",
+      "symbol": "SNDK",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "WDC",
+      "symbol": "WDC",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CIEN",
+      "symbol": "CIEN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SMCI",
+      "symbol": "SMCI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "BE",
+      "symbol": "BE",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "PSTG",
+      "symbol": "P",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "MTSI",
+      "symbol": "MTSI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "TOST",
+      "symbol": "TOST",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NU",
+      "symbol": "NU",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "DAVE",
+      "symbol": "DAVE",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ROOT",
+      "symbol": "ROOT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "LMND",
+      "symbol": "LMND",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "TTAN",
+      "symbol": "TTAN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "IOT",
+      "symbol": "IOT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "MNDY",
+      "symbol": "MNDY",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "MDB",
+      "symbol": "MDB",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "GTLB",
+      "symbol": "GTLB",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "FROG",
+      "symbol": "FROG",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ESTC",
+      "symbol": "ESTC",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "S",
+      "symbol": "S",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "TTD",
+      "symbol": "TTD",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ZETA",
+      "symbol": "ZETA",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "TMDX",
+      "symbol": "TMDX",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NTRA",
+      "symbol": "NTRA",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "TEM",
+      "symbol": "TEM",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "RXST",
+      "symbol": "RXST",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "KTOS",
+      "symbol": "KTOS",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "AVAV",
+      "symbol": "AVAV",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "RDW",
+      "symbol": "RDW",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "LUNR",
+      "symbol": "LUNR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "LEU",
+      "symbol": "LEU",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "UUUU",
+      "symbol": "UUUU",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "UEC",
+      "symbol": "UEC",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ALB",
+      "symbol": "ALB",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ENPH",
+      "symbol": "ENPH",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NXT",
+      "symbol": "NXT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "FLNC",
+      "symbol": "FLNC",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "RIVN",
+      "symbol": "RIVN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CHWY",
+      "symbol": "CHWY",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "BROS",
+      "symbol": "BROS",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "RH",
+      "symbol": "RH",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SG",
+      "symbol": "SG",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "FOUR",
+      "symbol": "FOUR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "BILL",
+      "symbol": "BILL",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "RELY",
+      "symbol": "RELY",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SYM",
+      "symbol": "SYM",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "AAOI",
+      "symbol": "AAOI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ACLS",
+      "symbol": "ACLS",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SITM",
+      "symbol": "SITM",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "AMBA",
+      "symbol": "AMBA",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "AEHR",
+      "symbol": "AEHR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "INOD",
+      "symbol": "INOD",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "PATH",
+      "symbol": "PATH",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "DOCN",
+      "symbol": "DOCN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ROKU",
+      "symbol": "ROKU",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "EIKN",
+      "symbol": "EIKN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "FSLY",
+      "symbol": "FSLY",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "HUT",
+      "symbol": "HUT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "WULF",
+      "symbol": "WULF",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ASTS",
+      "symbol": "ASTS",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "IONQ",
+      "symbol": "IONQ",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CRSP",
+      "symbol": "CRSP",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "POWL",
+      "symbol": "POWL",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SECZ",
+      "symbol": "SECZ",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "BKKT",
+      "symbol": "BKKT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CRML",
+      "symbol": "CRML",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CLSK",
+      "symbol": "CLSK",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "BTBT",
+      "symbol": "BTBT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SOC",
+      "symbol": "SOC",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "AURA",
+      "symbol": "AURA",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "EVMN",
+      "symbol": "EVMN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "WYFI",
+      "symbol": "WYFI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "XXI",
+      "symbol": "XXI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "DNA",
+      "symbol": "DNA",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "GETY",
+      "symbol": "GETY",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "QDEL",
+      "symbol": "QDEL",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "TRON",
+      "symbol": "TRON",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "VITL",
+      "symbol": "VITL",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "FWDI",
+      "symbol": "FWDI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "UPB",
+      "symbol": "UPB",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SRAD",
+      "symbol": "SRAD",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "WRBY",
+      "symbol": "WRBY",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "HTFL",
+      "symbol": "HTFL",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "AMC",
+      "symbol": "AMC",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SANA",
+      "symbol": "SANA",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CHYM",
+      "symbol": "CHYM",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SPRY",
+      "symbol": "SPRY",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "PACB",
+      "symbol": "PACB",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ALKT",
+      "symbol": "ALKT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "KLC",
+      "symbol": "KLC",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NTSK",
+      "symbol": "NTSK",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "MAX",
+      "symbol": "MAX",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SHEN",
+      "symbol": "SHEN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "EYPT",
+      "symbol": "EYPT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "PSFE",
+      "symbol": "PSFE",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "USAR",
+      "symbol": "USAR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "BRCB",
+      "symbol": "BRCB",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "MPT",
+      "symbol": "MPT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "BEAM",
+      "symbol": "BEAM",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "HRL",
+      "symbol": "HRL",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NMRA",
+      "symbol": "NMRA",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "RGEN",
+      "symbol": "RGEN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "INFQ",
+      "symbol": "INFQ",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "LYTS",
+      "symbol": "LYTS",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "FAC",
+      "symbol": "FAC",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "INV",
+      "symbol": "INV",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "RBRK",
+      "symbol": "RBRK",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "WMG",
+      "symbol": "WMG",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "OLN",
+      "symbol": "OLN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CMG",
+      "symbol": "CMG",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CXM",
+      "symbol": "CXM",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NKLR",
+      "symbol": "NKLR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SAIL",
+      "symbol": "SAIL",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ALMS",
+      "symbol": "ALMS",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ARDT",
+      "symbol": "ARDT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SGMT",
+      "symbol": "SGMT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "FWRG",
+      "symbol": "FWRG",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SLDE",
+      "symbol": "SLDE",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "INDI",
+      "symbol": "INDI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "MYGN",
+      "symbol": "MYGN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "DOCU",
+      "symbol": "DOCU",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CLFD",
+      "symbol": "CLFD",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "RUM",
+      "symbol": "RUM",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "EGHT",
+      "symbol": "EGHT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "GERN",
+      "symbol": "GERN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "EVEX",
+      "symbol": "EVEX",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "OKLO",
+      "symbol": "OKLO",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "OXM",
+      "symbol": "OXM",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "MTH",
+      "symbol": "MTH",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SNAP",
+      "symbol": "SNAP",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "WHR",
+      "symbol": "WHR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ARRY",
+      "symbol": "ARRY",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "TE",
+      "symbol": "TE",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ARQQ",
+      "symbol": "ARQQ",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "PYPL",
+      "symbol": "PYPL",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "MNRO",
+      "symbol": "MNRO",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "XE",
+      "symbol": "XE",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ADTN",
+      "symbol": "ADTN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ENOV",
+      "symbol": "ENOV",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "PLAY",
+      "symbol": "PLAY",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "FPS",
+      "symbol": "FPS",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ODD",
+      "symbol": "ODD",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NTGR",
+      "symbol": "NTGR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ENVX",
+      "symbol": "ENVX",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "LYFT",
+      "symbol": "LYFT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SOUN",
+      "symbol": "SOUN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "AVNT",
+      "symbol": "AVNT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SLDP",
+      "symbol": "SLDP",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "VIA",
+      "symbol": "VIA",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CYH",
+      "symbol": "CYH",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "OMDA",
+      "symbol": "OMDA",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "LCID",
+      "symbol": "LCID",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "MWH",
+      "symbol": "MWH",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "HLLY",
+      "symbol": "HLLY",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NNE",
+      "symbol": "NNE",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "PLNT",
+      "symbol": "PLNT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CRNC",
+      "symbol": "CRNC",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ALHC",
+      "symbol": "ALHC",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "QS",
+      "symbol": "QS",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "YSS",
+      "symbol": "YSS",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NRDS",
+      "symbol": "NRDS",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "FRMI",
+      "symbol": "FRMI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "HUBG",
+      "symbol": "HUBG",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "UHS",
+      "symbol": "UHS",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "WLTH",
+      "symbol": "WLTH",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ALMU",
+      "symbol": "ALMU",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ONT",
+      "symbol": "ONT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NCLH",
+      "symbol": "NCLH",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "RR",
+      "symbol": "RR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "KVYO",
+      "symbol": "KVYO",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "BKSY",
+      "symbol": "BKSY",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "JACK",
+      "symbol": "JACK",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ASPI",
+      "symbol": "ASPI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CLB",
+      "symbol": "CLB",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "FUBO",
+      "symbol": "FUBO",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CE",
+      "symbol": "CE",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "VOYG",
+      "symbol": "VOYG",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ARHS",
+      "symbol": "ARHS",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ULCC",
+      "symbol": "ULCC",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "WOLF",
+      "symbol": "WOLF",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ACDC",
+      "symbol": "ACDC",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "RGNX",
+      "symbol": "RGNX",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "EQPT",
+      "symbol": "EQPT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "VELO",
+      "symbol": "VELO",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "FLY",
+      "symbol": "FLY",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "BETA",
+      "symbol": "BETA",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "GENI",
+      "symbol": "GENI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "MRLN",
+      "symbol": "MRLN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "EOSE",
+      "symbol": "EOSE",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "RCKT",
+      "symbol": "RCKT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CABA",
+      "symbol": "CABA",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "BETR",
+      "symbol": "BETR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "RUN",
+      "symbol": "RUN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "IE",
+      "symbol": "IE",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "FATE",
+      "symbol": "FATE",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "WD",
+      "symbol": "WD",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "PCT",
+      "symbol": "PCT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "APTV",
+      "symbol": "APTV",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CATX",
+      "symbol": "CATX",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "GLOB",
+      "symbol": "GLOB",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "LZM",
+      "symbol": "LZM",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "FIP",
+      "symbol": "FIP",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NTLA",
+      "symbol": "NTLA",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "KYTX",
+      "symbol": "KYTX",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "FLUT",
+      "symbol": "FLUT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "GOGO",
+      "symbol": "GOGO",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "RKT",
+      "symbol": "RKT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SVV",
+      "symbol": "SVV",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "AGIO",
+      "symbol": "AGIO",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NPWR",
+      "symbol": "NPWR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "EDIT",
+      "symbol": "EDIT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "MAGN",
+      "symbol": "MAGN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ABAT",
+      "symbol": "ABAT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "LAES",
+      "symbol": "LAES",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "PGY",
+      "symbol": "PGY",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "DFH",
+      "symbol": "DFH",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "EFX",
+      "symbol": "EFX",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ORGO",
+      "symbol": "ORGO",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "GLXY",
+      "symbol": "GLXY",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "IKT",
+      "symbol": "IKT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NRGV",
+      "symbol": "NRGV",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ZG",
+      "symbol": "ZG",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "BBNX",
+      "symbol": "BBNX",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "DNLI",
+      "symbol": "DNLI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "HGV",
+      "symbol": "HGV",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "HUBS",
+      "symbol": "HUBS",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ORBS",
+      "symbol": "ORBS",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NB",
+      "symbol": "NB",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "LZ",
+      "symbol": "LZ",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CPRI",
+      "symbol": "CPRI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SITE",
+      "symbol": "SITE",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "AI",
+      "symbol": "AI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "DXYZ",
+      "symbol": "DXYZ",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "VERX",
+      "symbol": "VERX",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SMMT",
+      "symbol": "SMMT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "TASK",
+      "symbol": "TASK",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "PACK",
+      "symbol": "PACK",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "FOXF",
+      "symbol": "FOXF",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SIBN",
+      "symbol": "SIBN",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "VRRM",
+      "symbol": "VRRM",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "GTM",
+      "symbol": "GTM",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SENS",
+      "symbol": "SENS",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "BRZE",
+      "symbol": "BRZE",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "WDAY",
+      "symbol": "WDAY",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NUAI",
+      "symbol": "NUAI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "WLFC",
+      "symbol": "WLFC",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "OEC",
+      "symbol": "OEC",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "HAYW",
+      "symbol": "HAYW",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SWIM",
+      "symbol": "SWIM",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "GEHC",
+      "symbol": "GEHC",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "STAA",
+      "symbol": "STAA",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "EVER",
+      "symbol": "EVER",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "WEAV",
+      "symbol": "WEAV",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SRPT",
+      "symbol": "SRPT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "EYE",
+      "symbol": "EYE",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "WWW",
+      "symbol": "WWW",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "RXRX",
+      "symbol": "RXRX",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "WAY",
+      "symbol": "WAY",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "LIF",
+      "symbol": "LIF",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "COLL",
+      "symbol": "COLL",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "UMAC",
+      "symbol": "UMAC",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SONO",
+      "symbol": "SONO",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "GSHD",
+      "symbol": "GSHD",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CERT",
+      "symbol": "CERT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "TDOC",
+      "symbol": "TDOC",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "COUR",
+      "symbol": "COUR",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "INSP",
+      "symbol": "INSP",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "SERV",
+      "symbol": "SERV",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "TRIP",
+      "symbol": "TRIP",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "CRCT",
+      "symbol": "CRCT",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "MTCH",
+      "symbol": "MTCH",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "YELP",
+      "symbol": "YELP",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "ALVO",
+      "symbol": "ALVO",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "REI",
+      "symbol": "REI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "KOS",
+      "symbol": "KOS",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "NEO",
+      "symbol": "NEO",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "QMCO",
+      "symbol": "QMCO",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "AESI",
+      "symbol": "AESI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "PRME",
+      "symbol": "PRME",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    },
+    {
+      "code": "PPLI",
+      "symbol": "PPLI",
+      "status": "pending",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "scenarios": null,
+      "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设"
+    }
+  ]
+}

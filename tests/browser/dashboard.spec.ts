@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test'
-import { dashboard, history, seed, version } from './fixtures'
+import { dashboard, history, seed, version, valuations } from './fixtures'
 
 test.beforeEach(async ({ page }) => {
   await seed(page)
@@ -31,6 +31,52 @@ test('五指标两口径排序、缺失和停牌位置', async ({ page }) => {
   }
   await expect(page.getByText(/暂无可用行情：MISSING/)).toBeVisible()
   await expect(page.locator('[data-code="AAA"]')).toContainText('$100')
+})
+
+test('情景与机构价格融合，保守价与机构均值分开且使用未复权收盘价', async ({ page }) => {
+  await page.goto('#/watchlist')
+  await expect(page.locator('[data-code="AAA"] .scenario-prices')).toContainText('保守$90')
+  await expect(page.locator('[data-code="AAA"] .scenario-prices')).toContainText('极端保守$0')
+  await expect(page.locator('[data-code="AAA"] .price-research-cell')).toContainText('现价高于保守估值')
+  await page.getByRole('button', { name: '未复权价', exact: true }).click()
+  await expect(page.locator('[data-code="AAA"] .price-research-cell')).toContainText('现价高于保守估值')
+  const trigger = page.getByRole('button', { name: 'AAA 价格研究依据', exact: true })
+  await trigger.click()
+  const dialog = page.getByRole('dialog', { name: 'AAA 价格研究', exact: true })
+  await expect(dialog).toContainText('对比未复权收盘价 $100')
+  await expect(dialog).toContainText('现价低于均值 · 未复权 $100')
+  await expect(dialog).toContainText('虚构测试融资假设')
+  await expect(dialog.getByRole('link', { name: '测试原文' }).first()).toHaveAttribute('href', 'https://www.sec.gov/')
+  await page.keyboard.press('Escape')
+  await expect(trigger).toBeFocused()
+  await expect(page.locator('[data-code="DDD"] .price-research-cell')).toContainText('情景估值待核实')
+  await page.getByRole('link', { name: '活跃股观察列表', exact: true }).click()
+  await expect(page.getByTestId('column-header')).toContainText('情景估值 / 机构参照')
+})
+
+test('情景资料坏掉不影响行情或独立机构资料', async ({ page }) => {
+  const invalid = valuations(); invalid.rows.find(row => row.code === 'AAA')!.scenarios!.stress.value = -1
+  await page.route('**/data/valuation-scenarios.json', route => route.fulfill({ json: invalid }))
+  await page.goto('#/watchlist')
+  await expect(page.locator('.market-row[data-code]')).toHaveCount(5)
+  await expect(page.locator('[data-code="AAA"] .price-research-cell')).toContainText('情景资料不可用')
+  await page.getByRole('button', { name: 'AAA 价格研究依据', exact: true }).click()
+  await expect(page.getByRole('dialog', { name: 'AAA 价格研究', exact: true })).toContainText('均$120')
+})
+
+test('非公司资产不套公司估值，详情报价不强加美元符号', async ({ page }) => {
+  const data = dashboard()
+  for (const mode of ['adjusted', 'raw'] as const) data.adjustments[mode].rows.find(row => row.code === 'BBB')!.asset_type = 'index'
+  await page.route('**/data/dashboard.json', route => route.fulfill({ json: data }))
+  const snapshot = valuations()
+  snapshot.rows.find(row => row.code === 'BBB')!.status = 'not_applicable'
+  snapshot.rows.find(row => row.code === 'BBB')!.reason = '公司估值模型不适用'
+  snapshot.coverage.pending--; snapshot.coverage.not_applicable++
+  await page.route('**/data/valuation-scenarios.json', route => route.fulfill({ json: snapshot }))
+  await page.goto('#/watchlist')
+  await expect(page.locator('[data-code="BBB"] .price-research-cell')).toContainText('需专门估值方法')
+  await page.getByRole('button', { name: 'BBB 价格研究依据', exact: true }).click()
+  await expect(page.getByRole('dialog', { name: 'BBB 价格研究', exact: true }).getByText('对比未复权收盘价 100', { exact: true })).toBeVisible()
 })
 
 test('导航、分档和返回重置默认指标，不混入其它成员', async ({ page }) => {

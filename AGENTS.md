@@ -239,3 +239,13 @@ CR-020/021/022已发布：22a6f28，Actions 36429474987成功；117Python、55Ch
 用户要求处理Actions日志中的Node警告。三个工作流升级官方Node 24 Actions；项目npm构建仍用Node 22，行情与研究契约不变。旧版Action的Node 20、punycode和url.parse提示与yfinance的Pandas4Warning需分开核对；真实运行证据见OPERATIONS。
 
 CR-027已发布：6126284 / Actions 36882107075 checks/build/deploy成功，前两段Node相关提示清零；最新版deploy-pages@v5仍产生1条上游punycode弃用提示，GitHub官方仓库问题#434未解决。不得用全局屏蔽把它称为修复；见OPERATIONS。
+
+## CR-028 / DATA-029 / UI-028（2026-10-01）
+用户确认三张股票主表（持仓、活跃、高风险）增加分析师低／均／高目标价，每月随研究手动更新。独立 `public/data/analyst-targets.json` 从 CSV 350 个唯一代码经 yfinance/Yahoo 逐只生成；首次抓取 337 可用、13 无目标价，任何请求失败保留旧快照。页面对分析师均值只与同批未复权收盘价比较，复权视图亦明确基准；抓取日不是分析师报告日，目标价不是公允价值。日常行情刷新不更新目标价，不改原 dashboard/箱体契约、公式或名单。详情见 CR-028、`docs/MONTHLY_REVIEW.md` 及 OPERATIONS。
+
+## CR-029 / DATA-030 / UI-029 / RES-013（2026-10-01，Accepted / In Progress）
+用户确认将情景估值规则写入正式文档并开始实现，采用此前推荐的按估值日信息折现到今天的合理价。三主表同列主展示乐观、保守、极端保守，机构低/均/高展开参照；不能重命名机构价或统一打折生成。首期企业DCF/压力回收公式只在indicators.py，独立valuation-scenarios.json v1从CSV和valuation_assumptions.json生成；原文、经营/估值/融资/稀释说明和三档参数必填，异常不覆盖旧快照。极端保守允许0，不是保证底价；月度静态估值日与生成时间独立，每日行情不更新。工程框架本地实现，350行中0真实已估值、344待研究、6需专门方法；逐只研究继续分期，不声称已上线。规则及阶段验收见 `docs/VALUATION_SCENARIOS.md`。
+
+CR-029首期验证：133Python、59浏览器、lint/build退出码0；真实行情350/0、data_date20261001，682历史文件/18图表错误，两箱体100/0及224/10。目标价HTTP失败保护补强，真实337有价/13无价。Windows沙箱进程清理问题通过获批的沙箱外离线回归验证解决，未屏蔽测试。工程首期完成、真实逐只估值研究未完成；未push或部署，详见OPERATIONS与首期实现记录。
+
+2026-10-01用户明确要求直接push，授权发布CR-028/029工程首期、文档与静态研究快照。部署结果以OPERATIONS最新记录为准；此授权不代表344只情景估值研究已完成。

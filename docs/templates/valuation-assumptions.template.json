@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "basis": "present_value",
+  "rows": [
+    {
+      "code": "REPLACE_WITH_CSV_CODE",
+      "symbol": "REPLACE_WITH_CSV_SYMBOL",
+      "currency": "USD",
+      "valued_at": null,
+      "evidence_date": null,
+      "reason": "",
+      "scenarios": {
+        "optimistic": {
+          "model": "enterprise_dcf",
+          "inputs": {
+            "fcff": [],
+            "discount_rate": null,
+            "terminal_growth": null,
+            "cash_and_nonoperating_assets": null,
+            "debt_and_other_claims": null,
+            "diluted_shares": null
+          },
+          "assumptions": { "business": "", "valuation": "", "financing": "", "dilution": "" },
+          "sources": []
+        },
+        "conservative": {
+          "model": "enterprise_dcf",
+          "inputs": {
+            "fcff": [],
+            "discount_rate": null,
+            "terminal_growth": null,
+            "cash_and_nonoperating_assets": null,
+            "debt_and_other_claims": null,
+            "diluted_shares": null
+          },
+          "assumptions": { "business": "", "valuation": "", "financing": "", "dilution": "" },
+          "sources": []
+        },
+        "stress": {
+          "model": "asset_recovery",
+          "inputs": {
+            "recoverable_assets": null,
+            "senior_claims": null,
+            "recovery_costs": null,
+            "current_common_shares": null,
+            "existing_common_entitlement": null,
+            "years_to_recovery": null,
+            "discount_rate": null
+          },
+          "assumptions": { "business": "", "valuation": "", "financing": "", "dilution": "", "failure_case": "" },
+          "sources": []
+        }
+      }
+    }
+  ]
+}

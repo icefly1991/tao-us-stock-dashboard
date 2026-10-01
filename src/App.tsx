@@ -1,6 +1,9 @@
 import { GovernanceBadge, GovernanceFilter } from './GovernanceReview'
 import { useGovernance, matchesGovernance } from './governanceData'
 import VolatilityCell from './VolatilityCell'
+import { useAnalystTargets } from './AnalystTargets'
+import PriceResearchCell from './PriceResearchCell'
+import { useValuations } from './valuationData'
 import DataFreshness from './DataFreshness'
 import PageNavigation from './PageNavigation'
 import { useEffect, useMemo, useRef, useState } from 'react'
@@ -115,6 +118,8 @@ function App() {
   const poolPage = collectionId === 'pool'
   const poolReview = usePoolReview(poolPage)
   const governance = useGovernance()
+  const analystTargets = useAnalystTargets()
+  const valuations = useValuations()
   const [riskFilter, setRiskFilter] = useState('all')
   const [grade, setGrade] = useState('all')
   const [category, setCategory] = useState('all')
@@ -155,6 +160,9 @@ function App() {
   }, [])
 
   const current = data?.adjustments[adjustment]
+  const rawRows = useMemo(() => new Map(data?.adjustments.raw.rows.map(row => [row.code, row])), [data])
+  const targetRows = useMemo(() => new Map(analystTargets.snapshot?.rows.map(row => [row.code, row])), [analystTargets.snapshot])
+  const valuationRows = useMemo(() => new Map(valuations.data?.rows.map(row => [row.code, row])), [valuations.data])
   const collection = useMemo(() => data?.collections?.find((item) => item.id === collectionId), [data, collectionId])
   const summary = collection?.summaries[adjustment] ?? current?.summary
   const suspended = data?.suspended?.filter((item) => (!collection || collection.codes.includes(item.code)) && matchesGovernance(governance.data?.rows.find(row => row.code === item.code), riskFilter)) ?? []
@@ -265,6 +273,7 @@ function App() {
             <a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/LIST_REVIEW.md" target="_blank" rel="noreferrer">选股标准</a>
             <a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/METRIC_DEFINITIONS.md" target="_blank" rel="noreferrer">指标定义</a>
           </details>
+          <details className="page-help mb-2"><summary>价格研究 · 情景 {valuations.data ? `全池已核实 ${valuations.data.coverage.available}/${valuations.data.rows.length}` : valuations.error ? '资料读取失败' : '读取中'}</summary><p>乐观／保守／极端保守是按估值日信息折现到今天的情景价值，机构低／均／高在单股依据中参照。比较使用未复权收盘价；压力情景可能为零，不是保证底价。</p><p>Yahoo 月度快照 {analystTargets.snapshot?.fetched_at ? analystTargets.snapshot.fetched_at.slice(0, 10) : analystTargets.error ? '资料读取失败' : '读取中'}；抓取日不是分析师报告日。</p><a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/VALUATION_SCENARIOS.md" target="_blank" rel="noreferrer">情景估值规则</a></details>
           <div className="ranking-sticky" data-testid="ranking-sticky">
             <div className="overflow-x-auto py-2" aria-label="指标选项">
               <div className="flex w-max gap-2">
@@ -286,6 +295,7 @@ function App() {
               <div className="market-grid market-header" data-testid="column-header">
                 <div>#</div><div className="stock-identity text-left">标的</div><div className="business-cell">业务/板块</div>{poolPage && <><div className="fundamental-column-heading">基本面亮点</div><div className="fundamental-column-heading">基本面风险</div></>}<div>收盘价</div><div>今日</div>
                 {contextMetrics.map((metric) => <div key={metric}>{metricText[metric]}</div>)}
+                <div className="target-column-heading">情景估值 / 机构参照<br />乐观／保守／极端保守</div>
                 <div><button className="volatility-sort" aria-pressed={volatilitySort} onClick={() => setVolatilitySort(value => !value)} title="近三个自然月日均真实波幅百分比，含跳空；点击按波动从大到小排序">近3月日均波幅{volatilitySort ? ' ↓' : ' ↕'}</button></div>
                 <div title="日线Wilder RSI(14)与该股票自身年内百分位">RSI(14) / 年内分位</div>
                 <div className="text-sky-800">{metricText[tab]}{volatilitySort ? '' : ' ↑'}</div>
@@ -311,6 +321,7 @@ function App() {
                   <div className="font-medium text-slate-900">{formatClose(row)}</div>
                   <div className={getMetricTextClass(row.today_return_pct)}>{formatPct(row.today_return_pct)}</div>
                   {contextMetrics.map((metric) => <div key={metric} className={getMetricTextClass(row[metric])}>{formatMetric(metric, row[metric])}</div>)}
+                  <PriceResearchCell code={row.code} assetType={row.asset_type} valuation={valuationRows.get(row.code)?.symbol === row.symbol ? valuationRows.get(row.code) : undefined} valuationAvailable={!!valuations.data} target={targetRows.get(row.code)?.symbol === row.symbol ? targetRows.get(row.code) : undefined} rawClose={rawRows.get(row.code)?.close} analystAvailable={!!analystTargets.snapshot} analystDate={analystTargets.snapshot?.fetched_at} />
                   <div><VolatilityCell value={row.volatility_3m} /></div>
                   <RsiCell key={`${row.code}/${adjustment}/${data.updated_at}`} rsi={row.rsi} stock={{ code: row.code, name: row.name, adjustment, updatedAt: data.updated_at }} />
                   <div>
@@ -336,7 +347,7 @@ function App() {
                     <GovernanceBadge row={governance.data?.rows.find(row => row.code === item.code)} reviewedAt={governance.data?.reviewed_at} />
                   </div>
                   <div className="business-cell">{item.business || '—'}</div>{poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="risks" /></>}
-                  {Array.from({ length: contextMetrics.length + 5 }, (_, column) => column).map((column) => <div key={column}>—</div>)}
+                  {Array.from({ length: contextMetrics.length + 6 }, (_, column) => column).map((column) => <div key={column}>—</div>)}
                 </div>
               ))}
             </div>

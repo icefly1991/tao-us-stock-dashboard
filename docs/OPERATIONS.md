@@ -374,3 +374,21 @@ CR-026已由[运行 36842000320](https://github.com/icefly1991/tao-us-stock-dash
 [运行 36842000320](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36842000320)的项目测试和部署均成功，但旧版官方Actions在Node 24 runner上产生`DEP0040 punycode`、`DEP0169 url.parse()`及Node.js 20弃用提示。三个工作流升级到官方Node 24 Actions，保留项目Node 22与Python 3.11。另有`yfinance/scrapers/history.py`触发的`Pandas4Warning`，它是Python上游警告，不计作Node修复成功；新运行需逐类核对。
 
 [升级后运行 36882107075](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/36882107075) checks/build/deploy均成功：123 Python、55浏览器测试；350行情成功/0失败，数据日20261001，676历史文件/24图表错误，活跃箱体100/0、高风险箱体221/13。checks和build中Node 20、`DEP0040`、`DEP0169`均为0；deploy中的最新版`actions/deploy-pages@v5`仍有1条`DEP0040 punycode`。该上游问题见[actions/deploy-pages#434](https://github.com/actions/deploy-pages/issues/434)，当前无已发布的修复版；不能把剩余一条写成项目依赖或已修复。build另有350条来自`yfinance/scrapers/history.py`的`Pandas4Warning`，与Node警告无关。没有修改数据口径、研究日期或JSON契约。
+## 2026-10-01 CR-028 分析师目标价本地验证
+
+- 目标价快照独立生成：`& .venv\Scripts\python.exe scripts/generate_analyst_targets.py`。纽约时间 2026-10-01 12:45 抓取 350 个 CSV 唯一代码，337 个至少有一个分析师目标价，13 个没有可用目标价，0 个请求失败。VIX、部分 ETF/加密返回 Yahoo fundamentals 404 时按无目标价展示；不等于行情下载失败。
+- 月度更新必须手动执行并审核；任意请求错误会保留上次快照，不能声称本月已更新。生成时间为抓取时间，Yahoo 接口不提供逐条分析师报告日期；旧值可能过时。目标价对照当日未复权收盘价，也可能有日期差，页面不应解释成确定的高估/低估。
+- 本地验证：125 项 Python 测试、lint、TypeScript/build 通过；57 项浏览器断言含新增目标价覆盖已通过。Windows Playwright 使用本机 Chrome/Edge 时断言结束后 runner 清理进程挂起，不能把该本地运行记为完整退出码 0。首轮真实目标价抓取成功，未重复运行日常完整行情生成；日常数据层/依赖/列表未变。本轮尚未 push 或部署，公开站点仍为此前基线。
+
+## 2026-10-01 CR-029：情景估值规则及工程首期
+
+- 用户确认正式记录规则并开始实现，采用折现到逐只估值日的乐观/保守/极端保守三价；三张主表价格研究同列融合，机构三价在详情参照。DATA-030/UI-029/RES-013、ADR-023及月度规范同步，详见 [首期实现记录](reviews/2026-10-01-valuation-implementation.md)。
+- 独立快照350行：0已估值、344公司待原文/模型/融资稀释研究、6资产需专门方法；没有填入测试或默认预测。计算内核为企业DCF及压力回收；压力模型显式输入现有普通股权益保留比例，注销时为0，不把新股东权益当老股价值。当前不宣称逐只估值完成。
+- 最终133项Python、lint、TypeScript/build、59项Playwright回归通过，均取得退出码0。Windows沙箱限制进程管理导致浏览器断言结束后清理挂起；获自动审批后在沙箱外完成同一离线测试，正常关闭并退出。浏览器下载在忽略提交的 `.cache/playwright`，无新增应用依赖。此记录覆盖CR-028中浏览器运行未完整退出的备注。非公司资产详情保留原报价单位，不强加美元符号。
+- 目标价接口保护补强：观察原有quoteSummary响应，不额外请求；yfinance吞掉的HTTP错误/异常结构不能写成无目标价，明确No fundamentals 404及有效响应无目标字段才标不可用。新逻辑真实核验仍为337有目标价/13无价、0请求失败，临时核验输出在 `.cache/cr029-analyst-targets.json`；保留仓库首次快照的真实抓取日，未将本轮生成伪装为整套月度研究完成。
+- 同一真实 `generate_dashboard.main()` 仅将输出隔离在 `.cache/cr029-real-data` 验证，退出码0：350/350行情、0失败、data_date=20261001、共同日覆盖348/349非加密标的、682历史文件/18图表错误；活跃箱体100处理/0错误，高风险箱体224处理/10错误。源站末日不一致明确不可用，不能声称700图表全成功。日志 `.cache/cr029-real-data.log` 保留上游Pandas4Warning；没有全局屏蔽，也未覆盖仓库行情占位文件。
+- 新增独立valuation-scenarios.json v1，dashboard/history/boxes公共字段及版本不变；研究日期、名单、日常行情时刻不变。本轮仍本地实现，未push或部署，当前线上以CR-027生产基线为准。
+
+## CR-028 / CR-029 发布授权（2026-10-01）
+
+用户明确要求直接push，发布已验证的工程首期和静态研究快照。提交后由现有Actions重新生成真实行情并部署；不提交本地真实dashboard或缓存。真实情景估值仍为0只，344待研究、6需专门方法；337只分析师三价可用。发布运行结果另行记录。

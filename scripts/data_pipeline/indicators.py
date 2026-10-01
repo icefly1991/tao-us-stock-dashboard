@@ -7,6 +7,55 @@ import math
 import pandas as pd
 
 
+def calculate_scenario_value(model: str, inputs: dict[str, Any]) -> float:
+    """CR-029: explicit researched assumptions, millions of USD and shares."""
+    if not isinstance(inputs, dict):
+        raise ValueError("Scenario inputs must be an object")
+    def number(key: str, *, minimum: float | None = 0, positive: bool = False) -> float:
+        value = inputs.get(key)
+        if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
+            raise ValueError(f"Invalid scenario input: {key}")
+        if (minimum is not None and value < minimum) or (positive and value <= 0):
+            raise ValueError(f"Scenario input out of range: {key}")
+        return float(value)
+
+    if model == "enterprise_dcf":
+        expected = {"fcff", "discount_rate", "terminal_growth", "cash_and_nonoperating_assets", "debt_and_other_claims", "diluted_shares"}
+        if set(inputs) != expected:
+            raise ValueError("DCF input fields must match the documented model")
+        flows = inputs["fcff"]
+        if not isinstance(flows, list) or not 1 <= len(flows) <= 10 or any(
+            isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value) for value in flows
+        ):
+            raise ValueError("DCF requires 1–10 finite annual FCFF forecasts")
+        rate = number("discount_rate", positive=True)
+        growth = number("terminal_growth", minimum=None)
+        if not -1 < growth < rate <= 1 or flows[-1] <= 0:
+            raise ValueError("DCF needs positive terminal FCFF and -1 < growth < discount rate <= 1")
+        terminal = flows[-1] * (1 + growth) / (rate - growth)
+        enterprise = sum(flow / (1 + rate) ** year for year, flow in enumerate(flows, 1)) + terminal / (1 + rate) ** len(flows)
+        equity = enterprise + number("cash_and_nonoperating_assets") - number("debt_and_other_claims")
+        value = max(equity, 0) / number("diluted_shares", positive=True)
+    elif model == "asset_recovery":
+        expected = {"recoverable_assets", "senior_claims", "recovery_costs", "current_common_shares", "existing_common_entitlement", "years_to_recovery", "discount_rate"}
+        if set(inputs) != expected:
+            raise ValueError("Recovery input fields must match the documented model")
+        rate = number("discount_rate", positive=True)
+        years = number("years_to_recovery")
+        if rate > 1 or years > 10:
+            raise ValueError("Recovery discount rate or duration out of range")
+        residual = max(number("recoverable_assets") - number("senior_claims") - number("recovery_costs"), 0)
+        entitlement = number("existing_common_entitlement")
+        if entitlement > 1:
+            raise ValueError("Existing common entitlement must be between 0 and 1")
+        value = residual * entitlement / (1 + rate) ** years / number("current_common_shares", positive=True)
+    else:
+        raise ValueError(f"Unsupported scenario model: {model}")
+    if not math.isfinite(value):
+        raise ValueError("Nonfinite scenario value")
+    return round(value, 4)
+
+
 def wilder_rsi(closes: list[float], period: int = 14) -> list[float | None]:
     """Seed with the first period changes, then use Wilder's recursive average."""
     values: list[float | None] = []

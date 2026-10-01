@@ -61,6 +61,20 @@ Vite dist ---------- GitHub Pages
 - 新增指标：先写需求与公式，再在 `indicators.py` 实现，更新 JSON 类型和 UI。
 - 新增资产：先确认 yfinance symbol 和资产类型，不在前端硬编码映射。
 
+## 分析师目标价独立快照（CR-028 / DATA-029）
+
+`scripts/generate_analyst_targets.py` 每次从 CSV 唯一成员来源读取代码与 symbol，逐只调用 yfinance 分析师目标价接口，原子替换 `public/data/analyst-targets.json`。顶层 `schema_version=1`、`source`、纽约偏移 `fetched_at` 和 `rows`；每行有 `code`、`symbol`、`status=available|unavailable`、`low`、`mean`、`high`，价格缺失为 `null`。任意请求失败则整份旧文件保留。月度手动更新，日常行情生成不修改此文件。
+
+React 单独请求并校验该快照，按 code 和 symbol 对齐三张主表；异常仅影响目标价列。价格与当次 `dashboard.json` 的 `adjustments.raw.rows[].close` 对照，两个价格源可能不同日，因此显示抓取日期及当日行情日期，不能视为同步估值。箱体页与原榜单字段不变。
+
+## 三档情景估值（CR-029 / DATA-030 / UI-029）
+
+CSV成员 + `scripts/valuation_assumptions.json` → `generate_valuation_scenarios.py` 校验身份/日期/三档/来源/融资稀释 → `indicators.calculate_scenario_value` → 原子生成 `public/data/valuation-scenarios.json` → `valuationData.ts` 校验 → `PriceResearchCell.tsx`。月度手动流程生成，无新增schedule或日常行情写入。
+
+快照顶层 `schema_version=1`、`basis=present_value`、纽约偏移 `generated_at`、`coverage`及`rows`；每行 code/symbol/status/currency/valued_at/evidence_date/reason/scenarios。可用行 `scenarios.optimistic/conservative/stress` 各有 value/model/inputs/assumptions/sources；无研究行 scenarios和两个研究日期为null，pending或not_applicable明确区分。值0有效。已核查状态只有通过逐只完整输入后产生，生成时间不替代研究日期。输入错误整份不写，读取错误前端只降级情景列，独立分析师参照仍可读。
+
+三主表原新增目标价列改为主展示情景三价，详情共用机构三价与实际未复权收盘价；React只比较高低/绘制/格式化，不计算价值。原dashboard/history/boxes契约不变。首期未提供真实三价，默认CSV350行全部有明确状态。
+
 ## 多列表扩展（CR-001 / DATA-007 / UI-002）
 
 CSV 增加 watchlist、tier：原 42 只标记 watchlist=original，新 100 只标记 tier=A/B/C，9 只兼属两个列表。所有代码仍唯一，共 133 只。旧 CSV 无新增列时默认为原列表。
