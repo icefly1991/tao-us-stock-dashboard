@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-export type TargetRow = { code: string; symbol: string; status: 'available' | 'unavailable'; low: number | null; mean: number | null; high: number | null }
+export type TargetRow = { code: string; symbol: string; status: 'available' | 'unavailable'; low: number | null; mean: number | null; high: number | null; source_url?: string; quoted_at?: string | null }
 type Snapshot = { schema_version: 1; source: string; fetched_at: string; rows: TargetRow[] }
 
 const validNumber = (value: unknown) => value === null || (typeof value === 'number' && Number.isFinite(value) && value > 0)
@@ -16,6 +16,8 @@ function validSnapshot(value: unknown): value is Snapshot {
     if (typeof row.code !== 'string' || typeof row.symbol !== 'string' || codes.has(row.code) ||
       !['available', 'unavailable'].includes(String(row.status)) || ![row.low, row.mean, row.high].every(validNumber)) return false
     codes.add(row.code)
+    if (row.source_url !== undefined && (typeof row.source_url !== 'string' || !row.source_url.startsWith('https://'))) return false
+    if (row.quoted_at !== undefined && row.quoted_at !== null && (typeof row.quoted_at !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(row.quoted_at) || !Number.isFinite(Date.parse(row.quoted_at)) || new Date(row.quoted_at).toISOString().slice(0, 10) !== row.quoted_at)) return false
     if (row.status === 'available' && row.low === null && row.mean === null && row.high === null) return false
     if (row.status === 'unavailable' && (row.low !== null || row.mean !== null || row.high !== null)) return false
     if (typeof row.low === 'number' && typeof row.high === 'number' && row.low > row.high) return false
@@ -26,10 +28,11 @@ function validSnapshot(value: unknown): value is Snapshot {
 
 // The hook and cell share the same snapshot type and validation boundary.
 // eslint-disable-next-line react-refresh/only-export-components
-export function useAnalystTargets() {
+export function useAnalystTargets(enabled = true) {
   const [snapshot, setSnapshot] = useState<Snapshot | null>(null)
   const [error, setError] = useState(false)
   useEffect(() => {
+    if (!enabled) return
     let active = true
     fetch(`${import.meta.env.BASE_URL}data/analyst-targets.json`)
       .then(response => response.ok ? response.json() : Promise.reject(new Error('target fetch failed')))
@@ -39,7 +42,7 @@ export function useAnalystTargets() {
       })
       .catch(() => { if (active) setError(true) })
     return () => { active = false }
-  }, [])
+  }, [enabled])
   return { snapshot, error }
 }
 

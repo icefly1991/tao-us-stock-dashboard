@@ -11,6 +11,8 @@ export type SummaryKey = 'watchlist_total' | 'today_up' | 'today_down'
 export type VolatilityData = { value: number | null; window_start: string; window_end: string; sample_count: number; status: 'available' | 'insufficient' | 'invalid' }
 
 export type Row = {
+  analyst_comparison?: { value: number; raw_close: number; gap_pct: number }
+  scenario_comparison?: Record<'optimistic' | 'conservative' | 'stress', { value: number; raw_close: number; gap_pct: number }>
   business?: string
   rsi?: RsiData | null
   volatility_3m?: VolatilityData | null

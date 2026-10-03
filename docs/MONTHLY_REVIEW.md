@@ -13,7 +13,7 @@ CR-025 / RES-012 / OPS-006。用户每月主动发起一次更新；AI/维护者
 | 基本面亮点与风险短语 | `scripts/pool_briefs.json` + 财报规则 → `pool-review.json` | 高风险池全部成员；每项保留来源和报告期 |
 | 治理事件、法律状态、生存/退市风险及复核日 | `scripts/governance_events.json` + 治理覆盖清单 → `public/data/governance-review.json` | 全部公司/基金主体；非公司资产标不适用 |
 | 分析师低／均／高目标价 | `python scripts/generate_analyst_targets.py` → `public/data/analyst-targets.json` | CSV 全部唯一代码；逐只标可用或不可用，不把抓取日冒充报告日 |
-| 乐观／保守／极端保守情景价值 | `scripts/valuation_assumptions.json` → `python scripts/generate_valuation_scenarios.py` → `public/data/valuation-scenarios.json` | 逐只原文与经营/融资/稀释假设；未完成研究的公司待核实，非公司资产需专门方法 |
+| 乐观／保守／极端保守情景价值 | `scripts/valuation_assumptions.json` → `python scripts/generate_valuation_scenarios.py` → `public/data/valuation-scenarios.json` | 逐只原文与经营/融资/稀释假设；未完成研究的公司待核实；ETF、指数、VIX和加密资产按用户要求跳过留空 |
 
 上一轮研究与本轮新申报的区别必须写清：无新 SEC 文件不代表无风险；公告标题或关键词不能直接判定破产、造假、退市或风险解除。`grade`、`category`、`distress`相互独立，冲突组合列入报告。完整分类规则见[RISK_CLASSIFICATION_METHOD.md](RISK_CLASSIFICATION_METHOD.md)，名单筛选规则见[ACTIVE_LIST_UPDATE.md](ACTIVE_LIST_UPDATE.md)。
 
@@ -31,3 +31,15 @@ CR-025 / RES-012 / OPS-006。用户每月主动发起一次更新；AI/维护者
 ## 日期和旧扫描资料
 
 页面继续显示实际名单、基本面与治理研究日期，并在超过30天时提醒手动复核。每日 Yahoo 行情更新不推进这些日期。2026-09-30 的首次 SEC 机器扫描是[历史运行记录](reviews/2026-09-30-weekly-sec-first-run.md)，其`weekly-research.json`和周度页面提示已停止发布；不能把该旧扫描当作当前风险结论。历史周度方案见[WEEKLY_FUNDAMENTALS.md](WEEKLY_FUNDAMENTALS.md)。
+
+## CR-031 / DATA-032 / UI-031：价格来源时效与RSI颜色
+2026-10-01用户确认：每个价格清晰来源链接，优先最近资料、有效期60天；实际报价/估值日期，不以抓取或生成日续期。日期未知或>60天退出主表价格/价差/比较色，详情保存历史及来源。机构汇总不得用最新单篇报告日期替整个均值背书，Yahoo当前337只汇总报价日期均未核实。analyst-targets v1兼容新增source_url及quoted_at（null代表未知），不猜测日期。情景值仍来源于模型，链接为各档假设证据。规则见[PRICE_SOURCES.md](PRICE_SOURCES.md)。RSI用户确认超卖红/超买绿/中性灰，表格、历史及箱体副图统一；公式/阈值/名单/每日与月度更新频率不变。价格60天覆盖此前价格30天提醒描述，其它研究提醒不变；本地待发布。
+
+
+CR-032范围补充（用户回复）：本轮覆盖CSV全部344只公司；ETF、指数、VIX与加密资产跳过，四档建议价整组留空。当前六个排除代码为BITX、IBIT、QQQ、TQQQ、VIX、DOGEUSD。此条覆盖此前非公司资产需专门估值的首期计划，原行情仍保留。机构均价按近期抓取快照展示，报告日期未知不再强制隐藏；三档情景价仍按实际复核估值日≤60天。最新完整规则见PRICE_SOURCES.md。
+
+本轮估值先建立完整SEC资料清单，再逐只录入真实预测；下载或资料筛选日期不得推进未完成行的valued_at。清单脚本research_valuation_evidence.py不计算建议价；执行时引用本轮缓存并明确--as-of日期，见2026-10-01估值取证记录。
+
+## 全量建议价发布门禁（CR-036）
+
+本轮覆盖344家公司，6个非公司资产排除；月度更新逐只查最近定期及后续重大披露，同时更新三档经营、融资、股数和来源，不能仅改valued_at。发布前执行`python scripts/generate_valuation_scenarios.py --require-complete`，再完成Python、lint、build、浏览器及真实行情验证。正常行情任务不推进研究日期。机构目标价保留详情参考，不补模型；资本回收法范围须明确。

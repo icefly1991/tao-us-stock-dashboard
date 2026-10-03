@@ -9,7 +9,9 @@
       "status": "available",
       "low": 6.0,
       "mean": 11.9667,
-      "high": 20.0
+      "high": 20.0,
+      "source_url": "https://finance.yahoo.com/quote/SMR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "VIX",
@@ -17,7 +19,9 @@
       "status": "unavailable",
       "low": null,
       "mean": null,
-      "high": null
+      "high": null,
+      "source_url": "https://finance.yahoo.com/quote/%5EVIX/analysis/",
+      "quoted_at": null
     },
     {
       "code": "IMSR",
@@ -25,7 +29,9 @@
       "status": "available",
       "low": 8.0,
       "mean": 11.6667,
-      "high": 15.0
+      "high": 15.0,
+      "source_url": "https://finance.yahoo.com/quote/IMSR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NABL",
@@ -33,7 +39,9 @@
       "status": "available",
       "low": 3.65,
       "mean": 4.68,
-      "high": 8.0
+      "high": 8.0,
+      "source_url": "https://finance.yahoo.com/quote/NABL/analysis/",
+      "quoted_at": null
     },
     {
       "code": "HOOD",
@@ -41,7 +49,9 @@
       "status": "available",
       "low": 57.0,
       "mean": 131.4496,
-      "high": 170.0
+      "high": 170.0,
+      "source_url": "https://finance.yahoo.com/quote/HOOD/analysis/",
+      "quoted_at": null
     },
     {
       "code": "MP",
@@ -49,7 +59,9 @@
       "status": "available",
       "low": 57.0,
       "mean": 74.2941,
-      "high": 100.0
+      "high": 100.0,
+      "source_url": "https://finance.yahoo.com/quote/MP/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ORCL",
@@ -57,7 +69,9 @@
       "status": "available",
       "low": 110.0,
       "mean": 237.9742,
-      "high": 400.0
+      "high": 400.0,
+      "source_url": "https://finance.yahoo.com/quote/ORCL/analysis/",
+      "quoted_at": null
     },
     {
       "code": "HIMS",
@@ -65,7 +79,9 @@
       "status": "available",
       "low": 23.0,
       "mean": 31.1538,
-      "high": 42.0
+      "high": 42.0,
+      "source_url": "https://finance.yahoo.com/quote/HIMS/analysis/",
+      "quoted_at": null
     },
     {
       "code": "BITX",
@@ -73,7 +89,9 @@
       "status": "unavailable",
       "low": null,
       "mean": null,
-      "high": null
+      "high": null,
+      "source_url": "https://finance.yahoo.com/quote/BITX/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CRWV",
@@ -81,7 +99,9 @@
       "status": "available",
       "low": 39.0,
       "mean": 141.5789,
-      "high": 317.0
+      "high": 317.0,
+      "source_url": "https://finance.yahoo.com/quote/CRWV/analysis/",
+      "quoted_at": null
     },
     {
       "code": "IBIT",
@@ -89,7 +109,9 @@
       "status": "unavailable",
       "low": null,
       "mean": null,
-      "high": null
+      "high": null,
+      "source_url": "https://finance.yahoo.com/quote/IBIT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "RZLV",
@@ -97,7 +119,9 @@
       "status": "available",
       "low": 7.0,
       "mean": 10.0,
-      "high": 15.0
+      "high": 15.0,
+      "source_url": "https://finance.yahoo.com/quote/RZLV/analysis/",
+      "quoted_at": null
     },
     {
       "code": "MCD",
@@ -105,7 +129,9 @@
       "status": "available",
       "low": 230.0,
       "mean": 297.2069,
-      "high": 390.0
+      "high": 390.0,
+      "source_url": "https://finance.yahoo.com/quote/MCD/analysis/",
+      "quoted_at": null
     },
     {
       "code": "IREN",
@@ -113,7 +139,9 @@
       "status": "available",
       "low": 40.0,
       "mean": 77.6944,
-      "high": 131.0
+      "high": 131.0,
+      "source_url": "https://finance.yahoo.com/quote/IREN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ATCH",
@@ -121,7 +149,9 @@
       "status": "available",
       "low": 1.0,
       "mean": 1.0,
-      "high": 1.0
+      "high": 1.0,
+      "source_url": "https://finance.yahoo.com/quote/ATCH/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CRCL",
@@ -129,7 +159,9 @@
       "status": "available",
       "low": 37.0,
       "mean": 105.0175,
-      "high": 243.0
+      "high": 243.0,
+      "source_url": "https://finance.yahoo.com/quote/CRCL/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NVDA",
@@ -137,7 +169,9 @@
       "status": "available",
       "low": 180.0,
       "mean": 327.7,
-      "high": 515.0
+      "high": 515.0,
+      "source_url": "https://finance.yahoo.com/quote/NVDA/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NKE",
@@ -145,7 +179,9 @@
       "status": "available",
       "low": 23.0,
       "mean": 45.6278,
-      "high": 94.0
+      "high": 94.0,
+      "source_url": "https://finance.yahoo.com/quote/NKE/analysis/",
+      "quoted_at": null
     },
     {
       "code": "KLAR",
@@ -153,7 +189,9 @@
       "status": "available",
       "low": 14.0,
       "mean": 19.9667,
-      "high": 38.3
+      "high": 38.3,
+      "source_url": "https://finance.yahoo.com/quote/KLAR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "MNTN",
@@ -161,7 +199,9 @@
       "status": "available",
       "low": 13.0,
       "mean": 18.1,
-      "high": 22.0
+      "high": 22.0,
+      "source_url": "https://finance.yahoo.com/quote/MNTN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "MSFT",
@@ -169,7 +209,9 @@
       "status": "available",
       "low": 440.0,
       "mean": 578.4152,
-      "high": 870.0
+      "high": 870.0,
+      "source_url": "https://finance.yahoo.com/quote/MSFT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "META",
@@ -177,7 +219,9 @@
       "status": "available",
       "low": 580.0,
       "mean": 793.9073,
-      "high": 1000.0
+      "high": 1000.0,
+      "source_url": "https://finance.yahoo.com/quote/META/analysis/",
+      "quoted_at": null
     },
     {
       "code": "RGTI",
@@ -185,7 +229,9 @@
       "status": "available",
       "low": 17.3,
       "mean": 28.525,
-      "high": 40.0
+      "high": 40.0,
+      "source_url": "https://finance.yahoo.com/quote/RGTI/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NXH",
@@ -193,7 +239,9 @@
       "status": "available",
       "low": 5.5,
       "mean": 9.375,
-      "high": 17.0
+      "high": 17.0,
+      "source_url": "https://finance.yahoo.com/quote/NXH/analysis/",
+      "quoted_at": null
     },
     {
       "code": "AVGO",
@@ -201,7 +249,9 @@
       "status": "available",
       "low": 215.88,
       "mean": 531.8468,
-      "high": 715.0
+      "high": 715.0,
+      "source_url": "https://finance.yahoo.com/quote/AVGO/analysis/",
+      "quoted_at": null
     },
     {
       "code": "QQQ",
@@ -209,7 +259,9 @@
       "status": "unavailable",
       "low": null,
       "mean": null,
-      "high": null
+      "high": null,
+      "source_url": "https://finance.yahoo.com/quote/QQQ/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ETOR",
@@ -217,7 +269,9 @@
       "status": "available",
       "low": 34.0,
       "mean": 47.6,
-      "high": 90.0
+      "high": 90.0,
+      "source_url": "https://finance.yahoo.com/quote/ETOR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ARKO",
@@ -225,7 +279,9 @@
       "status": "available",
       "low": 7.0,
       "mean": 8.5,
-      "high": 10.0
+      "high": 10.0,
+      "source_url": "https://finance.yahoo.com/quote/ARKO/analysis/",
+      "quoted_at": null
     },
     {
       "code": "UAA",
@@ -233,7 +289,9 @@
       "status": "available",
       "low": 4.0,
       "mean": 6.271,
-      "high": 12.0
+      "high": 12.0,
+      "source_url": "https://finance.yahoo.com/quote/UAA/analysis/",
+      "quoted_at": null
     },
     {
       "code": "PG",
@@ -241,7 +299,9 @@
       "status": "available",
       "low": 143.0,
       "mean": 160.6087,
-      "high": 186.0
+      "high": 186.0,
+      "source_url": "https://finance.yahoo.com/quote/PG/analysis/",
+      "quoted_at": null
     },
     {
       "code": "DOGEUSD",
@@ -249,7 +309,9 @@
       "status": "unavailable",
       "low": null,
       "mean": null,
-      "high": null
+      "high": null,
+      "source_url": "https://finance.yahoo.com/quote/DOGE-USD/analysis/",
+      "quoted_at": null
     },
     {
       "code": "STUB",
@@ -257,7 +319,9 @@
       "status": "available",
       "low": 7.0,
       "mean": 11.125,
-      "high": 16.0
+      "high": 16.0,
+      "source_url": "https://finance.yahoo.com/quote/STUB/analysis/",
+      "quoted_at": null
     },
     {
       "code": "VOR",
@@ -265,7 +329,9 @@
       "status": "available",
       "low": 27.0,
       "mean": 39.0,
-      "high": 50.0
+      "high": 50.0,
+      "source_url": "https://finance.yahoo.com/quote/VOR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "MSTR",
@@ -273,7 +339,9 @@
       "status": "available",
       "low": 136.0,
       "mean": 229.8667,
-      "high": 435.0
+      "high": 435.0,
+      "source_url": "https://finance.yahoo.com/quote/MSTR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "GEMI",
@@ -281,7 +349,9 @@
       "status": "available",
       "low": 3.2,
       "mean": 5.22,
-      "high": 7.0
+      "high": 7.0,
+      "source_url": "https://finance.yahoo.com/quote/GEMI/analysis/",
+      "quoted_at": null
     },
     {
       "code": "OSCR",
@@ -289,7 +359,9 @@
       "status": "available",
       "low": 26.0,
       "mean": 35.4,
-      "high": 49.0
+      "high": 49.0,
+      "source_url": "https://finance.yahoo.com/quote/OSCR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "DKNG",
@@ -297,7 +369,9 @@
       "status": "available",
       "low": 20.0,
       "mean": 34.9514,
-      "high": 76.0
+      "high": 76.0,
+      "source_url": "https://finance.yahoo.com/quote/DKNG/analysis/",
+      "quoted_at": null
     },
     {
       "code": "AMD",
@@ -305,7 +379,9 @@
       "status": "available",
       "low": 365.0,
       "mean": 618.508,
-      "high": 1250.0
+      "high": 1250.0,
+      "source_url": "https://finance.yahoo.com/quote/AMD/analysis/",
+      "quoted_at": null
     },
     {
       "code": "TQQQ",
@@ -313,7 +389,9 @@
       "status": "unavailable",
       "low": null,
       "mean": null,
-      "high": null
+      "high": null,
+      "source_url": "https://finance.yahoo.com/quote/TQQQ/analysis/",
+      "quoted_at": null
     },
     {
       "code": "APP",
@@ -321,7 +399,9 @@
       "status": "available",
       "low": 325.0,
       "mean": 497.0455,
-      "high": 790.0
+      "high": 790.0,
+      "source_url": "https://finance.yahoo.com/quote/APP/analysis/",
+      "quoted_at": null
     },
     {
       "code": "WBTN",
@@ -329,7 +409,9 @@
       "status": "available",
       "low": 10.0,
       "mean": 11.2857,
-      "high": 13.0
+      "high": 13.0,
+      "source_url": "https://finance.yahoo.com/quote/WBTN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "FIG",
@@ -337,7 +419,9 @@
       "status": "available",
       "low": 25.0,
       "mean": 30.8,
-      "high": 37.0
+      "high": 37.0,
+      "source_url": "https://finance.yahoo.com/quote/FIG/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CRDO",
@@ -345,7 +429,9 @@
       "status": "available",
       "low": 185.0,
       "mean": 281.0931,
-      "high": 350.0
+      "high": 350.0,
+      "source_url": "https://finance.yahoo.com/quote/CRDO/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ALAB",
@@ -353,7 +439,9 @@
       "status": "available",
       "low": 190.0,
       "mean": 389.9527,
-      "high": 500.0
+      "high": 500.0,
+      "source_url": "https://finance.yahoo.com/quote/ALAB/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NBIS",
@@ -361,7 +449,9 @@
       "status": "available",
       "low": 84.0,
       "mean": 283.579,
-      "high": 415.0
+      "high": 415.0,
+      "source_url": "https://finance.yahoo.com/quote/NBIS/analysis/",
+      "quoted_at": null
     },
     {
       "code": "COIN",
@@ -369,7 +459,9 @@
       "status": "available",
       "low": 95.0,
       "mean": 207.3469,
-      "high": 330.0
+      "high": 330.0,
+      "source_url": "https://finance.yahoo.com/quote/COIN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "RDDT",
@@ -377,7 +469,9 @@
       "status": "available",
       "low": 130.0,
       "mean": 213.7091,
-      "high": 300.0
+      "high": 300.0,
+      "source_url": "https://finance.yahoo.com/quote/RDDT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "RKLB",
@@ -385,7 +479,9 @@
       "status": "available",
       "low": 64.0,
       "mean": 109.3684,
-      "high": 150.0
+      "high": 150.0,
+      "source_url": "https://finance.yahoo.com/quote/RKLB/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CELH",
@@ -393,7 +489,9 @@
       "status": "available",
       "low": 26.0,
       "mean": 42.2857,
-      "high": 64.0
+      "high": 64.0,
+      "source_url": "https://finance.yahoo.com/quote/CELH/analysis/",
+      "quoted_at": null
     },
     {
       "code": "AFRM",
@@ -401,7 +499,9 @@
       "status": "available",
       "low": 66.0,
       "mean": 99.0938,
-      "high": 124.0
+      "high": 124.0,
+      "source_url": "https://finance.yahoo.com/quote/AFRM/analysis/",
+      "quoted_at": null
     },
     {
       "code": "UPST",
@@ -409,7 +509,9 @@
       "status": "available",
       "low": 20.0,
       "mean": 40.0,
-      "high": 61.0
+      "high": 61.0,
+      "source_url": "https://finance.yahoo.com/quote/UPST/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CVNA",
@@ -417,7 +519,9 @@
       "status": "available",
       "low": 60.0,
       "mean": 83.3095,
-      "high": 120.0
+      "high": 120.0,
+      "source_url": "https://finance.yahoo.com/quote/CVNA/analysis/",
+      "quoted_at": null
     },
     {
       "code": "APLD",
@@ -425,7 +529,9 @@
       "status": "available",
       "low": 22.0,
       "mean": 66.4333,
-      "high": 109.0
+      "high": 109.0,
+      "source_url": "https://finance.yahoo.com/quote/APLD/analysis/",
+      "quoted_at": null
     },
     {
       "code": "RBLX",
@@ -433,7 +539,9 @@
       "status": "available",
       "low": 33.0,
       "mean": 48.9747,
-      "high": 65.0
+      "high": 65.0,
+      "source_url": "https://finance.yahoo.com/quote/RBLX/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CAVA",
@@ -441,7 +549,9 @@
       "status": "available",
       "low": 18.0,
       "mean": 82.75,
-      "high": 110.0
+      "high": 110.0,
+      "source_url": "https://finance.yahoo.com/quote/CAVA/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ONON",
@@ -449,7 +559,9 @@
       "status": "available",
       "low": 19.9157,
       "mean": 43.3623,
-      "high": 71.3359
+      "high": 71.3359,
+      "source_url": "https://finance.yahoo.com/quote/ONON/analysis/",
+      "quoted_at": null
     },
     {
       "code": "DUOL",
@@ -457,7 +569,9 @@
       "status": "available",
       "low": 80.0,
       "mean": 134.2911,
-      "high": 210.0
+      "high": 210.0,
+      "source_url": "https://finance.yahoo.com/quote/DUOL/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ELF",
@@ -465,7 +579,9 @@
       "status": "available",
       "low": 65.0,
       "mean": 103.1875,
-      "high": 127.0
+      "high": 127.0,
+      "source_url": "https://finance.yahoo.com/quote/ELF/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SOFI",
@@ -473,7 +589,9 @@
       "status": "available",
       "low": 12.0,
       "mean": 20.3545,
-      "high": 30.0
+      "high": 30.0,
+      "source_url": "https://finance.yahoo.com/quote/SOFI/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SHOP",
@@ -481,7 +599,9 @@
       "status": "available",
       "low": 120.0,
       "mean": 172.7708,
-      "high": 220.0
+      "high": 220.0,
+      "source_url": "https://finance.yahoo.com/quote/SHOP/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SE",
@@ -489,7 +609,9 @@
       "status": "available",
       "low": 105.0,
       "mean": 155.11,
-      "high": 195.0
+      "high": 195.0,
+      "source_url": "https://finance.yahoo.com/quote/SE/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NET",
@@ -497,7 +619,9 @@
       "status": "available",
       "low": 160.0,
       "mean": 336.8065,
-      "high": 400.0
+      "high": 400.0,
+      "source_url": "https://finance.yahoo.com/quote/NET/analysis/",
+      "quoted_at": null
     },
     {
       "code": "PLTR",
@@ -505,7 +629,9 @@
       "status": "available",
       "low": 80.0,
       "mean": 195.5654,
-      "high": 255.0
+      "high": 255.0,
+      "source_url": "https://finance.yahoo.com/quote/PLTR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ARM",
@@ -513,7 +639,9 @@
       "status": "available",
       "low": 125.0,
       "mean": 288.705,
-      "high": 500.0
+      "high": 500.0,
+      "source_url": "https://finance.yahoo.com/quote/ARM/analysis/",
+      "quoted_at": null
     },
     {
       "code": "LITE",
@@ -521,7 +649,9 @@
       "status": "available",
       "low": 820.0,
       "mean": 1159.4017,
-      "high": 1400.0
+      "high": 1400.0,
+      "source_url": "https://finance.yahoo.com/quote/LITE/analysis/",
+      "quoted_at": null
     },
     {
       "code": "COHR",
@@ -529,7 +659,9 @@
       "status": "available",
       "low": 280.0,
       "mean": 412.5201,
-      "high": 500.0
+      "high": 500.0,
+      "source_url": "https://finance.yahoo.com/quote/COHR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "MRVL",
@@ -537,7 +669,9 @@
       "status": "available",
       "low": 210.0,
       "mean": 290.9704,
-      "high": 400.0
+      "high": 400.0,
+      "source_url": "https://finance.yahoo.com/quote/MRVL/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CLS",
@@ -545,7 +679,9 @@
       "status": "available",
       "low": 375.0,
       "mean": 473.9143,
-      "high": 550.0
+      "high": 550.0,
+      "source_url": "https://finance.yahoo.com/quote/CLS/analysis/",
+      "quoted_at": null
     },
     {
       "code": "VRT",
@@ -553,7 +689,9 @@
       "status": "available",
       "low": 236.0,
       "mean": 337.7407,
-      "high": 427.0
+      "high": 427.0,
+      "source_url": "https://finance.yahoo.com/quote/VRT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "MU",
@@ -561,7 +699,9 @@
       "status": "available",
       "low": 361.0,
       "mean": 1533.8043,
-      "high": 2200.0
+      "high": 2200.0,
+      "source_url": "https://finance.yahoo.com/quote/MU/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SNDK",
@@ -569,7 +709,9 @@
       "status": "available",
       "low": 1000.0,
       "mean": 2136.5417,
-      "high": 3600.0
+      "high": 3600.0,
+      "source_url": "https://finance.yahoo.com/quote/SNDK/analysis/",
+      "quoted_at": null
     },
     {
       "code": "WDC",
@@ -577,7 +719,9 @@
       "status": "available",
       "low": 420.0,
       "mean": 664.9167,
-      "high": 1050.0
+      "high": 1050.0,
+      "source_url": "https://finance.yahoo.com/quote/WDC/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CIEN",
@@ -585,7 +729,9 @@
       "status": "available",
       "low": 347.0,
       "mean": 512.9907,
-      "high": 660.0
+      "high": 660.0,
+      "source_url": "https://finance.yahoo.com/quote/CIEN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SMCI",
@@ -593,7 +739,9 @@
       "status": "available",
       "low": 15.0,
       "mean": 42.375,
-      "high": 60.0
+      "high": 60.0,
+      "source_url": "https://finance.yahoo.com/quote/SMCI/analysis/",
+      "quoted_at": null
     },
     {
       "code": "BE",
@@ -601,7 +749,9 @@
       "status": "available",
       "low": 97.0,
       "mean": 281.5846,
-      "high": 390.0
+      "high": 390.0,
+      "source_url": "https://finance.yahoo.com/quote/BE/analysis/",
+      "quoted_at": null
     },
     {
       "code": "PSTG",
@@ -609,7 +759,9 @@
       "status": "available",
       "low": 80.0,
       "mean": 145.3158,
-      "high": 180.0
+      "high": 180.0,
+      "source_url": "https://finance.yahoo.com/quote/P/analysis/",
+      "quoted_at": null
     },
     {
       "code": "MTSI",
@@ -617,7 +769,9 @@
       "status": "available",
       "low": 300.0,
       "mean": 395.3333,
-      "high": 475.0
+      "high": 475.0,
+      "source_url": "https://finance.yahoo.com/quote/MTSI/analysis/",
+      "quoted_at": null
     },
     {
       "code": "TOST",
@@ -625,7 +779,9 @@
       "status": "available",
       "low": 25.0,
       "mean": 38.9231,
-      "high": 45.0
+      "high": 45.0,
+      "source_url": "https://finance.yahoo.com/quote/TOST/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NU",
@@ -633,7 +789,9 @@
       "status": "available",
       "low": 12.0,
       "mean": 18.6364,
-      "high": 23.0
+      "high": 23.0,
+      "source_url": "https://finance.yahoo.com/quote/NU/analysis/",
+      "quoted_at": null
     },
     {
       "code": "DAVE",
@@ -641,7 +799,9 @@
       "status": "available",
       "low": 350.0,
       "mean": 444.2143,
-      "high": 500.0
+      "high": 500.0,
+      "source_url": "https://finance.yahoo.com/quote/DAVE/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ROOT",
@@ -649,7 +809,9 @@
       "status": "available",
       "low": 50.0,
       "mean": 60.2,
-      "high": 80.0
+      "high": 80.0,
+      "source_url": "https://finance.yahoo.com/quote/ROOT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "LMND",
@@ -657,7 +819,9 @@
       "status": "available",
       "low": 37.0,
       "mean": 59.2222,
-      "high": 92.0
+      "high": 92.0,
+      "source_url": "https://finance.yahoo.com/quote/LMND/analysis/",
+      "quoted_at": null
     },
     {
       "code": "TTAN",
@@ -665,7 +829,9 @@
       "status": "available",
       "low": 76.0,
       "mean": 97.5333,
-      "high": 110.0
+      "high": 110.0,
+      "source_url": "https://finance.yahoo.com/quote/TTAN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "IOT",
@@ -673,7 +839,9 @@
       "status": "available",
       "low": 39.0,
       "mean": 52.1565,
-      "high": 60.0
+      "high": 60.0,
+      "source_url": "https://finance.yahoo.com/quote/IOT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "MNDY",
@@ -681,7 +849,9 @@
       "status": "available",
       "low": 87.0,
       "mean": 108.8696,
-      "high": 165.0
+      "high": 165.0,
+      "source_url": "https://finance.yahoo.com/quote/MNDY/analysis/",
+      "quoted_at": null
     },
     {
       "code": "MDB",
@@ -689,7 +859,9 @@
       "status": "available",
       "low": 272.64,
       "mean": 446.5038,
-      "high": 565.0
+      "high": 565.0,
+      "source_url": "https://finance.yahoo.com/quote/MDB/analysis/",
+      "quoted_at": null
     },
     {
       "code": "GTLB",
@@ -697,7 +869,9 @@
       "status": "available",
       "low": 45.0,
       "mean": 55.7083,
-      "high": 70.0
+      "high": 70.0,
+      "source_url": "https://finance.yahoo.com/quote/GTLB/analysis/",
+      "quoted_at": null
     },
     {
       "code": "FROG",
@@ -705,7 +879,9 @@
       "status": "available",
       "low": 90.0,
       "mean": 112.0,
-      "high": 120.0
+      "high": 120.0,
+      "source_url": "https://finance.yahoo.com/quote/FROG/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ESTC",
@@ -713,7 +889,9 @@
       "status": "available",
       "low": 75.0,
       "mean": 110.6923,
-      "high": 130.0
+      "high": 130.0,
+      "source_url": "https://finance.yahoo.com/quote/ESTC/analysis/",
+      "quoted_at": null
     },
     {
       "code": "S",
@@ -721,7 +899,9 @@
       "status": "available",
       "low": 17.5,
       "mean": 24.3833,
-      "high": 28.0
+      "high": 28.0,
+      "source_url": "https://finance.yahoo.com/quote/S/analysis/",
+      "quoted_at": null
     },
     {
       "code": "TTD",
@@ -729,7 +909,9 @@
       "status": "available",
       "low": 9.0,
       "mean": 13.5667,
-      "high": 20.0
+      "high": 20.0,
+      "source_url": "https://finance.yahoo.com/quote/TTD/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ZETA",
@@ -737,7 +919,9 @@
       "status": "available",
       "low": 25.0,
       "mean": 31.6429,
-      "high": 44.0
+      "high": 44.0,
+      "source_url": "https://finance.yahoo.com/quote/ZETA/analysis/",
+      "quoted_at": null
     },
     {
       "code": "TMDX",
@@ -745,7 +929,9 @@
       "status": "available",
       "low": 65.0,
       "mean": 97.3,
-      "high": 125.0
+      "high": 125.0,
+      "source_url": "https://finance.yahoo.com/quote/TMDX/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NTRA",
@@ -753,7 +939,9 @@
       "status": "available",
       "low": 280.0,
       "mean": 355.9318,
-      "high": 460.0
+      "high": 460.0,
+      "source_url": "https://finance.yahoo.com/quote/NTRA/analysis/",
+      "quoted_at": null
     },
     {
       "code": "TEM",
@@ -761,7 +949,9 @@
       "status": "available",
       "low": 35.0,
       "mean": 68.5556,
-      "high": 100.0
+      "high": 100.0,
+      "source_url": "https://finance.yahoo.com/quote/TEM/analysis/",
+      "quoted_at": null
     },
     {
       "code": "RXST",
@@ -769,7 +959,9 @@
       "status": "available",
       "low": 5.5,
       "mean": 7.5687,
-      "high": 11.0
+      "high": 11.0,
+      "source_url": "https://finance.yahoo.com/quote/RXST/analysis/",
+      "quoted_at": null
     },
     {
       "code": "KTOS",
@@ -777,7 +969,9 @@
       "status": "available",
       "low": 60.0,
       "mean": 102.1905,
-      "high": 150.0
+      "high": 150.0,
+      "source_url": "https://finance.yahoo.com/quote/KTOS/analysis/",
+      "quoted_at": null
     },
     {
       "code": "AVAV",
@@ -785,7 +979,9 @@
       "status": "available",
       "low": 148.57,
       "mean": 219.3458,
-      "high": 315.0
+      "high": 315.0,
+      "source_url": "https://finance.yahoo.com/quote/AVAV/analysis/",
+      "quoted_at": null
     },
     {
       "code": "RDW",
@@ -793,7 +989,9 @@
       "status": "available",
       "low": 8.0,
       "mean": 14.6875,
-      "high": 20.0
+      "high": 20.0,
+      "source_url": "https://finance.yahoo.com/quote/RDW/analysis/",
+      "quoted_at": null
     },
     {
       "code": "LUNR",
@@ -801,7 +999,9 @@
       "status": "available",
       "low": 13.0,
       "mean": 29.5,
-      "high": 43.0
+      "high": 43.0,
+      "source_url": "https://finance.yahoo.com/quote/LUNR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "LEU",
@@ -809,7 +1009,9 @@
       "status": "available",
       "low": 168.77,
       "mean": 247.3982,
-      "high": 340.0
+      "high": 340.0,
+      "source_url": "https://finance.yahoo.com/quote/LEU/analysis/",
+      "quoted_at": null
     },
     {
       "code": "UUUU",
@@ -817,7 +1019,9 @@
       "status": "available",
       "low": 16.0,
       "mean": 24.15,
-      "high": 32.5
+      "high": 32.5,
+      "source_url": "https://finance.yahoo.com/quote/UUUU/analysis/",
+      "quoted_at": null
     },
     {
       "code": "UEC",
@@ -825,7 +1029,9 @@
       "status": "available",
       "low": 11.0,
       "mean": 16.83,
-      "high": 26.75
+      "high": 26.75,
+      "source_url": "https://finance.yahoo.com/quote/UEC/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ALB",
@@ -833,7 +1039,9 @@
       "status": "available",
       "low": 83.28,
       "mean": 171.564,
-      "high": 225.0
+      "high": 225.0,
+      "source_url": "https://finance.yahoo.com/quote/ALB/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ENPH",
@@ -841,7 +1049,9 @@
       "status": "available",
       "low": 27.0,
       "mean": 51.6037,
-      "high": 212.0
+      "high": 212.0,
+      "source_url": "https://finance.yahoo.com/quote/ENPH/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NXT",
@@ -849,7 +1059,9 @@
       "status": "available",
       "low": 70.0,
       "mean": 138.9643,
-      "high": 175.0
+      "high": 175.0,
+      "source_url": "https://finance.yahoo.com/quote/NXT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "FLNC",
@@ -857,7 +1069,9 @@
       "status": "available",
       "low": 3.0,
       "mean": 10.1053,
-      "high": 23.0
+      "high": 23.0,
+      "source_url": "https://finance.yahoo.com/quote/FLNC/analysis/",
+      "quoted_at": null
     },
     {
       "code": "RIVN",
@@ -865,7 +1079,9 @@
       "status": "available",
       "low": 13.0,
       "mean": 19.3077,
-      "high": 25.0
+      "high": 25.0,
+      "source_url": "https://finance.yahoo.com/quote/RIVN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CHWY",
@@ -873,7 +1089,9 @@
       "status": "available",
       "low": 21.0,
       "mean": 28.6364,
-      "high": 36.0
+      "high": 36.0,
+      "source_url": "https://finance.yahoo.com/quote/CHWY/analysis/",
+      "quoted_at": null
     },
     {
       "code": "BROS",
@@ -881,7 +1099,9 @@
       "status": "available",
       "low": 29.0,
       "mean": 73.8333,
-      "high": 95.0
+      "high": 95.0,
+      "source_url": "https://finance.yahoo.com/quote/BROS/analysis/",
+      "quoted_at": null
     },
     {
       "code": "RH",
@@ -889,7 +1109,9 @@
       "status": "available",
       "low": 81.0,
       "mean": 165.8235,
-      "high": 258.0
+      "high": 258.0,
+      "source_url": "https://finance.yahoo.com/quote/RH/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SG",
@@ -897,7 +1119,9 @@
       "status": "available",
       "low": 4.4,
       "mean": 7.875,
-      "high": 11.0
+      "high": 11.0,
+      "source_url": "https://finance.yahoo.com/quote/SG/analysis/",
+      "quoted_at": null
     },
     {
       "code": "FOUR",
@@ -905,7 +1129,9 @@
       "status": "available",
       "low": 40.0,
       "mean": 55.0476,
-      "high": 96.0
+      "high": 96.0,
+      "source_url": "https://finance.yahoo.com/quote/FOUR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "BILL",
@@ -913,7 +1139,9 @@
       "status": "available",
       "low": 43.0,
       "mean": 57.3,
-      "high": 75.0
+      "high": 75.0,
+      "source_url": "https://finance.yahoo.com/quote/BILL/analysis/",
+      "quoted_at": null
     },
     {
       "code": "RELY",
@@ -921,7 +1149,9 @@
       "status": "available",
       "low": 29.0,
       "mean": 32.3333,
-      "high": 36.0
+      "high": 36.0,
+      "source_url": "https://finance.yahoo.com/quote/RELY/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SYM",
@@ -929,7 +1159,9 @@
       "status": "available",
       "low": 38.0,
       "mean": 62.8571,
-      "high": 85.0
+      "high": 85.0,
+      "source_url": "https://finance.yahoo.com/quote/SYM/analysis/",
+      "quoted_at": null
     },
     {
       "code": "AAOI",
@@ -937,7 +1169,9 @@
       "status": "available",
       "low": 109.0,
       "mean": 163.4,
-      "high": 220.0
+      "high": 220.0,
+      "source_url": "https://finance.yahoo.com/quote/AAOI/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ACLS",
@@ -945,7 +1179,9 @@
       "status": "available",
       "low": 140.0,
       "mean": 161.0,
-      "high": 198.0
+      "high": 198.0,
+      "source_url": "https://finance.yahoo.com/quote/ACLS/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SITM",
@@ -953,7 +1189,9 @@
       "status": "available",
       "low": 730.0,
       "mean": 849.5,
-      "high": 900.0
+      "high": 900.0,
+      "source_url": "https://finance.yahoo.com/quote/SITM/analysis/",
+      "quoted_at": null
     },
     {
       "code": "AMBA",
@@ -961,7 +1199,9 @@
       "status": "available",
       "low": 65.0,
       "mean": 89.3636,
-      "high": 120.0
+      "high": 120.0,
+      "source_url": "https://finance.yahoo.com/quote/AMBA/analysis/",
+      "quoted_at": null
     },
     {
       "code": "AEHR",
@@ -969,7 +1209,9 @@
       "status": "available",
       "low": 110.0,
       "mean": 128.0,
-      "high": 175.0
+      "high": 175.0,
+      "source_url": "https://finance.yahoo.com/quote/AEHR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "INOD",
@@ -977,7 +1219,9 @@
       "status": "available",
       "low": 111.0,
       "mean": 122.75,
-      "high": 140.0
+      "high": 140.0,
+      "source_url": "https://finance.yahoo.com/quote/INOD/analysis/",
+      "quoted_at": null
     },
     {
       "code": "PATH",
@@ -985,7 +1229,9 @@
       "status": "available",
       "low": 10.0,
       "mean": 15.4988,
-      "high": 23.0
+      "high": 23.0,
+      "source_url": "https://finance.yahoo.com/quote/PATH/analysis/",
+      "quoted_at": null
     },
     {
       "code": "DOCN",
@@ -993,7 +1239,9 @@
       "status": "available",
       "low": 140.0,
       "mean": 175.2,
-      "high": 200.0
+      "high": 200.0,
+      "source_url": "https://finance.yahoo.com/quote/DOCN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ROKU",
@@ -1001,7 +1249,9 @@
       "status": "available",
       "low": 150.0,
       "mean": 162.3265,
-      "high": 205.0
+      "high": 205.0,
+      "source_url": "https://finance.yahoo.com/quote/ROKU/analysis/",
+      "quoted_at": null
     },
     {
       "code": "EIKN",
@@ -1009,7 +1259,9 @@
       "status": "available",
       "low": 4.0,
       "mean": 24.6,
-      "high": 32.0
+      "high": 32.0,
+      "source_url": "https://finance.yahoo.com/quote/EIKN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "FSLY",
@@ -1017,7 +1269,9 @@
       "status": "available",
       "low": 22.0,
       "mean": 27.9,
-      "high": 37.0
+      "high": 37.0,
+      "source_url": "https://finance.yahoo.com/quote/FSLY/analysis/",
+      "quoted_at": null
     },
     {
       "code": "HUT",
@@ -1025,7 +1279,9 @@
       "status": "available",
       "low": 96.0,
       "mean": 157.0909,
-      "high": 273.0
+      "high": 273.0,
+      "source_url": "https://finance.yahoo.com/quote/HUT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "WULF",
@@ -1033,7 +1289,9 @@
       "status": "available",
       "low": 15.0,
       "mean": 33.6917,
-      "high": 62.5
+      "high": 62.5,
+      "source_url": "https://finance.yahoo.com/quote/WULF/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ASTS",
@@ -1041,7 +1299,9 @@
       "status": "available",
       "low": 42.5,
       "mean": 79.6083,
-      "high": 108.0
+      "high": 108.0,
+      "source_url": "https://finance.yahoo.com/quote/ASTS/analysis/",
+      "quoted_at": null
     },
     {
       "code": "IONQ",
@@ -1049,7 +1309,9 @@
       "status": "available",
       "low": 41.85,
       "mean": 66.6321,
-      "high": 100.0
+      "high": 100.0,
+      "source_url": "https://finance.yahoo.com/quote/IONQ/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CRSP",
@@ -1057,7 +1319,9 @@
       "status": "available",
       "low": 44.0,
       "mean": 87.5556,
-      "high": 291.0
+      "high": 291.0,
+      "source_url": "https://finance.yahoo.com/quote/CRSP/analysis/",
+      "quoted_at": null
     },
     {
       "code": "POWL",
@@ -1065,7 +1329,9 @@
       "status": "available",
       "low": 235.0,
       "mean": 280.0,
-      "high": 333.0
+      "high": 333.0,
+      "source_url": "https://finance.yahoo.com/quote/POWL/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SECZ",
@@ -1073,7 +1339,9 @@
       "status": "available",
       "low": 10.0,
       "mean": 13.9429,
-      "high": 21.2
+      "high": 21.2,
+      "source_url": "https://finance.yahoo.com/quote/SECZ/analysis/",
+      "quoted_at": null
     },
     {
       "code": "BKKT",
@@ -1081,7 +1349,9 @@
       "status": "available",
       "low": 12.0,
       "mean": 12.0,
-      "high": 12.0
+      "high": 12.0,
+      "source_url": "https://finance.yahoo.com/quote/BKKT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CRML",
@@ -1089,7 +1359,9 @@
       "status": "available",
       "low": 8.0,
       "mean": 13.0,
-      "high": 18.0
+      "high": 18.0,
+      "source_url": "https://finance.yahoo.com/quote/CRML/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CLSK",
@@ -1097,7 +1369,9 @@
       "status": "available",
       "low": 21.0,
       "mean": 23.8929,
-      "high": 27.0
+      "high": 27.0,
+      "source_url": "https://finance.yahoo.com/quote/CLSK/analysis/",
+      "quoted_at": null
     },
     {
       "code": "BTBT",
@@ -1105,7 +1379,9 @@
       "status": "available",
       "low": 3.5,
       "mean": 3.634,
-      "high": 4.0
+      "high": 4.0,
+      "source_url": "https://finance.yahoo.com/quote/BTBT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SOC",
@@ -1113,7 +1389,9 @@
       "status": "available",
       "low": 8.0,
       "mean": 9.5,
-      "high": 11.0
+      "high": 11.0,
+      "source_url": "https://finance.yahoo.com/quote/SOC/analysis/",
+      "quoted_at": null
     },
     {
       "code": "AURA",
@@ -1121,7 +1399,9 @@
       "status": "available",
       "low": 12.0,
       "mean": 16.6,
-      "high": 23.0
+      "high": 23.0,
+      "source_url": "https://finance.yahoo.com/quote/AURA/analysis/",
+      "quoted_at": null
     },
     {
       "code": "EVMN",
@@ -1129,7 +1409,9 @@
       "status": "available",
       "low": 18.0,
       "mean": 24.125,
-      "high": 30.0
+      "high": 30.0,
+      "source_url": "https://finance.yahoo.com/quote/EVMN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "WYFI",
@@ -1137,7 +1419,9 @@
       "status": "available",
       "low": 32.0,
       "mean": 40.4545,
-      "high": 50.0
+      "high": 50.0,
+      "source_url": "https://finance.yahoo.com/quote/WYFI/analysis/",
+      "quoted_at": null
     },
     {
       "code": "XXI",
@@ -1145,7 +1429,9 @@
       "status": "unavailable",
       "low": null,
       "mean": null,
-      "high": null
+      "high": null,
+      "source_url": "https://finance.yahoo.com/quote/XXI/analysis/",
+      "quoted_at": null
     },
     {
       "code": "DNA",
@@ -1153,7 +1439,9 @@
       "status": "available",
       "low": 5.0,
       "mean": 7.0,
-      "high": 9.0
+      "high": 9.0,
+      "source_url": "https://finance.yahoo.com/quote/DNA/analysis/",
+      "quoted_at": null
     },
     {
       "code": "GETY",
@@ -1161,7 +1449,9 @@
       "status": "unavailable",
       "low": null,
       "mean": null,
-      "high": null
+      "high": null,
+      "source_url": "https://finance.yahoo.com/quote/GETY/analysis/",
+      "quoted_at": null
     },
     {
       "code": "QDEL",
@@ -1169,7 +1459,9 @@
       "status": "available",
       "low": 12.0,
       "mean": 14.6667,
-      "high": 20.0
+      "high": 20.0,
+      "source_url": "https://finance.yahoo.com/quote/QDEL/analysis/",
+      "quoted_at": null
     },
     {
       "code": "TRON",
@@ -1177,7 +1469,9 @@
       "status": "unavailable",
       "low": null,
       "mean": null,
-      "high": null
+      "high": null,
+      "source_url": "https://finance.yahoo.com/quote/TRON/analysis/",
+      "quoted_at": null
     },
     {
       "code": "VITL",
@@ -1185,7 +1479,9 @@
       "status": "available",
       "low": 10.0,
       "mean": 13.2222,
-      "high": 18.0
+      "high": 18.0,
+      "source_url": "https://finance.yahoo.com/quote/VITL/analysis/",
+      "quoted_at": null
     },
     {
       "code": "FWDI",
@@ -1193,7 +1489,9 @@
       "status": "available",
       "low": 8.5,
       "mean": 11.8333,
-      "high": 16.0
+      "high": 16.0,
+      "source_url": "https://finance.yahoo.com/quote/FWDI/analysis/",
+      "quoted_at": null
     },
     {
       "code": "UPB",
@@ -1201,7 +1499,9 @@
       "status": "available",
       "low": 9.0,
       "mean": 31.1429,
-      "high": 75.0
+      "high": 75.0,
+      "source_url": "https://finance.yahoo.com/quote/UPB/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SRAD",
@@ -1209,7 +1509,9 @@
       "status": "available",
       "low": 13.5257,
       "mean": 18.0941,
-      "high": 35.7456
+      "high": 35.7456,
+      "source_url": "https://finance.yahoo.com/quote/SRAD/analysis/",
+      "quoted_at": null
     },
     {
       "code": "WRBY",
@@ -1217,7 +1519,9 @@
       "status": "available",
       "low": 24.0,
       "mean": 30.4615,
-      "high": 35.0
+      "high": 35.0,
+      "source_url": "https://finance.yahoo.com/quote/WRBY/analysis/",
+      "quoted_at": null
     },
     {
       "code": "HTFL",
@@ -1225,7 +1529,9 @@
       "status": "available",
       "low": 39.0,
       "mean": 46.0,
-      "high": 56.0
+      "high": 56.0,
+      "source_url": "https://finance.yahoo.com/quote/HTFL/analysis/",
+      "quoted_at": null
     },
     {
       "code": "AMC",
@@ -1233,7 +1539,9 @@
       "status": "available",
       "low": 2.2,
       "mean": 2.95,
-      "high": 4.0
+      "high": 4.0,
+      "source_url": "https://finance.yahoo.com/quote/AMC/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SANA",
@@ -1241,7 +1549,9 @@
       "status": "available",
       "low": 6.0,
       "mean": 8.4286,
-      "high": 12.0
+      "high": 12.0,
+      "source_url": "https://finance.yahoo.com/quote/SANA/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CHYM",
@@ -1249,7 +1559,9 @@
       "status": "available",
       "low": 30.0,
       "mean": 39.4091,
-      "high": 50.0
+      "high": 50.0,
+      "source_url": "https://finance.yahoo.com/quote/CHYM/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SPRY",
@@ -1257,7 +1569,9 @@
       "status": "available",
       "low": 15.0,
       "mean": 22.5,
-      "high": 30.0
+      "high": 30.0,
+      "source_url": "https://finance.yahoo.com/quote/SPRY/analysis/",
+      "quoted_at": null
     },
     {
       "code": "PACB",
@@ -1265,7 +1579,9 @@
       "status": "available",
       "low": 1.25,
       "mean": 2.1571,
-      "high": 3.0
+      "high": 3.0,
+      "source_url": "https://finance.yahoo.com/quote/PACB/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ALKT",
@@ -1273,7 +1589,9 @@
       "status": "available",
       "low": 14.0,
       "mean": 20.7143,
-      "high": 25.0
+      "high": 25.0,
+      "source_url": "https://finance.yahoo.com/quote/ALKT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "KLC",
@@ -1281,7 +1599,9 @@
       "status": "available",
       "low": 2.0,
       "mean": 4.0571,
-      "high": 6.0
+      "high": 6.0,
+      "source_url": "https://finance.yahoo.com/quote/KLC/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NTSK",
@@ -1289,7 +1609,9 @@
       "status": "available",
       "low": 16.0,
       "mean": 18.8611,
-      "high": 28.0
+      "high": 28.0,
+      "source_url": "https://finance.yahoo.com/quote/NTSK/analysis/",
+      "quoted_at": null
     },
     {
       "code": "MAX",
@@ -1297,7 +1619,9 @@
       "status": "available",
       "low": 11.0,
       "mean": 15.4286,
-      "high": 19.0
+      "high": 19.0,
+      "source_url": "https://finance.yahoo.com/quote/MAX/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SHEN",
@@ -1305,7 +1629,9 @@
       "status": "available",
       "low": 26.0,
       "mean": 27.5,
-      "high": 29.0
+      "high": 29.0,
+      "source_url": "https://finance.yahoo.com/quote/SHEN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "EYPT",
@@ -1313,7 +1639,9 @@
       "status": "available",
       "low": 4.0,
       "mean": 25.9091,
-      "high": 68.0
+      "high": 68.0,
+      "source_url": "https://finance.yahoo.com/quote/EYPT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "PSFE",
@@ -1321,7 +1649,9 @@
       "status": "available",
       "low": 7.0,
       "mean": 8.5,
-      "high": 11.0
+      "high": 11.0,
+      "source_url": "https://finance.yahoo.com/quote/PSFE/analysis/",
+      "quoted_at": null
     },
     {
       "code": "USAR",
@@ -1329,7 +1659,9 @@
       "status": "available",
       "low": 21.0,
       "mean": 35.5556,
-      "high": 45.0
+      "high": 45.0,
+      "source_url": "https://finance.yahoo.com/quote/USAR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "BRCB",
@@ -1337,7 +1669,9 @@
       "status": "available",
       "low": 9.0,
       "mean": 12.3333,
-      "high": 20.0
+      "high": 20.0,
+      "source_url": "https://finance.yahoo.com/quote/BRCB/analysis/",
+      "quoted_at": null
     },
     {
       "code": "MPT",
@@ -1345,7 +1679,9 @@
       "status": "available",
       "low": 4.25,
       "mean": 5.125,
-      "high": 7.0
+      "high": 7.0,
+      "source_url": "https://finance.yahoo.com/quote/MPT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "BEAM",
@@ -1353,7 +1689,9 @@
       "status": "available",
       "low": 26.0,
       "mean": 52.1538,
-      "high": 80.0
+      "high": 80.0,
+      "source_url": "https://finance.yahoo.com/quote/BEAM/analysis/",
+      "quoted_at": null
     },
     {
       "code": "HRL",
@@ -1361,7 +1699,9 @@
       "status": "available",
       "low": 23.0,
       "mean": 25.9375,
-      "high": 30.0
+      "high": 30.0,
+      "source_url": "https://finance.yahoo.com/quote/HRL/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NMRA",
@@ -1369,7 +1709,9 @@
       "status": "available",
       "low": 3.0,
       "mean": 6.1429,
-      "high": 14.0
+      "high": 14.0,
+      "source_url": "https://finance.yahoo.com/quote/NMRA/analysis/",
+      "quoted_at": null
     },
     {
       "code": "RGEN",
@@ -1377,7 +1719,9 @@
       "status": "available",
       "low": 145.0,
       "mean": 189.7,
-      "high": 225.0
+      "high": 225.0,
+      "source_url": "https://finance.yahoo.com/quote/RGEN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "INFQ",
@@ -1385,7 +1729,9 @@
       "status": "available",
       "low": 19.0,
       "mean": 21.8333,
-      "high": 25.0
+      "high": 25.0,
+      "source_url": "https://finance.yahoo.com/quote/INFQ/analysis/",
+      "quoted_at": null
     },
     {
       "code": "LYTS",
@@ -1393,7 +1739,9 @@
       "status": "available",
       "low": 29.0,
       "mean": 30.0,
-      "high": 31.0
+      "high": 31.0,
+      "source_url": "https://finance.yahoo.com/quote/LYTS/analysis/",
+      "quoted_at": null
     },
     {
       "code": "FAC",
@@ -1401,7 +1749,9 @@
       "status": "available",
       "low": 8.0,
       "mean": 13.0,
-      "high": 18.0
+      "high": 18.0,
+      "source_url": "https://finance.yahoo.com/quote/FAC/analysis/",
+      "quoted_at": null
     },
     {
       "code": "INV",
@@ -1409,7 +1759,9 @@
       "status": "available",
       "low": 5.0,
       "mean": 5.5,
-      "high": 6.0
+      "high": 6.0,
+      "source_url": "https://finance.yahoo.com/quote/INV/analysis/",
+      "quoted_at": null
     },
     {
       "code": "RBRK",
@@ -1417,7 +1769,9 @@
       "status": "available",
       "low": 110.0,
       "mean": 120.1482,
-      "high": 139.0
+      "high": 139.0,
+      "source_url": "https://finance.yahoo.com/quote/RBRK/analysis/",
+      "quoted_at": null
     },
     {
       "code": "WMG",
@@ -1425,7 +1779,9 @@
       "status": "available",
       "low": 30.0,
       "mean": 37.8125,
-      "high": 46.0
+      "high": 46.0,
+      "source_url": "https://finance.yahoo.com/quote/WMG/analysis/",
+      "quoted_at": null
     },
     {
       "code": "OLN",
@@ -1433,7 +1789,9 @@
       "status": "available",
       "low": 16.0,
       "mean": 20.7333,
-      "high": 30.0
+      "high": 30.0,
+      "source_url": "https://finance.yahoo.com/quote/OLN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CMG",
@@ -1441,7 +1799,9 @@
       "status": "available",
       "low": 35.0,
       "mean": 43.9194,
-      "high": 53.0
+      "high": 53.0,
+      "source_url": "https://finance.yahoo.com/quote/CMG/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CXM",
@@ -1449,7 +1809,9 @@
       "status": "available",
       "low": 6.0,
       "mean": 8.4375,
-      "high": 12.0
+      "high": 12.0,
+      "source_url": "https://finance.yahoo.com/quote/CXM/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NKLR",
@@ -1457,7 +1819,9 @@
       "status": "available",
       "low": 10.0,
       "mean": 16.8,
-      "high": 25.0
+      "high": 25.0,
+      "source_url": "https://finance.yahoo.com/quote/NKLR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SAIL",
@@ -1465,7 +1829,9 @@
       "status": "available",
       "low": 10.0,
       "mean": 21.12,
-      "high": 27.0
+      "high": 27.0,
+      "source_url": "https://finance.yahoo.com/quote/SAIL/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ALMS",
@@ -1473,7 +1839,9 @@
       "status": "available",
       "low": 15.0,
       "mean": 32.125,
-      "high": 46.0
+      "high": 46.0,
+      "source_url": "https://finance.yahoo.com/quote/ALMS/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ARDT",
@@ -1481,7 +1849,9 @@
       "status": "available",
       "low": 10.5,
       "mean": 12.6667,
-      "high": 14.0
+      "high": 14.0,
+      "source_url": "https://finance.yahoo.com/quote/ARDT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SGMT",
@@ -1489,7 +1859,9 @@
       "status": "available",
       "low": 7.0,
       "mean": 28.0,
-      "high": 56.0
+      "high": 56.0,
+      "source_url": "https://finance.yahoo.com/quote/SGMT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "FWRG",
@@ -1497,7 +1869,9 @@
       "status": "available",
       "low": 17.0,
       "mean": 19.5,
-      "high": 22.0
+      "high": 22.0,
+      "source_url": "https://finance.yahoo.com/quote/FWRG/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SLDE",
@@ -1505,7 +1879,9 @@
       "status": "available",
       "low": 22.0,
       "mean": 25.8,
-      "high": 28.0
+      "high": 28.0,
+      "source_url": "https://finance.yahoo.com/quote/SLDE/analysis/",
+      "quoted_at": null
     },
     {
       "code": "INDI",
@@ -1513,7 +1889,9 @@
       "status": "available",
       "low": 4.25,
       "mean": 5.7188,
-      "high": 8.0
+      "high": 8.0,
+      "source_url": "https://finance.yahoo.com/quote/INDI/analysis/",
+      "quoted_at": null
     },
     {
       "code": "MYGN",
@@ -1521,7 +1899,9 @@
       "status": "available",
       "low": 2.0,
       "mean": 3.4125,
-      "high": 5.0
+      "high": 5.0,
+      "source_url": "https://finance.yahoo.com/quote/MYGN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "DOCU",
@@ -1529,7 +1909,9 @@
       "status": "available",
       "low": 46.89,
       "mean": 69.9931,
-      "high": 86.0
+      "high": 86.0,
+      "source_url": "https://finance.yahoo.com/quote/DOCU/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CLFD",
@@ -1537,7 +1919,9 @@
       "status": "available",
       "low": 38.0,
       "mean": 40.25,
-      "high": 45.0
+      "high": 45.0,
+      "source_url": "https://finance.yahoo.com/quote/CLFD/analysis/",
+      "quoted_at": null
     },
     {
       "code": "RUM",
@@ -1545,7 +1929,9 @@
       "status": "available",
       "low": 22.0,
       "mean": 22.0,
-      "high": 22.0
+      "high": 22.0,
+      "source_url": "https://finance.yahoo.com/quote/RUM/analysis/",
+      "quoted_at": null
     },
     {
       "code": "EGHT",
@@ -1553,7 +1939,9 @@
       "status": "available",
       "low": 1.5,
       "mean": 2.5833,
-      "high": 3.25
+      "high": 3.25,
+      "source_url": "https://finance.yahoo.com/quote/EGHT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "GERN",
@@ -1561,7 +1949,9 @@
       "status": "available",
       "low": 3.0,
       "mean": 4.25,
-      "high": 6.0
+      "high": 6.0,
+      "source_url": "https://finance.yahoo.com/quote/GERN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "EVEX",
@@ -1569,7 +1959,9 @@
       "status": "available",
       "low": 3.3,
       "mean": 6.2875,
-      "high": 9.0
+      "high": 9.0,
+      "source_url": "https://finance.yahoo.com/quote/EVEX/analysis/",
+      "quoted_at": null
     },
     {
       "code": "OKLO",
@@ -1577,7 +1969,9 @@
       "status": "available",
       "low": 14.0,
       "mean": 75.775,
-      "high": 130.0
+      "high": 130.0,
+      "source_url": "https://finance.yahoo.com/quote/OKLO/analysis/",
+      "quoted_at": null
     },
     {
       "code": "OXM",
@@ -1585,7 +1979,9 @@
       "status": "available",
       "low": 33.0,
       "mean": 34.0,
-      "high": 35.0
+      "high": 35.0,
+      "source_url": "https://finance.yahoo.com/quote/OXM/analysis/",
+      "quoted_at": null
     },
     {
       "code": "MTH",
@@ -1593,7 +1989,9 @@
       "status": "available",
       "low": 65.0,
       "mean": 80.375,
-      "high": 93.0
+      "high": 93.0,
+      "source_url": "https://finance.yahoo.com/quote/MTH/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SNAP",
@@ -1601,7 +1999,9 @@
       "status": "available",
       "low": 5.0,
       "mean": 7.3943,
-      "high": 16.0
+      "high": 16.0,
+      "source_url": "https://finance.yahoo.com/quote/SNAP/analysis/",
+      "quoted_at": null
     },
     {
       "code": "WHR",
@@ -1609,7 +2009,9 @@
       "status": "available",
       "low": 31.0,
       "mean": 50.6667,
-      "high": 137.0
+      "high": 137.0,
+      "source_url": "https://finance.yahoo.com/quote/WHR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ARRY",
@@ -1617,7 +2019,9 @@
       "status": "available",
       "low": 4.0,
       "mean": 8.4891,
-      "high": 13.0
+      "high": 13.0,
+      "source_url": "https://finance.yahoo.com/quote/ARRY/analysis/",
+      "quoted_at": null
     },
     {
       "code": "TE",
@@ -1625,7 +2029,9 @@
       "status": "available",
       "low": 5.0,
       "mean": 8.7778,
-      "high": 16.0
+      "high": 16.0,
+      "source_url": "https://finance.yahoo.com/quote/TE/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ARQQ",
@@ -1633,7 +2039,9 @@
       "status": "unavailable",
       "low": null,
       "mean": null,
-      "high": null
+      "high": null,
+      "source_url": "https://finance.yahoo.com/quote/ARQQ/analysis/",
+      "quoted_at": null
     },
     {
       "code": "PYPL",
@@ -1641,7 +2049,9 @@
       "status": "available",
       "low": 36.0,
       "mean": 56.9172,
-      "high": 80.0
+      "high": 80.0,
+      "source_url": "https://finance.yahoo.com/quote/PYPL/analysis/",
+      "quoted_at": null
     },
     {
       "code": "MNRO",
@@ -1649,7 +2059,9 @@
       "status": "available",
       "low": 15.0,
       "mean": 22.0,
-      "high": 40.0
+      "high": 40.0,
+      "source_url": "https://finance.yahoo.com/quote/MNRO/analysis/",
+      "quoted_at": null
     },
     {
       "code": "XE",
@@ -1657,7 +2069,9 @@
       "status": "available",
       "low": 9.0,
       "mean": 34.375,
-      "high": 57.0
+      "high": 57.0,
+      "source_url": "https://finance.yahoo.com/quote/XE/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ADTN",
@@ -1665,7 +2079,9 @@
       "status": "available",
       "low": 11.0,
       "mean": 14.6667,
-      "high": 21.0
+      "high": 21.0,
+      "source_url": "https://finance.yahoo.com/quote/ADTN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ENOV",
@@ -1673,7 +2089,9 @@
       "status": "available",
       "low": 24.0,
       "mean": 38.3333,
-      "high": 52.0
+      "high": 52.0,
+      "source_url": "https://finance.yahoo.com/quote/ENOV/analysis/",
+      "quoted_at": null
     },
     {
       "code": "PLAY",
@@ -1681,7 +2099,9 @@
       "status": "available",
       "low": 9.0,
       "mean": 13.0,
-      "high": 22.0
+      "high": 22.0,
+      "source_url": "https://finance.yahoo.com/quote/PLAY/analysis/",
+      "quoted_at": null
     },
     {
       "code": "FPS",
@@ -1689,7 +2109,9 @@
       "status": "available",
       "low": 44.0,
       "mean": 56.4545,
-      "high": 76.0
+      "high": 76.0,
+      "source_url": "https://finance.yahoo.com/quote/FPS/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ODD",
@@ -1697,7 +2119,9 @@
       "status": "available",
       "low": 9.0,
       "mean": 15.3125,
-      "high": 21.0
+      "high": 21.0,
+      "source_url": "https://finance.yahoo.com/quote/ODD/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NTGR",
@@ -1705,7 +2129,9 @@
       "status": "available",
       "low": 34.0,
       "mean": 35.0,
-      "high": 36.0
+      "high": 36.0,
+      "source_url": "https://finance.yahoo.com/quote/NTGR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ENVX",
@@ -1713,7 +2139,9 @@
       "status": "available",
       "low": 5.0,
       "mean": 11.35,
-      "high": 21.0
+      "high": 21.0,
+      "source_url": "https://finance.yahoo.com/quote/ENVX/analysis/",
+      "quoted_at": null
     },
     {
       "code": "LYFT",
@@ -1721,7 +2149,9 @@
       "status": "available",
       "low": 14.0,
       "mean": 19.4378,
-      "high": 30.0
+      "high": 30.0,
+      "source_url": "https://finance.yahoo.com/quote/LYFT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SOUN",
@@ -1729,7 +2159,9 @@
       "status": "available",
       "low": 6.0,
       "mean": 12.5714,
-      "high": 17.0
+      "high": 17.0,
+      "source_url": "https://finance.yahoo.com/quote/SOUN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "AVNT",
@@ -1737,7 +2169,9 @@
       "status": "available",
       "low": 46.0,
       "mean": 50.8571,
-      "high": 56.0
+      "high": 56.0,
+      "source_url": "https://finance.yahoo.com/quote/AVNT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SLDP",
@@ -1745,7 +2179,9 @@
       "status": "available",
       "low": 6.75,
       "mean": 6.875,
-      "high": 7.0
+      "high": 7.0,
+      "source_url": "https://finance.yahoo.com/quote/SLDP/analysis/",
+      "quoted_at": null
     },
     {
       "code": "VIA",
@@ -1753,7 +2189,9 @@
       "status": "available",
       "low": 25.0,
       "mean": 35.7778,
-      "high": 55.0
+      "high": 55.0,
+      "source_url": "https://finance.yahoo.com/quote/VIA/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CYH",
@@ -1761,7 +2199,9 @@
       "status": "available",
       "low": 2.0,
       "mean": 3.1562,
-      "high": 4.0
+      "high": 4.0,
+      "source_url": "https://finance.yahoo.com/quote/CYH/analysis/",
+      "quoted_at": null
     },
     {
       "code": "OMDA",
@@ -1769,7 +2209,9 @@
       "status": "available",
       "low": 22.0,
       "mean": 28.4167,
-      "high": 35.0
+      "high": 35.0,
+      "source_url": "https://finance.yahoo.com/quote/OMDA/analysis/",
+      "quoted_at": null
     },
     {
       "code": "LCID",
@@ -1777,7 +2219,9 @@
       "status": "available",
       "low": 3.5,
       "mean": 7.9444,
-      "high": 17.0
+      "high": 17.0,
+      "source_url": "https://finance.yahoo.com/quote/LCID/analysis/",
+      "quoted_at": null
     },
     {
       "code": "MWH",
@@ -1785,7 +2229,9 @@
       "status": "available",
       "low": 35.0,
       "mean": 44.5455,
-      "high": 55.0
+      "high": 55.0,
+      "source_url": "https://finance.yahoo.com/quote/MWH/analysis/",
+      "quoted_at": null
     },
     {
       "code": "HLLY",
@@ -1793,7 +2239,9 @@
       "status": "available",
       "low": 3.5,
       "mean": 4.5786,
-      "high": 7.0
+      "high": 7.0,
+      "source_url": "https://finance.yahoo.com/quote/HLLY/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NNE",
@@ -1801,7 +2249,9 @@
       "status": "available",
       "low": 22.0,
       "mean": 37.5714,
-      "high": 50.0
+      "high": 50.0,
+      "source_url": "https://finance.yahoo.com/quote/NNE/analysis/",
+      "quoted_at": null
     },
     {
       "code": "PLNT",
@@ -1809,7 +2259,9 @@
       "status": "available",
       "low": 49.2,
       "mean": 66.3059,
-      "high": 106.0
+      "high": 106.0,
+      "source_url": "https://finance.yahoo.com/quote/PLNT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CRNC",
@@ -1817,7 +2269,9 @@
       "status": "available",
       "low": 9.0,
       "mean": 10.75,
-      "high": 12.0
+      "high": 12.0,
+      "source_url": "https://finance.yahoo.com/quote/CRNC/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ALHC",
@@ -1825,7 +2279,9 @@
       "status": "available",
       "low": 13.0,
       "mean": 22.2308,
-      "high": 28.0
+      "high": 28.0,
+      "source_url": "https://finance.yahoo.com/quote/ALHC/analysis/",
+      "quoted_at": null
     },
     {
       "code": "QS",
@@ -1833,7 +2289,9 @@
       "status": "available",
       "low": 2.5,
       "mean": 6.6625,
-      "high": 10.0
+      "high": 10.0,
+      "source_url": "https://finance.yahoo.com/quote/QS/analysis/",
+      "quoted_at": null
     },
     {
       "code": "YSS",
@@ -1841,7 +2299,9 @@
       "status": "available",
       "low": 11.0,
       "mean": 14.85,
-      "high": 18.0
+      "high": 18.0,
+      "source_url": "https://finance.yahoo.com/quote/YSS/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NRDS",
@@ -1849,7 +2309,9 @@
       "status": "available",
       "low": 8.0,
       "mean": 11.8,
-      "high": 15.0
+      "high": 15.0,
+      "source_url": "https://finance.yahoo.com/quote/NRDS/analysis/",
+      "quoted_at": null
     },
     {
       "code": "FRMI",
@@ -1857,7 +2319,9 @@
       "status": "available",
       "low": 6.0,
       "mean": 17.125,
-      "high": 35.0
+      "high": 35.0,
+      "source_url": "https://finance.yahoo.com/quote/FRMI/analysis/",
+      "quoted_at": null
     },
     {
       "code": "HUBG",
@@ -1865,7 +2329,9 @@
       "status": "available",
       "low": 29.0,
       "mean": 38.5833,
-      "high": 50.0
+      "high": 50.0,
+      "source_url": "https://finance.yahoo.com/quote/HUBG/analysis/",
+      "quoted_at": null
     },
     {
       "code": "UHS",
@@ -1873,7 +2339,9 @@
       "status": "available",
       "low": 166.0,
       "mean": 194.3529,
-      "high": 290.0
+      "high": 290.0,
+      "source_url": "https://finance.yahoo.com/quote/UHS/analysis/",
+      "quoted_at": null
     },
     {
       "code": "WLTH",
@@ -1881,7 +2349,9 @@
       "status": "available",
       "low": 10.0,
       "mean": 12.1071,
-      "high": 17.0
+      "high": 17.0,
+      "source_url": "https://finance.yahoo.com/quote/WLTH/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ALMU",
@@ -1889,7 +2359,9 @@
       "status": "available",
       "low": 22.0,
       "mean": 23.5,
-      "high": 25.0
+      "high": 25.0,
+      "source_url": "https://finance.yahoo.com/quote/ALMU/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ONT",
@@ -1897,7 +2369,9 @@
       "status": "available",
       "low": 15.0,
       "mean": 18.6,
-      "high": 23.0
+      "high": 23.0,
+      "source_url": "https://finance.yahoo.com/quote/ONT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NCLH",
@@ -1905,7 +2379,9 @@
       "status": "available",
       "low": 13.0,
       "mean": 20.2,
-      "high": 32.0
+      "high": 32.0,
+      "source_url": "https://finance.yahoo.com/quote/NCLH/analysis/",
+      "quoted_at": null
     },
     {
       "code": "RR",
@@ -1913,7 +2389,9 @@
       "status": "available",
       "low": 2.0,
       "mean": 2.0,
-      "high": 2.0
+      "high": 2.0,
+      "source_url": "https://finance.yahoo.com/quote/RR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "KVYO",
@@ -1921,7 +2399,9 @@
       "status": "available",
       "low": 19.0,
       "mean": 26.5714,
-      "high": 36.0
+      "high": 36.0,
+      "source_url": "https://finance.yahoo.com/quote/KVYO/analysis/",
+      "quoted_at": null
     },
     {
       "code": "BKSY",
@@ -1929,7 +2409,9 @@
       "status": "available",
       "low": 33.0,
       "mean": 38.4237,
-      "high": 50.0
+      "high": 50.0,
+      "source_url": "https://finance.yahoo.com/quote/BKSY/analysis/",
+      "quoted_at": null
     },
     {
       "code": "JACK",
@@ -1937,7 +2419,9 @@
       "status": "available",
       "low": 12.0,
       "mean": 19.9167,
-      "high": 36.0
+      "high": 36.0,
+      "source_url": "https://finance.yahoo.com/quote/JACK/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ASPI",
@@ -1945,7 +2429,9 @@
       "status": "available",
       "low": 11.0,
       "mean": 13.0,
-      "high": 15.0
+      "high": 15.0,
+      "source_url": "https://finance.yahoo.com/quote/ASPI/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CLB",
@@ -1953,7 +2439,9 @@
       "status": "available",
       "low": 11.0,
       "mean": 15.0,
-      "high": 21.0
+      "high": 21.0,
+      "source_url": "https://finance.yahoo.com/quote/CLB/analysis/",
+      "quoted_at": null
     },
     {
       "code": "FUBO",
@@ -1961,7 +2449,9 @@
       "status": "available",
       "low": 12.0,
       "mean": 17.0,
-      "high": 23.0
+      "high": 23.0,
+      "source_url": "https://finance.yahoo.com/quote/FUBO/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CE",
@@ -1969,7 +2459,9 @@
       "status": "available",
       "low": 45.0,
       "mean": 63.1176,
-      "high": 86.0
+      "high": 86.0,
+      "source_url": "https://finance.yahoo.com/quote/CE/analysis/",
+      "quoted_at": null
     },
     {
       "code": "VOYG",
@@ -1977,7 +2469,9 @@
       "status": "available",
       "low": 21.0,
       "mean": 46.7,
-      "high": 65.0
+      "high": 65.0,
+      "source_url": "https://finance.yahoo.com/quote/VOYG/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ARHS",
@@ -1985,7 +2479,9 @@
       "status": "available",
       "low": 9.0,
       "mean": 10.5385,
-      "high": 13.0
+      "high": 13.0,
+      "source_url": "https://finance.yahoo.com/quote/ARHS/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ULCC",
@@ -1993,7 +2489,9 @@
       "status": "available",
       "low": 4.0,
       "mean": 6.5556,
-      "high": 9.0
+      "high": 9.0,
+      "source_url": "https://finance.yahoo.com/quote/ULCC/analysis/",
+      "quoted_at": null
     },
     {
       "code": "WOLF",
@@ -2001,7 +2499,9 @@
       "status": "available",
       "low": 25.0,
       "mean": 27.5,
-      "high": 30.0
+      "high": 30.0,
+      "source_url": "https://finance.yahoo.com/quote/WOLF/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ACDC",
@@ -2009,7 +2509,9 @@
       "status": "available",
       "low": 4.5,
       "mean": 5.4875,
-      "high": 6.7
+      "high": 6.7,
+      "source_url": "https://finance.yahoo.com/quote/ACDC/analysis/",
+      "quoted_at": null
     },
     {
       "code": "RGNX",
@@ -2017,7 +2519,9 @@
       "status": "available",
       "low": 10.0,
       "mean": 23.7273,
-      "high": 50.0
+      "high": 50.0,
+      "source_url": "https://finance.yahoo.com/quote/RGNX/analysis/",
+      "quoted_at": null
     },
     {
       "code": "EQPT",
@@ -2025,7 +2529,9 @@
       "status": "available",
       "low": 22.0,
       "mean": 32.7,
-      "high": 55.0
+      "high": 55.0,
+      "source_url": "https://finance.yahoo.com/quote/EQPT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "VELO",
@@ -2033,7 +2539,9 @@
       "status": "available",
       "low": 17.0,
       "mean": 23.25,
-      "high": 33.0
+      "high": 33.0,
+      "source_url": "https://finance.yahoo.com/quote/VELO/analysis/",
+      "quoted_at": null
     },
     {
       "code": "FLY",
@@ -2041,7 +2549,9 @@
       "status": "available",
       "low": 25.0,
       "mean": 38.6,
-      "high": 50.0
+      "high": 50.0,
+      "source_url": "https://finance.yahoo.com/quote/FLY/analysis/",
+      "quoted_at": null
     },
     {
       "code": "BETA",
@@ -2049,7 +2559,9 @@
       "status": "available",
       "low": 29.0,
       "mean": 32.0,
-      "high": 37.0
+      "high": 37.0,
+      "source_url": "https://finance.yahoo.com/quote/BETA/analysis/",
+      "quoted_at": null
     },
     {
       "code": "GENI",
@@ -2057,7 +2569,9 @@
       "status": "available",
       "low": 6.0,
       "mean": 10.881,
-      "high": 20.0
+      "high": 20.0,
+      "source_url": "https://finance.yahoo.com/quote/GENI/analysis/",
+      "quoted_at": null
     },
     {
       "code": "MRLN",
@@ -2065,7 +2579,9 @@
       "status": "available",
       "low": 7.0,
       "mean": 8.5833,
-      "high": 10.0
+      "high": 10.0,
+      "source_url": "https://finance.yahoo.com/quote/MRLN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "EOSE",
@@ -2073,7 +2589,9 @@
       "status": "available",
       "low": 4.0,
       "mean": 6.5,
-      "high": 10.0
+      "high": 10.0,
+      "source_url": "https://finance.yahoo.com/quote/EOSE/analysis/",
+      "quoted_at": null
     },
     {
       "code": "RCKT",
@@ -2081,7 +2599,9 @@
       "status": "available",
       "low": 3.0,
       "mean": 8.8542,
-      "high": 15.0
+      "high": 15.0,
+      "source_url": "https://finance.yahoo.com/quote/RCKT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CABA",
@@ -2089,7 +2609,9 @@
       "status": "available",
       "low": 3.0,
       "mean": 13.25,
-      "high": 30.0
+      "high": 30.0,
+      "source_url": "https://finance.yahoo.com/quote/CABA/analysis/",
+      "quoted_at": null
     },
     {
       "code": "BETR",
@@ -2097,7 +2619,9 @@
       "status": "available",
       "low": 16.0,
       "mean": 25.7143,
-      "high": 35.0
+      "high": 35.0,
+      "source_url": "https://finance.yahoo.com/quote/BETR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "RUN",
@@ -2105,7 +2629,9 @@
       "status": "available",
       "low": 10.0,
       "mean": 15.8684,
-      "high": 30.0
+      "high": 30.0,
+      "source_url": "https://finance.yahoo.com/quote/RUN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "IE",
@@ -2113,7 +2639,9 @@
       "status": "available",
       "low": 16.0,
       "mean": 21.4167,
-      "high": 28.5
+      "high": 28.5,
+      "source_url": "https://finance.yahoo.com/quote/IE/analysis/",
+      "quoted_at": null
     },
     {
       "code": "FATE",
@@ -2121,7 +2649,9 @@
       "status": "available",
       "low": 2.2,
       "mean": 5.7444,
-      "high": 8.0
+      "high": 8.0,
+      "source_url": "https://finance.yahoo.com/quote/FATE/analysis/",
+      "quoted_at": null
     },
     {
       "code": "WD",
@@ -2129,7 +2659,9 @@
       "status": "available",
       "low": 55.0,
       "mean": 57.0,
-      "high": 59.0
+      "high": 59.0,
+      "source_url": "https://finance.yahoo.com/quote/WD/analysis/",
+      "quoted_at": null
     },
     {
       "code": "PCT",
@@ -2137,7 +2669,9 @@
       "status": "available",
       "low": 6.0,
       "mean": 10.6,
-      "high": 17.0
+      "high": 17.0,
+      "source_url": "https://finance.yahoo.com/quote/PCT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "APTV",
@@ -2145,7 +2679,9 @@
       "status": "available",
       "low": 55.0,
       "mean": 66.6111,
-      "high": 78.0
+      "high": 78.0,
+      "source_url": "https://finance.yahoo.com/quote/APTV/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CATX",
@@ -2153,7 +2689,9 @@
       "status": "available",
       "low": 5.0,
       "mean": 12.2857,
-      "high": 18.0
+      "high": 18.0,
+      "source_url": "https://finance.yahoo.com/quote/CATX/analysis/",
+      "quoted_at": null
     },
     {
       "code": "GLOB",
@@ -2161,7 +2699,9 @@
       "status": "available",
       "low": 33.0,
       "mean": 51.5909,
-      "high": 100.0
+      "high": 100.0,
+      "source_url": "https://finance.yahoo.com/quote/GLOB/analysis/",
+      "quoted_at": null
     },
     {
       "code": "LZM",
@@ -2169,7 +2709,9 @@
       "status": "available",
       "low": 7.0,
       "mean": 8.6267,
-      "high": 10.88
+      "high": 10.88,
+      "source_url": "https://finance.yahoo.com/quote/LZM/analysis/",
+      "quoted_at": null
     },
     {
       "code": "FIP",
@@ -2177,7 +2719,9 @@
       "status": "available",
       "low": 8.75,
       "mean": 9.9375,
-      "high": 12.0
+      "high": 12.0,
+      "source_url": "https://finance.yahoo.com/quote/FIP/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NTLA",
@@ -2185,7 +2729,9 @@
       "status": "available",
       "low": 8.0,
       "mean": 24.0,
-      "high": 61.0
+      "high": 61.0,
+      "source_url": "https://finance.yahoo.com/quote/NTLA/analysis/",
+      "quoted_at": null
     },
     {
       "code": "KYTX",
@@ -2193,7 +2739,9 @@
       "status": "available",
       "low": 25.0,
       "mean": 30.4,
-      "high": 33.0
+      "high": 33.0,
+      "source_url": "https://finance.yahoo.com/quote/KYTX/analysis/",
+      "quoted_at": null
     },
     {
       "code": "FLUT",
@@ -2201,7 +2749,9 @@
       "status": "available",
       "low": 85.0,
       "mean": 134.8687,
-      "high": 360.0
+      "high": 360.0,
+      "source_url": "https://finance.yahoo.com/quote/FLUT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "GOGO",
@@ -2209,7 +2759,9 @@
       "status": "available",
       "low": 7.0,
       "mean": 8.5,
-      "high": 10.0
+      "high": 10.0,
+      "source_url": "https://finance.yahoo.com/quote/GOGO/analysis/",
+      "quoted_at": null
     },
     {
       "code": "RKT",
@@ -2217,7 +2769,9 @@
       "status": "available",
       "low": 14.0,
       "mean": 17.7,
-      "high": 21.0
+      "high": 21.0,
+      "source_url": "https://finance.yahoo.com/quote/RKT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SVV",
@@ -2225,7 +2779,9 @@
       "status": "available",
       "low": 11.0,
       "mean": 14.2273,
-      "high": 20.0
+      "high": 20.0,
+      "source_url": "https://finance.yahoo.com/quote/SVV/analysis/",
+      "quoted_at": null
     },
     {
       "code": "AGIO",
@@ -2233,7 +2789,9 @@
       "status": "available",
       "low": 32.0,
       "mean": 46.25,
-      "high": 73.0
+      "high": 73.0,
+      "source_url": "https://finance.yahoo.com/quote/AGIO/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NPWR",
@@ -2241,7 +2799,9 @@
       "status": "available",
       "low": 2.5,
       "mean": 2.85,
-      "high": 3.5
+      "high": 3.5,
+      "source_url": "https://finance.yahoo.com/quote/NPWR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "EDIT",
@@ -2249,7 +2809,9 @@
       "status": "available",
       "low": 1.0,
       "mean": 5.9,
-      "high": 15.0
+      "high": 15.0,
+      "source_url": "https://finance.yahoo.com/quote/EDIT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "MAGN",
@@ -2257,7 +2819,9 @@
       "status": "available",
       "low": 15.0,
       "mean": 15.5,
-      "high": 16.0
+      "high": 16.0,
+      "source_url": "https://finance.yahoo.com/quote/MAGN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ABAT",
@@ -2265,7 +2829,9 @@
       "status": "available",
       "low": 5.0,
       "mean": 6.0,
-      "high": 7.0
+      "high": 7.0,
+      "source_url": "https://finance.yahoo.com/quote/ABAT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "LAES",
@@ -2273,7 +2839,9 @@
       "status": "available",
       "low": 3.75,
       "mean": 5.875,
-      "high": 8.0
+      "high": 8.0,
+      "source_url": "https://finance.yahoo.com/quote/LAES/analysis/",
+      "quoted_at": null
     },
     {
       "code": "PGY",
@@ -2281,7 +2849,9 @@
       "status": "available",
       "low": 23.0,
       "mean": 28.9091,
-      "high": 36.0
+      "high": 36.0,
+      "source_url": "https://finance.yahoo.com/quote/PGY/analysis/",
+      "quoted_at": null
     },
     {
       "code": "DFH",
@@ -2289,7 +2859,9 @@
       "status": "unavailable",
       "low": null,
       "mean": null,
-      "high": null
+      "high": null,
+      "source_url": "https://finance.yahoo.com/quote/DFH/analysis/",
+      "quoted_at": null
     },
     {
       "code": "EFX",
@@ -2297,7 +2869,9 @@
       "status": "available",
       "low": 160.0,
       "mean": 212.1429,
-      "high": 245.0
+      "high": 245.0,
+      "source_url": "https://finance.yahoo.com/quote/EFX/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ORGO",
@@ -2305,7 +2879,9 @@
       "status": "available",
       "low": 2.0,
       "mean": 2.0,
-      "high": 2.0
+      "high": 2.0,
+      "source_url": "https://finance.yahoo.com/quote/ORGO/analysis/",
+      "quoted_at": null
     },
     {
       "code": "GLXY",
@@ -2313,7 +2889,9 @@
       "status": "available",
       "low": 26.0,
       "mean": 40.625,
-      "high": 57.0
+      "high": 57.0,
+      "source_url": "https://finance.yahoo.com/quote/GLXY/analysis/",
+      "quoted_at": null
     },
     {
       "code": "IKT",
@@ -2321,7 +2899,9 @@
       "status": "available",
       "low": 3.0,
       "mean": 6.0,
-      "high": 8.0
+      "high": 8.0,
+      "source_url": "https://finance.yahoo.com/quote/IKT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NRGV",
@@ -2329,7 +2909,9 @@
       "status": "available",
       "low": 3.0,
       "mean": 6.206,
-      "high": 8.03
+      "high": 8.03,
+      "source_url": "https://finance.yahoo.com/quote/NRGV/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ZG",
@@ -2337,7 +2919,9 @@
       "status": "available",
       "low": 32.0,
       "mean": 47.2273,
-      "high": 80.0
+      "high": 80.0,
+      "source_url": "https://finance.yahoo.com/quote/ZG/analysis/",
+      "quoted_at": null
     },
     {
       "code": "BBNX",
@@ -2345,7 +2929,9 @@
       "status": "available",
       "low": 16.0,
       "mean": 23.2833,
-      "high": 30.4
+      "high": 30.4,
+      "source_url": "https://finance.yahoo.com/quote/BBNX/analysis/",
+      "quoted_at": null
     },
     {
       "code": "DNLI",
@@ -2353,7 +2939,9 @@
       "status": "available",
       "low": 27.0,
       "mean": 36.0625,
-      "high": 42.0
+      "high": 42.0,
+      "source_url": "https://finance.yahoo.com/quote/DNLI/analysis/",
+      "quoted_at": null
     },
     {
       "code": "HGV",
@@ -2361,7 +2949,9 @@
       "status": "available",
       "low": 46.0,
       "mean": 55.9,
-      "high": 74.0
+      "high": 74.0,
+      "source_url": "https://finance.yahoo.com/quote/HGV/analysis/",
+      "quoted_at": null
     },
     {
       "code": "HUBS",
@@ -2369,7 +2959,9 @@
       "status": "available",
       "low": 190.0,
       "mean": 249.7168,
-      "high": 320.0
+      "high": 320.0,
+      "source_url": "https://finance.yahoo.com/quote/HUBS/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ORBS",
@@ -2377,7 +2969,9 @@
       "status": "unavailable",
       "low": null,
       "mean": null,
-      "high": null
+      "high": null,
+      "source_url": "https://finance.yahoo.com/quote/ORBS/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NB",
@@ -2385,7 +2979,9 @@
       "status": "available",
       "low": 4.7,
       "mean": 11.1167,
-      "high": 15.0
+      "high": 15.0,
+      "source_url": "https://finance.yahoo.com/quote/NB/analysis/",
+      "quoted_at": null
     },
     {
       "code": "LZ",
@@ -2393,7 +2989,9 @@
       "status": "available",
       "low": 6.0,
       "mean": 7.6,
-      "high": 9.0
+      "high": 9.0,
+      "source_url": "https://finance.yahoo.com/quote/LZ/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CPRI",
@@ -2401,7 +2999,9 @@
       "status": "available",
       "low": 16.0,
       "mean": 22.2188,
-      "high": 45.5
+      "high": 45.5,
+      "source_url": "https://finance.yahoo.com/quote/CPRI/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SITE",
@@ -2409,7 +3009,9 @@
       "status": "available",
       "low": 100.0,
       "mean": 127.0833,
-      "high": 160.0
+      "high": 160.0,
+      "source_url": "https://finance.yahoo.com/quote/SITE/analysis/",
+      "quoted_at": null
     },
     {
       "code": "AI",
@@ -2417,7 +3019,9 @@
       "status": "available",
       "low": 6.0,
       "mean": 8.3,
-      "high": 12.0
+      "high": 12.0,
+      "source_url": "https://finance.yahoo.com/quote/AI/analysis/",
+      "quoted_at": null
     },
     {
       "code": "DXYZ",
@@ -2425,7 +3029,9 @@
       "status": "unavailable",
       "low": null,
       "mean": null,
-      "high": null
+      "high": null,
+      "source_url": "https://finance.yahoo.com/quote/DXYZ/analysis/",
+      "quoted_at": null
     },
     {
       "code": "VERX",
@@ -2433,7 +3039,9 @@
       "status": "available",
       "low": 12.0,
       "mean": 17.1538,
-      "high": 25.0
+      "high": 25.0,
+      "source_url": "https://finance.yahoo.com/quote/VERX/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SMMT",
@@ -2441,7 +3049,9 @@
       "status": "available",
       "low": 11.5115,
       "mean": 29.4845,
-      "high": 42.9451
+      "high": 42.9451,
+      "source_url": "https://finance.yahoo.com/quote/SMMT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "TASK",
@@ -2449,7 +3059,9 @@
       "status": "available",
       "low": 7.0,
       "mean": 8.5,
-      "high": 12.0
+      "high": 12.0,
+      "source_url": "https://finance.yahoo.com/quote/TASK/analysis/",
+      "quoted_at": null
     },
     {
       "code": "PACK",
@@ -2457,7 +3069,9 @@
       "status": "available",
       "low": 6.0,
       "mean": 7.0833,
-      "high": 8.0
+      "high": 8.0,
+      "source_url": "https://finance.yahoo.com/quote/PACK/analysis/",
+      "quoted_at": null
     },
     {
       "code": "FOXF",
@@ -2465,7 +3079,9 @@
       "status": "available",
       "low": 20.0,
       "mean": 21.8333,
-      "high": 26.0
+      "high": 26.0,
+      "source_url": "https://finance.yahoo.com/quote/FOXF/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SIBN",
@@ -2473,7 +3089,9 @@
       "status": "available",
       "low": 20.0,
       "mean": 25.0,
-      "high": 32.0
+      "high": 32.0,
+      "source_url": "https://finance.yahoo.com/quote/SIBN/analysis/",
+      "quoted_at": null
     },
     {
       "code": "VRRM",
@@ -2481,7 +3099,9 @@
       "status": "available",
       "low": 5.0,
       "mean": 7.0,
-      "high": 10.0
+      "high": 10.0,
+      "source_url": "https://finance.yahoo.com/quote/VRRM/analysis/",
+      "quoted_at": null
     },
     {
       "code": "GTM",
@@ -2489,7 +3109,9 @@
       "status": "available",
       "low": 2.5,
       "mean": 4.5833,
-      "high": 15.0
+      "high": 15.0,
+      "source_url": "https://finance.yahoo.com/quote/GTM/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SENS",
@@ -2497,7 +3119,9 @@
       "status": "available",
       "low": 8.0,
       "mean": 14.2,
-      "high": 18.0
+      "high": 18.0,
+      "source_url": "https://finance.yahoo.com/quote/SENS/analysis/",
+      "quoted_at": null
     },
     {
       "code": "BRZE",
@@ -2505,7 +3129,9 @@
       "status": "available",
       "low": 30.0,
       "mean": 37.3,
-      "high": 50.0
+      "high": 50.0,
+      "source_url": "https://finance.yahoo.com/quote/BRZE/analysis/",
+      "quoted_at": null
     },
     {
       "code": "WDAY",
@@ -2513,7 +3139,9 @@
       "status": "available",
       "low": 92.0,
       "mean": 208.2597,
-      "high": 275.0
+      "high": 275.0,
+      "source_url": "https://finance.yahoo.com/quote/WDAY/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NUAI",
@@ -2521,7 +3149,9 @@
       "status": "available",
       "low": 12.0,
       "mean": 12.5,
-      "high": 13.0
+      "high": 13.0,
+      "source_url": "https://finance.yahoo.com/quote/NUAI/analysis/",
+      "quoted_at": null
     },
     {
       "code": "WLFC",
@@ -2529,7 +3159,9 @@
       "status": "available",
       "low": 71.0,
       "mean": 75.5,
-      "high": 80.0
+      "high": 80.0,
+      "source_url": "https://finance.yahoo.com/quote/WLFC/analysis/",
+      "quoted_at": null
     },
     {
       "code": "OEC",
@@ -2537,7 +3169,9 @@
       "status": "available",
       "low": 5.0,
       "mean": 6.6875,
-      "high": 8.5
+      "high": 8.5,
+      "source_url": "https://finance.yahoo.com/quote/OEC/analysis/",
+      "quoted_at": null
     },
     {
       "code": "HAYW",
@@ -2545,7 +3179,9 @@
       "status": "available",
       "low": 15.0,
       "mean": 17.9286,
-      "high": 19.5
+      "high": 19.5,
+      "source_url": "https://finance.yahoo.com/quote/HAYW/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SWIM",
@@ -2553,7 +3189,9 @@
       "status": "available",
       "low": 6.0,
       "mean": 8.6083,
-      "high": 13.0
+      "high": 13.0,
+      "source_url": "https://finance.yahoo.com/quote/SWIM/analysis/",
+      "quoted_at": null
     },
     {
       "code": "GEHC",
@@ -2561,7 +3199,9 @@
       "status": "available",
       "low": 70.0,
       "mean": 83.0526,
-      "high": 96.0
+      "high": 96.0,
+      "source_url": "https://finance.yahoo.com/quote/GEHC/analysis/",
+      "quoted_at": null
     },
     {
       "code": "STAA",
@@ -2569,7 +3209,9 @@
       "status": "available",
       "low": 19.0,
       "mean": 27.7,
-      "high": 37.0
+      "high": 37.0,
+      "source_url": "https://finance.yahoo.com/quote/STAA/analysis/",
+      "quoted_at": null
     },
     {
       "code": "EVER",
@@ -2577,7 +3219,9 @@
       "status": "available",
       "low": 28.0,
       "mean": 29.5,
-      "high": 34.0
+      "high": 34.0,
+      "source_url": "https://finance.yahoo.com/quote/EVER/analysis/",
+      "quoted_at": null
     },
     {
       "code": "WEAV",
@@ -2585,7 +3229,9 @@
       "status": "available",
       "low": 7.4,
       "mean": 7.4,
-      "high": 7.4
+      "high": 7.4,
+      "source_url": "https://finance.yahoo.com/quote/WEAV/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SRPT",
@@ -2593,7 +3239,9 @@
       "status": "available",
       "low": 5.0,
       "mean": 21.7273,
-      "high": 38.0
+      "high": 38.0,
+      "source_url": "https://finance.yahoo.com/quote/SRPT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "EYE",
@@ -2601,7 +3249,9 @@
       "status": "available",
       "low": 20.0,
       "mean": 28.1818,
-      "high": 35.0
+      "high": 35.0,
+      "source_url": "https://finance.yahoo.com/quote/EYE/analysis/",
+      "quoted_at": null
     },
     {
       "code": "WWW",
@@ -2609,7 +3259,9 @@
       "status": "available",
       "low": 19.0,
       "mean": 24.3,
-      "high": 31.0
+      "high": 31.0,
+      "source_url": "https://finance.yahoo.com/quote/WWW/analysis/",
+      "quoted_at": null
     },
     {
       "code": "RXRX",
@@ -2617,7 +3269,9 @@
       "status": "available",
       "low": 4.0,
       "mean": 7.2167,
-      "high": 10.0
+      "high": 10.0,
+      "source_url": "https://finance.yahoo.com/quote/RXRX/analysis/",
+      "quoted_at": null
     },
     {
       "code": "WAY",
@@ -2625,7 +3279,9 @@
       "status": "available",
       "low": 28.0,
       "mean": 33.6818,
-      "high": 44.0
+      "high": 44.0,
+      "source_url": "https://finance.yahoo.com/quote/WAY/analysis/",
+      "quoted_at": null
     },
     {
       "code": "LIF",
@@ -2633,7 +3289,9 @@
       "status": "available",
       "low": 40.0,
       "mean": 60.7,
-      "high": 72.0
+      "high": 72.0,
+      "source_url": "https://finance.yahoo.com/quote/LIF/analysis/",
+      "quoted_at": null
     },
     {
       "code": "COLL",
@@ -2641,7 +3299,9 @@
       "status": "available",
       "low": 43.0,
       "mean": 49.0,
-      "high": 60.0
+      "high": 60.0,
+      "source_url": "https://finance.yahoo.com/quote/COLL/analysis/",
+      "quoted_at": null
     },
     {
       "code": "UMAC",
@@ -2649,7 +3309,9 @@
       "status": "available",
       "low": 30.0,
       "mean": 39.0,
-      "high": 45.0
+      "high": 45.0,
+      "source_url": "https://finance.yahoo.com/quote/UMAC/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SONO",
@@ -2657,7 +3319,9 @@
       "status": "available",
       "low": 15.5,
       "mean": 18.625,
-      "high": 21.0
+      "high": 21.0,
+      "source_url": "https://finance.yahoo.com/quote/SONO/analysis/",
+      "quoted_at": null
     },
     {
       "code": "GSHD",
@@ -2665,7 +3329,9 @@
       "status": "available",
       "low": 44.0,
       "mean": 68.6667,
-      "high": 100.0
+      "high": 100.0,
+      "source_url": "https://finance.yahoo.com/quote/GSHD/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CERT",
@@ -2673,7 +3339,9 @@
       "status": "available",
       "low": 7.0,
       "mean": 8.4864,
-      "high": 10.0
+      "high": 10.0,
+      "source_url": "https://finance.yahoo.com/quote/CERT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "TDOC",
@@ -2681,7 +3349,9 @@
       "status": "available",
       "low": 5.5,
       "mean": 7.6765,
-      "high": 10.5
+      "high": 10.5,
+      "source_url": "https://finance.yahoo.com/quote/TDOC/analysis/",
+      "quoted_at": null
     },
     {
       "code": "COUR",
@@ -2689,7 +3359,9 @@
       "status": "available",
       "low": 6.5,
       "mean": 8.1667,
-      "high": 10.0
+      "high": 10.0,
+      "source_url": "https://finance.yahoo.com/quote/COUR/analysis/",
+      "quoted_at": null
     },
     {
       "code": "INSP",
@@ -2697,7 +3369,9 @@
       "status": "available",
       "low": 40.0,
       "mean": 63.8,
-      "high": 97.0
+      "high": 97.0,
+      "source_url": "https://finance.yahoo.com/quote/INSP/analysis/",
+      "quoted_at": null
     },
     {
       "code": "SERV",
@@ -2705,7 +3379,9 @@
       "status": "available",
       "low": 7.0,
       "mean": 12.1429,
-      "high": 22.0
+      "high": 22.0,
+      "source_url": "https://finance.yahoo.com/quote/SERV/analysis/",
+      "quoted_at": null
     },
     {
       "code": "TRIP",
@@ -2713,7 +3389,9 @@
       "status": "available",
       "low": 9.0,
       "mean": 13.8667,
-      "high": 21.0
+      "high": 21.0,
+      "source_url": "https://finance.yahoo.com/quote/TRIP/analysis/",
+      "quoted_at": null
     },
     {
       "code": "CRCT",
@@ -2721,7 +3399,9 @@
       "status": "available",
       "low": 3.7,
       "mean": 4.0667,
-      "high": 4.5
+      "high": 4.5,
+      "source_url": "https://finance.yahoo.com/quote/CRCT/analysis/",
+      "quoted_at": null
     },
     {
       "code": "MTCH",
@@ -2729,7 +3409,9 @@
       "status": "available",
       "low": 35.0,
       "mean": 41.8824,
-      "high": 51.0
+      "high": 51.0,
+      "source_url": "https://finance.yahoo.com/quote/MTCH/analysis/",
+      "quoted_at": null
     },
     {
       "code": "YELP",
@@ -2737,7 +3419,9 @@
       "status": "available",
       "low": 19.0,
       "mean": 25.125,
-      "high": 30.0
+      "high": 30.0,
+      "source_url": "https://finance.yahoo.com/quote/YELP/analysis/",
+      "quoted_at": null
     },
     {
       "code": "ALVO",
@@ -2745,7 +3429,9 @@
       "status": "available",
       "low": 4.0,
       "mean": 6.8,
-      "high": 9.0
+      "high": 9.0,
+      "source_url": "https://finance.yahoo.com/quote/ALVO/analysis/",
+      "quoted_at": null
     },
     {
       "code": "REI",
@@ -2753,7 +3439,9 @@
       "status": "available",
       "low": 2.0,
       "mean": 2.0833,
-      "high": 2.25
+      "high": 2.25,
+      "source_url": "https://finance.yahoo.com/quote/REI/analysis/",
+      "quoted_at": null
     },
     {
       "code": "KOS",
@@ -2761,7 +3449,9 @@
       "status": "available",
       "low": 1.7,
       "mean": 2.985,
-      "high": 4.7
+      "high": 4.7,
+      "source_url": "https://finance.yahoo.com/quote/KOS/analysis/",
+      "quoted_at": null
     },
     {
       "code": "NEO",
@@ -2769,7 +3459,9 @@
       "status": "available",
       "low": 16.0,
       "mean": 19.7222,
-      "high": 35.0
+      "high": 35.0,
+      "source_url": "https://finance.yahoo.com/quote/NEO/analysis/",
+      "quoted_at": null
     },
     {
       "code": "QMCO",
@@ -2777,7 +3469,9 @@
       "status": "available",
       "low": 24.0,
       "mean": 26.5,
-      "high": 29.0
+      "high": 29.0,
+      "source_url": "https://finance.yahoo.com/quote/QMCO/analysis/",
+      "quoted_at": null
     },
     {
       "code": "AESI",
@@ -2785,7 +3479,9 @@
       "status": "available",
       "low": 12.0,
       "mean": 18.0,
-      "high": 25.0
+      "high": 25.0,
+      "source_url": "https://finance.yahoo.com/quote/AESI/analysis/",
+      "quoted_at": null
     },
     {
       "code": "PRME",
@@ -2793,7 +3489,9 @@
       "status": "available",
       "low": 4.25,
       "mean": 7.1136,
-      "high": 11.0
+      "high": 11.0,
+      "source_url": "https://finance.yahoo.com/quote/PRME/analysis/",
+      "quoted_at": null
     },
     {
       "code": "PPLI",
@@ -2801,7 +3499,9 @@
       "status": "available",
       "low": 48.0,
       "mean": 56.8,
-      "high": 70.0
+      "high": 70.0,
+      "source_url": "https://finance.yahoo.com/quote/PPLI/analysis/",
+      "quoted_at": null
     }
   ]
 }

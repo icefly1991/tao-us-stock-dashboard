@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 export const scenarioLabels = { optimistic: '乐观', conservative: '保守', stress: '极端保守' } as const
 export type ScenarioKey = keyof typeof scenarioLabels
-export type Scenario = { value: number; model: 'enterprise_dcf' | 'asset_recovery'; inputs: Record<string, number | number[]>; assumptions: Record<string, string>; sources: { title: string; url: string }[] }
+export type Scenario = { value: number; model: 'enterprise_dcf' | 'equity_dcf' | 'asset_recovery'; inputs: Record<string, number | number[]>; assumptions: Record<string, string>; sources: { title: string; url: string }[] }
 export type ValuationRow = { code: string; symbol: string; status: 'available' | 'pending' | 'not_applicable'; currency: 'USD'; valued_at: string | null; evidence_date: string | null; reason: string; scenarios: Record<ScenarioKey, Scenario> | null }
 type ValuationSnapshot = { schema_version: 1; basis: 'present_value'; generated_at: string; coverage: { available: number; pending: number; not_applicable: number }; rows: ValuationRow[] }
 
@@ -13,6 +13,18 @@ const date = (v: unknown): v is string => text(v) && /^\d{4}-\d{2}-\d{2}$/.test(
 
 function validInputs(model: unknown, value: Record<string, unknown>): boolean {
   const common = ['discount_rate']
+  const equity = model === 'equity_dcf'
+  if (equity) {
+    const fields = ['discount_rate', 'fcfe', 'terminal_growth', 'excess_equity_assets', 'additional_common_claims', 'diluted_shares']
+    if (Object.keys(value).length !== fields.length || !fields.every(key => Object.hasOwn(value, key))) return false
+    value = { ...value, fcff: value.fcfe, cash_and_nonoperating_assets: value.excess_equity_assets, debt_and_other_claims: value.additional_common_claims }
+  }
+  if (equity) {
+    delete value.fcfe
+    delete value.excess_equity_assets
+    delete value.additional_common_claims
+    model = 'enterprise_dcf'
+  }
   const expected = model === 'enterprise_dcf'
     ? [...common, 'fcff', 'terminal_growth', 'cash_and_nonoperating_assets', 'debt_and_other_claims', 'diluted_shares']
     : [...common, 'recoverable_assets', 'senior_claims', 'recovery_costs', 'current_common_shares', 'existing_common_entitlement', 'years_to_recovery']
@@ -38,7 +50,7 @@ export function isValuationSnapshot(value: unknown): value is ValuationSnapshot 
     const cases = row.scenarios
     if (Object.keys(cases).length !== 3 || !Object.keys(scenarioLabels).every(key => {
       const scenario = cases[key]
-      if (!record(scenario) || !finite(scenario.value) || scenario.value < 0 || !['enterprise_dcf', 'asset_recovery'].includes(String(scenario.model)) || !record(scenario.inputs) || !record(scenario.assumptions) || !Array.isArray(scenario.sources) || scenario.sources.length === 0) return false
+      if (!record(scenario) || !finite(scenario.value) || scenario.value < 0 || !['enterprise_dcf', 'equity_dcf', 'asset_recovery'].includes(String(scenario.model)) || !record(scenario.inputs) || !record(scenario.assumptions) || !Array.isArray(scenario.sources) || scenario.sources.length === 0) return false
       const required = ['business', 'valuation', 'financing', 'dilution', ...(key === 'stress' ? ['failure_case'] : [])]
       return required.every(field => text((scenario.assumptions as Record<string, unknown>)[field])) && Object.values(scenario.assumptions).every(text) && validInputs(scenario.model, scenario.inputs) &&
         scenario.sources.every(s => record(s) && text(s.title) && text(s.url) && s.url.startsWith('https://'))

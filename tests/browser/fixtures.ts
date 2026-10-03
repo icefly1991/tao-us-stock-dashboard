@@ -11,6 +11,7 @@ export function dashboard() {
   const rows = (raw: boolean) => codes.map(code => {
     const rank = ({ AAA: raw ? 20 : 80, BBB: raw ? 90 : 10, CCC: 50 } as Record<string, number>)[code] ?? null
     return { code, name: names[code], symbol: code, asset_type: 'stock', close: raw ? 100 : 50,
+      scenario_comparison: code === 'AAA' ? { optimistic: { value: 160, raw_close: 100, gap_pct: 60 }, conservative: { value: 90, raw_close: 100, gap_pct: -10 }, stress: { value: 0, raw_close: 100, gap_pct: -100 } } : undefined,
       today_return_pct: 1, business: '测试业务', history_days: 300, history_available: code !== 'DDD', rsi,
       ...Object.fromEntries(metricKeys.map(key => [key, rank])) }
   })
@@ -57,7 +58,7 @@ export async function seed(page: Page) {
     if (url.pathname.endsWith('/dashboard.json')) data = dashboard()
     else if (url.pathname.endsWith('/valuation-scenarios.json')) data = valuations()
     else if (url.pathname.endsWith('/analyst-targets.json')) data = { schema_version: 1, source: 'test', fetched_at: '2026-10-01T12:45-04:00', rows: [
-      { code: 'AAA', symbol: 'AAA', status: 'available', low: 80, mean: 120, high: 160 },
+      { code: 'AAA', symbol: 'AAA', status: 'available', low: 80, mean: 120, high: 160, quoted_at: '2026-10-01', source_url: 'https://www.sec.gov/' },
       { code: 'BBB', symbol: 'BBB', status: 'unavailable', low: null, mean: null, high: null },
     ] }
     else if (url.pathname.endsWith('/boxes.json')) data = boxes()

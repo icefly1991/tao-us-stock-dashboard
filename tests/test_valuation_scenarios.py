@@ -8,7 +8,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from data_pipeline.config import WatchlistItem  # noqa: E402
-from data_pipeline.indicators import calculate_scenario_value  # noqa: E402
+from data_pipeline.indicators import calculate_scenario_value, calculate_scenario_gap  # noqa: E402
 from generate_valuation_scenarios import build_snapshot, generate  # noqa: E402
 
 
@@ -26,6 +26,41 @@ def sample():
 
 
 class ValuationTests(unittest.TestCase):
+    def test_corrupt_research_narratives_are_rejected(self):
+        members = [WatchlistItem("TEST", "Synthetic", "TEST", "stock")]
+        for damaged in ("???", "\ufffd"):
+            for field in ("reason", "financing"):
+                data = sample()
+                if field == "reason":
+                    data["rows"][0][field] = damaged
+                else:
+                    data["rows"][0]["scenarios"]["stress"]["assumptions"][field] = damaged
+                with self.assertRaisesRegex(ValueError, "Corrupt valuation narrative"):
+                    build_snapshot(data, members, date(2026, 10, 1))
+
+    def test_equity_dcf_retains_negative_recapitalization_and_extra_claims(self):
+        inputs = {"fcfe": [100, -50, 100], "discount_rate": .1, "terminal_growth": 0,
+                  "excess_equity_assets": 20, "additional_common_claims": 30, "diluted_shares": 10}
+        self.assertEqual(calculate_scenario_value("equity_dcf", inputs), 86.6033)
+        inputs["diluted_shares"] = 20
+        self.assertEqual(calculate_scenario_value("equity_dcf", inputs), 43.3017)
+        with self.assertRaises(ValueError):
+            calculate_scenario_value("equity_dcf", {**inputs, "customer_cash": 10000})
+
+    def test_equity_dcf_snapshot_and_duration_gate(self):
+        data = sample()
+        for scenario in data["rows"][0]["scenarios"].values():
+            scenario["model"] = "equity_dcf"
+            values = scenario["inputs"]
+            values["fcfe"] = values.pop("fcff")
+            values["excess_equity_assets"] = values.pop("cash_and_nonoperating_assets")
+            values["additional_common_claims"] = values.pop("debt_and_other_claims")
+        members = [WatchlistItem("TEST", "Synthetic", "TEST", "stock")]
+        self.assertEqual(build_snapshot(data, members, date(2026, 10, 1))["coverage"]["available"], 1)
+        data["rows"][0]["scenarios"]["optimistic"]["inputs"]["fcfe"].append(20)
+        with self.assertRaises(ValueError):
+            build_snapshot(data, members, date(2026, 10, 1))
+
     def test_dcf_enterprise_to_equity_and_dilution(self):
         inputs = case()["inputs"]
         self.assertEqual(calculate_scenario_value("enterprise_dcf", inputs), 10)
@@ -83,6 +118,40 @@ class ValuationTests(unittest.TestCase):
             with self.assertRaises(ValueError): generate(source, output, members)
             self.assertEqual(output.read_text(), "old valid snapshot")
 
+    def test_full_coverage_release_gate_preserves_existing_output(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            source, output, members = root / "input.json", root / "output.json", root / "members.csv"
+            source.write_text(json.dumps(sample()))
+            output.write_text("old valid snapshot")
+            members.write_text("code,name,symbol,asset_type,watchlist\nTEST,Synthetic,TEST,stock,original\nOTHER,Missing,OTHER,stock,original\n")
+            with self.assertRaisesRegex(ValueError, "1 company stocks still pending: OTHER"):
+                generate(source, output, members, require_complete=True)
+            self.assertEqual(output.read_text(), "old valid snapshot")
+
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ScenarioComparisonTests(unittest.TestCase):
+    def test_price_gaps_and_zero_equity(self):
+        self.assertAlmostEqual(calculate_scenario_gap(18, 10), 80)
+        self.assertAlmostEqual(calculate_scenario_gap(10, 10), 0)
+        self.assertAlmostEqual(calculate_scenario_gap(0, 10), -100)
+        for value, close in [(1, 0), (-1, 10), (float('nan'), 10), (1, float('inf')), (True, 10)]:
+            with self.assertRaises(ValueError):
+                calculate_scenario_gap(value, close)
+
+
+class AnalystComparisonTests(unittest.TestCase):
+    def test_mean_comparison_uses_raw_close_and_verified_symbol(self):
+        from generate_dashboard import add_analyst_comparisons
+        payload = {'adjustments': {'raw': {'rows': [{'code': 'AAA', 'symbol': 'AAA', 'close': 100}]}}}
+        target = {'code': 'AAA', 'symbol': 'AAA', 'status': 'available', 'mean': 120}
+        add_analyst_comparisons(payload, {'rows': [target]})
+        self.assertAlmostEqual(payload['adjustments']['raw']['rows'][0]['analyst_comparison']['gap_pct'], 20)
+        payload['adjustments']['raw']['rows'][0].pop('analyst_comparison')
+        target['symbol'] = 'OTHER'
+        add_analyst_comparisons(payload, {'rows': [target]})
+        self.assertNotIn('analyst_comparison', payload['adjustments']['raw']['rows'][0])

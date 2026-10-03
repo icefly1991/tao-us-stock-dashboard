@@ -8,7 +8,7 @@ from datetime import datetime
 from math import isfinite
 from pathlib import Path
 from zoneinfo import ZoneInfo
-from urllib.parse import unquote, urlsplit
+from urllib.parse import quote, unquote, urlsplit
 
 import yfinance as yf
 from curl_cffi import requests
@@ -77,14 +77,16 @@ def fetch_target(item: dict[str, str], session: TargetSession | None = None) -> 
     if not isinstance(result, dict):
         raise ValueError(f"{code}: analyst target response is not an object")
     values = {key: target_number(result.get(key)) for key in ("low", "mean", "high")}
+    # Yahoo's aggregate target response provides no verified report publication date.
+    metadata = {"source_url": f"https://finance.yahoo.com/quote/{quote(symbol, safe='')}/analysis/", "quoted_at": None}
     if all(value is None for value in values.values()):
-        return {"code": code, "symbol": symbol, "status": "unavailable", **values}
+        return {"code": code, "symbol": symbol, "status": "unavailable", **values, **metadata}
     low, mean, high = values["low"], values["mean"], values["high"]
     if low is not None and high is not None and low > high:
         raise ValueError(f"{code}: analyst low exceeds high")
     if mean is not None and ((low is not None and mean < low) or (high is not None and mean > high)):
         raise ValueError(f"{code}: analyst mean outside low/high range")
-    return {"code": code, "symbol": symbol, "status": "available", **values}
+    return {"code": code, "symbol": symbol, "status": "available", **values, **metadata}
 
 
 def generate(source: Path, destination: Path, workers: int = 4) -> tuple[int, int]:

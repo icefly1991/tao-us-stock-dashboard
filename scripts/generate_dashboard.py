@@ -1,11 +1,41 @@
 from __future__ import annotations
 
+import json
+from pathlib import Path
+
+from data_pipeline.indicators import calculate_scenario_gap
 from data_pipeline.config import build_runtime_config
 from data_pipeline.exporter import dashboard_exists, export_dashboard
 from data_pipeline.summary import build_dashboard_payload
 from data_pipeline.yfinance_client import YFinancePipelineClient
 from generate_boxes import generate_boxes
 from data_pipeline.diagnostics import write_diagnostics
+
+
+def add_scenario_comparisons(payload: dict, snapshot: dict) -> None:
+    if snapshot.get('schema_version') != 1 or snapshot.get('basis') != 'present_value':
+        return
+    valuations = {row['code']: row for row in snapshot.get('rows', []) if row.get('status') == 'available'}
+    for row in payload['adjustments']['raw']['rows']:
+        valuation = valuations.get(row['code'])
+        if not valuation or valuation.get('symbol') != row['symbol']:
+            continue
+        try:
+            row['scenario_comparison'] = {key: {'value': valuation['scenarios'][key]['value'], 'raw_close': row['close'], 'gap_pct': calculate_scenario_gap(valuation['scenarios'][key]['value'], row['close'])} for key in ('optimistic', 'conservative', 'stress')}
+        except (KeyError, TypeError, ValueError):
+            row.pop('scenario_comparison', None)
+
+
+def add_analyst_comparisons(payload: dict, snapshot: dict) -> None:
+    targets = {row['code']: row for row in snapshot.get('rows', []) if row.get('status') == 'available'}
+    for row in payload['adjustments']['raw']['rows']:
+        target = targets.get(row['code'])
+        if target and target.get('symbol') == row['symbol']:
+            try:
+                value = target['mean']
+                row['analyst_comparison'] = {'value': value, 'raw_close': row['close'], 'gap_pct': calculate_scenario_gap(value, row['close'])}
+            except (KeyError, ValueError, TypeError):
+                row.pop('analyst_comparison', None)
 
 
 class IncompleteLatestPricesError(RuntimeError):
@@ -55,6 +85,18 @@ def main() -> None:
         data_date=result.latest_trade_date,
         watchlist=config.watchlist,
     )
+    analyst_path = Path(__file__).resolve().parent.parent / "public/data/analyst-targets.json"
+    if analyst_path.exists():
+        try:
+            add_analyst_comparisons(payload, json.loads(analyst_path.read_text(encoding="utf-8")))
+        except (ValueError, TypeError, KeyError):
+            print("Analyst comparisons unavailable; market data retained.")
+    scenario_path = Path(__file__).resolve().parent.parent / "public/data/valuation-scenarios.json"
+    if scenario_path.exists():
+        try:
+            add_scenario_comparisons(payload, json.loads(scenario_path.read_text(encoding="utf-8")))
+        except (ValueError, TypeError, KeyError):
+            print("Scenario comparisons unavailable; market data retained.")
     for adjustment, histories in result.histories.items():
         for code, history in histories.items():
             export_dashboard(config.output_json_file.parent / "history" / adjustment / f"{code}.json", history)

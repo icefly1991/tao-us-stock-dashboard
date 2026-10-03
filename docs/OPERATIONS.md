@@ -392,3 +392,85 @@ CR-026已由[运行 36842000320](https://github.com/icefly1991/tao-us-stock-dash
 ## CR-028 / CR-029 发布授权（2026-10-01）
 
 用户明确要求直接push，发布已验证的工程首期和静态研究快照。提交后由现有Actions重新生成真实行情并部署；不提交本地真实dashboard或缓存。真实情景估值仍为0只，344待研究、6需专门方法；337只分析师三价可用。发布运行结果另行记录。
+## CR-030 本地测试页面
+
+主表直接三档价格及相对现价空间，弹窗数字优先、依据折叠。134项Python测试、lint/build通过；59项浏览器用例已验证通过（58项全量运行通过，修复唯一失败用例的重复元素选择器后单独复跑通过），含390/1024/1440桌面及手机布局。新增可选scenario_comparison，不改变原榜单指标。
+
+本地真实页面127.0.0.1:4174，演示页面127.0.0.1:4175，均使用项目路径/tao-us-stock-dashboard/。数据来自已验证的350行情/data_date20261001缓存；演示仅在忽略提交的.cache/cr030-preview/demo加入IMSR/NXH/SMR虚构三价，有醒目标识。生产快照仍0真实情景估值，未提交或发布本轮改动。
+
+CR-030横排测试：三主表表头乐观/机构均价/保守/极端保守；价格及空间横向对齐，机构独立参照。相关10项浏览器用例均验证通过（8项首次通过，1024两页溢出修复后2项复跑通过）；135项Python、lint/build通过。真实缓存350行成功接入机构比较，337行有机构均价空间。预览仍在4174真实版和4175明确标注示例版，未发布本轮改动。
+
+## CR-031 本地验证（2026-10-01）
+135项Python、lint/build通过；完整61项浏览器回归通过，另新增RSI三色用例单独通过，合计62项已验证。真实generate_dashboard.main隔离.cache/cr029-real-data：350行情成功/0失败，data_date20261001，700历史文件/0错误，两箱体100及234处理/0错误。真实机构抓取337有值/13无值，原快照抓取时间不改；实际报告日期均未核实，主表机构均价隐藏，详情保留日期未知和逐价来源链接。analyst-targets v1新增可选source_url/quoted_at，价格日期失效由前端以纽约日判断；新鲜度不改变研究日期或自动刷新。尚未提交或发布本轮CR-030/031改动。
+
+CR-032本地研究进度：344家公司SEC取证成功、0失败；7只已建立条件模型（PG、MSFT、NKE、MCD、CMG、AVGO、NABL）、337只待逐只研究、6只非公司资产排除。139Python、64Chromium、lint/build通过；真实行情350/0，data_date20261001，700历史文件/0错误，两箱体100/234均0错误。尚未全量填价、未commit或push。记录见docs/reviews/2026-10-01-valuation-intake.md；下载成功和工程测试不表示全部估值完成。
+
+
+## 2026-10-02 CR-033 / UI-033 本地验证
+
+移除主表与价格弹窗机构报价，前端不加载机构快照；建议价改三档，增加缺失状态。139项Python、lint及build通过；65项浏览器用例均已验证（全量64通过，更新唯一仍断言机构价的旧用例后单项复跑通过）。真实缓存页面7家公司三价及来源、HOOD待估值、六项排除、零价−100%对比通过，1440/390截图检查，无页面异常。
+
+真实行情沿用同轮已核实的350/0、data_date20261001缓存；本次无金融公式、估值数字／日期或公共JSON契约变化，不重新请求行情。测试页面http://127.0.0.1:4174/tao-us-stock-dashboard/#/watchlist已更新。全量情景研究仍7/344，337待估值；未commit／push，不把本次展示修复称为全量填价完成。
+
+
+## CR-034 / UI-034 本地验证（2026-10-02）
+
+主表三档不变，详情恢复分析师低／均／高参考及逐价来源，外链箭头改“来源”。139项Python、65项Chromium、lint及TypeScript/build全部退出码0。离线回归覆盖点击前不请求机构快照、点击后一次读取，以及待估值／过期／损坏情景不得用目标价补位。真实行情缓存测试页4174验证7家情景模型、HOOD待估值但详情可读已有目标价、6项排除、压力零值−100%和来源文字；1440/390桌面手机截图检查通过，无pageerror。截图.cache/cr034-real-dialog.png及.cache/cr034-real-mobile-dialog.png为忽略的本地证据，手机详情可内部滚动。
+
+变更文件：src/App.tsx、src/AnalystTargets.tsx、src/PriceResearchCell.tsx、src/index.css，dashboard/pool浏览器回归及需求／CR／CHANGELOG／AGENTS／ARCHITECTURE／VALUATION_SCENARIOS／PRICE_SOURCES文档。UI-034只改展示，不改变JSON契约、金融公式、静态研究日期或CSV成员；没有额外行情下载。数据沿用此前真实缓存（data_date=20261001，350成功／0失败），不是本轮重新抓取。当前7/344已建模、337待估值、6跳过；未完成全量研究、未push或部署。分析师汇总报告日期未核实的限制仍明确标注。
+
+
+## CR-035 / UI-035 本地验证（2026-10-02）
+
+来源链接仅留详情，主表移除来源和预留空间。变更：src/PriceResearchCell.tsx、src/index.css、tests/browser/dashboard.spec.ts及需求／CR／AGENTS／CHANGELOG／ARCHITECTURE／VALUATION_SCENARIOS／PRICE_SOURCES文档。139项Python、65项Chromium、lint/build全部通过，git diff --check通过（仅已有CRLF提示）。浏览器验证三档主表无来源链接、详情原文仍直达和分析师目标价参考保留，桌面1024/1440及手机390回归通过。4174测试页已同步构建资产，保留真实缓存而非仓库占位行情。JSON契约、公式、研究日期不变；未重新请求行情，本轮无数据生成验证要求。研究仍7已完成／337待估值／6跳过，尚未push或部署。
+
+
+## CR-036 全量研究进行中验证（2026-10-02，本地未发布）
+
+新增股权DCF模型及全量发布--require-complete门禁；原文与附件2279份下载后ETOR唯一失败已重试核实身份恢复。已完成模型16/344，328待研究，6排除；主表与详情规则为UI-035，不将模型未完成误称无机构报价。
+
+变更：indicators.py、generate_valuation_scenarios.py、valuationData.ts、PriceResearchCell.tsx、tsconfig.tests.json、valuation_assumptions.json和valuation-scenarios.json；公式/模型门禁Python测试及浏览器验证、CR/需求/指标/架构/估值/CHANGELOG/AGENTS文档，新增逐只记录docs/reviews/2026-10-02-full-valuation-progress.md。equity_dcf是独立valuation-scenarios v1兼容新增模型枚举与输入，不改变主dashboard金融指标、名单、研究评级或更新频率。
+
+142项Python、66项浏览器回归、lint/TypeScript/build退出码0。真实Yahoo验证350行情成功／0失败，data_date20261002；生成690历史文件，10图表错误（FIG/DOCN/ENOV/WEAV/INSP两口径末日不一致）；活跃箱体98成功／2错误，高风险箱体230成功／4错误。行情成功不代表全部图表或箱体成功。日志在忽略的.cache/cr029-real-data.log；真实验证仅写忽略缓存，仓库占位行情未改变。生成发生在纽约10月2日盘中，不能当作已完成日线。
+
+最新16模型与真实缓存重新用Pythonadd_scenario_comparisons关联并同步4174本地测试页；16家主表三价与逐档详情来源、HOOD股权模型标签和机构中性参考、6排除及390手机浏览器检查通过，pageerror=0；截图.cache/cr036-hood-desktop.png及.cache/cr036-hood-mobile.png为本地证据。--require-complete真实运行按预期拒绝328个待研究公司并未覆盖快照，证据.cache/cr036-release-coverage.log。全量估值尚未完成，未commit/push/deploy，不声称完成用户本轮全量填价发布请求。
+
+## CR-036第二批逐只研究（2026-10-02，未发布）
+
+新增TTAN/MNTN/FIG/SHOP/RDDT/CAVA/GTLB/PATH/DKNG九家，当前25 available／319 pending／6 not_applicable。Python142、浏览器66、lint/build退出0；前八家公司真实4174测试页三价、每档详情SEC来源与390手机检查通过，pageerror0（.cache/cr036-round2-check.json）；DKNG随后加入，单独验证见后续记录。本轮仅把新增模型与已取得的10月2日真实350行情缓存重新关联，没有声称再次取得全量新行情或修复既有图表缺日。研究模型文件与JSON数据增加，schema_version=1未变；全量填数与push尚未完成。
+
+DKNG新增三价和同批现价比较单独验证通过（.cache/cr036-dkng-check.json）：两个0价格正常显示$0、比较为有效值并严格着色，详情各档来源和8月新融资说明存在，pageerror0。当前全量覆盖门禁仍拒绝319个未完成公司且输出保持不变，.cache/cr036-release-coverage.log已更新；不是技术故障或找不到全部报价，是逐只条件研究仍未完成。
+
+## CR-036第三批真实测试记录（2026-10-02，本地未发布）
+
+- 新增CRCL、ETOR、KLAR、PLTR、NET、PYPL、WDAY、DOCU、MTCH、YELP十家条件模型；静态快照35 available / 309 pending / 6 not_applicable。完整逐股原文与假设见reviews/2026-10-02-full-valuation-progress.md。
+- Python 142项通过（直接执行退出码0）、npm lint/build退出码0、Playwright 66项通过；git diff --check退出码0。第一次PowerShell重定向stderr的调用报告退出码1，但日志142项OK；随后直接执行确认退出码0，未将该重定向结果当作成功退出。
+- 真实测试页新增十家30个价格、30个逐档主来源、零值和未复权现价严格比较色、无主表来源链接、CRCL手机弹窗均通过，无pageerror；证据.cache/cr036-round3-check.json与.cache/cr036-crcl-mobile.png（本地忽略文件）。
+- 本轮复用先前2026-10-02真实350只同批行情，仅重新关联35家公司估值；没有额外声称再次取得最新市场报价。行情原验证350成功/0失败，690历史文件/10图表错误，活跃98/2、高风险230/4箱体成功/错误，日期不一致图表保持明确不可用。
+- --require-complete实际拒绝剩余309家公司，已有静态快照保留；日志.cache/cr036-release-coverage.log。主行情占位文件未改写，没有提交或push，也没有部署；全量研究仍未完成。
+
+## CR-036 第四至第六批本地校验（2026-10-02，未发布）
+
+本轮补入 SMR、IMSR、RGTI、STUB、CHWY、DUOL、MP、POWL、INOD、NTGR 十家公司，当前情景快照为45已估值、299待估值、6跳过。研究及参数详见 `docs/reviews/2026-10-02-full-valuation-progress.md` 与 `scripts/valuation_assumptions.json`。三档均为明确条件下的研究者计算值，不是公司披露的建议买入价。部分股数、优先权益及营运现金采用已注明的上限/留存代理，不冒充精确公平估值。
+
+- Python unittest：142通过、退出码0。
+- lint、TypeScript/build：退出码0。
+- Playwright离线回归：66通过、退出码0。
+- 真实本地预览逐只校验：10家公司30个价格及30个详情来源入口；严格按同批未复权收盘价着色，0不当缺值；手机SMR详情及页面脚本错误检查通过。证据 `.cache/cr036-round6-check.json`。
+- `--require-complete`等效真实调用拒绝299待估值公司；前后输出字节完全相同，未覆盖快照为发布成功。
+- `git diff --check`通过。研究数据仍使用独立v1契约，未改日线指标、原名单、名单日期、研究周期或每日行情更新策略。
+
+预览复用既有2026-10-02行情，350成功/0失败/0停牌；本轮没有重新下载行情，不把重新拼接估值称为新行情抓取。该盘中行情既有690历史文件/10图表错误（FIG、DOCN、ENOV、WEAV、INSP两口径），活跃箱体98成功/2错误，高风险箱体230成功/4错误；异常仍明确不可用。仓库行情安全占位文件保持原状。
+
+全量344家公司填价仍未完成。本轮未commit、push或部署，以上本地测试不能当作全量交付或生产发布证据。
+
+
+## CR-036 全量发布前验证（2026-10-03，覆盖此前分批进度）
+
+- 344家公司三档全部完成，pending=0；6项非公司资产按用户要求留空。`python scripts/generate_valuation_scenarios.py --require-complete`退出0，独立v1快照严格门禁通过。来源、参数和逐公司限制见`reviews/2026-10-02-full-valuation-progress.md`。
+- 143项Python、66项Chromium、lint及TypeScript/build均通过。最终真实页面核对350唯一代码/377列表行、344公司/6排除，全部价格、相对未复权现价百分比和严格颜色匹配；6个代表详情来源、390手机弹窗通过，pageerror=0。核查证据`.cache/cr036-full-browser.json`和`.cache/cr036-full-mobile.png`仅本地保存。
+- 最新本地真实行情缓存`data_date=20261002`、`updated_at=2026-10-03T03:51-04:00`，两口径各350行情，0失败、0停牌；700历史文件、0图表错误，两个箱体100/234处理、0错误。此记录覆盖此前10月2盘中690文件/10错误，不把历史日志当当前结果。最终估值重新用同批raw收盘关联，没有将重新关联称为再次下载行情。
+- 独立`valuation-scenarios.json`仍v1，新增适用金融模型`equity_dcf`；dashboard仅兼容可选`scenario_comparison`/`analyst_comparison`。CSV成员、日线金融公式、箱体算法、名单日期与日常/月度更新频率不变。仓库dashboard安全占位未改成真实行情。
+- 独立复核修正RGNX还款封顶、BTBT既有利息重复、WYFI新增提款及付息资本配套、TE息前CF文案、ORCL新增资本与压力退出条件。未来融资和项目回收仍为研究者条件，价格0不是资料缺失或已证明完整经营价值为0。
+
+提交与云端部署状态将在下一条记录给出；以上是本地验证，不等同已部署。

@@ -166,3 +166,15 @@ value = 所有纳入日波幅百分比的算术平均，保留2位小数
 adjusted/raw分别计算且不混用。跨股票比较默认建议复权价；公司行动可能影响不同口径。股票、ETF、指数和加密均按三个自然月，各自交易日数不同，不强行令加密只取63天。
 
 对象字段：value、window_start（排除边界）、window_end（包含）、sample_count、status（available/insufficient/invalid）。旧JSON可缺对象，显示—；零波幅是真实0。主表常驻列，可降序排序（缺失置后、同值按代码），默认和其它指标仍保持原排序。箱体复用同批复权对象，仅详情展示，不改变筛选算法。
+
+
+## CR-030 / UI-030 / DATA-031：价格研究精简（本地）
+用户要求按方案先改再给测试页面，已接受。主表三档合理价与空间，逐档相对同批未复权收盘着色：合理价高于现价绿、低于红、相等或无值灰，0为有效估值。弹窗数字优先、机构独立、原文及参数默认折叠。新增dashboard.adjustments.raw.rows可选scenario_comparison：各档value/raw_close/gap_pct；价差=(value/raw_close-1)*100，只在indicators.py计算；前端核对值及现价匹配，否则显示—。月度研究和每日行情频率不变，真实三价研究仍未完成；本地演示使用独立明确标注的虚构样本，未发布。
+## CR-031展示规则补充
+
+RSI≤30超卖显示红色，RSI≥70超买显示绿色，中性灰色；覆盖此前反向颜色说明。公式、阈值、Wilder预热与年内百分位不变。价格时效上限60天且优先最近原文，机构实际报告日期不能用抓取日期替代；过期/日期未核实价格不进入主表比较，见PRICE_SOURCES.md。
+
+
+### DATA-033 / CR-036：金融股权DCF
+
+输入equity_dcf：fcfe（1–10完整年度、百万USD）、discount_rate（股权成本，0<r≤1）、terminal_growth（−1<g<r）、excess_equity_assets（未重复计入流量的可分配额外权益资产）、additional_common_claims（未通过FCFE支付的优先索偿）、diluted_shares（百万股，>0）。终年FCFE>0，终值=FCFE_n×(1+g)/(r−g)，价值=max(ΣFCFE_t/(1+r)^t+终值/(1+r)^n+excess_equity_assets−additional_common_claims,0)/diluted_shares。保留4位小数；财务事实/预测区分、客户资金与监管资本排除、索偿不重复扣、股权薪酬/稀释不重复计。模型可与压力回收组合，来源/日期/排序门禁沿用DATA-030。

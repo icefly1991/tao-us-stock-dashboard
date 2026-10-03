@@ -52,14 +52,14 @@ export default function RsiTrend({ stock, latest }: { stock: RsiStock; latest: n
       points.forEach((p, i) => { if (Math.abs(Date.parse(p.time) - target) < Math.abs(Date.parse(points[best].time) - target)) best = i })
       setHovered(best)
     }} onPointerLeave={() => setHovered(null)}>
-      <rect x="38" y="20" width="510" height="54" fill="#fff1f2" />
-      <rect x="38" y="146" width="510" height="54" fill="#ecfdf5" />
+      <rect x="38" y="20" width="510" height="54" fill="#ecfdf5" />
+      <rect x="38" y="146" width="510" height="54" fill="#fff1f2" />
       {[0, 30, 50, 70, 100].map(value => <g key={value}><line x1="38" x2="548" y1={y(value)} y2={y(value)} stroke="#cbd5e1" strokeDasharray="4 4" /><text x="30" y={y(value) + 4} textAnchor="end" fill="#64748b" fontSize="11">{value}</text></g>)}
       <path d={points.map((p, i) => `${i ? 'L' : 'M'}${x(p).toFixed(2)},${y(p.value).toFixed(2)}`).join(' ')} fill="none" stroke="#0284c7" strokeWidth="1.6" />
       <line x1={x(selected)} x2={x(selected)} y1="20" y2="200" stroke="#94a3b8" strokeDasharray="3 3" />
       <circle cx={x(selected)} cy={y(selected.value)} r="3" fill="#0369a1" />
       <text x="38" y="220" fill="#64748b" fontSize="11">{points[0].time}</text><text x="548" y="220" textAnchor="end" fill="#64748b" fontSize="11">{points[points.length - 1].time}</text>
     </svg>
-    <p className="rsi-chart-note">绿色 ≤30 超卖 · 红色 ≥70 超买 · 移动到曲线上查看日期与数值</p>
+    <p className="rsi-chart-note">红色 ≤30 超卖 · 绿色 ≥70 超买 · 移动到曲线上查看日期与数值</p>
   </>
 }

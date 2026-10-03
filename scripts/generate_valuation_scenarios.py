@@ -14,6 +14,11 @@ from data_pipeline.indicators import calculate_scenario_value
 SCENARIOS = ("optimistic", "conservative", "stress")
 
 
+def checked_narrative(value: str, location: str) -> None:
+    if "\ufffd" in value or "???" in value:
+        raise ValueError(f"Corrupt valuation narrative: {location}")
+
+
 def checked_date(value: object, latest: date) -> str:
     if not isinstance(value, str):
         raise ValueError("Valuation dates must be YYYY-MM-DD strings")
@@ -42,6 +47,7 @@ def build_snapshot(assumptions: dict, watchlist, today: date | None = None) -> d
         evidence_date = checked_date(entry.get("evidence_date"), date.fromisoformat(valued_at))
         if not isinstance(entry.get("reason"), str) or not entry["reason"].strip():
             raise ValueError(f"Missing valuation rationale: {code}")
+        checked_narrative(entry["reason"], code)
         cases = entry.get("scenarios")
         if not isinstance(cases, dict) or set(cases) != set(SCENARIOS):
             raise ValueError(f"Exactly three researched scenarios required: {code}")
@@ -54,6 +60,8 @@ def build_snapshot(assumptions: dict, watchlist, today: date | None = None) -> d
             required = {"business", "valuation", "financing", "dilution"} | ({"failure_case"} if key == "stress" else set())
             if not isinstance(narrative, dict) or not required.issubset(narrative) or not all(isinstance(text, str) and text.strip() for text in narrative.values()):
                 raise ValueError(f"Missing business/valuation/financing/dilution assumptions: {code}/{key}")
+            for field, text in narrative.items():
+                checked_narrative(text, f"{code}/{key}/{field}")
             sources = case.get("sources")
             if not isinstance(sources, list) or not sources or not all(
                 isinstance(source, dict) and isinstance(source.get("title"), str) and source["title"].strip()
@@ -65,9 +73,10 @@ def build_snapshot(assumptions: dict, watchlist, today: date | None = None) -> d
         if not output_cases["optimistic"]["value"] >= output_cases["conservative"]["value"] >= output_cases["stress"]["value"]:
             raise ValueError(f"Scenario values do not follow optimistic >= conservative >= stress: {code}")
         # DCF annual forecasts must use a common duration within this ticker.
-        durations = {len(case["inputs"]["fcff"]) for case in output_cases.values() if case["model"] == "enterprise_dcf"}
-        if len(durations) > 1:
-            raise ValueError(f"Inconsistent DCF forecast duration: {code}")
+        for model, flow_key in (("enterprise_dcf", "fcff"), ("equity_dcf", "fcfe")):
+            durations = {len(case["inputs"][flow_key]) for case in output_cases.values() if case["model"] == model}
+            if len(durations) > 1:
+                raise ValueError(f"Inconsistent DCF forecast duration: {code}")
         reviewed[code] = {"code": code, "symbol": item.symbol, "status": "available", "currency": "USD", "valued_at": valued_at,
                           "evidence_date": evidence_date, "reason": entry["reason"], "scenarios": output_cases}
     rows = []
@@ -75,14 +84,17 @@ def build_snapshot(assumptions: dict, watchlist, today: date | None = None) -> d
         rows.append(reviewed.get(item.code) or {
             "code": item.code, "symbol": item.symbol, "status": "pending" if item.asset_type == "stock" else "not_applicable",
             "currency": "USD", "valued_at": None, "evidence_date": None, "scenarios": None,
-            "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设" if item.asset_type == "stock" else "首期公司估值模型不适用；该资产需另建专门方法",
+            "reason": "尚未完成逐只原文核查、经营预测与融资稀释假设" if item.asset_type == "stock" else "按用户要求跳过ETF、指数、VIX与加密资产，建议价留空",
         })
     coverage = {state: sum(row["status"] == state for row in rows) for state in ("available", "pending", "not_applicable")}
     return {"schema_version": 1, "basis": "present_value", "generated_at": get_new_york_now().isoformat(timespec="minutes"), "coverage": coverage, "rows": rows}
 
 
-def generate(source: Path, output: Path, stock_list: Path = STOCK_LIST_FILE) -> dict:
+def generate(source: Path, output: Path, stock_list: Path = STOCK_LIST_FILE, require_complete: bool = False) -> dict:
     payload = build_snapshot(json.loads(source.read_text(encoding="utf-8")), load_watchlist(stock_list))
+    if require_complete and payload["coverage"]["pending"]:
+        pending = [row["code"] for row in payload["rows"] if row["status"] == "pending"]
+        raise ValueError(f"Valuation research incomplete: {len(pending)} company stocks still pending: {', '.join(pending)}")
     export_dashboard(output, payload)
     return payload["coverage"]
 
@@ -91,5 +103,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, default=ROOT_DIR / "scripts" / "valuation_assumptions.json")
     parser.add_argument("--output", type=Path, default=ROOT_DIR / "public" / "data" / "valuation-scenarios.json")
+    parser.add_argument("--require-complete", action="store_true", help="Reject incomplete company coverage before writing a release snapshot")
     args = parser.parse_args()
-    print("Valuation coverage:", generate(args.source, args.output))
+    print("Valuation coverage:", generate(args.source, args.output, require_complete=args.require_complete))

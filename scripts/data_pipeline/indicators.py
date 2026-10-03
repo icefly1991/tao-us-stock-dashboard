@@ -19,22 +19,25 @@ def calculate_scenario_value(model: str, inputs: dict[str, Any]) -> float:
             raise ValueError(f"Scenario input out of range: {key}")
         return float(value)
 
-    if model == "enterprise_dcf":
-        expected = {"fcff", "discount_rate", "terminal_growth", "cash_and_nonoperating_assets", "debt_and_other_claims", "diluted_shares"}
+    if model in {"enterprise_dcf", "equity_dcf"}:
+        flow_key = "fcfe" if model == "equity_dcf" else "fcff"
+        asset_key = "excess_equity_assets" if model == "equity_dcf" else "cash_and_nonoperating_assets"
+        claims_key = "additional_common_claims" if model == "equity_dcf" else "debt_and_other_claims"
+        expected = {flow_key, "discount_rate", "terminal_growth", asset_key, claims_key, "diluted_shares"}
         if set(inputs) != expected:
             raise ValueError("DCF input fields must match the documented model")
-        flows = inputs["fcff"]
+        flows = inputs[flow_key]
         if not isinstance(flows, list) or not 1 <= len(flows) <= 10 or any(
             isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value) for value in flows
         ):
-            raise ValueError("DCF requires 1–10 finite annual FCFF forecasts")
+            raise ValueError("DCF requires 1–10 finite annual cash-flow forecasts")
         rate = number("discount_rate", positive=True)
         growth = number("terminal_growth", minimum=None)
         if not -1 < growth < rate <= 1 or flows[-1] <= 0:
-            raise ValueError("DCF needs positive terminal FCFF and -1 < growth < discount rate <= 1")
+            raise ValueError("DCF needs positive terminal cash flow and -1 < growth < discount rate <= 1")
         terminal = flows[-1] * (1 + growth) / (rate - growth)
         enterprise = sum(flow / (1 + rate) ** year for year, flow in enumerate(flows, 1)) + terminal / (1 + rate) ** len(flows)
-        equity = enterprise + number("cash_and_nonoperating_assets") - number("debt_and_other_claims")
+        equity = enterprise + number(asset_key) - number(claims_key)
         value = max(equity, 0) / number("diluted_shares", positive=True)
     elif model == "asset_recovery":
         expected = {"recoverable_assets", "senior_claims", "recovery_costs", "current_common_shares", "existing_common_entitlement", "years_to_recovery", "discount_rate"}
@@ -401,3 +404,14 @@ def build_rsi_history(frame: pd.DataFrame) -> dict[str, Any]:
             "complete": bool(valid and valid[0][0] <= cutoff + pd.Timedelta(days=7)),
             "points": [{"time": day.strftime("%Y-%m-%d"), "value": round(value, 1)}
                        for day, value in valid if day >= cutoff]}
+
+
+def calculate_scenario_gap(value: float, raw_close: float) -> float:
+    """Percentage distance from the same-batch unadjusted close."""
+    import math
+    if any(isinstance(v, bool) or not isinstance(v, (int, float)) or not math.isfinite(v) for v in (value, raw_close)) or value < 0 or raw_close <= 0:
+        raise ValueError("Invalid scenario price or raw close")
+    result = (value / raw_close - 1) * 100
+    if not math.isfinite(result):
+        raise ValueError("Nonfinite scenario comparison")
+    return result

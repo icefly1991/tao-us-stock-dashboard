@@ -101,8 +101,8 @@ function BoxChart({ row }: { row: Box }) {
         </g>
         <g aria-label="RSI副图" data-testid="box-rsi-panel">
           <text x="56" y="495" fill="#475569" fontSize="12">RSI(14) · 30以下超卖 / 70以上超买</text>
-          <rect x="52" y={rsiY(100)} width="873" height="33" fill="#fff1f2" />
-          <rect x="52" y={rsiY(30)} width="873" height="33" fill="#ecfdf5" />
+          <rect x="52" y={rsiY(100)} width="873" height="33" fill="#ecfdf5" />
+          <rect x="52" y={rsiY(30)} width="873" height="33" fill="#fff1f2" />
           {[0, 30, 70, 100].map(value => <g key={value}><line x1="52" x2="925" y1={rsiY(value)} y2={rsiY(value)} stroke="#cbd5e1" strokeDasharray="4 4" /><text x="25" y={rsiY(value) + 4} fill="#64748b" fontSize="10">{value}</text></g>)}
           <path data-testid="box-rsi-line" d={rsiPath} fill="none" stroke="#0284c7" strokeWidth="1.6" />
           {bars.every(bar => bar.rsi_value == null) && <text x="480" y="570" textAnchor="middle" fill="#94a3b8" fontSize="12">此窗口暂无RSI数据</text>}
