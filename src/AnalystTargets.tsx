@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export type TargetRow = { code: string; symbol: string; status: 'available' | 'unavailable'; low: number | null; mean: number | null; high: number | null; source_url?: string; quoted_at?: string | null }
 type Snapshot = { schema_version: 1; source: string; fetched_at: string; rows: TargetRow[] }
@@ -31,15 +31,17 @@ function validSnapshot(value: unknown): value is Snapshot {
 export function useAnalystTargets(enabled = true) {
   const [snapshot, setSnapshot] = useState<Snapshot | null>(null)
   const [error, setError] = useState(false)
+  const request = useRef<Promise<Snapshot> | null>(null)
   useEffect(() => {
     if (!enabled) return
     let active = true
-    fetch(`${import.meta.env.BASE_URL}data/analyst-targets.json`)
+    request.current ??= fetch(`${import.meta.env.BASE_URL}data/analyst-targets.json`)
       .then(response => response.ok ? response.json() : Promise.reject(new Error('target fetch failed')))
       .then((value: unknown) => {
         if (!validSnapshot(value)) throw new Error('invalid analyst targets')
-        if (active) setSnapshot(value)
+        return value
       })
+    request.current.then(value => { if (active) setSnapshot(value) })
       .catch(() => { if (active) setError(true) })
     return () => { active = false }
   }, [enabled])

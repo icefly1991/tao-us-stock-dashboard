@@ -119,8 +119,7 @@ function App() {
   const poolReview = usePoolReview(poolPage)
   const governance = useGovernance()
   const valuations = useValuations()
-  const [targetsEnabled, setTargetsEnabled] = useState(false)
-  const targets = useAnalystTargets(targetsEnabled)
+  const targets = useAnalystTargets()
   const targetRows = useMemo(() => new Map(targets.snapshot?.rows.map(row => [row.code, row])), [targets.snapshot])
   const [riskFilter, setRiskFilter] = useState('all')
   const [grade, setGrade] = useState('all')
@@ -296,7 +295,7 @@ function App() {
               <div className="market-grid market-header" data-testid="column-header">
                 <div>#</div><div className="stock-identity text-left">标的</div><div className="business-cell">业务/板块</div>{poolPage && <><div className="fundamental-column-heading">基本面亮点</div><div className="fundamental-column-heading">基本面风险</div></>}<div>收盘价</div><div>今日</div>
                 {contextMetrics.map((metric) => <div key={metric}>{metricText[metric]}</div>)}
-                <div className="target-column-heading" title="三档情景合理价 · 对比未复权现价"><b>建议价</b><span>乐观</span><span>保守</span><span>极端保守</span></div>
+                <div className="target-column-heading" title="前三档为情景建议价；分析师低位为目标价参考"><b>建议价</b><span>乐观</span><span>保守</span><span>极端保守</span><span>分析师低位</span></div>
                 <div><button className="volatility-sort" aria-pressed={volatilitySort} onClick={() => setVolatilitySort(value => !value)} title="近三个自然月日均真实波幅百分比，含跳空；点击按波动从大到小排序">近3月日均波幅{volatilitySort ? ' ↓' : ' ↕'}</button></div>
                 <div title="日线Wilder RSI(14)与该股票自身年内百分位">RSI(14) / 年内分位</div>
                 <div className="text-sky-800">{metricText[tab]}{volatilitySort ? '' : ' ↑'}</div>
@@ -322,7 +321,7 @@ function App() {
                   <div className="font-medium text-slate-900">{formatClose(row)}</div>
                   <div className={getMetricTextClass(row.today_return_pct)}>{formatPct(row.today_return_pct)}</div>
                   {contextMetrics.map((metric) => <div key={metric} className={getMetricTextClass(row[metric])}>{formatMetric(metric, row[metric])}</div>)}
-                  <PriceResearchCell code={row.code} assetType={row.asset_type} valuation={valuationRows.get(row.code)?.symbol === row.symbol ? valuationRows.get(row.code) : undefined} valuationAvailable={!!valuations.data} rawClose={rawRows.get(row.code)?.close} comparison={rawRows.get(row.code)?.scenario_comparison} target={targetRows.get(row.code)?.symbol === row.symbol ? targetRows.get(row.code) : undefined} targetsLoaded={!!targets.snapshot} targetsError={targets.error} targetsDate={targets.snapshot?.fetched_at} onOpen={() => setTargetsEnabled(true)} />
+                  <PriceResearchCell code={row.code} assetType={row.asset_type} valuation={valuationRows.get(row.code)?.symbol === row.symbol ? valuationRows.get(row.code) : undefined} valuationAvailable={!!valuations.data} rawClose={rawRows.get(row.code)?.close} comparison={rawRows.get(row.code)?.scenario_comparison} target={targetRows.get(row.code)?.symbol === row.symbol ? targetRows.get(row.code) : undefined} targetsLoaded={!!targets.snapshot} targetsError={targets.error} targetsDate={targets.snapshot?.fetched_at} />
                   <div><VolatilityCell value={row.volatility_3m} /></div>
                   <RsiCell key={`${row.code}/${adjustment}/${data.updated_at}`} rsi={row.rsi} stock={{ code: row.code, name: row.name, adjustment, updatedAt: data.updated_at }} />
                   <div>

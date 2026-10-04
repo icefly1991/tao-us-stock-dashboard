@@ -15,17 +15,20 @@ inputs.fcfe = '未来逐年股权自由现金流（百万美元）'
 inputs.excess_equity_assets = '未计入现金流的可分配额外权益资产（百万美元）'
 inputs.additional_common_claims = '未计入现金流的额外优先索偿（百万美元）'
 
-export default function PriceResearchCell({ code, assetType, valuation, valuationAvailable, rawClose, comparison, target, targetsLoaded, targetsError, targetsDate, onOpen }: {
+export default function PriceResearchCell({ code, assetType, valuation, valuationAvailable, rawClose, comparison, target, targetsLoaded, targetsError, targetsDate }: {
   code: string; assetType: 'stock' | 'etf' | 'index' | 'crypto'; valuation?: ValuationRow; valuationAvailable: boolean; rawClose?: number; comparison?: Record<ScenarioKey, { value: number; raw_close: number; gap_pct: number }>
-  target?: TargetRow; targetsLoaded: boolean; targetsError: boolean; targetsDate?: string; onOpen: () => void
+  target?: TargetRow; targetsLoaded: boolean; targetsError: boolean; targetsDate?: string
 }) {
   const dialog = useRef<HTMLDialogElement>(null)
-  if (assetType !== 'stock') return <div className="price-research-cell"><div className="scenario-prices" aria-label={`${code} 按要求跳过估值`}>{['optimistic', 'conservative', 'stress'].map(key => <span key={key} className="scenario-line equal"><strong>—</strong></span>)}</div></div>
+  if (assetType !== 'stock') return <div className="price-research-cell"><div className="scenario-prices" aria-label={`${code} 按要求跳过估值`}>{['optimistic', 'conservative', 'stress', 'analyst-low'].map(key => <span key={key} className="scenario-line equal"><strong>—</strong></span>)}</div></div>
   const cases = valuation?.status === 'available' ? valuation.scenarios : null
   const scenarioCurrent = priceDateState(valuation?.valued_at) === 'current'
   const keys = Object.keys(scenarioLabels) as ScenarioKey[]
   const quote = rawClose === undefined ? '—' : assetType === 'stock' || assetType === 'etf' ? price(rawClose) : rawClose.toLocaleString('en-US', { maximumFractionDigits: 6 })
   const tone = (value?: number) => value === undefined || rawClose === undefined || value === rawClose ? 'equal' : value > rawClose ? 'below' : 'above'
+  const analystLow = target?.status === 'available' ? target.low ?? undefined : undefined
+  const analystStatus = targetsError ? '读取失败' : !targetsLoaded ? '加载中' : analystLow === undefined ? '暂无目标价' : '目标价'
+  const analystHistorical = priceDateState(targetsDate?.slice(0, 10)) !== 'current'
   const gap = (key: ScenarioKey) => {
     const item = comparison?.[key]
     if (!cases || !item || item.value !== cases[key].value || item.raw_close !== rawClose || !Number.isFinite(item.gap_pct)) return '—'
@@ -43,10 +46,14 @@ export default function PriceResearchCell({ code, assetType, valuation, valuatio
         const value = scenarioCurrent ? cases?.[key].value : undefined
         const label = scenarioLabels[key]
         return <div key={key} data-scenario={key} className={`scenario-line ${tone(value)}`} title={`${label} · ${value === undefined ? status : valuation?.valued_at}`}>
-          <button aria-label={key === 'optimistic' ? `${code} 价格研究依据` : `${code} ${label}依据`} onClick={() => { onOpen(); dialog.current?.showModal() }}><strong>{value === undefined ? '—' : price(value)}</strong></button>
+          <button aria-label={key === 'optimistic' ? `${code} 价格研究依据` : `${code} ${label}依据`} onClick={() => dialog.current?.showModal()}><strong>{value === undefined ? '—' : price(value)}</strong></button>
           <span className="scenario-gap">{value === undefined ? '—' : gap(key)}</span>
         </div>
       })}
+      <div data-scenario="analyst-low" className={`scenario-line ${tone(analystHistorical ? undefined : analystLow)}`} title={`分析师低位目标价 · 非建议买入价 · 抓取 ${targetsDate?.slice(0, 10) ?? '日期未知'}${analystHistorical ? ' · 历史或日期未核实快照' : ''} · ${target?.quoted_at ? `报告 ${target.quoted_at}` : '报告日期未核实'}`}>
+        <button aria-label={`${code} 分析师低位依据`} onClick={() => dialog.current?.showModal()}><strong>{analystLow === undefined ? '—' : price(analystLow)}</strong></button>
+        <span className="scenario-gap">{analystStatus}</span>
+      </div>
     </div>
     {(!cases || !scenarioCurrent) && <small className="price-status" title={valuation?.reason ?? status}>{status}</small>}
     <dialog ref={dialog} className="fundamental-dialog price-research-dialog" aria-label={`${code} 价格研究`}>
