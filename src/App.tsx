@@ -1,3 +1,5 @@
+import FinancingCell, { FinancingFilter } from './FinancingReview'
+import { useFinancing, matchesFinancing } from './financingData'
 import { GovernanceBadge, GovernanceFilter } from './GovernanceReview'
 import { useGovernance, matchesGovernance } from './governanceData'
 import VolatilityCell from './VolatilityCell'
@@ -118,6 +120,13 @@ function App() {
   const poolPage = collectionId === 'pool'
   const poolReview = usePoolReview(poolPage)
   const governance = useGovernance()
+  const financing = useFinancing()
+  const financingRows = useMemo(() => new Map(financing.data?.rows.map(row => [row.code, row])), [financing.data])
+  const [financingFilter, setFinancingFilter] = useState('all')
+  const financingFor = (code: string, symbol?: string, assetType?: string) => {
+    const row = financingRows.get(code)
+    return !financing.error && row && row.symbol === symbol && (!assetType || row.asset_type === assetType) ? row : undefined
+  }
   const valuations = useValuations()
   const targets = useAnalystTargets()
   const targetRows = useMemo(() => new Map(targets.snapshot?.rows.map(row => [row.code, row])), [targets.snapshot])
@@ -136,6 +145,7 @@ function App() {
       setGrade('all')
       setCategory('all')
       setRiskFilter('all')
+      setFinancingFilter('all')
       window.scrollTo(0, 0)
     }
     window.addEventListener('hashchange', navigate)
@@ -164,13 +174,22 @@ function App() {
   const rawRows = useMemo(() => new Map(data?.adjustments.raw.rows.map(row => [row.code, row])), [data])
   const valuationRows = useMemo(() => new Map(valuations.data?.rows.map(row => [row.code, row])), [valuations.data])
   const collection = useMemo(() => data?.collections?.find((item) => item.id === collectionId), [data, collectionId])
+  const financingCounts = useMemo(() => {
+    if (!financing.data || !collection) return undefined
+    const reviewed = financing.data.rows.filter(row => collection.codes.includes(row.code))
+    return {
+      complete: reviewed.filter(row => row.completeness === 'complete').length,
+      partial: reviewed.filter(row => row.completeness === 'partial').length,
+      pending: reviewed.filter(row => row.completeness === 'unreviewed').length,
+    }
+  }, [financing.data, collection])
   const summary = collection?.summaries[adjustment] ?? current?.summary
-  const suspended = data?.suspended?.filter((item) => (!collection || collection.codes.includes(item.code)) && matchesGovernance(governance.data?.rows.find(row => row.code === item.code), riskFilter)) ?? []
+  const suspended = data?.suspended?.filter((item) => (!collection || collection.codes.includes(item.code)) && matchesGovernance(governance.data?.rows.find(row => row.code === item.code), riskFilter) && matchesFinancing(financingFor(item.code, item.symbol), 'stock', financingFilter)) ?? []
   const missingCodes = collection?.codes.filter((code) => !current?.rows.some((row) => row.code === code) && !data?.suspended?.some((item) => item.code === code)) ?? []
   const rows = useMemo(
     () =>
       current
-        ? current.rows.filter((row) => matchesGovernance(governance.data?.rows.find(item => item.code === row.code), riskFilter) && (!collection || collection.codes.includes(row.code)) && (!poolPage || matchesPoolReview(poolReview.data?.rows.find(item => item.code === row.code), grade, category))).sort((a, b) => {
+        ? current.rows.filter((row) => matchesGovernance(governance.data?.rows.find(item => item.code === row.code), riskFilter) && matchesFinancing(!financing.error && financingRows.get(row.code)?.symbol === row.symbol && financingRows.get(row.code)?.asset_type === row.asset_type ? financingRows.get(row.code) : undefined, row.asset_type, financingFilter) && (!collection || collection.codes.includes(row.code)) && (!poolPage || matchesPoolReview(poolReview.data?.rows.find(item => item.code === row.code), grade, category))).sort((a, b) => {
           if (!volatilitySort) return compareMetric(a, b, tab)
           const av = a.volatility_3m?.value, bv = b.volatility_3m?.value
           if (av == null) return bv == null ? a.code.localeCompare(b.code) : 1
@@ -178,7 +197,7 @@ function App() {
           return bv - av || a.code.localeCompare(b.code)
         })
         : [],
-    [current, collection, tab, poolPage, grade, category, poolReview.data, volatilitySort, governance.data, riskFilter],
+    [current, collection, tab, poolPage, grade, category, poolReview.data, volatilitySort, governance.data, riskFilter, financingRows, financing.error, financingFilter],
   )
   const maxMetric = useMemo(
     () => Math.max(...rows.map((row) => Math.abs(row[tab] ?? 0)), 1),
@@ -192,8 +211,8 @@ function App() {
         ? ['distance_ma250_pct', 'ytd_return_pct', 'distance_52w_low_pct']
         : ['distance_ma250_pct', 'ytd_return_pct']
 
-  if (collectionId === 'boxes') return <BoxScreener />
-  if (collectionId === 'pool-boxes') return <BoxScreener key="pool-boxes" pool />
+  if (collectionId === 'boxes') return <BoxScreener financing={financing} />
+  if (collectionId === 'pool-boxes') return <BoxScreener key="pool-boxes" pool financing={financing} />
   if (error || (data && !current)) return <StateView text="行情暂不可用，请刷新重试。" error />
   if (data && !collection && (researchPage || data.collections)) return <StateView text="当前列表数据缺失，请刷新重试。" error />
   if (!data || !current) return <StateView text="加载中..." />
@@ -274,6 +293,7 @@ function App() {
             <a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/METRIC_DEFINITIONS.md" target="_blank" rel="noreferrer">指标定义</a>
           </details>
           <details className="page-help mb-2"><summary>价格研究 · 情景 {valuations.data ? `已建模 ${valuations.data.coverage.available}/${valuations.data.coverage.available + valuations.data.coverage.pending} · 待估值 ${valuations.data.coverage.pending} · 跳过 ${valuations.data.coverage.not_applicable}` : valuations.error ? '资料读取失败' : '读取中'}</summary><p>乐观／保守／极端保守是按估值日信息折现到今天的情景价值。比较使用未复权收盘价；压力情景可能为零，不是保证底价。</p><p>待估值表示情景模型尚未完成，不是没有找到行情或机构报价。</p><a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/VALUATION_SCENARIOS.md" target="_blank" rel="noreferrer">情景估值规则</a></details>
+          <FinancingFilter value={financingFilter} onChange={setFinancingFilter} error={financing.error} retry={financing.retry} counts={financingCounts} />
           <div className="ranking-sticky" data-testid="ranking-sticky">
             <div className="overflow-x-auto py-2" aria-label="指标选项">
               <div className="flex w-max gap-2">
@@ -293,7 +313,7 @@ function App() {
               if (bodyScroll.current) bodyScroll.current.scrollLeft = event.currentTarget.scrollLeft
             }}>
               <div className="market-grid market-header" data-testid="column-header">
-                <div>#</div><div className="stock-identity text-left">标的</div><div className="business-cell">业务/板块</div>{poolPage && <><div className="fundamental-column-heading">基本面亮点</div><div className="fundamental-column-heading">基本面风险</div></>}<div>收盘价</div><div>今日</div>
+                <div>#</div><div className="stock-identity text-left">标的</div><div className="business-cell">业务/板块</div><div className="financing-heading">融资／稀释风险</div>{poolPage && <><div className="fundamental-column-heading">基本面亮点</div><div className="fundamental-column-heading">基本面风险</div></>}<div>收盘价</div><div>今日</div>
                 {contextMetrics.map((metric) => <div key={metric}>{metricText[metric]}</div>)}
                 <div className="target-column-heading" title="前三档为情景建议价；分析师低位为目标价参考"><b>建议价</b><span>乐观</span><span>保守</span><span>极端保守</span><span>分析师低位</span></div>
                 <div><button className="volatility-sort" aria-pressed={volatilitySort} onClick={() => setVolatilitySort(value => !value)} title="近三个自然月日均真实波幅百分比，含跳空；点击按波动从大到小排序">近3月日均波幅{volatilitySort ? ' ↓' : ' ↕'}</button></div>
@@ -317,6 +337,7 @@ function App() {
                     <GovernanceBadge row={governance.data?.rows.find(item => item.code === row.code)} reviewedAt={governance.data?.reviewed_at} />
                   </div>
                   <div className="business-cell">{row.business || '—'}{poolPage && <FundamentalBadge assessment={poolReview.data?.rows.find(item => item.code === row.code)} />}</div>
+                  <FinancingCell code={row.code} assetType={row.asset_type} row={financingFor(row.code, row.symbol, row.asset_type)} error={financing.error} />
                   {poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(item => item.code === row.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(item => item.code === row.code)} kind="risks" /></>}
                   <div className="font-medium text-slate-900">{formatClose(row)}</div>
                   <div className={getMetricTextClass(row.today_return_pct)}>{formatPct(row.today_return_pct)}</div>
@@ -346,7 +367,7 @@ function App() {
                     {item.note && <p className="mt-1 text-xs">{item.note}</p>}
                     <GovernanceBadge row={governance.data?.rows.find(row => row.code === item.code)} reviewedAt={governance.data?.reviewed_at} />
                   </div>
-                  <div className="business-cell">{item.business || '—'}</div>{poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="risks" /></>}
+                  <div className="business-cell">{item.business || '—'}</div><FinancingCell code={item.code} assetType="stock" row={financingFor(item.code, item.symbol)} error={financing.error} />{poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="risks" /></>}
                   {Array.from({ length: contextMetrics.length + 6 }, (_, column) => column).map((column) => <div key={column}>—</div>)}
                 </div>
               ))}

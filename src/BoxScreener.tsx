@@ -1,3 +1,5 @@
+import FinancingCell from './FinancingReview'
+import type { FinancingReview } from './financingData'
 import DataFreshness from './DataFreshness'
 import PageNavigation from './PageNavigation'
 import { GovernanceBadge } from './GovernanceReview'
@@ -152,7 +154,7 @@ function LongRangeChart({ row }: { row: Box }) {
   </div>
 }
 
-export default function BoxScreener({ pool = false }: { pool?: boolean }) {
+export default function BoxScreener({ pool = false, financing }: { pool?: boolean; financing?: { data: FinancingReview | null; error: boolean } }) {
   const governance = useGovernance()
   const review = usePoolReview(pool)
   const [grade, setGrade] = useState('all')
@@ -214,7 +216,7 @@ export default function BoxScreener({ pool = false }: { pool?: boolean }) {
       {active && <section className="box-panel box-detail" aria-label="箱体走势详情">
         {governance.error && <p className="box-footnote">风险资料不可用，不能视为安全</p>}
         <div className="box-toolbar"><div><div className="box-eyebrow">DAILY CHART / 最近一年</div><h2>{active.code} <span>{active.name}</span></h2><p className="box-business">业务 / 板块：{active.business || '—'}</p></div><span className={`box-status ${active.status}`}>{statusLabels[active.status]}</span></div>
-        <p className="box-reason">{active.reason}</p><GovernanceBadge row={governance.data?.rows.find(row => row.code === active.code)} reviewedAt={governance.data?.reviewed_at} /><p className="box-volatility">近3月日均波幅：<VolatilityCell value={active.volatility_3m} /></p>{pool && <><FundamentalSummary assessment={review.data?.rows.find(item => item.code === active.code)} /><FundamentalBadge assessment={review.data?.rows.find(item => item.code === active.code)} /></>}
+        <div className="box-financing"><FinancingCell code={active.code} assetType="stock" row={financing?.data?.rows.find(row => row.code === active.code)} error={financing?.error ?? false} /></div><p className="box-reason">{active.reason}</p><GovernanceBadge row={governance.data?.rows.find(row => row.code === active.code)} reviewedAt={governance.data?.reviewed_at} /><p className="box-volatility">近3月日均波幅：<VolatilityCell value={active.volatility_3m} /></p>{pool && <><FundamentalSummary assessment={review.data?.rows.find(item => item.code === active.code)} /><FundamentalBadge assessment={review.data?.rows.find(item => item.code === active.code)} /></>}
         {active.short_year && <p className="box-footnote">历史不足一年，本次使用 {active.bars.length} 个可用交易日。</p>}
         <div className="box-window-options" aria-label="箱体窗口对照">
           {active.windows?.map(item => <button key={item.window_days} aria-pressed={active.window_days === item.window_days} onClick={() => setComparison({ code: active.code, days: item.window_days })}>

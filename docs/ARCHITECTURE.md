@@ -185,3 +185,11 @@ CR-035 / UI-035（2026-10-02，本地未发布）：按用户要求，价格来�
 
 
 CR-036 / DATA-033 / RES-014（2026-10-02，Accepted / In Progress）：用户确认现有格式，要求344公司填价后push，6项排除。按已授权行业模型选择新增equity_dcf，金融机构用扣监管资本／偿债后的股权现金流，不将客户资金加为普通股现金。公式仅indicators.py，独立valuation-scenarios v1增加可选模型枚举及显式输入；旧模型和主行情契约不变。下载财报不等于逐只估值完成，全量研究及发布尚在执行。
+
+## DATA-034：融资风险独立快照
+
+scripts/financing_assessments.json为人工唯一入口；scripts/generate_financing_review.py从CSV补齐成员，并验证代码/symbol、逐维证据/事实日期、研究日期和完整性后原子写public/data/financing-review.json v1。顶层schema_version/generated_at/rows；每行code/symbol/asset_type/level/completeness/reviewed_at/reason及actual/potential/funding。三个维度各summary/detail/as_of/sources。未知日期null、未知证据空列表；clear要求complete、complete要求三维有证据。生成时间不推进逐只研究日期。React只展示筛选，异常快照可重试，不影响行情；两箱体只在单股详情显示。现有dashboard/boxes契约不变。详见FINANCING_RISK.md。
+
+### DATA-034 / CR-040 可比股数补充
+
+financing-review仍v1；actual新增可选comparison（current_shares、previous_shares、current_date、previous_date、period、scope）及share_growth_pct。人工先统一经济股份范围与拆并股；生成器校验实际日期/跨度，并调用indicators.py计算摘要。无comparison的旧行兼容，ETOR不以加权EPS补空。React不计算股数增长。非公司not_applicable契约保留，但UI仅显示“—”。核查仅持仓37公司；其它公司旧记录/待核状态保留，行情/箱体JSON及日期不变。

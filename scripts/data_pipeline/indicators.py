@@ -415,3 +415,15 @@ def calculate_scenario_gap(value: float, raw_close: float) -> float:
     if not math.isfinite(result):
         raise ValueError("Nonfinite scenario comparison")
     return result
+
+
+def calculate_financing_share_growth(current: float, previous: float) -> float:
+    """Growth of manually reconciled, comparable outstanding economic shares."""
+    import math
+    if any(isinstance(v, bool) or not isinstance(v, (int, float)) or not math.isfinite(v) or v <= 0
+           for v in (current, previous)):
+        raise ValueError("Invalid comparable financing shares")
+    result = (current / previous - 1) * 100
+    if not math.isfinite(result):
+        raise ValueError("Nonfinite financing share growth")
+    return result

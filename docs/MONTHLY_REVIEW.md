@@ -43,3 +43,11 @@ CR-032范围补充（用户回复）：本轮覆盖CSV全部344只公司；ETF�
 ## 全量建议价发布门禁（CR-036）
 
 本轮覆盖344家公司，6个非公司资产排除；月度更新逐只查最近定期及后续重大披露，同时更新三档经营、融资、股数和来源，不能仅改valued_at。发布前执行`python scripts/generate_valuation_scenarios.py --require-complete`，再完成Python、lint、build、浏览器及真实行情验证。正常行情任务不推进研究日期。机构目标价保留详情参考，不补模型；资本回收法范围须明确。
+
+## 融资／稀释风险（CR-039 / RES-015）
+
+同轮逐只核查可比股数、发行/ATM/可转条款及资金需求，维护scripts/financing_assessments.json，运行python scripts/generate_financing_review.py。更新实际事实日期与逐只核查日期，不改其它研究日期；专项未完成保留partial/unreviewed。研究报告列完整、部分核实、待核、不适用及来源。详见FINANCING_RISK.md；已有融资/稀释估值条件假设不等于已发生事件。不要创建自动研究任务。
+
+融资覆盖补充（CR-041）：当前持仓37公司及活跃100共127公司已核查，10公司重合复用；另外SPRY/LCID保留旧部分记录。月度逐只更新financing_assessments并生成financing-review，不推进其它研究日期。活跃58完整/42部分及NU/MNDY、净ATM/转换缺口以[本轮报告](reviews/2026-10-06-active-financing.md)为复核入口；其余215公司尚未专项研究，不因页面有占位而声称已完成。
+
+CR-042覆盖当前全部344公司（127复用2026-10-06、217研究2026-10-07），6非公司仅“—”。融资研究不再留未开展行；78完整/266部分及225可比股数是当前快照。月度更新应逐只处理[全量报告](reviews/2026-10-07-all-financing.md)净ATM、转换/权证状态、类别/拆并股、可用现金及12/24月到期义务缺口，不能只刷新日期或将取回材料自动称完整。先运行generate_financing_review并审查覆盖；日常行情不得改该快照或研究日期。
