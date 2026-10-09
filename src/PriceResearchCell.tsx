@@ -20,7 +20,7 @@ export default function PriceResearchCell({ code, assetType, valuation, valuatio
   target?: TargetRow; targetsLoaded: boolean; targetsError: boolean; targetsDate?: string
 }) {
   const dialog = useRef<HTMLDialogElement>(null)
-  if (assetType !== 'stock') return <div className="price-research-cell"><div className="scenario-prices" aria-label={`${code} 按要求跳过估值`}>{['optimistic', 'conservative', 'stress', 'analyst-low'].map(key => <span key={key} className="scenario-line equal"><strong>—</strong></span>)}</div></div>
+  if (assetType !== 'stock') return <div data-label="建议价 · 乐观 / 保守 / 极端保守 / 分析师低位" className="price-research-cell"><div className="scenario-prices" aria-label={`${code} 按要求跳过估值`}>{['optimistic', 'conservative', 'stress', 'analyst-low'].map(key => <span key={key} className="scenario-line equal"><strong>—</strong></span>)}</div></div>
   const cases = valuation?.status === 'available' ? valuation.scenarios : null
   const scenarioCurrent = priceDateState(valuation?.valued_at) === 'current'
   const keys = Object.keys(scenarioLabels) as ScenarioKey[]
@@ -40,7 +40,7 @@ export default function PriceResearchCell({ code, assetType, valuation, valuatio
     <span className="scenario-label">{scenarioLabels[key]}</span><strong>{cases ? price(cases[key].value) : '—'}</strong><span className="scenario-gap">{scenarioCurrent ? gap(key) : '—'}</span>
     {expanded && <><p>{cases ? `${cases[key].assumptions.business.split('。')[0]}。` : missing}{key === 'stress' && cases ? ' · 压力情景' : ''}</p><div className="scenario-sources">{cases?.[key].sources.slice(0, 1).map(source => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.title}</a>)}</div></>}
   </div>)
-  return <div className="price-research-cell">
+  return <div data-label="建议价 · 乐观 / 保守 / 极端保守 / 分析师低位" className="price-research-cell">
     <div className="scenario-prices">
       {keys.map(key => {
         const value = scenarioCurrent ? cases?.[key].value : undefined

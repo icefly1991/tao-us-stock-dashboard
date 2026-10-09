@@ -8,7 +8,7 @@ import { useAnalystTargets } from './AnalystTargets'
 import { useValuations } from './valuationData'
 import DataFreshness from './DataFreshness'
 import PageNavigation from './PageNavigation'
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
 import { CopyStockButton, StockCopyProvider } from './StockCopy'
 import { StockHistoryCode, StockHistoryProvider } from './StockHistoryPreview'
@@ -107,7 +107,7 @@ const formatClose = (row: Row) => {
 
 const getActiveMetricCellClass = (metric: MetricKey, activeMetric: MetricKey) =>
   metric === activeMetric
-    ? 'mx-auto w-[84%] rounded-[1.1rem] border border-sky-100/90 bg-[linear-gradient(180deg,rgba(249,252,255,0.98),rgba(242,248,252,0.94))] px-3.5 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.95),0_8px_24px_rgba(15,23,42,0.06)]'
+    ? 'metric-bubble mx-auto w-[84%] rounded-[1.1rem] border border-sky-100/90 bg-[linear-gradient(180deg,rgba(249,252,255,0.98),rgba(242,248,252,0.94))] px-3.5 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.95),0_8px_24px_rgba(15,23,42,0.06)]'
     : 'w-full px-2 py-2'
 
 function App() {
@@ -134,8 +134,6 @@ function App() {
   const [grade, setGrade] = useState('all')
   const [category, setCategory] = useState('all')
   const researchPage = collectionId !== 'original'
-  const headerScroll = useRef<HTMLDivElement>(null)
-  const bodyScroll = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const navigate = () => {
@@ -287,7 +285,7 @@ function App() {
           )}
           <details className="page-help mb-3">
             <summary>使用说明与选股标准</summary>
-            <p>点击代码复制；悬停代码或点图标看 K 线，点 RSI 看走势。手机可左右滑动表格。</p>
+            <p>点击代码复制；悬停代码或点图标看 K 线，点 RSI 看走势。窄屏按字段分组展示，无需左右滑动。</p>
             <p>指标升序，缺失与停牌置后；52周内进度是价格在52周高低区间的位置。</p>
             <a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/LIST_REVIEW.md" target="_blank" rel="noreferrer">选股标准</a>
             <a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/METRIC_DEFINITIONS.md" target="_blank" rel="noreferrer">指标定义</a>
@@ -295,8 +293,8 @@ function App() {
           <details className="page-help mb-2"><summary>价格研究 · 情景 {valuations.data ? `已建模 ${valuations.data.coverage.available}/${valuations.data.coverage.available + valuations.data.coverage.pending} · 待估值 ${valuations.data.coverage.pending} · 跳过 ${valuations.data.coverage.not_applicable}` : valuations.error ? '资料读取失败' : '读取中'}</summary><p>乐观／保守／极端保守是按估值日信息折现到今天的情景价值。比较使用未复权收盘价；压力情景可能为零，不是保证底价。</p><p>待估值表示情景模型尚未完成，不是没有找到行情或机构报价。</p><a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/VALUATION_SCENARIOS.md" target="_blank" rel="noreferrer">情景估值规则</a></details>
           <FinancingFilter value={financingFilter} onChange={setFinancingFilter} error={financing.error} retry={financing.retry} counts={financingCounts} />
           <div className="ranking-sticky" data-testid="ranking-sticky">
-            <div className="overflow-x-auto py-2" aria-label="指标选项">
-              <div className="flex w-max gap-2">
+            <div className="py-2" aria-label="指标选项">
+              <div className="flex flex-wrap gap-2">
                 {tabs.map((item) => (
                   <button key={item.id} type="button" onClick={() => { setTab(item.id); setVolatilitySort(false) }} aria-pressed={tab === item.id && !volatilitySort}
                     className={`rounded-full border px-4 py-2 text-sm font-medium ${tab === item.id && !volatilitySort ? 'border-slate-400 bg-slate-100 text-slate-950' : 'border-slate-200 bg-white text-slate-600'}`}>
@@ -309,9 +307,8 @@ function App() {
               <h2 className="text-lg font-semibold text-slate-950">{collection?.label ?? '自选'} · {volatilitySort ? '近3月日均波幅' : metricText[tab]}榜单</h2>
               <p className="mt-1 text-xs text-slate-600">{adjustmentText[adjustment]} · {volatilitySort ? '日均波幅越大越靠前' : sortingNotes[tab]} · 缺失与停牌置后</p>
             </div>
-            <div ref={headerScroll} className="ranking-header-scroll" onScroll={(event) => {
-              if (bodyScroll.current) bodyScroll.current.scrollLeft = event.currentTarget.scrollLeft
-            }}>
+            <button className="market-mobile-sort volatility-sort" aria-pressed={volatilitySort} onClick={() => setVolatilitySort(value => !value)}>近3月日均波幅{volatilitySort ? ' ↓' : ' ↕'}</button>
+            <div className="ranking-header-scroll">
               <div className="market-grid market-header" data-testid="column-header">
                 <div>#</div><div className="stock-identity text-left">标的</div><div className="business-cell">业务/板块</div><div className="financing-heading">融资／稀释风险</div>{poolPage && <><div className="fundamental-column-heading">基本面亮点</div><div className="fundamental-column-heading">基本面风险</div></>}<div>收盘价</div><div>今日</div>
                 {contextMetrics.map((metric) => <div key={metric}>{metricText[metric]}</div>)}
@@ -322,9 +319,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div ref={bodyScroll} className="ranking-body-scroll" data-testid="table-scroll" onScroll={(event) => {
-            if (headerScroll.current) headerScroll.current.scrollLeft = event.currentTarget.scrollLeft
-          }}>
+          <div className="ranking-body-scroll" data-testid="table-scroll">
             <div className="market-body">
               {rows.map((row, index) => (
                 <div key={row.code} data-code={row.code} data-metric={row[tab] ?? 'missing'} className="market-grid market-row">
@@ -336,16 +331,16 @@ function App() {
                     </StockHistoryCode>
                     <GovernanceBadge row={governance.data?.rows.find(item => item.code === row.code)} reviewedAt={governance.data?.reviewed_at} />
                   </div>
-                  <div className="business-cell">{row.business || '—'}{poolPage && <FundamentalBadge assessment={poolReview.data?.rows.find(item => item.code === row.code)} />}</div>
+                  <div data-label="业务/板块" className="business-cell">{row.business || '—'}{poolPage && <FundamentalBadge assessment={poolReview.data?.rows.find(item => item.code === row.code)} />}</div>
                   <FinancingCell code={row.code} assetType={row.asset_type} row={financingFor(row.code, row.symbol, row.asset_type)} error={financing.error} />
                   {poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(item => item.code === row.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(item => item.code === row.code)} kind="risks" /></>}
-                  <div className="font-medium text-slate-900">{formatClose(row)}</div>
-                  <div className={getMetricTextClass(row.today_return_pct)}>{formatPct(row.today_return_pct)}</div>
-                  {contextMetrics.map((metric) => <div key={metric} className={getMetricTextClass(row[metric])}>{formatMetric(metric, row[metric])}</div>)}
+                  <div data-label="收盘价" className="font-medium text-slate-900">{formatClose(row)}</div>
+                  <div data-label="今日" className={getMetricTextClass(row.today_return_pct)}>{formatPct(row.today_return_pct)}</div>
+                  {contextMetrics.map((metric) => <div key={metric} data-label={metricText[metric]} className={getMetricTextClass(row[metric])}>{formatMetric(metric, row[metric])}</div>)}
                   <PriceResearchCell code={row.code} assetType={row.asset_type} valuation={valuationRows.get(row.code)?.symbol === row.symbol ? valuationRows.get(row.code) : undefined} valuationAvailable={!!valuations.data} rawClose={rawRows.get(row.code)?.close} comparison={rawRows.get(row.code)?.scenario_comparison} target={targetRows.get(row.code)?.symbol === row.symbol ? targetRows.get(row.code) : undefined} targetsLoaded={!!targets.snapshot} targetsError={targets.error} targetsDate={targets.snapshot?.fetched_at} />
-                  <div><VolatilityCell value={row.volatility_3m} /></div>
+                  <div data-label="近3月日均波幅"><VolatilityCell value={row.volatility_3m} /></div>
                   <RsiCell key={`${row.code}/${adjustment}/${data.updated_at}`} rsi={row.rsi} stock={{ code: row.code, name: row.name, adjustment, updatedAt: data.updated_at }} />
-                  <div>
+                  <div data-label={metricText[tab]}>
                     <div className={getActiveMetricCellClass(tab, tab)}>
                       <span className={getActiveMetricTextClass(tab, row[tab])}>{formatMetric(tab, row[tab])}</span>
                       <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-slate-200">
@@ -367,8 +362,8 @@ function App() {
                     {item.note && <p className="mt-1 text-xs">{item.note}</p>}
                     <GovernanceBadge row={governance.data?.rows.find(row => row.code === item.code)} reviewedAt={governance.data?.reviewed_at} />
                   </div>
-                  <div className="business-cell">{item.business || '—'}</div><FinancingCell code={item.code} assetType="stock" row={financingFor(item.code, item.symbol)} error={financing.error} />{poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="risks" /></>}
-                  {Array.from({ length: contextMetrics.length + 6 }, (_, column) => column).map((column) => <div key={column}>—</div>)}
+                  <div data-label="业务/板块" className="business-cell">{item.business || '—'}</div><FinancingCell code={item.code} assetType="stock" row={financingFor(item.code, item.symbol)} error={financing.error} />{poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="risks" /></>}
+                  {['收盘价', '今日', ...contextMetrics.map(metric => metricText[metric]), '建议价', '近3月日均波幅', 'RSI(14) / 年内分位', metricText[tab]].map((label, column) => <div key={column} data-label={label}>—</div>)}
                 </div>
               ))}
             </div>

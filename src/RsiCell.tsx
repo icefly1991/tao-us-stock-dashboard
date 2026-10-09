@@ -54,7 +54,7 @@ export default function RsiCell({ rsi, stock }: { rsi?: RsiData | null; stock?: 
   return <div ref={trigger} role={stock ? 'button' : undefined} aria-haspopup={stock ? 'dialog' : undefined} aria-expanded={stock ? !!preview : undefined}
     onPointerEnter={event => { if (event.pointerType === 'mouse' && !preview) { cancel(); timer.current = setTimeout(() => open(false), 300) } }}
     onPointerLeave={leave} onClick={() => { if (!preview?.pinned) open(true) }} onKeyDown={event => { if (event.target === event.currentTarget && (event.key === 'Enter' || event.key === ' ')) { event.preventDefault(); open(true) } }}
-    className={`rsi-cell rsi-${state}`} data-rsi-state={state} data-rsi-description={detail} tabIndex={0} aria-label={`${available ? `RSI ${rsi.value!.toFixed(1)}，${labels[state]}。` : 'RSI暂无数据。'}${detail}`}>
+    data-label="RSI(14) / 年内分位" className={`rsi-cell rsi-${state}`} data-rsi-state={state} data-rsi-description={detail} tabIndex={0} aria-label={`${available ? `RSI ${rsi.value!.toFixed(1)}，${labels[state]}。` : 'RSI暂无数据。'}${detail}`}>
     <div><strong>{available ? rsi.value!.toFixed(1) : '—'}</strong>{available && <span className="rsi-state-label">{labels[state]}</span>}</div>
     <small>{!available ? 'RSI历史不足或缺失' : rsi.percentile_ytd == null ? '年内样本不足' : `年内 P${rsi.percentile_ytd.toFixed(1)}`}</small>
     {available && (rsi.percentile_state === 'low' || rsi.percentile_state === 'high') && <small className="rsi-relative">{rsi.percentile_state === 'low' ? '年内偏低' : '年内偏高'}</small>}

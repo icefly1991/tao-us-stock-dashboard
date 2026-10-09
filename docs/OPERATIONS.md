@@ -539,3 +539,25 @@ DKNG新增三价和同批现价比较单独验证通过（.cache/cr036-dkng-chec
 功能已提交 `b2fb7cb0b6797336abf6304f1be68e50bf4ea2d4`，本地验收通过，但未发布。首次push遇本机不可用代理127.0.0.1:10808；仅本次命令禁用代理后能连接GitHub，连续接收提交均返回`remote: Internal Server Error`，更换HTTP/1.1及本次缓冲仍失败。最后一次2026-10-07T15:11:54Z，GitHub Request ID `DBA5:60FE7:DF835:155FEE:6AC66138`。
 
 只读确认现有Git凭据是仓库所有者且具repo/workflow权限。官方Git Data API上传同一文档blob也返回HTTP500；未成功创建提交或更新分支。连接器另返回403 `Resource not accessible by integration`，不与Git凭据权限混淆。原因未被GitHub说明，不能断言为权限配置或代码故障。远端main仍为`30bcee78e8100c10f721a60ce6bb8b11073502af`，未触发本轮Actions，不能称融资列已上线；无强制推送、全局设置修改或凭据落盘。服务恢复后用`git -c http.proxy= -c https.proxy= push origin main`重试，再完成Actions及线上验收；本轮发布失败记录使用独立文档提交保留。
+
+
+## 2026-10-08 · CR-043 / UI-041：统一表格宽度（本地，未发布）
+
+修复高风险主表1740px最小宽度和股票代码预览控件96px固定宽度；三主表统一比例列宽，箱体表固定表格布局。320–1023px按股票纵向分组并标注字段，全部数据保留；四价同泡泡，窄屏显示档位名称，波幅排序另有可操作按钮。桌面保留列对齐/吸顶，指标按钮换行。没有通过隐藏溢出掩盖缺列。
+
+验证：项目`.venv/Scripts/python.exe -m unittest discover -s tests -v`，151项通过；`npm run lint`、`npm run build`退出0；`PLAYWRIGHT_CHANNEL=msedge npm test`，90项通过。默认系统Python缺yfinance，改用现有项目虚拟环境；Playwright默认Chromium未安装，使用已安装Edge（Chromium内核），没有屏蔽失败。30项布局回归覆盖五页320/390/768/1024/1440/1920px，三主表五指标、两口径、停牌、窄屏波幅排序和高风险额外两列；断言容器和单元格不溢出、设置scrollLeft仍为0。
+
+补充视觉验证使用已有`.cache/cr039-real/dashboard.json`（350行情行，data_date=20261006），没有重新拉行情或修改占位文件。三主表六尺寸、五指标单元格检查无溢出；最终390/1024/1440关键尺寸默认视图再次通过。截图`.cache/table-width-390.png`、`.cache/table-width-1440.png`已查看，长融资/基本面文字、四价和最右指标完整。补充检查的开发控制台有既有融资来源重复React key警告，不属于宽度变更，未将控制台称为零警告。
+
+变更文件：`src/index.css`、`src/App.tsx`、`src/BoxScreener.tsx`、`src/FinancingReview.tsx`、`src/PoolReview.tsx`、`src/PriceResearchCell.tsx`、`src/RsiCell.tsx`、`src/StockHistoryPreview.tsx`、`tests/browser/layout.spec.ts`；治理文档`PROJECT_RULES.md`、`AGENTS.md`、`docs/REQUIREMENTS.md`、`docs/CHANGE_REQUESTS.md`、`docs/DECISIONS.md`、`docs/CHANGELOG.md`及本文件。
+
+JSON契约、指标/箱体公式、研究内容、名单/研究日期及行情调度均不变。代价是窄屏股票行更高，桌面长文换行。未commit/push/部署；线上版本不因本地验证变化。
+
+
+## 2026-10-09 · CR-044 / UI-042：泡泡居中（本地，未发布）
+
+本轮增量文件：`src/App.tsx`、`src/index.css`、`tests/browser/layout.spec.ts`和`AGENTS.md`、`docs/REQUIREMENTS.md`、`docs/CHANGE_REQUESTS.md`、`docs/CHANGELOG.md`及本文件。指标泡泡新增稳定class，内容水平/垂直居中，数字单行不拆开，进度条单独展示；表内融资三维摘要、价格、RSI、风险标签和箱体形态标签统一居中。详情正文不套表格居中规则；沿用CR-043的容器宽度约束。
+
+151项Python、lint/build通过；90项浏览器通过，六尺寸三主表五指标/两口径断言泡泡居中、指标文本仅一行及无溢出。为了保留用户4173预览，使用临时`.cache/center-playwright.config.ts`以4174端口执行原完整测试集，`PLAYWRIGHT_CHANNEL=msedge npm test -- --config .cache/center-playwright.config.ts`；默认4173配置首次因已占用而未启动，不算通过。234只高风险池既有真实快照在390/1024/1440复验无失败，手机/桌面截图`.cache/center-bubble-{390|1440}.png`已查看。
+
+本地预览`http://127.0.0.1:4173/tao-us-stock-dashboard/#/pool`已更新最新dist；行情仍为20261006本地快照。未提交/push/部署。JSON、公式、名单及研究日期不变；长融资文字居中后仍会换行，窄屏行高增加。

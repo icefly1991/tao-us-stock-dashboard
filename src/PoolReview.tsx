@@ -15,7 +15,7 @@ export function PoolFilter({ review, error, value, onChange, category, onCategor
 const factLabels: Record<string, string> = { revenue: '收入', net_income: '净利润', operating_cash_flow: '经营现金流', cash: '现金及等价物', equity_proceeds: '股权融资所得', financing_cash_flow: '融资现金流', current_assets: '流动资产', current_liabilities: '流动负债', net_assets: '基金净资产' }
 export function FundamentalPhrases({ assessment, kind, evidence = false }: { assessment?: Assessment; kind: 'highlights' | 'risks'; evidence?: boolean }) {
   const phrases = assessment?.[kind]
-  return <div className={`fundamental-phrases ${kind}`} aria-label={kind === 'highlights' ? '基本面亮点' : '基本面风险'}>
+  return <div data-label={kind === 'highlights' ? '基本面亮点' : '基本面风险'} className={`fundamental-phrases ${kind}`} aria-label={kind === 'highlights' ? '基本面亮点' : '基本面风险'}>
     {phrases?.length ? <ul>{phrases.map(item => <li key={item.text}>{item.text}{evidence && <small>{item.method} · {item.sources.map((source, index) => <a key={source.url} href={source.url} target="_blank" rel="noreferrer" title={source.title}>依据{index + 1} </a>)}</small>}</li>)}</ul> : <span className="fundamental-empty">{phrases === undefined ? '摘要待补充' : kind === 'highlights' ? '暂无可确认亮点' : '具体风险待补充'}</span>}
   </div>
 }

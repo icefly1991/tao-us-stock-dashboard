@@ -8,11 +8,11 @@ const axes = [['actual', '已发生稀释'], ['potential', '潜在稀释'], ['fu
 export default function FinancingCell({ code, assetType, row, error }: { code: string; assetType: string; row?: FinancingRow; error: boolean }) {
   const dialog = useRef<HTMLDialogElement>(null)
   const applicable = assetType === 'stock'
-  if (!applicable) return <div className="financing-cell financing-na" aria-label="融资风险不适用">—</div>
+  if (!applicable) return <div data-label="融资／稀释风险" className="financing-cell financing-na" aria-label="融资风险不适用">—</div>
   const level = row?.level ?? 'unknown'
   const unavailable = error
   const status = unavailable ? '资料读取失败' : financingLabels[level]
-  return <div className="financing-cell">
+  return <div data-label="融资／稀释风险" className="financing-cell">
     <button className="financing-block" onClick={() => dialog.current?.showModal()} aria-label={`${code} 融资／稀释风险详情`} aria-haspopup="dialog">
       <strong className={`financing-level ${level}`}>{status}</strong>
       {axes.map(([key, label]) => <span className="financing-line" key={key}><span>{label}</span><b>{!applicable ? '不适用' : unavailable ? '资料不可用' : row?.[key].summary ?? '待核实'}</b></span>)}

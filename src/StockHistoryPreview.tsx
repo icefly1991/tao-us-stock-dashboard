@@ -88,8 +88,8 @@ export function StockHistoryProvider({ children }: { children: ReactNode }) {
 export function StockHistoryCode({ code, name, updatedAt, adjustment = 'adjusted', available, children }: Stock & { children: ReactNode }) {
   const context = useContext(PreviewContext)
   if (!context) throw new Error('StockHistoryCode requires StockHistoryProvider')
-  return <div className="flex items-center gap-1">
-    <div className="w-24 shrink-0" onPointerEnter={(event) => { if (event.pointerType === 'mouse') context.open({ code, name, updatedAt, adjustment, available }, event.currentTarget, false) }} onPointerLeave={context.leave}>{children}</div>
+  return <div className="flex min-w-0 flex-wrap items-center gap-1">
+    <div className="min-w-0 flex-1" onPointerEnter={(event) => { if (event.pointerType === 'mouse') context.open({ code, name, updatedAt, adjustment, available }, event.currentTarget, false) }} onPointerLeave={context.leave}>{children}</div>
     <button type="button" aria-label={`查看${name}历史K线`} title="查看五年K线" onClick={(event) => context.open({ code, name, updatedAt, adjustment, available }, event.currentTarget, true)}
       className="flex min-h-8 min-w-6 shrink-0 cursor-pointer items-center justify-center rounded-md text-sky-600 hover:bg-sky-50 focus-visible:outline-2 focus-visible:outline-sky-500"><ChartCandlestick size={15} aria-hidden="true" /></button>
   </div>
