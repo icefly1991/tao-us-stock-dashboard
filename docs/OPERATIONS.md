@@ -561,3 +561,12 @@ JSON契约、指标/箱体公式、研究内容、名单/研究日期及行情�
 151项Python、lint/build通过；90项浏览器通过，六尺寸三主表五指标/两口径断言泡泡居中、指标文本仅一行及无溢出。为了保留用户4173预览，使用临时`.cache/center-playwright.config.ts`以4174端口执行原完整测试集，`PLAYWRIGHT_CHANNEL=msedge npm test -- --config .cache/center-playwright.config.ts`；默认4173配置首次因已占用而未启动，不算通过。234只高风险池既有真实快照在390/1024/1440复验无失败，手机/桌面截图`.cache/center-bubble-{390|1440}.png`已查看。
 
 本地预览`http://127.0.0.1:4173/tao-us-stock-dashboard/#/pool`已更新最新dist；行情仍为20261006本地快照。未提交/push/部署。JSON、公式、名单及研究日期不变；长融资文字居中后仍会换行，窄屏行高增加。
+
+
+## CR-039–044 最新发布基线（2026-10-09）
+
+用户本轮授权push。功能提交`4030f3e`及此前融资提交`b2fb7cb`已成功推送，覆盖此前GitHub 500阻挡与“本地未发布”备注。[Actions 37902341164](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/37902341164) checks/build/deploy全部success；151 Python、90 Chromium及lint/build通过。行情首轮生成成功，350成功/0失败/0停牌，700历史文件/0图表错误，两箱体100/234扫描均0错误，data_date20261008。
+
+线上HTTP200，复权/未复权各350行，updated_at纽约2026-10-09 04:03。五页390/1024/1440共15种组合实测无页面/表格横向溢出，三主表泡泡居中、指标数字单行；成员43/100/234，两箱体默认候选28/45。高风险池1440截图`.cache/release-4030f3e-pool.png`已查看，原始结果`.cache/release-4030f3e-ui.json`、快照`.cache/release-4030f3e-data.json`和日志摘要在本地缓存。融资350行覆盖344公司及6不适用，78三维核实/266部分仍保留缺口；不把发布成功当成全量条款尽调完成。
+
+CR-043/UI-041统一容器总宽度及CR-044/UI-042泡泡居中现已上线；金融公式、原行情/箱体JSON契约、成员与名单/研究日期不变。窄屏改为纵向分组，行高增加。仅补发布证据的文档提交使用[skip ci]，不重新部署占位数据。
