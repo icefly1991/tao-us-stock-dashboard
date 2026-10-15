@@ -89,6 +89,18 @@ class SessionCalendarTests(unittest.TestCase):
             export.assert_not_called()
             boxes.assert_not_called()
 
+    def test_empty_network_failure_is_fatal_not_classified_as_stale(self):
+        result = PipelineRunResult({"adjusted": []}, [{"code": "*", "error": "network unavailable"}], None, 0, 1)
+        with patch.dict(os.environ, {"DASHBOARD_TARGET_DATE": "20261014"}), \
+                patch.object(generate_dashboard, "YFinancePipelineClient") as client, \
+                patch.object(generate_dashboard, "write_diagnostics"), \
+                patch.object(generate_dashboard, "export_dashboard") as export:
+            client.return_value.build_adjustment_rows.return_value = result
+            with self.assertRaisesRegex(RuntimeError, "No valid dashboard rows") as caught:
+                generate_dashboard.main()
+            self.assertNotIsInstance(caught.exception, generate_dashboard.IncompleteLatestPricesError)
+            export.assert_not_called()
+
 
 class RetryCacheTests(unittest.TestCase):
     def frame(self, symbols, incomplete=None, date="2026-10-14"):
@@ -161,6 +173,17 @@ class RetryCacheTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "Target session 20261014 unavailable"):
                 client.build_row(WatchlistItem("A", "A", "A", "stock"),
                                  self.frame(["A"], date="2026-10-13"), "raw")
+
+    def test_all_stale_rows_keep_observed_date_for_retry_diagnostics(self):
+        with tempfile.TemporaryDirectory() as folder, patch.dict(os.environ, {"DASHBOARD_TARGET_DATE": "20261014"}):
+            config = replace(build_runtime_config(), root_dir=Path(folder),
+                             watchlist=[WatchlistItem("A", "A", "A", "stock")])
+            client = YFinancePipelineClient(config)
+            with patch.object(client, "download_history", return_value=self.frame(["A"], date="2026-10-13")):
+                result = client.build_adjustment_rows()
+            self.assertEqual(result.latest_trade_date, "20261013")
+            self.assertEqual(result.successful_stocks, 0)
+            self.assertEqual(result.failed_stocks, 1)
 
 
 if __name__ == "__main__":

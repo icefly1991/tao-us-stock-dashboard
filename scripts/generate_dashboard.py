@@ -73,7 +73,7 @@ def main() -> None:
                 print(f"Chart gaps: {code} {adjustment} {history['skipped_dates']}")
 
     target = os.environ.get("DASHBOARD_TARGET_DATE")
-    if target and result.latest_trade_date != target:
+    if target and result.latest_trade_date and result.latest_trade_date != target:
         print(f"::error title=Market data stale::Expected completed session {target}; received {result.latest_trade_date}. Previous publication retained.")
         raise IncompleteLatestPricesError("Target session not ready; no dashboard/history/boxes files were written.")
 

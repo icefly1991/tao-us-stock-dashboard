@@ -129,7 +129,7 @@ class YFinancePipelineClient:
             errors=errors,
             # Prefer the latest regular-market date so weekend crypto bars do not
             # make the US stock data appear fresher than it is.
-            latest_trade_date=latest_trade_date or latest_any_date,
+            latest_trade_date=common_date or latest_trade_date or latest_any_date,
             successful_stocks=len(successful_codes),
             failed_stocks=len(failed_codes),
             histories=histories,
