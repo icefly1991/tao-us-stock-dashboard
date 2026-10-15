@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import csv
 import calendar
+import os
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -49,6 +50,8 @@ def get_new_york_now() -> datetime:
 
 def build_runtime_config(today: date | None = None) -> RuntimeConfig:
     market_today = today or get_new_york_now().date()
+    if os.environ.get("DASHBOARD_TARGET_DATE"):
+        market_today = datetime.strptime(os.environ["DASHBOARD_TARGET_DATE"], "%Y%m%d").date()
     year_start = date(market_today.year, 1, 1)
     history_start = date(market_today.year - 5, market_today.month,
                          min(market_today.day, calendar.monthrange(market_today.year - 5, market_today.month)[1]))

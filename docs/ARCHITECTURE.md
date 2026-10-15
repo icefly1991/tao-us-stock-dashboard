@@ -193,3 +193,7 @@ scripts/financing_assessments.json为人工唯一入口；scripts/generate_finan
 ### DATA-034 / CR-040 可比股数补充
 
 financing-review仍v1；actual新增可选comparison（current_shares、previous_shares、current_date、previous_date、period、scope）及share_growth_pct。人工先统一经济股份范围与拆并股；生成器校验实际日期/跨度，并调用indicators.py计算摘要。无comparison的旧行兼容，ETOR不以加权EPS补空。React不计算股数增长。非公司not_applicable契约保留，但UI仅显示“—”。核查仅持仓37公司；其它公司旧记录/待核状态保留，行情/箱体JSON及日期不变。
+
+## OPS-009 / CR-045：每日更新控制
+
+prepare通过NYSE交易日历得到target_date，并只在schedule事件核对线上dashboard.data_date及update-state.json的data_date/revision；一致则跳过checks/build/deploy，其它情况继续。build将DASHBOARD_TARGET_DATE传给生成器，请求end为目标次日，拒绝过期批次及旧个股伪装。独立.cache/target-history存JSON原始完整历史，版本+目标日隔离的Actions缓存使下一次只下载未完成标的，结果仍进入原指标/图表/箱体链路。完成全部生成后导出data/update-state.json（data_date/revision/updated_at），与Pages产物一起原子发布；原有dashboard/history/boxes契约不变。详见DAILY_UPDATE.md。

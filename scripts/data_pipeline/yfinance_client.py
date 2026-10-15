@@ -2,6 +2,10 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from math import ceil
+import hashlib
+from io import StringIO
+import os
+from pathlib import Path
 import time
 from typing import Any
 
@@ -134,6 +138,57 @@ class YFinancePipelineClient:
         )
 
     def download_history(self, symbols: list[str]) -> pd.DataFrame:
+        target = os.environ.get("DASHBOARD_TARGET_DATE")
+        cache_dir = os.environ.get("DASHBOARD_RETRY_CACHE")
+        if target and cache_dir:
+            return self.download_with_cache(symbols, target, Path(cache_dir))
+        return self.fetch_history(symbols)
+
+    def download_with_cache(self, symbols, target, directory):
+        """Reuse only complete target-session series; retry all other symbols."""
+        directory.mkdir(parents=True, exist_ok=True)
+        frames = {}
+        pending = []
+
+        def path(symbol):
+            key = f"{symbol}:{self.config.start_date}:{self.config.end_date}:{target}"
+            return directory / (hashlib.sha256(key.encode()).hexdigest() + ".json")
+
+        def complete(frame, symbol):
+            candidate = pd.concat({symbol: frame}, axis=1)
+            latest = extract_symbol_frame(candidate, symbol, adjusted=True, include_ohlcv=True)["trade_date"].max()
+            return latest == target
+
+        for symbol in symbols:
+            try:
+                frame = pd.read_json(StringIO(path(symbol).read_text(encoding="utf-8")), orient="split")
+                frame.index = pd.to_datetime(frame.index)
+                frame.index.name = "Date"
+                if not complete(frame, symbol):
+                    raise ValueError("Cached session is not complete")
+                frames[symbol] = frame
+            except (OSError, ValueError, KeyError, TypeError):
+                pending.append(symbol)
+        print(f"Target-session cache: reused={len(frames)}; fetching={len(pending)}")
+        if pending:
+            downloaded = self.fetch_history(pending)
+            for symbol in pending:
+                if isinstance(downloaded.columns, pd.MultiIndex):
+                    if symbol not in downloaded.columns.get_level_values(0):
+                        continue
+                    frame = downloaded[symbol].copy()
+                else:
+                    frame = downloaded.copy()
+                frames[symbol] = frame
+                try:
+                    if complete(frame, symbol):
+                        path(symbol).write_text(frame.to_json(orient="split", date_format="iso", double_precision=15), encoding="utf-8")
+                except (OSError, ValueError, KeyError, TypeError):
+                    # Partial responses still reach the existing price safety gate.
+                    pass
+        return pd.concat(frames, axis=1) if frames else pd.DataFrame()
+
+    def fetch_history(self, symbols: list[str]) -> pd.DataFrame:
         retry_delays = (0, 15, 45)
         for attempt, delay in enumerate(retry_delays, start=1):
             if delay:
@@ -170,8 +225,11 @@ class YFinancePipelineClient:
             item.symbol,
             adjusted=adjustment == "adjusted",
         )
-        metrics = build_metrics(frame, self.config.year_start)
         trade_date = str(frame["trade_date"].astype(str).max())
+        target = os.environ.get("DASHBOARD_TARGET_DATE")
+        if target and item.asset_type != "crypto" and trade_date != target:
+            raise ValueError(f"Target session {target} unavailable for {item.symbol}; last usable {trade_date}")
+        metrics = build_metrics(frame, self.config.year_start)
         row = merge_name_and_metrics(item.code, item.name, metrics)
         row["business"] = item.business
         row["symbol"] = item.symbol

@@ -40,3 +40,4 @@ __pycache__/
 public/data/history/
 public/data/boxes.json
 public/data/pool-boxes.json
+public/data/update-state.json

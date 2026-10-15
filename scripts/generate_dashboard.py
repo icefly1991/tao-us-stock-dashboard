@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
 from data_pipeline.indicators import calculate_scenario_gap
@@ -71,6 +72,11 @@ def main() -> None:
             if history.get("skipped_dates"):
                 print(f"Chart gaps: {code} {adjustment} {history['skipped_dates']}")
 
+    target = os.environ.get("DASHBOARD_TARGET_DATE")
+    if target and result.latest_trade_date != target:
+        print(f"::error title=Market data stale::Expected completed session {target}; received {result.latest_trade_date}. Previous publication retained.")
+        raise IncompleteLatestPricesError("Target session not ready; no dashboard/history/boxes files were written.")
+
     if valid_row_count == 0:
         status = "Kept existing dashboard.json." if dashboard_exists(config.output_json_file) else "No dashboard.json written."
         print(status)
@@ -104,6 +110,10 @@ def main() -> None:
     generate_boxes(config.output_json_file.parent)
     if any(item.pool for item in config.watchlist):
         generate_boxes(config.output_json_file.parent, "pool", "pool-boxes.json")
+    if target:
+        export_dashboard(config.output_json_file.parent / "update-state.json",
+                         {"data_date": target, "revision": os.environ.get("GITHUB_SHA", ""),
+                          "updated_at": config.updated_at})
     print(f"Output file path: {config.output_json_file}")
 
 
