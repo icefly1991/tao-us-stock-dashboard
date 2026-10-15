@@ -354,3 +354,7 @@ CR-044验证：151 Python、90浏览器及lint/build通过，本地预览已更�
 ## 2026-10-09 · CR-039–044 已发布
 
 功能4030f3e及累计融资研究b2fb7cb已push，Actions37902341164全部成功。统一表格宽度及泡泡居中线上五页三尺寸通过；151Python/90Chromium及lint/build通过，350行情/700历史文件/两箱体100与234扫描均0失败或错误，data_date20261008。覆盖此前本地及push失败备注；详见OPERATIONS。
+
+### CR-045 发布证据（2026-10-15）
+
+最终功能1965278已上线，Actions 38701439254全流程成功；166 Python/4 Node/90 Chromium及lint/build通过，真实350/0、700历史/0错误、两箱体100及234/0错误。线上20261014、两口径各350行且marker一致；真实定时preflight needed=false、Actions完整历史缓存保存成功。详见OPERATIONS的最终验收记录。

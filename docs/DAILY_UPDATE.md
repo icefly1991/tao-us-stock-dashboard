@@ -70,3 +70,14 @@ or paid feed was added. GitHub cron can still be late or dropped; all fallback
 triggers depend on GitHub. NYSE is the common US-session calendar, not an
 individual suspension/status service. Crypto remains excluded from stock-date
 coverage. Manual research and list-review dates do not advance with market data.
+
+## Verified rollout · 2026-10-15
+
+Implemented and published at revision 1965278, [successful deployment](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/38701439254).
+166 Python, 4 Node and 90 Chromium checks, lint/build passed in CI. Real Yahoo
+validation: 350 success/0 failures; 700 histories/0 errors; both box pools
+100/234 processed with no errors. Published date 20261014, 350 rows per price
+mode and matching revision marker were read back from the live site. A real
+scheduled preflight against this revision returned needed=false. Target-session
+histories were successfully saved to Actions cache. Local Edge had two navigation
+load timeouts; the unchanged full cloud browser suite passed all 90 tests.
