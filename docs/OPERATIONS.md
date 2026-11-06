@@ -628,3 +628,12 @@ JSON影响仅dashboard可选month_return_pct兼容扩展；治理仍v1字段但�
 Implemented并已发布：8e35124 / [Actions 42271565580](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/42271565580) prepare/checks/build/deploy全部success；176 Python、4 Node、105浏览器、lint/build通过。三张可见页共用简洁浮动回顶/回底；129家公司行业参考ETF已逐只核实并显示于业务下方，META=XLC，不代表实际基金成分。CSV唯一维护，dashboard/停牌摘要/boxes v4兼容增加可选sector_etf；金融公式、名单与人工研究日期不变。
 
 真实线上revision匹配，data_date=20261105、纽约生成2026-11-06 13:35；两口径129公司ETF与CSV一致、人工研究文件精确保持。320/390/768/1024/1440/1920三页18组定位/布局核验通过，页面错误0，桌面及手机截图已检查。行情350成功/1失败（隐藏池WEAV仅至10/23，不推断停牌），700历史文件/0图表错误、活跃箱体101/0、隐藏池233/1。公开行业分类可能滞后，不能视为独立GICS认证或基金持仓证明。变更文件、来源及限制见[本轮报告](reviews/2026-11-06-scroll-sector.md)。
+
+
+## CR-049 / DATA-038 / UI-045 已验证发布（2026-11-06）
+
+Implemented并已上线：f360db5 / [Actions 42279725287](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/42279725287) prepare/checks/build/deploy全部success。180 Python、4 Node、107 Chromium、lint/build通过。129家公司重新逐只核查，120有官方直接持仓证据、9未找到可用行业/主题ETF；不再把行业代理称为基金持仓。保留23个已证实旧映射，更换97个、撤下9个；6非公司不适用，非重合隐藏池不扩研究。SMR=URA、META=XLC；官方截至11/4—11/6、核查11/6，45只基金被选用，本轮核对61只新鲜官方基金持仓。
+
+线上revision匹配f360db5，data_date20261105、纽约生成2026-11-06 14:31，两口径各350行情行、各120条官方证据与CSV/静态研究完全一致；活跃箱体101/0且同一证据透传。其它人工研究JSON和名单日期与原版精确相同。全CSV行情350成功/1失败（隐藏池WEAV目标日不可用、最后10/23），700历史文件/0图表错误，隐藏箱体233/1，不称全量零失败。320/390/768/1024/1440/1920三页18组线上定位/布局核验及SMR/META官方链接、无证据标签撤下、CRWV箱体详情证据核验通过，桌面/手机截图已检查。
+
+兼容新增sector_etf_holding及boxes可选symbol；CSV是所选基金唯一来源，独立sector-etf-review v1记录官方证据，日常行情不推进其日期，超过30天提示待复核。未核实RZLV/ATCH/MNTN/STUB/WBTN/RXST/RH/RELY/AEHR明确留空，不代表全市场不存在ETF持有；即便已核实也只证明官方该日快照，持仓可能变化。完整文件、证据和限制见[核查报告](reviews/2026-11-06-etf-holdings.md)及ETF_HOLDINGS.md。
