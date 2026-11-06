@@ -1,6 +1,6 @@
 # 2026-11-06 持仓/活跃公司月度研究与名单复核
 
-研究范围已完成；本地验证及实际发布结果以本文末尾和OPERATIONS最新记录为准，不能把研究完成等同已经上线。
+研究与发布已完成；实际发布和线上复验证据见本文末尾。
 
 ## 范围与日期
 
@@ -191,3 +191,29 @@ PL和LUMN来源：[PL季报](https://www.sec.gov/Archives/edgar/data/1836833/000
 真实构建两主表在320/390/768/1024/1440/1920、五视图和两口径均无单元格或页面溢出，月度升降序含空值置后；两个隐藏旧路由无旧表/池研究请求，共14组检查、0页面错误。截图和结果在.cache/monthly-2026-11-06；仓库dashboard仍为空行情安全占位。研究范围外216公司行和pool-review对照本轮开始快照保持不变。
 
 保留远端9758976的每日调度、目标交易日与缓存改进，不回退生产规则。未发布持仓补充原暂称CR-045，与远端OPS-009编号冲突，现唯一编号CR-047 / DATA-035；本轮保持CR-046 / DATA-036。发布链接、最终计数和在线复验待实际完成追加。
+
+本地最终完整回归已通过97/97（原仓库断言全部保留，新排序断言同一预期且等待React渲染）；前一轮95/97是保留的失败记录，不是最终结果。本次运行在真实行情计算结束后完成，耗时约1分钟。
+
+### 本轮变更文件
+
+- 页面：`src/App.tsx`、`src/PageNavigation.tsx`、`src/features.ts`、`src/dashboardSort.ts`、`src/dashboardData.ts`、`src/dataValidation.ts`、`src/index.css`。
+- 数据计算/治理门禁：`scripts/data_pipeline/indicators.py`、`scripts/research_governance.py`。
+- 人工维护源：`scripts/stock_list.csv`、`scripts/valuation_assumptions.json`、`scripts/financing_assessments.json`、`scripts/governance_events.json`；本轮生成的对应public/data四份研究快照、`list-review.json`及空行情`dashboard.json`。`pool-review.json`是本轮之前DATA-035的XE标签修改，当前月度复核没有再变其内容。
+- 研究证据：本文、`2026-11-06-company-review.json`、`2026-11-06-governance-coverage.json`及原持仓补充报告`2026-10-11-holdings-additions.md`。
+- 回归：`tests/test_month_return.py`、`tests/test_governance.py`、`tests/test_collections.py`、`tests/browser/sorting-month.spec.ts`、`tests/browser/fixtures.ts`、`tests/browser/layout.spec.ts`、`tests/browser/financing.spec.ts`、`tests/browser/pool.spec.ts`；原待发布持仓补充的`tests/history-ui-regression.cjs`保留。
+- 治理文档：`AGENTS.md`及docs下`REQUIREMENTS`、`CHANGE_REQUESTS`、`CHANGELOG`、`DECISIONS`、`ARCHITECTURE`、`METRIC_DEFINITIONS`、`MONTHLY_REVIEW`、`ACTIVE_LIST_UPDATE`、`OPERATIONS`。远端OPS-009原文件随合并保留，不把它们算作本轮新金融公式或新调度需求。
+
+
+## CR-046 / CR-047 最终发布验收（2026-11-06）
+
+已发布，覆盖此前本轮“本地/待发布/待完整云端”状态。发布版本4b389681c908ca9d52f1140012f4b9e0bd341697（功能643d495、合并a4e4b9b），[Actions 42199825469](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/42199825469) prepare/checks/build/deploy全部success。云端173 Python、4 Node、97 Chromium、lint和TypeScript/build全部通过，仓库默认30秒浏览器限额和所有原断言保留；本地最终97/97亦通过。浏览器安装耗时较长但成功，无跳过检查或改CI策略。
+
+云端首轮真实Yahoo目标/共同日20261105，349/350非加密覆盖；350行情成功、1失败、0停牌，复权/未复权各350行，700历史文件、0图表错误。失败为隐藏池WEAV，末日20261023，目标日不足，两口径各保留一条错误；没有以旧价冒充新价、推定停牌或修改隐藏池名单。活跃箱体101处理/0错误，隐藏池233处理/1错误（WEAV本批无行情）。最终不能写成全351成功或两池零错误。
+
+线上HTTP200实读，update-state.revision精确匹配4b389681，data_date20261105、纽约生成2026-11-06 05:17；持仓46、活跃101（A30/B36/C35）、交集12、联合135全部有当批行情，新增PL/LUMN两口径K线版本/日期匹配，月涨跌135成员都有有效值。六份人工研究/名单JSON与本地逐对象相同，治理135行复核11/6；其它216公司研究行保留旧日期，隐藏池资料没有续期。CSV总351、高风险成员234保持。
+
+两主表真实线上六尺寸320/390/768/1024/1440/1920、五视图与两口径、月排序及两隐藏旧路由复验14组通过、0页面错误；无单元格/页面溢出，旧路由不呈现表格或读取池研究。结果.cache/monthly-2026-11-06/release-checks.json、release-ui-checks.json及截图；截图已查看。默认52周进度和导航重置不变，高风险两页与导航已隐藏，资料保留供以后复核。
+
+本轮129公司逐只当前资料复核、44家公司参数变化；融资73完整/56部分，剩余净ATM、转换/权证、季后现金及到期精确净额的缺口继续明示，不把研究或发布完成等同全量证券条款审计。名单与研究维护日11/6，日常行情不得续期；未新增自动研究任务。
+
+JSON影响仅dashboard可选month_return_pct兼容扩展；治理仍v1字段但范围限定本轮135，私有reviewed_codes配合--scope visible拒绝越范围生成。原公式/窗口/箱体、CSV唯一来源及远端OPS-009调度缓存均保留。持仓补充编号整理CR-047/DATA-035，当前月度为CR-046/DATA-036/UI-043/RES-019。完整来源、文件清单及限制见[本轮报告](2026-11-06-monthly-review.md)。仅记录实际验收的后续文档提交使用[skip ci]，不重发空行情。
