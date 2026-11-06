@@ -621,3 +621,10 @@ Python151、lint、TypeScript/build通过；已安装Edge沙箱外Playwright90�
 本轮129公司逐只当前资料复核、44家公司参数变化；融资73完整/56部分，剩余净ATM、转换/权证、季后现金及到期精确净额的缺口继续明示，不把研究或发布完成等同全量证券条款审计。名单与研究维护日11/6，日常行情不得续期；未新增自动研究任务。
 
 JSON影响仅dashboard可选month_return_pct兼容扩展；治理仍v1字段但范围限定本轮135，私有reviewed_codes配合--scope visible拒绝越范围生成。原公式/窗口/箱体、CSV唯一来源及远端OPS-009调度缓存均保留。持仓补充编号整理CR-047/DATA-035，当前月度为CR-046/DATA-036/UI-043/RES-019。完整来源、文件清单及限制见[本轮报告](reviews/2026-11-06-monthly-review.md)。仅记录实际验收的后续文档提交使用[skip ci]，不重发空行情。
+
+
+## CR-048 / UI-044 / DATA-037 最新已验证发布（2026-11-06）
+
+Implemented并已发布：8e35124 / [Actions 42271565580](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/42271565580) prepare/checks/build/deploy全部success；176 Python、4 Node、105浏览器、lint/build通过。三张可见页共用简洁浮动回顶/回底；129家公司行业参考ETF已逐只核实并显示于业务下方，META=XLC，不代表实际基金成分。CSV唯一维护，dashboard/停牌摘要/boxes v4兼容增加可选sector_etf；金融公式、名单与人工研究日期不变。
+
+真实线上revision匹配，data_date=20261105、纽约生成2026-11-06 13:35；两口径129公司ETF与CSV一致、人工研究文件精确保持。320/390/768/1024/1440/1920三页18组定位/布局核验通过，页面错误0，桌面及手机截图已检查。行情350成功/1失败（隐藏池WEAV仅至10/23，不推断停牌），700历史文件/0图表错误、活跃箱体101/0、隐藏池233/1。公开行业分类可能滞后，不能视为独立GICS认证或基金持仓证明。变更文件、来源及限制见[本轮报告](reviews/2026-11-06-scroll-sector.md)。
