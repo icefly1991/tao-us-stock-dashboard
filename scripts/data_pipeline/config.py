@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import calendar
 import os
+from .sector_etf import load_sector_etf_review, validate_sector_etf_assignments
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -121,11 +122,13 @@ def load_watchlist(path: Path) -> list[WatchlistItem]:
     seen: set[str] = set()
     duplicate_codes: set[str] = set()
     for item in items:
-        if item.sector_etf and (item.asset_type != "stock" or item.sector_etf not in {"XLC", "XLK", "XLY", "XLP", "XLE", "XLF", "XLV", "XLI", "XLB", "XLRE", "XLU"}):
+        if item.sector_etf and (item.asset_type != "stock" or item.sector_etf not in load_sector_etf_review()['funds']):
             raise RuntimeError(f"Invalid sector ETF for {item.code}: {item.sector_etf}")
         if item.code in seen:
             duplicate_codes.add(item.code)
         seen.add(item.code)
     if duplicate_codes:
         raise RuntimeError(f"Duplicate display codes in {path}: {', '.join(sorted(duplicate_codes))}")
+    if path.resolve() == STOCK_LIST_FILE.resolve():
+        validate_sector_etf_assignments(items)
     return items

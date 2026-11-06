@@ -5,6 +5,7 @@ from typing import Any
 from zoneinfo import ZoneInfo
 
 from .config import WatchlistItem
+from .sector_etf import sector_etf_holding
 
 
 NEW_YORK_TZ = ZoneInfo("America/New_York")
@@ -39,7 +40,7 @@ def build_dashboard_payload(
         payload["errors"] = errors
     if watchlist is not None:
         payload["suspended"] = [
-            {"code": item.code, "name": item.name, "symbol": item.symbol, "note": item.status_note, "business": item.business, "sector_etf": item.sector_etf}
+            {"code": item.code, "name": item.name, "symbol": item.symbol, "note": item.status_note, "business": item.business, "sector_etf": item.sector_etf, "sector_etf_holding": sector_etf_holding(item.code, item.symbol, item.sector_etf)}
             for item in watchlist if item.trading_status == "suspended"
         ]
         collections = []

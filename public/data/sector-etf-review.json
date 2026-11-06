@@ -1,0 +1,2841 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-06",
+  "scope": "holdings_and_active_companies",
+  "funds": {
+    "AIQ": {
+      "name": "Artificial Intelligence & Technology ETF | AIQ | Global X ETFs",
+      "theme": "人工智能",
+      "issuer": "globalx",
+      "source": "https://www.globalxetfs.com/funds/aiq",
+      "as_of": "2026-11-05",
+      "sha256": "cd9468957e7b1134fdd00bbbde0273a2c997463c925547ffc06a90760db1a9ab"
+    },
+    "ARKF": {
+      "name": "ARK Blockchain & Fintech Innovation ETF",
+      "theme": "区块链与金融科技",
+      "issuer": "ark",
+      "source": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_BLOCKCHAIN_%26_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv",
+      "as_of": "2026-11-06",
+      "sha256": "7aead29bc30bccac2cf40a9a5aad9dacd734a368bb8f8af313008aa9ddca1f94"
+    },
+    "BKCH": {
+      "name": "Blockchain ETF | BKCH | Global X ETFs",
+      "theme": "区块链",
+      "issuer": "globalx",
+      "source": "https://www.globalxetfs.com/funds/bkch",
+      "as_of": "2026-11-05",
+      "sha256": "302bee1fdeed8903c2de0a8982fbea2de24b4ac05f46fab1399436ae82bff52b"
+    },
+    "BOTZ": {
+      "name": "Robotics & Artificial Intelligence ETF | BOTZ | Global X ETFs",
+      "theme": "机器人与人工智能",
+      "issuer": "globalx",
+      "source": "https://www.globalxetfs.com/funds/botz",
+      "as_of": "2026-11-05",
+      "sha256": "d2445bb44dd72727b4ecd5617f66352c3e58789326d4ee3346cf1afe48ba5a27"
+    },
+    "BPAY": {
+      "name": "iShares FinTech Active ETF",
+      "theme": "金融科技",
+      "issuer": "ishares",
+      "source": "https://www.ishares.com/us/products/329128/ishares-fintech-active-etf/latest-holdings.csv",
+      "as_of": "2026-11-04",
+      "sha256": "8967fff5d5fb6ebe073a425e7fe4aac4be6e258e825bab11a9133a6097f7f4d8"
+    },
+    "BUG": {
+      "name": "Cybersecurity ETF | BUG | Global X ETFs",
+      "theme": "网络安全",
+      "issuer": "globalx",
+      "source": "https://www.globalxetfs.com/funds/bug",
+      "as_of": "2026-11-05",
+      "sha256": "c4af04a56e08ffe5ec98ab1f66892fe8f88b84f49ec7fb862e42b801890a008c"
+    },
+    "CLOU": {
+      "name": "Cloud Computing ETF | CLOU | Global X ETFs",
+      "theme": "云计算",
+      "issuer": "globalx",
+      "source": "https://www.globalxetfs.com/funds/clou",
+      "as_of": "2026-11-05",
+      "sha256": "52b9c0fe5838115df5702b62836f3678a76b43f91798183fab6d4b07155b54c9"
+    },
+    "CTEC": {
+      "name": "ClimateTech ETF | CTEC | Global X ETFs",
+      "theme": "清洁科技",
+      "issuer": "globalx",
+      "source": "https://www.globalxetfs.com/funds/ctec",
+      "as_of": "2026-11-05",
+      "sha256": "4f1fbe797d3a7f0022e39fd74ef941c859412ecb6026d88b23ff5fce9c31f43d"
+    },
+    "EBIZ": {
+      "name": "E-commerce ETF | EBIZ | Global X ETFs",
+      "theme": "电子商务",
+      "issuer": "globalx",
+      "source": "https://www.globalxetfs.com/funds/ebiz",
+      "as_of": "2026-11-05",
+      "sha256": "88c0f0b2d0155805dd6447e5a3ae091df41f81066b8914454ca03d81db669436"
+    },
+    "FINX": {
+      "name": "FinTech ETF | FINX | Global X ETFs",
+      "theme": "金融科技",
+      "issuer": "globalx",
+      "source": "https://www.globalxetfs.com/funds/finx",
+      "as_of": "2026-11-05",
+      "sha256": "cd716feddc01fd8933b5a177072a088864ddd1be880476344a6a1169cb031679"
+    },
+    "GNOM": {
+      "name": "Genomics & Biotechnology ETF | GNOM | Global X ETFs",
+      "theme": "基因组学",
+      "issuer": "globalx",
+      "source": "https://www.globalxetfs.com/funds/gnom",
+      "as_of": "2026-11-05",
+      "sha256": "633bd97e9c5560e16c06361c23bfcb9db819a72a1ec54cb22b4de168028d3c8e"
+    },
+    "HYDR": {
+      "name": "Hydrogen ETF | HYDR | Global X ETFs",
+      "theme": "氢能",
+      "issuer": "globalx",
+      "source": "https://www.globalxetfs.com/funds/hydr",
+      "as_of": "2026-11-05",
+      "sha256": "8b25c72ed7b845237dcfdad32d03fda28d3a275a1dcc37e3911146e6aaeecb18"
+    },
+    "IAK": {
+      "name": "iShares U.S. Insurance ETF",
+      "theme": "保险",
+      "issuer": "ishares",
+      "source": "https://www.ishares.com/us/products/239515/ishares-u-s-insurance-etf/latest-holdings.csv",
+      "as_of": "2026-11-05",
+      "sha256": "943ca9fcd87b325cebf778c3c1559a612c5f449a15075eeb82f713048e1c27db"
+    },
+    "IBB": {
+      "name": "iShares Biotechnology ETF",
+      "theme": "生物科技",
+      "issuer": "ishares",
+      "source": "https://www.ishares.com/us/products/239699/ishares-biotechnology-etf/latest-holdings.csv",
+      "as_of": "2026-11-04",
+      "sha256": "d24499a1224cccd6748ced2117e200c2c3d86a62f34d85d7d15ca8ce322d692b"
+    },
+    "IYC": {
+      "name": "iShares U.S. Consumer Discretionary ETF",
+      "theme": "可选消费",
+      "issuer": "ishares",
+      "source": "https://www.ishares.com/us/products/239506/ishares-u-s-consumer-discretionary-etf/latest-holdings.csv",
+      "as_of": "2026-11-05",
+      "sha256": "50280821ad034804e301fd93646c5c24ba3f100ab6caf89827ce96a264208be2"
+    },
+    "IYJ": {
+      "name": "iShares U.S. Industrials ETF",
+      "theme": "工业",
+      "issuer": "ishares",
+      "source": "https://www.ishares.com/us/products/239514/ishares-u-s-industrials-etf/latest-holdings.csv",
+      "as_of": "2026-11-05",
+      "sha256": "4beeef544b9f473bf781f3b8df27855da774f8e36a1eb488fd11c6d8d04d4a95"
+    },
+    "IYK": {
+      "name": "iShares U.S. Consumer Staples ETF",
+      "theme": "必需消费",
+      "issuer": "ishares",
+      "source": "https://www.ishares.com/us/products/239505/ishares-u-s-consumer-staples-etf/latest-holdings.csv",
+      "as_of": "2026-11-05",
+      "sha256": "33892a50363206a59df44a0b73e6298e3d955d4b74e16d0bcfcfd0961bb8565f"
+    },
+    "IYW": {
+      "name": "iShares U.S. Technology ETF",
+      "theme": "信息技术",
+      "issuer": "ishares",
+      "source": "https://www.ishares.com/us/products/239522/ishares-u-s-technology-etf/latest-holdings.csv",
+      "as_of": "2026-11-05",
+      "sha256": "923057fe257ea67fabb89be3dd7487c8a912145bfdba5be52c834c3242f73226"
+    },
+    "KCE": {
+      "name": "State Street® SPDR® S&P® Capital Markets ETF",
+      "theme": "资本市场",
+      "issuer": "ssga",
+      "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-kce.xlsx",
+      "as_of": "2026-11-05",
+      "sha256": "fbf361f97a1919cfff448aa52880320abf7b8e9403dd355f1752b39d547a816b"
+    },
+    "KIE": {
+      "name": "State Street® SPDR® S&P® Insurance ETF",
+      "theme": "保险",
+      "issuer": "ssga",
+      "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-kie.xlsx",
+      "as_of": "2026-11-05",
+      "sha256": "c8eb5efd583d21b74ba57268e78f04faada61d5ba56cb9a9cbe2a20aa9bb9dfa"
+    },
+    "KOMP": {
+      "name": "State Street® SPDR® S&P Kensho New Economies Composite ETF",
+      "theme": "多行业创新经济",
+      "issuer": "ssga",
+      "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-komp.xlsx",
+      "as_of": "2026-11-05",
+      "sha256": "78f6ffdadf02605e90b609d540b5de3f581fbeca6c1f5013b1f79be383cbe426"
+    },
+    "LIT": {
+      "name": "Lithium & Battery Tech ETF | LIT | Global X ETFs",
+      "theme": "锂电池",
+      "issuer": "globalx",
+      "source": "https://www.globalxetfs.com/funds/lit",
+      "as_of": "2026-11-05",
+      "sha256": "9dc165ac44841edf583e305cfa31ae6cef032fe5bc53f4f712b843b36fcc3177"
+    },
+    "MILN": {
+      "name": "Millennial Consumer ETF | MILN | Global X ETFs",
+      "theme": "千禧消费主题",
+      "issuer": "globalx",
+      "source": "https://www.globalxetfs.com/funds/miln",
+      "as_of": "2026-11-05",
+      "sha256": "e416ee6a7def07a3826db54187a950ef754db1418a02cdb5cf3a8cc6df1834e9"
+    },
+    "QTUM": {
+      "name": "Defiance Quantum ETF",
+      "theme": "量子计算与人工智能",
+      "issuer": "defiance",
+      "source": "https://www.defianceetfs.com/qtum-full-holdings/",
+      "as_of": "2026-11-06",
+      "sha256": "8b6e719e6991e57250eb87eb8651e51af89ca07c8ececb2664a9398f701837ff"
+    },
+    "SKYY": {
+      "name": "First Trust Cloud Computing ETF",
+      "theme": "云计算",
+      "issuer": "firsttrust",
+      "source": "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=SKYY",
+      "as_of": "2026-11-05",
+      "sha256": "9a99a03a510834880f8a5bffc8a9b963830e981a5274c4d73f6a6eb27a36dc96"
+    },
+    "SNSR": {
+      "name": "Internet of Things ETF | SNSR | Global X ETFs",
+      "theme": "物联网",
+      "issuer": "globalx",
+      "source": "https://www.globalxetfs.com/funds/snsr",
+      "as_of": "2026-11-05",
+      "sha256": "8acee663d294c76206cba641af5684e103f469314f5bbbe3809d3485dcb325bc"
+    },
+    "SOXX": {
+      "name": "iShares Semiconductor ETF",
+      "theme": "半导体",
+      "issuer": "ishares",
+      "source": "https://www.ishares.com/us/products/239705/ishares-semiconductor-etf/latest-holdings.csv",
+      "as_of": "2026-11-05",
+      "sha256": "7cf7f8d6b60898c9ab3ff4e86db7dfd1c884dbaeea37d6c3504aeee03b412b07"
+    },
+    "TINY": {
+      "name": "ProShares Nanotechnology ETF",
+      "theme": "纳米技术",
+      "issuer": "proshares",
+      "source": "https://www.proshares.com/our-etfs/strategic/tiny",
+      "as_of": "2026-11-05",
+      "sha256": "290cd94f25d43f4e598caabd00d30fac16c8b2dd6b6aa4f5730afc91106c6bf3"
+    },
+    "URA": {
+      "name": "Uranium ETF | URA | Global X ETFs",
+      "theme": "铀与核能",
+      "issuer": "globalx",
+      "source": "https://www.globalxetfs.com/funds/ura",
+      "as_of": "2026-11-05",
+      "sha256": "baae403ff23b16d879334afca1428fc377540e2fb4b26dd81671c0fb4bf7fd72"
+    },
+    "URNM": {
+      "name": "Sprott Uranium Miners ETF",
+      "theme": "铀矿",
+      "issuer": "sprott",
+      "source": "https://sprottetfs.com/urnm-sprott-uranium-miners-etf/",
+      "as_of": "2026-11-05",
+      "sha256": "6f4fd52b30e6d041d316e26744620e747ff170be33931999ce293eace77481d8"
+    },
+    "XAR": {
+      "name": "State Street® SPDR® S&P® Aerospace & Defense ETF",
+      "theme": "航空航天与国防",
+      "issuer": "ssga",
+      "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xar.xlsx",
+      "as_of": "2026-11-05",
+      "sha256": "e12c99e22bbcbb1a73a534b47a974003b16a3437d54253edba655e37bd8ceea8"
+    },
+    "XBI": {
+      "name": "State Street® SPDR® S&P® Biotech ETF",
+      "theme": "生物科技",
+      "issuer": "ssga",
+      "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xbi.xlsx",
+      "as_of": "2026-11-05",
+      "sha256": "3590c2f071e82505a5385d460a38a71d4f2a393c5157daa336fbbfff8c368ef9"
+    },
+    "XHE": {
+      "name": "State Street® SPDR® S&P® Health Care Equipment ETF",
+      "theme": "医疗设备",
+      "issuer": "ssga",
+      "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xhe.xlsx",
+      "as_of": "2026-11-05",
+      "sha256": "4f6b095c482f4a0937ecb639adbaf8013a4d720786740146fa72c287440f79ec"
+    },
+    "XHS": {
+      "name": "State Street® SPDR® S&P® Health Care Services ETF",
+      "theme": "医疗服务",
+      "issuer": "ssga",
+      "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xhs.xlsx",
+      "as_of": "2026-11-05",
+      "sha256": "b8fdd4cf43729dd9c0bb64fe7e740d3c0790168472c5fb23bbe487dc57f4e667"
+    },
+    "XITK": {
+      "name": "State Street® SPDR® FactSet Innovative Technology ETF",
+      "theme": "创新科技",
+      "issuer": "ssga",
+      "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xitk.xlsx",
+      "as_of": "2026-11-05",
+      "sha256": "b0c7a36fbba21c2fa371f007575f3a14a8b05bbee36bcbd3971c3a646fc66c0f"
+    },
+    "XLC": {
+      "name": "State Street® Communication Services Select Sector SPDR® ETF",
+      "theme": "通信服务",
+      "issuer": "ssga",
+      "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlc.xlsx",
+      "as_of": "2026-11-05",
+      "sha256": "a9b9fc9953b6d0fb16a39e7c21e8b8008d6c5dd0fc84efbe69cfd82a802bd54a"
+    },
+    "XLI": {
+      "name": "State Street® Industrial Select Sector SPDR® ETF",
+      "theme": "工业",
+      "issuer": "ssga",
+      "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xli.xlsx",
+      "as_of": "2026-11-05",
+      "sha256": "5e3f5e030d81c0bed95cb44ad2ca09017550ca30cd6c26abb87cc1db53207428"
+    },
+    "XLK": {
+      "name": "State Street® Technology Select Sector SPDR® ETF",
+      "theme": "信息技术",
+      "issuer": "ssga",
+      "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlk.xlsx",
+      "as_of": "2026-11-05",
+      "sha256": "75506f73ac483d82faaba9b38066079bd9b8db1fafa8526e99b7fcc9c2fbc153"
+    },
+    "XLP": {
+      "name": "State Street® Consumer Staples Select Sector SPDR® ETF",
+      "theme": "必需消费",
+      "issuer": "ssga",
+      "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlp.xlsx",
+      "as_of": "2026-11-05",
+      "sha256": "4b57138fa957415d28f0bd15080b383259baff7d6d199b0c528e20c355e340c3"
+    },
+    "XLY": {
+      "name": "State Street® Consumer Discretionary Select Sector SPDR® ETF",
+      "theme": "可选消费",
+      "issuer": "ssga",
+      "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xly.xlsx",
+      "as_of": "2026-11-05",
+      "sha256": "b9bc39fbd97b5155bbc22f336f82054d118db470651537d5f705edbb11459613"
+    },
+    "XME": {
+      "name": "State Street® SPDR® S&P® Metals & Mining ETF",
+      "theme": "金属与采矿",
+      "issuer": "ssga",
+      "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xme.xlsx",
+      "as_of": "2026-11-05",
+      "sha256": "63b6129e0f130fa36f1033fd6173220e468924c5079ed874765fb750dd87b567"
+    },
+    "XRT": {
+      "name": "State Street® SPDR® S&P® Retail ETF",
+      "theme": "零售",
+      "issuer": "ssga",
+      "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xrt.xlsx",
+      "as_of": "2026-11-05",
+      "sha256": "1570572012c17c63f65da5f3ba215220c0f8f7b6cefaa9e188f34f8cb1a29236"
+    },
+    "XSD": {
+      "name": "State Street® SPDR® S&P® Semiconductor ETF",
+      "theme": "半导体",
+      "issuer": "ssga",
+      "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xsd.xlsx",
+      "as_of": "2026-11-05",
+      "sha256": "a5e4f76644ce662e5da6e7d868fa4fefde9b8d79eaadda08daed841b724dab75"
+    },
+    "XSW": {
+      "name": "State Street® SPDR® S&P® Software & Services ETF",
+      "theme": "软件服务",
+      "issuer": "ssga",
+      "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xsw.xlsx",
+      "as_of": "2026-11-05",
+      "sha256": "db9fdfdb9fa796075ac39c1a0191cffc586effb851fc850460fd8273172f7e8f"
+    },
+    "XTL": {
+      "name": "State Street® SPDR® S&P® Telecom ETF",
+      "theme": "通信设备与服务",
+      "issuer": "ssga",
+      "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xtl.xlsx",
+      "as_of": "2026-11-05",
+      "sha256": "019b5d5f1c8cc9c5d9d1ade2990431cecbccab91954ae56415c63a3054b6ae4f"
+    }
+  },
+  "rows": [
+    {
+      "code": "SMR",
+      "symbol": "SMR",
+      "etf": "URA",
+      "status": "verified",
+      "holding": {
+        "etf": "URA",
+        "etf_name": "Uranium ETF | URA | Global X ETFs",
+        "theme": "铀与核能",
+        "holding_symbol": "SMR",
+        "holding_name": "NUSCALE POWER CORP",
+        "identifier": "BNXK803",
+        "position_type": "direct_equity",
+        "shares": 19594362.0,
+        "weight_pct": 1.98,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/ura"
+      }
+    },
+    {
+      "code": "IMSR",
+      "symbol": "IMSR",
+      "etf": "URA",
+      "status": "verified",
+      "holding": {
+        "etf": "URA",
+        "etf_name": "Uranium ETF | URA | Global X ETFs",
+        "theme": "铀与核能",
+        "holding_symbol": "IMSR",
+        "holding_name": "TERRESTRIAL ENERGY INC",
+        "identifier": "BVK6BG7",
+        "position_type": "direct_equity",
+        "shares": 3838050.0,
+        "weight_pct": 0.23,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/ura"
+      }
+    },
+    {
+      "code": "NABL",
+      "symbol": "NABL",
+      "etf": "KOMP",
+      "status": "verified",
+      "holding": {
+        "etf": "KOMP",
+        "etf_name": "State Street® SPDR® S&P Kensho New Economies Composite ETF",
+        "theme": "多行业创新经济",
+        "holding_symbol": "NABL",
+        "holding_name": "N ABLE INC",
+        "identifier": "62878D100",
+        "position_type": "direct_equity",
+        "shares": 634318.0,
+        "weight_pct": 0.133218,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-komp.xlsx"
+      }
+    },
+    {
+      "code": "HOOD",
+      "symbol": "HOOD",
+      "etf": "KCE",
+      "status": "verified",
+      "holding": {
+        "etf": "KCE",
+        "etf_name": "State Street® SPDR® S&P® Capital Markets ETF",
+        "theme": "资本市场",
+        "holding_symbol": "HOOD",
+        "holding_name": "ROBINHOOD MARKETS INC   A",
+        "identifier": "770700102",
+        "position_type": "direct_equity",
+        "shares": 62800.0,
+        "weight_pct": 1.114981,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-kce.xlsx"
+      }
+    },
+    {
+      "code": "MP",
+      "symbol": "MP",
+      "etf": "XME",
+      "status": "verified",
+      "holding": {
+        "etf": "XME",
+        "etf_name": "State Street® SPDR® S&P® Metals & Mining ETF",
+        "theme": "金属与采矿",
+        "holding_symbol": "MP",
+        "holding_name": "MP MATERIALS CORP",
+        "identifier": "553368101",
+        "position_type": "direct_equity",
+        "shares": 3837428.0,
+        "weight_pct": 3.874745,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xme.xlsx"
+      }
+    },
+    {
+      "code": "ORCL",
+      "symbol": "ORCL",
+      "etf": "XLK",
+      "status": "verified",
+      "holding": {
+        "etf": "XLK",
+        "etf_name": "State Street® Technology Select Sector SPDR® ETF",
+        "theme": "信息技术",
+        "holding_symbol": "ORCL",
+        "holding_name": "ORACLE CORP",
+        "identifier": "68389X105",
+        "position_type": "direct_equity",
+        "shares": 1.44058817,
+        "weight_pct": 1.537903,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlk.xlsx"
+      }
+    },
+    {
+      "code": "HIMS",
+      "symbol": "HIMS",
+      "etf": "XHS",
+      "status": "verified",
+      "holding": {
+        "etf": "XHS",
+        "etf_name": "State Street® SPDR® S&P® Health Care Services ETF",
+        "theme": "医疗服务",
+        "holding_symbol": "HIMS",
+        "holding_name": "HIMS + HERS HEALTH INC",
+        "identifier": "433000106",
+        "position_type": "direct_equity",
+        "shares": 142022.0,
+        "weight_pct": 1.390312,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xhs.xlsx"
+      }
+    },
+    {
+      "code": "CRWV",
+      "symbol": "CRWV",
+      "etf": "SKYY",
+      "status": "verified",
+      "holding": {
+        "etf": "SKYY",
+        "etf_name": "First Trust Cloud Computing ETF",
+        "theme": "云计算",
+        "holding_symbol": "CRWV",
+        "holding_name": "CoreWeave, Inc. (Class A)",
+        "identifier": "21873S108",
+        "position_type": "direct_equity",
+        "shares": 1153425.0,
+        "weight_pct": 1.66,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=SKYY"
+      }
+    },
+    {
+      "code": "RZLV",
+      "symbol": "RZLV",
+      "etf": "",
+      "status": "unverified",
+      "holding": null,
+      "reason": "本轮已核查行业/主题ETF未找到可用官方直接持仓证据；不表示全市场不存在ETF持有。"
+    },
+    {
+      "code": "MCD",
+      "symbol": "MCD",
+      "etf": "XLY",
+      "status": "verified",
+      "holding": {
+        "etf": "XLY",
+        "etf_name": "State Street® Consumer Discretionary Select Sector SPDR® ETF",
+        "theme": "可选消费",
+        "holding_symbol": "MCD",
+        "holding_name": "MCDONALD S CORP",
+        "identifier": "580135101",
+        "position_type": "direct_equity",
+        "shares": 3851776.0,
+        "weight_pct": 4.710223,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xly.xlsx"
+      }
+    },
+    {
+      "code": "IREN",
+      "symbol": "IREN",
+      "etf": "BKCH",
+      "status": "verified",
+      "holding": {
+        "etf": "BKCH",
+        "etf_name": "Blockchain ETF | BKCH | Global X ETFs",
+        "theme": "区块链",
+        "holding_symbol": "IREN",
+        "holding_name": "IREN LIMITED",
+        "identifier": "BMQ80V2",
+        "position_type": "direct_equity",
+        "shares": 625920.0,
+        "weight_pct": 7.04,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/bkch"
+      }
+    },
+    {
+      "code": "ATCH",
+      "symbol": "ATCH",
+      "etf": "",
+      "status": "unverified",
+      "holding": null,
+      "reason": "本轮已核查行业/主题ETF未找到可用官方直接持仓证据；不表示全市场不存在ETF持有。"
+    },
+    {
+      "code": "CRCL",
+      "symbol": "CRCL",
+      "etf": "BKCH",
+      "status": "verified",
+      "holding": {
+        "etf": "BKCH",
+        "etf_name": "Blockchain ETF | BKCH | Global X ETFs",
+        "theme": "区块链",
+        "holding_symbol": "CRCL",
+        "holding_name": "CIRCLE INTERNET GROUP INC",
+        "identifier": "BL6K237",
+        "position_type": "direct_equity",
+        "shares": 336540.0,
+        "weight_pct": 14.6,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/bkch"
+      }
+    },
+    {
+      "code": "NVDA",
+      "symbol": "NVDA",
+      "etf": "XLK",
+      "status": "verified",
+      "holding": {
+        "etf": "XLK",
+        "etf_name": "State Street® Technology Select Sector SPDR® ETF",
+        "theme": "信息技术",
+        "holding_symbol": "NVDA",
+        "holding_name": "NVIDIA CORP",
+        "identifier": "67066G104",
+        "position_type": "direct_equity",
+        "shares": 8.76752097,
+        "weight_pct": 14.759788,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlk.xlsx"
+      }
+    },
+    {
+      "code": "NKE",
+      "symbol": "NKE",
+      "etf": "XLY",
+      "status": "verified",
+      "holding": {
+        "etf": "XLY",
+        "etf_name": "State Street® Consumer Discretionary Select Sector SPDR® ETF",
+        "theme": "可选消费",
+        "holding_symbol": "NKE",
+        "holding_name": "NIKE INC  CL B",
+        "identifier": "654106103",
+        "position_type": "direct_equity",
+        "shares": 7047887.0,
+        "weight_pct": 1.226276,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xly.xlsx"
+      }
+    },
+    {
+      "code": "KLAR",
+      "symbol": "KLAR",
+      "etf": "ARKF",
+      "status": "verified",
+      "holding": {
+        "etf": "ARKF",
+        "etf_name": "ARK Blockchain & Fintech Innovation ETF",
+        "theme": "区块链与金融科技",
+        "holding_symbol": "KLAR",
+        "holding_name": "KLARNA GROUP PLC",
+        "identifier": "G5279N105",
+        "position_type": "direct_equity",
+        "shares": 770678.0,
+        "weight_pct": 1.5,
+        "as_of": "2026-11-06",
+        "verified_on": "2026-11-06",
+        "source": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_BLOCKCHAIN_%26_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv"
+      }
+    },
+    {
+      "code": "MNTN",
+      "symbol": "MNTN",
+      "etf": "",
+      "status": "unverified",
+      "holding": null,
+      "reason": "本轮已核查行业/主题ETF未找到可用官方直接持仓证据；不表示全市场不存在ETF持有。"
+    },
+    {
+      "code": "MSFT",
+      "symbol": "MSFT",
+      "etf": "XLK",
+      "status": "verified",
+      "holding": {
+        "etf": "XLK",
+        "etf_name": "State Street® Technology Select Sector SPDR® ETF",
+        "theme": "信息技术",
+        "holding_symbol": "MSFT",
+        "holding_name": "MICROSOFT CORP",
+        "identifier": "594918104",
+        "position_type": "direct_equity",
+        "shares": 2.69023097,
+        "weight_pct": 13.365496,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlk.xlsx"
+      }
+    },
+    {
+      "code": "META",
+      "symbol": "META",
+      "etf": "XLC",
+      "status": "verified",
+      "holding": {
+        "etf": "XLC",
+        "etf_name": "State Street® Communication Services Select Sector SPDR® ETF",
+        "theme": "通信服务",
+        "holding_symbol": "META",
+        "holding_name": "META PLATFORMS INC CLASS A",
+        "identifier": "30303M102",
+        "position_type": "direct_equity",
+        "shares": 7338644.0,
+        "weight_pct": 20.760553,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlc.xlsx"
+      }
+    },
+    {
+      "code": "RGTI",
+      "symbol": "RGTI",
+      "etf": "QTUM",
+      "status": "verified",
+      "holding": {
+        "etf": "QTUM",
+        "etf_name": "Defiance Quantum ETF",
+        "theme": "量子计算与人工智能",
+        "holding_symbol": "RGTI",
+        "holding_name": "Rigetti Computing Inc",
+        "identifier": "76655K103",
+        "position_type": "direct_equity",
+        "shares": 3350769.0,
+        "weight_pct": 0.74,
+        "as_of": "2026-11-06",
+        "verified_on": "2026-11-06",
+        "source": "https://www.defianceetfs.com/qtum-full-holdings/"
+      }
+    },
+    {
+      "code": "NXH",
+      "symbol": "NXH",
+      "etf": "EBIZ",
+      "status": "verified",
+      "holding": {
+        "etf": "EBIZ",
+        "etf_name": "E-commerce ETF | EBIZ | Global X ETFs",
+        "theme": "电子商务",
+        "holding_symbol": "NXH",
+        "holding_name": "NEIGHBORHOOD INTELLIGENCE IN",
+        "identifier": "2855930",
+        "position_type": "direct_equity",
+        "shares": 14799.0,
+        "weight_pct": 0.09,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/ebiz"
+      }
+    },
+    {
+      "code": "AVGO",
+      "symbol": "AVGO",
+      "etf": "XLK",
+      "status": "verified",
+      "holding": {
+        "etf": "XLK",
+        "etf_name": "State Street® Technology Select Sector SPDR® ETF",
+        "theme": "信息技术",
+        "holding_symbol": "AVGO",
+        "holding_name": "BROADCOM INC",
+        "identifier": "11135F101",
+        "position_type": "direct_equity",
+        "shares": 1.72364337,
+        "weight_pct": 4.6582,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlk.xlsx"
+      }
+    },
+    {
+      "code": "ETOR",
+      "symbol": "ETOR",
+      "etf": "FINX",
+      "status": "verified",
+      "holding": {
+        "etf": "FINX",
+        "etf_name": "FinTech ETF | FINX | Global X ETFs",
+        "theme": "金融科技",
+        "holding_symbol": "ETOR",
+        "holding_name": "ETORO GROUP LTD-A",
+        "identifier": "BS491D8",
+        "position_type": "direct_equity",
+        "shares": 13217.0,
+        "weight_pct": 0.2,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/finx"
+      }
+    },
+    {
+      "code": "ARKO",
+      "symbol": "ARKO",
+      "etf": "XRT",
+      "status": "verified",
+      "holding": {
+        "etf": "XRT",
+        "etf_name": "State Street® SPDR® S&P® Retail ETF",
+        "theme": "零售",
+        "holding_symbol": "ARKO",
+        "holding_name": "ARKO CORP",
+        "identifier": "041242108",
+        "position_type": "direct_equity",
+        "shares": 916532.0,
+        "weight_pct": 0.588346,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xrt.xlsx"
+      }
+    },
+    {
+      "code": "UAA",
+      "symbol": "UAA",
+      "etf": "MILN",
+      "status": "verified",
+      "holding": {
+        "etf": "MILN",
+        "etf_name": "Millennial Consumer ETF | MILN | Global X ETFs",
+        "theme": "千禧消费主题",
+        "holding_symbol": "UAA",
+        "holding_name": "UNDER ARMOUR INC-CLASS A",
+        "identifier": "B0PZN11",
+        "position_type": "direct_equity",
+        "shares": 41582.0,
+        "weight_pct": 0.25,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/miln"
+      }
+    },
+    {
+      "code": "PG",
+      "symbol": "PG",
+      "etf": "XLP",
+      "status": "verified",
+      "holding": {
+        "etf": "XLP",
+        "etf_name": "State Street® Consumer Staples Select Sector SPDR® ETF",
+        "theme": "必需消费",
+        "holding_symbol": "PG",
+        "holding_name": "PROCTER + GAMBLE CO/THE",
+        "identifier": "742718109",
+        "position_type": "direct_equity",
+        "shares": 6818786.0,
+        "weight_pct": 7.73988,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlp.xlsx"
+      }
+    },
+    {
+      "code": "STUB",
+      "symbol": "STUB",
+      "etf": "",
+      "status": "unverified",
+      "holding": null,
+      "reason": "本轮已核查行业/主题ETF未找到可用官方直接持仓证据；不表示全市场不存在ETF持有。"
+    },
+    {
+      "code": "VOR",
+      "symbol": "VOR",
+      "etf": "XBI",
+      "status": "verified",
+      "holding": {
+        "etf": "XBI",
+        "etf_name": "State Street® SPDR® S&P® Biotech ETF",
+        "theme": "生物科技",
+        "holding_symbol": "VOR",
+        "holding_name": "VOR BIOPHARMA INC",
+        "identifier": "929033207",
+        "position_type": "direct_equity",
+        "shares": 1132786.0,
+        "weight_pct": 0.210202,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xbi.xlsx"
+      }
+    },
+    {
+      "code": "MSTR",
+      "symbol": "MSTR",
+      "etf": "XSW",
+      "status": "verified",
+      "holding": {
+        "etf": "XSW",
+        "etf_name": "State Street® SPDR® S&P® Software & Services ETF",
+        "theme": "软件服务",
+        "holding_symbol": "MSTR",
+        "holding_name": "STRATEGY INC",
+        "identifier": "594972408",
+        "position_type": "direct_equity",
+        "shares": 27808.0,
+        "weight_pct": 0.718687,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xsw.xlsx"
+      }
+    },
+    {
+      "code": "GEMI",
+      "symbol": "GEMI",
+      "etf": "BKCH",
+      "status": "verified",
+      "holding": {
+        "etf": "BKCH",
+        "etf_name": "Blockchain ETF | BKCH | Global X ETFs",
+        "theme": "区块链",
+        "holding_symbol": "GEMI",
+        "holding_name": "GEMINI SPACE STATION INC-A",
+        "identifier": "BT6CC06",
+        "position_type": "direct_equity",
+        "shares": 260882.0,
+        "weight_pct": 0.39,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/bkch"
+      }
+    },
+    {
+      "code": "OSCR",
+      "symbol": "OSCR",
+      "etf": "KIE",
+      "status": "verified",
+      "holding": {
+        "etf": "KIE",
+        "etf_name": "State Street® SPDR® S&P® Insurance ETF",
+        "theme": "保险",
+        "holding_symbol": "OSCR",
+        "holding_name": "OSCAR HEALTH INC   CLASS A",
+        "identifier": "687793109",
+        "position_type": "direct_equity",
+        "shares": 309150.0,
+        "weight_pct": 1.833574,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-kie.xlsx"
+      }
+    },
+    {
+      "code": "DKNG",
+      "symbol": "DKNG",
+      "etf": "IYC",
+      "status": "verified",
+      "holding": {
+        "etf": "IYC",
+        "etf_name": "iShares U.S. Consumer Discretionary ETF",
+        "theme": "可选消费",
+        "holding_symbol": "DKNG",
+        "holding_name": "DRAFTKINGS CLASS A",
+        "identifier": "Ticker DKNG / NASDAQ",
+        "position_type": "direct_equity",
+        "shares": 129860.0,
+        "weight_pct": 0.19,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ishares.com/us/products/239506/ishares-u-s-consumer-discretionary-etf/latest-holdings.csv"
+      }
+    },
+    {
+      "code": "AMD",
+      "symbol": "AMD",
+      "etf": "XLK",
+      "status": "verified",
+      "holding": {
+        "etf": "XLK",
+        "etf_name": "State Street® Technology Select Sector SPDR® ETF",
+        "theme": "信息技术",
+        "holding_symbol": "AMD",
+        "holding_name": "ADVANCED MICRO DEVICES",
+        "identifier": "007903107",
+        "position_type": "direct_equity",
+        "shares": 1.07064477,
+        "weight_pct": 4.013691,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlk.xlsx"
+      }
+    },
+    {
+      "code": "APP",
+      "symbol": "APP",
+      "etf": "XLC",
+      "status": "verified",
+      "holding": {
+        "etf": "XLC",
+        "etf_name": "State Street® Communication Services Select Sector SPDR® ETF",
+        "theme": "通信服务",
+        "holding_symbol": "APP",
+        "holding_name": "APPLOVIN CORP CLASS A",
+        "identifier": "03831W108",
+        "position_type": "direct_equity",
+        "shares": 3506206.0,
+        "weight_pct": 5.837403,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlc.xlsx"
+      }
+    },
+    {
+      "code": "WBTN",
+      "symbol": "WBTN",
+      "etf": "",
+      "status": "unverified",
+      "holding": null,
+      "reason": "本轮已核查行业/主题ETF未找到可用官方直接持仓证据；不表示全市场不存在ETF持有。"
+    },
+    {
+      "code": "FIG",
+      "symbol": "FIG",
+      "etf": "SKYY",
+      "status": "verified",
+      "holding": {
+        "etf": "SKYY",
+        "etf_name": "First Trust Cloud Computing ETF",
+        "theme": "云计算",
+        "holding_symbol": "FIG",
+        "holding_name": "Figma, Inc. (Class A)",
+        "identifier": "316841105",
+        "position_type": "direct_equity",
+        "shares": 712363.0,
+        "weight_pct": 0.43,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=SKYY"
+      }
+    },
+    {
+      "code": "CRDO",
+      "symbol": "CRDO",
+      "etf": "XSD",
+      "status": "verified",
+      "holding": {
+        "etf": "XSD",
+        "etf_name": "State Street® SPDR® S&P® Semiconductor ETF",
+        "theme": "半导体",
+        "holding_symbol": "CRDO",
+        "holding_name": "CREDO TECHNOLOGY GROUP HOLDI",
+        "identifier": "G25457105",
+        "position_type": "direct_equity",
+        "shares": 399484.0,
+        "weight_pct": 2.135176,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xsd.xlsx"
+      }
+    },
+    {
+      "code": "ALAB",
+      "symbol": "ALAB",
+      "etf": "XSD",
+      "status": "verified",
+      "holding": {
+        "etf": "XSD",
+        "etf_name": "State Street® SPDR® S&P® Semiconductor ETF",
+        "theme": "半导体",
+        "holding_symbol": "ALAB",
+        "holding_name": "ASTERA LABS INC",
+        "identifier": "04626A103",
+        "position_type": "direct_equity",
+        "shares": 223206.0,
+        "weight_pct": 1.906059,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xsd.xlsx"
+      }
+    },
+    {
+      "code": "NBIS",
+      "symbol": "NBIS",
+      "etf": "QTUM",
+      "status": "verified",
+      "holding": {
+        "etf": "QTUM",
+        "etf_name": "Defiance Quantum ETF",
+        "theme": "量子计算与人工智能",
+        "holding_symbol": "NBIS",
+        "holding_name": "Nebius Group Nv",
+        "identifier": "N97284108",
+        "position_type": "direct_equity",
+        "shares": 307796.0,
+        "weight_pct": 0.83,
+        "as_of": "2026-11-06",
+        "verified_on": "2026-11-06",
+        "source": "https://www.defianceetfs.com/qtum-full-holdings/"
+      }
+    },
+    {
+      "code": "COIN",
+      "symbol": "COIN",
+      "etf": "BKCH",
+      "status": "verified",
+      "holding": {
+        "etf": "BKCH",
+        "etf_name": "Blockchain ETF | BKCH | Global X ETFs",
+        "theme": "区块链",
+        "holding_symbol": "COIN",
+        "holding_name": "COINBASE GLOBAL INC -CLASS A",
+        "identifier": "BMC9P69",
+        "position_type": "direct_equity",
+        "shares": 186813.0,
+        "weight_pct": 15.95,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/bkch"
+      }
+    },
+    {
+      "code": "RDDT",
+      "symbol": "RDDT",
+      "etf": "XLC",
+      "status": "verified",
+      "holding": {
+        "etf": "XLC",
+        "etf_name": "State Street® Communication Services Select Sector SPDR® ETF",
+        "theme": "通信服务",
+        "holding_symbol": "RDDT",
+        "holding_name": "REDDIT INC CL A",
+        "identifier": "75734B100",
+        "position_type": "direct_equity",
+        "shares": 4398880.0,
+        "weight_pct": 1.929308,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlc.xlsx"
+      }
+    },
+    {
+      "code": "RKLB",
+      "symbol": "RKLB",
+      "etf": "XAR",
+      "status": "verified",
+      "holding": {
+        "etf": "XAR",
+        "etf_name": "State Street® SPDR® S&P® Aerospace & Defense ETF",
+        "theme": "航空航天与国防",
+        "holding_symbol": "RKLB",
+        "holding_name": "ROCKET LAB CORP",
+        "identifier": "773121108",
+        "position_type": "direct_equity",
+        "shares": 2456879.0,
+        "weight_pct": 2.371788,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xar.xlsx"
+      }
+    },
+    {
+      "code": "CELH",
+      "symbol": "CELH",
+      "etf": "IYK",
+      "status": "verified",
+      "holding": {
+        "etf": "IYK",
+        "etf_name": "iShares U.S. Consumer Staples ETF",
+        "theme": "必需消费",
+        "holding_symbol": "CELH",
+        "holding_name": "CELSIUS HOLDINGS",
+        "identifier": "Ticker CELH / NASDAQ",
+        "position_type": "direct_equity",
+        "shares": 111527.0,
+        "weight_pct": 0.22,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ishares.com/us/products/239505/ishares-u-s-consumer-staples-etf/latest-holdings.csv"
+      }
+    },
+    {
+      "code": "AFRM",
+      "symbol": "AFRM",
+      "etf": "FINX",
+      "status": "verified",
+      "holding": {
+        "etf": "FINX",
+        "etf_name": "FinTech ETF | FINX | Global X ETFs",
+        "theme": "金融科技",
+        "holding_symbol": "AFRM",
+        "holding_name": "AFFIRM HOLDINGS INC",
+        "identifier": "BMF9NM8",
+        "position_type": "direct_equity",
+        "shares": 81971.0,
+        "weight_pct": 3.8,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/finx"
+      }
+    },
+    {
+      "code": "UPST",
+      "symbol": "UPST",
+      "etf": "FINX",
+      "status": "verified",
+      "holding": {
+        "etf": "FINX",
+        "etf_name": "FinTech ETF | FINX | Global X ETFs",
+        "theme": "金融科技",
+        "holding_symbol": "UPST",
+        "holding_name": "UPSTART HOLDINGS INC",
+        "identifier": "BL53QN5",
+        "position_type": "direct_equity",
+        "shares": 27495.0,
+        "weight_pct": 0.41,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/finx"
+      }
+    },
+    {
+      "code": "CVNA",
+      "symbol": "CVNA",
+      "etf": "XLY",
+      "status": "verified",
+      "holding": {
+        "etf": "XLY",
+        "etf_name": "State Street® Consumer Discretionary Select Sector SPDR® ETF",
+        "theme": "可选消费",
+        "holding_symbol": "CVNA",
+        "holding_name": "CARVANA CO",
+        "identifier": "146869102",
+        "position_type": "direct_equity",
+        "shares": 4220787.0,
+        "weight_pct": 1.338078,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xly.xlsx"
+      }
+    },
+    {
+      "code": "APLD",
+      "symbol": "APLD",
+      "etf": "IYW",
+      "status": "verified",
+      "holding": {
+        "etf": "IYW",
+        "etf_name": "iShares U.S. Technology ETF",
+        "theme": "信息技术",
+        "holding_symbol": "APLD",
+        "holding_name": "APPLIED DIGITAL",
+        "identifier": "Ticker APLD / NASDAQ",
+        "position_type": "direct_equity",
+        "shares": 326677.0,
+        "weight_pct": 0.02,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ishares.com/us/products/239522/ishares-u-s-technology-etf/latest-holdings.csv"
+      }
+    },
+    {
+      "code": "RBLX",
+      "symbol": "RBLX",
+      "etf": "XSW",
+      "status": "verified",
+      "holding": {
+        "etf": "XSW",
+        "etf_name": "State Street® SPDR® S&P® Software & Services ETF",
+        "theme": "软件服务",
+        "holding_symbol": "RBLX",
+        "holding_name": "ROBLOX CORP  CLASS A",
+        "identifier": "771049103",
+        "position_type": "direct_equity",
+        "shares": 82878.0,
+        "weight_pct": 0.789357,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xsw.xlsx"
+      }
+    },
+    {
+      "code": "CAVA",
+      "symbol": "CAVA",
+      "etf": "IYC",
+      "status": "verified",
+      "holding": {
+        "etf": "IYC",
+        "etf_name": "iShares U.S. Consumer Discretionary ETF",
+        "theme": "可选消费",
+        "holding_symbol": "CAVA",
+        "holding_name": "CAVA GROUP",
+        "identifier": "Ticker CAVA / NYSE",
+        "position_type": "direct_equity",
+        "shares": 27344.0,
+        "weight_pct": 0.1,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ishares.com/us/products/239506/ishares-u-s-consumer-discretionary-etf/latest-holdings.csv"
+      }
+    },
+    {
+      "code": "ONON",
+      "symbol": "ONON",
+      "etf": "IYC",
+      "status": "verified",
+      "holding": {
+        "etf": "IYC",
+        "etf_name": "iShares U.S. Consumer Discretionary ETF",
+        "theme": "可选消费",
+        "holding_symbol": "ONON",
+        "holding_name": "ON HOLDING AG CLASS A",
+        "identifier": "Ticker ONON / NYSE",
+        "position_type": "direct_equity",
+        "shares": 61572.0,
+        "weight_pct": 0.14,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ishares.com/us/products/239506/ishares-u-s-consumer-discretionary-etf/latest-holdings.csv"
+      }
+    },
+    {
+      "code": "DUOL",
+      "symbol": "DUOL",
+      "etf": "IYC",
+      "status": "verified",
+      "holding": {
+        "etf": "IYC",
+        "etf_name": "iShares U.S. Consumer Discretionary ETF",
+        "theme": "可选消费",
+        "holding_symbol": "DUOL",
+        "holding_name": "DUOLINGO CLASS A",
+        "identifier": "Ticker DUOL / NASDAQ",
+        "position_type": "direct_equity",
+        "shares": 10483.0,
+        "weight_pct": 0.1,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ishares.com/us/products/239506/ishares-u-s-consumer-discretionary-etf/latest-holdings.csv"
+      }
+    },
+    {
+      "code": "ELF",
+      "symbol": "ELF",
+      "etf": "IYC",
+      "status": "verified",
+      "holding": {
+        "etf": "IYC",
+        "etf_name": "iShares U.S. Consumer Discretionary ETF",
+        "theme": "可选消费",
+        "holding_symbol": "ELF",
+        "holding_name": "ELF BEAUTY",
+        "identifier": "Ticker ELF / NYSE",
+        "position_type": "direct_equity",
+        "shares": 15728.0,
+        "weight_pct": 0.11,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ishares.com/us/products/239506/ishares-u-s-consumer-discretionary-etf/latest-holdings.csv"
+      }
+    },
+    {
+      "code": "SOFI",
+      "symbol": "SOFI",
+      "etf": "FINX",
+      "status": "verified",
+      "holding": {
+        "etf": "FINX",
+        "etf_name": "FinTech ETF | FINX | Global X ETFs",
+        "theme": "金融科技",
+        "holding_symbol": "SOFI",
+        "holding_name": "SOFI TECHNOLOGIES INC",
+        "identifier": "BM8J4C2",
+        "position_type": "direct_equity",
+        "shares": 357467.0,
+        "weight_pct": 3.81,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/finx"
+      }
+    },
+    {
+      "code": "SHOP",
+      "symbol": "SHOP",
+      "etf": "EBIZ",
+      "status": "verified",
+      "holding": {
+        "etf": "EBIZ",
+        "etf_name": "E-commerce ETF | EBIZ | Global X ETFs",
+        "theme": "电子商务",
+        "holding_symbol": "SHOP",
+        "holding_name": "SHOPIFY INC - CLASS A",
+        "identifier": "BXDZ9Z0",
+        "position_type": "direct_equity",
+        "shares": 8668.0,
+        "weight_pct": 4.65,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/ebiz"
+      }
+    },
+    {
+      "code": "SE",
+      "symbol": "SE",
+      "etf": "EBIZ",
+      "status": "verified",
+      "holding": {
+        "etf": "EBIZ",
+        "etf_name": "E-commerce ETF | EBIZ | Global X ETFs",
+        "theme": "电子商务",
+        "holding_symbol": "SE",
+        "holding_name": "SEA LTD-ADR",
+        "identifier": "BYWD7L4",
+        "position_type": "direct_equity",
+        "shares": 9617.0,
+        "weight_pct": 2.71,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/ebiz"
+      }
+    },
+    {
+      "code": "NET",
+      "symbol": "NET",
+      "etf": "CLOU",
+      "status": "verified",
+      "holding": {
+        "etf": "CLOU",
+        "etf_name": "Cloud Computing ETF | CLOU | Global X ETFs",
+        "theme": "云计算",
+        "holding_symbol": "NET",
+        "holding_name": "CLOUDFLARE INC - CLASS A",
+        "identifier": "BJXC5M2",
+        "position_type": "direct_equity",
+        "shares": 57107.0,
+        "weight_pct": 3.75,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/clou"
+      }
+    },
+    {
+      "code": "PLTR",
+      "symbol": "PLTR",
+      "etf": "XLK",
+      "status": "verified",
+      "holding": {
+        "etf": "XLK",
+        "etf_name": "State Street® Technology Select Sector SPDR® ETF",
+        "theme": "信息技术",
+        "holding_symbol": "PLTR",
+        "holding_name": "PALANTIR TECHNOLOGIES INC A",
+        "identifier": "69608A108",
+        "position_type": "direct_equity",
+        "shares": 1.68770877,
+        "weight_pct": 2.424871,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlk.xlsx"
+      }
+    },
+    {
+      "code": "ARM",
+      "symbol": "ARM",
+      "etf": "SOXX",
+      "status": "verified",
+      "holding": {
+        "etf": "SOXX",
+        "etf_name": "iShares Semiconductor ETF",
+        "theme": "半导体",
+        "holding_symbol": "ARM",
+        "holding_name": "ARM HOLDINGS AMERICAN DEPOSITARY S",
+        "identifier": "Ticker ARM / NASDAQ",
+        "position_type": "direct_equity",
+        "shares": 929693.0,
+        "weight_pct": 0.41,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ishares.com/us/products/239705/ishares-semiconductor-etf/latest-holdings.csv"
+      }
+    },
+    {
+      "code": "LITE",
+      "symbol": "LITE",
+      "etf": "XLK",
+      "status": "verified",
+      "holding": {
+        "etf": "XLK",
+        "etf_name": "State Street® Technology Select Sector SPDR® ETF",
+        "theme": "信息技术",
+        "holding_symbol": "LITE",
+        "holding_name": "LUMENTUM HOLDINGS INC",
+        "identifier": "55024U109",
+        "position_type": "direct_equity",
+        "shares": 649926.0,
+        "weight_pct": 0.30709,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlk.xlsx"
+      }
+    },
+    {
+      "code": "COHR",
+      "symbol": "COHR",
+      "etf": "XLK",
+      "status": "verified",
+      "holding": {
+        "etf": "XLK",
+        "etf_name": "State Street® Technology Select Sector SPDR® ETF",
+        "theme": "信息技术",
+        "holding_symbol": "COHR",
+        "holding_name": "COHERENT CORP",
+        "identifier": "19247G107",
+        "position_type": "direct_equity",
+        "shares": 1436537.0,
+        "weight_pct": 0.226068,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlk.xlsx"
+      }
+    },
+    {
+      "code": "MRVL",
+      "symbol": "MRVL",
+      "etf": "XLK",
+      "status": "verified",
+      "holding": {
+        "etf": "XLK",
+        "etf_name": "State Street® Technology Select Sector SPDR® ETF",
+        "theme": "信息技术",
+        "holding_symbol": "MRVL",
+        "holding_name": "MARVELL TECHNOLOGY INC",
+        "identifier": "573874104",
+        "position_type": "direct_equity",
+        "shares": 6424206.0,
+        "weight_pct": 0.795336,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlk.xlsx"
+      }
+    },
+    {
+      "code": "CLS",
+      "symbol": "CLS",
+      "etf": "AIQ",
+      "status": "verified",
+      "holding": {
+        "etf": "AIQ",
+        "etf_name": "Artificial Intelligence & Technology ETF | AIQ | Global X ETFs",
+        "theme": "人工智能",
+        "holding_symbol": "CLS",
+        "holding_name": "CELESTICA INC",
+        "identifier": "BMDLRD5",
+        "position_type": "direct_equity",
+        "shares": 93538.0,
+        "weight_pct": 0.21,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/aiq"
+      }
+    },
+    {
+      "code": "VRT",
+      "symbol": "VRT",
+      "etf": "XLI",
+      "status": "verified",
+      "holding": {
+        "etf": "XLI",
+        "etf_name": "State Street® Industrial Select Sector SPDR® ETF",
+        "theme": "工业",
+        "holding_symbol": "VRT",
+        "holding_name": "VERTIV HOLDINGS CO A",
+        "identifier": "92537N108",
+        "position_type": "direct_equity",
+        "shares": 2199373.0,
+        "weight_pct": 1.317582,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xli.xlsx"
+      }
+    },
+    {
+      "code": "MU",
+      "symbol": "MU",
+      "etf": "XLK",
+      "status": "verified",
+      "holding": {
+        "etf": "XLK",
+        "etf_name": "State Street® Technology Select Sector SPDR® ETF",
+        "theme": "信息技术",
+        "holding_symbol": "MU",
+        "holding_name": "MICRON TECHNOLOGY INC",
+        "identifier": "595112103",
+        "position_type": "direct_equity",
+        "shares": 5428324.0,
+        "weight_pct": 3.30305,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlk.xlsx"
+      }
+    },
+    {
+      "code": "SNDK",
+      "symbol": "SNDK",
+      "etf": "XLK",
+      "status": "verified",
+      "holding": {
+        "etf": "XLK",
+        "etf_name": "State Street® Technology Select Sector SPDR® ETF",
+        "theme": "信息技术",
+        "holding_symbol": "SNDK",
+        "holding_name": "SANDISK CORP",
+        "identifier": "80004C200",
+        "position_type": "direct_equity",
+        "shares": 1071003.0,
+        "weight_pct": 0.800654,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlk.xlsx"
+      }
+    },
+    {
+      "code": "WDC",
+      "symbol": "WDC",
+      "etf": "XLK",
+      "status": "verified",
+      "holding": {
+        "etf": "XLK",
+        "etf_name": "State Street® Technology Select Sector SPDR® ETF",
+        "theme": "信息技术",
+        "holding_symbol": "WDC",
+        "holding_name": "WESTERN DIGITAL CORP",
+        "identifier": "958102105",
+        "position_type": "direct_equity",
+        "shares": 2644777.0,
+        "weight_pct": 0.656162,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlk.xlsx"
+      }
+    },
+    {
+      "code": "CIEN",
+      "symbol": "CIEN",
+      "etf": "XLK",
+      "status": "verified",
+      "holding": {
+        "etf": "XLK",
+        "etf_name": "State Street® Technology Select Sector SPDR® ETF",
+        "theme": "信息技术",
+        "holding_symbol": "CIEN",
+        "holding_name": "CIENA CORP",
+        "identifier": "171779309",
+        "position_type": "direct_equity",
+        "shares": 1038375.0,
+        "weight_pct": 0.222176,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlk.xlsx"
+      }
+    },
+    {
+      "code": "SMCI",
+      "symbol": "SMCI",
+      "etf": "XLK",
+      "status": "verified",
+      "holding": {
+        "etf": "XLK",
+        "etf_name": "State Street® Technology Select Sector SPDR® ETF",
+        "theme": "信息技术",
+        "holding_symbol": "SMCI",
+        "holding_name": "SUPER MICRO COMPUTER INC",
+        "identifier": "86800U302",
+        "position_type": "direct_equity",
+        "shares": 4128088.0,
+        "weight_pct": 0.10363,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlk.xlsx"
+      }
+    },
+    {
+      "code": "BE",
+      "symbol": "BE",
+      "etf": "HYDR",
+      "status": "verified",
+      "holding": {
+        "etf": "HYDR",
+        "etf_name": "Hydrogen ETF | HYDR | Global X ETFs",
+        "theme": "氢能",
+        "holding_symbol": "BE",
+        "holding_name": "BLOOM ENERGY CORP- A",
+        "identifier": "BDD1BB8",
+        "position_type": "direct_equity",
+        "shares": 56479.0,
+        "weight_pct": 14.56,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/hydr"
+      }
+    },
+    {
+      "code": "PSTG",
+      "symbol": "P",
+      "etf": "XLK",
+      "status": "verified",
+      "holding": {
+        "etf": "XLK",
+        "etf_name": "State Street® Technology Select Sector SPDR® ETF",
+        "theme": "信息技术",
+        "holding_symbol": "P",
+        "holding_name": "EVERPURE INC A",
+        "identifier": "74624M102",
+        "position_type": "direct_equity",
+        "shares": 2438416.0,
+        "weight_pct": 0.211217,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlk.xlsx"
+      }
+    },
+    {
+      "code": "MTSI",
+      "symbol": "MTSI",
+      "etf": "XSD",
+      "status": "verified",
+      "holding": {
+        "etf": "XSD",
+        "etf_name": "State Street® SPDR® S&P® Semiconductor ETF",
+        "theme": "半导体",
+        "holding_symbol": "MTSI",
+        "holding_name": "MACOM TECHNOLOGY SOLUTIONS H",
+        "identifier": "55405Y100",
+        "position_type": "direct_equity",
+        "shares": 234406.0,
+        "weight_pct": 2.12305,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xsd.xlsx"
+      }
+    },
+    {
+      "code": "TOST",
+      "symbol": "TOST",
+      "etf": "FINX",
+      "status": "verified",
+      "holding": {
+        "etf": "FINX",
+        "etf_name": "FinTech ETF | FINX | Global X ETFs",
+        "theme": "金融科技",
+        "holding_symbol": "TOST",
+        "holding_name": "TOAST INC-CLASS A",
+        "identifier": "BP6D7B7",
+        "position_type": "direct_equity",
+        "shares": 146605.0,
+        "weight_pct": 3.43,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/finx"
+      }
+    },
+    {
+      "code": "NU",
+      "symbol": "NU",
+      "etf": "ARKF",
+      "status": "verified",
+      "holding": {
+        "etf": "ARKF",
+        "etf_name": "ARK Blockchain & Fintech Innovation ETF",
+        "theme": "区块链与金融科技",
+        "holding_symbol": "NU",
+        "holding_name": "NU HOLDINGS LTD/CAYMAN ISL-A",
+        "identifier": "G6683N103",
+        "position_type": "direct_equity",
+        "shares": 1104873.0,
+        "weight_pct": 1.87,
+        "as_of": "2026-11-06",
+        "verified_on": "2026-11-06",
+        "source": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_BLOCKCHAIN_%26_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv"
+      }
+    },
+    {
+      "code": "DAVE",
+      "symbol": "DAVE",
+      "etf": "BPAY",
+      "status": "verified",
+      "holding": {
+        "etf": "BPAY",
+        "etf_name": "iShares FinTech Active ETF",
+        "theme": "金融科技",
+        "holding_symbol": "DAVE",
+        "holding_name": "DAVE CLASS A",
+        "identifier": "Ticker DAVE / NASDAQ",
+        "position_type": "direct_equity",
+        "shares": 669.0,
+        "weight_pct": 2.51,
+        "as_of": "2026-11-04",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ishares.com/us/products/329128/ishares-fintech-active-etf/latest-holdings.csv"
+      }
+    },
+    {
+      "code": "ROOT",
+      "symbol": "ROOT",
+      "etf": "IAK",
+      "status": "verified",
+      "holding": {
+        "etf": "IAK",
+        "etf_name": "iShares U.S. Insurance ETF",
+        "theme": "保险",
+        "holding_symbol": "ROOT",
+        "holding_name": "ROOT INC CLASS A",
+        "identifier": "Ticker ROOT / NASDAQ",
+        "position_type": "direct_equity",
+        "shares": 7084.0,
+        "weight_pct": 0.07,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ishares.com/us/products/239515/ishares-u-s-insurance-etf/latest-holdings.csv"
+      }
+    },
+    {
+      "code": "LMND",
+      "symbol": "LMND",
+      "etf": "KIE",
+      "status": "verified",
+      "holding": {
+        "etf": "KIE",
+        "etf_name": "State Street® SPDR® S&P® Insurance ETF",
+        "theme": "保险",
+        "holding_symbol": "LMND",
+        "holding_name": "LEMONADE INC",
+        "identifier": "52567D107",
+        "position_type": "direct_equity",
+        "shares": 199336.0,
+        "weight_pct": 1.47801,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-kie.xlsx"
+      }
+    },
+    {
+      "code": "TTAN",
+      "symbol": "TTAN",
+      "etf": "SKYY",
+      "status": "verified",
+      "holding": {
+        "etf": "SKYY",
+        "etf_name": "First Trust Cloud Computing ETF",
+        "theme": "云计算",
+        "holding_symbol": "TTAN",
+        "holding_name": "ServiceTitan, Inc. (Class A)",
+        "identifier": "81764X103",
+        "position_type": "direct_equity",
+        "shares": 599230.0,
+        "weight_pct": 1.62,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=SKYY"
+      }
+    },
+    {
+      "code": "IOT",
+      "symbol": "IOT",
+      "etf": "SNSR",
+      "status": "verified",
+      "holding": {
+        "etf": "SNSR",
+        "etf_name": "Internet of Things ETF | SNSR | Global X ETFs",
+        "theme": "物联网",
+        "holding_symbol": "IOT",
+        "holding_name": "SAMSARA INC-CL A",
+        "identifier": "BPK3058",
+        "position_type": "direct_equity",
+        "shares": 240049.0,
+        "weight_pct": 5.3,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/snsr"
+      }
+    },
+    {
+      "code": "MNDY",
+      "symbol": "MNDY",
+      "etf": "XITK",
+      "status": "verified",
+      "holding": {
+        "etf": "XITK",
+        "etf_name": "State Street® SPDR® FactSet Innovative Technology ETF",
+        "theme": "创新科技",
+        "holding_symbol": "MNDY",
+        "holding_name": "MONDAY.COM LTD",
+        "identifier": "M7S64H106",
+        "position_type": "direct_equity",
+        "shares": 4098.0,
+        "weight_pct": 0.664145,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xitk.xlsx"
+      }
+    },
+    {
+      "code": "MDB",
+      "symbol": "MDB",
+      "etf": "SKYY",
+      "status": "verified",
+      "holding": {
+        "etf": "SKYY",
+        "etf_name": "First Trust Cloud Computing ETF",
+        "theme": "云计算",
+        "holding_symbol": "MDB",
+        "holding_name": "MongoDB, Inc.",
+        "identifier": "60937P106",
+        "position_type": "direct_equity",
+        "shares": 215970.0,
+        "weight_pct": 2.17,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=SKYY"
+      }
+    },
+    {
+      "code": "GTLB",
+      "symbol": "GTLB",
+      "etf": "XSW",
+      "status": "verified",
+      "holding": {
+        "etf": "XSW",
+        "etf_name": "State Street® SPDR® S&P® Software & Services ETF",
+        "theme": "软件服务",
+        "holding_symbol": "GTLB",
+        "holding_name": "GITLAB INC CL A",
+        "identifier": "37637K108",
+        "position_type": "direct_equity",
+        "shares": 79642.0,
+        "weight_pct": 0.779868,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xsw.xlsx"
+      }
+    },
+    {
+      "code": "FROG",
+      "symbol": "FROG",
+      "etf": "XITK",
+      "status": "verified",
+      "holding": {
+        "etf": "XITK",
+        "etf_name": "State Street® SPDR® FactSet Innovative Technology ETF",
+        "theme": "创新科技",
+        "holding_symbol": "FROG",
+        "holding_name": "JFROG LTD",
+        "identifier": "M6191J100",
+        "position_type": "direct_equity",
+        "shares": 9324.0,
+        "weight_pct": 1.201602,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xitk.xlsx"
+      }
+    },
+    {
+      "code": "ESTC",
+      "symbol": "ESTC",
+      "etf": "XSW",
+      "status": "verified",
+      "holding": {
+        "etf": "XSW",
+        "etf_name": "State Street® SPDR® S&P® Software & Services ETF",
+        "theme": "软件服务",
+        "holding_symbol": "ESTC",
+        "holding_name": "ELASTIC NV",
+        "identifier": "N14506104",
+        "position_type": "direct_equity",
+        "shares": 42618.0,
+        "weight_pct": 0.71726,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xsw.xlsx"
+      }
+    },
+    {
+      "code": "S",
+      "symbol": "S",
+      "etf": "BUG",
+      "status": "verified",
+      "holding": {
+        "etf": "BUG",
+        "etf_name": "Cybersecurity ETF | BUG | Global X ETFs",
+        "theme": "网络安全",
+        "holding_symbol": "S",
+        "holding_name": "SENTINELONE INC -CLASS A",
+        "identifier": "BP7L1B8",
+        "position_type": "direct_equity",
+        "shares": 3898984.0,
+        "weight_pct": 4.17,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/bug"
+      }
+    },
+    {
+      "code": "TTD",
+      "symbol": "TTD",
+      "etf": "SKYY",
+      "status": "verified",
+      "holding": {
+        "etf": "SKYY",
+        "etf_name": "First Trust Cloud Computing ETF",
+        "theme": "云计算",
+        "holding_symbol": "TTD",
+        "holding_name": "The Trade Desk, Inc. (Class A)",
+        "identifier": "88339J105",
+        "position_type": "direct_equity",
+        "shares": 1427320.0,
+        "weight_pct": 0.6,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ftportfolios.com/Retail/Etf/EtfHoldings.aspx?Ticker=SKYY"
+      }
+    },
+    {
+      "code": "ZETA",
+      "symbol": "ZETA",
+      "etf": "XSW",
+      "status": "verified",
+      "holding": {
+        "etf": "XSW",
+        "etf_name": "State Street® SPDR® S&P® Software & Services ETF",
+        "theme": "软件服务",
+        "holding_symbol": "ZETA",
+        "holding_name": "ZETA GLOBAL HOLDINGS CORP A",
+        "identifier": "98956A105",
+        "position_type": "direct_equity",
+        "shares": 121295.0,
+        "weight_pct": 0.714487,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xsw.xlsx"
+      }
+    },
+    {
+      "code": "TMDX",
+      "symbol": "TMDX",
+      "etf": "XHE",
+      "status": "verified",
+      "holding": {
+        "etf": "XHE",
+        "etf_name": "State Street® SPDR® S&P® Health Care Equipment ETF",
+        "theme": "医疗设备",
+        "holding_symbol": "TMDX",
+        "holding_name": "TRANSMEDICS GROUP INC",
+        "identifier": "89377M109",
+        "position_type": "direct_equity",
+        "shares": 27486.0,
+        "weight_pct": 1.199219,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xhe.xlsx"
+      }
+    },
+    {
+      "code": "NTRA",
+      "symbol": "NTRA",
+      "etf": "GNOM",
+      "status": "verified",
+      "holding": {
+        "etf": "GNOM",
+        "etf_name": "Genomics & Biotechnology ETF | GNOM | Global X ETFs",
+        "theme": "基因组学",
+        "holding_symbol": "NTRA",
+        "holding_name": "NATERA INC",
+        "identifier": "BYQRG48",
+        "position_type": "direct_equity",
+        "shares": 14979.0,
+        "weight_pct": 5.22,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/gnom"
+      }
+    },
+    {
+      "code": "TEM",
+      "symbol": "TEM",
+      "etf": "IBB",
+      "status": "verified",
+      "holding": {
+        "etf": "IBB",
+        "etf_name": "iShares Biotechnology ETF",
+        "theme": "生物科技",
+        "holding_symbol": "TEM",
+        "holding_name": "TEMPUS AI CLASS A",
+        "identifier": "Ticker TEM / NASDAQ",
+        "position_type": "direct_equity",
+        "shares": 828133.0,
+        "weight_pct": 0.54,
+        "as_of": "2026-11-04",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ishares.com/us/products/239699/ishares-biotechnology-etf/latest-holdings.csv"
+      }
+    },
+    {
+      "code": "RXST",
+      "symbol": "RXST",
+      "etf": "",
+      "status": "unverified",
+      "holding": null,
+      "reason": "本轮已核查行业/主题ETF未找到可用官方直接持仓证据；不表示全市场不存在ETF持有。"
+    },
+    {
+      "code": "KTOS",
+      "symbol": "KTOS",
+      "etf": "XAR",
+      "status": "verified",
+      "holding": {
+        "etf": "XAR",
+        "etf_name": "State Street® SPDR® S&P® Aerospace & Defense ETF",
+        "theme": "航空航天与国防",
+        "holding_symbol": "KTOS",
+        "holding_name": "KRATOS DEFENSE + SECURITY",
+        "identifier": "50077B207",
+        "position_type": "direct_equity",
+        "shares": 3315262.0,
+        "weight_pct": 2.323608,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xar.xlsx"
+      }
+    },
+    {
+      "code": "AVAV",
+      "symbol": "AVAV",
+      "etf": "XAR",
+      "status": "verified",
+      "holding": {
+        "etf": "XAR",
+        "etf_name": "State Street® SPDR® S&P® Aerospace & Defense ETF",
+        "theme": "航空航天与国防",
+        "holding_symbol": "AVAV",
+        "holding_name": "AEROVIRONMENT INC",
+        "identifier": "008073108",
+        "position_type": "direct_equity",
+        "shares": 1081290.0,
+        "weight_pct": 2.316923,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xar.xlsx"
+      }
+    },
+    {
+      "code": "RDW",
+      "symbol": "RDW",
+      "etf": "XAR",
+      "status": "verified",
+      "holding": {
+        "etf": "XAR",
+        "etf_name": "State Street® SPDR® S&P® Aerospace & Defense ETF",
+        "theme": "航空航天与国防",
+        "holding_symbol": "RDW",
+        "holding_name": "REDWIRE CORP",
+        "identifier": "75776W103",
+        "position_type": "direct_equity",
+        "shares": 6784790.0,
+        "weight_pct": 0.881568,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xar.xlsx"
+      }
+    },
+    {
+      "code": "LUNR",
+      "symbol": "LUNR",
+      "etf": "XAR",
+      "status": "verified",
+      "holding": {
+        "etf": "XAR",
+        "etf_name": "State Street® SPDR® S&P® Aerospace & Defense ETF",
+        "theme": "航空航天与国防",
+        "holding_symbol": "LUNR",
+        "holding_name": "INTUITIVE MACHINES INC",
+        "identifier": "46125A100",
+        "position_type": "direct_equity",
+        "shares": 4350277.0,
+        "weight_pct": 0.787142,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xar.xlsx"
+      }
+    },
+    {
+      "code": "LEU",
+      "symbol": "LEU",
+      "etf": "URA",
+      "status": "verified",
+      "holding": {
+        "etf": "URA",
+        "etf_name": "Uranium ETF | URA | Global X ETFs",
+        "theme": "铀与核能",
+        "holding_symbol": "LEU",
+        "holding_name": "CENTRUS ENERGY CORP-CLASS A",
+        "identifier": "BQXKDH6",
+        "position_type": "direct_equity",
+        "shares": 1061014.0,
+        "weight_pct": 2.19,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/ura"
+      }
+    },
+    {
+      "code": "UUUU",
+      "symbol": "UUUU",
+      "etf": "URNM",
+      "status": "verified",
+      "holding": {
+        "etf": "URNM",
+        "etf_name": "Sprott Uranium Miners ETF",
+        "theme": "铀矿",
+        "holding_symbol": "UUUU",
+        "holding_name": "Energy Fuels Inc.",
+        "identifier": "BFV4XW8",
+        "position_type": "direct_equity",
+        "shares": 7564006.0,
+        "weight_pct": 3.01,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://sprottetfs.com/urnm-sprott-uranium-miners-etf/"
+      }
+    },
+    {
+      "code": "UEC",
+      "symbol": "UEC",
+      "etf": "URA",
+      "status": "verified",
+      "holding": {
+        "etf": "URA",
+        "etf_name": "Uranium ETF | URA | Global X ETFs",
+        "theme": "铀与核能",
+        "holding_symbol": "UEC",
+        "holding_name": "URANIUM ENERGY CORP",
+        "identifier": "B0VLLY2",
+        "position_type": "direct_equity",
+        "shares": 27203710.0,
+        "weight_pct": 4.08,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/ura"
+      }
+    },
+    {
+      "code": "ALB",
+      "symbol": "ALB",
+      "etf": "LIT",
+      "status": "verified",
+      "holding": {
+        "etf": "LIT",
+        "etf_name": "Lithium & Battery Tech ETF | LIT | Global X ETFs",
+        "theme": "锂电池",
+        "holding_symbol": "ALB",
+        "holding_name": "ALBEMARLE CORP",
+        "identifier": "2046853",
+        "position_type": "direct_equity",
+        "shares": 637186.0,
+        "weight_pct": 5.58,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/lit"
+      }
+    },
+    {
+      "code": "ENPH",
+      "symbol": "ENPH",
+      "etf": "CTEC",
+      "status": "verified",
+      "holding": {
+        "etf": "CTEC",
+        "etf_name": "ClimateTech ETF | CTEC | Global X ETFs",
+        "theme": "清洁科技",
+        "holding_symbol": "ENPH",
+        "holding_name": "ENPHASE ENERGY INC",
+        "identifier": "B65SQW4",
+        "position_type": "direct_equity",
+        "shares": 13268.0,
+        "weight_pct": 1.84,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/ctec"
+      }
+    },
+    {
+      "code": "NXT",
+      "symbol": "NXT",
+      "etf": "CTEC",
+      "status": "verified",
+      "holding": {
+        "etf": "CTEC",
+        "etf_name": "ClimateTech ETF | CTEC | Global X ETFs",
+        "theme": "清洁科技",
+        "holding_symbol": "NXT",
+        "holding_name": "NEXTPOWER INC",
+        "identifier": "BR1GTS6",
+        "position_type": "direct_equity",
+        "shares": 13404.0,
+        "weight_pct": 6.38,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/ctec"
+      }
+    },
+    {
+      "code": "FLNC",
+      "symbol": "FLNC",
+      "etf": "CTEC",
+      "status": "verified",
+      "holding": {
+        "etf": "CTEC",
+        "etf_name": "ClimateTech ETF | CTEC | Global X ETFs",
+        "theme": "清洁科技",
+        "holding_symbol": "FLNC",
+        "holding_name": "FLUENCE ENERGY INC",
+        "identifier": "BMXC0N9",
+        "position_type": "direct_equity",
+        "shares": 14418.0,
+        "weight_pct": 0.35,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/ctec"
+      }
+    },
+    {
+      "code": "RIVN",
+      "symbol": "RIVN",
+      "etf": "IYC",
+      "status": "verified",
+      "holding": {
+        "etf": "IYC",
+        "etf_name": "iShares U.S. Consumer Discretionary ETF",
+        "theme": "可选消费",
+        "holding_symbol": "RIVN",
+        "holding_name": "RIVIAN AUTOMOTIVE CLASS A",
+        "identifier": "Ticker RIVN / NASDAQ",
+        "position_type": "direct_equity",
+        "shares": 263226.0,
+        "weight_pct": 0.22,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ishares.com/us/products/239506/ishares-u-s-consumer-discretionary-etf/latest-holdings.csv"
+      }
+    },
+    {
+      "code": "CHWY",
+      "symbol": "CHWY",
+      "etf": "IYC",
+      "status": "verified",
+      "holding": {
+        "etf": "IYC",
+        "etf_name": "iShares U.S. Consumer Discretionary ETF",
+        "theme": "可选消费",
+        "holding_symbol": "CHWY",
+        "holding_name": "CHEWY INC CLASS A",
+        "identifier": "Ticker CHWY / NYSE",
+        "position_type": "direct_equity",
+        "shares": 61639.0,
+        "weight_pct": 0.09,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ishares.com/us/products/239506/ishares-u-s-consumer-discretionary-etf/latest-holdings.csv"
+      }
+    },
+    {
+      "code": "BROS",
+      "symbol": "BROS",
+      "etf": "IYC",
+      "status": "verified",
+      "holding": {
+        "etf": "IYC",
+        "etf_name": "iShares U.S. Consumer Discretionary ETF",
+        "theme": "可选消费",
+        "holding_symbol": "BROS",
+        "holding_name": "DUTCH BROS CLASS A",
+        "identifier": "Ticker BROS / NYSE",
+        "position_type": "direct_equity",
+        "shares": 34444.0,
+        "weight_pct": 0.07,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ishares.com/us/products/239506/ishares-u-s-consumer-discretionary-etf/latest-holdings.csv"
+      }
+    },
+    {
+      "code": "RH",
+      "symbol": "RH",
+      "etf": "",
+      "status": "unverified",
+      "holding": null,
+      "reason": "本轮已核查行业/主题ETF未找到可用官方直接持仓证据；不表示全市场不存在ETF持有。"
+    },
+    {
+      "code": "SG",
+      "symbol": "SG",
+      "etf": "MILN",
+      "status": "verified",
+      "holding": {
+        "etf": "MILN",
+        "etf_name": "Millennial Consumer ETF | MILN | Global X ETFs",
+        "theme": "千禧消费主题",
+        "holding_symbol": "SG",
+        "holding_name": "SWEETGREEN INC - CLASS A",
+        "identifier": "BMQ89L5",
+        "position_type": "direct_equity",
+        "shares": 46474.0,
+        "weight_pct": 0.58,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/miln"
+      }
+    },
+    {
+      "code": "FOUR",
+      "symbol": "FOUR",
+      "etf": "FINX",
+      "status": "verified",
+      "holding": {
+        "etf": "FINX",
+        "etf_name": "FinTech ETF | FINX | Global X ETFs",
+        "theme": "金融科技",
+        "holding_symbol": "FOUR",
+        "holding_name": "SHIFT4 PAYMENTS INC-CLASS A",
+        "identifier": "BLF0L75",
+        "position_type": "direct_equity",
+        "shares": 22767.0,
+        "weight_pct": 0.65,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/finx"
+      }
+    },
+    {
+      "code": "BILL",
+      "symbol": "BILL",
+      "etf": "XSW",
+      "status": "verified",
+      "holding": {
+        "etf": "XSW",
+        "etf_name": "State Street® SPDR® S&P® Software & Services ETF",
+        "theme": "软件服务",
+        "holding_symbol": "BILL",
+        "holding_name": "BILL HOLDINGS INC",
+        "identifier": "090043100",
+        "position_type": "direct_equity",
+        "shares": 76967.0,
+        "weight_pct": 0.782904,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xsw.xlsx"
+      }
+    },
+    {
+      "code": "RELY",
+      "symbol": "RELY",
+      "etf": "",
+      "status": "unverified",
+      "holding": null,
+      "reason": "本轮已核查行业/主题ETF未找到可用官方直接持仓证据；不表示全市场不存在ETF持有。"
+    },
+    {
+      "code": "SYM",
+      "symbol": "SYM",
+      "etf": "BOTZ",
+      "status": "verified",
+      "holding": {
+        "etf": "BOTZ",
+        "etf_name": "Robotics & Artificial Intelligence ETF | BOTZ | Global X ETFs",
+        "theme": "机器人与人工智能",
+        "holding_symbol": "SYM",
+        "holding_name": "SYMBOTIC INC",
+        "identifier": "BPG82M8",
+        "position_type": "direct_equity",
+        "shares": 1076737.0,
+        "weight_pct": 1.28,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/botz"
+      }
+    },
+    {
+      "code": "AAOI",
+      "symbol": "AAOI",
+      "etf": "XTL",
+      "status": "verified",
+      "holding": {
+        "etf": "XTL",
+        "etf_name": "State Street® SPDR® S&P® Telecom ETF",
+        "theme": "通信设备与服务",
+        "holding_symbol": "AAOI",
+        "holding_name": "APPLIED OPTOELECTRONICS INC",
+        "identifier": "03823U102",
+        "position_type": "direct_equity",
+        "shares": 124629.0,
+        "weight_pct": 1.581386,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xtl.xlsx"
+      }
+    },
+    {
+      "code": "ACLS",
+      "symbol": "ACLS",
+      "etf": "TINY",
+      "status": "verified",
+      "holding": {
+        "etf": "TINY",
+        "etf_name": "ProShares Nanotechnology ETF",
+        "theme": "纳米技术",
+        "holding_symbol": "ACLS",
+        "holding_name": "AXCELIS TECHNOLOGIES INC",
+        "identifier": "BD420Q8",
+        "position_type": "direct_equity",
+        "shares": 4170.0,
+        "weight_pct": 3.59,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.proshares.com/our-etfs/strategic/tiny"
+      }
+    },
+    {
+      "code": "SITM",
+      "symbol": "SITM",
+      "etf": "XSD",
+      "status": "verified",
+      "holding": {
+        "etf": "XSD",
+        "etf_name": "State Street® SPDR® S&P® Semiconductor ETF",
+        "theme": "半导体",
+        "holding_symbol": "SITM",
+        "holding_name": "SITIME CORP",
+        "identifier": "82982T106",
+        "position_type": "direct_equity",
+        "shares": 113718.0,
+        "weight_pct": 1.920862,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xsd.xlsx"
+      }
+    },
+    {
+      "code": "AMBA",
+      "symbol": "AMBA",
+      "etf": "XSD",
+      "status": "verified",
+      "holding": {
+        "etf": "XSD",
+        "etf_name": "State Street® SPDR® S&P® Semiconductor ETF",
+        "theme": "半导体",
+        "holding_symbol": "AMBA",
+        "holding_name": "AMBARELLA INC",
+        "identifier": "G037AX101",
+        "position_type": "direct_equity",
+        "shares": 974999.0,
+        "weight_pct": 2.559444,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xsd.xlsx"
+      }
+    },
+    {
+      "code": "AEHR",
+      "symbol": "AEHR",
+      "etf": "",
+      "status": "unverified",
+      "holding": null,
+      "reason": "本轮已核查行业/主题ETF未找到可用官方直接持仓证据；不表示全市场不存在ETF持有。"
+    },
+    {
+      "code": "INOD",
+      "symbol": "INOD",
+      "etf": "XITK",
+      "status": "verified",
+      "holding": {
+        "etf": "XITK",
+        "etf_name": "State Street® SPDR® FactSet Innovative Technology ETF",
+        "theme": "创新科技",
+        "holding_symbol": "INOD",
+        "holding_name": "INNODATA INC",
+        "identifier": "457642205",
+        "position_type": "direct_equity",
+        "shares": 12274.0,
+        "weight_pct": 0.818656,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xitk.xlsx"
+      }
+    },
+    {
+      "code": "PATH",
+      "symbol": "PATH",
+      "etf": "XSW",
+      "status": "verified",
+      "holding": {
+        "etf": "XSW",
+        "etf_name": "State Street® SPDR® S&P® Software & Services ETF",
+        "theme": "软件服务",
+        "holding_symbol": "PATH",
+        "holding_name": "UIPATH INC   CLASS A",
+        "identifier": "90364P105",
+        "position_type": "direct_equity",
+        "shares": 271910.0,
+        "weight_pct": 0.707089,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xsw.xlsx"
+      }
+    },
+    {
+      "code": "DOCN",
+      "symbol": "DOCN",
+      "etf": "CLOU",
+      "status": "verified",
+      "holding": {
+        "etf": "CLOU",
+        "etf_name": "Cloud Computing ETF | CLOU | Global X ETFs",
+        "theme": "云计算",
+        "holding_symbol": "DOCN",
+        "holding_name": "DIGITALOCEAN HOLDINGS INC",
+        "identifier": "BNC23Q1",
+        "position_type": "direct_equity",
+        "shares": 121381.0,
+        "weight_pct": 2.31,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/clou"
+      }
+    },
+    {
+      "code": "EIKN",
+      "symbol": "EIKN",
+      "etf": "TINY",
+      "status": "verified",
+      "holding": {
+        "etf": "TINY",
+        "etf_name": "ProShares Nanotechnology ETF",
+        "theme": "纳米技术",
+        "holding_symbol": "EIKN",
+        "holding_name": "EIKON THERAPEUTICS INC",
+        "identifier": "BV9C5Q4",
+        "position_type": "direct_equity",
+        "shares": 11732.0,
+        "weight_pct": 0.66,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.proshares.com/our-etfs/strategic/tiny"
+      }
+    },
+    {
+      "code": "FSLY",
+      "symbol": "FSLY",
+      "etf": "CLOU",
+      "status": "verified",
+      "holding": {
+        "etf": "CLOU",
+        "etf_name": "Cloud Computing ETF | CLOU | Global X ETFs",
+        "theme": "云计算",
+        "holding_symbol": "FSLY",
+        "holding_name": "FASTLY INC - CLASS A",
+        "identifier": "BJN4MY9",
+        "position_type": "direct_equity",
+        "shares": 385616.0,
+        "weight_pct": 1.59,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/clou"
+      }
+    },
+    {
+      "code": "HUT",
+      "symbol": "HUT",
+      "etf": "AIQ",
+      "status": "verified",
+      "holding": {
+        "etf": "AIQ",
+        "etf_name": "Artificial Intelligence & Technology ETF | AIQ | Global X ETFs",
+        "theme": "人工智能",
+        "holding_symbol": "HUT",
+        "holding_name": "HUT 8 CORP",
+        "identifier": "BQQ8816",
+        "position_type": "direct_equity",
+        "shares": 238137.0,
+        "weight_pct": 0.12,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/aiq"
+      }
+    },
+    {
+      "code": "WULF",
+      "symbol": "WULF",
+      "etf": "BKCH",
+      "status": "verified",
+      "holding": {
+        "etf": "BKCH",
+        "etf_name": "Blockchain ETF | BKCH | Global X ETFs",
+        "theme": "区块链",
+        "holding_symbol": "WULF",
+        "holding_name": "TERAWULF INC",
+        "identifier": "BNBRMS2",
+        "position_type": "direct_equity",
+        "shares": 598293.0,
+        "weight_pct": 3.76,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/bkch"
+      }
+    },
+    {
+      "code": "ASTS",
+      "symbol": "ASTS",
+      "etf": "XTL",
+      "status": "verified",
+      "holding": {
+        "etf": "XTL",
+        "etf_name": "State Street® SPDR® S&P® Telecom ETF",
+        "theme": "通信设备与服务",
+        "holding_symbol": "ASTS",
+        "holding_name": "AST SPACEMOBILE INC",
+        "identifier": "00217D100",
+        "position_type": "direct_equity",
+        "shares": 215493.0,
+        "weight_pct": 1.761078,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xtl.xlsx"
+      }
+    },
+    {
+      "code": "IONQ",
+      "symbol": "IONQ",
+      "etf": "QTUM",
+      "status": "verified",
+      "holding": {
+        "etf": "QTUM",
+        "etf_name": "Defiance Quantum ETF",
+        "theme": "量子计算与人工智能",
+        "holding_symbol": "IONQ",
+        "holding_name": "Ionq Inc",
+        "identifier": "46222L108",
+        "position_type": "direct_equity",
+        "shares": 1150553.0,
+        "weight_pct": 0.68,
+        "as_of": "2026-11-06",
+        "verified_on": "2026-11-06",
+        "source": "https://www.defianceetfs.com/qtum-full-holdings/"
+      }
+    },
+    {
+      "code": "CRSP",
+      "symbol": "CRSP",
+      "etf": "GNOM",
+      "status": "verified",
+      "holding": {
+        "etf": "GNOM",
+        "etf_name": "Genomics & Biotechnology ETF | GNOM | Global X ETFs",
+        "theme": "基因组学",
+        "holding_symbol": "CRSP",
+        "holding_name": "CRISPR THERAPEUTICS AG",
+        "identifier": "BDHF4K6",
+        "position_type": "direct_equity",
+        "shares": 55167.0,
+        "weight_pct": 2.57,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/gnom"
+      }
+    },
+    {
+      "code": "POWL",
+      "symbol": "POWL",
+      "etf": "IYJ",
+      "status": "verified",
+      "holding": {
+        "etf": "IYJ",
+        "etf_name": "iShares U.S. Industrials ETF",
+        "theme": "工业",
+        "holding_symbol": "POWL",
+        "holding_name": "POWELL INDUSTRIES INC",
+        "identifier": "Ticker POWL / NASDAQ",
+        "position_type": "direct_equity",
+        "shares": 6479.0,
+        "weight_pct": 0.05,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ishares.com/us/products/239514/ishares-u-s-industrials-etf/latest-holdings.csv"
+      }
+    },
+    {
+      "code": "XE",
+      "symbol": "XE",
+      "etf": "URA",
+      "status": "verified",
+      "holding": {
+        "etf": "URA",
+        "etf_name": "Uranium ETF | URA | Global X ETFs",
+        "theme": "铀与核能",
+        "holding_symbol": "XE",
+        "holding_name": "X-ENERGY INC",
+        "identifier": "BW0TQY6",
+        "position_type": "direct_equity",
+        "shares": 10093016.0,
+        "weight_pct": 2.1,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.globalxetfs.com/funds/ura"
+      }
+    },
+    {
+      "code": "PL",
+      "symbol": "PL",
+      "etf": "IYJ",
+      "status": "verified",
+      "holding": {
+        "etf": "IYJ",
+        "etf_name": "iShares U.S. Industrials ETF",
+        "theme": "工业",
+        "holding_symbol": "PL",
+        "holding_name": "PLANET LABS CLASS A",
+        "identifier": "Ticker PL / NYSE",
+        "position_type": "direct_equity",
+        "shares": 64188.0,
+        "weight_pct": 0.04,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ishares.com/us/products/239514/ishares-u-s-industrials-etf/latest-holdings.csv"
+      }
+    },
+    {
+      "code": "LUMN",
+      "symbol": "LUMN",
+      "etf": "XTL",
+      "status": "verified",
+      "holding": {
+        "etf": "XTL",
+        "etf_name": "State Street® SPDR® S&P® Telecom ETF",
+        "theme": "通信设备与服务",
+        "holding_symbol": "LUMN",
+        "holding_name": "LUMEN TECHNOLOGIES INC",
+        "identifier": "550241103",
+        "position_type": "direct_equity",
+        "shares": 1975156.0,
+        "weight_pct": 2.127272,
+        "as_of": "2026-11-05",
+        "verified_on": "2026-11-06",
+        "source": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xtl.xlsx"
+      }
+    }
+  ]
+}

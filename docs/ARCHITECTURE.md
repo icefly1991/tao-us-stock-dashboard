@@ -209,3 +209,8 @@ prepare通过NYSE交易日历得到target_date，并只在schedule事件核对�
 ## DATA-037：行业参考ETF
 
 CSV可选sector_etf经WatchlistItem透传到dashboard行、suspended摘要和boxes v4行。限定11个参考ETF代码或空，非股票仅空；React只展示与链接，无逐公司映射。旧JSON兼容，未核实明示，非公司不适用。核实只覆盖当前持仓/活跃，不重置任何研究日期。
+
+
+## DATA-038 / CR-049：ETF实际持仓证据
+
+sector_etf不再限于11行业代理，仅允许sector-etf-review v1目录内基金；CSV选择必须与129公司静态证据一致。dashboard行/停牌及boxes v4行兼容增加可选sector_etf_holding（基金名/主题、官方来源、股票symbol/名称/标识、direct_equity、正shares/weight_pct、as_of与verified_on）；boxes同时兼容可选symbol用于展示别名核对。React必须验证证据，旧字段可读但不会推定为持仓。独立public/data/sector-etf-review.json是手工研究静态工件，不随每日行情生成；具体约束见[ETF_HOLDINGS](ETF_HOLDINGS.md)。

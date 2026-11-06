@@ -1,10 +1,12 @@
 import type { DashboardData } from './dashboardData'
+import { isEtfHolding } from './sectorEtfData'
 
 const record = (value: unknown): value is Record<string, unknown> => typeof value === 'object' && value !== null && !Array.isArray(value)
 const finite = (value: unknown): value is number => typeof value === 'number' && Number.isFinite(value)
 const text = (value: unknown): value is string => typeof value === 'string'
 const nullable = (value: unknown) => value === null || finite(value)
-const sectorEtf = (value: unknown) => value === undefined || value === '' || ['XLC', 'XLK', 'XLY', 'XLP', 'XLE', 'XLF', 'XLV', 'XLI', 'XLB', 'XLRE', 'XLU'].includes(String(value)) && typeof value === 'string'
+const sectorEtf = (value: unknown) => value === undefined || value === '' || typeof value === 'string' && /^[A-Z][A-Z0-9]{1,9}$/.test(value)
+const etfEvidence = (row: Record<string, unknown>) => row.sector_etf_holding == null || isEtfHolding(row.sector_etf_holding, row.symbol, row.sector_etf)
 const summary = (value: unknown) => record(value) && ['watchlist_total', 'today_up', 'today_down'].every(key => Number.isInteger(value[key]) && Number(value[key]) >= 0)
 const uniqueCodes = (items: Record<string, unknown>[]) => new Set(items.map(item => item.code)).size === items.length
 const errors = (value: unknown) => Array.isArray(value) && value.every(item => record(item) && text(item.code) && text(item.error))
@@ -32,14 +34,14 @@ export function isDashboardData(value: unknown): value is DashboardData {
       ['stock', 'etf', 'index', 'crypto'].includes(String(row.asset_type)) && finite(row.close) && finite(row.today_return_pct) &&
       ['distance_ma250_pct', 'ytd_return_pct', 'distance_52w_high_pct', 'distance_52w_low_pct', 'position_52w_pct'].every(key => nullable(row[key])) &&
       (row.month_return_pct === undefined || nullable(row.month_return_pct)) &&
-      (row.business === undefined || text(row.business)) && sectorEtf(row.sector_etf) && rsi(row.rsi) && validVolatility(row.volatility_3m)) || !uniqueCodes(current.rows)) return false
+      (row.business === undefined || text(row.business)) && sectorEtf(row.sector_etf) && etfEvidence(row) && (row.asset_type === 'stock' || !row.sector_etf_holding) && rsi(row.rsi) && validVolatility(row.volatility_3m)) || !uniqueCodes(current.rows)) return false
   }
   if (value.collections !== undefined && (!Array.isArray(value.collections) || !value.collections.every(item =>
     record(item) && text(item.id) && text(item.label) && Array.isArray(item.codes) && item.codes.every(text) &&
     new Set(item.codes).size === item.codes.length && record(item.summaries) && summary(item.summaries.adjusted) && summary(item.summaries.raw)))) return false
   if (Array.isArray(value.collections) && new Set(value.collections.map(item => item.id)).size !== value.collections.length) return false
   if (value.suspended !== undefined && (!Array.isArray(value.suspended) || !value.suspended.every(item =>
-    record(item) && text(item.code) && text(item.name) && text(item.symbol) && text(item.note) && (item.business === undefined || text(item.business)) && sectorEtf(item.sector_etf)))) return false
+    record(item) && text(item.code) && text(item.name) && text(item.symbol) && text(item.note) && (item.business === undefined || text(item.business)) && sectorEtf(item.sector_etf) && etfEvidence(item)))) return false
   return value.errors === undefined || errors(value.errors)
 }
 
@@ -64,5 +66,5 @@ export function isBoxScan(value: unknown): boolean {
       (bar.volume == null || finite(bar.volume)) && (bar.rsi_value == null || finite(bar.rsi_value))) &&
     Array.isArray(row.long_bars) && row.long_bars.every(bar => record(bar) && text(bar.time) && finite(bar.close)) &&
     ['long_low', 'long_high', 'long_position_pct', 'year_return_pct', 'year_low_gain_pct'].every(key => row[key] == null || finite(row[key])) &&
-    sectorEtf(row.sector_etf) && validVolatility(row.volatility_3m) && validWindow(row, row.bars.length) && (row.windows === undefined || (Array.isArray(row.windows) && row.windows.every(window => validWindow(window, (row.bars as unknown[]).length))))) && uniqueCodes(value.rows)
+    sectorEtf(row.sector_etf) && etfEvidence(row) && validVolatility(row.volatility_3m) && validWindow(row, row.bars.length) && (row.windows === undefined || (Array.isArray(row.windows) && row.windows.every(window => validWindow(window, (row.bars as unknown[]).length))))) && uniqueCodes(value.rows)
 }

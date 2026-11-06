@@ -16,6 +16,7 @@ from .config import RuntimeConfig, WatchlistItem
 from .indicators import build_metrics, merge_name_and_metrics, build_rsi_history, normalize_history
 from .history import build_chart_history
 from .diagnostics import DiagnosticSession
+from .sector_etf import sector_etf_holding
 
 
 class IncompleteLatestBarError(ValueError):
@@ -233,6 +234,7 @@ class YFinancePipelineClient:
         row = merge_name_and_metrics(item.code, item.name, metrics)
         row["business"] = item.business
         row["sector_etf"] = item.sector_etf
+        row["sector_etf_holding"] = sector_etf_holding(item.code, item.symbol, item.sector_etf)
         row["symbol"] = item.symbol
         row["asset_type"] = item.asset_type
         row["adjustment"] = adjustment

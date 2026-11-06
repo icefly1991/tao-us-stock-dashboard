@@ -11,6 +11,7 @@ import { usePoolReview, matchesPoolReview } from './poolReviewData'
 import { useEffect, useMemo, useState } from 'react'
 import ListReviewNotice from './ListReviewNotice'
 import SectorEtf from './SectorEtf'
+import type { EtfHolding } from './sectorEtfData'
 import { isBoxScan } from './dataValidation'
 
 type Bar = { time: string; open: number; high: number; low: number; close: number; volume?: number | null; rsi_value?: number | null }
@@ -28,7 +29,7 @@ type WindowBox = {
   shape_status?: string; shape_reason?: string
 }
 type Box = WindowBox & {
-  volatility_3m?: VolatilityData | null; business?: string; sector_etf?: string
+  volatility_3m?: VolatilityData | null; business?: string; sector_etf?: string; symbol?: string; sector_etf_holding?: EtfHolding | null
   code: string; name: string; fundamentals: string; bars: Bar[]; short_year?: boolean
   long_position_pct?: number; year_return_pct?: number; year_low_gain_pct?: number
   long_start?: string; long_end?: string; long_history_days?: number; long_history_complete?: boolean
@@ -216,7 +217,7 @@ export default function BoxScreener({ pool = false, financing }: { pool?: boolea
       </section>
       {active && <section className="box-panel box-detail" aria-label="箱体走势详情">
         {governance.error && <p className="box-footnote">风险资料不可用，不能视为安全</p>}
-        <div className="box-toolbar"><div><div className="box-eyebrow">DAILY CHART / 最近一年</div><h2>{active.code} <span>{active.name}</span></h2><div className="box-business">业务 / 板块：{active.business || '—'}<SectorEtf code={active.sector_etf} assetType="stock" /></div></div><span className={`box-status ${active.status}`}>{statusLabels[active.status]}</span></div>
+        <div className="box-toolbar"><div><div className="box-eyebrow">DAILY CHART / 最近一年</div><h2>{active.code} <span>{active.name}</span></h2><div className="box-business">业务 / 板块：{active.business || '—'}<SectorEtf code={active.sector_etf} symbol={active.symbol || active.code} assetType="stock" holding={active.sector_etf_holding} /></div></div><span className={`box-status ${active.status}`}>{statusLabels[active.status]}</span></div>
         <div className="box-financing"><FinancingCell code={active.code} assetType="stock" row={financing?.data?.rows.find(row => row.code === active.code)} error={financing?.error ?? false} /></div><p className="box-reason">{active.reason}</p><GovernanceBadge row={governance.data?.rows.find(row => row.code === active.code)} reviewedAt={governance.data?.reviewed_at} /><p className="box-volatility">近3月日均波幅：<VolatilityCell value={active.volatility_3m} /></p>{pool && <><FundamentalSummary assessment={review.data?.rows.find(item => item.code === active.code)} /><FundamentalBadge assessment={review.data?.rows.find(item => item.code === active.code)} /></>}
         {active.short_year && <p className="box-footnote">历史不足一年，本次使用 {active.bars.length} 个可用交易日。</p>}
         <div className="box-window-options" aria-label="箱体窗口对照">

@@ -1,4 +1,5 @@
 import type { RsiData } from './RsiCell'
+import type { EtfHolding } from './sectorEtfData'
 
 export type AdjustmentKey = 'adjusted' | 'raw'
 export type MetricKey =
@@ -15,6 +16,7 @@ export type Row = {
   scenario_comparison?: Record<'optimistic' | 'conservative' | 'stress', { value: number; raw_close: number; gap_pct: number }>
   business?: string
   sector_etf?: string
+  sector_etf_holding?: EtfHolding | null
   rsi?: RsiData | null
   volatility_3m?: VolatilityData | null
   code: string
@@ -37,7 +39,7 @@ export type DashboardData = {
   source: string
   updated_at: string
   data_date: string | null
-  suspended?: { code: string; name: string; business?: string; sector_etf?: string; symbol: string; note: string }[]
+  suspended?: { code: string; name: string; business?: string; sector_etf?: string; sector_etf_holding?: EtfHolding | null; symbol: string; note: string }[]
   collections?: {
     id: string
     label: string

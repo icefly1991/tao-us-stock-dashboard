@@ -1,5 +1,8 @@
 import { test, expect } from '@playwright/test'
 import { seed, dashboard } from './fixtures'
+import { isEtfHolding } from '../../src/sectorEtfData'
+
+const holding = { etf: 'XLC', etf_name: 'Communication Services ETF', theme: '通信服务', holding_symbol: 'AAA', holding_name: 'Alpha Inc', identifier: 'TEST-ID', position_type: 'direct_equity', shares: 1234, weight_pct: 1.2, as_of: '2026-11-05', verified_on: '2026-11-06', source: 'https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-xlc.xlsx' }
 
 test.beforeEach(async ({ page }) => { await seed(page) })
 
@@ -35,11 +38,12 @@ test('短页面不显示定位按钮', async ({ page }) => {
   await expect(page.getByRole('navigation', { name: '页面快速定位' })).toHaveCount(0)
 })
 
-test('板块ETF独立于业务并随口径保留，旧字段兼容，不伪称成分股', async ({ page }) => {
+test('ETF必须有匹配官方持仓证据，两口径保留截至日与来源，旧代理不背书', async ({ page }) => {
   const data = dashboard()
   for (const mode of ['adjusted', 'raw'] as const) {
-    Object.assign(data.adjustments[mode].rows.find(r => r.code === 'AAA')!, { sector_etf: 'XLC' })
+    Object.assign(data.adjustments[mode].rows.find(r => r.code === 'AAA')!, { sector_etf: 'XLC', sector_etf_holding: holding })
     Object.assign(data.adjustments[mode].rows.find(r => r.code === 'BBB')!, { asset_type: 'etf' })
+    Object.assign(data.adjustments[mode].rows.find(r => r.code === 'DDD')!, { sector_etf: 'XLK' })
   }
   await page.route('**/data/dashboard.json', route => route.fulfill({ json: data }))
   await page.goto('#/watchlist')
@@ -47,10 +51,31 @@ test('板块ETF独立于业务并随口径保留，旧字段兼容，不伪称�
     await page.getByRole('button', { name: mode, exact: true }).click()
     const business = page.locator('[data-code="AAA"] .business-cell')
     await expect(business).toContainText('测试业务')
-    const fund = business.getByRole('link', { name: '通信服务板块ETF XLC（新窗口）' })
-    await expect(fund).toHaveAttribute('href', 'https://finance.yahoo.com/quote/XLC/')
-    await expect(fund).toHaveAttribute('title', /不代表.*实际持仓/)
+    const fund = business.getByRole('link', { name: '通信服务ETF XLC 官方持仓（新窗口）' })
+    await expect(fund).toHaveAttribute('href', holding.source)
+    await expect(fund).toHaveAttribute('title', /持仓截至 2026-11-05/)
+    await expect(business).toContainText('11-05')
     await expect(page.locator('[data-code="BBB"] .business-cell')).toContainText('不适用')
-    await expect(page.locator('[data-code="DDD"] .business-cell')).toContainText('待核实')
+    await expect(page.locator('[data-code="DDD"] .business-cell')).toContainText('持仓未核实')
+    await expect(page.locator('[data-code="DDD"] .sector-etf')).toHaveCount(0)
+    await expect(page.locator('[data-code="ZZZ"] .business-cell')).toContainText('未找到已核实ETF')
   }
+})
+
+test('ETF证据拒绝错股、错基金、衍生品、零持仓、伪官方来源与无效日期', () => {
+  expect(isEtfHolding(holding, 'AAA', 'XLC')).toBe(true)
+  for (const patch of [{ holding_symbol: 'BBB' }, { etf: 'XLI' }, { shares: 0 }, { weight_pct: -1 }, { position_type: 'swap' }, { source: 'https://www.ssga.com.evil.example/' }, { source: 'javascript:alert(1)' }, { as_of: '2026-02-31' }, { as_of: '2026-11-07' }]) {
+    expect(isEtfHolding({ ...holding, ...patch }, 'AAA', 'XLC')).toBe(false)
+  }
+})
+
+test('ETF持仓超过30天保留历史截至日并提示待复核', async ({ page }) => {
+  await page.clock.setFixedTime(new Date('2026-12-10T12:00:00Z'))
+  const data = dashboard()
+  Object.assign(data.adjustments.adjusted.rows.find(r => r.code === 'AAA')!, { sector_etf: 'XLC', sector_etf_holding: holding })
+  await page.route('**/data/dashboard.json', route => route.fulfill({ json: data }))
+  await page.goto('#/watchlist')
+  const business = page.locator('[data-code="AAA"] .business-cell')
+  await expect(business).toContainText('待复核 · 11-05')
+  await expect(business.getByRole('link')).toHaveAttribute('title', /已超过30天/)
 })
