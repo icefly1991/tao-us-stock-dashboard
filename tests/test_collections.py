@@ -42,19 +42,21 @@ class CollectionTests(unittest.TestCase):
     def test_membership_counts_and_original_list_preserved(self):
         items = load_watchlist(STOCK_LIST_FILE)
         original = {item.code for item in items if item.watchlist == "original"}
-        expected = set("SMR VIX IMSR NABL HOOD MP ORCL HIMS BITX CRWV IBIT RZLV MCD IREN ATCH CRCL NVDA NKE KLAR MNTN MSFT META RGTI NXH AVGO QQQ ETOR ARKO UAA PG DOGEUSD STUB VOR MSTR GEMI EIKN TTAN DKNG AMD TQQQ APP WBTN FIG".split())
+        expected = set("SMR VIX IMSR NABL HOOD MP ORCL HIMS BITX CRWV IBIT RZLV MCD IREN ATCH CRCL NVDA NKE KLAR MNTN MSFT META RGTI NXH AVGO QQQ ETOR ARKO UAA PG DOGEUSD STUB VOR MSTR GEMI EIKN TTAN DKNG AMD TQQQ APP WBTN FIG SOFI UPST XE".split())
         self.assertEqual(original, expected)
         observation = {item.code for item in items if item.tier}
         self.assertFalse(observation & {"FUTU", "TIGR", "LI", "XPEV", "BILI", "ACMR", "AOSL"})
         self.assertTrue({"FIG", "FSLY", "HUT", "WULF", "ASTS", "IONQ", "CRSP", "POWL"} <= observation)
-        self.assertEqual(len(observation), 100)
+        self.assertEqual(len(observation), 101)
+        self.assertTrue({'PL', 'LUMN'} <= observation)
+        self.assertNotIn('ROKU', observation)
         self.assertNotIn("CFLT", {item.code for item in items})
-        self.assertEqual(len(items), 350)
+        self.assertEqual(len(items), 351)
         self.assertEqual(sum(item.pool for item in items), 234)
-        self.assertEqual(len([item for item in items if item.watchlist == 'original' or item.tier]), 133)
-        self.assertEqual(len({item.symbol for item in items}), 350)
-        self.assertEqual([sum(item.tier == tier for item in items) for tier in "ABC"], [30, 35, 35])
-        self.assertEqual(len(original & {item.code for item in items if item.tier}), 10)
+        self.assertEqual(len([item for item in items if item.watchlist == 'original' or item.tier]), 135)
+        self.assertEqual(len({item.symbol for item in items}), 351)
+        self.assertEqual([sum(item.tier == tier for item in items) for tier in "ABC"], [30, 36, 35])
+        self.assertEqual(len(original & {item.code for item in items if item.tier}), 12)
 
     def test_shared_stock_and_failed_member_counts_in_both_modes(self):
         items = [WatchlistItem("SHARED", "Shared", "SHARED", "stock", "original", "A"),

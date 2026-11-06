@@ -19,6 +19,9 @@ import { FundamentalBadge, FundamentalPhrases, PoolFilter } from './PoolReview'
 import { usePoolReview, matchesPoolReview } from './poolReviewData'
 import { isDashboardData } from './dataValidation'
 import type { AdjustmentKey, MetricKey, SummaryKey, Row, DashboardData } from './dashboardData'
+import { compareRows, sortLabels, sortValue } from './dashboardSort'
+import type { SortKey, SortOrder } from './dashboardSort'
+import { SHOW_HIGH_RISK_POOL } from './features'
 
 const tabs: { id: MetricKey; label: string }[] = [
   { id: 'position_52w_pct', label: '52周内进度' },
@@ -55,14 +58,6 @@ const getCollectionFromHash = () => {
   return tier ?? 'original'
 }
 
-const sortingNotes: Record<MetricKey, string> = {
-  distance_ma250_pct: '距年线越低越靠前',
-  ytd_return_pct: '年内涨跌幅越低越靠前',
-  distance_52w_high_pct: '距高点回撤越深越靠前',
-  distance_52w_low_pct: '距低点涨幅越小越靠前',
-  position_52w_pct: '52周位置越低越靠前',
-}
-
 type MetricValue = number | null | undefined
 
 const formatPct = (value: MetricValue) =>
@@ -91,14 +86,6 @@ const getMetricBarWidth = (metric: MetricKey, value: MetricValue, maxMetric: num
   return (Math.abs(value) / maxMetric) * 100
 }
 
-const compareMetric = (a: Row, b: Row, metric: MetricKey) => {
-  const aValue = a[metric]
-  const bValue = b[metric]
-  if (typeof aValue !== 'number') return typeof bValue !== 'number' ? a.code.localeCompare(b.code) : 1
-  if (typeof bValue !== 'number') return -1
-  return aValue - bValue || a.code.localeCompare(b.code)
-}
-
 const formatClose = (row: Row) => {
   const prefix = row.asset_type === 'stock' || row.asset_type === 'etf' ? '$' : ''
   const digits = row.close < 1 ? 6 : 2
@@ -114,11 +101,18 @@ function App() {
   const [data, setData] = useState<DashboardData | null>(null)
   const [adjustment, setAdjustment] = useState<AdjustmentKey>('adjusted')
   const [tab, setTab] = useState<MetricKey>('position_52w_pct')
-  const [volatilitySort, setVolatilitySort] = useState(false)
+  const [sort, setSort] = useState<SortOrder>({ key: 'position_52w_pct', direction: 'asc' })
+  const volatilitySort = sort.key === 'volatility_3m'
+  const toggleSort = (key: SortKey) => setSort(current => ({ key, direction: current.key === key && current.direction === 'asc' ? 'desc' : 'asc' }))
+  const toggleVolatilitySort = () => setSort(current => current.key === 'volatility_3m' ? { key: tab, direction: 'asc' } : { key: 'volatility_3m', direction: 'desc' })
+  const sortHeading = (key: SortKey, label = sortLabels[key]) => <div className="sort-heading" role="columnheader" aria-sort={sort.key === key ? sort.direction === 'asc' ? 'ascending' : 'descending' : 'none'}>
+    <button type="button" aria-label={`按${sortLabels[key]}排序`} onClick={() => toggleSort(key)}>{label}{sort.key === key ? sort.direction === 'asc' ? ' ↑' : ' ↓' : ' ↕'}</button>
+  </div>
   const [error, setError] = useState(false)
   const [collectionId, setCollectionId] = useState(getCollectionFromHash)
   const poolPage = collectionId === 'pool'
-  const poolReview = usePoolReview(poolPage)
+  const pausedPool = !SHOW_HIGH_RISK_POOL && (poolPage || collectionId === 'pool-boxes')
+  const poolReview = usePoolReview(poolPage && !pausedPool)
   const governance = useGovernance()
   const financing = useFinancing()
   const financingRows = useMemo(() => new Map(financing.data?.rows.map(row => [row.code, row])), [financing.data])
@@ -139,7 +133,7 @@ function App() {
     const navigate = () => {
       setCollectionId(getCollectionFromHash())
       setTab('position_52w_pct')
-      setVolatilitySort(false)
+      setSort({ key: 'position_52w_pct', direction: 'asc' })
       setGrade('all')
       setCategory('all')
       setRiskFilter('all')
@@ -188,14 +182,10 @@ function App() {
     () =>
       current
         ? current.rows.filter((row) => matchesGovernance(governance.data?.rows.find(item => item.code === row.code), riskFilter) && matchesFinancing(!financing.error && financingRows.get(row.code)?.symbol === row.symbol && financingRows.get(row.code)?.asset_type === row.asset_type ? financingRows.get(row.code) : undefined, row.asset_type, financingFilter) && (!collection || collection.codes.includes(row.code)) && (!poolPage || matchesPoolReview(poolReview.data?.rows.find(item => item.code === row.code), grade, category))).sort((a, b) => {
-          if (!volatilitySort) return compareMetric(a, b, tab)
-          const av = a.volatility_3m?.value, bv = b.volatility_3m?.value
-          if (av == null) return bv == null ? a.code.localeCompare(b.code) : 1
-          if (bv == null) return -1
-          return bv - av || a.code.localeCompare(b.code)
+          return compareRows(a, b, sort)
         })
         : [],
-    [current, collection, tab, poolPage, grade, category, poolReview.data, volatilitySort, governance.data, riskFilter, financingRows, financing.error, financingFilter],
+    [current, collection, poolPage, grade, category, poolReview.data, sort, governance.data, riskFilter, financingRows, financing.error, financingFilter],
   )
   const maxMetric = useMemo(
     () => Math.max(...rows.map((row) => Math.abs(row[tab] ?? 0)), 1),
@@ -209,6 +199,7 @@ function App() {
         ? ['distance_ma250_pct', 'ytd_return_pct', 'distance_52w_low_pct']
         : ['distance_ma250_pct', 'ytd_return_pct']
 
+  if (pausedPool) return <StateView text="高风险研究暂时隐藏，名单及历史资料已保留。" />
   if (collectionId === 'boxes') return <BoxScreener financing={financing} />
   if (collectionId === 'pool-boxes') return <BoxScreener key="pool-boxes" pool financing={financing} />
   if (error || (data && !current)) return <StateView text="行情暂不可用，请刷新重试。" error />
@@ -286,7 +277,7 @@ function App() {
           <details className="page-help mb-3">
             <summary>使用说明与选股标准</summary>
             <p>点击代码复制；悬停代码或点图标看 K 线，点 RSI 看走势。窄屏按字段分组展示，无需左右滑动。</p>
-            <p>指标升序，缺失与停牌置后；52周内进度是价格在52周高低区间的位置。</p>
+            <p>点击表头可切换升降序，窄屏使用排序选项；缺失与停牌始终置后。本月涨跌以上月最后一个交易日收盘价为基准；52周内进度是价格在52周高低区间的位置。</p>
             <a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/LIST_REVIEW.md" target="_blank" rel="noreferrer">选股标准</a>
             <a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/METRIC_DEFINITIONS.md" target="_blank" rel="noreferrer">指标定义</a>
           </details>
@@ -296,7 +287,7 @@ function App() {
             <div className="py-2" aria-label="指标选项">
               <div className="flex flex-wrap gap-2">
                 {tabs.map((item) => (
-                  <button key={item.id} type="button" onClick={() => { setTab(item.id); setVolatilitySort(false) }} aria-pressed={tab === item.id && !volatilitySort}
+                  <button key={item.id} type="button" onClick={() => { setTab(item.id); setSort({ key: item.id, direction: 'asc' }) }} aria-pressed={tab === item.id && !volatilitySort}
                     className={`rounded-full border px-4 py-2 text-sm font-medium ${tab === item.id && !volatilitySort ? 'border-slate-400 bg-slate-100 text-slate-950' : 'border-slate-200 bg-white text-slate-600'}`}>
                     {item.label}
                   </button>
@@ -304,25 +295,32 @@ function App() {
               </div>
             </div>
             <div className="border-b border-slate-200 px-2 py-3">
-              <h2 className="text-lg font-semibold text-slate-950">{collection?.label ?? '自选'} · {volatilitySort ? '近3月日均波幅' : metricText[tab]}榜单</h2>
-              <p className="mt-1 text-xs text-slate-600">{adjustmentText[adjustment]} · {volatilitySort ? '日均波幅越大越靠前' : sortingNotes[tab]} · 缺失与停牌置后</p>
+              <h2 className="text-lg font-semibold text-slate-950">{collection?.label ?? '自选'} · {sortLabels[sort.key]}榜单</h2>
+              <p className="mt-1 text-xs text-slate-600">{adjustmentText[adjustment]} · {sort.direction === 'asc' ? '数值从小到大' : '数值从大到小'} · 缺失与停牌置后</p>
             </div>
-            <button className="market-mobile-sort volatility-sort" aria-pressed={volatilitySort} onClick={() => setVolatilitySort(value => !value)}>近3月日均波幅{volatilitySort ? ' ↓' : ' ↕'}</button>
+            <div className="market-sort-controls">
+              <label>排序 <select aria-label="排序字段" value={sort.key} onChange={event => setSort({ key: event.target.value as SortKey, direction: 'asc' })}>
+                {Object.entries(sortLabels).map(([key, label]) => <option key={key} value={key}>{label}</option>)}
+              </select></label>
+              <button type="button" aria-label="切换排序方向" onClick={() => setSort(current => ({ ...current, direction: current.direction === 'asc' ? 'desc' : 'asc' }))}>{sort.direction === 'asc' ? '升序 ↑' : '降序 ↓'}</button>
+            </div>
+            <button className="market-mobile-sort volatility-sort" aria-pressed={volatilitySort} onClick={toggleVolatilitySort}>近3月日均波幅{volatilitySort ? ' ↓' : ' ↕'}</button>
             <div className="ranking-header-scroll">
               <div className="market-grid market-header" data-testid="column-header">
-                <div>#</div><div className="stock-identity text-left">标的</div><div className="business-cell">业务/板块</div><div className="financing-heading">融资／稀释风险</div>{poolPage && <><div className="fundamental-column-heading">基本面亮点</div><div className="fundamental-column-heading">基本面风险</div></>}<div>收盘价</div><div>今日</div>
-                {contextMetrics.map((metric) => <div key={metric}>{metricText[metric]}</div>)}
+                <div>#</div><div className="stock-identity text-left">标的</div><div className="business-cell">业务/板块</div><div className="financing-heading">融资／稀释风险</div>{poolPage && <><div className="fundamental-column-heading">基本面亮点</div><div className="fundamental-column-heading">基本面风险</div></>}<div>收盘价</div>{sortHeading('today_return_pct', '今日')}
+                {sortHeading('month_return_pct')}
+                {contextMetrics.map((metric) => <div key={metric}>{sortHeading(metric)}</div>)}
                 <div className="target-column-heading" title="前三档为情景建议价；分析师低位为目标价参考"><b>建议价</b><span>乐观</span><span>保守</span><span>极端保守</span><span>分析师低位</span></div>
-                <div><button className="volatility-sort" aria-pressed={volatilitySort} onClick={() => setVolatilitySort(value => !value)} title="近三个自然月日均真实波幅百分比，含跳空；点击按波动从大到小排序">近3月日均波幅{volatilitySort ? ' ↓' : ' ↕'}</button></div>
+                <div><button className="volatility-sort" aria-pressed={volatilitySort} onClick={toggleVolatilitySort} title="近三个自然月日均真实波幅百分比，含跳空；点击按波动从大到小排序">近3月日均波幅{volatilitySort ? ' ↓' : ' ↕'}</button></div>
                 <div title="日线Wilder RSI(14)与该股票自身年内百分位">RSI(14) / 年内分位</div>
-                <div className="text-sky-800">{metricText[tab]}{volatilitySort ? '' : ' ↑'}</div>
+                {sortHeading(tab)}
               </div>
             </div>
           </div>
           <div className="ranking-body-scroll" data-testid="table-scroll">
             <div className="market-body">
               {rows.map((row, index) => (
-                <div key={row.code} data-code={row.code} data-metric={row[tab] ?? 'missing'} className="market-grid market-row">
+                <div key={row.code} data-code={row.code} data-metric={row[tab] ?? 'missing'} data-sort-value={sortValue(row, sort.key) ?? 'missing'} className="market-grid market-row">
                   <div className="text-xs text-slate-400">{index + 1}</div>
                   <div className="stock-identity min-w-0 text-left">
                     <span title={row.name} className="block truncate font-medium text-slate-900">{row.name}</span>
@@ -336,6 +334,7 @@ function App() {
                   {poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(item => item.code === row.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(item => item.code === row.code)} kind="risks" /></>}
                   <div data-label="收盘价" className="font-medium text-slate-900">{formatClose(row)}</div>
                   <div data-label="今日" className={getMetricTextClass(row.today_return_pct)}>{formatPct(row.today_return_pct)}</div>
+                  <div data-label="本月涨跌幅" className={getMetricTextClass(row.month_return_pct)}>{formatPct(row.month_return_pct)}</div>
                   {contextMetrics.map((metric) => <div key={metric} data-label={metricText[metric]} className={getMetricTextClass(row[metric])}>{formatMetric(metric, row[metric])}</div>)}
                   <PriceResearchCell code={row.code} assetType={row.asset_type} valuation={valuationRows.get(row.code)?.symbol === row.symbol ? valuationRows.get(row.code) : undefined} valuationAvailable={!!valuations.data} rawClose={rawRows.get(row.code)?.close} comparison={rawRows.get(row.code)?.scenario_comparison} target={targetRows.get(row.code)?.symbol === row.symbol ? targetRows.get(row.code) : undefined} targetsLoaded={!!targets.snapshot} targetsError={targets.error} targetsDate={targets.snapshot?.fetched_at} />
                   <div data-label="近3月日均波幅"><VolatilityCell value={row.volatility_3m} /></div>
@@ -363,7 +362,7 @@ function App() {
                     <GovernanceBadge row={governance.data?.rows.find(row => row.code === item.code)} reviewedAt={governance.data?.reviewed_at} />
                   </div>
                   <div data-label="业务/板块" className="business-cell">{item.business || '—'}</div><FinancingCell code={item.code} assetType="stock" row={financingFor(item.code, item.symbol)} error={financing.error} />{poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="risks" /></>}
-                  {['收盘价', '今日', ...contextMetrics.map(metric => metricText[metric]), '建议价', '近3月日均波幅', 'RSI(14) / 年内分位', metricText[tab]].map((label, column) => <div key={column} data-label={label}>—</div>)}
+                  {['收盘价', '今日', '本月涨跌幅', ...contextMetrics.map(metric => metricText[metric]), '建议价', '近3月日均波幅', 'RSI(14) / 年内分位', metricText[tab]].map((label, column) => <div key={column} data-label={label}>—</div>)}
                 </div>
               ))}
             </div>

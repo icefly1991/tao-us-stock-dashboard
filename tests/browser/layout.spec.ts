@@ -1,9 +1,10 @@
 import { test, expect } from '@playwright/test'
-import { dashboard, boxes, seed } from './fixtures'
+import { dashboard, boxes, seed, enablePoolForRegression } from './fixtures'
 
 for (const width of [320, 390, 768, 1024, 1440, 1920]) {
   for (const route of ['watchlist', 'research', 'pool']) {
     test(`所有字段无需横滑 ${route} ${width}`, async ({ page }) => {
+      if (route === 'pool') await enablePoolForRegression(page)
       await page.setViewportSize({ width, height: 900 })
       await seed(page)
       const data = dashboard()
@@ -42,6 +43,7 @@ for (const width of [320, 390, 768, 1024, 1440, 1920]) {
   }
   for (const route of ['boxes', 'pool-boxes']) {
     test(`箱体所有字段无需横滑 ${route} ${width}`, async ({ page }) => {
+      if (route === 'pool-boxes') await enablePoolForRegression(page)
       await page.setViewportSize({ width, height: 900 })
       await seed(page)
       await page.route('**/data/pool-boxes.json', r => r.fulfill({ json: boxes() }))

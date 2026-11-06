@@ -22,6 +22,7 @@ export type Row = {
   asset_type: 'stock' | 'etf' | 'index' | 'crypto'
   close: number
   today_return_pct: number
+  month_return_pct?: number | null
   distance_ma250_pct: number | null
   ytd_return_pct: number | null
   distance_52w_high_pct: number | null

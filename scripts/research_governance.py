@@ -28,6 +28,8 @@ def build_governance(coverage: dict, events: dict, members: set[str]) -> dict:
     date.fromisoformat(cutoff)
     if events['reviewed_at'] != cutoff or not set(events['overrides']) <= members:
         raise ValueError('Event date/membership mismatch')
+    if 'reviewed_codes' in events and (set(events['reviewed_codes']) != members or len(events['reviewed_codes']) != len(members)):
+        raise ValueError('Research scope must match the actually reviewed companies')
     rows = coverage['rows']
     if {r['code'] for r in rows} != members or len(rows) != len(members):
         raise ValueError('Coverage must contain every member exactly once')
@@ -68,7 +70,13 @@ if __name__ == '__main__':
     parser.add_argument('--coverage', type=Path, required=True)
     parser.add_argument('--events', type=Path, default=Path('scripts/governance_events.json'))
     parser.add_argument('--output', type=Path, default=Path('public/data/governance-review.json'))
+    parser.add_argument('--scope', choices=('all', 'visible'), default='all',
+                        help='visible: only holdings and active list; paused pool evidence is retained in the source')
     args = parser.parse_args()
-    payload = build_governance(json.loads(args.coverage.read_text(encoding='utf-8')), json.loads(args.events.read_text(encoding='utf-8')), {r.code for r in load_watchlist(STOCK_LIST_FILE)})
+    members = {r.code for r in load_watchlist(STOCK_LIST_FILE) if args.scope == 'all' or r.watchlist == 'original' or r.tier}
+    events = json.loads(args.events.read_text(encoding='utf-8'))
+    if args.scope == 'visible':
+        events = {**events, 'overrides': {code: items for code, items in events['overrides'].items() if code in members}}
+    payload = build_governance(json.loads(args.coverage.read_text(encoding='utf-8')), events, members)
     args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2, allow_nan=False)+'\n', encoding='utf-8')
     print('Governance rows:', len(payload['rows']))

@@ -49,7 +49,7 @@ RDDT,"Reddit, Inc.",RDDT,stock,,A,active,,社区/数字广告,
 RKLB,Rocket Lab Corporation,RKLB,stock,,A,active,,火箭/航天系统,
 CELH,"Celsius Holdings, Inc.",CELH,stock,,A,active,,能量饮料,
 AFRM,"Affirm Holdings, Inc.",AFRM,stock,,A,active,,先买后付,
-UPST,"Upstart Holdings, Inc.",UPST,stock,,A,active,,AI消费信贷,
+UPST,"Upstart Holdings, Inc.",UPST,stock,original,A,active,,AI消费信贷,
 CVNA,Carvana Co.,CVNA,stock,,A,active,,二手车电商,
 APLD,Applied Digital Corporation,APLD,stock,,A,active,,AI数据中心,
 RBLX,Roblox Corporation,RBLX,stock,,A,active,,游戏创作平台,
@@ -57,7 +57,7 @@ CAVA,"CAVA Group, Inc.",CAVA,stock,,A,active,,连锁餐饮,
 ONON,On Holding AG,ONON,stock,,A,active,,运动鞋服,
 DUOL,"Duolingo, Inc.",DUOL,stock,,A,active,,语言学习平台,
 ELF,"e.l.f. Beauty, Inc.",ELF,stock,,A,active,,美妆品牌,
-SOFI,"SoFi Technologies, Inc.",SOFI,stock,,A,active,,数字银行/金融,
+SOFI,"SoFi Technologies, Inc.",SOFI,stock,original,A,active,,数字银行/金融,
 SHOP,Shopify Inc.,SHOP,stock,,A,active,,电商建站平台,
 SE,Sea Limited,SE,stock,,A,active,,电商/游戏/金融,
 NET,"Cloudflare, Inc.",NET,stock,,A,active,,云网络/安全,
@@ -123,7 +123,6 @@ AEHR,Aehr Test Systems,AEHR,stock,,C,active,,半导体测试设备,
 INOD,Innodata Inc.,INOD,stock,,C,active,,AI数据服务,
 PATH,"UiPath, Inc.",PATH,stock,,C,active,,流程自动化软件,
 DOCN,"DigitalOcean Holdings, Inc.",DOCN,stock,,C,active,,中小企业云服务,
-ROKU,"Roku, Inc.",ROKU,stock,,C,active,,流媒体/广告,
 EIKN,Eikon Therapeutics,EIKN,stock,original,,active,,肿瘤新药研发,tradingview
 FSLY,"Fastly, Inc.",FSLY,stock,,B,active,,边缘云/CDN,
 HUT,Hut 8 Corp.,HUT,stock,,C,active,,数据中心/挖矿,
@@ -205,7 +204,7 @@ TE,T1 Energy Inc.,TE,stock,,,active,,电气设备,tradingview
 ARQQ,Arqit Quantum Inc.,ARQQ,stock,,,active,,基础软件,tradingview
 PYPL,"PayPal Holdings, Inc.",PYPL,stock,,,active,,信贷服务,tradingview
 MNRO,"MONRO, INC.",MNRO,stock,,,active,,汽车零部件,tradingview
-XE,"X-Energy, Inc.",XE,stock,,,active,,专用工业机械,tradingview
+XE,"X-Energy, Inc.",XE,stock,original,,active,,先进核反应堆/核燃料,tradingview
 ADTN,"ADTRAN Holdings, Inc.",ADTN,stock,,,active,,通信设备,tradingview
 ENOV,Enovis CORP,ENOV,stock,,,active,,医疗器械,tradingview
 PLAY,"Dave & Buster's Entertainment, Inc.",PLAY,stock,,,active,,娱乐内容,tradingview
@@ -349,3 +348,5 @@ QMCO,QUANTUM CORP /DE/,QMCO,stock,,,active,,计算硬件,tradingview
 AESI,Atlas Energy Solutions Inc.,AESI,stock,,,active,,油田设备/服务,tradingview
 PRME,"Prime Medicine, Inc.",PRME,stock,,,active,,生物技术研发,tradingview
 PPLI,People Inc,PPLI,stock,,,active,,互联网内容,tradingview
+PL,Planet Labs PBC,PL,stock,,B,active,,卫星遥感数据,
+LUMN,Lumen Technologies,LUMN,stock,,C,active,,光纤网络转型,

@@ -1,5 +1,5 @@
 import { test, expect, type Page } from '@playwright/test'
-import { dashboard, boxes, seed } from './fixtures'
+import { dashboard, boxes, seed, enablePoolForRegression } from './fixtures'
 
 function review() {
   return { schema_version: 2, reviewed_at: '2026-09-27', excluded: [{ code: 'EXCLUDED', reason: '已核实排除', url: 'https://www.sec.gov/' }], rows: ['AAA', 'DDD', 'ZZZ'].map((code, i) => ({
@@ -11,6 +11,7 @@ function review() {
 }
 
 async function seedPool(page: Page) {
+  await enablePoolForRegression(page)
   await seed(page)
   const data = dashboard()
   data.collections.push({ id: 'pool', label: '高风险公司股票池', codes: ['AAA', 'DDD', 'ZZZ'], summaries: { adjusted: { watchlist_total: 3, today_up: 1, today_down: 2 }, raw: { watchlist_total: 3, today_up: 1, today_down: 2 } } })

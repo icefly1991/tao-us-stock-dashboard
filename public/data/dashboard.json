@@ -5,7 +5,7 @@
   "adjustments": {
     "adjusted": {
       "summary": {
-        "watchlist_total": 350,
+        "watchlist_total": 351,
         "today_up": 0,
         "today_down": 0
       },
@@ -13,7 +13,7 @@
     },
     "raw": {
       "summary": {
-        "watchlist_total": 350,
+        "watchlist_total": 351,
         "today_up": 0,
         "today_down": 0
       },
@@ -67,17 +67,20 @@
         "APP",
         "WBTN",
         "FIG",
+        "UPST",
+        "SOFI",
         "TTAN",
-        "EIKN"
+        "EIKN",
+        "XE"
       ],
       "summaries": {
         "adjusted": {
-          "watchlist_total": 43,
+          "watchlist_total": 46,
           "today_up": 0,
           "today_down": 0
         },
         "raw": {
-          "watchlist_total": 43,
+          "watchlist_total": 46,
           "today_up": 0,
           "today_down": 0
         }
@@ -179,23 +182,24 @@
         "INOD",
         "PATH",
         "DOCN",
-        "ROKU",
         "FSLY",
         "HUT",
         "WULF",
         "ASTS",
         "IONQ",
         "CRSP",
-        "POWL"
+        "POWL",
+        "PL",
+        "LUMN"
       ],
       "summaries": {
         "adjusted": {
-          "watchlist_total": 100,
+          "watchlist_total": 101,
           "today_up": 0,
           "today_down": 0
         },
         "raw": {
-          "watchlist_total": 100,
+          "watchlist_total": 101,
           "today_up": 0,
           "today_down": 0
         }
@@ -287,16 +291,17 @@
         "TEM",
         "RXST",
         "FSLY",
-        "POWL"
+        "POWL",
+        "PL"
       ],
       "summaries": {
         "adjusted": {
-          "watchlist_total": 35,
+          "watchlist_total": 36,
           "today_up": 0,
           "today_down": 0
         },
         "raw": {
-          "watchlist_total": 35,
+          "watchlist_total": 36,
           "today_up": 0,
           "today_down": 0
         }
@@ -335,12 +340,12 @@
         "INOD",
         "PATH",
         "DOCN",
-        "ROKU",
         "HUT",
         "WULF",
         "ASTS",
         "IONQ",
-        "CRSP"
+        "CRSP",
+        "LUMN"
       ],
       "summaries": {
         "adjusted": {

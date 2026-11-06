@@ -1,0 +1,2452 @@
+{
+  "reviewed_at": "2026-11-06",
+  "rows": [
+    {
+      "code": "SMR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1822966/000182296626000091/smr-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1822966/000182296626000089/smr-20261105.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1822966/000182296626000089/pressreleasenuscale2026q.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "VIX",
+      "coverage": "not_applicable",
+      "sources": [],
+      "filing_date": null
+    },
+    {
+      "code": "IMSR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-11，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/2019804/000110465926094085/tmb-20260630x10q.htm"
+        },
+        {
+          "title": "SEC S-3：2026-11-03",
+          "url": "https://www.sec.gov/Archives/edgar/data/2019804/000110465926122124/tm2628532d1_s3.htm"
+        },
+        {
+          "title": "SEC S-3：2026-11-03",
+          "url": "https://www.sec.gov/Archives/edgar/data/2019804/000110465926122102/tm2628532d2_s3.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-27",
+          "url": "https://www.sec.gov/Archives/edgar/data/2019804/000201980426000030/tmb-20261021x8k.htm"
+        }
+      ],
+      "filing_date": "2026-08-11"
+    },
+    {
+      "code": "NABL",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1834488/000183448826000058/nabl-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1834488/000183448826000057/nabl-20261104.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1834488/000183448826000057/nabl-20260930x8kxex991.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "HOOD",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-10-28，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000167/hood-20260930.htm"
+        }
+      ],
+      "filing_date": "2026-10-28"
+    },
+    {
+      "code": "MP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-07，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1801368/000180136826000048/mp-20260630.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1801368/000180136826000056/mp-20261105.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1801368/000180136826000056/mpmcq32026er.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "ORCL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-09-11，报告期2026-08-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526447507/d131790d8k.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526445847/d181425d424b5.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-11-02",
+          "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526442729/d181425d424b5.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-28",
+          "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526435853/d75538d8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-28（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526435853/d75538dex991.htm"
+        }
+      ],
+      "filing_date": "2026-09-11"
+    },
+    {
+      "code": "HIMS",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-10，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000163/hims-20260630.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-07",
+          "url": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000220/hims-20261007.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "BITX",
+      "coverage": "not_applicable",
+      "sources": [],
+      "filing_date": null
+    },
+    {
+      "code": "CRWV",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-12，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-12"
+    },
+    {
+      "code": "IBIT",
+      "coverage": "not_applicable",
+      "sources": [],
+      "filing_date": null
+    },
+    {
+      "code": "RZLV",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 20-F：2026-03-30，报告期2025-12-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526132456/rzlv-20251231.htm"
+        },
+        {
+          "title": "SEC 6-K：2026-10-08",
+          "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526418075/6-ka_october_8.htm"
+        },
+        {
+          "title": "SEC 6-K：2026-10-08（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526418075/rzlv-ex99_1.htm"
+        },
+        {
+          "title": "SEC 6-K：2026-10-07",
+          "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526416054/6-k_oct_6_2026.htm"
+        },
+        {
+          "title": "SEC 6-K：2026-10-07（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526416054/rzlv-ex99_1.htm"
+        },
+        {
+          "title": "SEC 6-K：2026-10-07（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526416054/rzlv-ex99_2.htm"
+        }
+      ],
+      "filing_date": "2026-03-30"
+    },
+    {
+      "code": "MCD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-07，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000073/mcd-20260630.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000080/mcd-20261104.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000080/exhibit991-9302026.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000080/exhibit992-9302026.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "IREN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000066/iren-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000065/iren-20261105.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000065/irenreportsq1-fy27result.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "ATCH",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-K：2026-09-24，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1963088/000149315226044008/form10-k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-15",
+          "url": "https://www.sec.gov/Archives/edgar/data/1963088/000149315226047157/form8-k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-15（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1963088/000149315226047157/ex99-1.htm"
+        }
+      ],
+      "filing_date": "2026-09-24"
+    },
+    {
+      "code": "CRCL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-04，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000311/crcl-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000309/crcl-20261104.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000309/finalq3epr-110326.htm"
+        }
+      ],
+      "filing_date": "2026-11-04"
+    },
+    {
+      "code": "NVDA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-26，报告期2026-07-26",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+        }
+      ],
+      "filing_date": "2026-08-26"
+    },
+    {
+      "code": "NKE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-10-02，报告期2026-08-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018726000193/nke-20260831.htm"
+        }
+      ],
+      "filing_date": "2026-10-02"
+    },
+    {
+      "code": "KLAR",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 20-F：2026-02-26，报告期2025-12-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/2003292/000200329226000007/klar-20251231.htm"
+        }
+      ],
+      "filing_date": "2026-02-26"
+    },
+    {
+      "code": "MNTN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-10，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1891027/000189102726000073/mntn-20260630.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/1891027/000189102726000100/mntn-20261101.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1891027/000189102726000100/mntnearningsrelease2026-q3.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "MSFT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-10-28，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526447173/d178557d8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-28",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436149/msft-20261028.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-28（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436149/msft-ex99_1.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-28",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-20261028.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-28（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-ex99_1.htm"
+        }
+      ],
+      "filing_date": "2026-10-28"
+    },
+    {
+      "code": "META",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-10-22，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526450074/d166273d8k.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526448015/d135326d424b5.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526446110/d44678d424b5.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-11-03",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526444440/d135326d424b5.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-29",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526438017/d183592d8k.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-10-28",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526436410/d94886d424b5.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-10-28",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526436405/d133631d424b5.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-10-26",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526431043/d133631d424b5.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-10-26",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526431040/d94886d424b5.htm"
+        }
+      ],
+      "filing_date": "2026-10-22"
+    },
+    {
+      "code": "RGTI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-06，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1838359/000110465926091993/rgti-20260630x10q.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "NXH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1130713/000162828026071119/nxh-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1130713/000162828026071105/byon-20261105.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1130713/000162828026071105/ex991q326pressrelease.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "AVGO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-09-10，报告期2026-08-02",
+          "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-27",
+          "url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526434271/d148323d8k.htm"
+        }
+      ],
+      "filing_date": "2026-09-10"
+    },
+    {
+      "code": "QQQ",
+      "coverage": "not_applicable",
+      "sources": [],
+      "filing_date": null
+    },
+    {
+      "code": "ETOR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 20-F：2026-03-02，报告期2025-12-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1493318/000121390026022034/ea0278371-20f_etoro.htm"
+        }
+      ],
+      "filing_date": "2026-03-02"
+    },
+    {
+      "code": "ARKO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1823794/000119312526448522/arko-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1823794/000119312526448519/arko-20261105.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1823794/000119312526448519/arko-ex99_1.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "UAA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-07，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1336917/000133691726000111/ua-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "PG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-10-22，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000256/pg-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-03",
+          "url": "https://www.sec.gov/Archives/edgar/data/80424/000162828026069608/pg-20261103.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-02",
+          "url": "https://www.sec.gov/Archives/edgar/data/80424/000162828026068909/pg-20261102.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/80424/000162828026068591/pg-20261030.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-10-29",
+          "url": "https://www.sec.gov/Archives/edgar/data/80424/000162828026068216/pg-eur424b5finaloct2026.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-10-28",
+          "url": "https://www.sec.gov/Archives/edgar/data/80424/000162828026067935/pg-esop424b5finaloct2026.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-10-28",
+          "url": "https://www.sec.gov/Archives/edgar/data/80424/000162828026067929/pg-usd424b5finaloct2026.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-10-27",
+          "url": "https://www.sec.gov/Archives/edgar/data/80424/000162828026067378/pg-eur424b5prelim.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-10-26",
+          "url": "https://www.sec.gov/Archives/edgar/data/80424/000162828026067163/pg-esop424b5prelimoct2026.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-10-26",
+          "url": "https://www.sec.gov/Archives/edgar/data/80424/000162828026067159/pg-usd424b5prelimoct2026.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-22",
+          "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000252/pg-20261022.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-22（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000252/slides.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-22",
+          "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000250/pg-20261022.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-22（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000250/fy2627q1jas8-kexhibit991.htm"
+        }
+      ],
+      "filing_date": "2026-10-22"
+    },
+    {
+      "code": "DOGEUSD",
+      "coverage": "not_applicable",
+      "sources": [],
+      "filing_date": null
+    },
+    {
+      "code": "STUB",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-13，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1337634/000162828026056402/stub-20260630.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-20",
+          "url": "https://www.sec.gov/Archives/edgar/data/1337634/000119312526425731/d159555d8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-14",
+          "url": "https://www.sec.gov/Archives/edgar/data/1337634/000119312526421733/d180521d8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-14（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1337634/000119312526421733/d180521dex991.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "VOR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-10-30，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1817229/000119312526439905/vor-20260930.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-10-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1817229/000119312526439975/d180165d424b5.htm"
+        }
+      ],
+      "filing_date": "2026-10-30"
+    },
+    {
+      "code": "MSTR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-02，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1050446/000105044626000060/mstr-20260930.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-11-02",
+          "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526442833/d124693d424b5.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-11-02",
+          "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526442832/d132417d424b5.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-11-02",
+          "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526442826/d141188d424b5.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-11-02",
+          "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526442820/d185611d424b5.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-02",
+          "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312526442707/mstr-20261102.htm"
+        }
+      ],
+      "filing_date": "2026-11-02"
+    },
+    {
+      "code": "GEMI",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-13，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/2055592/000205559226000065/gemi-20260630.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-14",
+          "url": "https://www.sec.gov/Archives/edgar/data/2055592/000110465926115771/tm2626033d4_8k.htm"
+        },
+        {
+          "title": "SEC S-3：2026-10-01",
+          "url": "https://www.sec.gov/Archives/edgar/data/2055592/000110465926112851/tm2626033-1_s3.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "OSCR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1568651/000156865126000086/oscr-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1568651/000156865126000082/oscr-20261105.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1568651/000156865126000082/oscarhealththirdquarter202.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "DKNG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-07，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1883685/000188368526000029/dkng-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "AMD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-04，报告期2026-09-26",
+          "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm"
+        }
+      ],
+      "filing_date": "2026-11-04"
+    },
+    {
+      "code": "TQQQ",
+      "coverage": "not_applicable",
+      "sources": [],
+      "filing_date": null
+    },
+    {
+      "code": "APP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-04，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100826000069/app-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100826000068/app-20261029.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100826000068/exhibit991-3q26earningspre.htm"
+        }
+      ],
+      "filing_date": "2026-11-04"
+    },
+    {
+      "code": "WBTN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-10，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1997859/000199785926000089/wbtn-20260630.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1997859/000199785926000092/wbtn-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1997859/000199785926000092/final_pressreleasexmca.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "FIG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-04，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1579878/000162828026070272/fig-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/1579878/000162828026070133/fig-20261104.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1579878/000162828026070133/q326pressrelease.htm"
+        }
+      ],
+      "filing_date": "2026-11-04"
+    },
+    {
+      "code": "CRDO",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-09-02，报告期2026-08-01",
+          "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026060111/crdo-20260801.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-16",
+          "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026066139/crdo-20261016.htm"
+        }
+      ],
+      "filing_date": "2026-09-02"
+    },
+    {
+      "code": "ALAB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-04，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000045/alab-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/1736297/000162828026070258/alab-20261102.htm"
+        }
+      ],
+      "filing_date": "2026-11-04"
+    },
+    {
+      "code": "NBIS",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 20-F：2026-04-30，报告期2025-12-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+        },
+        {
+          "title": "SEC 6-K：2026-10-22",
+          "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926117978/tm2628078d1_6k.htm"
+        },
+        {
+          "title": "SEC 6-K：2026-10-22（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926117978/tm2628078d1_ex99-1.htm"
+        },
+        {
+          "title": "SEC 6-K：2026-10-01",
+          "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926112824/tm2626792d1_6k.htm"
+        },
+        {
+          "title": "SEC 6-K：2026-10-01（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926112824/tm2626792d1_ex99-1.htm"
+        }
+      ],
+      "filing_date": "2026-04-30"
+    },
+    {
+      "code": "COIN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-10-29，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000122/coin-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-29",
+          "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000121/coin-20261029.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-29（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000121/q326earningsdeck_vsec.htm"
+        }
+      ],
+      "filing_date": "2026-10-29"
+    },
+    {
+      "code": "RDDT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-10-30，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000116/rddt-20260930.htm"
+        }
+      ],
+      "filing_date": "2026-10-30"
+    },
+    {
+      "code": "RKLB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-10，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000062/rklb-20260630.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-14",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000067/rklb-20261014.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-14（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000067/rklb-10142026ex991.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "CELH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000062/celh-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000059/celh-20261105.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000059/ex9913q2026.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "AFRM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1820953/000162828026071153/afrm-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1820953/000162828026071005/afrm-20261105.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1820953/000162828026071005/affirmfq127shareholderle.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "UPST",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-03，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1647639/000164763926000084/upst-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-03",
+          "url": "https://www.sec.gov/Archives/edgar/data/1647639/000164763926000083/upst-20261103.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-03（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1647639/000164763926000083/upst991prq32026.htm"
+        }
+      ],
+      "filing_date": "2026-11-03"
+    },
+    {
+      "code": "CVNA",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-10-28，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-28",
+          "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000066/cvna-20261028.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-28（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000066/ex99_1q32026.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-28（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000066/ex99_2q32026.htm"
+        }
+      ],
+      "filing_date": "2026-10-28"
+    },
+    {
+      "code": "APLD",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-10-07，报告期2026-08-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000059/apld-20260831.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-07",
+          "url": "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000057/apld-20261007.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-07（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000057/apldq127earningsrelease.htm"
+        }
+      ],
+      "filing_date": "2026-10-07"
+    },
+    {
+      "code": "RBLX",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-10-29，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1315098/000162828026068253/rblx-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-29",
+          "url": "https://www.sec.gov/Archives/edgar/data/1315098/000162828026068235/rblx-20261029.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-29（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1315098/000162828026068235/ex991-q32026earningsshar.htm"
+        }
+      ],
+      "filing_date": "2026-10-29"
+    },
+    {
+      "code": "CAVA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-10-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/1639438/000162828026070344/cava-20261004.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "ONON",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 20-F：2026-03-03，报告期2025-12-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1858985/000185898526000008/onholdingag-20251231.htm"
+        }
+      ],
+      "filing_date": "2026-03-03"
+    },
+    {
+      "code": "DUOL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-04，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1562088/000162828026069692/duol-20260930.htm"
+        }
+      ],
+      "filing_date": "2026-11-04"
+    },
+    {
+      "code": "ELF",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1600033/000160003326000050/elf-20260930.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "SOFI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1818874/000181887426000070/sofi-20260930.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "SHOP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-03，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000068/shop-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-03",
+          "url": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000067/shop-20261103.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-03（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000067/exhibit991pressreleaseq320.htm"
+        }
+      ],
+      "filing_date": "2026-11-03"
+    },
+    {
+      "code": "SE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 20-F：2026-04-17，报告期2025-12-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1703399/000114036126015366/ef20067274_20f.htm"
+        },
+        {
+          "title": "SEC 6-K：2026-10-20",
+          "url": "https://www.sec.gov/Archives/edgar/data/1703399/000119312526425639/d181814d6k.htm"
+        },
+        {
+          "title": "SEC 6-K：2026-10-20（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1703399/000119312526425639/d181814dex991.htm"
+        }
+      ],
+      "filing_date": "2026-04-17"
+    },
+    {
+      "code": "NET",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000061/cloud-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000060/cloud-20261105.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000060/q326exhibit991.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000060/q326exhibit992.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "PLTR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-03，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000048/pltr-20260930.htm"
+        }
+      ],
+      "filing_date": "2026-11-03"
+    },
+    {
+      "code": "ARM",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 20-F：2026-05-26，报告期2026-03-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000097/arm-20260331.htm"
+        },
+        {
+          "title": "SEC 6-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000142/arm-20260930.htm"
+        },
+        {
+          "title": "SEC 6-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000141/arm-20261104.htm"
+        },
+        {
+          "title": "SEC 6-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000141/exhibit991fye27q230-sepx26.htm"
+        },
+        {
+          "title": "SEC 6-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000141/exhibit992fye27q230-sepx26.htm"
+        }
+      ],
+      "filing_date": "2026-05-26"
+    },
+    {
+      "code": "LITE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-03，报告期2026-09-26",
+          "url": "https://www.sec.gov/Archives/edgar/data/1633978/000162828026069615/lite-20260926.htm"
+        }
+      ],
+      "filing_date": "2026-11-03"
+    },
+    {
+      "code": "COHR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-04，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/820318/000082031826000023/iivi-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526447200/d176836d8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526447200/d176836dex991.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/820318/000119312526447200/d176836dex992.htm"
+        }
+      ],
+      "filing_date": "2026-11-04"
+    },
+    {
+      "code": "MRVL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-28，报告期2026-08-01",
+          "url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000025/mrvl-20260801.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-02",
+          "url": "https://www.sec.gov/Archives/edgar/data/1835632/000119312526442717/d352474d8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-02",
+          "url": "https://www.sec.gov/Archives/edgar/data/1835632/000119312526442714/d81187d8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-02（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1835632/000119312526442714/d81187dex991.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-02（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1835632/000119312526442714/d81187dex992.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-23",
+          "url": "https://www.sec.gov/Archives/edgar/data/1835632/000119312526430424/d147430d8k.htm"
+        }
+      ],
+      "filing_date": "2026-08-28"
+    },
+    {
+      "code": "CLS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-10-26，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1030894/000103089426000050/cls-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1030894/000103089426000054/cls-20261030.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-30（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1030894/000103089426000054/ncibpressrelease-oct302026.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-27",
+          "url": "https://www.sec.gov/Archives/edgar/data/1030894/000110465926118978/tm2628147d1_8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-27（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1030894/000110465926118978/tm2628147d1_ex99-1.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-26",
+          "url": "https://www.sec.gov/Archives/edgar/data/1030894/000103089426000049/cls-20261026.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-26（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1030894/000103089426000049/cls-20260930prcondensedfs.htm"
+        }
+      ],
+      "filing_date": "2026-10-26"
+    },
+    {
+      "code": "VRT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-10-28，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026067893/vrt-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-28",
+          "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026067707/vrt-20261028.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-28（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026067707/q32026exhibit991vrt10282026.htm"
+        }
+      ],
+      "filing_date": "2026-10-28"
+    },
+    {
+      "code": "MU",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-K：2026-10-09，报告期2026-09-03",
+          "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/723125/000110465926123389/tm2629062d1_8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/723125/000110465926123389/tm2629062d1_ex99-1.htm"
+        }
+      ],
+      "filing_date": "2026-10-09"
+    },
+    {
+      "code": "SNDK",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-10-30，报告期2026-10-02",
+          "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068601/sndk-20261002.htm"
+        }
+      ],
+      "filing_date": "2026-10-30"
+    },
+    {
+      "code": "WDC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-10-23，报告期2026-10-02",
+          "url": "https://www.sec.gov/Archives/edgar/data/106040/000162828026066933/wdc-20261002.htm"
+        }
+      ],
+      "filing_date": "2026-10-23"
+    },
+    {
+      "code": "CIEN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-09-03，报告期2026-08-01",
+          "url": "https://www.sec.gov/Archives/edgar/data/936395/000162828026060361/cien-20260801.htm"
+        }
+      ],
+      "filing_date": "2026-09-03"
+    },
+    {
+      "code": "SMCI",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-K：2026-08-31，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-03",
+          "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000026/smci-20261103.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-03（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000026/exhibit991_20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-20",
+          "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000025/smci-20261020.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-20（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000025/smcifirstquarterfy2027busi.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-15",
+          "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000024/smci-20261014.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-08",
+          "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000023/smci-20261007.htm"
+        }
+      ],
+      "filing_date": "2026-08-31"
+    },
+    {
+      "code": "BE",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-10-22，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066931/be-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-22",
+          "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/be-20261022.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-22（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex991_q326financialresults.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-22（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex992_q32026supplemental.htm"
+        }
+      ],
+      "filing_date": "2026-10-22"
+    },
+    {
+      "code": "PSTG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-09-04，报告期2026-08-02",
+          "url": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000088/pstg-20260802.htm"
+        }
+      ],
+      "filing_date": "2026-09-04"
+    },
+    {
+      "code": "MTSI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-06，报告期2026-07-03",
+          "url": "https://www.sec.gov/Archives/edgar/data/1493594/000149359426000038/mtsi-20260703.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1493594/000149359426000041/mtsi-20261105.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1493594/000149359426000041/ex99_1earningsreleaseq4fy26.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "TOST",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-04，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1650164/000165016426000216/tost-20260930.htm"
+        }
+      ],
+      "filing_date": "2026-11-04"
+    },
+    {
+      "code": "NU",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 20-F：2026-04-08，报告期2025-12-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1691493/000129281426002166/nuform20f_2025.htm"
+        },
+        {
+          "title": "SEC 6-K：2026-10-23",
+          "url": "https://www.sec.gov/Archives/edgar/data/1691493/000129281426005000/nu20261023_6k.htm"
+        },
+        {
+          "title": "SEC 6-K：2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1691493/000129281426004752/nu20260930_6k.htm"
+        }
+      ],
+      "filing_date": "2026-04-08"
+    },
+    {
+      "code": "DAVE",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-04，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1841408/000119312526447414/dave-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/1841408/000119312526447333/dave-20261104.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1841408/000119312526447333/dave-ex99_1.htm"
+        }
+      ],
+      "filing_date": "2026-11-04"
+    },
+    {
+      "code": "ROOT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-04，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1788882/000178888226000082/root-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/1788882/000178888226000081/root-20261104.htm"
+        }
+      ],
+      "filing_date": "2026-11-04"
+    },
+    {
+      "code": "LMND",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1691421/000169142126000068/lmnd-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1691421/000169142126000064/lmnd-20261105.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "TTAN",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-09-08，报告期2026-07-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1638826/000163882626000094/ttan-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-08"
+    },
+    {
+      "code": "IOT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-09-08，报告期2026-08-01",
+          "url": "https://www.sec.gov/Archives/edgar/data/1642896/000162828026060909/iot-20260801.htm"
+        }
+      ],
+      "filing_date": "2026-09-08"
+    },
+    {
+      "code": "MNDY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 20-F：2026-03-13，报告期2025-12-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1845338/000117891326000870/zk2634436.htm"
+        }
+      ],
+      "filing_date": "2026-03-13"
+    },
+    {
+      "code": "MDB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-09-01，报告期2026-07-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1441816/000162828026059830/mdb-20260731.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-15",
+          "url": "https://www.sec.gov/Archives/edgar/data/1441816/000162828026065934/mdb-20261012.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-09-29",
+          "url": "https://www.sec.gov/Archives/edgar/data/1441816/000162828026063850/mdb-20260925.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-09-28",
+          "url": "https://www.sec.gov/Archives/edgar/data/1441816/000162828026063657/mdb-20260924.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-09-28（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1441816/000162828026063657/pressreleasedatedseptemb.htm"
+        }
+      ],
+      "filing_date": "2026-09-01"
+    },
+    {
+      "code": "GTLB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-09-02，报告期2026-07-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1653482/000162828026059943/gtlb-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-02"
+    },
+    {
+      "code": "FROG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-07，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1800667/000119312526340294/frog-20260630.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1800667/000119312526449797/frog-20261105.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1800667/000119312526449797/frog-ex99_1.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "ESTC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-28，报告期2026-07-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1707753/000170775326000054/estc-20260731.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-15",
+          "url": "https://www.sec.gov/Archives/edgar/data/1707753/000170775326000061/estc-20261015.htm"
+        }
+      ],
+      "filing_date": "2026-08-28"
+    },
+    {
+      "code": "S",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-28，报告期2026-07-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1583708/000158370826000055/s-20260731.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-16",
+          "url": "https://www.sec.gov/Archives/edgar/data/1583708/000110465926116654/tm2627397d1_8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-16（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1583708/000110465926116654/tm2627397d1_ex99-1.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-16（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1583708/000110465926116654/tm2627397d1_ex99-2.htm"
+        }
+      ],
+      "filing_date": "2026-08-28"
+    },
+    {
+      "code": "TTD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-06，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1671933/000167193326000086/ttd-20260630.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-20",
+          "url": "https://www.sec.gov/Archives/edgar/data/1671933/000167193326000108/ttd-20261019.htm"
+        }
+      ],
+      "filing_date": "2026-08-06"
+    },
+    {
+      "code": "ZETA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-05，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1851003/000119312526333902/zeta-20260630.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-10-16",
+          "url": "https://www.sec.gov/Archives/edgar/data/1851003/000119312526424229/zeta-20261016.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "TMDX",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1756262/000119312526449827/tmdx-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1756262/000119312526449729/tmdx-20261105.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1756262/000119312526449729/tmdx-ex99_1.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "NTRA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1604821/000162828026071145/ntra-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1604821/000160482126000032/ntra-20261105.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1604821/000160482126000032/ntra-20260930xex991.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1604821/000160482126000032/ntra-20260930xex992.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "TEM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-02，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1717115/000119312526442624/tem-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-02",
+          "url": "https://www.sec.gov/Archives/edgar/data/1717115/000119312526442619/tem-20261102.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-02（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1717115/000119312526442619/tem-ex99_1.htm"
+        }
+      ],
+      "filing_date": "2026-11-02"
+    },
+    {
+      "code": "RXST",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-03，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1111485/000119312526445381/rxst-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-03",
+          "url": "https://www.sec.gov/Archives/edgar/data/1111485/000119312526445318/rxst-20261103.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-03（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1111485/000119312526445318/rxst-ex99_1.htm"
+        }
+      ],
+      "filing_date": "2026-11-03"
+    },
+    {
+      "code": "KTOS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-27",
+          "url": "https://www.sec.gov/Archives/edgar/data/1069258/000106925826000088/ktos-20260927.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1069258/000106925826000085/ktos-20261105.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1069258/000106925826000085/ktos202609278kexhibit991.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "AVAV",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-09-10，报告期2026-08-01",
+          "url": "https://www.sec.gov/Archives/edgar/data/1368622/000110465926106423/avav-20260801x10q.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/1368622/000110465926122416/tm2628954d1_8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1368622/000110465926112083/tm2626631d1_8k.htm"
+        }
+      ],
+      "filing_date": "2026-09-10"
+    },
+    {
+      "code": "RDW",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819810/000181981026000142/rdw-20260930.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "LUNR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-13，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1844452/000162828026056821/lunr-20260630.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-22",
+          "url": "https://www.sec.gov/Archives/edgar/data/1844452/000162828026066926/lunr-20261021.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-22（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1844452/000162828026066926/ex991intuitivemachinesappo.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "LEU",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1065059/000162828026070557/leu-20260930.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "UUUU",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-04，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1385849/000138584926000037/efr-20260930.htm"
+        }
+      ],
+      "filing_date": "2026-11-04"
+    },
+    {
+      "code": "UEC",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-K：2026-09-29，报告期2026-07-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1334933/000143774926031414/uec20260731_10k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1334933/000143774926035062/uec20261104_8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1334933/000143774926035062/ex_1038588.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-09-29",
+          "url": "https://www.sec.gov/Archives/edgar/data/1334933/000143774926031416/uec20260928_8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-09-29（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1334933/000143774926031416/ex_1020503.htm"
+        }
+      ],
+      "filing_date": "2026-09-29"
+    },
+    {
+      "code": "ALB",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-04，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/915913/000091591326000129/alb-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/915913/000091591326000128/alb-20261104.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/915913/000091591326000128/a3q26earningsreleaseex991.htm"
+        }
+      ],
+      "filing_date": "2026-11-04"
+    },
+    {
+      "code": "ENPH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-10-27，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1463101/000146310126000102/enph-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-29",
+          "url": "https://www.sec.gov/Archives/edgar/data/1463101/000146310126000104/enph-20261028.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-27",
+          "url": "https://www.sec.gov/Archives/edgar/data/1463101/000146310126000101/enph-20261027.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-27（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1463101/000146310126000101/a2026q3exx991pressrelease.htm"
+        }
+      ],
+      "filing_date": "2026-10-27"
+    },
+    {
+      "code": "NXT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-02，报告期2026-10-02",
+          "url": "https://www.sec.gov/Archives/edgar/data/1852131/000185213126000058/nxt-20261002.htm"
+        }
+      ],
+      "filing_date": "2026-11-02"
+    },
+    {
+      "code": "FLNC",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-05，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1868941/000186894126000029/flnc-20260630.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-02",
+          "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926120941/tm2628729d1_8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-02（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926120941/tm2628729d1_ex99-1.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-02（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926120941/tm2628729d1_ex99-2.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-09",
+          "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926115056/tm2627341d1_8k.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "RIVN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-10-29，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000066/rivn-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-29",
+          "url": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000065/rivn-20261027.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-29（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000065/ex-9913q26rivianearningspr.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-29（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000065/ex-9923q26rivianearnings.htm"
+        }
+      ],
+      "filing_date": "2026-10-29"
+    },
+    {
+      "code": "CHWY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-09-09，报告期2026-08-02",
+          "url": "https://www.sec.gov/Archives/edgar/data/1766502/000162828026061018/chwy-20260802.htm"
+        }
+      ],
+      "filing_date": "2026-09-09"
+    },
+    {
+      "code": "BROS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1866581/000186658126000180/bros-20260930.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "RH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-09-10，报告期2026-08-01",
+          "url": "https://www.sec.gov/Archives/edgar/data/1528849/000110465926106764/rh-20260801x10q.htm"
+        }
+      ],
+      "filing_date": "2026-09-10"
+    },
+    {
+      "code": "SG",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-07，报告期2026-06-28",
+          "url": "https://www.sec.gov/Archives/edgar/data/1477815/000162828026054522/sg-20260628.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1477815/000162828026071064/sg-20261105.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1477815/000162828026071064/q326sweetgreenearningsrele.htm"
+        }
+      ],
+      "filing_date": "2026-08-07"
+    },
+    {
+      "code": "FOUR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1794669/000179466926000051/four-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1794669/000179466926000049/four-20261105.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1794669/000179466926000049/ex991q3.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "BILL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-K：2026-08-20，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1786352/000162828026058238/bill-20260630.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1786352/000162828026070994/bill-20261105.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1786352/000162828026070994/bill-2026930xexx991.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-15",
+          "url": "https://www.sec.gov/Archives/edgar/data/1786352/000162828026066002/bill-20261015.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-15（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1786352/000162828026066002/bill-20261015xexx991.htm"
+        }
+      ],
+      "filing_date": "2026-08-20"
+    },
+    {
+      "code": "RELY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-04，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1782170/000162828026070142/rely-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/1782170/000162828026070130/rely-20261104.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1782170/000162828026070130/rely3q26-earningspr.htm"
+        }
+      ],
+      "filing_date": "2026-11-04"
+    },
+    {
+      "code": "SYM",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-05，报告期2026-06-27",
+          "url": "https://www.sec.gov/Archives/edgar/data/1837240/000183724026000043/sym-20260627.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-29",
+          "url": "https://www.sec.gov/Archives/edgar/data/1837240/000119312526437874/d182210d8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-29（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1837240/000119312526437874/d182210dex991.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "AAOI",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1158114/000143774926035282/aaoi20260930_10q.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826008351/aaoi_8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1158114/000168316826008351/aaoi_ex9901.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "ACLS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1113232/000110465926123333/acls-20260930x10q.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1113232/000110465926123080/tm2629011d1_8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1113232/000110465926123080/tm2629011d1_ex99-1.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "SITM",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1451809/000145180926000077/sitm-20260930.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "AMBA",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-09-04，报告期2026-07-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1280263/000119312526383365/amba-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-04"
+    },
+    {
+      "code": "AEHR",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-K：2026-07-27，报告期2026-05-29",
+          "url": "https://www.sec.gov/Archives/edgar/data/1040470/000165495426006919/aehr_10k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-02",
+          "url": "https://www.sec.gov/Archives/edgar/data/1040470/000165495426009385/aehr_8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-02（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1040470/000165495426009385/aehr_ex991.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-29",
+          "url": "https://www.sec.gov/Archives/edgar/data/1040470/000165495426009242/aehr_8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-20",
+          "url": "https://www.sec.gov/Archives/edgar/data/1040470/000165495426009056/aehr_8k.htm"
+        }
+      ],
+      "filing_date": "2026-07-27"
+    },
+    {
+      "code": "INOD",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/903651/000110465926123437/inod-20260930x10q.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/903651/000110465926123324/tm2628333d1_8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/903651/000110465926123324/tm2628333d1_ex99-1.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "PATH",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-09-08，报告期2026-07-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1734722/000173472226000050/path-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-08"
+    },
+    {
+      "code": "DOCN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-03，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1582961/000162828026069141/docn-20260930.htm"
+        },
+        {
+          "title": "SEC 424B5：2026-11-03",
+          "url": "https://www.sec.gov/Archives/edgar/data/1582961/000110465926121722/tm2628707d1_424b5.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-03",
+          "url": "https://www.sec.gov/Archives/edgar/data/1582961/000162828026069125/docn-20261103.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-03（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1582961/000162828026069125/a2026-q3dopressrelease.htm"
+        }
+      ],
+      "filing_date": "2026-11-03"
+    },
+    {
+      "code": "EIKN",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-13，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1861123/000119312526349185/eikn-20260630.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-26",
+          "url": "https://www.sec.gov/Archives/edgar/data/1861123/000119312526430860/eikn-20261026.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-26（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1861123/000119312526430860/eikn-ex99_1.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-23",
+          "url": "https://www.sec.gov/Archives/edgar/data/1861123/000119312526429549/eikn-20261023.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-23（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1861123/000119312526429549/eikn-ex99_1.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "FSLY",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-04，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1517413/000151741326000345/fsly-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/1517413/000151741326000343/fsly-20261030.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1517413/000151741326000343/ex991-pressreleasedatednov.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/1517413/000151741326000342/fsly-20261104.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1517413/000151741326000342/ex991-fslypressrelease93026.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1517413/000151741326000342/ex992-investorsupplement93.htm"
+        }
+      ],
+      "filing_date": "2026-11-04"
+    },
+    {
+      "code": "HUT",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-04，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1964789/000119312526446146/hut-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926122347/tm2628741d1_8k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926122347/tm2628741d1_ex99-1.htm"
+        }
+      ],
+      "filing_date": "2026-11-04"
+    },
+    {
+      "code": "WULF",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-05，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000166/wulf-20260630.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026069810/wulf-20261104.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026069810/wulfhawesvillecsaandepcmpr.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-23",
+          "url": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026067100/wulf-20261023.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026064757/wulf-20261001.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026064757/muskieexpansionpr.htm"
+        }
+      ],
+      "filing_date": "2026-08-05"
+    },
+    {
+      "code": "ASTS",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-10，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1780312/000119312526342550/asts-20260630.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-10-20",
+          "url": "https://www.sec.gov/Archives/edgar/data/1780312/000149315226047766/form8-k.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-09-28",
+          "url": "https://www.sec.gov/Archives/edgar/data/1780312/000149315226044647/form8-k.htm"
+        }
+      ],
+      "filing_date": "2026-08-10"
+    },
+    {
+      "code": "IONQ",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449829/ionq-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05",
+          "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449779/ionq-20261103.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449779/ionq-ex99_1.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-05（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449779/ionq-ex99_2.htm"
+        }
+      ],
+      "filing_date": "2026-11-05"
+    },
+    {
+      "code": "CRSP",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-02，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312526443665/crsp-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-02",
+          "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312526443644/crsp-20261102.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-02（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312526443644/crsp-ex99_1.htm"
+        }
+      ],
+      "filing_date": "2026-11-02"
+    },
+    {
+      "code": "POWL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-04，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/80420/000008042026000107/powl-20260630.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/80420/000008042026000136/powl-20261103.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/80420/000008042026000136/ex991-powlq4xfy2026dividen.htm"
+        }
+      ],
+      "filing_date": "2026-08-04"
+    },
+    {
+      "code": "XE",
+      "coverage": "targeted",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-08-13，报告期2026-06-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/2088896/000119312526347752/xe-20260630.htm"
+        }
+      ],
+      "filing_date": "2026-08-13"
+    },
+    {
+      "code": "PL",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-09-03，报告期2026-07-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/1836833/000119312526382016/pl-20260731.htm"
+        }
+      ],
+      "filing_date": "2026-09-03"
+    },
+    {
+      "code": "LUMN",
+      "coverage": "screened",
+      "sources": [
+        {
+          "title": "SEC 10-Q：2026-11-04，报告期2026-09-30",
+          "url": "https://www.sec.gov/Archives/edgar/data/18926/000001892626000073/lumn-20260930.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04",
+          "url": "https://www.sec.gov/Archives/edgar/data/18926/000001892626000071/lumn-20261104.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/18926/000001892626000071/lumnq320268-kexhibit991.htm"
+        },
+        {
+          "title": "SEC 8-K：2026-11-04（附件）",
+          "url": "https://www.sec.gov/Archives/edgar/data/18926/000001892626000071/lumen3q26quarterlypresen.htm"
+        }
+      ],
+      "filing_date": "2026-11-04"
+    }
+  ]
+}

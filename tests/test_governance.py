@@ -1,15 +1,17 @@
 import copy
 import json
 import unittest
+from datetime import date, timedelta
 from pathlib import Path
 from research_governance import build_governance, distress_summary
 
 
 class GovernanceTests(unittest.TestCase):
     def setUp(self):
-        self.coverage = json.loads(Path('docs/reviews/2026-09-27-governance-coverage.json').read_text(encoding='utf-8'))
+        self.coverage = json.loads(Path('docs/reviews/2026-11-06-governance-coverage.json').read_text(encoding='utf-8'))
         self.events = json.loads(Path('scripts/governance_events.json').read_text(encoding='utf-8'))
         self.members = {r['code'] for r in self.coverage['rows']}
+        self.events['overrides'] = {code: items for code, items in self.events['overrides'].items() if code in self.members}
 
     def test_evidence_required_no_keyword_only_accusations(self):
         for error in ['date', 'member', 'source', 'duplicate_source', 'future', 'taxonomy']:
@@ -40,13 +42,23 @@ class GovernanceTests(unittest.TestCase):
         self.assertEqual(rows['IREN']['events'], [])
         self.assertEqual(rows['IREN']['coverage'], 'screened')
         self.assertEqual(rows['IBIT']['coverage'], 'not_applicable')
-        self.assertTrue(all(e['review_due_at'] == '2026-10-27' for row in rows.values() for e in row['events'] if e['state'] == 'current'))
+        due = (date.fromisoformat(self.coverage['reviewed_at']) + timedelta(days=30)).isoformat()
+        self.assertTrue(all(e['review_due_at'] == due for row in rows.values() for e in row['events'] if e['state'] == 'current'))
+        investigation = next(e for e in rows['CVNA']['events'] if e['kind'] == 'enforcement')
+        self.assertEqual(investigation['state'], 'resolved')
+        self.assertEqual(rows['IONQ']['events'][0]['kind'], 'controls')
+
+    def test_partial_review_scope_cannot_renew_other_companies(self):
+        self.assertEqual(set(self.events['reviewed_codes']), self.members)
+        for reviewed in [list(self.members)[:-1], list(self.members) + ['HUBG'], list(self.members) + [next(iter(self.members))]]:
+            with self.assertRaises(ValueError):
+                build_governance(self.coverage, {**self.events, 'reviewed_codes': reviewed}, self.members)
 
     def test_survival_risk_not_inferred_from_criminal_or_controls_severity(self):
         rows = {r['code']: r for r in build_governance(self.coverage, self.events, self.members)['rows']}
-        for code in ['HUBG', 'SMMT', 'CRML']:
+        for code in ['RZLV']:
             self.assertEqual(rows[code]['distress']['level'], 'major')
-        for code in ['CABA', 'GEMI', 'LCID', 'SPRY', 'ORBS']:
+        for code in ['GEMI']:
             self.assertEqual(rows[code]['distress']['level'], 'watch')
         for code in ['SMCI', 'CVNA', 'IMSR', 'IREN', 'MCD', 'TTAN']:
             self.assertEqual(rows[code]['distress']['level'], 'not_flagged')

@@ -26,7 +26,7 @@ const base = process.env.DASHBOARD_TEST_URL || 'http://127.0.0.1:5174/tao-us-sto
  });
  await page.goto(base+'#/watchlist');
  await page.locator('[data-code="EIKN"]').waitFor();
- assert.equal(await page.locator('[data-code]').count(),43);
+ assert.equal(await page.locator('[data-code]').count(),data.collections.find(c=>c.id==='original').codes.length);
  assert.equal(await page.locator('[data-code="OSCR"]').count(),0);
  await page.getByRole('button',{name:'复制代码：EIKN',exact:true}).click();
  assert.equal(await page.evaluate(()=>window.copiedText),'EIKN');
@@ -79,6 +79,6 @@ const base = process.env.DASHBOARD_TEST_URL || 'http://127.0.0.1:5174/tao-us-sto
  await page.screenshot({path:'.cache/browser/history-mobile.png'});
  await page.getByRole('button',{name:'关闭K线预览',exact:true}).click();
  assert.deepEqual(errors,[]);
- console.log('PASS: membership 43 and OSCR observation retained; copy code/failure fallback; names plain text; hover/pin/Escape/focus; daily/weekly; cache; adjusted/raw; retry/version rejection/unavailable; suspension; mobile bounds. Synthetic data.');
+ console.log('PASS: CSV membership and OSCR observation retained; copy code/failure fallback; names plain text; hover/pin/Escape/focus; daily/weekly; cache; adjusted/raw; retry/version rejection/unavailable; suspension; mobile bounds. Synthetic data.');
  } finally {await browser.close()}
 })().catch(error=>{console.error(error);process.exit(1)});

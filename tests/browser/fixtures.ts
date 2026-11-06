@@ -1,5 +1,12 @@
 import type { Page } from '@playwright/test'
 
+// Retain coverage of paused functionality without enabling it in the product.
+export async function enablePoolForRegression(page: Page) {
+  await page.route('**/src/features.ts*', route => route.fulfill({
+    contentType: 'application/javascript', body: 'export const SHOW_HIGH_RISK_POOL = true;',
+  }))
+}
+
 export const version = '2026-09-26T04:07-04:00'
 const metricKeys = ['distance_ma250_pct', 'ytd_return_pct', 'distance_52w_high_pct', 'distance_52w_low_pct', 'position_52w_pct']
 export const summary = { watchlist_total: 7, today_up: 2, today_down: 2 }

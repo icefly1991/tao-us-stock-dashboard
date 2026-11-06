@@ -30,6 +30,7 @@ export function isDashboardData(value: unknown): value is DashboardData {
     if (!current.rows.every(row => record(row) && text(row.code) && text(row.name) && text(row.symbol) &&
       ['stock', 'etf', 'index', 'crypto'].includes(String(row.asset_type)) && finite(row.close) && finite(row.today_return_pct) &&
       ['distance_ma250_pct', 'ytd_return_pct', 'distance_52w_high_pct', 'distance_52w_low_pct', 'position_52w_pct'].every(key => nullable(row[key])) &&
+      (row.month_return_pct === undefined || nullable(row.month_return_pct)) &&
       (row.business === undefined || text(row.business)) && rsi(row.rsi) && validVolatility(row.volatility_3m)) || !uniqueCodes(current.rows)) return false
   }
   if (value.collections !== undefined && (!Array.isArray(value.collections) || !value.collections.every(item =>

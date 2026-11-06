@@ -1,5 +1,5 @@
 {
-  "reviewed_at": "2026-09-27",
+  "reviewed_at": "2026-11-06",
   "overrides": {
     "ABAT": [
       {
@@ -124,7 +124,7 @@
       {
         "kind": "controls",
         "label": "重大内控缺陷待整改",
-        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。 本轮核对截至11月6日已发布资料；未取得解除该事项的直接证据，保留原法律状态，不将其等同造假或破产。",
         "state": "current",
         "legal_status": "disclosed",
         "severity": "elevated",
@@ -133,6 +133,18 @@
           {
             "title": "公司定期报告",
             "url": "https://www.sec.gov/Archives/edgar/data/0001368622/000110465926106423/avav-20260801x10q.htm"
+          },
+          {
+            "title": "SEC 10-Q：2026-09-10，报告期2026-08-01",
+            "url": "https://www.sec.gov/Archives/edgar/data/1368622/000110465926106423/avav-20260801x10q.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-11-04",
+            "url": "https://www.sec.gov/Archives/edgar/data/1368622/000110465926122416/tm2628954d1_8k.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-09-30",
+            "url": "https://www.sec.gov/Archives/edgar/data/1368622/000110465926112083/tm2626631d1_8k.htm"
           }
         ]
       }
@@ -192,7 +204,7 @@
       {
         "kind": "controls",
         "label": "重大内控缺陷待整改",
-        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。 本轮核对截至11月6日已发布资料；未取得解除该事项的直接证据，保留原法律状态，不将其等同造假或破产。",
         "state": "current",
         "legal_status": "disclosed",
         "severity": "elevated",
@@ -201,13 +213,25 @@
           {
             "title": "公司定期报告",
             "url": "https://www.sec.gov/Archives/edgar/data/0002055592/000205559226000065/gemi-20260630.htm"
+          },
+          {
+            "title": "SEC 10-Q：2026-08-13，报告期2026-06-30",
+            "url": "https://www.sec.gov/Archives/edgar/data/2055592/000205559226000065/gemi-20260630.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-14",
+            "url": "https://www.sec.gov/Archives/edgar/data/2055592/000110465926115771/tm2626033d4_8k.htm"
+          },
+          {
+            "title": "SEC S-3：2026-10-01",
+            "url": "https://www.sec.gov/Archives/edgar/data/2055592/000110465926112851/tm2626033-1_s3.htm"
           }
         ]
       },
       {
         "kind": "financing",
         "label": "经营消耗与融资依赖",
-        "detail": "交易所及托管业务已落地，但2026上半年收入9575万美元、净亏损2.167亿美元、经营现金净流出1.059亿美元。财报明确依赖历史股权及关联方/第三方借款，关联融资中断可能损害流动性。客户托管资金不用于公司续命；归入亏损融资型，不宣称已披露持续经营疑虑。",
+        "detail": "交易所及托管业务已落地，但2026上半年收入9575万美元、净亏损2.167亿美元、经营现金净流出1.059亿美元。财报明确依赖历史股权及关联方/第三方借款，关联融资中断可能损害流动性。客户托管资金不用于公司续命；归入亏损融资型，不宣称已披露持续经营疑虑。 本轮核对截至11月6日已发布资料；未取得解除该事项的直接证据，保留原法律状态，不将其等同造假或破产。",
         "state": "current",
         "legal_status": "disclosed",
         "severity": "elevated",
@@ -221,6 +245,18 @@
           {
             "title": "SEC 公司申报记录",
             "url": "https://www.sec.gov/edgar/browse/?CIK=0002055592&owner=exclude"
+          },
+          {
+            "title": "SEC 10-Q：2026-08-13，报告期2026-06-30",
+            "url": "https://www.sec.gov/Archives/edgar/data/2055592/000205559226000065/gemi-20260630.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-14",
+            "url": "https://www.sec.gov/Archives/edgar/data/2055592/000110465926115771/tm2626033d4_8k.htm"
+          },
+          {
+            "title": "SEC S-3：2026-10-01",
+            "url": "https://www.sec.gov/Archives/edgar/data/2055592/000110465926112851/tm2626033-1_s3.htm"
           }
         ]
       }
@@ -368,7 +404,7 @@
       {
         "kind": "controls",
         "label": "重大内控缺陷待整改",
-        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。 本轮核对截至11月6日已发布资料；未取得解除该事项的直接证据，保留原法律状态，不将其等同造假或破产。",
         "state": "current",
         "legal_status": "disclosed",
         "severity": "elevated",
@@ -377,6 +413,26 @@
           {
             "title": "公司定期报告",
             "url": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926052948/nbis-20251231x20f.htm"
+          },
+          {
+            "title": "SEC 20-F：2026-04-30，报告期2025-12-31",
+            "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+          },
+          {
+            "title": "SEC 6-K：2026-10-22",
+            "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926117978/tm2628078d1_6k.htm"
+          },
+          {
+            "title": "SEC 6-K：2026-10-22（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926117978/tm2628078d1_ex99-1.htm"
+          },
+          {
+            "title": "SEC 6-K：2026-10-01",
+            "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926112824/tm2626792d1_6k.htm"
+          },
+          {
+            "title": "SEC 6-K：2026-10-01（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926112824/tm2626792d1_ex99-1.htm"
           }
         ]
       }
@@ -486,7 +542,7 @@
       {
         "kind": "controls",
         "label": "重大内控缺陷待整改",
-        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。 本轮核对截至11月6日已发布资料；未取得解除该事项的直接证据，保留原法律状态，不将其等同造假或破产。",
         "state": "current",
         "legal_status": "disclosed",
         "severity": "elevated",
@@ -495,6 +551,10 @@
           {
             "title": "公司定期报告",
             "url": "https://www.sec.gov/Archives/edgar/data/0001819810/000181981026000124/rdw-20260630.htm"
+          },
+          {
+            "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819810/000181981026000142/rdw-20260930.htm"
           }
         ]
       }
@@ -554,7 +614,7 @@
       {
         "kind": "controls",
         "label": "重大内控缺陷待整改",
-        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。 本轮核对截至11月6日已发布资料；未取得解除该事项的直接证据，保留原法律状态，不将其等同造假或破产。",
         "state": "current",
         "legal_status": "disclosed",
         "severity": "elevated",
@@ -563,13 +623,37 @@
           {
             "title": "公司定期报告",
             "url": "https://www.sec.gov/Archives/edgar/data/0001920294/000119312526132456/rzlv-20251231.htm"
+          },
+          {
+            "title": "SEC 20-F：2026-03-30，报告期2025-12-31",
+            "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526132456/rzlv-20251231.htm"
+          },
+          {
+            "title": "SEC 6-K：2026-10-08",
+            "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526418075/6-ka_october_8.htm"
+          },
+          {
+            "title": "SEC 6-K：2026-10-08（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526418075/rzlv-ex99_1.htm"
+          },
+          {
+            "title": "SEC 6-K：2026-10-07",
+            "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526416054/6-k_oct_6_2026.htm"
+          },
+          {
+            "title": "SEC 6-K：2026-10-07（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526416054/rzlv-ex99_1.htm"
+          },
+          {
+            "title": "SEC 6-K：2026-10-07（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526416054/rzlv-ex99_2.htm"
           }
         ]
       },
       {
         "kind": "survival",
         "label": "持续经营重大疑虑",
-        "detail": "2026年9月披露的上半年报告仍明确持续经营疑虑；半年收入1.308亿美元但净亏损1.395亿美元、经营现金净流出9196万美元，增长含并购影响。募资成功不等于经营已自给。 这是财报持续经营披露，不等同已经破产。",
+        "detail": "9月发布H1合并财务仍明确持续经营重大疑虑；10月Investor Day及其更正未直接解除。半年收入130.8百万、净亏损139.5百万、CFO负91.96百万，增长包含并购；融资成功不等于自给，尚非破产。",
         "state": "current",
         "legal_status": "disclosed",
         "severity": "high",
@@ -582,6 +666,30 @@
           {
             "title": "SEC 公司申报记录",
             "url": "https://www.sec.gov/edgar/browse/?CIK=0001920294&owner=exclude"
+          },
+          {
+            "title": "SEC 20-F：2026-03-30，报告期2025-12-31",
+            "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526132456/rzlv-20251231.htm"
+          },
+          {
+            "title": "SEC 6-K：2026-10-08",
+            "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526418075/6-ka_october_8.htm"
+          },
+          {
+            "title": "SEC 6-K：2026-10-08（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526418075/rzlv-ex99_1.htm"
+          },
+          {
+            "title": "SEC 6-K：2026-10-07",
+            "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526416054/6-k_oct_6_2026.htm"
+          },
+          {
+            "title": "SEC 6-K：2026-10-07（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526416054/rzlv-ex99_1.htm"
+          },
+          {
+            "title": "SEC 6-K：2026-10-07（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1920294/000119312526416054/rzlv-ex99_2.htm"
           }
         ],
         "distress": "major"
@@ -608,7 +716,7 @@
       {
         "kind": "controls",
         "label": "重大内控缺陷待整改",
-        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。 本轮核对截至11月6日已发布资料；未取得解除该事项的直接证据，保留原法律状态，不将其等同造假或破产。",
         "state": "current",
         "legal_status": "disclosed",
         "severity": "elevated",
@@ -617,13 +725,41 @@
           {
             "title": "公司定期报告",
             "url": "https://www.sec.gov/Archives/edgar/data/0001375365/000137536526000022/smci-20260630.htm"
+          },
+          {
+            "title": "SEC 10-K：2026-08-31，报告期2026-06-30",
+            "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-11-03",
+            "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000026/smci-20261103.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-11-03（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000026/exhibit991_20260930.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-20",
+            "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000025/smci-20261020.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-20（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000025/smcifirstquarterfy2027busi.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-15",
+            "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000024/smci-20261014.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-08",
+            "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000023/smci-20261007.htm"
           }
         ]
       },
       {
         "kind": "management",
         "label": "共同创始人被刑事起诉",
-        "detail": "美国司法部3月起诉共同创始人、时任董事Wally Liaw等涉嫌规避出口管制；不是定罪，公司不是该起诉的被告。8月公司内部调查称未发现现任高管知情、未发现需因此否定已发财报的证据，三人已无公司职务；内部调查结论不替代司法结论。",
+        "detail": "美国司法部3月起诉共同创始人、时任董事Wally Liaw等涉嫌规避出口管制；不是定罪，公司不是该起诉的被告。8月公司内部调查称未发现现任高管知情、未发现需因此否定已发财报的证据，三人已无公司职务；内部调查结论不替代司法结论。 本轮核对截至11月6日已发布资料；未取得解除该事项的直接证据，保留原法律状态，不将其等同造假或破产。",
         "state": "current",
         "legal_status": "charged",
         "severity": "high",
@@ -640,6 +776,34 @@
           {
             "title": "公司定期报告",
             "url": "https://www.sec.gov/Archives/edgar/data/0001375365/000137536526000022/smci-20260630.htm"
+          },
+          {
+            "title": "SEC 10-K：2026-08-31，报告期2026-06-30",
+            "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-11-03",
+            "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000026/smci-20261103.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-11-03（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000026/exhibit991_20260930.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-20",
+            "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000025/smci-20261020.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-20（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000025/smcifirstquarterfy2027busi.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-15",
+            "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000024/smci-20261014.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-08",
+            "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000023/smci-20261007.htm"
           }
         ]
       }
@@ -682,7 +846,7 @@
       {
         "kind": "controls",
         "label": "重大内控缺陷待整改",
-        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。 本轮核对截至11月6日已发布资料；未取得解除该事项的直接证据，保留原法律状态，不将其等同造假或破产。",
         "state": "current",
         "legal_status": "disclosed",
         "severity": "elevated",
@@ -691,6 +855,22 @@
           {
             "title": "公司定期报告",
             "url": "https://www.sec.gov/Archives/edgar/data/0001337634/000162828026056402/stub-20260630.htm"
+          },
+          {
+            "title": "SEC 10-Q：2026-08-13，报告期2026-06-30",
+            "url": "https://www.sec.gov/Archives/edgar/data/1337634/000162828026056402/stub-20260630.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-20",
+            "url": "https://www.sec.gov/Archives/edgar/data/1337634/000119312526425731/d159555d8k.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-14",
+            "url": "https://www.sec.gov/Archives/edgar/data/1337634/000119312526421733/d180521d8k.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-14（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1337634/000119312526421733/d180521dex991.htm"
           }
         ]
       }
@@ -699,7 +879,7 @@
       {
         "kind": "controls",
         "label": "重大内控缺陷待整改",
-        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。 本轮核对截至11月6日已发布资料；未取得解除该事项的直接证据，保留原法律状态，不将其等同造假或破产。",
         "state": "current",
         "legal_status": "disclosed",
         "severity": "elevated",
@@ -708,6 +888,18 @@
           {
             "title": "公司定期报告",
             "url": "https://www.sec.gov/Archives/edgar/data/0001837240/000183724026000043/sym-20260627.htm"
+          },
+          {
+            "title": "SEC 10-Q：2026-08-05，报告期2026-06-27",
+            "url": "https://www.sec.gov/Archives/edgar/data/1837240/000183724026000043/sym-20260627.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-29",
+            "url": "https://www.sec.gov/Archives/edgar/data/1837240/000119312526437874/d182210d8k.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-29（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1837240/000119312526437874/d182210dex991.htm"
           }
         ]
       }
@@ -733,7 +925,7 @@
       {
         "kind": "controls",
         "label": "重大内控缺陷待整改",
-        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。 本轮核对截至11月6日已发布资料；未取得解除该事项的直接证据，保留原法律状态，不将其等同造假或破产。",
         "state": "current",
         "legal_status": "disclosed",
         "severity": "elevated",
@@ -742,6 +934,18 @@
           {
             "title": "公司定期报告",
             "url": "https://www.sec.gov/Archives/edgar/data/0001756262/000119312526332843/tmdx-20260630.htm"
+          },
+          {
+            "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+            "url": "https://www.sec.gov/Archives/edgar/data/1756262/000119312526449827/tmdx-20260930.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-11-05",
+            "url": "https://www.sec.gov/Archives/edgar/data/1756262/000119312526449729/tmdx-20261105.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-11-05（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1756262/000119312526449729/tmdx-ex99_1.htm"
           }
         ]
       }
@@ -787,7 +991,7 @@
       {
         "kind": "controls",
         "label": "重大内控缺陷待整改",
-        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。 本轮核对截至11月6日已发布资料；未取得解除该事项的直接证据，保留原法律状态，不将其等同造假或破产。",
         "state": "current",
         "legal_status": "disclosed",
         "severity": "elevated",
@@ -796,6 +1000,10 @@
           {
             "title": "公司定期报告",
             "url": "https://www.sec.gov/Archives/edgar/data/0002088896/000119312526347752/xe-20260630.htm"
+          },
+          {
+            "title": "SEC 10-Q：2026-08-13，报告期2026-06-30",
+            "url": "https://www.sec.gov/Archives/edgar/data/2088896/000119312526347752/xe-20260630.htm"
           }
         ]
       }
@@ -838,7 +1046,7 @@
       {
         "kind": "controls",
         "label": "重大内控缺陷待整改",
-        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。 本轮核对截至11月6日已发布资料；未取得解除该事项的直接证据，保留原法律状态，不将其等同造假或破产。",
         "state": "current",
         "legal_status": "disclosed",
         "severity": "elevated",
@@ -847,6 +1055,10 @@
           {
             "title": "公司定期报告",
             "url": "https://www.sec.gov/Archives/edgar/data/0001769628/000176962826000366/crwv-20260630.htm"
+          },
+          {
+            "title": "SEC 10-Q：2026-08-12，报告期2026-06-30",
+            "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
           }
         ]
       }
@@ -855,7 +1067,7 @@
       {
         "kind": "controls",
         "label": "重大内控缺陷待整改",
-        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。 本轮核对截至11月6日已发布资料；未取得解除该事项的直接证据，保留原法律状态，不将其等同造假或破产。",
         "state": "current",
         "legal_status": "disclosed",
         "severity": "elevated",
@@ -864,6 +1076,26 @@
           {
             "title": "公司定期报告",
             "url": "https://www.sec.gov/Archives/edgar/data/0001861123/000119312526349185/eikn-20260630.htm"
+          },
+          {
+            "title": "SEC 10-Q：2026-08-13，报告期2026-06-30",
+            "url": "https://www.sec.gov/Archives/edgar/data/1861123/000119312526349185/eikn-20260630.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-26",
+            "url": "https://www.sec.gov/Archives/edgar/data/1861123/000119312526430860/eikn-20261026.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-26（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1861123/000119312526430860/eikn-ex99_1.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-23",
+            "url": "https://www.sec.gov/Archives/edgar/data/1861123/000119312526429549/eikn-20261023.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-23（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1861123/000119312526429549/eikn-ex99_1.htm"
           }
         ]
       }
@@ -872,7 +1104,7 @@
       {
         "kind": "controls",
         "label": "重大内控缺陷待整改",
-        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。",
+        "detail": "所列定期报告披露重大内控缺陷或尚未完成整改验证，涉及财报可靠性；不等同财报已造假或审计否定财务数字。以披露时点为准，后续整改仍需跟踪。 本轮核对截至11月6日已发布资料；未取得解除该事项的直接证据，保留原法律状态，不将其等同造假或破产。",
         "state": "current",
         "legal_status": "disclosed",
         "severity": "elevated",
@@ -881,6 +1113,18 @@
           {
             "title": "公司定期报告",
             "url": "https://www.sec.gov/Archives/edgar/data/0001834488/000183448826000047/nabl-20260630.htm"
+          },
+          {
+            "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+            "url": "https://www.sec.gov/Archives/edgar/data/1834488/000183448826000058/nabl-20260930.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-11-05",
+            "url": "https://www.sec.gov/Archives/edgar/data/1834488/000183448826000057/nabl-20261104.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-11-05（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1834488/000183448826000057/nabl-20260930x8kxex991.htm"
           }
         ]
       }
@@ -1377,16 +1621,28 @@
     "CVNA": [
       {
         "kind": "enforcement",
-        "label": "SEC传票／财务指控待核",
-        "detail": "公司披露2025年6月收到SEC传票，认为主要涉及做空报告相关指控，正配合调查；公司否认报告内容，传票不等于SEC已认定造假。",
-        "state": "current",
+        "label": "SEC调查已结束",
+        "detail": "9月季报明确SEC于2026年9月通知结束调查且不建议就该事项采取执法行动；仅解除这一事项，控制人独立历史记录保留。",
+        "state": "resolved",
         "legal_status": "investigation",
-        "severity": "elevated",
-        "disclosed_at": "2026-07-29",
+        "severity": "info",
+        "disclosed_at": "2026-10-28",
         "sources": [
           {
-            "title": "公司定期报告",
-            "url": "https://www.sec.gov/Archives/edgar/data/0001690820/000169082026000055/cvna-20260630.htm"
+            "title": "SEC 10-Q：2026-10-28，报告期2026-09-30",
+            "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000067/cvna-20260930.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-28",
+            "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000066/cvna-20261028.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-28（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000066/ex99_1q32026.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-28（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1690820/000169082026000066/ex99_2q32026.htm"
           }
         ]
       },
@@ -1414,7 +1670,7 @@
       {
         "kind": "enforcement",
         "label": "SEC财报调查",
-        "detail": "公司披露SEC就财务报告索取信息并正在配合调查；结果尚不确定，公司表示据已有信息不预计成本对财务状况重大。不能写成已认定造假。",
+        "detail": "公司披露SEC就财务报告索取信息并正在配合调查；结果尚不确定，公司表示据已有信息不预计成本对财务状况重大。不能写成已认定造假。 本轮核对截至11月6日已发布资料；未取得解除该事项的直接证据，保留原法律状态，不将其等同造假或破产。",
         "state": "current",
         "legal_status": "investigation",
         "severity": "elevated",
@@ -1423,6 +1679,26 @@
           {
             "title": "公司定期报告",
             "url": "https://www.sec.gov/Archives/edgar/data/0001868941/000186894126000029/flnc-20260630.htm"
+          },
+          {
+            "title": "SEC 10-Q：2026-08-05，报告期2026-06-30",
+            "url": "https://www.sec.gov/Archives/edgar/data/1868941/000186894126000029/flnc-20260630.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-11-02",
+            "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926120941/tm2628729d1_8k.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-11-02（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926120941/tm2628729d1_ex99-1.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-11-02（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926120941/tm2628729d1_ex99-2.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-09",
+            "url": "https://www.sec.gov/Archives/edgar/data/1868941/000110465926115056/tm2627341d1_8k.htm"
           }
         ]
       }
@@ -1448,7 +1724,7 @@
       {
         "kind": "enforcement",
         "label": "配制药监管及调查转介",
-        "detail": "公司财报披露HHS已将潜在药品法律违规事项转介司法部，FDA点名拟限制相关配制GLP-1业务。转介不等于刑事起诉或定罪，但核心业务政策与经营可能受影响。",
+        "detail": "最新已公开季报另披露SEC于2月就配制semaglutide相关公开陈述和业务关系展开调查并要求保全资料；原HHS司法部转介及FDA限制事项继续跟踪。调查/转介不等于起诉或定罪，未取得终结直接证据。",
         "state": "current",
         "legal_status": "investigation",
         "severity": "elevated",
@@ -1457,6 +1733,14 @@
           {
             "title": "公司定期报告",
             "url": "https://www.sec.gov/Archives/edgar/data/0001773751/000177375126000163/hims-20260630.htm"
+          },
+          {
+            "title": "SEC 10-Q：2026-08-10，报告期2026-06-30",
+            "url": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000163/hims-20260630.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-10-07",
+            "url": "https://www.sec.gov/Archives/edgar/data/1773751/000177375126000220/hims-20261007.htm"
           }
         ]
       }
@@ -1465,7 +1749,7 @@
       {
         "kind": "enforcement",
         "label": "消费者业务监管调查",
-        "detail": "公司披露马里兰州总检察长及纽约金融服务部门传票，涉及产品、营销、费用与银行合作；调查仍在进行，未据此认定违法。",
+        "detail": "公司披露马里兰州总检察长及纽约金融服务部门传票，涉及产品、营销、费用与银行合作；调查仍在进行，未据此认定违法。 本轮核对截至11月6日已发布资料；未取得解除该事项的直接证据，保留原法律状态，不将其等同造假或破产。",
         "state": "current",
         "legal_status": "investigation",
         "severity": "elevated",
@@ -1474,6 +1758,18 @@
           {
             "title": "公司定期报告",
             "url": "https://www.sec.gov/Archives/edgar/data/0001841408/000119312526335154/dave-20260630.htm"
+          },
+          {
+            "title": "SEC 10-Q：2026-11-04，报告期2026-09-30",
+            "url": "https://www.sec.gov/Archives/edgar/data/1841408/000119312526447414/dave-20260930.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-11-04",
+            "url": "https://www.sec.gov/Archives/edgar/data/1841408/000119312526447333/dave-20261104.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-11-04（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1841408/000119312526447333/dave-ex99_1.htm"
           }
         ]
       }
@@ -1579,6 +1875,172 @@
           }
         ]
       }
+    ],
+    "IONQ": [
+      {
+        "kind": "controls",
+        "label": "收购带入重大内控缺陷",
+        "detail": "9月季报披露SkyWater相关重大内控缺陷，管理层结论披露控制无效。并购整合与财报可靠性须跟踪，不等同已经造假、刑事定罪或生存危机。",
+        "state": "current",
+        "legal_status": "disclosed",
+        "severity": "elevated",
+        "disclosed_at": "2026-11-05",
+        "sources": [
+          {
+            "title": "SEC 10-Q：2026-11-05，报告期2026-09-30",
+            "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449829/ionq-20260930.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-11-05",
+            "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449779/ionq-20261103.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-11-05（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449779/ionq-ex99_1.htm"
+          },
+          {
+            "title": "SEC 8-K：2026-11-05（附件）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449779/ionq-ex99_2.htm"
+          }
+        ]
+      }
     ]
-  }
+  },
+  "reviewed_codes": [
+    "AAOI",
+    "ACLS",
+    "AEHR",
+    "AFRM",
+    "ALAB",
+    "ALB",
+    "AMBA",
+    "AMD",
+    "APLD",
+    "APP",
+    "ARKO",
+    "ARM",
+    "ASTS",
+    "ATCH",
+    "AVAV",
+    "AVGO",
+    "BE",
+    "BILL",
+    "BITX",
+    "BROS",
+    "CAVA",
+    "CELH",
+    "CHWY",
+    "CIEN",
+    "CLS",
+    "COHR",
+    "COIN",
+    "CRCL",
+    "CRDO",
+    "CRSP",
+    "CRWV",
+    "CVNA",
+    "DAVE",
+    "DKNG",
+    "DOCN",
+    "DOGEUSD",
+    "DUOL",
+    "EIKN",
+    "ELF",
+    "ENPH",
+    "ESTC",
+    "ETOR",
+    "FIG",
+    "FLNC",
+    "FOUR",
+    "FROG",
+    "FSLY",
+    "GEMI",
+    "GTLB",
+    "HIMS",
+    "HOOD",
+    "HUT",
+    "IBIT",
+    "IMSR",
+    "INOD",
+    "IONQ",
+    "IOT",
+    "IREN",
+    "KLAR",
+    "KTOS",
+    "LEU",
+    "LITE",
+    "LMND",
+    "LUMN",
+    "LUNR",
+    "MCD",
+    "MDB",
+    "META",
+    "MNDY",
+    "MNTN",
+    "MP",
+    "MRVL",
+    "MSFT",
+    "MSTR",
+    "MTSI",
+    "MU",
+    "NABL",
+    "NBIS",
+    "NET",
+    "NKE",
+    "NTRA",
+    "NU",
+    "NVDA",
+    "NXH",
+    "NXT",
+    "ONON",
+    "ORCL",
+    "OSCR",
+    "PATH",
+    "PG",
+    "PL",
+    "PLTR",
+    "POWL",
+    "PSTG",
+    "QQQ",
+    "RBLX",
+    "RDDT",
+    "RDW",
+    "RELY",
+    "RGTI",
+    "RH",
+    "RIVN",
+    "RKLB",
+    "ROOT",
+    "RXST",
+    "RZLV",
+    "S",
+    "SE",
+    "SG",
+    "SHOP",
+    "SITM",
+    "SMCI",
+    "SMR",
+    "SNDK",
+    "SOFI",
+    "STUB",
+    "SYM",
+    "TEM",
+    "TMDX",
+    "TOST",
+    "TQQQ",
+    "TTAN",
+    "TTD",
+    "UAA",
+    "UEC",
+    "UPST",
+    "UUUU",
+    "VIX",
+    "VOR",
+    "VRT",
+    "WBTN",
+    "WDC",
+    "WULF",
+    "XE",
+    "ZETA"
+  ]
 }

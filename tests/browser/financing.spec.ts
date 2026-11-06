@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test'
-import { seed, dashboard } from './fixtures'
+import { seed, dashboard, enablePoolForRegression } from './fixtures'
 
 const unknown = { summary: '待核实', detail: 'Synthetic missing evidence', as_of: null, sources: [] }
 const fact = { summary: '12月股数 +24%', detail: 'Synthetic comparable share evidence', as_of: '2026-09-25', sources: [{ title: '测试原文', url: 'https://www.sec.gov/' }] }
@@ -45,6 +45,7 @@ test('坏融资JSON可重试，不阻断行情，不把未知当低风险', asyn
 })
 
 test('手机与高风险表同列展示，非公司资产不适用，身份错配不采用评级', async ({ page }) => {
+  await enablePoolForRegression(page)
   await page.setViewportSize({ width: 390, height: 844 })
   await seed(page)
   await page.route('**/data/financing-review.json', r => r.fulfill({ json: { ...sample(), rows: sample().rows.map(x => ({ ...x, symbol: x.code === 'AAA' ? 'OTHER' : x.symbol })) } }))

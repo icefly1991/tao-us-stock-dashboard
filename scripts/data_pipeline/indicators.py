@@ -323,6 +323,11 @@ def build_metrics(frame: pd.DataFrame, year_start: str) -> dict[str, Any]:
 
     ma250 = float(ordered["close"].tail(250).mean()) if len(ordered) >= 250 else None
     year_start_close = float(current_year.iloc[0]["close"]) if not current_year.empty else None
+    # CR-046: include the first session's change by using the prior month close.
+    month_start = pd.Timestamp(str(latest["trade_date"])).replace(day=1)
+    dates = pd.to_datetime(ordered["trade_date"], format="mixed")
+    prior_month = ordered[(dates < month_start) & (dates >= month_start - pd.DateOffset(months=1))]
+    month_base = float(prior_month.iloc[-1]["close"]) if not prior_month.empty else None
 
     high_52w: float | None = None
     low_52w: float | None = None
@@ -334,6 +339,7 @@ def build_metrics(frame: pd.DataFrame, year_start: str) -> dict[str, Any]:
     return {
         "close": round(close, 4),
         "today_return_pct": rounded_percent_change(close, float(previous["close"])),
+        "month_return_pct": rounded_percent_change(close, month_base),
         "distance_ma250_pct": rounded_percent_change(close, ma250),
         "ytd_return_pct": rounded_percent_change(close, year_start_close),
         "distance_52w_high_pct": rounded_percent_change(close, high_52w),
