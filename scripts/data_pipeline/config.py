@@ -29,6 +29,7 @@ class WatchlistItem:
     status_note: str = ""
     business: str = ""
     pool: bool = False
+    sector_etf: str = ""
 
 
 @dataclass(frozen=True)
@@ -110,6 +111,7 @@ def load_watchlist(path: Path) -> list[WatchlistItem]:
                     status_note=status_note,
                     business=(row.get("business") or "").strip(),
                     pool=pool_value == "tradingview",
+                    sector_etf=(row.get("sector_etf") or "").strip(),
                 )
             )
 
@@ -119,6 +121,8 @@ def load_watchlist(path: Path) -> list[WatchlistItem]:
     seen: set[str] = set()
     duplicate_codes: set[str] = set()
     for item in items:
+        if item.sector_etf and (item.asset_type != "stock" or item.sector_etf not in {"XLC", "XLK", "XLY", "XLP", "XLE", "XLF", "XLV", "XLI", "XLB", "XLRE", "XLU"}):
+            raise RuntimeError(f"Invalid sector ETF for {item.code}: {item.sector_etf}")
         if item.code in seen:
             duplicate_codes.add(item.code)
         seen.add(item.code)

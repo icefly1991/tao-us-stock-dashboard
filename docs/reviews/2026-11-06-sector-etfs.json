@@ -1,0 +1,1298 @@
+{
+  "checked_at": "2026-11-06",
+  "scope": "holdings_and_active",
+  "method": "11个Select Sector SPDR行业参考；同板块不代表实际成分股。混合业务按公开行业分类，可能与主业主题存在差异；不自动猜测或追随股价。",
+  "fund_reference": "https://www.ssga.com/us/en/individual/capabilities/equities/sector-investing/select-sector-etfs",
+  "rows": [
+    {
+      "code": "SMR",
+      "symbol": "SMR",
+      "sector": "Industrials",
+      "industry": "Specialty Industrial Machinery",
+      "sector_etf": "XLI",
+      "source": "https://finance.yahoo.com/quote/SMR/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "IMSR",
+      "symbol": "IMSR",
+      "sector": "Utilities",
+      "industry": "Utilities - Regulated Electric",
+      "sector_etf": "XLU",
+      "source": "https://finance.yahoo.com/quote/IMSR/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "NABL",
+      "symbol": "NABL",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/NABL/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "HOOD",
+      "symbol": "HOOD",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "sector_etf": "XLF",
+      "source": "https://finance.yahoo.com/quote/HOOD/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "MP",
+      "symbol": "MP",
+      "sector": "Basic Materials",
+      "industry": "Other Industrial Metals & Mining",
+      "sector_etf": "XLB",
+      "source": "https://finance.yahoo.com/quote/MP/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "ORCL",
+      "symbol": "ORCL",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/ORCL/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "HIMS",
+      "symbol": "HIMS",
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - Specialty & Generic",
+      "sector_etf": "XLV",
+      "source": "https://finance.yahoo.com/quote/HIMS/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "CRWV",
+      "symbol": "CRWV",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/CRWV/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "RZLV",
+      "symbol": "RZLV",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/RZLV/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "MCD",
+      "symbol": "MCD",
+      "sector": "Consumer Cyclical",
+      "industry": "Restaurants",
+      "sector_etf": "XLY",
+      "source": "https://finance.yahoo.com/quote/MCD/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "IREN",
+      "symbol": "IREN",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "sector_etf": "XLF",
+      "source": "https://finance.yahoo.com/quote/IREN/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "ATCH",
+      "symbol": "ATCH",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "sector_etf": "XLF",
+      "source": "https://finance.yahoo.com/quote/ATCH/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "CRCL",
+      "symbol": "CRCL",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "sector_etf": "XLF",
+      "source": "https://finance.yahoo.com/quote/CRCL/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "NVDA",
+      "symbol": "NVDA",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/NVDA/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "NKE",
+      "symbol": "NKE",
+      "sector": "Consumer Cyclical",
+      "industry": "Footwear & Accessories",
+      "sector_etf": "XLY",
+      "source": "https://finance.yahoo.com/quote/NKE/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "KLAR",
+      "symbol": "KLAR",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "sector_etf": "XLF",
+      "source": "https://finance.yahoo.com/quote/KLAR/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "MNTN",
+      "symbol": "MNTN",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/MNTN/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "MSFT",
+      "symbol": "MSFT",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/MSFT/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "META",
+      "symbol": "META",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "sector_etf": "XLC",
+      "source": "https://finance.yahoo.com/quote/META/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "RGTI",
+      "symbol": "RGTI",
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/RGTI/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "NXH",
+      "symbol": "NXH",
+      "sector": "Consumer Cyclical",
+      "industry": "Internet Retail",
+      "sector_etf": "XLY",
+      "source": "https://finance.yahoo.com/quote/NXH/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "AVGO",
+      "symbol": "AVGO",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/AVGO/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "ETOR",
+      "symbol": "ETOR",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "sector_etf": "XLF",
+      "source": "https://finance.yahoo.com/quote/ETOR/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "ARKO",
+      "symbol": "ARKO",
+      "sector": "Consumer Cyclical",
+      "industry": "Specialty Retail",
+      "sector_etf": "XLY",
+      "source": "https://finance.yahoo.com/quote/ARKO/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "UAA",
+      "symbol": "UAA",
+      "sector": "Consumer Cyclical",
+      "industry": "Apparel Manufacturing",
+      "sector_etf": "XLY",
+      "source": "https://finance.yahoo.com/quote/UAA/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "PG",
+      "symbol": "PG",
+      "sector": "Consumer Defensive",
+      "industry": "Household & Personal Products",
+      "sector_etf": "XLP",
+      "source": "https://finance.yahoo.com/quote/PG/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "STUB",
+      "symbol": "STUB",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "sector_etf": "XLC",
+      "source": "https://finance.yahoo.com/quote/STUB/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "VOR",
+      "symbol": "VOR",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "sector_etf": "XLV",
+      "source": "https://finance.yahoo.com/quote/VOR/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "MSTR",
+      "symbol": "MSTR",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/MSTR/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "GEMI",
+      "symbol": "GEMI",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "sector_etf": "XLF",
+      "source": "https://finance.yahoo.com/quote/GEMI/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "OSCR",
+      "symbol": "OSCR",
+      "sector": "Healthcare",
+      "industry": "Healthcare Plans",
+      "sector_etf": "XLV",
+      "source": "https://finance.yahoo.com/quote/OSCR/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "DKNG",
+      "symbol": "DKNG",
+      "sector": "Consumer Cyclical",
+      "industry": "Gambling",
+      "sector_etf": "XLY",
+      "source": "https://finance.yahoo.com/quote/DKNG/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "AMD",
+      "symbol": "AMD",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/AMD/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "APP",
+      "symbol": "APP",
+      "sector": "Communication Services",
+      "industry": "Advertising Agencies",
+      "sector_etf": "XLC",
+      "source": "https://finance.yahoo.com/quote/APP/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "WBTN",
+      "symbol": "WBTN",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "sector_etf": "XLC",
+      "source": "https://finance.yahoo.com/quote/WBTN/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "FIG",
+      "symbol": "FIG",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/FIG/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "CRDO",
+      "symbol": "CRDO",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/CRDO/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "ALAB",
+      "symbol": "ALAB",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/ALAB/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "NBIS",
+      "symbol": "NBIS",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "sector_etf": "XLC",
+      "source": "https://finance.yahoo.com/quote/NBIS/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "COIN",
+      "symbol": "COIN",
+      "sector": "Financial Services",
+      "industry": "Financial Data & Stock Exchanges",
+      "sector_etf": "XLF",
+      "source": "https://finance.yahoo.com/quote/COIN/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "RDDT",
+      "symbol": "RDDT",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "sector_etf": "XLC",
+      "source": "https://finance.yahoo.com/quote/RDDT/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "RKLB",
+      "symbol": "RKLB",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "sector_etf": "XLI",
+      "source": "https://finance.yahoo.com/quote/RKLB/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "CELH",
+      "symbol": "CELH",
+      "sector": "Consumer Defensive",
+      "industry": "Beverages - Non-Alcoholic",
+      "sector_etf": "XLP",
+      "source": "https://finance.yahoo.com/quote/CELH/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "AFRM",
+      "symbol": "AFRM",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "sector_etf": "XLF",
+      "source": "https://finance.yahoo.com/quote/AFRM/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "UPST",
+      "symbol": "UPST",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "sector_etf": "XLF",
+      "source": "https://finance.yahoo.com/quote/UPST/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "CVNA",
+      "symbol": "CVNA",
+      "sector": "Consumer Cyclical",
+      "industry": "Auto & Truck Dealerships",
+      "sector_etf": "XLY",
+      "source": "https://finance.yahoo.com/quote/CVNA/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "APLD",
+      "symbol": "APLD",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/APLD/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "RBLX",
+      "symbol": "RBLX",
+      "sector": "Communication Services",
+      "industry": "Electronic Gaming & Multimedia",
+      "sector_etf": "XLC",
+      "source": "https://finance.yahoo.com/quote/RBLX/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "CAVA",
+      "symbol": "CAVA",
+      "sector": "Consumer Cyclical",
+      "industry": "Restaurants",
+      "sector_etf": "XLY",
+      "source": "https://finance.yahoo.com/quote/CAVA/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "ONON",
+      "symbol": "ONON",
+      "sector": "Consumer Cyclical",
+      "industry": "Footwear & Accessories",
+      "sector_etf": "XLY",
+      "source": "https://finance.yahoo.com/quote/ONON/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "DUOL",
+      "symbol": "DUOL",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/DUOL/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "ELF",
+      "symbol": "ELF",
+      "sector": "Consumer Defensive",
+      "industry": "Household & Personal Products",
+      "sector_etf": "XLP",
+      "source": "https://finance.yahoo.com/quote/ELF/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "SOFI",
+      "symbol": "SOFI",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "sector_etf": "XLF",
+      "source": "https://finance.yahoo.com/quote/SOFI/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "SHOP",
+      "symbol": "SHOP",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/SHOP/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "SE",
+      "symbol": "SE",
+      "sector": "Consumer Cyclical",
+      "industry": "Internet Retail",
+      "sector_etf": "XLY",
+      "source": "https://finance.yahoo.com/quote/SE/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "NET",
+      "symbol": "NET",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/NET/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "PLTR",
+      "symbol": "PLTR",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/PLTR/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "ARM",
+      "symbol": "ARM",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/ARM/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "LITE",
+      "symbol": "LITE",
+      "sector": "Technology",
+      "industry": "Communication Equipment",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/LITE/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "COHR",
+      "symbol": "COHR",
+      "sector": "Technology",
+      "industry": "Scientific & Technical Instruments",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/COHR/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "MRVL",
+      "symbol": "MRVL",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/MRVL/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "CLS",
+      "symbol": "CLS",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/CLS/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "VRT",
+      "symbol": "VRT",
+      "sector": "Industrials",
+      "industry": "Electrical Equipment & Parts",
+      "sector_etf": "XLI",
+      "source": "https://finance.yahoo.com/quote/VRT/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "MU",
+      "symbol": "MU",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/MU/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "SNDK",
+      "symbol": "SNDK",
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/SNDK/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "WDC",
+      "symbol": "WDC",
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/WDC/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "CIEN",
+      "symbol": "CIEN",
+      "sector": "Technology",
+      "industry": "Communication Equipment",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/CIEN/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "SMCI",
+      "symbol": "SMCI",
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/SMCI/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "BE",
+      "symbol": "BE",
+      "sector": "Industrials",
+      "industry": "Electrical Equipment & Parts",
+      "sector_etf": "XLI",
+      "source": "https://finance.yahoo.com/quote/BE/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "PSTG",
+      "symbol": "P",
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/P/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "MTSI",
+      "symbol": "MTSI",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/MTSI/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "TOST",
+      "symbol": "TOST",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/TOST/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "NU",
+      "symbol": "NU",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "sector_etf": "XLF",
+      "source": "https://finance.yahoo.com/quote/NU/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "DAVE",
+      "symbol": "DAVE",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/DAVE/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "ROOT",
+      "symbol": "ROOT",
+      "sector": "Financial Services",
+      "industry": "Insurance - Property & Casualty",
+      "sector_etf": "XLF",
+      "source": "https://finance.yahoo.com/quote/ROOT/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "LMND",
+      "symbol": "LMND",
+      "sector": "Financial Services",
+      "industry": "Insurance - Property & Casualty",
+      "sector_etf": "XLF",
+      "source": "https://finance.yahoo.com/quote/LMND/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "TTAN",
+      "symbol": "TTAN",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/TTAN/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "IOT",
+      "symbol": "IOT",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/IOT/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "MNDY",
+      "symbol": "MNDY",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/MNDY/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "MDB",
+      "symbol": "MDB",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/MDB/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "GTLB",
+      "symbol": "GTLB",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/GTLB/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "FROG",
+      "symbol": "FROG",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/FROG/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "ESTC",
+      "symbol": "ESTC",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/ESTC/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "S",
+      "symbol": "S",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/S/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "TTD",
+      "symbol": "TTD",
+      "sector": "Communication Services",
+      "industry": "Advertising Agencies",
+      "sector_etf": "XLC",
+      "source": "https://finance.yahoo.com/quote/TTD/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "ZETA",
+      "symbol": "ZETA",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/ZETA/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "TMDX",
+      "symbol": "TMDX",
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "sector_etf": "XLV",
+      "source": "https://finance.yahoo.com/quote/TMDX/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "NTRA",
+      "symbol": "NTRA",
+      "sector": "Healthcare",
+      "industry": "Diagnostics & Research",
+      "sector_etf": "XLV",
+      "source": "https://finance.yahoo.com/quote/NTRA/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "TEM",
+      "symbol": "TEM",
+      "sector": "Healthcare",
+      "industry": "Health Information Services",
+      "sector_etf": "XLV",
+      "source": "https://finance.yahoo.com/quote/TEM/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "RXST",
+      "symbol": "RXST",
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "sector_etf": "XLV",
+      "source": "https://finance.yahoo.com/quote/RXST/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "KTOS",
+      "symbol": "KTOS",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "sector_etf": "XLI",
+      "source": "https://finance.yahoo.com/quote/KTOS/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "AVAV",
+      "symbol": "AVAV",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "sector_etf": "XLI",
+      "source": "https://finance.yahoo.com/quote/AVAV/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "RDW",
+      "symbol": "RDW",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "sector_etf": "XLI",
+      "source": "https://finance.yahoo.com/quote/RDW/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "LUNR",
+      "symbol": "LUNR",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "sector_etf": "XLI",
+      "source": "https://finance.yahoo.com/quote/LUNR/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "LEU",
+      "symbol": "LEU",
+      "sector": "Energy",
+      "industry": "Uranium",
+      "sector_etf": "XLE",
+      "source": "https://finance.yahoo.com/quote/LEU/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "UUUU",
+      "symbol": "UUUU",
+      "sector": "Energy",
+      "industry": "Uranium",
+      "sector_etf": "XLE",
+      "source": "https://finance.yahoo.com/quote/UUUU/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "UEC",
+      "symbol": "UEC",
+      "sector": "Energy",
+      "industry": "Uranium",
+      "sector_etf": "XLE",
+      "source": "https://finance.yahoo.com/quote/UEC/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "ALB",
+      "symbol": "ALB",
+      "sector": "Basic Materials",
+      "industry": "Specialty Chemicals",
+      "sector_etf": "XLB",
+      "source": "https://finance.yahoo.com/quote/ALB/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "ENPH",
+      "symbol": "ENPH",
+      "sector": "Technology",
+      "industry": "Solar",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/ENPH/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "NXT",
+      "symbol": "NXT",
+      "sector": "Technology",
+      "industry": "Solar",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/NXT/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "FLNC",
+      "symbol": "FLNC",
+      "sector": "Industrials",
+      "industry": "Electrical Equipment & Parts",
+      "sector_etf": "XLI",
+      "source": "https://finance.yahoo.com/quote/FLNC/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "RIVN",
+      "symbol": "RIVN",
+      "sector": "Consumer Cyclical",
+      "industry": "Auto Manufacturers",
+      "sector_etf": "XLY",
+      "source": "https://finance.yahoo.com/quote/RIVN/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "CHWY",
+      "symbol": "CHWY",
+      "sector": "Consumer Cyclical",
+      "industry": "Internet Retail",
+      "sector_etf": "XLY",
+      "source": "https://finance.yahoo.com/quote/CHWY/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "BROS",
+      "symbol": "BROS",
+      "sector": "Consumer Cyclical",
+      "industry": "Restaurants",
+      "sector_etf": "XLY",
+      "source": "https://finance.yahoo.com/quote/BROS/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "RH",
+      "symbol": "RH",
+      "sector": "Consumer Cyclical",
+      "industry": "Specialty Retail",
+      "sector_etf": "XLY",
+      "source": "https://finance.yahoo.com/quote/RH/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "SG",
+      "symbol": "SG",
+      "sector": "Consumer Cyclical",
+      "industry": "Restaurants",
+      "sector_etf": "XLY",
+      "source": "https://finance.yahoo.com/quote/SG/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "FOUR",
+      "symbol": "FOUR",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/FOUR/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "BILL",
+      "symbol": "BILL",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/BILL/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "RELY",
+      "symbol": "RELY",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/RELY/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "SYM",
+      "symbol": "SYM",
+      "sector": "Industrials",
+      "industry": "Specialty Industrial Machinery",
+      "sector_etf": "XLI",
+      "source": "https://finance.yahoo.com/quote/SYM/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "AAOI",
+      "symbol": "AAOI",
+      "sector": "Technology",
+      "industry": "Communication Equipment",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/AAOI/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "ACLS",
+      "symbol": "ACLS",
+      "sector": "Technology",
+      "industry": "Semiconductor Equipment & Materials",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/ACLS/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "SITM",
+      "symbol": "SITM",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/SITM/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "AMBA",
+      "symbol": "AMBA",
+      "sector": "Technology",
+      "industry": "Semiconductor Equipment & Materials",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/AMBA/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "AEHR",
+      "symbol": "AEHR",
+      "sector": "Technology",
+      "industry": "Semiconductor Equipment & Materials",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/AEHR/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "INOD",
+      "symbol": "INOD",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/INOD/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "PATH",
+      "symbol": "PATH",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/PATH/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "DOCN",
+      "symbol": "DOCN",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/DOCN/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "EIKN",
+      "symbol": "EIKN",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "sector_etf": "XLV",
+      "source": "https://finance.yahoo.com/quote/EIKN/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "FSLY",
+      "symbol": "FSLY",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/FSLY/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "HUT",
+      "symbol": "HUT",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "sector_etf": "XLF",
+      "source": "https://finance.yahoo.com/quote/HUT/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "WULF",
+      "symbol": "WULF",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "sector_etf": "XLF",
+      "source": "https://finance.yahoo.com/quote/WULF/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "ASTS",
+      "symbol": "ASTS",
+      "sector": "Technology",
+      "industry": "Communication Equipment",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/ASTS/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "IONQ",
+      "symbol": "IONQ",
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "sector_etf": "XLK",
+      "source": "https://finance.yahoo.com/quote/IONQ/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "CRSP",
+      "symbol": "CRSP",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "sector_etf": "XLV",
+      "source": "https://finance.yahoo.com/quote/CRSP/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "POWL",
+      "symbol": "POWL",
+      "sector": "Industrials",
+      "industry": "Electrical Equipment & Parts",
+      "sector_etf": "XLI",
+      "source": "https://finance.yahoo.com/quote/POWL/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "XE",
+      "symbol": "XE",
+      "sector": "Industrials",
+      "industry": "Specialty Industrial Machinery",
+      "sector_etf": "XLI",
+      "source": "https://finance.yahoo.com/quote/XE/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "PL",
+      "symbol": "PL",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "sector_etf": "XLI",
+      "source": "https://finance.yahoo.com/quote/PL/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    },
+    {
+      "code": "LUMN",
+      "symbol": "LUMN",
+      "sector": "Communication Services",
+      "industry": "Telecom Services",
+      "sector_etf": "XLC",
+      "source": "https://finance.yahoo.com/quote/LUMN/profile/",
+      "checked_at": "2026-11-06",
+      "method": "Yahoo公开行业分类对应行业参考ETF；不是GICS认证或实际持仓证明"
+    }
+  ]
+}

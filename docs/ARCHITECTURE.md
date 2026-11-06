@@ -205,3 +205,7 @@ financing-review仍v1；actual新增可选comparison（current_shares、previous
 ## OPS-009 / CR-045：每日更新控制
 
 prepare通过NYSE交易日历得到target_date，并只在schedule事件核对线上dashboard.data_date及update-state.json的data_date/revision；一致则跳过checks/build/deploy，其它情况继续。build将DASHBOARD_TARGET_DATE传给生成器，请求end为目标次日，拒绝过期批次及旧个股伪装。独立.cache/target-history存JSON原始完整历史，版本+目标日隔离的Actions缓存使下一次只下载未完成标的，结果仍进入原指标/图表/箱体链路。完成全部生成后导出data/update-state.json（data_date/revision/updated_at），与Pages产物一起原子发布；原有dashboard/history/boxes契约不变。详见DAILY_UPDATE.md。
+
+## DATA-037：行业参考ETF
+
+CSV可选sector_etf经WatchlistItem透传到dashboard行、suspended摘要和boxes v4行。限定11个参考ETF代码或空，非股票仅空；React只展示与链接，无逐公司映射。旧JSON兼容，未核实明示，非公司不适用。核实只覆盖当前持仓/活跃，不重置任何研究日期。

@@ -232,6 +232,7 @@ class YFinancePipelineClient:
         metrics = build_metrics(frame, self.config.year_start)
         row = merge_name_and_metrics(item.code, item.name, metrics)
         row["business"] = item.business
+        row["sector_etf"] = item.sector_etf
         row["symbol"] = item.symbol
         row["asset_type"] = item.asset_type
         row["adjustment"] = adjustment

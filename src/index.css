@@ -410,3 +410,24 @@ th, td { overflow-wrap:anywhere; }
 .market-row .scenario-prices .scenario-line { justify-content:center; text-align:center; }
 .market-row .rsi-cell strong { white-space:nowrap; }
 .market-row .governance-badge button { margin-inline:auto; }
+
+/* UI-044: quiet page-edge navigation, below dialogs and above page chrome. */
+.scroll-edges { position:fixed; right:24px; bottom:max(28px,env(safe-area-inset-bottom)); z-index:45; display:flex; flex-direction:column; align-items:center; padding:5px; border:1px solid #dce5e5; border-radius:28px; background:#ffffffed; backdrop-filter:blur(16px); box-shadow:0 6px 24px #153d4812,0 1px 3px #153d4808; }
+.scroll-edges button { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px; width:44px; height:48px; border:0; border-radius:22px; color:#36565e; background:transparent; cursor:pointer; transition:background .18s,color .18s; }
+.scroll-edges svg { width:18px; height:18px; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
+.scroll-edges button span { font-size:10px; line-height:1.2; letter-spacing:.08em; }
+.scroll-edges button:hover:not(:disabled) { color:#153d48; background:#edf3f3; }
+.scroll-edges button:focus-visible { outline:2px solid #3c737e; outline-offset:2px; }
+.scroll-edges button:disabled { color:#c1cdcf; cursor:default; }
+.scroll-edges-divider { width:18px; height:1px; margin:3px 0; background:#e4ebeb; }
+@media(max-width:640px) { .scroll-edges { right:10px; bottom:max(16px,env(safe-area-inset-bottom)); } }
+@media(prefers-reduced-motion:reduce) { .scroll-edges button { transition:none; } }
+
+.sector-etf { display:flex; width:fit-content; max-width:100%; flex-wrap:wrap; justify-content:center; align-items:center; gap:3px; margin:7px auto 0; padding:3px 5px; border:1px solid #dce7e7; border-radius:6px; color:#526f75; background:#f4f8f8; font-size:10px; line-height:1.35; text-decoration:none; }
+.sector-etf strong { color:#284f59; font-size:10px; font-weight:600; letter-spacing:.04em; }
+.sector-etf svg { width:9px; height:9px; stroke:currentColor; stroke-width:1.2; stroke-linecap:round; stroke-linejoin:round; }
+.sector-etf:hover { border-color:#94b4bb; background:#eaf2f3; }
+.sector-etf:focus-visible { outline:2px solid #3c737e; outline-offset:2px; }
+.sector-etf-empty { display:block; margin-top:7px; color:#94a3b8; font-size:10px; }
+.box-business .sector-etf { margin-left:0; }
+@media(max-width:1023px) { .sector-etf { margin-left:0; } }

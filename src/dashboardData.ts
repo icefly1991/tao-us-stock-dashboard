@@ -14,6 +14,7 @@ export type Row = {
   analyst_comparison?: { value: number; raw_close: number; gap_pct: number }
   scenario_comparison?: Record<'optimistic' | 'conservative' | 'stress', { value: number; raw_close: number; gap_pct: number }>
   business?: string
+  sector_etf?: string
   rsi?: RsiData | null
   volatility_3m?: VolatilityData | null
   code: string
@@ -36,7 +37,7 @@ export type DashboardData = {
   source: string
   updated_at: string
   data_date: string | null
-  suspended?: { code: string; name: string; business?: string; symbol: string; note: string }[]
+  suspended?: { code: string; name: string; business?: string; sector_etf?: string; symbol: string; note: string }[]
   collections?: {
     id: string
     label: string

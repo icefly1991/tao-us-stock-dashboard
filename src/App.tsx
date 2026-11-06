@@ -22,6 +22,7 @@ import type { AdjustmentKey, MetricKey, SummaryKey, Row, DashboardData } from '.
 import { compareRows, sortLabels, sortValue } from './dashboardSort'
 import type { SortKey, SortOrder } from './dashboardSort'
 import { SHOW_HIGH_RISK_POOL } from './features'
+import SectorEtf from './SectorEtf'
 
 const tabs: { id: MetricKey; label: string }[] = [
   { id: 'position_52w_pct', label: '52周内进度' },
@@ -277,6 +278,7 @@ function App() {
           <details className="page-help mb-3">
             <summary>使用说明与选股标准</summary>
             <p>点击代码复制；悬停代码或点图标看 K 线，点 RSI 看走势。窄屏按字段分组展示，无需左右滑动。</p>
+            <p>业务下方的ETF代码是公开行业分类的参考基金，不代表该股票是基金实际持仓；转型公司的公开分类可能滞后。</p>
             <p>点击表头可切换升降序，窄屏使用排序选项；缺失与停牌始终置后。本月涨跌以上月最后一个交易日收盘价为基准；52周内进度是价格在52周高低区间的位置。</p>
             <a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/LIST_REVIEW.md" target="_blank" rel="noreferrer">选股标准</a>
             <a href="https://github.com/icefly1991/tao-us-stock-dashboard/blob/main/docs/METRIC_DEFINITIONS.md" target="_blank" rel="noreferrer">指标定义</a>
@@ -329,7 +331,7 @@ function App() {
                     </StockHistoryCode>
                     <GovernanceBadge row={governance.data?.rows.find(item => item.code === row.code)} reviewedAt={governance.data?.reviewed_at} />
                   </div>
-                  <div data-label="业务/板块" className="business-cell">{row.business || '—'}{poolPage && <FundamentalBadge assessment={poolReview.data?.rows.find(item => item.code === row.code)} />}</div>
+                  <div data-label="业务/板块" className="business-cell"><span>{row.business || '—'}</span><SectorEtf code={row.sector_etf} assetType={row.asset_type} />{poolPage && <FundamentalBadge assessment={poolReview.data?.rows.find(item => item.code === row.code)} />}</div>
                   <FinancingCell code={row.code} assetType={row.asset_type} row={financingFor(row.code, row.symbol, row.asset_type)} error={financing.error} />
                   {poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(item => item.code === row.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(item => item.code === row.code)} kind="risks" /></>}
                   <div data-label="收盘价" className="font-medium text-slate-900">{formatClose(row)}</div>
@@ -361,7 +363,7 @@ function App() {
                     {item.note && <p className="mt-1 text-xs">{item.note}</p>}
                     <GovernanceBadge row={governance.data?.rows.find(row => row.code === item.code)} reviewedAt={governance.data?.reviewed_at} />
                   </div>
-                  <div data-label="业务/板块" className="business-cell">{item.business || '—'}</div><FinancingCell code={item.code} assetType="stock" row={financingFor(item.code, item.symbol)} error={financing.error} />{poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="risks" /></>}
+                  <div data-label="业务/板块" className="business-cell"><span>{item.business || '—'}</span><SectorEtf code={item.sector_etf} assetType="stock" /></div><FinancingCell code={item.code} assetType="stock" row={financingFor(item.code, item.symbol)} error={financing.error} />{poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="risks" /></>}
                   {['收盘价', '今日', '本月涨跌幅', ...contextMetrics.map(metric => metricText[metric]), '建议价', '近3月日均波幅', 'RSI(14) / 年内分位', metricText[tab]].map((label, column) => <div key={column} data-label={label}>—</div>)}
                 </div>
               ))}
