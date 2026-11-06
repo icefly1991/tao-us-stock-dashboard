@@ -21,14 +21,15 @@ for (const route of ['watchlist', 'research']) {
     test(`两方向排序、同分与缺失 ${route} ${width}`, async ({ page }) => {
       await page.setViewportSize({ width, height: 900 })
       await page.goto(`#/${route}`)
+      await expect(page.locator('.market-row[data-code]').first()).toBeVisible()
       const order = () => page.locator('.market-row[data-code]').evaluateAll(rows => rows.map(r => r.getAttribute('data-code')))
       for (const mode of ['复权价', '未复权价']) {
         await page.getByRole('button', { name: mode, exact: true }).click()
         for (const key of ['today_return_pct', 'month_return_pct', 'distance_ma250_pct', 'ytd_return_pct', 'distance_52w_low_pct']) {
           await page.getByRole('combobox', { name: '排序字段' }).selectOption(key)
-          expect(await order()).toEqual(key === 'today_return_pct' ? ['BBB', 'AAA', 'DDD', 'ZZZ', 'CCC'] : ['BBB', 'AAA', 'CCC', 'DDD', 'ZZZ'])
+          await expect.poll(order).toEqual(key === 'today_return_pct' ? ['BBB', 'AAA', 'DDD', 'ZZZ', 'CCC'] : ['BBB', 'AAA', 'CCC', 'DDD', 'ZZZ'])
           await page.getByRole('button', { name: '切换排序方向' }).click()
-          expect(await order()).toEqual(key === 'today_return_pct' ? ['CCC', 'AAA', 'DDD', 'ZZZ', 'BBB'] : ['AAA', 'CCC', 'BBB', 'DDD', 'ZZZ'])
+          await expect.poll(order).toEqual(key === 'today_return_pct' ? ['CCC', 'AAA', 'DDD', 'ZZZ', 'BBB'] : ['AAA', 'CCC', 'BBB', 'DDD', 'ZZZ'])
           await expect(page.locator('.market-row').last()).toHaveAttribute('data-trading-status', 'suspended')
         }
       }

@@ -1,4 +1,4 @@
-"""Bounded retries for incomplete Yahoo daily prices; other failures stay fatal."""
+"""Bounded retries for incomplete/stale daily prices; other failures stay fatal."""
 from datetime import datetime, timezone
 import os
 from pathlib import Path
@@ -6,6 +6,8 @@ import shutil
 import subprocess
 import sys
 import time
+
+from data_pipeline.market_calendar import latest_closed_session
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -18,10 +20,12 @@ def note(message):
             stream.write(f"\n{line}\n")
 
 
-def run_with_retries(attempts=9, delay_seconds=1800, root=ROOT):
+def run_with_retries(attempts=3, delay_seconds=600, root=ROOT):
+    if attempts < 1 or delay_seconds < 0:
+        raise ValueError("Invalid retry limits")
     diagnostics = root / ".cache" / "pipeline-diagnostics"
     for attempt in range(1, attempts + 1):
-        note(f"行情尝试 {attempt}/{attempts}。仅最新日线缺价（exit 75）自动重试。")
+        note(f"行情尝试 {attempt}/{attempts}。仅最新日线缺价/目标日未到（exit 75）自动重试。")
         # A new interpreter/session on every attempt avoids reusing Yahoo responses.
         for name in ("report.json", "summary.md"):
             (diagnostics / name).unlink(missing_ok=True)
@@ -41,10 +45,13 @@ def run_with_retries(attempts=9, delay_seconds=1800, root=ROOT):
         if attempt == attempts:
             note(f"{attempts} 次尝试后仍缺价；部署失败，保留旧线上数据。请查看逐次诊断。")
             return 75
-        note(f"Yahoo 日线仍不完整；{delay_seconds // 60} 分钟后自动重试，暂不发布。")
+        note(f"Yahoo 目标日日线仍未就绪；{delay_seconds // 60} 分钟后自动重试，暂不发布。")
         time.sleep(delay_seconds)
     raise ValueError("attempts must be positive")
 
 
 if __name__ == "__main__":
-    raise SystemExit(run_with_retries())
+    os.environ.setdefault("DASHBOARD_TARGET_DATE", latest_closed_session())
+    os.environ.setdefault("DASHBOARD_RETRY_CACHE", str(ROOT / ".cache" / "target-history"))
+    # Scheduled retries are separate short runs, avoiding sleeping runners.
+    raise SystemExit(run_with_retries(attempts=1 if os.environ.get("GITHUB_EVENT_NAME") == "schedule" else 3))

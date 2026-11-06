@@ -5,8 +5,14 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    # Run after the regular US session and allow the daily feed time to settle.
+    # CR-045: first attempt 15 minutes after close, then independent retries.
+    - cron: "15,30,45 16 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "0,15,30,45 17-19 * * 1-5"
+      timezone: "America/New_York"
     - cron: "30 22 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "15 3 * * 2-6"
       timezone: "America/New_York"
 
 permissions:
@@ -19,15 +25,37 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      needed: ${{ steps.preflight.outputs.needed }}
+      target_date: ${{ steps.preflight.outputs.target_date }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Check completed session and published revision
+        id: preflight
+        run: python scripts/update_preflight.py
+
   checks:
+    needs: prepare
+    if: needs.prepare.outputs.needed == 'true'
     uses: ./.github/workflows/checks.yml
     permissions:
       contents: read
 
   build:
-    needs: checks
+    needs: [prepare, checks]
     runs-on: ubuntu-latest
-    timeout-minutes: 300
+    timeout-minutes: 45
+    env:
+      DASHBOARD_TARGET_DATE: ${{ needs.prepare.outputs.target_date }}
+      DASHBOARD_RETRY_CACHE: .cache/target-history
 
     steps:
       - name: Checkout repository
@@ -50,8 +78,22 @@ jobs:
       - name: Install Python dependencies
         run: python -m pip install -r requirements.txt
 
+      - name: Restore complete target-session histories
+        uses: actions/cache/restore@v5
+        with:
+          path: .cache/target-history
+          key: market-${{ github.sha }}-${{ env.DASHBOARD_TARGET_DATE }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: market-${{ github.sha }}-${{ env.DASHBOARD_TARGET_DATE }}-
+
       - name: Generate dashboard data
         run: python scripts/retry_dashboard.py
+
+      - name: Save complete histories for the next attempt
+        if: ${{ always() && hashFiles('.cache/target-history/*.json') != '' }}
+        uses: actions/cache/save@v5
+        with:
+          path: .cache/target-history
+          key: market-${{ github.sha }}-${{ env.DASHBOARD_TARGET_DATE }}-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Upload data diagnostics
         if: ${{ always() }}
