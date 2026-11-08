@@ -10,7 +10,8 @@ test.beforeEach(async ({ page }) => {
       row.today_return_pct = ({ AAA: 0, BBB: -5, CCC: 5, DDD: 0, ZZZ: 0 } as Record<string, number>)[row.code]
       const value = ({ AAA: 1, BBB: -2, CCC: 1 } as Record<string, number>)[row.code] ?? null
       Object.assign(row, { month_return_pct: value, distance_ma250_pct: value,
-        ytd_return_pct: value, distance_52w_low_pct: value })
+        ytd_return_pct: value, distance_52w_low_pct: value,
+        distance_52w_high_pct: value === null ? null : value - 1 })
     }
   }
   await page.route('**/data/dashboard.json', route => route.fulfill({ json: data }))
@@ -25,7 +26,7 @@ for (const route of ['watchlist', 'research']) {
       const order = () => page.locator('.market-row[data-code]').evaluateAll(rows => rows.map(r => r.getAttribute('data-code')))
       for (const mode of ['复权价', '未复权价']) {
         await page.getByRole('button', { name: mode, exact: true }).click()
-        for (const key of ['today_return_pct', 'month_return_pct', 'distance_ma250_pct', 'ytd_return_pct', 'distance_52w_low_pct']) {
+        for (const key of ['today_return_pct', 'month_return_pct', 'distance_ma250_pct', 'ytd_return_pct', 'distance_52w_low_pct', 'distance_52w_high_pct']) {
           await page.getByRole('combobox', { name: '排序字段' }).selectOption(key)
           await expect.poll(order).toEqual(key === 'today_return_pct' ? ['BBB', 'AAA', 'DDD', 'ZZZ', 'CCC'] : ['BBB', 'AAA', 'CCC', 'DDD', 'ZZZ'])
           await page.getByRole('button', { name: '切换排序方向' }).click()
@@ -35,6 +36,13 @@ for (const route of ['watchlist', 'research']) {
       }
       await expect(page.locator('[data-code="AAA"] [data-label="本月涨跌幅"]')).toHaveText('+1.0%')
       await expect(page.locator('[data-code="DDD"] [data-label="本月涨跌幅"]')).toHaveText('—')
+      await expect(page.locator('[data-code="AAA"] [data-label="距52周高点"]')).toHaveText('0.0%')
+      await expect(page.locator('[data-code="AAA"] [data-label="距52周高点"]')).toHaveClass(/text-slate-500/)
+      await expect(page.locator('[data-code="BBB"] [data-label="距52周高点"]')).toHaveText('-3.0%')
+      await expect(page.locator('[data-code="BBB"] [data-label="距52周高点"]')).toHaveClass(/text-rose-600/)
+      await expect(page.locator('[data-code="DDD"] [data-label="距52周高点"]')).toHaveText('—')
+      await expect(page.locator('[data-trading-status="suspended"] [data-label="距52周高点"]')).toHaveText('—')
+      expect(await page.locator('.market-row').last().locator(':scope > div').count()).toBe(await page.getByTestId('column-header').locator(':scope > div').count())
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true)
     })
   }
@@ -52,6 +60,12 @@ test('表头切方向，导航与分档恢复默认', async ({ page }) => {
   await expect(page.getByRole('button', { name: '切换排序方向' })).toHaveText('升序 ↑')
   await page.goto('#/research/A')
   await expect(page.getByRole('combobox', { name: '排序字段' })).toHaveValue('position_52w_pct')
+  const highHeader = page.getByRole('button', { name: '按距52周高点排序' })
+  await highHeader.click()
+  await expect(page.getByRole('combobox', { name: '排序字段' })).toHaveValue('distance_52w_high_pct')
+  await expect(highHeader.locator('..')).toHaveAttribute('aria-sort', 'ascending')
+  await highHeader.click()
+  await expect(highHeader.locator('..')).toHaveAttribute('aria-sort', 'descending')
 })
 
 for (const route of ['pool', 'pool-boxes']) {

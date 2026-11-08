@@ -51,7 +51,7 @@ body {
 .market-row:hover { background: #f1f5f9; }
 
 .ranking-section { --numeric-columns: 5; }
-.ranking-section[data-position-view="true"] { --numeric-columns: 6; --table-width: 1611px; }
+.ranking-section[data-position-view="true"] { --numeric-columns: 7; --table-width: 1611px; }
 .target-cell, .target-column-heading { text-align: center; line-height: 1.55; }
 .target-cell { font-size: 11px; color: #334155; }
 .target-cell div { display: flex; flex-wrap: wrap; justify-content: center; gap: 2px 4px; }

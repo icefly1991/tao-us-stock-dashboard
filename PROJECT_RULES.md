@@ -14,6 +14,7 @@
 - 产品范围和验收标准：`docs/REQUIREMENTS.md`
 - 技术选择及理由：`docs/DECISIONS.md`
 - 指标公式：`docs/METRIC_DEFINITIONS.md`
+- 逐列来源、核实及更新入口：`docs/COLUMN_RULES.md`（专项金融公式仍以指标定义为准）
 - 已确认需求的修改：`docs/CHANGE_REQUESTS.md`
 - 发布历史：`docs/CHANGELOG.md`
 
@@ -33,6 +34,7 @@
 8. 单只标的失败不应阻断其他标的；整批无有效结果时不得覆盖已有有效 JSON。
 9. `updated_at` 使用带 UTC 偏移的纽约时间；`data_date` 表示最新常规市场数据日期，两者不得混称。
 10. 展示代码与查询代码分离；修改特殊映射时必须验证 yfinance symbol。
+11. REQ-004：每个数据列及其子行/角标/详情必须在COLUMN_RULES及对应专项文档记录来源、生成/核实规则、单位/日期、更新频率和缺失/失败/过期处理。事实不得猜测，计算不得临时换公式，研究预测须明示假设。ETF仅有行业分类不算实际持仓证据，必须遵守ETF_HOLDINGS的官方持仓门禁。
 
 改变任何公式、窗口、复权含义或缺失值策略前，必须建立 Change Request。
 

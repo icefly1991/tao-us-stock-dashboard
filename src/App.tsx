@@ -197,7 +197,7 @@ function App() {
     : tab === 'ytd_return_pct'
       ? ['distance_ma250_pct', 'distance_52w_high_pct']
       : tab === 'position_52w_pct'
-        ? ['distance_ma250_pct', 'ytd_return_pct', 'distance_52w_low_pct']
+        ? ['distance_ma250_pct', 'ytd_return_pct', 'distance_52w_low_pct', 'distance_52w_high_pct']
         : ['distance_ma250_pct', 'ytd_return_pct']
 
   if (pausedPool) return <StateView text="高风险研究暂时隐藏，名单及历史资料已保留。" />

@@ -12,12 +12,12 @@
 
 | 页面信息 | 来源与生成 | 判定含义 |
 | --- | --- | --- |
-| 经营类型 `category` | `scripts/pool_categories.json` 人工证据优先；其余由 `research_pool.py:apply_categories` 按资金等级默认映射 | 主营业务所处阶段或性质，每只一个主类型；不代表财务安全 |
+| 经营类型 `category` | `scripts/pool_categories.json` 的人工原文类型覆盖；无覆盖由 `research_pool.py:apply_categories` 标为 `unresolved`（类型未核实），CR-023已取消按资金等级猜类型 | 主营业务所处阶段或性质，每只一个主类型；不代表财务安全 |
 | 基本面等级 `grade` | SEC XBRL 同期事实由 `research_pool.py:classify` 初筛，再由 `scripts/pool_review_overrides.json` 原文核查覆盖 | 经营及资金状况的四档研究判断；不是交易评级 |
 | 基本面亮点/风险短语 | `scripts/pool_briefs.json` 人工短语加 `research_pool.py:apply_briefs` 财报事实短语 | 最多各三条的事实摘要；空亮点不表示没有优点，空风险不表示安全 |
 | 重大/观察风险 `distress` | `scripts/governance_events.json` 人工事件标记，经 `research_governance.py:distress_summary` 汇总 | 已核实的当前生存、上市或核心经营风险提示；与前三轴独立 |
 
-覆盖记录在 `docs/reviews/2026-09-27-governance-coverage.json`。`public/data/pool-review.json` 与 `public/data/governance-review.json` 是输出快照，不是人工编辑入口。CSV 只管理成员、名称和业务短标签。
+2026-09-27历史覆盖记录在 `docs/reviews/2026-09-27-governance-coverage.json`，本轮实际范围及新清单见[月度流程](MONTHLY_REVIEW.md)。`public/data/pool-review.json` 与 `public/data/governance-review.json` 是输出快照，不是人工编辑入口。CSV管理成员、名称、业务短标签及所选ETF代码，ETF证据另按[ETF持仓规范](ETF_HOLDINGS.md)保存；不得借重新生成快照给未处理主体续研究。
 
 ## 资金等级的实际规则顺序
 

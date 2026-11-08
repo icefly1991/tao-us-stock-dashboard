@@ -1,5 +1,13 @@
 # Operations Guide
 
+## UI-046 / CR-050：52周进度距高点列（2026-11-08）
+
+在距52周低点旁增加距52周高点，复用distance_52w_high_pct；共用指标列表同步表头、普通行与停牌占位，网格数增1。变更源文件为src/App.tsx、src/index.css及tests/browser/sorting-month.spec.ts；需求、CR、逐列索引、指标定义、AGENTS和CHANGELOG同步。既有REQ-004文档整理随本轮保留并提交，历史验证不冒充本轮新研究。
+
+本地验证：仓库.venv Python 180项通过，npm.cmd run lint及npm.cmd run build通过（含TypeScript与测试类型检查），130个受影响文档本地文件链接存在，git diff --check通过。默认Playwright Chromium无法正常启动，改用已安装Chrome（PLAYWRIGHT_CHANNEL=chrome，trace=off），全套107个用例均逐项通过，覆盖三主表五指标/两口径及320/390/768/1024/1440/1920px，新增列双向排序/同值/缺失/停牌占位和表头切换亦通过；Windows本地runner在全部用例输出后仍等待退出，不能称该进程已成功退出。1440/1024/390截图已目视核验，无字段丢失或横向溢出，1024文字随列宽正常换行。
+
+无数据层、symbol或依赖变化，本地不重新抓行情，不推进名单、估值或任何研究日期；JSON契约影响为无。推送后由现有Actions执行真实行情生成及Pages部署，发布前不得把本地截图称为线上验证。Git本机代理失效，使用单次git -c http.proxy= -c https.proxy=连接，不修改用户全局代理设置。生产结果另行补记。
+
 ## 当前生产基线
 
 - 仓库：`https://github.com/icefly1991/tao-us-stock-dashboard`
@@ -637,3 +645,10 @@ Implemented并已上线：f360db5 / [Actions 42279725287](https://github.com/ice
 线上revision匹配f360db5，data_date20261105、纽约生成2026-11-06 14:31，两口径各350行情行、各120条官方证据与CSV/静态研究完全一致；活跃箱体101/0且同一证据透传。其它人工研究JSON和名单日期与原版精确相同。全CSV行情350成功/1失败（隐藏池WEAV目标日不可用、最后10/23），700历史文件/0图表错误，隐藏箱体233/1，不称全量零失败。320/390/768/1024/1440/1920三页18组线上定位/布局核验及SMR/META官方链接、无证据标签撤下、CRWV箱体详情证据核验通过，桌面/手机截图已检查。
 
 兼容新增sector_etf_holding及boxes可选symbol；CSV是所选基金唯一来源，独立sector-etf-review v1记录官方证据，日常行情不推进其日期，超过30天提示待复核。未核实RZLV/ATCH/MNTN/STUB/WBTN/RXST/RH/RELY/AEHR明确留空，不代表全市场不存在ETF持有；即便已核实也只证明官方该日快照，持仓可能变化。完整文件、证据和限制见[核查报告](reviews/2026-11-06-etf-holdings.md)及ETF_HOLDINGS.md。
+
+
+## REQ-004：逐列规则文档验证完成（2026-11-06）
+
+新增docs/COLUMN_RULES.md作为以后数据更新必读入口，链接现有指标/估值/价格/融资/治理/业务/ETF/箱体专项规则；AGENTS、PROJECT_RULES、README、月度/名单/研究维护流程均接入。修正过时入口与被后续CR覆盖的说明，未修改已接受金融公式。需求验收及逐项覆盖见docs/reviews/2026-11-06-column-rules.md。
+
+变更仅Markdown：受影响文档115条本地文件/标题引用检查通过，git diff --check通过；Python报告180项通过、Node4项通过、lint/build成功、Playwright报告107 passed。源码/CSV/public-data及所有研究/名单日期不变，JSON无影响。未重新拉真实行情、不重新部署页面，真实功能生产证据沿用CR-049 / Actions42279725287；本轮推送文档使用[skip ci]，不把文档整理称作新一轮研究。未来新增或修改列必须同步索引及专项规则。
