@@ -1,5 +1,9 @@
 # Architecture
 
+## DATA-039 / CR-051：52周边界价格
+
+dashboard.adjustments.{adjusted|raw}.rows[]兼容新增可选high_52w/low_52w: number | null。指标层从同一252条有效日线窗口提取max(high)/min(low)，保留最多8位小数；短历史null，两口径独立，每日随行情生成。前端校验缺失/null或有限正数，兼容旧快照；距高/低百分比后附同口径价格，旧字段缺失时括号—。不从已舍入百分比反推、不请求额外历史、不修改排序或其它JSON。用户本轮明确要求此兼容扩展，详见CR-051及METRIC_DEFINITIONS；CSV/研究日期不变。
+
 ## CR-046 / DATA-036：月涨跌与暂隐研究范围
 
 dashboard两口径行兼容新增可选`month_return_pct: number | null`，指标层用上月最后有效交易日同口径收盘作基准；上月无数据为null。旧快照没有此字段仍可加载，前端只展示排序。其它行情、历史、箱体及三档公式不变。

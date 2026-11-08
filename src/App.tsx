@@ -87,11 +87,17 @@ const getMetricBarWidth = (metric: MetricKey, value: MetricValue, maxMetric: num
   return (Math.abs(value) / maxMetric) * 100
 }
 
-const formatClose = (row: Row) => {
+const formatPrice = (row: Row, value: MetricValue) => {
+  if (typeof value !== 'number') return '—'
   const prefix = row.asset_type === 'stock' || row.asset_type === 'etf' ? '$' : ''
-  const digits = row.close < 1 ? 6 : 2
-  return `${prefix}${row.close.toLocaleString('en-US', { maximumFractionDigits: digits })}`
+  const digits = value < 1 ? 6 : 2
+  return `${prefix}${value.toLocaleString('en-US', { maximumFractionDigits: digits })}`
 }
+
+const rangePrice = (row: Row, metric: MetricKey) =>
+  typeof row[metric] === 'number' && (metric === 'distance_52w_high_pct' || metric === 'distance_52w_low_pct')
+    ? <small className="range-price">（{formatPrice(row, metric === 'distance_52w_high_pct' ? row.high_52w : row.low_52w)}）</small>
+    : null
 
 const getActiveMetricCellClass = (metric: MetricKey, activeMetric: MetricKey) =>
   metric === activeMetric
@@ -255,7 +261,7 @@ function App() {
           </div>
         </motion.section>
 
-        <section data-pool={poolPage} data-position-view={tab === 'position_52w_pct'} className="ranking-section rounded-[2rem] border border-white/80 bg-white/80 p-3 shadow-[0_24px_60px_rgba(15,23,42,0.05)] sm:p-6">
+        <section data-pool={poolPage} data-position-view={tab === 'position_52w_pct'} data-range-context={contextMetrics.filter(metric => metric === 'distance_52w_high_pct' || metric === 'distance_52w_low_pct').length} className="ranking-section rounded-[2rem] border border-white/80 bg-white/80 p-3 shadow-[0_24px_60px_rgba(15,23,42,0.05)] sm:p-6">
           {poolPage && <PoolFilter review={poolReview.data} error={poolReview.error} value={grade} onChange={setGrade} category={category} onCategoryChange={setCategory} />}
           {missingCodes.length > 0 && (
             <div role="status" className="mb-4 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
@@ -334,16 +340,17 @@ function App() {
                   <div data-label="业务/板块" className="business-cell"><span>{row.business || '—'}</span><SectorEtf code={row.sector_etf} symbol={row.symbol} assetType={row.asset_type} holding={row.sector_etf_holding} />{poolPage && <FundamentalBadge assessment={poolReview.data?.rows.find(item => item.code === row.code)} />}</div>
                   <FinancingCell code={row.code} assetType={row.asset_type} row={financingFor(row.code, row.symbol, row.asset_type)} error={financing.error} />
                   {poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(item => item.code === row.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(item => item.code === row.code)} kind="risks" /></>}
-                  <div data-label="收盘价" className="font-medium text-slate-900">{formatClose(row)}</div>
+                  <div data-label="收盘价" className="font-medium text-slate-900">{formatPrice(row, row.close)}</div>
                   <div data-label="今日" className={getMetricTextClass(row.today_return_pct)}>{formatPct(row.today_return_pct)}</div>
                   <div data-label="本月涨跌幅" className={getMetricTextClass(row.month_return_pct)}>{formatPct(row.month_return_pct)}</div>
-                  {contextMetrics.map((metric) => <div key={metric} data-label={metricText[metric]} className={getMetricTextClass(row[metric])}>{formatMetric(metric, row[metric])}</div>)}
+                  {contextMetrics.map((metric) => <div key={metric} data-label={metricText[metric]} className={getMetricTextClass(row[metric])}>{formatMetric(metric, row[metric])}{rangePrice(row, metric)}</div>)}
                   <PriceResearchCell code={row.code} assetType={row.asset_type} valuation={valuationRows.get(row.code)?.symbol === row.symbol ? valuationRows.get(row.code) : undefined} valuationAvailable={!!valuations.data} rawClose={rawRows.get(row.code)?.close} comparison={rawRows.get(row.code)?.scenario_comparison} target={targetRows.get(row.code)?.symbol === row.symbol ? targetRows.get(row.code) : undefined} targetsLoaded={!!targets.snapshot} targetsError={targets.error} targetsDate={targets.snapshot?.fetched_at} />
                   <div data-label="近3月日均波幅"><VolatilityCell value={row.volatility_3m} /></div>
                   <RsiCell key={`${row.code}/${adjustment}/${data.updated_at}`} rsi={row.rsi} stock={{ code: row.code, name: row.name, adjustment, updatedAt: data.updated_at }} />
                   <div data-label={metricText[tab]}>
                     <div className={getActiveMetricCellClass(tab, tab)}>
                       <span className={getActiveMetricTextClass(tab, row[tab])}>{formatMetric(tab, row[tab])}</span>
+                      {rangePrice(row, tab)}
                       <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-slate-200">
                         <div className={`h-full rounded-full ${tab === 'position_52w_pct' ? 'bg-sky-400' : (row[tab] ?? 0) >= 0 ? 'bg-emerald-400' : 'bg-rose-400'}`}
                           style={{ width: `${getMetricBarWidth(tab, row[tab], maxMetric)}%` }} />

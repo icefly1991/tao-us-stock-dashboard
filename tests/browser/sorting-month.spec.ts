@@ -36,9 +36,9 @@ for (const route of ['watchlist', 'research']) {
       }
       await expect(page.locator('[data-code="AAA"] [data-label="本月涨跌幅"]')).toHaveText('+1.0%')
       await expect(page.locator('[data-code="DDD"] [data-label="本月涨跌幅"]')).toHaveText('—')
-      await expect(page.locator('[data-code="AAA"] [data-label="距52周高点"]')).toHaveText('0.0%')
+      await expect(page.locator('[data-code="AAA"] [data-label="距52周高点"]')).toHaveText('0.0%（$125.5）')
       await expect(page.locator('[data-code="AAA"] [data-label="距52周高点"]')).toHaveClass(/text-slate-500/)
-      await expect(page.locator('[data-code="BBB"] [data-label="距52周高点"]')).toHaveText('-3.0%')
+      await expect(page.locator('[data-code="BBB"] [data-label="距52周高点"]')).toHaveText('-3.0%（$125.5）')
       await expect(page.locator('[data-code="BBB"] [data-label="距52周高点"]')).toHaveClass(/text-rose-600/)
       await expect(page.locator('[data-code="DDD"] [data-label="距52周高点"]')).toHaveText('—')
       await expect(page.locator('[data-trading-status="suspended"] [data-label="距52周高点"]')).toHaveText('—')

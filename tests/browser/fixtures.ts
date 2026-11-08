@@ -20,6 +20,8 @@ export function dashboard() {
     return { code, name: names[code], symbol: code, asset_type: 'stock', close: raw ? 100 : 50,
       scenario_comparison: code === 'AAA' ? { optimistic: { value: 160, raw_close: 100, gap_pct: 60 }, conservative: { value: 90, raw_close: 100, gap_pct: -10 }, stress: { value: 0, raw_close: 100, gap_pct: -100 } } : undefined,
       today_return_pct: 1, business: '测试业务', history_days: 300, history_available: code !== 'DDD', rsi,
+      high_52w: rank === null ? null : raw ? 125.5 : 62.75,
+      low_52w: rank === null ? null : raw ? 80.25 : 40.125,
       ...Object.fromEntries(metricKeys.map(key => [key, rank])) }
   })
   const collections = [['original', '持仓股', [...codes, 'SUSP', 'MISSING']], ['research', '活跃股观察列表', ['BBB', 'CCC']], ['A', 'A 档', ['BBB']], ['B', 'B 档', ['CCC']], ['C', 'C 档', []]].map(([id, label, members]) => ({

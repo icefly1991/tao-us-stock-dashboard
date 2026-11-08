@@ -342,6 +342,8 @@ def build_metrics(frame: pd.DataFrame, year_start: str) -> dict[str, Any]:
         "month_return_pct": rounded_percent_change(close, month_base),
         "distance_ma250_pct": rounded_percent_change(close, ma250),
         "ytd_return_pct": rounded_percent_change(close, year_start_close),
+        "high_52w": round(high_52w, 8) if high_52w is not None else None,
+        "low_52w": round(low_52w, 8) if low_52w is not None else None,
         "distance_52w_high_pct": rounded_percent_change(close, high_52w),
         "distance_52w_low_pct": rounded_percent_change(close, low_52w),
         "position_52w_pct": rounded_range_position(close, low_52w, high_52w),

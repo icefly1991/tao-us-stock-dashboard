@@ -30,6 +30,8 @@ export type Row = {
   ytd_return_pct: number | null
   distance_52w_high_pct: number | null
   distance_52w_low_pct: number | null
+  high_52w?: number | null
+  low_52w?: number | null
   position_52w_pct: number | null
   history_days: number
   history_available?: boolean

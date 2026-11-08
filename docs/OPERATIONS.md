@@ -1,5 +1,13 @@
 # Operations Guide
 
+## CR-051 / UI-047 / DATA-039：52周高低点价格（2026-11-08）
+
+同一252条窗口的最高high/最低low由indicators.py直接输出为可选high_52w/low_52w，两口径独立，最多8位小数；前端在对应百分比后加括号价格，背景列与主指标泡泡一致，旧字段缺失括号—，短历史/停牌整体—。相关代码为indicators.py、App.tsx、dashboardData.ts、dataValidation.ts、index.css；测试增加滚动窗口边界、两口径、缺值/旧快照、指数/加密单位与错误字段校验。需求/CR/逐列索引/指标/架构/AI入口及CHANGELOG同步。按背景边界列数量分配略宽列，窄屏原分组布局保留，不裁切或隐藏字段。
+
+本地181项Python、lint、TypeScript/build通过；Chrome全套109项逐项通过，随后针对最终列宽复验32项布局/括号价格用例逐项通过（含320至1920px/五视图/两口径/暂隐池恢复回归）；1440/1024截图目视核验。首轮测试期间热更新导致3个用例导航错误，停改后全套复跑均通过；Windows runner同前次在结果全部输出后等待退出，停止测试进程，不把进程停止报为正常成功退出。最终云端checks正常结束方可认定发布验收完成。
+
+JSON仅兼容新增high_52w/low_52w，旧快照可读；百分比公式、排序、252条要求、CSV、箱体及人工研究/名单日期不变，无新依赖。此次数据层变化由push触发Actions完成真实行情生成及部署验证，最终结果另行补记。
+
 ## UI-046 / CR-050：52周进度距高点列（2026-11-08）
 
 **已发布并线上验证**：功能提交204043d，[Actions 42468546006](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/42468546006)的prepare/checks/build/deploy全部成功。云端180 Python、4 Node离线检查、107 Chromium及lint/TypeScript/build通过，浏览器正常成功退出。真实行情350成功/1失败（隐藏池WEAV目标日20261106不可用、最后20261023），700历史文件/0图表错误；活跃箱体101/0，隐藏池箱体233/1（同一WEAV缺行情），不称全CSV零失败。

@@ -35,6 +35,26 @@ class IndicatorTests(unittest.TestCase):
         self.assertIsNotNone(metrics["distance_52w_high_pct"])
         self.assertIsNotNone(metrics["distance_52w_low_pct"])
         self.assertIsNotNone(metrics["position_52w_pct"])
+        self.assertEqual(metrics["high_52w"], 261.0)
+        self.assertEqual(metrics["low_52w"], 8.0)
+
+    def test_range_prices_share_strict_252_row_window_with_distances(self) -> None:
+        for count in (251, 252, 253):
+            with self.subTest(count=count):
+                frame = make_frame(count)
+                frame.loc[0, "high"] = 10000
+                frame.loc[0, "low"] = 0.123456789
+                metrics = build_metrics(frame, "20250101")
+                if count < 252:
+                    self.assertIsNone(metrics["high_52w"])
+                    self.assertIsNone(metrics["low_52w"])
+                else:
+                    self.assertEqual(metrics["high_52w"], 10000 if count == 252 else 254)
+                    self.assertEqual(metrics["low_52w"], 0.12345679 if count == 252 else 1)
+                    window = frame.tail(252)
+                    for side in ("high", "low"):
+                        bound = window[side].max() if side == "high" else window[side].min()
+                        self.assertEqual(metrics[f"distance_52w_{side}_pct"], round((count / bound - 1) * 100, 2))
 
     def test_short_history_keeps_basic_metrics_and_uses_null_for_long_metrics(self) -> None:
         metrics = build_metrics(make_frame(20), "20250101")
