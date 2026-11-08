@@ -2,6 +2,10 @@
 
 ## UI-046 / CR-050：52周进度距高点列（2026-11-08）
 
+**已发布并线上验证**：功能提交204043d，[Actions 42468546006](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/42468546006)的prepare/checks/build/deploy全部成功。云端180 Python、4 Node离线检查、107 Chromium及lint/TypeScript/build通过，浏览器正常成功退出。真实行情350成功/1失败（隐藏池WEAV目标日20261106不可用、最后20261023），700历史文件/0图表错误；活跃箱体101/0，隐藏池箱体233/1（同一WEAV缺行情），不称全CSV零失败。
+
+线上update-state revision完整匹配204043dd97090dd7f5302510241a21f22929613a，data_date=20261106，updated_at纽约2026-11-08 04:50（-05:00）。持仓/活跃在1440/390px、复权/未复权共8组检查通过：距高点与同批JSON一位小数完全一致（持仓GEMI -85.7%、活跃LMND -60.4%），页面与表格均无横向溢出，桌面和手机截图已检查。无名单或研究日期变化，JSON契约无影响。剩余上游限制为隐藏池WEAV缺行情；本地Windows测试runner等待退出不影响本次已成功完成的云端回归。
+
 在距52周低点旁增加距52周高点，复用distance_52w_high_pct；共用指标列表同步表头、普通行与停牌占位，网格数增1。变更源文件为src/App.tsx、src/index.css及tests/browser/sorting-month.spec.ts；需求、CR、逐列索引、指标定义、AGENTS和CHANGELOG同步。既有REQ-004文档整理随本轮保留并提交，历史验证不冒充本轮新研究。
 
 本地验证：仓库.venv Python 180项通过，npm.cmd run lint及npm.cmd run build通过（含TypeScript与测试类型检查），130个受影响文档本地文件链接存在，git diff --check通过。默认Playwright Chromium无法正常启动，改用已安装Chrome（PLAYWRIGHT_CHANNEL=chrome，trace=off），全套107个用例均逐项通过，覆盖三主表五指标/两口径及320/390/768/1024/1440/1920px，新增列双向排序/同值/缺失/停牌占位和表头切换亦通过；Windows本地runner在全部用例输出后仍等待退出，不能称该进程已成功退出。1440/1024/390截图已目视核验，无字段丢失或横向溢出，1024文字随列宽正常换行。
