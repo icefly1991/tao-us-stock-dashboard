@@ -8,6 +8,12 @@ for (const width of [320, 390, 768, 1024, 1440, 1920]) {
       await page.setViewportSize({ width, height: 900 })
       await seed(page)
       const data = dashboard()
+      for (const mode of ['adjusted', 'raw'] as const) {
+        Object.assign(data.adjustments[mode].rows.find(row => row.code === 'AAA')!, {
+          high_52w: 123456.78, low_52w: .000123,
+          distance_52w_high_pct: -99.9, distance_52w_low_pct: 98765.4,
+        })
+      }
       data.collections.push({ id: 'pool', label: '高风险公司股票池', codes: ['AAA', 'SUSP'], summaries: { adjusted: { watchlist_total: 2, today_up: 1, today_down: 0 }, raw: { watchlist_total: 2, today_up: 1, today_down: 0 } } })
       await page.route('**/data/dashboard.json', r => r.fulfill({ json: data }))
       await page.goto(`#/${route}`)
@@ -31,9 +37,10 @@ for (const width of [320, 390, 768, 1024, 1440, 1920]) {
             return box.left >= parent.left - 1 && box.right <= parent.right + 1 && cell.scrollWidth <= cell.clientWidth + 1 ? [] : [{ text: cell.textContent, width: cell.clientWidth, scroll: cell.scrollWidth }]
           })))).toEqual([])
           expect(await page.locator('.market-row .metric-bubble, .market-row .financing-block, .market-row .scenario-prices, .market-row .rsi-cell').evaluateAll(bubbles => bubbles.every(el => getComputedStyle(el).textAlign === 'center'))).toBe(true)
-          expect(await page.locator('.market-row .metric-bubble > span').evaluateAll(values => values.every(el => {
-            const range = document.createRange(); range.selectNodeContents(el)
-            return range.getClientRects().length === 1 && el.scrollWidth <= el.clientWidth + 1
+          expect(await page.locator('.market-row .metric-line').evaluateAll(values => values.every(el => {
+            const inner = el.querySelector('.metric-line-content')!
+            const bounds = el.getBoundingClientRect(), text = inner.getBoundingClientRect()
+            return text.height <= Number.parseFloat(getComputedStyle(el).lineHeight) + 1 && text.left >= bounds.left - 1 && text.right <= bounds.right + 1 && el.scrollWidth <= el.clientWidth + 1
           }))).toBe(true)
           if (width < 1024) await expect(page.locator('.market-row [data-label]').first()).toBeVisible()
           else await expect(page.getByTestId('column-header')).toBeVisible()

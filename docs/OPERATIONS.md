@@ -1,5 +1,11 @@
 # Operations Guide
 
+## UI-048 / CR-052：52周高低百分比及价格单行（2026-11-08）
+
+用户要求“全部改成一行”，覆盖CR-051窄列可换行选择。App将背景列及对应主指标百分比与括号价格合成MetricLine；桌面优先分配更宽列，MetricLine用ResizeObserver按实测可用宽度适配完整字号，随内容/口径和宽度变化重新测量。不修改字符串/精度，不裁切、省略或隐藏，手机仍为原字段分组。新增src/MetricLine.tsx，修改App.tsx/index.css及layout.spec.ts；需求/CR/列规则/AI入口/CHANGELOG同步，无新依赖或架构决策，JSON/公式/名单/研究日期均不变。
+
+本地181项Python、lint/TypeScript/build通过；Chrome全套109项逐项通过，布局回归覆盖三主表五指标/两口径、320/390/768/1024/1440/1920，加入123456.78高价、0.000123低价及98765.4%长百分比，检查完整文字实际边界与单行高度、单元格和页面无溢出。1440/1024/390截图已检查，1024高低两列均一行。Windows本地runner仍在全部用例输出后等待退出，手动停止，不将其称为正常退出；最终以云端正常结束验证。纯展示修改不在本地刷新行情，push后由现有Actions完成真实行情与部署验证，结果另行补记。
+
 ## CR-051 / UI-047 / DATA-039：52周高低点价格（2026-11-08）
 
 **已发布并线上验证**：40ca87d / [Actions42471223891](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/42471223891)，prepare/checks/build/deploy全部成功；云端181 Python、4 Node、109 Chromium及lint/TypeScript/build通过，浏览器正常成功退出。真实行情350成功/1失败（隐藏池WEAV目标日20261106不可用，最后20261023），700历史文件/0图表错误；活跃箱体101/0，隐藏箱体233/1（同一WEAV），不声称全CSV零失败。
