@@ -262,7 +262,7 @@ function App() {
           </div>
         </motion.section>
 
-        <section data-pool={poolPage} data-position-view={tab === 'position_52w_pct'} data-range-active={tab === 'distance_52w_high_pct' || tab === 'distance_52w_low_pct'} data-range-context={contextMetrics.filter(metric => metric === 'distance_52w_high_pct' || metric === 'distance_52w_low_pct').length} className="ranking-section rounded-[2rem] border border-white/80 bg-white/80 p-3 shadow-[0_24px_60px_rgba(15,23,42,0.05)] sm:p-6">
+        <section data-holdings={!researchPage} data-pool={poolPage} data-position-view={tab === 'position_52w_pct'} data-range-active={tab === 'distance_52w_high_pct' || tab === 'distance_52w_low_pct'} data-range-context={contextMetrics.filter(metric => metric === 'distance_52w_high_pct' || metric === 'distance_52w_low_pct').length} className="ranking-section rounded-[2rem] border border-white/80 bg-white/80 p-3 shadow-[0_24px_60px_rgba(15,23,42,0.05)] sm:p-6">
           {poolPage && <PoolFilter review={poolReview.data} error={poolReview.error} value={grade} onChange={setGrade} category={category} onCategoryChange={setCategory} />}
           {missingCodes.length > 0 && (
             <div role="status" className="mb-4 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
@@ -309,7 +309,7 @@ function App() {
             </div>
             <div className="market-sort-controls">
               <label>排序 <select aria-label="排序字段" value={sort.key} onChange={event => setSort({ key: event.target.value as SortKey, direction: 'asc' })}>
-                {Object.entries(sortLabels).map(([key, label]) => <option key={key} value={key}>{label}</option>)}
+                {Object.entries(sortLabels).filter(([key]) => key !== 'since_20261105_pct' || !researchPage).map(([key, label]) => <option key={key} value={key}>{label}</option>)}
               </select></label>
               <button type="button" aria-label="切换排序方向" onClick={() => setSort(current => ({ ...current, direction: current.direction === 'asc' ? 'desc' : 'asc' }))}>{sort.direction === 'asc' ? '升序 ↑' : '降序 ↓'}</button>
             </div>
@@ -319,6 +319,7 @@ function App() {
                 <div>#</div><div className="stock-identity text-left">标的</div><div className="business-cell">业务/板块</div><div className="financing-heading">融资／稀释风险</div>{poolPage && <><div className="fundamental-column-heading">基本面亮点</div><div className="fundamental-column-heading">基本面风险</div></>}<div>收盘价</div>{sortHeading('today_return_pct', '今日')}
                 {sortHeading('month_return_pct')}
                 {contextMetrics.map((metric) => <div key={metric}>{sortHeading(metric)}</div>)}
+                {!researchPage && <div title="相对于2026-11-05同口径收盘价；括号内为当日收盘价">{sortHeading('since_20261105_pct')}</div>}
                 <div className="target-column-heading" title="前三档为情景建议价；分析师低位为目标价参考"><b>建议价</b><span>乐观</span><span>保守</span><span>极端保守</span><span>分析师低位</span></div>
                 <div><button className="volatility-sort" aria-pressed={volatilitySort} onClick={toggleVolatilitySort} title="近三个自然月日均真实波幅百分比，含跳空；点击按波动从大到小排序">近3月日均波幅{volatilitySort ? ' ↓' : ' ↕'}</button></div>
                 <div title="日线Wilder RSI(14)与该股票自身年内百分位">RSI(14) / 年内分位</div>
@@ -345,6 +346,7 @@ function App() {
                   <div data-label="今日" className={getMetricTextClass(row.today_return_pct)}>{formatPct(row.today_return_pct)}</div>
                   <div data-label="本月涨跌幅" className={getMetricTextClass(row.month_return_pct)}>{formatPct(row.month_return_pct)}</div>
                   {contextMetrics.map((metric) => <div key={metric} data-label={metricText[metric]} className={getMetricTextClass(row[metric])}>{metric === 'distance_52w_high_pct' || metric === 'distance_52w_low_pct' ? <MetricLine>{formatMetric(metric, row[metric])}{rangePrice(row, metric)}</MetricLine> : formatMetric(metric, row[metric])}</div>)}
+                  {!researchPage && <div data-label="since 11/5" title="基准：2026-11-05收盘价" className={getMetricTextClass(row.since_20261105_pct)}><MetricLine>{formatPct(row.since_20261105_pct)}{typeof row.since_20261105_pct === 'number' && <small className="range-price">（{formatPrice(row, row.close_20261105)}）</small>}</MetricLine></div>}
                   <PriceResearchCell code={row.code} assetType={row.asset_type} valuation={valuationRows.get(row.code)?.symbol === row.symbol ? valuationRows.get(row.code) : undefined} valuationAvailable={!!valuations.data} rawClose={rawRows.get(row.code)?.close} comparison={rawRows.get(row.code)?.scenario_comparison} target={targetRows.get(row.code)?.symbol === row.symbol ? targetRows.get(row.code) : undefined} targetsLoaded={!!targets.snapshot} targetsError={targets.error} targetsDate={targets.snapshot?.fetched_at} />
                   <div data-label="近3月日均波幅"><VolatilityCell value={row.volatility_3m} /></div>
                   <RsiCell key={`${row.code}/${adjustment}/${data.updated_at}`} rsi={row.rsi} stock={{ code: row.code, name: row.name, adjustment, updatedAt: data.updated_at }} />
@@ -371,7 +373,7 @@ function App() {
                     <GovernanceBadge row={governance.data?.rows.find(row => row.code === item.code)} reviewedAt={governance.data?.reviewed_at} />
                   </div>
                   <div data-label="业务/板块" className="business-cell"><span>{item.business || '—'}</span><SectorEtf code={item.sector_etf} symbol={item.symbol} assetType="stock" holding={item.sector_etf_holding} /></div><FinancingCell code={item.code} assetType="stock" row={financingFor(item.code, item.symbol)} error={financing.error} />{poolPage && <><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="highlights" /><FundamentalPhrases assessment={poolReview.data?.rows.find(row => row.code === item.code)} kind="risks" /></>}
-                  {['收盘价', '今日', '本月涨跌幅', ...contextMetrics.map(metric => metricText[metric]), '建议价', '近3月日均波幅', 'RSI(14) / 年内分位', metricText[tab]].map((label, column) => <div key={column} data-label={label}>—</div>)}
+                  {['收盘价', '今日', '本月涨跌幅', ...contextMetrics.map(metric => metricText[metric]), ...(!researchPage ? ['since 11/5'] : []), '建议价', '近3月日均波幅', 'RSI(14) / 年内分位', metricText[tab]].map((label, column) => <div key={column} data-label={label}>—</div>)}
                 </div>
               ))}
             </div>

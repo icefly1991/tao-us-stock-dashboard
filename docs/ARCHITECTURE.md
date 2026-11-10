@@ -218,3 +218,7 @@ CSV可选sector_etf经WatchlistItem透传到dashboard行、suspended摘要和box
 ## DATA-038 / CR-049：ETF实际持仓证据
 
 sector_etf不再限于11行业代理，仅允许sector-etf-review v1目录内基金；CSV选择必须与129公司静态证据一致。dashboard行/停牌及boxes v4行兼容增加可选sector_etf_holding（基金名/主题、官方来源、股票symbol/名称/标识、direct_equity、正shares/weight_pct、as_of与verified_on）；boxes同时兼容可选symbol用于展示别名核对。React必须验证证据，旧字段可读但不会推定为持仓。独立public/data/sector-etf-review.json是手工研究静态工件，不随每日行情生成；具体约束见[ETF_HOLDINGS](ETF_HOLDINGS.md)。
+
+## DATA-040：固定日期比较兼容字段
+
+dashboard rows可选since_20261105_pct: number|null与close_20261105: positive number|null，由indicators.py在各口径有效日线上计算（固定2026-11-05精确日期）。不改schema/旧必填字段，旧快照缺字段可读且显示—；前端不反推基准或计算收益，只展示持仓页面并按百分比排序。

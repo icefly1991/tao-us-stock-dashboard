@@ -329,6 +329,10 @@ def build_metrics(frame: pd.DataFrame, year_start: str) -> dict[str, Any]:
     prior_month = ordered[(dates < month_start) & (dates >= month_start - pd.DateOffset(months=1))]
     month_base = float(prior_month.iloc[-1]["close"]) if not prior_month.empty else None
 
+    # CR-053: fixed date; never substitute a nearby session or roll the year.
+    baseline = ordered[dates == pd.Timestamp("2026-11-05")]
+    since_close = float(baseline.iloc[-1]["close"]) if not baseline.empty else None
+
     high_52w: float | None = None
     low_52w: float | None = None
     if len(ordered) >= 252:
@@ -340,6 +344,8 @@ def build_metrics(frame: pd.DataFrame, year_start: str) -> dict[str, Any]:
         "close": round(close, 4),
         "today_return_pct": rounded_percent_change(close, float(previous["close"])),
         "month_return_pct": rounded_percent_change(close, month_base),
+        "since_20261105_pct": rounded_percent_change(close, since_close),
+        "close_20261105": round(since_close, 8) if since_close is not None else None,
         "distance_ma250_pct": rounded_percent_change(close, ma250),
         "ytd_return_pct": rounded_percent_change(close, year_start_close),
         "high_52w": round(high_52w, 8) if high_52w is not None else None,

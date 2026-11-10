@@ -1,9 +1,10 @@
 import type { MetricKey, Row } from './dashboardData'
 
-export type SortKey = MetricKey | 'today_return_pct' | 'month_return_pct' | 'volatility_3m'
+export type SortKey = MetricKey | 'today_return_pct' | 'month_return_pct' | 'volatility_3m' | 'since_20261105_pct'
 export type SortOrder = { key: SortKey; direction: 'asc' | 'desc' }
 
 export const sortLabels: Record<SortKey, string> = {
+  since_20261105_pct: 'since 11/5',
   today_return_pct: '今日涨跌', month_return_pct: '本月涨跌幅',
   distance_ma250_pct: '距年线', ytd_return_pct: '今年涨跌幅',
   distance_52w_high_pct: '距52周高点', distance_52w_low_pct: '距52周低点',

@@ -25,6 +25,28 @@ def make_frame(rows: int) -> pd.DataFrame:
 
 
 class IndicatorTests(unittest.TestCase):
+    def test_since_nov5_exact_date_and_independent_price_basis(self) -> None:
+        for baseline, latest in [(100, 110), (50, 60)]:
+            frame = pd.DataFrame({"trade_date": ["20261104", "20261105", "20261110"],
+                                  "close": [90, baseline, latest],
+                                  "high": [200, 200, 200], "low": [1, 1, 1]})
+            metrics = build_metrics(frame, "20260101")
+            self.assertEqual(metrics["close_20261105"], baseline)
+            self.assertEqual(metrics["since_20261105_pct"], round((latest / baseline - 1) * 100, 2))
+            on_base = build_metrics(frame.iloc[:2], "20260101")
+            self.assertEqual(on_base["since_20261105_pct"], 0)
+            missing = build_metrics(frame.iloc[[0, 2]], "20260101")
+            self.assertIsNone(missing["since_20261105_pct"])
+            self.assertIsNone(missing["close_20261105"])
+            frame.loc[2, "trade_date"] = "20270105"
+            self.assertEqual(build_metrics(frame, "20270101")["close_20261105"], baseline)
+
+    def test_since_nov5_before_baseline_is_unavailable(self) -> None:
+        frame = make_frame(20)
+        metrics = build_metrics(frame, "20250101")
+        self.assertIsNone(metrics["since_20261105_pct"])
+        self.assertIsNone(metrics["close_20261105"])
+
     def test_complete_history_calculates_all_metrics(self) -> None:
         metrics = build_metrics(make_frame(260), "20250101")
 

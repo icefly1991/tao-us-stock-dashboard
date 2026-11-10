@@ -42,8 +42,10 @@ for (const width of [320, 390, 768, 1024, 1440, 1920]) {
             const bounds = el.getBoundingClientRect(), text = inner.getBoundingClientRect()
             return text.height <= Number.parseFloat(getComputedStyle(el).lineHeight) + 1 && text.left >= bounds.left - 1 && text.right <= bounds.right + 1 && el.scrollWidth <= el.clientWidth + 1
           }))).toBe(true)
-          if (width < 1024) await expect(page.locator('.market-row [data-label]').first()).toBeVisible()
-          else await expect(page.getByTestId('column-header')).toBeVisible()
+          if (width < 1024 || route === 'watchlist' && width < 1280) {
+            await expect(page.getByTestId('column-header')).toBeHidden()
+            await expect(page.locator('.market-row [data-label]').first()).toBeVisible()
+          } else await expect(page.getByTestId('column-header')).toBeVisible()
         }
       }
     })

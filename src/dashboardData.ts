@@ -26,6 +26,8 @@ export type Row = {
   close: number
   today_return_pct: number
   month_return_pct?: number | null
+  since_20261105_pct?: number | null
+  close_20261105?: number | null
   distance_ma250_pct: number | null
   ytd_return_pct: number | null
   distance_52w_high_pct: number | null
