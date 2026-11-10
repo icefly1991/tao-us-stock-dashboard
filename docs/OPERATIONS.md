@@ -688,3 +688,13 @@ Implemented并已上线：f360db5 / [Actions 42279725287](https://github.com/ice
 CSV、人工研究及名单日期文件未改；部署结果待后续记录。Yahoo上游缺行情风险仍存在；复权基准价会随后续上游复权调整。
 
 补充排版验证：七尺寸320/390/768/1024/1280/1440/1920×两口径×五视图共70组，持仓46行逐项文本、单行边界及全页面无横向溢出通过，所有MetricLine字号至少10px。分组调整后的全量浏览器回归110项通过，发现1024px波幅快捷排序按钮随表头隐藏；已补上分组布局的可见快捷按钮，同时将既有布局测试的1024px持仓断言改为分组标签可见、表头隐藏（匹配本轮布局要求），并针对1024布局与新列完整用例重新验证。线上部署将再次运行全部111项。
+
+## CR-053 / UI-049 / DATA-040 已验证发布（2026-11-10）
+
+Implemented并已上线：功能提交beefb32bc89c1fc9b585c76225b8d8019b11b5dc / [Actions 42785976219](https://github.com/icefly1991/tao-us-stock-dashboard/actions/runs/42785976219)，prepare、checks/regression、build、deploy全部success。183 Python、4 Node、111 Chromium、lint/build通过。云端真实行情350成功/1失败（隐藏池WEAV目标日不可用，最后20261023），700历史文件/0图表错误，活跃箱体101/0、隐藏池233/1；线上data_date=20261109，updated_at纽约2026-11-10 03:55，revision精确匹配功能提交。
+
+线上持仓46行×两口径×五视图×320/390/768/1024/1280/1440/1920共70组逐行文本/单行/边界检查通过，无页面横向溢出、无页面错误，所有MetricLine实际字号至少10px；两方向排序及进入活跃页不显示新列核验通过。390/1024/1440线上截图已查看。46行两口径新字段与本地独立真实生成逐项精确相等，本地每只基准价另与同日历史收盘核对。NVDA未复权显示-1.6%（$181.6）、META显示+6.0%（$605.08），固定比较2026-11-05。
+
+行情JSON只兼容新增可选since_20261105_pct / close_20261105，旧快照仍可读；CSV未改，线上估值、ETF核查、高风险池、名单日期、治理、融资、分析师七份静态JSON解析后与仓库完全一致，无研究续期。变更文件：scripts/data_pipeline/indicators.py；src/App.tsx、dashboardData.ts、dashboardSort.ts、dataValidation.ts、index.css；tests/test_indicators.py、browser/layout.spec.ts、browser/since-nov5.spec.ts；AGENTS及REQUIREMENTS、COLUMN_RULES、METRIC_DEFINITIONS、ARCHITECTURE、CHANGE_REQUESTS、CHANGELOG、OPERATIONS。验证脚本/日志/截图位于.cache/cr053-*及.cache/verify-cr053-*.mjs。
+
+剩余风险：Yahoo未来可能缺目标日或基准日价格，沿用现有门禁或缺值展示；复权基准随上游后续复权调整。隐藏池WEAV缺行情不影响持仓46只，不推断停牌或删除成员。上述记录覆盖本轮此前本地、待发布及排版调整中的中间状态。
