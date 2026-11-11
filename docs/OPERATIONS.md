@@ -698,3 +698,12 @@ Implemented并已上线：功能提交beefb32bc89c1fc9b585c76225b8d8019b11b5dc /
 行情JSON只兼容新增可选since_20261105_pct / close_20261105，旧快照仍可读；CSV未改，线上估值、ETF核查、高风险池、名单日期、治理、融资、分析师七份静态JSON解析后与仓库完全一致，无研究续期。变更文件：scripts/data_pipeline/indicators.py；src/App.tsx、dashboardData.ts、dashboardSort.ts、dataValidation.ts、index.css；tests/test_indicators.py、browser/layout.spec.ts、browser/since-nov5.spec.ts；AGENTS及REQUIREMENTS、COLUMN_RULES、METRIC_DEFINITIONS、ARCHITECTURE、CHANGE_REQUESTS、CHANGELOG、OPERATIONS。验证脚本/日志/截图位于.cache/cr053-*及.cache/verify-cr053-*.mjs。
 
 剩余风险：Yahoo未来可能缺目标日或基准日价格，沿用现有门禁或缺值展示；复权基准随上游后续复权调整。隐藏池WEAV缺行情不影响持仓46只，不推断停牌或删除成员。上述记录覆盖本轮此前本地、待发布及排版调整中的中间状态。
+
+
+## 2026-11-11 · CR-054 / UI-050 活跃股观察 since 11/5
+
+用户要求仿照持仓页给活跃股观察增加since 11/5，并授权直接push。活跃总表及A/B/C五视图复用DATA-040字段、固定日期口径、括号基准价与排序。1024–1279px沿用持仓四栏标签分组，1280px起完整表格，手机两栏。
+
+本地183 Python、4 Node、lint/build通过。Chromium全部116项用例断言通过，本机Windows测试服务退出阶段挂起，清理服务后进程非零退出，正式整流程结果以push后Actions为准。首次扩展测试将当前research路由再次导航误当作切页，已改成真正切页并复验全部116项断言。真实20261109快照活跃101行，两口径、五视图、320/390/768/1024/1280/1440/1920共70组逐行百分比/基准价、单行/边界及字体检查通过，实测字号至少10px，排序及页面错误检查通过。截图已查看390px，验证日志与截图在.cache/cr054-*。该快照为CR-053真实生成结果，350行情成功、1只失败（隐藏池WEAV）、700历史文件0图表错误，本轮新行情生成由部署Actions验证。
+
+变更文件为src/App.tsx、src/index.css、tests/browser/layout.spec.ts、tests/browser/since-nov5.spec.ts，以及AGENTS、REQUIREMENTS、CHANGE_REQUESTS、COLUMN_RULES、METRIC_DEFINITIONS、ARCHITECTURE、CHANGELOG、OPERATIONS。JSON契约沿用原字段，CSV及研究快照无变更。发布状态待push后核验。

@@ -221,4 +221,7 @@ sector_etf不再限于11行业代理，仅允许sector-etf-review v1目录内基
 
 ## DATA-040：固定日期比较兼容字段
 
-dashboard rows可选since_20261105_pct: number|null与close_20261105: positive number|null，由indicators.py在各口径有效日线上计算（固定2026-11-05精确日期）。不改schema/旧必填字段，旧快照缺字段可读且显示—；前端不反推基准或计算收益，只展示持仓页面并按百分比排序。
+dashboard rows可选since_20261105_pct: number|null与close_20261105: positive number|null，由indicators.py在各口径有效日线上计算（固定2026-11-05精确日期）。不改schema/旧必填字段，旧快照缺字段可读且显示—；前端不反推基准或计算收益，展示持仓和活跃股观察（含A/B/C）页面并按百分比排序。
+
+
+CR-054 / UI-050（2026-11-11）将上述since 11/5展示与持仓1024–1279px分组布局扩展至活跃总表及A/B/C分档，沿用DATA-040及已有JSON字段。

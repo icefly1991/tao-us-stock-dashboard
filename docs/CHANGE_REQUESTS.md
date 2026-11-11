@@ -484,3 +484,10 @@ Implemented并已上线：功能提交beefb32bc89c1fc9b585c76225b8d8019b11b5dc /
 行情JSON只兼容新增可选since_20261105_pct / close_20261105，旧快照仍可读；CSV未改，线上估值、ETF核查、高风险池、名单日期、治理、融资、分析师七份静态JSON解析后与仓库完全一致，无研究续期。变更文件：scripts/data_pipeline/indicators.py；src/App.tsx、dashboardData.ts、dashboardSort.ts、dataValidation.ts、index.css；tests/test_indicators.py、browser/layout.spec.ts、browser/since-nov5.spec.ts；AGENTS及REQUIREMENTS、COLUMN_RULES、METRIC_DEFINITIONS、ARCHITECTURE、CHANGE_REQUESTS、CHANGELOG、OPERATIONS。验证脚本/日志/截图位于.cache/cr053-*及.cache/verify-cr053-*.mjs。
 
 剩余风险：Yahoo未来可能缺目标日或基准日价格，沿用现有门禁或缺值展示；复权基准随上游后续复权调整。隐藏池WEAV缺行情不影响持仓46只，不推断停牌或删除成员。上述记录覆盖本轮此前本地、待发布及排版调整中的中间状态。
+
+
+## CR-054 / UI-050（2026-11-11）活跃股观察 since 11/5
+
+Accepted（用户直接要求并授权完成后push）。将持仓已有的since 11/5列扩展至活跃股观察列表及A/B/C分档的全部五个指标视图。沿用DATA-040固定2026-11-05同口径收盘基准、百分比（基准价）单行显示、两口径独立、双向排序和缺值/停牌置后规则。默认52周进度排序沿用原规则。活跃页采用持仓相同布局，1024–1279px四栏带标签分组、1280px起完整表格、手机两栏分组。复用现有Python字段，JSON契约、名单和人工研究日期沿用现有基线。
+
+验收覆盖活跃总表及A/B/C导航、五视图、两口径、升降序、旧快照缺值、停牌占位和320–1920px单行/边界检查，并运行Python、lint、build与浏览器回归。
